@@ -1,7 +1,7 @@
 {
-  "name": "mobile",
+  "name": "app-mobile",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "mobile/src",
+  "sourceRoot": "app-mobile/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -11,14 +11,14 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/mobile",
-        "index": "mobile/src/index.html",
+        "outputPath": "dist/app-mobile",
+        "index": "app-mobile/src/index.html",
         "baseHref": "/",
-        "main": "mobile/src/main.tsx",
-        "tsConfig": "mobile/tsconfig.app.json",
+        "main": "app-mobile/src/main.tsx",
+        "tsConfig": "app-mobile/tsconfig.app.json",
         "assets": [
-          "mobile/src/assets",
-          "./mobile/src/manifest.json",
+          "app-mobile/src/assets",
+          "./app-mobile/src/manifest.json",
           {
             "glob": "**/*.svg",
             "input": "node_modules/ionicons/dist/ionicons/svg",
@@ -26,13 +26,13 @@
           }
         ],
         "styles": [
-          "mobile/src/styles.css",
+          "app-mobile/src/styles.css",
           {
-            "input": "./mobile/src/theme/variables.css"
+            "input": "./app-mobile/src/theme/variables.css"
           }
         ],
         "scripts": [],
-        "webpackConfig": "mobile/webpack.config.js"
+        "webpackConfig": "app-mobile/webpack.config.js"
       },
       "configurations": {
         "development": {
@@ -44,8 +44,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "mobile/src/environments/environment.ts",
-              "with": "mobile/src/environments/environment.prod.ts"
+              "replace": "app-mobile/src/environments/environment.ts",
+              "with": "app-mobile/src/environments/environment.prod.ts"
             }
           ],
           "optimization": true,
@@ -61,15 +61,15 @@
       "executor": "@nx/webpack:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "mobile:build",
+        "buildTarget": "app-mobile:build",
         "hmr": true
       },
       "configurations": {
         "development": {
-          "buildTarget": "mobile:build:development"
+          "buildTarget": "app-mobile:build:development"
         },
         "production": {
-          "buildTarget": "mobile:build:production",
+          "buildTarget": "app-mobile:build:production",
           "hmr": false
         }
       }
