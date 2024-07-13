@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@drivingo/data": ["data/src/index.ts"],
-      "@drivingo/models": ["models/src/index.ts"]
+      "@drivingo/models": ["models/src/index.ts"],
+      "@drivingo/ui/components": ["ui/src/components/index.ts"],
+      "@drivingo/ui/compound": ["ui/src/compound/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
