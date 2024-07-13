@@ -1,8 +1,7 @@
 import { UIHeader } from '@drivingo/ui/compound';
 import {
     IonContent,
-    IonPage,
-    IonRouterLink
+    IonPage
 } from '@ionic/react';
 
 const TrafficSigns: React.FC = () => {
@@ -10,9 +9,7 @@ const TrafficSigns: React.FC = () => {
         <IonPage>
             <UIHeader title='Traffic Signs' />
             <IonContent fullscreen>
-                <IonRouterLink routerDirection='back' routerLink='/home'>
-                    <p>Back</p>
-                </IonRouterLink>
+                Traffic signs content
             </IonContent>
         </IonPage>
     );
