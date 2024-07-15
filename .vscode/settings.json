@@ -1,15 +1,15 @@
 {
   "files.exclude": {
-    "**/.git": false,
-    "**/.svn": false,
-    "**/.hg": false,
-    "**/CVS": false,
-    ".github": false,
-    ".nx": false,
-    ".verdaccio": false,
-    ".vscode": false,
-    "**/.gitkeep": false,
-    "node_modules": false,
-    "package-lock.json": false
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    ".github": true,
+    ".nx": true,
+    ".verdaccio": true,
+    ".vscode": true,
+    "**/.gitkeep": true,
+    "node_modules": true,
+    "package-lock.json": true
   }
 }
