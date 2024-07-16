@@ -1,6 +1,5 @@
 import { DATA_TOPICS } from '@drivingo/data';
 import { UIButton, UILink } from '@drivingo/ui/components';
-import { UIHeader } from '@drivingo/ui/compound';
 import {
   IonContent,
   IonHeader,
@@ -14,13 +13,12 @@ import './Home.css';
 const Home: React.FC = () => {
   return (
     <IonPage>
-      <UIHeader title='Home' />
+      <IonHeader>
+        <IonToolbar>
+          <IonTitle>Home</IonTitle>
+        </IonToolbar>
+      </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Home</IonTitle>
-          </IonToolbar>
-        </IonHeader>
         <IonRouterLink routerDirection='root' routerLink='/traffic-signs'>
           <p>Traffic Signs</p>
         </IonRouterLink>
