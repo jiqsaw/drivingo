@@ -35,6 +35,26 @@ function CarLanding() {
             </div>)
           }
         </div>
+
+
+        <IonButton id="settings">
+          <IonIcon slot="icon-only" src={settings}></IonIcon>
+        </IonButton>
+        <IonPopover trigger="settings" side="right" alignment="end">
+          <IonContent class="ion-padding" scrollY={false}>
+            {/* <IonRouterLink routerDirection='root' routerLink='/traffic-signs' >
+              Traffic Signs
+            </IonRouterLink> */}
+            <IonList>
+              <IonItem routerLink="/traffic-signs">
+                <IonLabel>User 1</IonLabel>
+              </IonItem>
+              <IonItem routerLink="/dashboard/users/2">
+                <IonLabel>User 2</IonLabel>
+              </IonItem>
+            </IonList>
+          </IonContent>
+        </IonPopover>
         <IonNavLink routerDirection="forward" component={() => <CarLearn />}>
           <IonButton>Go to Page Two</IonButton>
         </IonNavLink>
