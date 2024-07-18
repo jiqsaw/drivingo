@@ -29,8 +29,8 @@ function CarLanding() {
           </IonButton>
           {
             subMenuOpened && (<div>
-              <IonRouterLink routerDirection='root' routerLink='/traffic-signs' >
-                Traffic Signs
+              <IonRouterLink routerDirection='root' routerLink='/settings' >
+                settings
               </IonRouterLink>
             </div>)
           }
@@ -42,9 +42,6 @@ function CarLanding() {
         </IonButton>
         <IonPopover trigger="settings" side="right" alignment="end">
           <IonContent class="ion-padding" scrollY={false}>
-            {/* <IonRouterLink routerDirection='root' routerLink='/traffic-signs' >
-              Traffic Signs
-            </IonRouterLink> */}
             <IonList>
               <IonItem routerLink="/traffic-signs">
                 <IonLabel>User 1</IonLabel>
@@ -58,6 +55,13 @@ function CarLanding() {
         <IonNavLink routerDirection="forward" component={() => <CarLearn />}>
           <IonButton>Go to Page Two</IonButton>
         </IonNavLink>
+
+        <IonRouterLink routerDirection='root' routerLink='/settings' >
+          settings
+        </IonRouterLink>
+        <IonRouterLink routerDirection='root' routerLink='/settings' >
+          settings2
+        </IonRouterLink>
       </IonContent>
     </>
   );
