@@ -9,13 +9,13 @@ import {
   IonTitle,
   IonToolbar,
 } from '@ionic/react';
-import './Home.css';
 
 const Home: React.FC = () => {
   return (
+
     <IonPage>
       <UIHeader title='Home' />
-      <IonContent fullscreen>
+      <IonContent fullscreen className='ion-padding'>
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Home</IonTitle>
@@ -28,6 +28,11 @@ const Home: React.FC = () => {
         <span> example data: {DATA_TOPICS[0].name} </span>
         <br /><br />
         <UILink text='link example' />
+
+
+        <IonRouterLink routerDirection='forward' routerLink='/settings'>
+          <p>Settings</p>
+        </IonRouterLink>
       </IonContent>
     </IonPage>
   );

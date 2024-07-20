@@ -1,18 +1,18 @@
 import { UIHeader } from '@drivingo/ui/compound';
 import {
   IonContent,
-  IonPage
+  IonPage,
 } from '@ionic/react';
 
-const TrafficSigns: React.FC = () => {
+const QuickTestTopic: React.FC = () => {
   return (
     <IonPage>
-      <UIHeader title='Traffic Signs' />
+      <UIHeader title='Quick Test Topic' />
       <IonContent fullscreen className='ion-padding'>
-        Traffic signs content
+        Quick Test Topic
       </IonContent>
     </IonPage>
   );
 };
 
-export default TrafficSigns;
+export default QuickTestTopic;
