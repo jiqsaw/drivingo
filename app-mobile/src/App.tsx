@@ -25,7 +25,6 @@ import '@ionic/react/css/text-transformation.css';
 import './theme/variables.css';
 
 import { library, playCircle, radio } from 'ionicons/icons';
-import { useTheme } from './context/theme-provider';
 import TheoryTest from './pages/theory-test/TheoryTest';
 import Learn from './pages/theory-test/learn/Learn';
 import QuickTest from './pages/theory-test/quick-test/QuickTest';
@@ -38,13 +37,13 @@ import HighwayCode from './pages/highway-code/HighwayCode';
 import Subscription from './pages/Subscription';
 import HighwayCodeContent from './pages/highway-code/Content';
 import HighwayCodeSigns from './pages/highway-code/Signs';
-
+import { useSelector } from 'react-redux';
+import { AppState } from './state/store';
 
 setupIonicReact();
 
 const App: React.FC = () => {
-  const { theme } = useTheme();
-
+  const theme = useSelector((state: AppState) => state.ui.theme);
   return (<IonApp className={theme}>
     <IonReactRouter>
       <IonTabs>
