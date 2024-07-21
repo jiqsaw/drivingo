@@ -1,21 +1,3 @@
-
-export interface IUser extends IUserProfile {
-  email: string | null;
-  displayName: string | null;
-}
-export interface IUserProfile {
-  languageCode: string | null;
-  permissions: { pushNotificationId: string | null };
-  testDate: string | null;
-  preferences: IUserPreferences;
-  progress: IUserProgress;
-}
-
-export interface IUserPreferences {
-  quickTestNumberOfQuestions: number;
-  hideMockTestGuide: boolean;
-}
-
 export interface IUserProgress {
   practice: IUserProgressPractice;
   mockTest: IUserProgressMockTest;
