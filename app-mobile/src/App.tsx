@@ -44,7 +44,8 @@ setupIonicReact();
 
 const App: React.FC = () => {
   const theme = useSelector((state: AppState) => state.ui.theme);
-  return (<IonApp className={theme}>
+
+  return (<IonApp className={theme || ""}>
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>

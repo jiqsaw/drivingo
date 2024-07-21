@@ -1,6 +1,7 @@
 import { Preferences } from "@capacitor/preferences";
 import { IStoreUI } from "@drivingo/models";
-import { createSlice, PayloadAction, configureStore, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction, createAsyncThunk } from "@reduxjs/toolkit";
+import { AppState } from "../store";
 
 const getInitialTheme = async (): Promise<string> => {
   let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
@@ -21,13 +22,13 @@ export const fetchInitialTheme = createAsyncThunk('ui/fetchInitialTheme',
 
 export const changeTheme = createAsyncThunk('ui/changeTheme',
   async (newTheme: IStoreUI["theme"], { dispatch }) => {
-    await Preferences.set({ key: 'app-theme', value: newTheme });
+    await Preferences.set({ key: 'app-theme', value: newTheme || "" });
     dispatch(setTheme(newTheme));
   }
 );
 
 export const uiInitialState: IStoreUI = {
-  theme: 'light',
+  theme: null,
   quickTestNumberOfQuestions: 10,
   hideMockTestIntroduction: false,
 }
@@ -48,14 +49,4 @@ export const uiSlice = createSlice({
 });
 
 export const { setTheme } = uiSlice.actions;
-export const selectUi = (state: { ui: IStoreUI }) => state.ui;
-
-const store = configureStore({
-  reducer: {
-    ui: uiSlice.reducer
-  }
-});
-
-// store.dispatch(fetchInitialTheme());
-
-export default store;
+export const selectUi = (state: AppState) => state.ui;
