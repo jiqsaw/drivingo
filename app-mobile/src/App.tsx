@@ -38,12 +38,20 @@ import Subscription from './pages/Subscription';
 import HighwayCodeContent from './pages/highway-code/Content';
 import HighwayCodeSigns from './pages/highway-code/Signs';
 import { useSelector } from 'react-redux';
-import { AppState } from './state/store';
+import { AppState, store } from './state/store';
+import { useEffect } from 'react';
+import { fetchInitialTheme } from './state/ui/ui.slice';
 
 setupIonicReact();
 
 const App: React.FC = () => {
   const theme = useSelector((state: AppState) => state.ui.theme);
+
+  useEffect(() => {
+    if (!theme) {
+      store.dispatch(fetchInitialTheme());
+    }
+  }, [theme]);
 
   return (<IonApp className={theme || ""}>
     <IonReactRouter>
