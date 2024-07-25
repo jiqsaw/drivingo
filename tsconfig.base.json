@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@drivingo/data": ["data/src/index.ts"],
+      "@drivingo/db/firebase": ["db/firebase/src/index.ts"],
       "@drivingo/feat-traffic-signs": ["feat-traffic-signs/src/index.tsx"],
       "@drivingo/models": ["models/src/index.ts"],
       "@drivingo/ui/components": ["ui/src/components/index.ts"],
