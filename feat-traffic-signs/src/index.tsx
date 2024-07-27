@@ -2,7 +2,6 @@
 
 import { DATA_DIRECTION_SIGNS, DATA_INFORMATION_SIGNS, DATA_ROAD_WORKS_SIGNS, DATA_SIGNS_GIVING_ORDERS, DATA_WARNING_SIGNS } from "@drivingo/data";
 import { ITrafficSign } from "@drivingo/models";
-import React from "react";
 import { useState } from "react";
 
 
