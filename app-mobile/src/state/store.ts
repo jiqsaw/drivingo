@@ -6,7 +6,6 @@ import { historySlice } from "./history/history.slice";
 import { persistStore, persistReducer } from 'redux-persist';
 import { userDetailSlice } from "./user-detail/user-detail.slice";
 import { activeHazardPerceptionSlice } from "./active-hazard-perception/active-hazard-perception";
-import { thunk } from 'redux-thunk';
 import storage from 'redux-persist/lib/storage';
 
 

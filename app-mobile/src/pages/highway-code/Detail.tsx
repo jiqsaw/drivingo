@@ -1,15 +1,15 @@
 
 import { IonContent, IonPage } from "@ionic/react";
 import { UIHeader } from "@drivingo/ui/compound";
-const HighwayCodeSigns = () => {
+const HighwayCodeDetail = () => {
   return (
     <IonPage>
-      <UIHeader title='Signs' />
+      <UIHeader title=' HighwayCode Detail' />
       <IonContent fullscreen className='ion-padding'>
-        Signs
+        Detail
       </IonContent>
-    </IonPage>
+    </IonPage >
   )
 }
 
-export default HighwayCodeSigns;
+export default HighwayCodeDetail;
