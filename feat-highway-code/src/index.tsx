@@ -37,11 +37,12 @@ const FeatHighwayCode = () => {
       }} />
       <div className="tab">
         <div className="tab-menu">
-          <button>
-            <span onClick={() => setActiveTab(0)} className={activeTab === 0 ? "active" : ""}>Content</span>
+          <button onClick={() => setActiveTab(0)} className={activeTab === 0 ? "active" : ""}>
+            Content
           </button>
-          <button>
-            <span onClick={() => setActiveTab(1)} className={activeTab === 1 ? "active" : ""}>Signs</span>
+          -
+          <button onClick={() => setActiveTab(1)} className={activeTab === 1 ? "active" : ""}>
+            Signs
           </button>
         </div>
         <div className="tab-contents">

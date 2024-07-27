@@ -6,7 +6,22 @@ const HighwayCodeDetail = () => {
     <IonPage>
       <UIHeader title=' HighwayCode Detail' />
       <IonContent fullscreen className='ion-padding'>
-        Detail
+        <p>
+          LOrem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          consectetur, felis in ultricies posuere, purus justo fermentum
+          sapien, nec tincidunt tortor ligula nec eros. Quisque ac arcu
+        </p>
+        <p>
+          LOrem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          consectetur, felis in ultricies posuere, purus justo fermentum
+          sapien, nec tincidunt tortor ligula nec eros. Quisque ac arcu
+        </p>
+
+        <p>
+          LOrem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          consectetur, felis in ultricies posuere, purus justo fermentum
+          sapien, nec tincidunt tortor ligula nec eros. Quisque ac arcu
+        </p>
       </IonContent>
     </IonPage >
   )
