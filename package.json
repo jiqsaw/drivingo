@@ -2,7 +2,10 @@
   "name": "@drivingo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "app-mobile:build:dev": "nx run app-mobile:build:development",
+    "app-mobile:deploy:staging": "gcloud app deploy app-mobile/app.yaml --quiet"
+  },
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.14.5",
