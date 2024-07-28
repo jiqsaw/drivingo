@@ -1,9 +1,9 @@
 export const FIREBASE_CONFIG = {
-    apiKey: "AIzaSyAQOFxPXox4lQkf14GhqTiEt-sqx0jjM1g",
-    authDomain: "drivingo-staging.firebaseapp.com",
-    projectId: "drivingo-staging",
-    storageBucket: "drivingo-staging.appspot.com",
-    messagingSenderId: "652043175986",
-    appId: "1:652043175986:web:6d357f67ee0a780eda942b",
-    measurementId: "G-00VYGJ9BXD"
+    apiKey: "AIzaSyD4e9K1V7kgYXy7h38x_O-HXzrszR541vk",
+    authDomain: "drivingo-v2.firebaseapp.com",
+    projectId: "drivingo-v2",
+    storageBucket: "drivingo-v2.appspot.com",
+    messagingSenderId: "548831007279",
+    appId: "1:548831007279:web:81e36b1ff9c13b3b136cda",
+    measurementId: "G-1TQV4KV4V9"
 };
