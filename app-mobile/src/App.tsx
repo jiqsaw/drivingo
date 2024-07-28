@@ -35,7 +35,8 @@ import QuickTestTopic from './pages/theory-test/quick-test/topics/Topics';
 import HazardPerception from './pages/theory-test/HazardPerception';
 import HighwayCode from './pages/highway-code/HighwayCode';
 import Subscription from './pages/Subscription';
-import HighwayCodeDetail from './pages/highway-code/Detail';
+import HighwayCodeDetailPage from './pages/highway-code/Detail';
+
 
 import { useSelector } from 'react-redux';
 import { AppState, store } from './state/store';
@@ -76,8 +77,8 @@ const App: React.FC = () => {
           <Route path="/theory-test/:category/mock-test/:test-id" render={() => <Home />} exact={true} />
 
           {/* Extras */}
-          <Route path="/highway-code" render={() => <HighwayCode />} />
-          <Route path="/highway-code/:id" render={() => <HighwayCodeDetail />} />
+          <Route path="/highway-code" render={() => <HighwayCode />} exact={true} />
+          <Route path="/highway-code/:id" render={() => <HighwayCodeDetailPage />} exact={true} />
 
           <Route path="/traffic-signs" render={() => <TrafficSigns />} exact={true} />
 

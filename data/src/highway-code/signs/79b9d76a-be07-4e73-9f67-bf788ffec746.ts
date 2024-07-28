@@ -1,4 +1,4 @@
-{
+export default {
   "analytics_identifier": null,
   "base_path": "/guidance/the-highway-code/signals-by-authorised-persons",
   "content_id": "79b9d76a-be07-4e73-9f67-bf788ffec746",

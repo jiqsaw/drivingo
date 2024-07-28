@@ -1,4 +1,4 @@
-{
+export default {
   "analytics_identifier": null,
   "base_path": "/guidance/the-highway-code/light-signals-controlling-traffic",
   "content_id": "f2a7ef41-7e4e-4b4b-a292-32f2d8990164",

@@ -1,30 +1,24 @@
 
 import { IonContent, IonPage } from "@ionic/react";
 import { UIHeader } from "@drivingo/ui/compound";
-const HighwayCodeDetail = () => {
+import { useParams } from "react-router";
+import { HighwayCodeDetail } from "@drivingo/feat-highway-code";
+
+const HighwayCodeDetailPage = () => {
+
+  // use params
+  const { id } = useParams<{ id: string }>();
+
+
+
   return (
     <IonPage>
-      <UIHeader title=' HighwayCode Detail' />
+      <UIHeader title='HighwayCode Detail' />
       <IonContent fullscreen className='ion-padding'>
-        <p>
-          LOrem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          consectetur, felis in ultricies posuere, purus justo fermentum
-          sapien, nec tincidunt tortor ligula nec eros. Quisque ac arcu
-        </p>
-        <p>
-          LOrem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          consectetur, felis in ultricies posuere, purus justo fermentum
-          sapien, nec tincidunt tortor ligula nec eros. Quisque ac arcu
-        </p>
-
-        <p>
-          LOrem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          consectetur, felis in ultricies posuere, purus justo fermentum
-          sapien, nec tincidunt tortor ligula nec eros. Quisque ac arcu
-        </p>
+        <HighwayCodeDetail id={id} />
       </IonContent>
     </IonPage >
   )
 }
 
-export default HighwayCodeDetail;
+export default HighwayCodeDetailPage;

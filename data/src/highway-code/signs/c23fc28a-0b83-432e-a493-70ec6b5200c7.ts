@@ -1,4 +1,4 @@
-{
+export default {
   "analytics_identifier": null,
   "base_path": "/guidance/the-highway-code/traffic-signs",
   "content_id": "c23fc28a-0b83-432e-a493-70ec6b5200c7",

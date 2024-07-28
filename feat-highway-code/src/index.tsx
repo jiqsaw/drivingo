@@ -6,6 +6,7 @@ import { IHighwayCode } from "@drivingo/models";
 import { useState } from "react";
 import HighwayCodeContent from "./Content";
 import HighwayCodeSigns from "./Signs";
+import HighwayCodeDetail from "./Detail";
 
 
 
@@ -53,6 +54,8 @@ const FeatHighwayCode = () => {
     </div>
   );
 };
+
+export { HighwayCodeDetail };
 
 
 export default FeatHighwayCode;

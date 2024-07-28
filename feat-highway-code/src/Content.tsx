@@ -15,7 +15,7 @@ const HighwayCodeContent: FC<HighwayCodeContentProps> = ({ data }) => {
         data.map((item) => (
           <div key={item.id}>
             <IonRouterLink routerLink={`/highway-code/${item.id}`}>
-              <h2>{item.title}</h2>
+              <span>{item.title}</span>
             </IonRouterLink>
           </div>
         ))

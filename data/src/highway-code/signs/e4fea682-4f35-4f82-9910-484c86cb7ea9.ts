@@ -1,4 +1,4 @@
-{
+export default {
   "analytics_identifier": null,
   "base_path": "/guidance/the-highway-code/signals-to-other-road-users",
   "content_id": "e4fea682-4f35-4f82-9910-484c86cb7ea9",

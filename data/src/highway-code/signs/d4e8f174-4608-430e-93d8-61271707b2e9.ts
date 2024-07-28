@@ -1,4 +1,4 @@
-{
+export default {
   "analytics_identifier": null,
   "base_path": "/guidance/the-highway-code/road-markings",
   "content_id": "d4e8f174-4608-430e-93d8-61271707b2e9",
