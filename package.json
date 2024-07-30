@@ -2,7 +2,10 @@
   "name": "@drivingo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "app-mobile:build:dev": "nx run app-mobile:build:development",
+    "app-mobile:deploy:staging": "gcloud app deploy app-mobile/app.yaml --quiet"
+  },
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.14.5",
@@ -12,8 +15,8 @@
     "@capacitor/ios": "^6.1.1",
     "@nx/eslint": "19.2.3",
     "@nx/eslint-plugin": "19.2.3",
-    "@nx/js": "19.4.3",
-    "@nx/react": "^19.4.3",
+    "@nx/js": "19.5.3",
+    "@nx/react": "19.5.3",
     "@nx/web": "19.2.3",
     "@nx/webpack": "19.2.3",
     "@nx/workspace": "19.4.3",
@@ -54,6 +57,7 @@
     "@ionic/storage": "^4.0.0",
     "@reduxjs/toolkit": "^2.2.6",
     "@types/react-router": "^5.0.3",
+    "firebase": "^10.12.4",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-redux": "^9.1.2",

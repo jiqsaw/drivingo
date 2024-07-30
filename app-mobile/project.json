@@ -11,20 +11,12 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/app-mobile",
+        "outputPath": "app-mobile/build",
         "index": "app-mobile/src/index.html",
         "baseHref": "/",
         "main": "app-mobile/src/main.tsx",
         "tsConfig": "app-mobile/tsconfig.app.json",
-        "assets": [
-          "app-mobile/src/assets",
-          "./app-mobile/src/manifest.json",
-          {
-            "glob": "**/*.svg",
-            "input": "node_modules/ionicons/dist/ionicons/svg",
-            "output": "./svg"
-          }
-        ],
+        "assets": ["app-mobile/src/assets", "./app-mobile/src/manifest.json"],
         "styles": [
           "app-mobile/src/styles.css",
           {
