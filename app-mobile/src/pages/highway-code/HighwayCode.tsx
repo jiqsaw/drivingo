@@ -1,14 +1,17 @@
 
-import { IonContent, IonPage, IonRouterLink } from "@ionic/react";
+import { IonContent, IonPage } from "@ionic/react";
 import { UIHeader } from "@drivingo/ui/compound";
+import FeatHighwayCode from "@drivingo/feat-highway-code";
+
+
+
 const HighwayCode = () => {
+
   return (
     <IonPage>
       <UIHeader title='HighwayCode' />
       <IonContent fullscreen className='ion-padding'>
-        <IonRouterLink routerDirection='forward' routerLink='/highway-code/1'>
-          <p>HighwayCode Detail</p>
-        </IonRouterLink>
+        <FeatHighwayCode />
       </IonContent>
     </IonPage>
   )

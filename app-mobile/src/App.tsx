@@ -35,8 +35,9 @@ import QuickTestTopic from './pages/theory-test/quick-test/topics/Topics';
 import HazardPerception from './pages/theory-test/HazardPerception';
 import HighwayCode from './pages/highway-code/HighwayCode';
 import Subscription from './pages/Subscription';
-import HighwayCodeContent from './pages/highway-code/Content';
-import HighwayCodeSigns from './pages/highway-code/Signs';
+import HighwayCodeDetailPage from './pages/highway-code/Detail';
+
+
 import { useSelector } from 'react-redux';
 import { AppState, store } from './state/store';
 import { useEffect } from 'react';
@@ -77,9 +78,8 @@ const App: React.FC = () => {
 
           {/* Extras */}
           <Route path="/highway-code" render={() => <HighwayCode />} exact={true} />
-          <Route path="/highway-code/:id" render={() => <HighwayCodeContent />} exact={true} />
-          <Route path="/highway-code/sign" render={() => <HighwayCodeSigns />} exact={true} />
-          <Route path="/highway-code/search-result/:keyword" render={() => <Home />} exact={true} />
+          <Route path="/highway-code/:id" render={() => <HighwayCodeDetailPage />} exact={true} />
+
           <Route path="/traffic-signs" render={() => <TrafficSigns />} exact={true} />
 
           {/* Settings */}
@@ -87,11 +87,6 @@ const App: React.FC = () => {
 
           {/* Subsciripton */}
           <Route path="/subsciripton" render={() => <Subscription />} exact={true} />
-
-
-
-
-
 
         </IonRouterOutlet>
 

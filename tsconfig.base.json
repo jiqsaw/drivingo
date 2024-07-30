@@ -22,6 +22,7 @@
         "feat-hazard-perception/src/index.ts"
       ],
       "@drivingo/feat-traffic-signs": ["feat-traffic-signs/src/index.tsx"],
+      "@drivingo/feat-highway-code": ["feat-highway-code/src/index.tsx"],
       "@drivingo/models": ["models/src/index.ts"],
       "@drivingo/ui/components": ["ui/src/components/index.ts"],
       "@drivingo/ui/compound": ["ui/src/compound/index.ts"]
