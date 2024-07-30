@@ -10,7 +10,7 @@ export default {
         "content_type": "application/jpg",
         "id": "ec0a5660-f796-481c-a144-13b50159c302",
         "title": "The Highway Code: rule 269",
-        "url": "https://assets.digital.cabinet-office.gov.uk/media/559d5121ed915d1592000034/the-highway-code-rule-269.jpg"
+        "url": "assets/images/highway-code/the-highway-code-rule-269.jpg"
       },
       {
         "attachment_type": "file",

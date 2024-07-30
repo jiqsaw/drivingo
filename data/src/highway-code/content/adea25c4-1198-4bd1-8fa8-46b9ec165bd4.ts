@@ -10,7 +10,7 @@ export default {
         "content_type": "application/jpg",
         "id": "6c6fafc6-8c41-4796-8a1e-8dac0640946c",
         "title": "The Highway Code: rule 275",
-        "url": "https://assets.digital.cabinet-office.gov.uk/media/559d51e140f0b61567000035/the-highway-code-rule-275.jpg"
+        "url": "assets/images/highway-code/the-highway-code-rule-275.jpg"
       },
       {
         "attachment_type": "file",

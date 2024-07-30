@@ -16,7 +16,7 @@ const FeatTrafficSigns = () => {
     ...DATA_WARNING_SIGNS,
   ];
 
-  const imgBaseUrl = "../../data/src/traffic-signs/images/";
+  const imgBaseUrl = "assets/images/traffic-signs/";
 
   const [search, setsearch] = useState("");
   // filter all signs state
@@ -43,9 +43,6 @@ const FeatTrafficSigns = () => {
 
       <div className="signs">
         {filteredAllSigns.length > 0 ? filteredAllSigns.map((item, index) => {
-
-
-          const imgSrc = require(`${imgBaseUrl}${item.src}`);
           return (
             <div key={index} className="sign">
               <figure style={{
@@ -59,7 +56,7 @@ const FeatTrafficSigns = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
               }}>
-                <img src={imgSrc} alt={item.desc} />
+                <img src={`${imgBaseUrl}${item.src}`} alt={""} />
               </figure>
               <p>{item.desc}</p>
             </div>
