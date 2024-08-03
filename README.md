@@ -32,6 +32,20 @@ Run `npx nx list` to get a list of available plugins and whether they have gener
 
 Learn more about [code generators](https://nx.dev/features/generate-code) and [inferred tasks](https://nx.dev/concepts/inferred-tasks) in the docs.
 
+## Build and Deploy
+
+To build for web
+
+```
+npm start app-mobile:build:dev
+```
+
+To deploy app to the staging
+
+```
+npm start app-mobile:deploy:staging
+```
+
 ## Running tasks
 
 To execute tasks with Nx use the following syntax:

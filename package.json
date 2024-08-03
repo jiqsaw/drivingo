@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "start": "npx nx run app-mobile:serve ",
     "app-mobile:build:dev": "nx run app-mobile:build:development",
     "app-mobile:deploy:staging": "gcloud app deploy app-mobile/app.yaml --quiet"
   },

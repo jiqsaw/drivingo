@@ -1,12 +1,12 @@
-import { combineReducers } from "redux";
-import { uiSlice } from "./ui/ui.slice";
 import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers } from "redux";
+import { persistReducer, persistStore } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
+import { activeHazardPerceptionSlice } from "./active-hazard-perception/active-hazard-perception";
 import { activeTestSlice } from "./active-test/active-test.slice";
 import { historySlice } from "./history/history.slice";
-import { persistStore, persistReducer } from 'redux-persist';
+import { uiSlice } from "./ui/ui.slice";
 import { userDetailSlice } from "./user-detail/user-detail.slice";
-import { activeHazardPerceptionSlice } from "./active-hazard-perception/active-hazard-perception";
-import storage from 'redux-persist/lib/storage';
 
 
 export const rootReducer = combineReducers({
@@ -20,15 +20,17 @@ export const rootReducer = combineReducers({
 export type AppState = ReturnType<typeof rootReducer>;
 
 const persistConfig = {
-  key: 'root',
   version: 0,
   storage: storage,
+  key: 'drivingo-store-root',
+  blacklist: ['activeTest', 'activeHazardPerception'],
+  debug: false,
 };
 
-const persistedReducer = persistReducer(persistConfig, rootReducer)
+const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 export const store = configureStore({
   reducer: persistedReducer
-})
+});
 
-export const persistor = persistStore(store)
+export const persistor = persistStore(store);
