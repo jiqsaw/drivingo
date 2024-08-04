@@ -1,163 +1,161 @@
 {
-  "name": "app-mobile",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "app-mobile/src",
-  "projectType": "application",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/webpack:webpack",
-      "outputs": ["{options.outputPath}"],
-      "defaultConfiguration": "production",
-      "options": {
-        "compiler": "babel",
-        "outputPath": "app-mobile/build",
-        "index": "app-mobile/src/index.html",
-        "baseHref": "/",
-        "main": "app-mobile/src/main.tsx",
-        "tsConfig": "app-mobile/tsconfig.app.json",
-        "assets": ["app-mobile/src/assets", "./app-mobile/src/manifest.json"],
-        "styles": [
-          "app-mobile/src/styles.css",
-          {
-            "input": "./app-mobile/src/theme/variables.css"
-          }
-        ],
-        "scripts": [],
-        "webpackConfig": "app-mobile/webpack.config.js"
-      },
-      "configurations": {
-        "development": {
-          "extractLicenses": false,
-          "optimization": false,
-          "sourceMap": true,
-          "vendorChunk": true
-        },
-        "production": {
-          "fileReplacements": [
-            {
-              "replace": "app-mobile/src/environments/environment.ts",
-              "with": "app-mobile/src/environments/environment.prod.ts"
+    "name": "app-mobile",
+    "$schema": "../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "app-mobile/src",
+    "projectType": "application",
+    "tags": [],
+    "targets": {
+        "build": {
+            "executor": "@nx/webpack:webpack",
+            "outputs": ["{options.outputPath}"],
+            "defaultConfiguration": "production",
+            "options": {
+                "compiler": "babel",
+                "outputPath": "app-mobile/build",
+                "index": "app-mobile/src/index.html",
+                "baseHref": "/",
+                "main": "app-mobile/src/main.tsx",
+                "tsConfig": "app-mobile/tsconfig.app.json",
+                "assets": [
+                    "app-mobile/src/assets",
+                    "./app-mobile/src/manifest.json"
+                ],
+                "styles": ["app-mobile/src/styles/index.css"],
+                "scripts": [],
+                "webpackConfig": "app-mobile/webpack.config.js"
+            },
+            "configurations": {
+                "development": {
+                    "extractLicenses": false,
+                    "optimization": false,
+                    "sourceMap": true,
+                    "vendorChunk": true
+                },
+                "production": {
+                    "fileReplacements": [
+                        {
+                            "replace": "app-mobile/src/environments/environment.ts",
+                            "with": "app-mobile/src/environments/environment.prod.ts"
+                        }
+                    ],
+                    "optimization": true,
+                    "outputHashing": "all",
+                    "sourceMap": false,
+                    "namedChunks": false,
+                    "extractLicenses": true,
+                    "vendorChunk": false
+                }
             }
-          ],
-          "optimization": true,
-          "outputHashing": "all",
-          "sourceMap": false,
-          "namedChunks": false,
-          "extractLicenses": true,
-          "vendorChunk": false
-        }
-      }
-    },
-    "serve": {
-      "executor": "@nx/webpack:dev-server",
-      "defaultConfiguration": "development",
-      "options": {
-        "buildTarget": "app-mobile:build",
-        "hmr": true
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "app-mobile:build:development"
         },
-        "production": {
-          "buildTarget": "app-mobile:build:production",
-          "hmr": false
-        }
-      }
-    },
-    "lint": {
-      "executor": "@nx/eslint:lint"
-    },
-    "cap": {
-      "executor": "@nxext/capacitor:cap",
-      "options": {
-        "cmd": "--help"
-      }
-    },
-    "add": {
-      "executor": "@nxext/capacitor:cap",
-      "options": {
-        "cmd": "add"
-      },
-      "configurations": {
-        "ios": {
-          "cmd": "add ios"
+        "serve": {
+            "executor": "@nx/webpack:dev-server",
+            "defaultConfiguration": "development",
+            "options": {
+                "buildTarget": "app-mobile:build",
+                "hmr": true
+            },
+            "configurations": {
+                "development": {
+                    "buildTarget": "app-mobile:build:development"
+                },
+                "production": {
+                    "buildTarget": "app-mobile:build:production",
+                    "hmr": false
+                }
+            }
         },
-        "android": {
-          "cmd": "add android"
-        }
-      }
-    },
-    "copy": {
-      "executor": "@nxext/capacitor:cap",
-      "options": {
-        "cmd": "copy"
-      },
-      "configurations": {
-        "ios": {
-          "cmd": "copy ios"
+        "lint": {
+            "executor": "@nx/eslint:lint"
         },
-        "android": {
-          "cmd": "copy android"
-        }
-      }
-    },
-    "open": {
-      "executor": "@nxext/capacitor:cap",
-      "options": {
-        "cmd": "open"
-      },
-      "configurations": {
-        "ios": {
-          "cmd": "open ios"
+        "cap": {
+            "executor": "@nxext/capacitor:cap",
+            "options": {
+                "cmd": "--help"
+            }
         },
-        "android": {
-          "cmd": "open android"
-        }
-      }
-    },
-    "run": {
-      "executor": "@nxext/capacitor:cap",
-      "options": {
-        "cmd": "run"
-      },
-      "configurations": {
-        "ios": {
-          "cmd": "run ios"
+        "add": {
+            "executor": "@nxext/capacitor:cap",
+            "options": {
+                "cmd": "add"
+            },
+            "configurations": {
+                "ios": {
+                    "cmd": "add ios"
+                },
+                "android": {
+                    "cmd": "add android"
+                }
+            }
         },
-        "android": {
-          "cmd": "run android"
-        }
-      }
-    },
-    "sync": {
-      "executor": "@nxext/capacitor:cap",
-      "options": {
-        "cmd": "sync"
-      },
-      "configurations": {
-        "ios": {
-          "cmd": "sync ios"
+        "copy": {
+            "executor": "@nxext/capacitor:cap",
+            "options": {
+                "cmd": "copy"
+            },
+            "configurations": {
+                "ios": {
+                    "cmd": "copy ios"
+                },
+                "android": {
+                    "cmd": "copy android"
+                }
+            }
         },
-        "android": {
-          "cmd": "sync android"
-        }
-      }
-    },
-    "update": {
-      "executor": "@nxext/capacitor:cap",
-      "options": {
-        "cmd": "update"
-      },
-      "configurations": {
-        "ios": {
-          "cmd": "update ios"
+        "open": {
+            "executor": "@nxext/capacitor:cap",
+            "options": {
+                "cmd": "open"
+            },
+            "configurations": {
+                "ios": {
+                    "cmd": "open ios"
+                },
+                "android": {
+                    "cmd": "open android"
+                }
+            }
         },
-        "android": {
-          "cmd": "update android"
+        "run": {
+            "executor": "@nxext/capacitor:cap",
+            "options": {
+                "cmd": "run"
+            },
+            "configurations": {
+                "ios": {
+                    "cmd": "run ios"
+                },
+                "android": {
+                    "cmd": "run android"
+                }
+            }
+        },
+        "sync": {
+            "executor": "@nxext/capacitor:cap",
+            "options": {
+                "cmd": "sync"
+            },
+            "configurations": {
+                "ios": {
+                    "cmd": "sync ios"
+                },
+                "android": {
+                    "cmd": "sync android"
+                }
+            }
+        },
+        "update": {
+            "executor": "@nxext/capacitor:cap",
+            "options": {
+                "cmd": "update"
+            },
+            "configurations": {
+                "ios": {
+                    "cmd": "update ios"
+                },
+                "android": {
+                    "cmd": "update android"
+                }
+            }
         }
-      }
     }
-  }
 }
