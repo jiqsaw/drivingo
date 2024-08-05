@@ -4,7 +4,7 @@
     "license": "MIT",
     "scripts": {
         "start": "npx nx run app-mobile:serve ",
-        "app-mobile:build:dev": "nx run app-mobile:build:development",
+        "app-mobile:build:dev": "nx run app-mobile:build:development --skip-nx-cache",
         "app-mobile:deploy:dev": "gcloud app deploy app-mobile/deploy.dev.yaml --quiet",
         "app-mobile:deploy:prod": "gcloud app deploy app-mobile/deploy.yaml --quiet"
     },
