@@ -1,4 +1,3 @@
-import { DATA_TOPICS } from '@drivingo/data';
 import { UIButton, UILink } from '@drivingo/ui/components';
 import { UIHeader } from '@drivingo/ui/compound';
 import {
@@ -25,7 +24,6 @@ const Home: React.FC = () => {
           <p>Traffic Signs</p>
         </IonRouterLink>
         <UIButton text='example button' /><br /><br />
-        <span> example data: {DATA_TOPICS[0].name} </span>
         <br /><br />
         <UILink text='link example' />
 

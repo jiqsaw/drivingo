@@ -1,13 +1,7 @@
-import { DATA_TOPICS } from '@drivingo/data';
-import { UIButton, UILink } from '@drivingo/ui/components';
 import { UIHeader } from '@drivingo/ui/compound';
 import {
   IonContent,
-  IonHeader,
-  IonPage,
-  IonRouterLink,
-  IonTitle,
-  IonToolbar,
+  IonPage
 } from '@ionic/react';
 
 const MockTest: React.FC = () => {

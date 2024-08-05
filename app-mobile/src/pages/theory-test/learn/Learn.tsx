@@ -1,5 +1,3 @@
-import { DATA_TOPICS } from '@drivingo/data';
-import { UIButton, UILink } from '@drivingo/ui/components';
 import { UIHeader } from '@drivingo/ui/compound';
 import {
   IonContent,
