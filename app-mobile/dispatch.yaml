@@ -1,0 +1,3 @@
+dispatch:
+  - url: "app-mobile-dev.drivingo.co.uk/*"
+    service: app-mobile-dev
