@@ -1,11 +1,9 @@
 import { IonApp, setupIonicReact } from '@ionic/react';
-
-
-
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { storeUiSelectors } from 'store/src/ui/ui';
-import Router from './Router';
+
+import AppRouter from './AppRouter';
 
 setupIonicReact();
 
@@ -19,7 +17,7 @@ const App: React.FC = () => {
 
     return (
         <IonApp>
-            <Router />
+            <AppRouter />
         </IonApp>
     );
 };

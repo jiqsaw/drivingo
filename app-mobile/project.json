@@ -17,8 +17,12 @@
                 "main": "app-mobile/src/main.tsx",
                 "tsConfig": "app-mobile/tsconfig.app.json",
                 "assets": [
-                    "app-mobile/src/assets",
-                    "./app-mobile/src/manifest.json"
+                    {
+                        "input": "data/src/traffic-signs/images",
+                        "glob": "**/*",
+                        "output": "data-images/traffic-signs"
+                    },
+                    "app-mobile/src/manifest.json"
                 ],
                 "styles": ["app-mobile/src/styles/index.css"],
                 "scripts": [],

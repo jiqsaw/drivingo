@@ -1,5 +1,4 @@
 export interface ITrafficSign {
-  src: string;
-  srcPrefix?: string;
+  imgPath: string;
   desc: string;
 }
