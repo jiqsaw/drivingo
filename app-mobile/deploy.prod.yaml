@@ -1,6 +1,7 @@
 runtime: nodejs22
 instance_class: F2
 service: app-mobile-prod
+service_account: github-actions-deployer@drivingo-v2.iam.gserviceaccount.com
 
 env_variables:
   NODE_ENV: prod
