@@ -7,7 +7,7 @@ import HighwayCode from "./pages/highway-code/HighwayCode";
 import Home from "./pages/Home";
 import Settings from "./pages/Settings";
 import Subscription from "./pages/Subscription";
-import HazardPerception from "./pages/theory-test/HazardPerception";
+import HazardPerception from "./pages/theory-test/hazard-perception/HazardPerception";
 import Learn from "./pages/theory-test/learn/Learn";
 import PractiseTopic from "./pages/theory-test/learn/practise-topics/PractiseTopic";
 import StudyTopic from "./pages/theory-test/learn/study-topics/StudyTopic";
@@ -16,6 +16,7 @@ import QuickTest from "./pages/theory-test/quick-test/QuickTest";
 import QuickTestTopic from "./pages/theory-test/quick-test/topics/Topics";
 import TheoryTest from "./pages/theory-test/TheoryTest";
 import TrafficSigns from "./pages/TrafficSigns";
+import HazardPerceptionDetail from "./pages/theory-test/hazard-perception/Detail";
 
 const Router: React.FC = () => {
 
@@ -33,6 +34,7 @@ const Router: React.FC = () => {
                     <Route path="/theory-test/:category/quick-test" render={() => <QuickTest />} exact={true} />
                     <Route path="/theory-test/:category/mock-test" render={() => <MockTest />} exact={true} />
                     <Route path="/theory-test/:category/hazard-perception" render={() => <HazardPerception />} exact={true} />
+                    <Route path="/theory-test/hazard-perception/:id" render={() => <HazardPerceptionDetail />} exact={true} />
 
 
                     {/* Theory Test Segment 2 */}

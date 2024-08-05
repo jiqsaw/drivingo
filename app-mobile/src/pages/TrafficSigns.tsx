@@ -1,4 +1,4 @@
-import FeatTrafficSigns from '@drivingo/feat-traffic-signs';
+import { FeatTrafficSigns } from '@drivingo/feat-traffic-signs';
 import { UIHeader } from '@drivingo/ui/compound';
 import { IonContent, IonPage } from '@ionic/react';
 
