@@ -46,6 +46,8 @@ To deploy app to the dev envrionment
 npm start app-mobile:deploy:dev
 ```
 
+Github will automatically deploy the app on `develop` push to the review environment.
+
 ## Running tasks
 
 To execute tasks with Nx use the following syntax:
