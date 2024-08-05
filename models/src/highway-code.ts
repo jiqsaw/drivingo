@@ -24,6 +24,7 @@ export interface IHighwayCodeLinkSection {
   web_url: string;
 }
 export interface IHighwayCodeDetailSource {
+  analytics_identifier: string | null;
   base_path: string;
   content_id: string;
   document_type: string;

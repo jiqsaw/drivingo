@@ -43,7 +43,7 @@ const Router: React.FC = () => {
 
                     {/* Extras */}
                     <Route path="/highway-code" render={() => <HighwayCode />} exact={true} />
-                    <Route path="/highway-code/:id" render={() => <HighwayCodeDetailPage />} exact={true} />
+                    <Route path="/highway-code/:type/:id" render={() => <HighwayCodeDetailPage />} exact={true} />
 
                     <Route path="/traffic-signs" render={() => <TrafficSigns />} exact={true} />
 

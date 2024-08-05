@@ -1,34 +1,33 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-import { contents, signs } from "@drivingo/data";
 import { IHighwayCode } from "@drivingo/models";
 
+import { HighwayCodeDataProvider } from "@drivingo/data-provider";
 import { useState } from "react";
 import HighwayCodeContent from "./Content";
-import HighwayCodeSigns from "./Signs";
 import HighwayCodeDetail from "./Detail";
-
-
+import HighwayCodeSigns from "./Signs";
 
 const FeatHighwayCode = () => {
+
+  const contentTopics = HighwayCodeDataProvider.contentTopics;
+  const signTopics = HighwayCodeDataProvider.signTopics;
 
   const [search, setSearch] = useState("");
   const [activeTab, setActiveTab] = useState(0);
 
-
-  const [filteredContents, setFilteredAllSigns] = useState<IHighwayCode[]>(contents);
-  const [filteredSigns, setFilteredSigns] = useState<IHighwayCode[]>(signs);
+  const [filteredContents, setFilteredAllSigns] = useState<IHighwayCode[]>(contentTopics);
+  const [filteredSigns, setFilteredSigns] = useState<IHighwayCode[]>(signTopics);
 
 
   const handleFilter = (search: string) => {
-    const filteredContents = contents.filter((item) => item.title.toLowerCase().includes(search.toLowerCase()));
+    const filteredContents = contentTopics.filter((item) => item.title.toLowerCase().includes(search.toLowerCase()));
     setFilteredAllSigns(filteredContents);
 
-    const filteredSigns = signs.filter((item) => item.title.toLowerCase().includes(search.toLowerCase()));
+    const filteredSigns = signTopics.filter((item) => item.title.toLowerCase().includes(search.toLowerCase()));
     setFilteredSigns(filteredSigns);
 
   };
-
 
   return (
     <div className="full">
@@ -56,6 +55,5 @@ const FeatHighwayCode = () => {
 };
 
 export { HighwayCodeDetail };
-
 
 export default FeatHighwayCode;

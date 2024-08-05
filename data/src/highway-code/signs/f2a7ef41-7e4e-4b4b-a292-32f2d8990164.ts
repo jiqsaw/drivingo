@@ -10,112 +10,112 @@ export default {
         "content_type": "application/jpg",
         "id": "c9f698b3-ec26-4046-b5cc-04ed487a7982",
         "title": "Traffic light red",
-        "url": "assets/images/highway-code/traffic-light-red.jpg"
+        "url": "data-images/highway-code/traffic-light-red.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "2dac562a-d475-45d2-9b4e-ebcb3cee40fd",
         "title": "Traffic light red and amber",
-        "url": "assets/images/highway-code/traffic-light-red-amber.jpg"
+        "url": "data-images/highway-code/traffic-light-red-amber.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "8362f888-e41d-4e33-8824-9322902c17ba",
         "title": "Traffic light green",
-        "url": "assets/images/highway-code/traffic-light-green.jpg"
+        "url": "data-images/highway-code/traffic-light-green.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "36cfb882-49c1-461f-a933-8a2ee6ae48a9",
         "title": "Traffic light amber",
-        "url": "assets/images/highway-code/traffic-light-amber.jpg"
+        "url": "data-images/highway-code/traffic-light-amber.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "0d8098ba-d832-4f6f-9df7-5b0699bb5d31",
         "title": "Traffic light green arrow",
-        "url": "assets/images/highway-code/traffic-light-green-arrow.jpg"
+        "url": "data-images/highway-code/traffic-light-green-arrow.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "ab68e7dc-7c16-4f09-9eea-3a6662384959",
         "title": "Flashing red lights",
-        "url": "assets/images/highway-code/flashing-red-lights.jpg"
+        "url": "data-images/highway-code/flashing-red-lights.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "566d1517-f837-4934-b70f-227789b5811b",
         "title": "Motorway signal red cross",
-        "url": "assets/images/highway-code/motorway-signal-red-cross.jpg"
+        "url": "data-images/highway-code/motorway-signal-red-cross.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "9810530d-8643-47c0-8ec0-94c3747025f6",
         "title": "Motorway signal change lane",
-        "url": "assets/images/highway-code/motorway-signal-change-lane.jpg"
+        "url": "data-images/highway-code/motorway-signal-change-lane.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "e58b46b8-86b0-4b90-b5c6-e86a5cf6348a",
         "title": "Motorway signal fog",
-        "url": "assets/images/highway-code/motorway-signal-fog.jpg"
+        "url": "data-images/highway-code/motorway-signal-fog.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "fcc8c910-f029-4413-9397-ff113ecb3ff5",
         "title": "Motorway signal lane ahead closed",
-        "url": "assets/images/highway-code/motorway-signal-lane-ahead-closed.jpg"
+        "url": "data-images/highway-code/motorway-signal-lane-ahead-closed.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "11970a8a-d7ad-43b3-8cf7-d7a88da4af23",
         "title": "Motorway signal temporary speed limit message",
-        "url": "assets/images/highway-code/motorway-signal-temporary-speed-limit-message.jpg"
+        "url": "data-images/highway-code/motorway-signal-temporary-speed-limit-message.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "bade5c09-0732-48c2-b8b0-b20dc5ab682f",
         "title": "Motorway signal leave motorway",
-        "url": "assets/images/highway-code/motorway-signal-leave-motorway.jpg"
+        "url": "data-images/highway-code/motorway-signal-leave-motorway.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "de80bc1d-2792-4fad-8717-1920a380a788",
         "title": "Motorway signal temporary speed",
-        "url": "assets/images/highway-code/motorway-signal-temporary-speed.jpg"
+        "url": "data-images/highway-code/motorway-signal-temporary-speed.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "5dd06b5d-4054-4974-b36e-af2fe9fb8029",
         "title": "Motorway signal end of restriction",
-        "url": "assets/images/highway-code/motorway-signal-end-restriction.jpg"
+        "url": "data-images/highway-code/motorway-signal-end-restriction.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "75617e28-c5fd-4402-b63c-79d6329f4654",
         "title": "Lane control signals",
-        "url": "assets/images/highway-code/lane-control-signals.jpg"
+        "url": "data-images/highway-code/lane-control-signals.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/pdf",
         "id": "30a4e425-5b03-46e0-ae1d-52fe722638d2",
         "title": "Light signals controlling traffic",
-        "url": "assets/images/highway-code/the-highway-code-light-signals-controlling-traffic.pdf"
+        "url": "data-images/highway-code/the-highway-code-light-signals-controlling-traffic.pdf"
       },
       {
         "attachment_type": "file",
@@ -125,7 +125,7 @@ export default {
         "url": "https://assets.publishing.service.gov.uk/media/613a08c58fa8f503c0fa759a/Obstruction_FINAL_.jpg"
       }
     ],
-    "body": "\n<div class=\"form-download\">\n<p><a href=\"assets/images/highway-code/the-highway-code-light-signals-controlling-traffic.pdf\">Download ‘Light signals controlling traffic’ (PDF, 80KB)</a></p>\n</div>\n\n<h2 id=\"trafficlightsignals\">Traffic light signals</h2>\n<p><img src=\"assets/images/highway-code/traffic-light-red.jpg\" alt=\"RED means ‘Stop’. Wait behind the stop line on the carriageway\"></p>\n<figcaption>RED means ‘Stop’. Wait behind the stop line on the carriageway</figcaption>\n\n<p><img src=\"assets/images/highway-code/traffic-light-red-amber.jpg\" alt=\"RED AND AMBER also means ‘Stop’. Do not pass through or start until GREEN shows\"></p>\n<figcaption>RED AND AMBER also means ‘Stop’. Do not pass through or start until GREEN shows</figcaption>\n\n<p><img src=\"assets/images/highway-code/traffic-light-green.jpg\" alt=\"GREEN means you may go on if the way is clear. Take special care if you intend to turn left or right and give way to pedestrians who are crossing\"></p>\n<figcaption>GREEN means you may go on if the way is clear. Take special care if you intend to turn left or right and give way to pedestrians who are crossing</figcaption>\n\n<p><img src=\"assets/images/highway-code/traffic-light-amber.jpg\" alt=\"AMBER means ‘Stop’ at the stop line. You may go on only if the AMBER appears after you have crossed the stop line or are so close to it that  to pull up might cause an accident\"></p>\n<figcaption>AMBER means ‘Stop’ at the stop line. You may go on only if the AMBER appears after you have crossed the stop line or are so close to it that  to pull up might cause an accident</figcaption>\n\n<p><img src=\"assets/images/highway-code/traffic-light-green-arrow.jpg\" alt=\"A GREEN ARROW may be provided in addition to the full green signal if movement in a certain direction is allowed before or after the full green phase. If the way  is clear you may go but only in the direction shown by  the arrow. You may do this whatever other lights may be showing. White light signals may be provided for trams\"></p>\n<figcaption>A GREEN ARROW may be provided in addition to the full green signal if movement in a certain direction is allowed before or after the full green phase. If the way  is clear you may go but only in the direction shown by  the arrow. You may do this whatever other lights may be showing. White light signals may be provided for trams</figcaption>\n\n<h2 id=\"flashred\">Flashing red lights</h2>\n<p><img src=\"assets/images/highway-code/flashing-red-lights.jpg\" alt=\"Alternately flashing red lights mean YOU MUST STOP\"></p>\n<figcaption>Alternately flashing red lights mean YOU MUST STOP</figcaption>\n\n<p>At level crossings, lifting bridges, airfields, fire stations, etc.</p>\n\n<h2 id=\"motorwaysignals\">Motorway signals</h2>\n\n<p>These signals are also used on other high-speed roads.</p>\n\n<p><img src=\"assets/images/highway-code/motorway-signal-red-cross.jpg\" alt=\"You MUST NOT proceed further in this lane\"></p>\n<figcaption>You MUST NOT proceed further in this lane</figcaption>\n\n<p><img src=\"assets/images/highway-code/motorway-signal-change-lane.jpg\" alt=\"Change lane\"></p>\n<figcaption>Change lane</figcaption>\n\n<p><img src=\"assets/images/highway-code/motorway-signal-fog.jpg\" alt=\"Reduced visibility ahead\"></p>\n<figcaption>Reduced visibility ahead</figcaption>\n\n<p><img src=\"assets/images/highway-code/motorway-signal-lane-ahead-closed.jpg\" alt=\"Lane ahead closed\"></p>\n<figcaption>Lane ahead closed</figcaption>\n\n<p><img src=\"assets/images/highway-code/motorway-signal-temporary-speed-limit-message.jpg\" alt=\"Temporary maximum speed advised and information message\"></p>\n<figcaption>Temporary maximum speed advised and information message</figcaption>\n\n<p><img src=\"https://assets.publishing.service.gov.uk/media/613a08c58fa8f503c0fa759a/Obstruction_FINAL_.jpg\" alt=\"Leave motorway at next exit\"></p>\n<figcaption>You **MUST NOT** enter or proceed in the left lane, temporary mandatory maximum speed limit and information message</figcaption>\n\n<p><img src=\"assets/images/highway-code/motorway-signal-temporary-speed.jpg\" alt=\"Temporary maximum speed advised\"></p>\n<figcaption>Temporary maximum speed advised</figcaption>\n\n<p><img src=\"assets/images/highway-code/motorway-signal-end-restriction.jpg\" alt=\"End of restriction\"></p>\n<figcaption>End of restriction</figcaption>\n\n<h2 id=\"lanecontrol\">Lane control signals</h2>\n<p><img src=\"assets/images/highway-code/lane-control-signals.jpg\" alt=\" \"></p>\n<figcaption>  </figcaption>\n\n<p>Green arrow - lane available to traffic facing the sign</p>\n\n<p>Red crosses - lane closed to traffic facing the sign</p>\n\n<p>White diagonal arrow - change lanes in direction shown</p>\n\n",
+    "body": "\n<div class=\"form-download\">\n<p><a href=\"data-images/highway-code/the-highway-code-light-signals-controlling-traffic.pdf\">Download ‘Light signals controlling traffic’ (PDF, 80KB)</a></p>\n</div>\n\n<h2 id=\"trafficlightsignals\">Traffic light signals</h2>\n<p><img src=\"data-images/highway-code/traffic-light-red.jpg\" alt=\"RED means ‘Stop’. Wait behind the stop line on the carriageway\"></p>\n<figcaption>RED means ‘Stop’. Wait behind the stop line on the carriageway</figcaption>\n\n<p><img src=\"data-images/highway-code/traffic-light-red-amber.jpg\" alt=\"RED AND AMBER also means ‘Stop’. Do not pass through or start until GREEN shows\"></p>\n<figcaption>RED AND AMBER also means ‘Stop’. Do not pass through or start until GREEN shows</figcaption>\n\n<p><img src=\"data-images/highway-code/traffic-light-green.jpg\" alt=\"GREEN means you may go on if the way is clear. Take special care if you intend to turn left or right and give way to pedestrians who are crossing\"></p>\n<figcaption>GREEN means you may go on if the way is clear. Take special care if you intend to turn left or right and give way to pedestrians who are crossing</figcaption>\n\n<p><img src=\"data-images/highway-code/traffic-light-amber.jpg\" alt=\"AMBER means ‘Stop’ at the stop line. You may go on only if the AMBER appears after you have crossed the stop line or are so close to it that  to pull up might cause an accident\"></p>\n<figcaption>AMBER means ‘Stop’ at the stop line. You may go on only if the AMBER appears after you have crossed the stop line or are so close to it that  to pull up might cause an accident</figcaption>\n\n<p><img src=\"data-images/highway-code/traffic-light-green-arrow.jpg\" alt=\"A GREEN ARROW may be provided in addition to the full green signal if movement in a certain direction is allowed before or after the full green phase. If the way  is clear you may go but only in the direction shown by  the arrow. You may do this whatever other lights may be showing. White light signals may be provided for trams\"></p>\n<figcaption>A GREEN ARROW may be provided in addition to the full green signal if movement in a certain direction is allowed before or after the full green phase. If the way  is clear you may go but only in the direction shown by  the arrow. You may do this whatever other lights may be showing. White light signals may be provided for trams</figcaption>\n\n<h2 id=\"flashred\">Flashing red lights</h2>\n<p><img src=\"data-images/highway-code/flashing-red-lights.jpg\" alt=\"Alternately flashing red lights mean YOU MUST STOP\"></p>\n<figcaption>Alternately flashing red lights mean YOU MUST STOP</figcaption>\n\n<p>At level crossings, lifting bridges, airfields, fire stations, etc.</p>\n\n<h2 id=\"motorwaysignals\">Motorway signals</h2>\n\n<p>These signals are also used on other high-speed roads.</p>\n\n<p><img src=\"data-images/highway-code/motorway-signal-red-cross.jpg\" alt=\"You MUST NOT proceed further in this lane\"></p>\n<figcaption>You MUST NOT proceed further in this lane</figcaption>\n\n<p><img src=\"data-images/highway-code/motorway-signal-change-lane.jpg\" alt=\"Change lane\"></p>\n<figcaption>Change lane</figcaption>\n\n<p><img src=\"data-images/highway-code/motorway-signal-fog.jpg\" alt=\"Reduced visibility ahead\"></p>\n<figcaption>Reduced visibility ahead</figcaption>\n\n<p><img src=\"data-images/highway-code/motorway-signal-lane-ahead-closed.jpg\" alt=\"Lane ahead closed\"></p>\n<figcaption>Lane ahead closed</figcaption>\n\n<p><img src=\"data-images/highway-code/motorway-signal-temporary-speed-limit-message.jpg\" alt=\"Temporary maximum speed advised and information message\"></p>\n<figcaption>Temporary maximum speed advised and information message</figcaption>\n\n<p><img src=\"https://assets.publishing.service.gov.uk/media/613a08c58fa8f503c0fa759a/Obstruction_FINAL_.jpg\" alt=\"Leave motorway at next exit\"></p>\n<figcaption>You **MUST NOT** enter or proceed in the left lane, temporary mandatory maximum speed limit and information message</figcaption>\n\n<p><img src=\"data-images/highway-code/motorway-signal-temporary-speed.jpg\" alt=\"Temporary maximum speed advised\"></p>\n<figcaption>Temporary maximum speed advised</figcaption>\n\n<p><img src=\"data-images/highway-code/motorway-signal-end-restriction.jpg\" alt=\"End of restriction\"></p>\n<figcaption>End of restriction</figcaption>\n\n<h2 id=\"lanecontrol\">Lane control signals</h2>\n<p><img src=\"data-images/highway-code/lane-control-signals.jpg\" alt=\" \"></p>\n<figcaption>  </figcaption>\n\n<p>Green arrow - lane available to traffic facing the sign</p>\n\n<p>Red crosses - lane closed to traffic facing the sign</p>\n\n<p>White diagonal arrow - change lanes in direction shown</p>\n\n",
     "change_history": [
       {
         "note": "Updates to ensure readers understand:\r\n\r\n•\twhat a motorway sign that displays multiple pieces of information looks like \r\n",
@@ -258,4 +258,4 @@ export default {
   "title": "Light signals controlling traffic",
   "updated_at": "2024-07-09T20:23:51+01:00",
   "withdrawn_notice": {}
-}
+};

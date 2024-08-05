@@ -1,36 +1,32 @@
 
 import { FC } from "react";
 
-import { contentsDetail, signsDetail } from '@drivingo/data';
-
-
+import { HighwayCodeDataProvider } from "@drivingo/data-provider";
 
 type HighwayCodeDetailProps = {
-  id: string;
-}
+    type: 'content' | 'signs';
+    id: string;
+};
 
+const HighwayCodeDetail: FC<HighwayCodeDetailProps> = ({ id, type }) => {
 
+    const data = type === 'content'
+        ? HighwayCodeDataProvider.getContentDetail(id)
+        : HighwayCodeDataProvider.getSignDetail(id);
 
-const HighwayCodeDetail: FC<HighwayCodeDetailProps> = ({ id }) => {
+    if (!data) {
+        return <div>This page cannot be found.</div>;
+    }
 
-  const allData = [...contentsDetail, ...signsDetail];
-
-  const currentData = allData.find((item) => item.content_id === id);
-
-  if (!currentData) {
-    return <div>Not Found</div>
-  }
-
-
-  return (
-    <div className="detail">
-      <div dangerouslySetInnerHTML={
-        {
-          __html: currentData.details.body
-        }}>
-      </div>
-    </div >
-  )
-}
+    return (
+        <div className="detail">
+            <div dangerouslySetInnerHTML={
+                {
+                    __html: data.details.body
+                }}>
+            </div>
+        </div >
+    );
+};
 
 export default HighwayCodeDetail;

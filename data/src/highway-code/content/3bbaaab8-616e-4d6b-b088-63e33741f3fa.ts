@@ -10,7 +10,7 @@ export default {
         "content_type": "application/jpg",
         "id": "ec0a5660-f796-481c-a144-13b50159c302",
         "title": "The Highway Code: rule 269",
-        "url": "assets/images/highway-code/the-highway-code-rule-269.jpg"
+        "url": "data-images/highway-code/the-highway-code-rule-269.jpg"
       },
       {
         "attachment_type": "file",
@@ -245,4 +245,4 @@ export default {
   "title": "Motorways (253 to 274)",
   "updated_at": "2024-07-09T20:20:33+01:00",
   "withdrawn_notice": {}
-}
+};

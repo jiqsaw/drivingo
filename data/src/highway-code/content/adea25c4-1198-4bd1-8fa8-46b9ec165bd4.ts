@@ -10,7 +10,7 @@ export default {
         "content_type": "application/jpg",
         "id": "6c6fafc6-8c41-4796-8a1e-8dac0640946c",
         "title": "The Highway Code: rule 275",
-        "url": "assets/images/highway-code/the-highway-code-rule-275.jpg"
+        "url": "data-images/highway-code/the-highway-code-rule-275.jpg"
       },
       {
         "attachment_type": "file",
@@ -216,4 +216,4 @@ export default {
   "title": "Breakdowns and incidents (275 to 287) ",
   "updated_at": "2024-07-09T20:23:01+01:00",
   "withdrawn_notice": {}
-}
+};

@@ -22,6 +22,11 @@
                         "glob": "**/*",
                         "output": "data-images/traffic-signs"
                     },
+                    {
+                        "input": "data/src/highway-code/images",
+                        "glob": "**/*",
+                        "output": "data-images/highway-code"
+                    },
                     "app-mobile/src/manifest.json"
                 ],
                 "styles": ["app-mobile/src/styles/index.css"],

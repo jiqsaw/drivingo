@@ -1,7 +1,7 @@
 import { DATA_TRAFFIC_SIGNS } from "@drivingo/data";
 
 export const TrafficSignsDataProvider = {
-    getData: () => DATA_TRAFFIC_SIGNS,
+    data: DATA_TRAFFIC_SIGNS,
     getAll: () => {
         return [
             ...DATA_TRAFFIC_SIGNS.directionSigns,

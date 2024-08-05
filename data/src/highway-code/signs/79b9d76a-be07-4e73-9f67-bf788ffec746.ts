@@ -10,105 +10,105 @@ export default {
         "content_type": "application/jpg",
         "id": "1e26e15c-43d4-4cb0-aae7-3cc63351fad4",
         "title": "Traffic approaching from the front",
-        "url": "assets/images/highway-code/police-officers-traffic-from-front.jpg"
+        "url": "data-images/highway-code/police-officers-traffic-from-front.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "e6e301d7-7187-48d4-a761-28651fd77514",
         "title": "Traffic approaching from both front and behind",
-        "url": "assets/images/highway-code/police-officers-traffic-from-front-and-behind.jpg"
+        "url": "data-images/highway-code/police-officers-traffic-from-front-and-behind.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "e8c2ed57-3e42-4686-b999-5cc0c60cf1ed",
         "title": "Traffic approaching from behind",
-        "url": "assets/images/highway-code/police-officers-traffic-from-behind.jpg"
+        "url": "data-images/highway-code/police-officers-traffic-from-behind.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "b86b385d-72ca-4e2a-a0f4-8222a019c6be",
         "title": "Traffic officer",
-        "url": "assets/images/highway-code/traffic-officer.jpg"
+        "url": "data-images/highway-code/traffic-officer.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "b1b7409b-1f46-4548-982c-98a814ba7ebb",
         "title": "DVSA officer",
-        "url": "assets/images/highway-code/dvsa-officer.jpg"
+        "url": "data-images/highway-code/dvsa-officer.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "a63a9be8-3b30-4544-9022-f19459530c5f",
         "title": "Police officer - To beckon traffic on from the side",
-        "url": "assets/images/highway-code/police-officer-beckon-from-the-side.jpg"
+        "url": "data-images/highway-code/police-officer-beckon-from-the-side.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "8eedf98e-c532-434f-be28-a9bc6ac83ef5",
         "title": "Police officer - To beckon traffic on from the front",
-        "url": "assets/images/highway-code/police-officer-beckon-from-the-front.jpg"
+        "url": "data-images/highway-code/police-officer-beckon-from-the-front.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "596e660f-e52e-4e65-a051-5c36e8bb2873",
         "title": "Police officer - To beckon traffic on from behind",
-        "url": "assets/images/highway-code/police-officer-beckon-from-behind.jpg"
+        "url": "data-images/highway-code/police-officer-beckon-from-behind.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "e0a83218-bea2-4503-8e38-1fda47a693ee",
         "title": "Arm signals to persons controlling traffic turning right",
-        "url": "assets/images/highway-code/car-arm-signals-turn-right.jpg"
+        "url": "data-images/highway-code/car-arm-signals-turn-right.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "45a12405-7aa8-4a97-ba30-d0db01db5d3e",
         "title": "School crossing patrols not ready to cross",
-        "url": "assets/images/highway-code/school-crossing-patrol-not-ready.jpg"
+        "url": "data-images/highway-code/school-crossing-patrol-not-ready.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "90dd407e-0263-4792-a708-120938ace59d",
         "title": "School crossing patrols barrier to stop pedestrians crossing",
-        "url": "assets/images/highway-code/school-crossing-patrol-barrier-to-stop.jpg"
+        "url": "data-images/highway-code/school-crossing-patrol-barrier-to-stop.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "607c968b-24b0-4b46-9553-5fa9fb345b99",
         "title": "School crossing patrols vehicles must be prepared to stop",
-        "url": "assets/images/highway-code/school-crossing-patrol-vehicle-prepare-stop.jpg"
+        "url": "data-images/highway-code/school-crossing-patrol-vehicle-prepare-stop.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "6e05aaf4-16b4-4b45-a65a-d7d779e20d82",
         "title": "School crossing patrols all vehicles must stop",
-        "url": "assets/images/highway-code/school-crossing-patrol-all-vehicles-stop.jpg"
+        "url": "data-images/highway-code/school-crossing-patrol-all-vehicles-stop.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "66baf134-9207-4455-af8a-c2b06a7c0974",
         "title": "Car arm signal - turn left",
-        "url": "assets/images/highway-code/car-arm-signal-turn-left.jpg"
+        "url": "data-images/highway-code/car-arm-signal-turn-left.jpg"
       },
       {
         "attachment_type": "file",
         "content_type": "application/jpg",
         "id": "883eeaca-6e0f-4f82-a87c-91ab287047a7",
         "title": "Car arm signal - straight on",
-        "url": "assets/images/highway-code/car-arm-signal-straight-on.jpg"
+        "url": "data-images/highway-code/car-arm-signal-straight-on.jpg"
       },
       {
         "attachment_type": "file",
@@ -146,7 +146,7 @@ export default {
         "url": "https://assets.publishing.service.gov.uk/media/591dd688ed915d20fb00005a/dvsa-officer-car.jpg"
       }
     ],
-    "body": "\n<div class=\"form-download\">\n<p><a href=\"assets/images/highway-code/the-highway-code-signals-by-authorised-persons.pdf\">Download ‘Signals by authorised persons’ (PDF, 468KB)</a></p>\n</div>\n\n<h2 id=\"policeofficers\">Police officers</h2>\n\n<h3 id=\"stop\">Stop</h3>\n\n<p><img src=\"assets/images/highway-code/police-officers-traffic-from-front.jpg\" alt=\"Traffic approaching from the front\"></p>\n<figcaption>Traffic approaching from the front</figcaption>\n\n<p><img src=\"assets/images/highway-code/police-officers-traffic-from-front-and-behind.jpg\" alt=\"Traffic approaching from both front and behind\"></p>\n<figcaption>Traffic approaching from both front and behind</figcaption>\n\n<p><img src=\"assets/images/highway-code/police-officers-traffic-from-behind.jpg\" alt=\"Traffic approaching from behind\"></p>\n<figcaption>Traffic approaching from behind</figcaption>\n\n<h3 id=\"to-beckon-traffic-on\">To beckon traffic on</h3>\n\n<p><img src=\"assets/images/highway-code/police-officer-beckon-from-the-side.jpg\" alt=\"From the side\"></p>\n<figcaption>From the side</figcaption>\n\n<p><img src=\"assets/images/highway-code/police-officer-beckon-from-the-front.jpg\" alt=\"From the front\"></p>\n<figcaption>From the front</figcaption>\n\n<p><img src=\"assets/images/highway-code/police-officer-beckon-from-behind.jpg\" alt=\"From behind*\"></p>\n<figcaption>From behind*</figcaption>\n\n<p>*In Wales, bilingual signs appear on emergency services vehicles and clothing</p>\n\n<h2 id=\"personscontrol\">Arm signals to persons controlling traffic</h2>\n<p><img src=\"assets/images/highway-code/car-arm-signal-straight-on.jpg\" alt=\"I want to go straight on\"></p>\n<figcaption>I want to go straight on</figcaption>\n\n<p><img src=\"assets/images/highway-code/car-arm-signal-turn-left.jpg\" alt=\"I want to turn left; use either hand\"></p>\n<figcaption>I want to turn left; use either hand</figcaption>\n\n<p><img src=\"assets/images/highway-code/car-arm-signals-turn-right.jpg\" alt=\"I want to turn right\"></p>\n<figcaption>I want to turn right</figcaption>\n\n<h2 id=\"dvsatrafficofficer\">Driver and Vehicle Standards Agency officers and traffic officers</h2>\n<p><img src=\"https://assets.publishing.service.gov.uk/media/591dd678ed915d20f800005b/traffic-officer-car.jpg\" alt=\"Traffic officer\"></p>\n<figcaption>Traffic officer</figcaption>\n\n<p><img src=\"https://assets.publishing.service.gov.uk/media/591dd688ed915d20fb00005a/dvsa-officer-car.jpg\" alt=\"DVSA officer\"></p>\n<figcaption>DVSA officer</figcaption>\n\n<p>These officers now have new powers to stop/direct vehicles and will be using hand signals and light\nsignals similar to those used by police. You <strong>MUST</strong> obey any signals given (see <a href=\"/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158#rule107\">Rules 107</a> and <a href=\"/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158#rule108\">108</a>).</p>\n\n<h2 id=\"schoolcrosspatrols\">School crossing patrols</h2>\n<p><img src=\"assets/images/highway-code/school-crossing-patrol-not-ready.jpg\" alt=\"Not ready to cross pedestrians\"></p>\n<figcaption>Not ready to cross pedestrians</figcaption>\n\n<p><img src=\"assets/images/highway-code/school-crossing-patrol-barrier-to-stop.jpg\" alt=\"Barrier to stop pedestrians crossing\"></p>\n<figcaption>Barrier to stop pedestrians crossing</figcaption>\n\n<p><img src=\"assets/images/highway-code/school-crossing-patrol-vehicle-prepare-stop.jpg\" alt=\"Ready to cross pedestrians, vehicles must be prepared to stop\"></p>\n<figcaption>Ready to cross pedestrians, vehicles must be prepared to stop</figcaption>\n\n<p><img src=\"assets/images/highway-code/school-crossing-patrol-all-vehicles-stop.jpg\" alt=\"All vehicles must stop\"></p>\n<figcaption>All vehicles must stop</figcaption>\n\n",
+    "body": "\n<div class=\"form-download\">\n<p><a href=\"data-images/highway-code/the-highway-code-signals-by-authorised-persons.pdf\">Download ‘Signals by authorised persons’ (PDF, 468KB)</a></p>\n</div>\n\n<h2 id=\"policeofficers\">Police officers</h2>\n\n<h3 id=\"stop\">Stop</h3>\n\n<p><img src=\"data-images/highway-code/police-officers-traffic-from-front.jpg\" alt=\"Traffic approaching from the front\"></p>\n<figcaption>Traffic approaching from the front</figcaption>\n\n<p><img src=\"data-images/highway-code/police-officers-traffic-from-front-and-behind.jpg\" alt=\"Traffic approaching from both front and behind\"></p>\n<figcaption>Traffic approaching from both front and behind</figcaption>\n\n<p><img src=\"data-images/highway-code/police-officers-traffic-from-behind.jpg\" alt=\"Traffic approaching from behind\"></p>\n<figcaption>Traffic approaching from behind</figcaption>\n\n<h3 id=\"to-beckon-traffic-on\">To beckon traffic on</h3>\n\n<p><img src=\"data-images/highway-code/police-officer-beckon-from-the-side.jpg\" alt=\"From the side\"></p>\n<figcaption>From the side</figcaption>\n\n<p><img src=\"data-images/highway-code/police-officer-beckon-from-the-front.jpg\" alt=\"From the front\"></p>\n<figcaption>From the front</figcaption>\n\n<p><img src=\"data-images/highway-code/police-officer-beckon-from-behind.jpg\" alt=\"From behind*\"></p>\n<figcaption>From behind*</figcaption>\n\n<p>*In Wales, bilingual signs appear on emergency services vehicles and clothing</p>\n\n<h2 id=\"personscontrol\">Arm signals to persons controlling traffic</h2>\n<p><img src=\"data-images/highway-code/car-arm-signal-straight-on.jpg\" alt=\"I want to go straight on\"></p>\n<figcaption>I want to go straight on</figcaption>\n\n<p><img src=\"data-images/highway-code/car-arm-signal-turn-left.jpg\" alt=\"I want to turn left; use either hand\"></p>\n<figcaption>I want to turn left; use either hand</figcaption>\n\n<p><img src=\"data-images/highway-code/car-arm-signals-turn-right.jpg\" alt=\"I want to turn right\"></p>\n<figcaption>I want to turn right</figcaption>\n\n<h2 id=\"dvsatrafficofficer\">Driver and Vehicle Standards Agency officers and traffic officers</h2>\n<p><img src=\"https://assets.publishing.service.gov.uk/media/591dd678ed915d20f800005b/traffic-officer-car.jpg\" alt=\"Traffic officer\"></p>\n<figcaption>Traffic officer</figcaption>\n\n<p><img src=\"https://assets.publishing.service.gov.uk/media/591dd688ed915d20fb00005a/dvsa-officer-car.jpg\" alt=\"DVSA officer\"></p>\n<figcaption>DVSA officer</figcaption>\n\n<p>These officers now have new powers to stop/direct vehicles and will be using hand signals and light\nsignals similar to those used by police. You <strong>MUST</strong> obey any signals given (see <a href=\"/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158#rule107\">Rules 107</a> and <a href=\"/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158#rule108\">108</a>).</p>\n\n<h2 id=\"schoolcrosspatrols\">School crossing patrols</h2>\n<p><img src=\"data-images/highway-code/school-crossing-patrol-not-ready.jpg\" alt=\"Not ready to cross pedestrians\"></p>\n<figcaption>Not ready to cross pedestrians</figcaption>\n\n<p><img src=\"data-images/highway-code/school-crossing-patrol-barrier-to-stop.jpg\" alt=\"Barrier to stop pedestrians crossing\"></p>\n<figcaption>Barrier to stop pedestrians crossing</figcaption>\n\n<p><img src=\"data-images/highway-code/school-crossing-patrol-vehicle-prepare-stop.jpg\" alt=\"Ready to cross pedestrians, vehicles must be prepared to stop\"></p>\n<figcaption>Ready to cross pedestrians, vehicles must be prepared to stop</figcaption>\n\n<p><img src=\"data-images/highway-code/school-crossing-patrol-all-vehicles-stop.jpg\" alt=\"All vehicles must stop\"></p>\n<figcaption>All vehicles must stop</figcaption>\n\n",
     "manual": {
       "base_path": "/guidance/the-highway-code"
     },
@@ -273,4 +273,4 @@ export default {
   "title": "Signals by authorised persons",
   "updated_at": "2024-07-09T20:22:27+01:00",
   "withdrawn_notice": {}
-}
+};
