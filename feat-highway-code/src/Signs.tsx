@@ -2,7 +2,6 @@ import { IHighwayCode } from "@drivingo/models";
 import { IonRouterLink } from "@ionic/react";
 import { FC } from "react";
 
-
 type HighwayCodeSignsProps = {
     data: IHighwayCode[];
 };

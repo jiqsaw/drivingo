@@ -1,9 +1,6 @@
 import FeatTrafficSigns from '@drivingo/feat-traffic-signs';
 import { UIHeader } from '@drivingo/ui/compound';
-import {
-    IonContent,
-    IonPage
-} from '@ionic/react';
+import { IonContent, IonPage } from '@ionic/react';
 
 const TrafficSigns: React.FC = () => {
     return (

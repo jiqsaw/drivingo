@@ -6,15 +6,12 @@ import { useParams } from "react-router";
 
 const HighwayCodeDetailPage = () => {
 
-  // use params
-  const { type } = useParams<{ type: 'content' | 'signs'; }>();
-  const { id } = useParams<{ id: string; }>();
-
+  const params = useParams<{ id: string, type: 'content' | 'signs'; }>();
   return (
     <IonPage>
       <UIHeader title='HighwayCode Detail' />
       <IonContent fullscreen className='ion-padding'>
-        <HighwayCodeDetail id={id} type={type} />
+        <HighwayCodeDetail {...params} />
       </IonContent>
     </IonPage >
   );
