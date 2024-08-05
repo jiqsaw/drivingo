@@ -46,7 +46,7 @@ To deploy app to the dev envrionment
 npm start app-mobile:deploy:dev
 ```
 
-Github will automatically deploy the app on `develop` push to the review environment.
+Github Actions will deploy to the dev environment on `develop` branch push and the prod environment on `main` branch push.
 
 ## Running tasks
 
