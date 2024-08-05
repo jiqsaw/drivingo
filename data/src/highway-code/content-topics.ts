@@ -1,4 +1,6 @@
-const contentTopics = [
+import { IHighwayCode } from "@drivingo/models";
+
+const contentTopics: IHighwayCode[] = [
     {
         id: "228aa881-1cc3-4b16-b684-8e9aaf5b7fce",
         title: "Introduction",

@@ -5,14 +5,12 @@ import './styles.scss';
 
 const FeatTrafficSigns = () => {
 
-    const allSigns = TrafficSignsDataProvider.getAll();
-
     const [search, setsearch] = useState("");
-    const [filteredAllSigns, setFilteredAllSigns] = useState<ITrafficSign[]>(allSigns);
+    const [filteredAllSigns, setFilteredAllSigns] = useState<ITrafficSign[]>(TrafficSignsDataProvider.getData());
 
-    const handleFilter = (search: string) => {
-        const filteredSigns = allSigns.filter((item) => item.desc.toLowerCase().includes(search.toLowerCase()));
-        setFilteredAllSigns(filteredSigns);
+    const handleSearch = (searchText: string) => {
+        setsearch(searchText);
+        setFilteredAllSigns(TrafficSignsDataProvider.getData(searchText));
     };
 
     return (
@@ -20,10 +18,7 @@ const FeatTrafficSigns = () => {
             <div className="search">
                 <input type="text" placeholder="Search"
                     value={search}
-                    onChange={(e) => {
-                        setsearch(e.target.value);
-                        handleFilter(e.target.value);
-                    }}
+                    onChange={(e) => handleSearch(e.target.value)}
                 />
             </div>
 

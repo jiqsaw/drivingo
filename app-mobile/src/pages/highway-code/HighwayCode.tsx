@@ -1,9 +1,7 @@
 
-import { IonContent, IonPage } from "@ionic/react";
-import { UIHeader } from "@drivingo/ui/compound";
 import FeatHighwayCode from "@drivingo/feat-highway-code";
-
-
+import { UIHeader } from "@drivingo/ui/compound";
+import { IonContent, IonPage } from "@ionic/react";
 
 const HighwayCode = () => {
 
@@ -14,7 +12,7 @@ const HighwayCode = () => {
         <FeatHighwayCode />
       </IonContent>
     </IonPage>
-  )
-}
+  );
+};
 
 export default HighwayCode;
