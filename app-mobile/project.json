@@ -27,6 +27,16 @@
                         "glob": "**/*",
                         "output": "data-images/highway-code"
                     },
+                    {
+                        "input": "data/src/hazard-perception/thumbnails",
+                        "glob": "**/*",
+                        "output": "data-thumbnails/hazard-perception"
+                    },
+                    {
+                        "input": "data/src/hazard-perception/clips",
+                        "glob": "**/*",
+                        "output": "data-clips/hazard-perception"
+                    },
                     "app-mobile/src/manifest.json"
                 ],
                 "styles": ["app-mobile/src/styles/index.css"],

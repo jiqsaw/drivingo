@@ -9,5 +9,8 @@ export const storeUiSelectors = {
             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
         return state.ui.theme;
+    },
+    closeMockTestIntroduction: (state: AppState) => {
+        return state.ui.hideMockTestIntroduction;
     }
 };
