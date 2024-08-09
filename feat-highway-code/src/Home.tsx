@@ -15,7 +15,7 @@ const FeatHighwayCode = () => {
   const handleSearch = (searchText: string) => {
     setSearch(searchText);
     setFilteredAllSigns(HighwayCodeDataProvider.getContentTopics(searchText));
-    setFilteredSigns(HighwayCodeDataProvider.getContentTopics(searchText));
+    setFilteredSigns(HighwayCodeDataProvider.getSignTopics(searchText));
   };
 
   return (
