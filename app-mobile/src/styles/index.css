@@ -1,11 +1,1 @@
 @import './ionic.css';
-
-.network-error {
-    background-color: #f00;
-    color: #fff;
-    padding: 8px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}

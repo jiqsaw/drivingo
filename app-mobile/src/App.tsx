@@ -42,9 +42,6 @@ const App: React.FC = () => {
             Network.removeAllListeners();
         };
     }, [])
-
-
-
     return (
         <IonApp>
             {
