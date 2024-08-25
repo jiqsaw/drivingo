@@ -12,5 +12,8 @@ export const storeUiSelectors = {
     },
     closeMockTestIntroduction: (state: AppState) => {
         return state.ui.hideMockTestIntroduction;
+    },
+    selectNetwork: (state: AppState) => {
+        return state.ui.network;
     }
 };

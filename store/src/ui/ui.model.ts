@@ -4,5 +4,10 @@ export interface IStoreUI {
     theme: Theme,
     quickTestNumberOfQuestions: number,
     hideMockTestIntroduction: boolean;
+    network: IStoreNetwork;
 }
 
+export interface IStoreNetwork {
+    connected: boolean;
+    connectionType: string;
+}

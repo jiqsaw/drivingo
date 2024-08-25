@@ -1,29 +1,20 @@
 import { IonApp, setupIonicReact } from '@ionic/react';
-import { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
-import { storeUiSelectors } from 'store/src/ui/ui';
-import { Network } from '@capacitor/network';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { storeUiActions, storeUiSelectors } from 'store/src/ui/ui';
 import { UINetworkWarning } from '@drivingo/ui/components';
-
-
 import AppRouter from './AppRouter';
+import { logCurrentNetworkStatus } from './helper/app';
+import { Network } from '@capacitor/network';
 
 setupIonicReact();
 
-export const logCurrentNetworkStatus = async () => {
-    const status = await Network.getStatus();
-    return status;
-};
 
 const App: React.FC = () => {
 
     const theme = useSelector(storeUiSelectors.selectUiTheme);
-    const [networkControl, setNetworkControl] = useState(
-        {
-            connected: true,
-            connectionType: ''
-        }
-    );
+    const network = useSelector(storeUiSelectors.selectNetwork);
+    const dispatch = useDispatch();
 
     useEffect(() => {
         document.documentElement.classList.toggle('ion-palette-dark', theme === 'dark');
@@ -31,21 +22,18 @@ const App: React.FC = () => {
 
     useEffect(() => {
         Network.addListener('networkStatusChange', status => {
-            setNetworkControl(status);
+            dispatch(storeUiActions.networkStatusChange(status));
         });
 
         logCurrentNetworkStatus().then((response) => {
-            setNetworkControl(response);
+            dispatch(storeUiActions.networkStatusChange(response));
         });
+    }, []);
 
-        return () => {
-            Network.removeAllListeners();
-        };
-    }, [])
     return (
         <IonApp>
             {
-                !networkControl.connected && <UINetworkWarning />
+                !network?.connected && <UINetworkWarning />
             }
             <AppRouter />
         </IonApp>
