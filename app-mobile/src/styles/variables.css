@@ -1,0 +1,13 @@
+ :root {
+     --ion-default-font: "Poppins", sans-serif;
+ }
+
+
+ :root.ios {
+     --ion-default-font: "Poppins", sans-serif;
+ }
+
+ /* Set text color of the entire app for Material Design only */
+ :root.md {
+     --ion-default-font: "Poppins", sans-serif;
+ }

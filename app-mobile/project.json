@@ -7,7 +7,9 @@
     "targets": {
         "build": {
             "executor": "@nx/webpack:webpack",
-            "outputs": ["{options.outputPath}"],
+            "outputs": [
+                "{options.outputPath}"
+            ],
             "defaultConfiguration": "production",
             "options": {
                 "compiler": "babel",
@@ -17,6 +19,11 @@
                 "main": "app-mobile/src/main.tsx",
                 "tsConfig": "app-mobile/tsconfig.app.json",
                 "assets": [
+                    {
+                        "input": "app-mobile/src/assets",
+                        "glob": "**/*",
+                        "output": "/assets"
+                    },
                     {
                         "input": "data/src/traffic-signs/images",
                         "glob": "**/*",
@@ -39,7 +46,9 @@
                     },
                     "app-mobile/src/manifest.json"
                 ],
-                "styles": ["app-mobile/src/styles/index.css"],
+                "styles": [
+                    "app-mobile/src/styles/index.scss"
+                ],
                 "scripts": [],
                 "webpackConfig": "app-mobile/webpack.config.js"
             },

@@ -1,0 +1,65 @@
+.homepage {
+    background-color: var(--ion-background-color);
+    background-image: url('/assets/images/top-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+
+
+    .header {
+        height: 160px;
+        position: relative;
+        padding: 100px 32px 0 32px;
+        color: #fff;
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
+
+
+.main-content {
+    min-height: calc(100vh - 160px);
+    position: relative;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    background-color: #202225;
+    overflow-x: hidden;
+    padding: 8px;
+    padding-bottom: 100px;
+    color: #fff;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 400px;
+        height: 400px;
+        border-radius: 999px;
+        background: rgba(69, 64, 167, 0.36);
+        filter: blur(98px);
+        z-index: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateY(-200px) translateX(50%);
+        pointer-events: none;
+
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 400px;
+        height: 400px;
+        border-radius: 999px;
+        background: rgba(244, 17, 210, 0.21);
+        filter: blur(98px);
+        z-index: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateY(-200px) translateX(-50%);
+        pointer-events: none;
+    }
+}

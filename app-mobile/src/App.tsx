@@ -5,6 +5,8 @@ import { storeUiSelectors } from 'store/src/ui/ui';
 
 import AppRouter from './AppRouter';
 
+
+
 setupIonicReact();
 
 const App: React.FC = () => {
