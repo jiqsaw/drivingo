@@ -63,6 +63,14 @@ const Router: React.FC = () => {
                         <IonLabel>Theory Test</IonLabel>
                     </IonTabButton>
 
+                    <ul>
+                        <li>
+                            <IonTabButton tab="radio" href="/highway-code" className="nav-item">
+                                <IonIcon icon={gridOutline} />
+                            </IonTabButton>
+                        </li>
+                    </ul>
+
                     <IonTabButton tab="radio" href="/highway-code" className="nav-item">
                         <IonIcon icon={gridOutline} />
                     </IonTabButton>

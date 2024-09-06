@@ -1,4 +1,4 @@
-import { UIButton, UILink } from '@drivingo/ui/components';
+import { AppleIcon, OclockIcon, StarIcon, UIButton, UILink, UINavigationItem, UINavigationList } from '@drivingo/ui/components';
 import { UIHeader } from '@drivingo/ui/compound';
 import {
     IonContent,
@@ -27,8 +27,18 @@ const TheoryTest: React.FC = () => {
                             <IonTitle size="large">TheoryTest asdas</IonTitle>
                         </IonToolbar>
                     </IonHeader> */}
+
+
+                        <UINavigationList>
+                            <UINavigationItem routerDirection='forward' routerLink='/theory-test/car/learn' title='Learn' icon={<AppleIcon />} color='primary' desctioption='Lorem ipsum dolor sit amet' />
+                            <UINavigationItem routerDirection='forward' routerLink='/theory-test/car/quick-test' title='Quick Test' icon={<OclockIcon />} color='secondary' desctioption='Lorem ipsum dolor sit amet' />
+                            <UINavigationItem routerDirection='forward' routerLink='/theory-test/car/mock-test' title='Mock Test' icon={<AppleIcon />} color="light_blue" desctioption='Lorem ipsum dolor sit amet' />
+                            <UINavigationItem routerDirection='forward' routerLink='/theory-test/car/hazard-perception' title='Hazard Precep...' icon={<StarIcon />} color='light_tealish' desctioption='Lorem ipsum dolor sit amet' />
+                        </UINavigationList>
+
+
                         <IonRouterLink routerDirection='root' routerLink='/traffic-signs'>
-                            {/* <p>Traffic Signs</p> */}
+                            <p>Traffic Signs</p>
                         </IonRouterLink>
                         <UIButton text='example button' /><br /><br />
                         <br /><br />
