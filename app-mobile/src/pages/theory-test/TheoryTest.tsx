@@ -1,4 +1,4 @@
-import { AppleIcon, OclockIcon, StarIcon, UIButton, UILink, UINavigationItem, UINavigationList } from '@drivingo/ui/components';
+import { AIBanner, AlertsIcon, AppleIcon, OclockIcon, StarIcon, UIButton, UILink, UINavigationItem, UINavigationList, UITestProgressCard, UITestProgressList } from '@drivingo/ui/components';
 import { UIHeader } from '@drivingo/ui/compound';
 import {
     IonContent,
@@ -19,7 +19,8 @@ const TheoryTest: React.FC = () => {
             <IonContent fullscreen >
                 <div className='homepage'>
                     <div className='header'>
-                        Car
+                        <h1>Car</h1>
+                        <img className='top-img' src="/assets/images/top-car.png" alt="car" />
                     </div>
                     <div className='main-content'>
                         {/* <IonHeader collapse="condense">
@@ -28,6 +29,7 @@ const TheoryTest: React.FC = () => {
                         </IonToolbar>
                     </IonHeader> */}
 
+                        <AIBanner text='I’II be around across the app to make things easier...' />
 
                         <UINavigationList>
                             <UINavigationItem routerDirection='forward' routerLink='/theory-test/car/learn' title='Learn' icon={<AppleIcon />} color='primary' desctioption='Lorem ipsum dolor sit amet' />
@@ -35,6 +37,13 @@ const TheoryTest: React.FC = () => {
                             <UINavigationItem routerDirection='forward' routerLink='/theory-test/car/mock-test' title='Mock Test' icon={<AppleIcon />} color="light_blue" desctioption='Lorem ipsum dolor sit amet' />
                             <UINavigationItem routerDirection='forward' routerLink='/theory-test/car/hazard-perception' title='Hazard Precep...' icon={<StarIcon />} color='light_tealish' desctioption='Lorem ipsum dolor sit amet' />
                         </UINavigationList>
+
+                        <UITestProgressList title='Study' routerLink='/theory-test/car/learn'>
+                            <UITestProgressCard title='Alertness' progress={20} routerLink='/theory-test/car/learn' routerDirection='forward' icon={<AlertsIcon />} />
+                            <UITestProgressCard title='Learn' progress={40} routerLink='/theory-test/car/learn' routerDirection='forward' icon={<AlertsIcon />} />
+                            <UITestProgressCard title='Alertness' progress={20} routerLink='/theory-test/car/learn' routerDirection='forward' icon={<AlertsIcon />} />
+                        </UITestProgressList>
+
 
 
                         <IonRouterLink routerDirection='root' routerLink='/traffic-signs'>
