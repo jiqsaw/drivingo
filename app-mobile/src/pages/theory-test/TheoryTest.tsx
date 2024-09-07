@@ -44,6 +44,19 @@ const TheoryTest: React.FC = () => {
                             <UITestProgressCard title='Alertness' progress={20} routerLink='/theory-test/car/learn' routerDirection='forward' icon={<AlertsIcon />} />
                         </UITestProgressList>
 
+                        <UITestProgressList title='Pratice' routerLink='/theory-test/car/learn'>
+                            <UITestProgressCard title='Alertness' progress={20} routerLink='/theory-test/car/learn' routerDirection='forward' icon={<AlertsIcon />} />
+                            <UITestProgressCard title='Learn' progress={40} routerLink='/theory-test/car/learn' routerDirection='forward' icon={<AlertsIcon />} />
+                            <UITestProgressCard title='Alertness' progress={20} routerLink='/theory-test/car/learn' routerDirection='forward' icon={<AlertsIcon />} />
+                        </UITestProgressList>
+
+
+                        <UITestProgressList title='Hazard Perception' routerLink='/theory-test/car/learn'>
+                            <UITestProgressCard title='Alertness' progress={20} routerLink='/theory-test/car/learn' routerDirection='forward' icon={<AlertsIcon />} />
+                            <UITestProgressCard title='Learn' progress={40} routerLink='/theory-test/car/learn' routerDirection='forward' icon={<AlertsIcon />} />
+                            <UITestProgressCard title='Alertness' progress={20} routerLink='/theory-test/car/learn' routerDirection='forward' icon={<AlertsIcon />} />
+                        </UITestProgressList>
+
 
 
                         <IonRouterLink routerDirection='root' routerLink='/traffic-signs'>
@@ -84,18 +97,6 @@ const TheoryTest: React.FC = () => {
                         <IonRouterLink routerDirection='forward' routerLink='/subsciripton'>
                             <p>Subsciripton</p>
                         </IonRouterLink>
-                        <br />
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique harum ullam id quia quas fugit, consequuntur veritatis dolorum nihil deserunt cum, deleniti magnam nobis aperiam quae porro adipisci maiores fugiat.
-
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique harum ullam id quia quas fugit, consequuntur veritatis dolorum nihil deserunt cum, deleniti magnam nobis aperiam quae porro adipisci maiores fugiat.
-                        </p>
-
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique harum ullam id quia quas fugit, consequuntur veritatis dolorum nihil deserunt cum, deleniti magnam nobis aperiam quae porro adipisci maiores fugiat.
-                        </p>
                     </div>
 
 
