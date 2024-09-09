@@ -44,3 +44,5 @@ yarn.lock
 app-mobile/ios/*
 
 app-mobile/build
+
+local-notes.txt
