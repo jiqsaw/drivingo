@@ -6,6 +6,10 @@ const uiInitialState: IStoreUI = {
     theme: null,
     quickTestNumberOfQuestions: 10,
     hideMockTestIntroduction: false,
+    network: {
+        connected: true,
+        connectionType: ''
+    }
 };
 
 export default createSlice({
@@ -17,6 +21,13 @@ export default createSlice({
         },
         mockTestIntroductionClose: (state) => {
             state.hideMockTestIntroduction = true;
-        }
+        },
+        networkStatusChange: (state = uiInitialState, action) => {
+            state.network = {
+                connected: action.payload.connected,
+                connectionType: action.payload.connectionType
+            };
+
+        },
     },
 });
