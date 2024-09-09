@@ -1,6 +1,6 @@
 import { IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
-import { library, playCircle, radio } from 'ionicons/icons';
+import { gridOutline, settings } from 'ionicons/icons';
 import { Redirect, Route } from "react-router";
 import HighwayCodeDetailPage from "./pages/highway-code/Detail";
 import HighwayCode from "./pages/highway-code/HighwayCode";
@@ -22,7 +22,7 @@ const Router: React.FC = () => {
 
     return (
         <IonReactRouter>
-            <IonTabs>
+            <IonTabs className="main-router-tab">
                 <IonRouterOutlet>
                     <Redirect exact path="/" to="/theory-test/car/home" />
 
@@ -57,22 +57,30 @@ const Router: React.FC = () => {
 
                 </IonRouterOutlet>
 
-                <IonTabBar slot="bottom">
-                    <IonTabButton tab="home" href="/theory-test/car/home">
-                        <IonIcon icon={playCircle} />
+                <IonTabBar slot="bottom" property="" className="main-tab">
+
+                    <IonTabButton tab="home" href="/theory-test/car/home" className="nav-item firstly">
                         <IonLabel>Theory Test</IonLabel>
                     </IonTabButton>
 
-                    <IonTabButton tab="radio" href="/highway-code">
-                        <IonIcon icon={radio} />
-                        <IonLabel>Highway code</IonLabel>
+                    <ul>
+                        <li>
+                            <IonTabButton tab="radio" href="/highway-code" className="nav-item">
+                                <IonIcon icon={gridOutline} />
+                            </IonTabButton>
+                        </li>
+                    </ul>
+
+                    <IonTabButton tab="radio" href="/highway-code" className="nav-item">
+                        <IonIcon icon={gridOutline} />
                     </IonTabButton>
 
-                    <IonTabButton tab="library" href="/traffic-signs">
-                        <IonIcon icon={library} />
-                        <IonLabel>Traffic signs</IonLabel>
+                    <IonTabButton tab="settings" href="/settings" className="nav-item">
+                        <IonIcon icon={settings} />
                     </IonTabButton>
+
                 </IonTabBar>
+
             </IonTabs>
         </IonReactRouter>
     );

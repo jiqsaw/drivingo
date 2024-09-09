@@ -1,0 +1,85 @@
+@import './ionic.css';
+@import './fonts.css';
+@import './variables.css';
+
+html.ios,
+html.md {
+    font-family: var(--ion-default-font);
+}
+
+body {
+    background-color: #000;
+}
+
+.main-tab {
+    background-color: transparent;
+    background: transparent;
+    border: 0;
+    width: 256px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    border-radius: 56px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #352494;
+    color: #fff;
+    z-index: 2;
+
+    svg {
+        fill: #fff;
+    }
+
+
+
+    .nav-item {
+        background-color: transparent;
+
+        ion-icon {
+            color: #fff;
+        }
+    }
+
+    .nav-item.firstly {
+        background-color: #fff;
+        border-radius: 56px;
+        padding-left: 20px;
+        padding-right: 20px;
+        white-space: nowrap;
+        min-width: 130px;
+    }
+
+
+}
+
+
+
+
+.main-tab-items {
+    background: #352494;
+}
+
+.main-router-tab {
+    .tabs-inner {
+        &::before {
+            content: "";
+            position: fixed;
+            bottom: -40px;
+            left: -50%;
+            z-index: 1;
+            width: 100%;
+            height: 160px;
+            background: #110E18;
+            filter: blur(24px);
+            width: 200%;
+
+        }
+    }
+}

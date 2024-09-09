@@ -7,6 +7,8 @@ import AppRouter from './AppRouter';
 import { logCurrentNetworkStatus } from './helper/app';
 import { Network } from '@capacitor/network';
 
+
+
 setupIonicReact();
 
 
