@@ -1,10 +1,11 @@
+import { CONSTANTS } from "@drivingo/global";
 import { createSlice } from "@reduxjs/toolkit";
 import { IStoreUI } from "./ui.model";
 
 
 const uiInitialState: IStoreUI = {
     theme: null,
-    quickTestNumberOfQuestions: 10,
+    quickTestNumberOfQuestions: CONSTANTS.defaultQuickTestQuestionCount,
     hideMockTestIntroduction: false,
     network: {
         connected: true,

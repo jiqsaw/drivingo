@@ -1,3 +1,3 @@
 export const envrionment = {
-    envName: 'devk'
+    envName: 'dev',
 };

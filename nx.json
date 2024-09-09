@@ -1,65 +1,65 @@
 {
-  "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "namedInputs": {
-    "default": ["{projectRoot}/**/*", "sharedGlobals"],
-    "production": [
-      "default",
-      "!{projectRoot}/.eslintrc.json",
-      "!{projectRoot}/eslint.config.js"
+    "$schema": "./node_modules/nx/schemas/nx-schema.json",
+    "namedInputs": {
+        "default": ["{projectRoot}/**/*", "sharedGlobals"],
+        "production": [
+            "default",
+            "!{projectRoot}/.eslintrc.json",
+            "!{projectRoot}/eslint.config.js"
+        ],
+        "sharedGlobals": []
+    },
+    "nxCloudAccessToken": "ODRmYjFiOTgtMzlmNS00OWQwLTgwZWEtNDdhYzgwYzczZDMyfHJlYWQtd3JpdGU=",
+    "targetDefaults": {
+        "build": {
+            "cache": true,
+            "dependsOn": ["^build"]
+        },
+        "@nx/eslint:lint": {
+            "cache": true,
+            "inputs": [
+                "default",
+                "{workspaceRoot}/.eslintrc.json",
+                "{workspaceRoot}/.eslintignore",
+                "{workspaceRoot}/eslint.config.js"
+            ]
+        },
+        "@nx/js:tsc": {
+            "cache": true,
+            "dependsOn": ["^build"],
+            "inputs": ["production", "^production"]
+        }
+    },
+    "generators": {
+        "@nx/react": {
+            "application": {
+                "babel": true,
+                "style": "css",
+                "linter": "eslint",
+                "bundler": "webpack"
+            },
+            "component": {
+                "style": "css"
+            },
+            "library": {
+                "style": "css",
+                "linter": "eslint",
+                "unitTestRunner": "none"
+            }
+        }
+    },
+    "plugins": [
+        {
+            "plugin": "@nx/eslint/plugin",
+            "options": {
+                "targetName": "eslint:lint",
+                "extensions": ["ts", "tsx", "js", "jsx", "html", "vue"]
+            }
+        }
     ],
-    "sharedGlobals": []
-  },
-  "nxCloudAccessToken": "ODRmYjFiOTgtMzlmNS00OWQwLTgwZWEtNDdhYzgwYzczZDMyfHJlYWQtd3JpdGU=",
-  "targetDefaults": {
-    "build": {
-      "cache": true,
-      "dependsOn": ["^build"]
-    },
-    "@nx/eslint:lint": {
-      "cache": true,
-      "inputs": [
-        "default",
-        "{workspaceRoot}/.eslintrc.json",
-        "{workspaceRoot}/.eslintignore",
-        "{workspaceRoot}/eslint.config.js"
-      ]
-    },
-    "@nx/js:tsc": {
-      "cache": true,
-      "dependsOn": ["^build"],
-      "inputs": ["production", "^production"]
+    "release": {
+        "version": {
+            "preVersionCommand": "npx nx run-many -t build"
+        }
     }
-  },
-  "generators": {
-    "@nx/react": {
-      "application": {
-        "babel": true,
-        "style": "css",
-        "linter": "eslint",
-        "bundler": "webpack"
-      },
-      "component": {
-        "style": "css"
-      },
-      "library": {
-        "style": "css",
-        "linter": "eslint",
-        "unitTestRunner": "none"
-      }
-    }
-  },
-  "plugins": [
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "eslint:lint",
-        "extensions": ["ts", "tsx", "js", "jsx", "html", "vue"]
-      }
-    }
-  ],
-  "release": {
-    "version": {
-      "preVersionCommand": "npx nx run-many -t build"
-    }
-  }
 }
