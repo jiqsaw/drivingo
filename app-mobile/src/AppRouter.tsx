@@ -1,6 +1,5 @@
-import { IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from "@ionic/react";
+import { IonRouterLink, IonRouterOutlet } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
-import { gridOutline, settings } from 'ionicons/icons';
 import { Redirect, Route } from "react-router";
 import HighwayCodeDetailPage from "./pages/highway-code/Detail";
 import HighwayCode from "./pages/highway-code/HighwayCode";
@@ -17,12 +16,17 @@ import QuickTestTopic from "./pages/theory-test/quick-test/topics/Topics";
 import TheoryTest from "./pages/theory-test/TheoryTest";
 import TrafficSigns from "./pages/TrafficSigns";
 import HazardPerceptionDetail from "./pages/theory-test/hazard-perception/Detail";
+import { CloseIcon, CymbalIcon, GridIcon, SettingsIcon, TrafficLightIcon } from "@drivingo/ui/components";
+import { useState } from "react";
 
 const Router: React.FC = () => {
 
+    const [subMenu1, setSubMenu1] = useState(false)
+
+
     return (
         <IonReactRouter>
-            <IonTabs className="main-router-tab">
+            <div className="main-router-tab">
                 <IonRouterOutlet>
                     <Redirect exact path="/" to="/theory-test/car/home" />
 
@@ -56,32 +60,48 @@ const Router: React.FC = () => {
                     <Route path="/subsciripton" render={() => <Subscription />} exact={true} />
 
                 </IonRouterOutlet>
-
-                <IonTabBar slot="bottom" property="" className="main-tab">
-
-                    <IonTabButton tab="home" href="/theory-test/car/home" className="nav-item firstly">
-                        <IonLabel>Theory Test</IonLabel>
-                    </IonTabButton>
+                <nav slot="bottom" property="" className="main-tab">
 
                     <ul>
                         <li>
-                            <IonTabButton tab="radio" href="/highway-code" className="nav-item">
-                                <IonIcon icon={gridOutline} />
-                            </IonTabButton>
+                            <IonRouterLink routerDirection='root' routerLink='/theory-test/car/home' className="nav-item firstly">
+                                Theory Test
+                            </IonRouterLink>
                         </li>
+
+                        <li
+                            className={`${subMenu1 ? 'active' : ''}`}
+                            onClick={
+                                () => {
+                                    setSubMenu1(!subMenu1)
+                                }
+                            }>
+                            {
+                                subMenu1 ? <span><CloseIcon /></span> : <span><GridIcon /></span>
+                            }
+                            <ul className={`sub-menu`}>
+                                <li>
+                                    <IonRouterLink routerDirection='root' routerLink="/highway-code" className="sub-nav-item">
+                                        <CymbalIcon /> <span>Highway Code</span>
+                                    </IonRouterLink>
+                                </li>
+                                <li>
+                                    <IonRouterLink routerDirection='root' routerLink="/traffic-signs" className="sub-nav-item"
+                                    >
+                                        <TrafficLightIcon /> <span>Traffic Signs</span>
+                                    </IonRouterLink>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <IonRouterLink routerDirection='root' routerLink="/settings" className="nav-item">
+                                <SettingsIcon />
+                            </IonRouterLink>
+                        </li>
+
                     </ul>
-
-                    <IonTabButton tab="radio" href="/highway-code" className="nav-item">
-                        <IonIcon icon={gridOutline} />
-                    </IonTabButton>
-
-                    <IonTabButton tab="settings" href="/settings" className="nav-item">
-                        <IonIcon icon={settings} />
-                    </IonTabButton>
-
-                </IonTabBar>
-
-            </IonTabs>
+                </nav>
+            </div>
         </IonReactRouter>
     );
 };
