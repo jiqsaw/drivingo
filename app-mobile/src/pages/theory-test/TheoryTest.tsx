@@ -1,23 +1,21 @@
 import { AIBanner, AlertsIcon, AppleIcon, OclockIcon, StarIcon, UIButton, UILink, UINavigationItem, UINavigationList, UITestProgressCard, UITestProgressList } from '@drivingo/ui/components';
-import { UIHeader } from '@drivingo/ui/compound';
+
 import {
     IonContent,
-    IonHeader,
+
     IonPage,
     IonRouterLink,
-    IonTitle,
-    IonToolbar,
+
 } from '@ionic/react';
 
 import '../../styles/pages/home.scss';
 
 const TheoryTest: React.FC = () => {
     return (
-
         <IonPage>
             {/* <UIHeader title='Theory Test' /> */}
             <IonContent fullscreen >
-                <div className='homepage'>
+                <div className='page-container homepage'>
                     <div className='header'>
                         <h1>Car</h1>
                         <img className='top-img' src="/assets/images/top-car.png" alt="car" />
@@ -98,8 +96,6 @@ const TheoryTest: React.FC = () => {
                             <p>Subsciripton</p>
                         </IonRouterLink>
                     </div>
-
-
                 </div>
             </IonContent>
         </IonPage>

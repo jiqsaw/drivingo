@@ -172,6 +172,14 @@ export const CloseIcon = () => {
         <svg width="32" height="32" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.5141 1.45709L1.42829 17.5429M1.42829 1.45709L17.5141 17.5429" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
+    )
+}
 
+
+export const ArrowNextIcon = () => {
+    return (
+        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.1828 11L11.2339 5.4L12.7477 4L21.2462 12L12.7477 20L11.2339 18.6L17.1828 13L4.24927 13V11L17.1828 11Z" fill="#FEF7FF" />
+        </svg>
     )
 }

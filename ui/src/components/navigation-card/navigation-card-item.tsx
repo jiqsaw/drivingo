@@ -17,6 +17,7 @@ export const UINavigationItem: FC<UINavigationItemProps> = ({ color, title, desc
     return (<IonRouterLink
         routerDirection={routerDirection}
         routerLink={routerLink}
+        className={styles.nav_item}
     >
         <div className={`${styles.card} ${color}`}>
             <h3 className={styles.card_title}>

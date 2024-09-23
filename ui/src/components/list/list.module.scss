@@ -1,0 +1,64 @@
+.text_list_item {
+    width: 100%;
+    display: block;
+
+    :global {
+        .link-item-wrap {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 12px 0;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .link-item {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .page {
+            font-size: 12px;
+            opacity: 0.35
+        }
+
+        svg {
+            color: #fff;
+            min-width: 24px;
+            width: 24px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.masonry_list_main {
+    display: block;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 10px;
+    column-count: 2;
+}
+
+.masonry_list_main_item {
+    width: 100%;
+    display: inline-block;
+    padding: 16px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #000;
+}
+
+.masonry_list_main_title {
+    font-size: 12px;
+    font-weight: 700;
+}
