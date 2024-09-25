@@ -7,10 +7,12 @@
         rgba(255, 255, 255, 1) 20%
     );
     --ion-main-bg-color: #fff;
+    --ion-primary-color: #343131;
 }
 
 .ion-palette-dark.ios,
 .ion-palette-dark.md {
+    --ion-primary-color: #fff;
     --ion-item-background: #1c1c1d;
     --ion-background-gradient: linear-gradient(
         160deg,

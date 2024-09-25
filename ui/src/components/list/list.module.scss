@@ -10,7 +10,7 @@
             justify-content: space-between;
             width: 100%;
             padding: 12px 0;
-            color: #fff;
+            color: var(--ion-primary-color);
             font-weight: 500;
         }
 
@@ -25,13 +25,19 @@
             font-weight: 700;
         }
 
+        .subtitle {
+            font-size: 12px;
+            font-weight: 400;
+            opacity: 0.5;
+        }
+
         .page {
             font-size: 12px;
             opacity: 0.35
         }
 
         svg {
-            color: #fff;
+            color: var(--ion-primary-color);
             min-width: 24px;
             width: 24px;
             margin-left: 10px;

@@ -9,7 +9,7 @@ type HighwayCodeSignsProps = {
 const HighwayCodeSigns: FC<HighwayCodeSignsProps> = ({ data }) => {
     return (
         data.map((item) => (
-            <UITextList key={item.id} title={item.title} link={`/highway-code/signs/${item.id}`} />
+            <UITextList key={item.id} title={item.title} subtitle={item.footNote} link={`/highway-code/signs/${item.id}`} />
         ))
     );
 };

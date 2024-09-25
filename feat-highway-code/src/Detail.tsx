@@ -1,9 +1,7 @@
 
 import { FC } from "react";
-
 import { HighwayCodeDataProvider } from "@drivingo/data-provider";
-import { UIHeader } from "@drivingo/ui/compound";
-import { IonContent } from "@ionic/react";
+import { UISubHeader } from "@drivingo/ui/components";
 
 type HighwayCodeDetailProps = {
     type: 'content' | 'signs';
@@ -22,18 +20,13 @@ const HighwayCodeDetail: FC<HighwayCodeDetailProps> = ({ id, type }) => {
 
     return (
         <>
-            <UIHeader collapse="condense" title={data.title} />
-            <IonContent fullscreen className='ion-padding'>
-                <div dangerouslySetInnerHTML={
-                    {
-                        __html: data.details.body
-                    }}>
-                </div>
-            </IonContent>
+            <UISubHeader title={data.title} />
+            <div dangerouslySetInnerHTML={
+                {
+                    __html: data.details.body
+                }}>
+            </div>
         </>
-
-
-
     );
 };
 

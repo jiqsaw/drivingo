@@ -12,3 +12,5 @@ export * from './tab/tab';
 export * from './searchbox/searchbox';
 export * from './list/text-list';
 export * from './list/masonry-image-list';
+export * from './main-header/main-header';
+export * from './sub-header/sub-header';

@@ -1,0 +1,44 @@
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back_button {
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    ion-back-button {
+        display: block;
+        color: #fff;
+    }
+}
+
+.ai_button {
+    border: 0;
+    background-color: transparent;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-style: italic;
+
+    path {
+        fill: #fff !important;
+    }
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}

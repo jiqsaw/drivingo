@@ -9,8 +9,8 @@ type HighwayCodeContentProps = {
 
 const HighwayCodeContent: FC<HighwayCodeContentProps> = ({ data }) => {
     return (
-        data.map((item) => (
-            <UITextList key={item.id} title={item.title} link={`/highway-code/content/${item.id}`} />
+        data.map((item: IHighwayCode) => (
+            <UITextList key={item.id} title={item.title} subtitle={item.footNote} link={`/highway-code/content/${item.id}`} />
         ))
     );
 };
