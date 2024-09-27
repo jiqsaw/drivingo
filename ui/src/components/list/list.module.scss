@@ -46,12 +46,11 @@
         }
 
         .tree-points {
-            display: flex;
-            gap: 4px;
+            display: block;
             border: 0;
             background-color: var(--ion-primary-color);
-            width: 4px;
-            height: 4px;
+            width: 8px;
+            height: 8px;
             opacity: 0.2;
             border-radius: 100%;
             justify-items: flex-start;
@@ -62,27 +61,27 @@
             &::before {
                 content: '';
                 display: block;
-                min-width: 4px;
-                width: 4px;
-                height: 4px;
+                min-width: 8px;
+                width: 8px;
+                height: 8px;
                 border-radius: 100%;
                 background-color: var(--ion-primary-color);
                 position: absolute;
                 top: 0;
-                left: 8px;
+                left: 12px;
             }
 
             &::after {
                 content: '';
                 display: block;
-                width: 4px;
-                min-width: 4px;
-                height: 4px;
+                width: 8px;
+                min-width: 8px;
+                height: 8px;
                 border-radius: 100%;
                 background-color: var(--ion-primary-color);
                 position: absolute;
                 top: 0;
-                left: 16px;
+                left: 24px;
             }
         }
     }

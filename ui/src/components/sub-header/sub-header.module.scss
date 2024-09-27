@@ -42,3 +42,43 @@
     font-weight: 700;
     margin-bottom: 16px;
 }
+
+.tree_points {
+    display: block;
+    border: 0;
+    background-color: var(--ion-primary-color);
+    width: 8px;
+    height: 8px;
+    opacity: 0.2;
+    border-radius: 100%;
+    justify-items: flex-start;
+    margin: 0;
+    position: relative;
+    overflow: visible;
+
+    &::before {
+        content: '';
+        display: block;
+        min-width: 8px;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background-color: var(--ion-primary-color);
+        position: absolute;
+        top: 0;
+        left: 12px;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 8px;
+        min-width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background-color: var(--ion-primary-color);
+        position: absolute;
+        top: 0;
+        left: 24px;
+    }
+}

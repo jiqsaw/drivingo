@@ -1,6 +1,6 @@
-import { IonBackButton, IonButtons, IonHeader, IonToolbar } from "@ionic/react";
+import { IonBackButton, IonButtons } from "@ionic/react";
 import styles from "./sub-header.module.scss";
-import { AIIcon, ArrowBackIcon } from "../icons";
+import { AIIcon } from "../icons";
 import { FC } from "react";
 
 interface SubHeaderProps {
@@ -19,6 +19,7 @@ export const UISubHeader: FC<SubHeaderProps> = ({ title }) => {
                 </IonButtons>
             </div>
             <h1 className={styles.title}>{title}</h1>
+            <hr className={styles.tree_points} />
         </div>
     );
 };
