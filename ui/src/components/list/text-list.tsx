@@ -25,7 +25,7 @@ export const UITextList: FC<TextListProps> = ({ title, link, subtitle }) => {
                 </span>
                 <ArrowNextIcon />
             </span>
-
+            <hr className='tree-points' />
         </IonRouterLink>
 
     );

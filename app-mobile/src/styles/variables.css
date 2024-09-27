@@ -2,8 +2,8 @@
     --ion-default-font: 'Poppins', sans-serif;
     --ion-background-color: #fff;
     --ion-background-gradient: linear-gradient(
-        160deg,
-        rgba(255, 31, 162, 1) 0%,
+        180deg,
+        rgba(255, 31, 162, 0.84) 0%,
         rgba(255, 255, 255, 1) 20%
     );
     --ion-main-bg-color: #fff;
@@ -15,8 +15,8 @@
     --ion-primary-color: #fff;
     --ion-item-background: #1c1c1d;
     --ion-background-gradient: linear-gradient(
-        160deg,
-        rgba(79, 72, 158, 1) 0%,
+        170deg,
+        rgba(79, 72, 158, 0.84) 0%,
         rgba(13, 10, 44, 1) 60%
     );
     --ion-background-color: #0d0a2c;
