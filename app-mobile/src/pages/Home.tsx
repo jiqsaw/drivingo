@@ -26,8 +26,6 @@ const Home: React.FC = () => {
         <UIButton text='example button' /><br /><br />
         <br /><br />
         <UILink text='link example' />
-
-
         <IonRouterLink routerDirection='forward' routerLink='/settings'>
           <p>Settings</p>
         </IonRouterLink>

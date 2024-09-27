@@ -7,7 +7,6 @@ import {
 
 const HazardPerception: React.FC = () => {
     return (
-
         <IonPage>
             <UIHeader title='Hazard Perception' />
             <IonContent fullscreen className='ion-padding'>

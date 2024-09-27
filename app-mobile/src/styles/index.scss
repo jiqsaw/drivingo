@@ -7,10 +7,6 @@ html.md {
     font-family: var(--ion-default-font);
 }
 
-body {
-    background-color: #000;
-}
-
 .main-router-tab {
     height: 100vh;
     width: 100%;
@@ -23,7 +19,7 @@ body {
         z-index: 1;
         width: 100%;
         height: 160px;
-        background: #110E18;
+        background: var(--ion-background-color);
         filter: blur(24px);
         width: 200%;
 
@@ -203,9 +199,47 @@ body {
     }
 }
 
+.page-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    background: var(--ion-background-color);
+    position: relative;
 
-
+    >* {
+        z-index: 1;
+        position: relative;
+    }
+    &::before {
+        content: "";
+        display: block;
+        background: var(--ion-background-gradient);
+        width: 100%;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+}
 
 .main-tab-items {
     background: #352494;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap-20 {
+    gap: 20px;
 }

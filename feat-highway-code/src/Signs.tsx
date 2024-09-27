@@ -1,5 +1,5 @@
 import { IHighwayCode } from "@drivingo/models";
-import { IonRouterLink } from "@ionic/react";
+import { UITextList } from "@drivingo/ui/components";
 import { FC } from "react";
 
 type HighwayCodeSignsProps = {
@@ -8,15 +8,9 @@ type HighwayCodeSignsProps = {
 
 const HighwayCodeSigns: FC<HighwayCodeSignsProps> = ({ data }) => {
     return (
-        <div>
-            {data.map((item) => (
-                <div key={item.id}>
-                    <IonRouterLink routerLink={`/highway-code/signs/${item.id}`}>
-                        <span>{item.title}</span>
-                    </IonRouterLink>
-                </div>
-            ))}
-        </div>
+        data.map((item) => (
+            <UITextList key={item.id} title={item.title} subtitle={item.footNote} link={`/highway-code/signs/${item.id}`} />
+        ))
     );
 };
 

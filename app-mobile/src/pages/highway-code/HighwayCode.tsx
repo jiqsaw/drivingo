@@ -1,15 +1,16 @@
 
 import { FeatHighwayCode } from "@drivingo/feat-highway-code";
-import { UIHeader } from "@drivingo/ui/compound";
 import { IonContent, IonPage } from "@ionic/react";
+import '../../styles/pages/subpage.scss';
 
 const HighwayCode = () => {
 
     return (
         <IonPage>
-            <UIHeader title='HighwayCode' />
-            <IonContent fullscreen className='ion-padding'>
-                <FeatHighwayCode />
+            <IonContent fullscreen>
+                <div className='page-container subpage flex-column'>
+                    <FeatHighwayCode />
+                </div>
             </IonContent>
         </IonPage>
     );

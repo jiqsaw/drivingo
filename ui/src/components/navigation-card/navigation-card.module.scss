@@ -9,7 +9,6 @@ $light_tealish: #25C8A7;
 
 
 .nav_list {
-    // grid 2 column
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -26,6 +25,10 @@ $light_tealish: #25C8A7;
     align-self: center;
     justify-self: center;
 
+}
+
+.nav_item {
+    width: 100%;
 }
 
 .card {
@@ -128,6 +131,7 @@ $light_tealish: #25C8A7;
     z-index: 0;
     pointer-events: none;
     width: 80%;
+    max-width: 240px;
 
     :global {
         svg {

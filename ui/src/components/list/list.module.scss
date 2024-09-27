@@ -1,0 +1,113 @@
+.text_list_item {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+
+    :global {
+        .link-item-wrap {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 12px 0;
+            color: var(--ion-primary-color);
+            font-weight: 500;
+        }
+
+        .link-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            width: 100%;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            font-weight: 500;
+            opacity: 0.5;
+        }
+
+        .page {
+            font-size: 12px;
+            opacity: 0.35
+        }
+
+        svg {
+            color: var(--ion-primary-color);
+            min-width: 24px;
+            width: 24px;
+            margin-left: 10px;
+        }
+
+        .tree-points {
+            display: flex;
+            gap: 4px;
+            border: 0;
+            background-color: var(--ion-primary-color);
+            width: 4px;
+            height: 4px;
+            opacity: 0.2;
+            border-radius: 100%;
+            justify-items: flex-start;
+            margin: 0;
+            position: relative;
+            overflow: visible;
+
+            &::before {
+                content: '';
+                display: block;
+                min-width: 4px;
+                width: 4px;
+                height: 4px;
+                border-radius: 100%;
+                background-color: var(--ion-primary-color);
+                position: absolute;
+                top: 0;
+                left: 8px;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                width: 4px;
+                min-width: 4px;
+                height: 4px;
+                border-radius: 100%;
+                background-color: var(--ion-primary-color);
+                position: absolute;
+                top: 0;
+                left: 16px;
+            }
+        }
+    }
+}
+
+.masonry_list_main {
+    display: block;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 10px;
+    column-count: 2;
+}
+
+.masonry_list_main_item {
+    width: 100%;
+    display: inline-block;
+    padding: 16px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #000;
+}
+
+.masonry_list_main_title {
+    font-size: 12px;
+    font-weight: 700;
+}

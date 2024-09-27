@@ -1,19 +1,10 @@
 .homepage {
-    background-color: var(--ion-background-color);
-    background-image: url('/assets/images/top-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #000;
-
 
     .header {
         height: 160px;
-        position: relative;
         padding: 100px 32px 0 32px;
-
-
+        position: relative;
+        z-index: 10;
         h1 {
             color: #fff;
             font-size: 32px;
@@ -41,7 +32,7 @@
     position: relative;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-    background-color: #202225;
+    background-color: var(--ion-background-color);
     overflow-x: hidden;
     padding: 8px;
     padding-bottom: 100px;
