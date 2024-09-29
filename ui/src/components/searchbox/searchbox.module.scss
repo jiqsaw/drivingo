@@ -5,7 +5,8 @@
     :global {
         .searchbar-input {
             border-radius: 30px;
-            padding: 9px 30px;
+            box-shadow: none;
+            background-color: var(--ion-searchbar-background);
         }
     }
 }
