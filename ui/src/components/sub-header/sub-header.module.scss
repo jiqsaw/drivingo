@@ -13,13 +13,18 @@
 
 .back_button {
     display: block;
-    width: 30px;
-    height: 30px;
+
 
     ion-back-button {
         display: block;
-        color: #fff;
+        color: var(--ion-ai-icon-color) !important;
     }
+
+    .button-native {
+        padding: 10px;
+    }
+
+
 }
 
 .ai_button {
@@ -31,9 +36,10 @@
     gap: 10px;
     font-size: 14px;
     font-style: italic;
+    color: var(--ion-ai-icon-color);
 
     path {
-        fill: #fff !important;
+        fill: var(--ion-ai-icon-color) !important;
     }
 }
 

@@ -4,11 +4,11 @@
     width: 100%;
 }
 
-
 .tabs {
     display: flex;
     margin-bottom: 20px;
     overflow-x: auto;
+
     &::-webkit-scrollbar {
         display: none;
     }
@@ -24,7 +24,7 @@
     flex-shrink: 0;
     border-radius: 100px;
     background-color: transparent;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--ion-tab-color);
     font-weight: 700;
     text-wrap: nowrap;
     cursor: pointer;

@@ -1,13 +1,19 @@
 :root {
     --ion-default-font: 'Poppins', sans-serif;
-    --ion-background-color: #fff;
+    --ion-background-color: #f7f7f7;
     --ion-background-gradient: linear-gradient(
-        180deg,
-        rgba(255, 31, 162, 0.84) 0%,
-        rgba(255, 255, 255, 1) 20%
+        170deg,
+        rgba(255, 31, 162, 0.6) 0%,
+        rgba(255, 255, 255, 0) 60%
     );
     --ion-main-bg-color: #fff;
     --ion-primary-color: #343131;
+    --ion-searchbar-background: rgba(75, 75, 75, 0.1);
+
+    --icon-padding-end: 0.2rem;
+    --icon-padding-start: 0.2rem;
+    --ion-tab-color: rgba(9, 3, 3, 0.5);
+    --ion-ai-icon-color: #a00095;
 }
 
 .ion-palette-dark.ios,
@@ -16,10 +22,13 @@
     --ion-item-background: #1c1c1d;
     --ion-background-gradient: linear-gradient(
         170deg,
-        rgba(79, 72, 158, 0.84) 0%,
-        rgba(13, 10, 44, 1) 60%
+        rgba(79, 72, 158, 0.6) 0%,
+        rgba(13, 10, 44, 0) 60%
     );
     --ion-background-color: #0d0a2c;
+    --ion-searchbar-background: rgba(255, 255, 255, 0.1);
+    --ion-tab-color: rgba(255, 255, 255, 0.5);
+    --ion-ai-icon-color: #fff;
 }
 
 :root.ios {
