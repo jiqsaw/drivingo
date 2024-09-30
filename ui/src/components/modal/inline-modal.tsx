@@ -1,16 +1,19 @@
-import { IonModal } from "@ionic/react";
+import { IonIcon, IonModal } from "@ionic/react";
 import { FC, useEffect, useRef } from "react";
+import { closeCircle } from 'ionicons/icons';
 
-import './modal.scss';
+import styles from './modal.module.scss';
 
 export interface UIInlineModalProps {
     isOpen: boolean;
+    type?: "default" | "full";
     onClose?: () => void;
     children: React.ReactNode;
 }
 
-export const UIInlineModal: FC<UIInlineModalProps> = ({ children, isOpen, onClose }) => {
+export const UIInlineModal: FC<UIInlineModalProps> = ({ children, isOpen, onClose, type }) => {
     const modal = useRef<HTMLIonModalElement>(null);
+    type = type || 'default';
 
     useEffect(() => {
         if (modal.current) {
@@ -30,12 +33,15 @@ export const UIInlineModal: FC<UIInlineModalProps> = ({ children, isOpen, onClos
     };
 
     return (
-        <IonModal id="inline-modal" ref={modal} trigger="open-custom-dialog">
+        <IonModal id="inline-modal" ref={modal} trigger="open-custom-dialog" className={`${styles.modal} ${type}`}>
             <div className="wrapper">
                 {children}
-                <div className="close-button" onClick={() => {
+                <div className={styles.close_button} onClick={() => {
                     handleClose();
-                }}>X</div>
+                }}>
+                    {/* <ion-icon name="close-outline"></ion-icon> */}
+                    <IonIcon icon={closeCircle} />
+                </div>
             </div>
         </IonModal>
     );
