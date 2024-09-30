@@ -18,7 +18,8 @@
 
 .ion-palette-dark.ios,
 .ion-palette-dark.md {
-    --ion-primary-color: #fff;
+    --ion-primary-color: #1c1c1d;
+    --ion-main-bg-color: #1c1c1d;
     --ion-item-background: #1c1c1d;
     --ion-background-gradient: linear-gradient(
         170deg,

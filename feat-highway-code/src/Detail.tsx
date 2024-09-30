@@ -21,7 +21,7 @@ const HighwayCodeDetail: FC<HighwayCodeDetailProps> = ({ id, type }) => {
     return (
         <>
             <UISubHeader title={data.title} />
-            <div dangerouslySetInnerHTML={
+            <div className="content-body" dangerouslySetInnerHTML={
                 {
                     __html: data.details.body
                 }}>

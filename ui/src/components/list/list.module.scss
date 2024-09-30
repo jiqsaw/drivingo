@@ -97,10 +97,10 @@
 }
 
 .masonry_list_main_item {
-    width: 100%;
+    width: calc(100% - 5px);
     display: inline-block;
     padding: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border-radius: 12px;
     background-color: #fff;
     color: #000;
@@ -109,4 +109,31 @@
 .masonry_list_main_title {
     font-size: 12px;
     font-weight: 700;
+    color: #000;
+}
+
+.modal_image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--ion-main-bg-color);
+
+
+    img {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+}
+
+.modal_content_body {
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    color: var(--ion-primary-color);
+    font-weight: bold;
 }
