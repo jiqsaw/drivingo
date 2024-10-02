@@ -1,9 +1,8 @@
-import { IonBackButton, IonButtons } from "@ionic/react";
-import styles from "./sub-header.module.scss";
-import { AIIcon } from "../icons";
-import { FC } from "react";
+import { IonBackButton, IonButtons } from '@ionic/react';
 import { arrowBack } from 'ionicons/icons';
-
+import { FC } from 'react';
+import { AIIcon } from '../icons';
+import styles from './sub-header.module.scss';
 
 interface SubHeaderProps {
     title: string;
@@ -14,7 +13,7 @@ export const UISubHeader: FC<SubHeaderProps> = ({ title }) => {
         <div className={styles.main}>
             <div className={styles.top}>
                 <IonButtons className={styles.back_button}>
-                    <IonBackButton text={""} icon={arrowBack}></IonBackButton>
+                    <IonBackButton text={''} icon={arrowBack}></IonBackButton>
                 </IonButtons>
                 <IonButtons className={styles.ai_button}>
                     <span>summarise with ai</span> <AIIcon />

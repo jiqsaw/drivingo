@@ -1,5 +1,5 @@
 import testExplanations from './explanations';
-import testImages from "./images";
+import testImages from './images';
 import testQuestions from './questions';
 
 export const DATA_TEST_IMAGES = testImages;

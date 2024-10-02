@@ -1,8 +1,8 @@
-import { FC } from "react";
+import { FC } from 'react';
 
+import { IonButtons } from '@ionic/react';
+import { AIIcon } from '../icons';
 import styles from './main-header.module.scss';
-import { AIIcon } from "../icons";
-import { IonButtons } from "@ionic/react";
 
 interface UIMainHeaderProps {
     user: any; // This is not clear yet
@@ -10,8 +10,6 @@ interface UIMainHeaderProps {
 }
 
 export const UIMainHeader: FC<UIMainHeaderProps> = ({ title, user }) => {
-
-
     return (
         <div className={styles.main}>
             <div className={styles.top}>
@@ -25,4 +23,4 @@ export const UIMainHeader: FC<UIMainHeaderProps> = ({ title, user }) => {
             <h1 className={styles.title}>{title}</h1>
         </div>
     );
-}
+};

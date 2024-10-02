@@ -7,9 +7,7 @@
     "targets": {
         "build": {
             "executor": "@nx/webpack:webpack",
-            "outputs": [
-                "{options.outputPath}"
-            ],
+            "outputs": ["{options.outputPath}"],
             "defaultConfiguration": "production",
             "options": {
                 "compiler": "babel",
@@ -46,9 +44,7 @@
                     },
                     "app-mobile/src/manifest.json"
                 ],
-                "styles": [
-                    "app-mobile/src/styles/index.scss"
-                ],
+                "styles": ["app-mobile/src/styles/index.scss"],
                 "scripts": [],
                 "webpackConfig": "app-mobile/webpack.config.js"
             },
@@ -91,9 +87,6 @@
                     "hmr": false
                 }
             }
-        },
-        "lint": {
-            "executor": "@nx/eslint:lint"
         },
         "cap": {
             "executor": "@nxext/capacitor:cap",

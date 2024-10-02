@@ -1,7 +1,7 @@
 {
-  "name": "mobile",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
+    "name": "mobile",
+    "integrations": {
+        "capacitor": {}
+    },
+    "type": "react"
 }

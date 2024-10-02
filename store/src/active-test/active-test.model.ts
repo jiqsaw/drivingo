@@ -1,4 +1,9 @@
-import { IQuestion, OptionChar, TestCategory, TestType } from "@drivingo/models";
+import {
+    IQuestion,
+    OptionChar,
+    TestCategory,
+    TestType,
+} from '@drivingo/models';
 
 export interface IStoreTheoryActiveTest {
     type: TestType;
@@ -23,7 +28,6 @@ export interface IStoreTheoryActiveTestParam {
     };
 }
 
-
 export interface IStoreTheoryActiveTestQuestion extends IQuestion {
     questionNo?: number;
     flagged?: boolean;
@@ -35,13 +39,11 @@ export enum StoreTheoryActiveTestView {
     flags,
     review,
     reviewIncorrects,
-    none
+    none,
 }
-
 
 export interface IStoreTheoryActiveTestResults {
     date: Date;
     type: TestType;
     questions: IStoreTheoryActiveTestQuestion[];
 }
-

@@ -5,7 +5,7 @@ const TrafficSigns: React.FC = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
-                <div className='page-container subpage flex-column'>
+                <div className="page-container subpage flex-column">
                     <h1 className="main-title">Traffic Signs</h1>
                     <FeatTrafficSigns />
                 </div>

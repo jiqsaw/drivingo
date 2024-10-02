@@ -1,5 +1,5 @@
 :root {
-    --ion-default-font: 'Poppins', sans-serif;
+    --ion-default-font: "Poppins", sans-serif;
     --ion-background-color: #f7f7f7;
     --ion-background-gradient: linear-gradient(
         170deg,
@@ -33,10 +33,10 @@
 }
 
 :root.ios {
-    --ion-default-font: 'Poppins', sans-serif;
+    --ion-default-font: "Poppins", sans-serif;
 }
 
 /* Set text color of the entire app for Material Design only */
 :root.md {
-    --ion-default-font: 'Poppins', sans-serif;
+    --ion-default-font: "Poppins", sans-serif;
 }

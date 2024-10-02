@@ -1,7 +1,7 @@
 export enum TestType {
     LearnPractice,
     QuickTest,
-    MockTest
+    MockTest,
 }
 
 export enum TestCategory {

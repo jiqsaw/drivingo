@@ -1,7 +1,6 @@
-
-import { FC } from "react";
-import { HighwayCodeDataProvider } from "@drivingo/data-provider";
-import { UISubHeader } from "@drivingo/ui/components";
+import { HighwayCodeDataProvider } from '@drivingo/data-provider';
+import { UISubHeader } from '@drivingo/ui/components';
+import { FC } from 'react';
 
 type HighwayCodeDetailProps = {
     type: 'content' | 'signs';
@@ -9,10 +8,10 @@ type HighwayCodeDetailProps = {
 };
 
 const HighwayCodeDetail: FC<HighwayCodeDetailProps> = ({ id, type }) => {
-
-    const data = type === 'content'
-        ? HighwayCodeDataProvider.getContentDetail(id)
-        : HighwayCodeDataProvider.getSignDetail(id);
+    const data =
+        type === 'content'
+            ? HighwayCodeDataProvider.getContentDetail(id)
+            : HighwayCodeDataProvider.getSignDetail(id);
 
     if (!data) {
         return <div>This page cannot be found.</div>;
@@ -21,11 +20,12 @@ const HighwayCodeDetail: FC<HighwayCodeDetailProps> = ({ id, type }) => {
     return (
         <>
             <UISubHeader title={data.title} />
-            <div className="content-body" dangerouslySetInnerHTML={
-                {
-                    __html: data.details.body
-                }}>
-            </div>
+            <div
+                className="content-body"
+                dangerouslySetInnerHTML={{
+                    __html: data.details.body,
+                }}
+            ></div>
         </>
     );
 };

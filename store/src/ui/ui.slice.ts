@@ -1,7 +1,6 @@
-import { CONSTANTS } from "@drivingo/global";
-import { createSlice } from "@reduxjs/toolkit";
-import { IStoreUI } from "./ui.model";
-
+import { CONSTANTS } from '@drivingo/global';
+import { createSlice } from '@reduxjs/toolkit';
+import { IStoreUI } from './ui.model';
 
 const uiInitialState: IStoreUI = {
     theme: null,
@@ -9,8 +8,8 @@ const uiInitialState: IStoreUI = {
     hideMockTestIntroduction: false,
     network: {
         connected: true,
-        connectionType: ''
-    }
+        connectionType: '',
+    },
 };
 
 export default createSlice({
@@ -26,9 +25,8 @@ export default createSlice({
         networkStatusChange: (state = uiInitialState, action) => {
             state.network = {
                 connected: action.payload.connected,
-                connectionType: action.payload.connectionType
+                connectionType: action.payload.connectionType,
             };
-
         },
     },
 });

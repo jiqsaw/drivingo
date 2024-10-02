@@ -1,9 +1,8 @@
-import { AppState } from "..";
-import userSlice from "./user.slice";
+import { AppState } from '..';
+import userSlice from './user.slice';
 
 export const storeUserReducer = userSlice.reducer;
 export const storeUserActions = userSlice.actions;
 export const storeUserSelectors = {
-    selectUser: (state: AppState) => state.user
+    selectUser: (state: AppState) => state.user,
 };
-

@@ -1,9 +1,7 @@
+import { FC } from 'react';
 
-
-import { FC } from "react";
-
-import styles from "./ai-banner.module.scss";
-import { AIStarsIcon } from "../icons";
+import { AIStarsIcon } from '../icons';
+import styles from './ai-banner.module.scss';
 
 interface AIBannerProps {
     text: string;

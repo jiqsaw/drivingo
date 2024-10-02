@@ -1,3 +1,3 @@
 export function featHazardPerception(): string {
-  return 'feat-hazard-perception';
+    return 'feat-hazard-perception';
 }

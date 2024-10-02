@@ -1,9 +1,5 @@
-
-
-import "./network-warning.scss"
+import './network-warning.scss';
 
 export const UINetworkWarning = () => {
-    return (
-        <div className="network-error">No internet connection</div>
-    );
+    return <div className="network-error">No internet connection</div>;
 };

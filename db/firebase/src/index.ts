@@ -8,7 +8,6 @@ import { FIREBASE_CONFIG } from './config';
 export const db = () => DbFirebase.getInstance();
 
 class DbFirebase {
-
     app: FirebaseApp;
     analytics: Analytics;
     fireStore: Firestore;
@@ -24,7 +23,6 @@ class DbFirebase {
     }
 
     constructor() {
-
         console.log('DbFirebase Constructor');
 
         this.app = initializeApp(FIREBASE_CONFIG);
@@ -34,7 +32,6 @@ class DbFirebase {
         // this.auth();
     }
 
-
     // private auth() {
     //     const auth = getAuth(this.app);
     //     onAuthStateChanged(auth, (firebaseUser) => {
@@ -42,5 +39,4 @@ class DbFirebase {
     //         this.authState$.next(firebaseUser);
     //     });
     // }
-
 }

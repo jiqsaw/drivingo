@@ -1,9 +1,6 @@
-
-
 import { FC, useState } from 'react';
-import styles from './list.module.scss';
 import { UIInlineModal } from '../modal/inline-modal';
-
+import styles from './list.module.scss';
 
 interface MasonryImageListItemProps {
     image: string;
@@ -15,8 +12,10 @@ interface MasonryImageListProps {
     imgBasePath: string;
 }
 
-export const UIMasonryImageList: FC<MasonryImageListProps> = ({ data, imgBasePath }) => {
-
+export const UIMasonryImageList: FC<MasonryImageListProps> = ({
+    data,
+    imgBasePath,
+}) => {
     const [modalOpened, setModalOpened] = useState(false);
     const [item, setItem] = useState<MasonryImageListItemProps>(data[0]);
 
@@ -33,34 +32,37 @@ export const UIMasonryImageList: FC<MasonryImageListProps> = ({ data, imgBasePat
     return (
         <>
             <div className={styles.masonry_list_main}>
-                {
-                    data.map((item) => (
-                        <div className={styles.masonry_list_main_item}
-                            key={item.title}
-                            onClick={() => handleItemClick(item)}
-                        >
-                            <figure>
-                                <img src={imgBasePath + item.image} alt={item.title} />
-                            </figure>
-                            <h3 className={styles.masonry_list_main_title}>
-                                {item.title}
-                            </h3>
-                        </div>
-                    ))
-                }
+                {data.map((item) => (
+                    <div
+                        className={styles.masonry_list_main_item}
+                        key={item.title}
+                        onClick={() => handleItemClick(item)}
+                    >
+                        <figure>
+                            <img
+                                src={imgBasePath + item.image}
+                                alt={item.title}
+                            />
+                        </figure>
+                        <h3 className={styles.masonry_list_main_title}>
+                            {item.title}
+                        </h3>
+                    </div>
+                ))}
             </div>
 
-            <UIInlineModal isOpen={modalOpened} onClose={handleModelClose} type="full">
+            <UIInlineModal
+                isOpen={modalOpened}
+                onClose={handleModelClose}
+                type="full"
+            >
                 <figure className={styles.modal_image}>
                     <img src={imgBasePath + item.image} alt={item.title} />
                     <figcaption className={styles.modal_content_body}>
                         {item.title}
                     </figcaption>
                 </figure>
-
             </UIInlineModal>
         </>
-
-
     );
-}
+};

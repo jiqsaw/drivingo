@@ -5,7 +5,7 @@ export interface UILinkProps {
 export const UILink = (props: UILinkProps) => {
     const { text } = props;
     return (
-        <a href='/' onClick={() => handlePress()}>
+        <a href="/" onClick={() => handlePress()}>
             <span>{text}</span>
         </a>
     );

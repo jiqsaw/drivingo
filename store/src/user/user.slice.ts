@@ -1,13 +1,10 @@
-
-import { createSlice } from "@reduxjs/toolkit";
-import { IStoreUser } from "./user.model";
+import { createSlice } from '@reduxjs/toolkit';
+import { IStoreUser } from './user.model';
 
 export default createSlice({
     name: 'user',
     initialState: {
-        name: ""
+        name: '',
     } as IStoreUser,
-    reducers: {
-
-    },
+    reducers: {},
 });

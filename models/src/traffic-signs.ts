@@ -1,4 +1,4 @@
 export interface ITrafficSign {
-  imgPath: string;
-  desc: string;
+    imgPath: string;
+    desc: string;
 }

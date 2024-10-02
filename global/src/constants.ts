@@ -10,6 +10,6 @@ export default {
     testResultThreshold: {
         fail: 0,
         average: 20,
-        success: 86
+        success: 86,
     },
 };

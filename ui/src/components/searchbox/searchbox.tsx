@@ -1,6 +1,4 @@
-import {
-    IonSearchbar,
-} from '@ionic/react';
+import { IonSearchbar } from '@ionic/react';
 import { FC } from 'react';
 
 import styles from './searchbox.module.scss';
