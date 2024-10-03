@@ -1,182 +1,187 @@
 {
-    "name": "app-mobile",
-    "$schema": "../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "app-mobile/src",
-    "projectType": "application",
-    "tags": [],
-    "targets": {
-        "build": {
-            "executor": "@nx/webpack:webpack",
-            "outputs": ["{options.outputPath}"],
-            "defaultConfiguration": "production",
-            "options": {
-                "compiler": "babel",
-                "outputPath": "app-mobile/build",
-                "index": "app-mobile/src/index.html",
-                "baseHref": "/",
-                "main": "app-mobile/src/main.tsx",
-                "tsConfig": "app-mobile/tsconfig.app.json",
-                "assets": [
-                    {
-                        "input": "app-mobile/src/assets",
-                        "glob": "**/*",
-                        "output": "/assets"
-                    },
-                    {
-                        "input": "data/src/traffic-signs/images",
-                        "glob": "**/*",
-                        "output": "data-images/traffic-signs"
-                    },
-                    {
-                        "input": "data/src/highway-code/images",
-                        "glob": "**/*",
-                        "output": "data-images/highway-code"
-                    },
-                    {
-                        "input": "data/src/hazard-perception/thumbnails",
-                        "glob": "**/*",
-                        "output": "data-thumbnails/hazard-perception"
-                    },
-                    {
-                        "input": "data/src/hazard-perception/clips",
-                        "glob": "**/*",
-                        "output": "data-clips/hazard-perception"
-                    },
-                    "app-mobile/src/manifest.json"
-                ],
-                "styles": ["app-mobile/src/styles/index.scss"],
-                "scripts": [],
-                "webpackConfig": "app-mobile/webpack.config.js"
-            },
-            "configurations": {
-                "development": {
-                    "extractLicenses": false,
-                    "optimization": false,
-                    "sourceMap": true,
-                    "vendorChunk": true
-                },
-                "production": {
-                    "fileReplacements": [
-                        {
-                            "replace": "app-mobile/src/environments/environment.ts",
-                            "with": "app-mobile/src/environments/environment.prod.ts"
-                        }
-                    ],
-                    "optimization": true,
-                    "outputHashing": "all",
-                    "sourceMap": false,
-                    "namedChunks": false,
-                    "extractLicenses": true,
-                    "vendorChunk": false
-                }
-            }
+  "name": "app-mobile",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "app-mobile/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "app-mobile/build",
+        "index": "app-mobile/src/index.html",
+        "baseHref": "/",
+        "main": "app-mobile/src/main.tsx",
+        "tsConfig": "app-mobile/tsconfig.app.json",
+        "assets": [
+          {
+            "input": "app-mobile/src/assets",
+            "glob": "**/*",
+            "output": "/assets"
+          },
+          {
+            "input": "ui/src/assets",
+            "glob": "**/*",
+            "output": "/assets"
+          },
+          {
+            "input": "data/src/traffic-signs/images",
+            "glob": "**/*",
+            "output": "data-images/traffic-signs"
+          },
+          {
+            "input": "data/src/highway-code/images",
+            "glob": "**/*",
+            "output": "data-images/highway-code"
+          },
+          {
+            "input": "data/src/hazard-perception/thumbnails",
+            "glob": "**/*",
+            "output": "data-thumbnails/hazard-perception"
+          },
+          {
+            "input": "data/src/hazard-perception/clips",
+            "glob": "**/*",
+            "output": "data-clips/hazard-perception"
+          },
+          "app-mobile/src/manifest.json"
+        ],
+        "styles": ["app-mobile/src/styles/index.scss"],
+        "scripts": [],
+        "webpackConfig": "app-mobile/webpack.config.js"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
         },
-        "serve": {
-            "executor": "@nx/webpack:dev-server",
-            "defaultConfiguration": "development",
-            "options": {
-                "buildTarget": "app-mobile:build",
-                "hmr": true
-            },
-            "configurations": {
-                "development": {
-                    "buildTarget": "app-mobile:build:development"
-                },
-                "production": {
-                    "buildTarget": "app-mobile:build:production",
-                    "hmr": false
-                }
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "app-mobile/src/environments/environment.ts",
+              "with": "app-mobile/src/environments/environment.prod.ts"
             }
-        },
-        "cap": {
-            "executor": "@nxext/capacitor:cap",
-            "options": {
-                "cmd": "--help"
-            }
-        },
-        "add": {
-            "executor": "@nxext/capacitor:cap",
-            "options": {
-                "cmd": "add"
-            },
-            "configurations": {
-                "ios": {
-                    "cmd": "add ios"
-                },
-                "android": {
-                    "cmd": "add android"
-                }
-            }
-        },
-        "copy": {
-            "executor": "@nxext/capacitor:cap",
-            "options": {
-                "cmd": "copy"
-            },
-            "configurations": {
-                "ios": {
-                    "cmd": "copy ios"
-                },
-                "android": {
-                    "cmd": "copy android"
-                }
-            }
-        },
-        "open": {
-            "executor": "@nxext/capacitor:cap",
-            "options": {
-                "cmd": "open"
-            },
-            "configurations": {
-                "ios": {
-                    "cmd": "open ios"
-                },
-                "android": {
-                    "cmd": "open android"
-                }
-            }
-        },
-        "run": {
-            "executor": "@nxext/capacitor:cap",
-            "options": {
-                "cmd": "run"
-            },
-            "configurations": {
-                "ios": {
-                    "cmd": "run ios"
-                },
-                "android": {
-                    "cmd": "run android"
-                }
-            }
-        },
-        "sync": {
-            "executor": "@nxext/capacitor:cap",
-            "options": {
-                "cmd": "sync"
-            },
-            "configurations": {
-                "ios": {
-                    "cmd": "sync ios"
-                },
-                "android": {
-                    "cmd": "sync android"
-                }
-            }
-        },
-        "update": {
-            "executor": "@nxext/capacitor:cap",
-            "options": {
-                "cmd": "update"
-            },
-            "configurations": {
-                "ios": {
-                    "cmd": "update ios"
-                },
-                "android": {
-                    "cmd": "update android"
-                }
-            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
         }
+      }
+    },
+    "serve": {
+      "executor": "@nx/webpack:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "app-mobile:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "app-mobile:build:development"
+        },
+        "production": {
+          "buildTarget": "app-mobile:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "cap": {
+      "executor": "@nxext/capacitor:cap",
+      "options": {
+        "cmd": "--help"
+      }
+    },
+    "add": {
+      "executor": "@nxext/capacitor:cap",
+      "options": {
+        "cmd": "add"
+      },
+      "configurations": {
+        "ios": {
+          "cmd": "add ios"
+        },
+        "android": {
+          "cmd": "add android"
+        }
+      }
+    },
+    "copy": {
+      "executor": "@nxext/capacitor:cap",
+      "options": {
+        "cmd": "copy"
+      },
+      "configurations": {
+        "ios": {
+          "cmd": "copy ios"
+        },
+        "android": {
+          "cmd": "copy android"
+        }
+      }
+    },
+    "open": {
+      "executor": "@nxext/capacitor:cap",
+      "options": {
+        "cmd": "open"
+      },
+      "configurations": {
+        "ios": {
+          "cmd": "open ios"
+        },
+        "android": {
+          "cmd": "open android"
+        }
+      }
+    },
+    "run": {
+      "executor": "@nxext/capacitor:cap",
+      "options": {
+        "cmd": "run"
+      },
+      "configurations": {
+        "ios": {
+          "cmd": "run ios"
+        },
+        "android": {
+          "cmd": "run android"
+        }
+      }
+    },
+    "sync": {
+      "executor": "@nxext/capacitor:cap",
+      "options": {
+        "cmd": "sync"
+      },
+      "configurations": {
+        "ios": {
+          "cmd": "sync ios"
+        },
+        "android": {
+          "cmd": "sync android"
+        }
+      }
+    },
+    "update": {
+      "executor": "@nxext/capacitor:cap",
+      "options": {
+        "cmd": "update"
+      },
+      "configurations": {
+        "ios": {
+          "cmd": "update ios"
+        },
+        "android": {
+          "cmd": "update android"
+        }
+      }
     }
+  }
 }

@@ -1,0 +1,60 @@
+.highway-code-detail {
+  h1 {
+    font-size: 1.5em;
+    padding-right: 3em;
+    text-transform: uppercase;
+    line-height: 1.4em;
+  }
+  h2 {
+    font-size: 1.2em;
+    margin-top: 2em;
+    line-height: 1.4em;
+  }
+  h3 {
+    font-size: 1em;
+    margin-top: 1.5em;
+    line-height: 1.5em;
+  }
+  li,
+  p {
+    opacity: 0.9;
+    font-size: 0.9em;
+    line-height: 1.6em;
+  }
+  a {
+    font-size: 0.9em;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  strong {
+    color: var(--color-highlight);
+  }
+  ul {
+    padding-left: 1.2em;
+    margin-bottom: 2em;
+    li {
+      margin-bottom: 1em;
+    }
+  }
+  img {
+    border-radius: 1em;
+  }
+  table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+
+    th,
+    td {
+      font-size: 0.8em;
+      text-align: left;
+      padding: 18px 23px 18px 8px;
+      vertical-align: top;
+      border: 1px solid #545454;
+    }
+  }
+
+  &__content {
+    margin: 2em 2em 2em 0;
+  }
+}

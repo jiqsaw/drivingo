@@ -1,11 +1,12 @@
 import { HighwayCodeDataProvider } from '@drivingo/data-provider';
-import { UIMainHeader, UISearchBox, UITab } from '@drivingo/ui/components';
+import { UISearchBox, UITabs } from '@drivingo/ui/components';
+import { UIHeader } from '@drivingo/ui/compound';
 import { useState } from 'react';
 import HighwayCodeContent from './Content';
 import HighwayCodeSigns from './Signs';
 
 const FeatHighwayCode = () => {
-    const [search, setSearch] = useState('');
+    const [selectedTab, setSelectedTab] = useState(0);
     const [filteredContents, setFilteredAllSigns] = useState(
         HighwayCodeDataProvider.getContentTopics(),
     );
@@ -13,36 +14,30 @@ const FeatHighwayCode = () => {
         HighwayCodeDataProvider.getSignTopics(),
     );
 
-    const handleSearch = (searchText: string) => {
-        setSearch(searchText);
+    return (
+        <aside>
+            <UIHeader title="Highway Code" />
+            <UISearchBox onChange={handleSearch} />
+            <UITabs
+                items={['Content', 'Signs']}
+                onChange={(index) => setSelectedTab(index)}
+            />
+
+            <aside className="small">
+                {selectedTab === 0 && (
+                    <HighwayCodeContent data={filteredContents} />
+                )}
+                {selectedTab === 1 && <HighwayCodeSigns data={filteredSigns} />}
+            </aside>
+        </aside>
+    );
+
+    function handleSearch(searchText: string) {
         setFilteredAllSigns(
             HighwayCodeDataProvider.getContentTopics(searchText),
         );
         setFilteredSigns(HighwayCodeDataProvider.getSignTopics(searchText));
-    };
-
-    return (
-        <>
-            <UIMainHeader title="Highway Code" user="User" />
-            <div className="w-full flex-column gap-20">
-                <UISearchBox text={search} onChange={handleSearch} />
-                <UITab
-                    data={[
-                        {
-                            title: 'Content',
-                            content: (
-                                <HighwayCodeContent data={filteredContents} />
-                            ),
-                        },
-                        {
-                            title: 'Signs',
-                            content: <HighwayCodeSigns data={filteredSigns} />,
-                        },
-                    ]}
-                />
-            </div>
-        </>
-    );
+    }
 };
 
 export default FeatHighwayCode;

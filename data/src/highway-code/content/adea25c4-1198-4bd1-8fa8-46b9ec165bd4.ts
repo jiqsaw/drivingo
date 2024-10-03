@@ -228,7 +228,7 @@ export default {
     rendering_app: 'government-frontend',
     scheduled_publishing_delay_seconds: null,
     schema_name: 'manual_section',
-    title: 'Breakdowns and incidents (275 to 287) ',
+    title: 'Breakdowns and incidents',
     updated_at: '2024-07-09T20:23:01+01:00',
     withdrawn_notice: {},
 };

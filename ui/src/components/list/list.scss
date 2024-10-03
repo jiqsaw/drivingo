@@ -1,0 +1,52 @@
+.circle {
+  content: "";
+  width: 8px;
+  min-width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: var(--ion-primary-color);
+  position: absolute;
+}
+
+.item-divider-points {
+  @extend .circle;
+  opacity: 0.2;
+  position: relative;
+
+  &::before {
+    @extend .circle;
+    left: 0.8em;
+  }
+
+  &::after {
+    @extend .circle;
+    left: 1.6em;
+  }
+}
+
+.list-item {
+  display: block;
+  margin-bottom: 2em;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    color: var(--ion-primary-color);
+    padding-right: 1.8em;
+
+    &--note {
+      opacity: 0.5;
+      font-size: 0.8em;
+    }
+  }
+}

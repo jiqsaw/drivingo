@@ -300,7 +300,7 @@ export default {
     rendering_app: 'government-frontend',
     scheduled_publishing_delay_seconds: null,
     schema_name: 'manual_section',
-    title: 'Using the road (159 to 203)',
+    title: 'Using the road',
     updated_at: '2024-07-09T20:20:05+01:00',
     withdrawn_notice: {},
 };

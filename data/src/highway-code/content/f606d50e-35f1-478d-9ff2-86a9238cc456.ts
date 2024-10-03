@@ -152,7 +152,7 @@ export default {
     rendering_app: 'government-frontend',
     scheduled_publishing_delay_seconds: null,
     schema_name: 'manual_section',
-    title: 'Rules for motorcyclists (83 to 88)',
+    title: 'Rules for motorcyclists',
     updated_at: '2024-07-09T20:23:54+01:00',
     withdrawn_notice: {},
 };

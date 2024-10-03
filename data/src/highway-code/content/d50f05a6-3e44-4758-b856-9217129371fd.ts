@@ -159,7 +159,7 @@ export default {
     rendering_app: 'government-frontend',
     scheduled_publishing_delay_seconds: null,
     schema_name: 'manual_section',
-    title: 'Driving in adverse weather conditions (226 to 237) ',
+    title: 'Driving in adverse weather conditions',
     updated_at: '2024-07-09T20:23:29+01:00',
     withdrawn_notice: {},
 };

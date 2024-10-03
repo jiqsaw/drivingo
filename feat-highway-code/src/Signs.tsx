@@ -1,20 +1,22 @@
 import { IHighwayCode } from '@drivingo/models';
-import { UITextList } from '@drivingo/ui/components';
+import { IUIList, UIList } from '@drivingo/ui/components';
 import { FC } from 'react';
 
-type HighwayCodeSignsProps = {
+interface IProps {
     data: IHighwayCode[];
-};
+}
 
-const HighwayCodeSigns: FC<HighwayCodeSignsProps> = ({ data }) => {
-    return data.map((item) => (
-        <UITextList
-            key={item.id}
-            title={item.title}
-            subtitle={item.footNote}
-            link={`/highway-code/signs/${item.id}`}
-        />
-    ));
+const HighwayCodeSigns: FC<IProps> = ({ data }) => {
+    const listItems: IUIList[] = data.map((e) => {
+        return {
+            id: e.id,
+            title: e.title,
+            note: e.footNote,
+            link: `/highway-code/signs/${e.id}`,
+        };
+    });
+
+    return <UIList data={listItems} />;
 };
 
 export default HighwayCodeSigns;

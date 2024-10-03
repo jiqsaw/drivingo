@@ -1,0 +1,25 @@
+.circle {
+  content: "";
+  width: 8px;
+  min-width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: var(--ion-primary-color);
+  position: absolute;
+}
+
+.divider-points {
+  @extend .circle;
+  opacity: 0.2;
+  position: relative;
+
+  &::before {
+    @extend .circle;
+    left: 0.8em;
+  }
+
+  &::after {
+    @extend .circle;
+    left: 1.6em;
+  }
+}

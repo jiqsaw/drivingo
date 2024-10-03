@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import { UIInlineModal } from '../modal/inline-modal';
-import styles from './list.module.scss';
+import './masonry-image-list.scss';
 
 interface MasonryImageListItemProps {
     image: string;
@@ -31,10 +31,10 @@ export const UIMasonryImageList: FC<MasonryImageListProps> = ({
 
     return (
         <>
-            <div className={styles.masonry_list_main}>
+            <div className="masonry-list-main">
                 {data.map((item) => (
                     <div
-                        className={styles.masonry_list_main_item}
+                        className="masonry-list-main-item"
                         key={item.title}
                         onClick={() => handleItemClick(item)}
                     >
@@ -44,7 +44,7 @@ export const UIMasonryImageList: FC<MasonryImageListProps> = ({
                                 alt={item.title}
                             />
                         </figure>
-                        <h3 className={styles.masonry_list_main_title}>
+                        <h3 className="masonry-list-main-title">
                             {item.title}
                         </h3>
                     </div>
@@ -56,9 +56,9 @@ export const UIMasonryImageList: FC<MasonryImageListProps> = ({
                 onClose={handleModelClose}
                 type="full"
             >
-                <figure className={styles.modal_image}>
+                <figure className="modal_image">
                     <img src={imgBasePath + item.image} alt={item.title} />
-                    <figcaption className={styles.modal_content_body}>
+                    <figcaption className="modal-content-body">
                         {item.title}
                     </figcaption>
                 </figure>

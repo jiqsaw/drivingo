@@ -1,15 +1,14 @@
 import { FeatHighwayCode } from '@drivingo/feat-highway-code';
 import { IonContent, IonPage } from '@ionic/react';
-import '../../styles/pages/subpage.scss';
+import BottomNavigation from 'app-mobile/src/components/bottom-navigation';
 
 const HighwayCode = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
-                <div className="page-container subpage flex-column">
-                    <FeatHighwayCode />
-                </div>
+                <FeatHighwayCode />
             </IonContent>
+            <BottomNavigation />
         </IonPage>
     );
 };

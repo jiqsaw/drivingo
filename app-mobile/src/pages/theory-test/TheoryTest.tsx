@@ -1,5 +1,4 @@
 import {
-    AIBanner,
     AlertsIcon,
     AppleIcon,
     OclockIcon,
@@ -36,8 +35,6 @@ const TheoryTest: React.FC = () => {
                             <IonTitle size="large">TheoryTest asdas</IonTitle>
                         </IonToolbar>
                     </IonHeader> */}
-
-                        <AIBanner text="I’II be around across the app to make things easier..." />
 
                         <UINavigationList>
                             <UINavigationItem

@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { storeUiActions, storeUiSelectors } from 'store/src/ui/ui';
 import AppRouter from './AppRouter';
-import { logCurrentNetworkStatus } from './helper/app';
 
 setupIonicReact();
 
@@ -19,16 +18,13 @@ const App: React.FC = () => {
             'ion-palette-dark',
             theme === 'dark',
         );
-    }, [theme]);
-
-    useEffect(() => {
         Network.addListener('networkStatusChange', (status) => {
             dispatch(storeUiActions.networkStatusChange(status));
         });
 
-        logCurrentNetworkStatus().then((response) => {
-            dispatch(storeUiActions.networkStatusChange(response));
-        });
+        Network.getStatus().then((response) =>
+            dispatch(storeUiActions.networkStatusChange(response)),
+        );
     }, [dispatch]);
 
     return (

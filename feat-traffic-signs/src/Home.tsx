@@ -1,8 +1,6 @@
 import { TrafficSignsDataProvider } from '@drivingo/data-provider';
 import { ITrafficSign } from '@drivingo/models';
-import { UISearchBox, UITab } from '@drivingo/ui/components';
 import { useState } from 'react';
-import List from './List';
 import './styles.scss';
 
 const FeatTrafficSigns = () => {
@@ -44,9 +42,9 @@ const FeatTrafficSigns = () => {
 
     return (
         <div className="w-full flex-column gap-20">
-            <UISearchBox text={search} onChange={handleSearch} />
+            {/* <UISearchBox text={search} onChange={handleSearch} /> */}
 
-            <UITab
+            {/* <UITab
                 data={[
                     {
                         title: 'Giving orders',
@@ -99,7 +97,7 @@ const FeatTrafficSigns = () => {
                         ),
                     },
                 ]}
-            />
+            /> */}
         </div>
     );
 };
