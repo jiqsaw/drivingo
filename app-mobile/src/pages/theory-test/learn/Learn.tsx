@@ -4,7 +4,8 @@ import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
 const Learn: React.FC = () => {
     return (
         <IonPage>
-            <UIHeader title="Learn" />
+            <UIHeader />
+            <h1>Learn</h1>
             <IonContent fullscreen className="ion-padding">
                 <IonRouterLink
                     routerDirection="forward"

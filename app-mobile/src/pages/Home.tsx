@@ -12,7 +12,7 @@ import {
 const Home: React.FC = () => {
     return (
         <IonPage>
-            <UIHeader title="Home" />
+            <UIHeader />
             <IonContent fullscreen className="ion-padding">
                 <IonHeader collapse="condense">
                     <IonToolbar>

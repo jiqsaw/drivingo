@@ -6,7 +6,9 @@ const HighwayCode = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
-                <FeatHighwayCode />
+                <aside className="container">
+                    <FeatHighwayCode />
+                </aside>
             </IonContent>
             <BottomNavigation />
         </IonPage>

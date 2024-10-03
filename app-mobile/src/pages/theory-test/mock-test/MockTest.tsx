@@ -4,7 +4,8 @@ import { IonContent, IonPage } from '@ionic/react';
 const MockTest: React.FC = () => {
     return (
         <IonPage>
-            <UIHeader title="Mock Test" />
+            <UIHeader />
+            <h1>Mock test</h1>
             <IonContent fullscreen className="ion-padding">
                 Mock Test
             </IonContent>

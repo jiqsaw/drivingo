@@ -4,7 +4,8 @@ import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
 const QuickTest: React.FC = () => {
     return (
         <IonPage>
-            <UIHeader title="Quick Test" />
+            <UIHeader />
+            <h1>Quick test</h1>
             <IonContent fullscreen className="ion-padding">
                 <IonRouterLink
                     routerDirection="forward"

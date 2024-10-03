@@ -3,7 +3,7 @@ import { IonContent, IonPage } from '@ionic/react';
 const Subscription = () => {
     return (
         <IonPage>
-            <UIHeader title="Subscription" />
+            <UIHeader />
             <IonContent fullscreen className="ion-padding">
                 Subscription
             </IonContent>

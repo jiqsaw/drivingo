@@ -1,5 +1,5 @@
 import { HighwayCodeDataProvider } from '@drivingo/data-provider';
-import { UIDividerPoints } from '@drivingo/ui/compound';
+import { UIDividerPoints, UISubheader } from '@drivingo/ui/compound';
 import { FC } from 'react';
 import './assets/styles.scss';
 
@@ -8,7 +8,7 @@ type HighwayCodeDetailProps = {
     id: string;
 };
 
-const HighwayCodeDetail: FC<HighwayCodeDetailProps> = ({ id, type }) => {
+const FeatHighwayCodeDetail: FC<HighwayCodeDetailProps> = ({ id, type }) => {
     const data =
         type === 'content'
             ? HighwayCodeDataProvider.getContentDetail(id)
@@ -20,7 +20,7 @@ const HighwayCodeDetail: FC<HighwayCodeDetailProps> = ({ id, type }) => {
 
     return (
         <aside className="highway-code-detail">
-            {/* <UISubHeader title={data.title} /> */}
+            <UISubheader title={data.title} />
             <h1>{data.title}</h1>
             <UIDividerPoints />
             <div
@@ -33,4 +33,4 @@ const HighwayCodeDetail: FC<HighwayCodeDetailProps> = ({ id, type }) => {
     );
 };
 
-export default HighwayCodeDetail;
+export default FeatHighwayCodeDetail;

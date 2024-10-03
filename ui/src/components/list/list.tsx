@@ -29,7 +29,7 @@ export const UIList: FC<IUIListProps> = ({ data }) => {
                         </span>
                     )}
                 </div>
-                <img src="assets/arrow-icon.svg" />
+                <img src="assets/icon-arrow.svg" />
             </div>
             <UIDividerPoints />
         </IonRouterLink>

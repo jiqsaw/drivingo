@@ -16,19 +16,18 @@ const FeatHighwayCode = () => {
 
     return (
         <aside>
-            <UIHeader title="Highway Code" />
+            <UIHeader />
+            <h1>Highway Code</h1>
             <UISearchBox onChange={handleSearch} />
             <UITabs
                 items={['Content', 'Signs']}
                 onChange={(index) => setSelectedTab(index)}
             />
 
-            <aside className="small">
-                {selectedTab === 0 && (
-                    <HighwayCodeContent data={filteredContents} />
-                )}
-                {selectedTab === 1 && <HighwayCodeSigns data={filteredSigns} />}
-            </aside>
+            {selectedTab === 0 && (
+                <HighwayCodeContent data={filteredContents} />
+            )}
+            {selectedTab === 1 && <HighwayCodeSigns data={filteredSigns} />}
         </aside>
     );
 

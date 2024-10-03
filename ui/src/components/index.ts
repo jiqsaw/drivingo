@@ -10,7 +10,6 @@ export * from './navigation-card/navigation-card-list';
 export * from './network-warning/network-warning';
 export * from './profile-button/profile-button';
 export * from './searchbar/searchbar';
-export * from './sub-header/sub-header';
 export * from './tabs/tabs';
 export * from './test-progress/test-progress-card';
 export * from './test-progress/test-progress-list';

@@ -17,10 +17,8 @@ h3 {
   font-family: var(--font-bold);
 }
 
-aside {
+.container {
+  display: block;
+  background: linear-gradient(180deg, #5c1253 0%, #0d0a2c 100px);
   padding: var(--default-padding);
-
-  &.small {
-    padding: calc(var(--default-padding) / 2);
-  }
 }

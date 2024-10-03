@@ -1,19 +1,18 @@
-import { HighwayCodeDetail } from '@drivingo/feat-highway-code';
-
 import { IonContent, IonPage } from '@ionic/react';
+import FeatHighwayCodeDetail from 'feat-highway-code/src/Detail';
 import { useParams } from 'react-router';
 
-const HighwayCodeDetailPage = () => {
+const HighwayCodeDetail = () => {
     const params = useParams<{ id: string; type: 'content' | 'signs' }>();
     return (
         <IonPage>
             <IonContent fullscreen>
-                <div className="page-container subpage flex-column">
-                    <HighwayCodeDetail {...params} />
-                </div>
+                <aside className="container">
+                    <FeatHighwayCodeDetail {...params} />
+                </aside>
             </IonContent>
         </IonPage>
     );
 };
 
-export default HighwayCodeDetailPage;
+export default HighwayCodeDetail;

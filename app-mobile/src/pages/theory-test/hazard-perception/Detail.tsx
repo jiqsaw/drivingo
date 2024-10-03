@@ -7,7 +7,7 @@ const HazardPerceptionDetail: React.FC = () => {
     const params = useParams<{ id: string; type: 'content' | 'signs' }>();
     return (
         <IonPage>
-            <UIHeader title="Hazard Perception" />
+            <UIHeader />
             <IonContent fullscreen className="ion-padding">
                 <FeatHazardPerceptionDetail {...params} />
             </IonContent>
