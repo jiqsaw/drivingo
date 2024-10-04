@@ -1,9 +1,8 @@
-import { UIHeader } from '@drivingo/ui/compound';
 import { IonContent, IonPage } from '@ionic/react';
 const Subscription = () => {
     return (
         <IonPage>
-            <UIHeader />
+            {/* <UIHeader /> */}
             <IonContent fullscreen className="ion-padding">
                 Subscription
             </IonContent>

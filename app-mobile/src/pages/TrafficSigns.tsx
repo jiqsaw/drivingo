@@ -1,15 +1,16 @@
 import { FeatTrafficSigns } from '@drivingo/feat-traffic-signs';
 import { IonContent, IonPage } from '@ionic/react';
-import BottomNavigation from '../components/bottom-navigation';
+import BottomNavigation from '../components/bottom-navigation/bottom-navigation';
+import Header from '../components/header/header';
 
 const TrafficSigns: React.FC = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
-                <div className="page-container subpage flex-column">
-                    <h1 className="main-title">Traffic Signs</h1>
+                <aside className="container">
+                    <Header />
                     <FeatTrafficSigns />
-                </div>
+                </aside>
                 <BottomNavigation />
             </IonContent>
         </IonPage>

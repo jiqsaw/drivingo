@@ -1,11 +1,10 @@
 import { FeatHazardPerception } from '@drivingo/feat-hazard-perception';
-import { UIHeader } from '@drivingo/ui/compound';
 import { IonContent, IonPage } from '@ionic/react';
 
 const HazardPerception: React.FC = () => {
     return (
         <IonPage>
-            <UIHeader />
+            {/* <UIHeader /> */}
             <h1>Hazard Perception</h1>
             <IonContent fullscreen className="ion-padding">
                 <FeatHazardPerception />

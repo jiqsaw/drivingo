@@ -1,30 +1,26 @@
 import { FC, useState } from 'react';
 import { UIInlineModal } from '../modal/inline-modal';
-import './masonry-image-list.scss';
+import './masonry-list.scss';
 
-interface MasonryImageListItemProps {
+export interface UIMasonryList {
+    data: UIMasonryListItem[];
+    imgBasePath: string;
+}
+
+interface UIMasonryListItem {
     image: string;
     title: string;
 }
 
-interface MasonryImageListProps {
-    data: MasonryImageListItemProps[];
-    imgBasePath: string;
-}
-
-export const UIMasonryImageList: FC<MasonryImageListProps> = ({
-    data,
-    imgBasePath,
-}) => {
+export const UIMasonryList: FC<UIMasonryList> = ({ data, imgBasePath }) => {
     const [modalOpened, setModalOpened] = useState(false);
-    const [item, setItem] = useState<MasonryImageListItemProps>(data[0]);
+    const [item, setItem] = useState<UIMasonryListItem>(data[0]);
 
     const handleModelClose = () => {
         setModalOpened(false);
     };
 
-    const handleItemClick = (item: MasonryImageListItemProps) => {
-        console.log('item', item);
+    const handleItemClick = (item: UIMasonryListItem) => {
         setItem(item);
         setModalOpened(true);
     };
@@ -32,10 +28,10 @@ export const UIMasonryImageList: FC<MasonryImageListProps> = ({
     return (
         <>
             <div className="masonry-list-main">
-                {data.map((item) => (
+                {data.map((item, index) => (
                     <div
                         className="masonry-list-main-item"
-                        key={item.title}
+                        key={index + item.title}
                         onClick={() => handleItemClick(item)}
                     >
                         <figure>
@@ -44,9 +40,7 @@ export const UIMasonryImageList: FC<MasonryImageListProps> = ({
                                 alt={item.title}
                             />
                         </figure>
-                        <h3 className="masonry-list-main-title">
-                            {item.title}
-                        </h3>
+                        <p className="masonry-list-main-title">{item.title}</p>
                     </div>
                 ))}
             </div>
@@ -56,7 +50,7 @@ export const UIMasonryImageList: FC<MasonryImageListProps> = ({
                 onClose={handleModelClose}
                 type="full"
             >
-                <figure className="modal_image">
+                <figure className="modal-image">
                     <img src={imgBasePath + item.image} alt={item.title} />
                     <figcaption className="modal-content-body">
                         {item.title}

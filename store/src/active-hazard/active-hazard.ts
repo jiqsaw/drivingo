@@ -1,4 +1,4 @@
-import { AppState } from '..';
+import { AppState } from '../store';
 import activeHazardSlice from './active-hazard.slice';
 
 export const storeTheoryActiveHazardReducers = activeHazardSlice.reducer;

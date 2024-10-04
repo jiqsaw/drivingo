@@ -1,6 +1,6 @@
-import type { ITrafficSign } from '@drivingo/models';
+import type { ITrafficSignItem } from '@drivingo/models';
 
-const givingOrderSigns: ITrafficSign[] = [
+const givingOrderSigns: ITrafficSignItem[] = [
     {
         imgPath: 'giving-order-signs/sign-giving-order-entry-20-zone.jpg',
         desc: `Entry to 20 mph zone`,

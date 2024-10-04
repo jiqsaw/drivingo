@@ -1,9 +1,9 @@
 import { Network } from '@capacitor/network';
-import { UINetworkWarning } from '@drivingo/ui/components';
 import { IonApp, setupIonicReact } from '@ionic/react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { storeUiActions, storeUiSelectors } from 'store/src/ui/ui';
+import { UINetworkWarning } from 'ui/src';
 import AppRouter from './AppRouter';
 
 setupIonicReact();

@@ -1,12 +1,12 @@
+import { IonRouterLink } from '@ionic/react';
+import { useState } from 'react';
 import {
     CloseIcon,
     CymbalIcon,
     GridIcon,
     SettingsIcon,
     TrafficLightIcon,
-} from '@drivingo/ui/components';
-import { IonRouterLink } from '@ionic/react';
-import { useState } from 'react';
+} from 'ui/src';
 import './bottom-navigation.scss';
 
 const BottomNavigation: React.FC = () => {

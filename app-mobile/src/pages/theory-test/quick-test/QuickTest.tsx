@@ -1,10 +1,10 @@
-import { UIHeader } from '@drivingo/ui/compound';
+// import { UIHeader } from '@drivingo/ui/compound';
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
 
 const QuickTest: React.FC = () => {
     return (
         <IonPage>
-            <UIHeader />
+            {/* <UIHeader /> */}
             <h1>Quick test</h1>
             <IonContent fullscreen className="ion-padding">
                 <IonRouterLink

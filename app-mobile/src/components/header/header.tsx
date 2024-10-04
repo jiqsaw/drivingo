@@ -1,8 +1,8 @@
-import { UIAIButton, UIProfileButton } from '@drivingo/ui/components';
 import { FC } from 'react';
+import { UIAIButton, UIProfileButton } from 'ui/src';
 import './header.scss';
 
-export const UIHeader: FC = () => {
+const Header: FC = () => {
     return (
         <div className="header">
             <UIProfileButton />
@@ -10,3 +10,5 @@ export const UIHeader: FC = () => {
         </div>
     );
 };
+
+export default Header;

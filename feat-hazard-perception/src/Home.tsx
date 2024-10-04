@@ -1,10 +1,10 @@
 import { DATA_HAZAR_CLIPS } from '@drivingo/data';
 import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
 import { IHazardClip } from '@drivingo/models';
-import { UIInlineModal } from '@drivingo/ui/components';
 import { IonRouterLink } from '@ionic/react';
 import { useDispatch, useSelector } from 'react-redux';
 import { storeUiActions, storeUiSelectors } from 'store/src/ui/ui';
+import { UIInlineModal } from 'ui/src';
 
 const FeatHazardPerception = () => {
     const instructorModal = useSelector(

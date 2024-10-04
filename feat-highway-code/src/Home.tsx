@@ -1,6 +1,5 @@
 import { HighwayCodeDataProvider } from '@drivingo/data-provider';
-import { UISearchBox, UITabs } from '@drivingo/ui/components';
-import { UIHeader } from '@drivingo/ui/compound';
+import { UISearchBox, UITabs } from '@drivingo/ui';
 import { useState } from 'react';
 import HighwayCodeContent from './Content';
 import HighwayCodeSigns from './Signs';
@@ -16,7 +15,6 @@ const FeatHighwayCode = () => {
 
     return (
         <aside>
-            <UIHeader />
             <h1>Highway Code</h1>
             <UISearchBox onChange={handleSearch} />
             <UITabs

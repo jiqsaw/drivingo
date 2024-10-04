@@ -1,6 +1,6 @@
 import { IHighwayCode } from '@drivingo/models';
-import { IUIList, UIList } from '@drivingo/ui/components';
 import { FC } from 'react';
+import { IUIList, UIList } from 'ui/src';
 
 interface IProps {
     data: IHighwayCode[];

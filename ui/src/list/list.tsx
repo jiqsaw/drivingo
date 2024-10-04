@@ -1,6 +1,6 @@
 import { IonRouterLink } from '@ionic/react';
 import { FC } from 'react';
-import { UIDividerPoints } from '../../compound/divider-points/divider-points';
+import { UIDividerPoints } from '../divider-points/divider-points';
 import './list.scss';
 
 export interface IUIListProps {

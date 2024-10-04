@@ -38,12 +38,7 @@ export const UIInlineModal: FC<UIInlineModalProps> = ({
     };
 
     return (
-        <IonModal
-            id="inline-modal"
-            ref={modal}
-            trigger="open-custom-dialog"
-            className={`${styles.modal} ${type}`}
-        >
+        <IonModal ref={modal} className={`${styles.modal} ${type}`}>
             <div className="wrapper">
                 {children}
                 <div

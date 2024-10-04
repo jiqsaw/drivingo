@@ -1,4 +1,4 @@
-import { AppState } from '..';
+import { AppState } from '../store';
 import userSlice from './user.slice';
 
 export const storeUserReducer = userSlice.reducer;

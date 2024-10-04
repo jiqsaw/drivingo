@@ -1,6 +1,6 @@
-import type { ITrafficSign } from '@drivingo/models';
+import type { ITrafficSignItem } from '@drivingo/models';
 
-const warningSigns: ITrafficSign[] = [
+const warningSigns: ITrafficSignItem[] = [
     {
         imgPath:
             'warning-signs/warning-sign-distance-to-stop-line-ahead-100-yards.jpg',

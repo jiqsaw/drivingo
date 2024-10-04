@@ -1,6 +1,6 @@
-import type { ITrafficSign } from '@drivingo/models';
+import type { ITrafficSignItem } from '@drivingo/models';
 
-const roadWorksSigns: ITrafficSign[] = [
+const roadWorksSigns: ITrafficSignItem[] = [
     {
         imgPath: 'road-work-signs/road-work-sign-road-works.jpg',
         desc: 'Road works',

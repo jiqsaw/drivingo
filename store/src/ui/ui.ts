@@ -1,12 +1,10 @@
-import { AppState } from '..';
+import { AppState } from '../store';
 import uiSlice from './ui.slice';
 
 export const storeUiReducers = uiSlice.reducer;
 export const storeUiActions = uiSlice.actions;
 export const storeUiSelectors = {
     selectUiTheme: (state: AppState) => {
-        // return 'light';
-        return 'dark';
         if (state.ui.theme === null) {
             return window.matchMedia('(prefers-color-scheme: dark)').matches
                 ? 'dark'

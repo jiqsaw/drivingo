@@ -1,5 +1,5 @@
 import { IHighwayCode } from '@drivingo/models';
-import { IUIList, UIList } from '@drivingo/ui/components';
+import { IUIList, UIList } from 'ui/src';
 
 import { FC } from 'react';
 

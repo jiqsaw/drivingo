@@ -1,5 +1,5 @@
 import { HighwayCodeDataProvider } from '@drivingo/data-provider';
-import { UIDividerPoints, UISubheader } from '@drivingo/ui/compound';
+import { UIDividerPoints } from '@drivingo/ui';
 import { FC } from 'react';
 import './assets/styles.scss';
 
@@ -20,7 +20,6 @@ const FeatHighwayCodeDetail: FC<HighwayCodeDetailProps> = ({ id, type }) => {
 
     return (
         <aside className="highway-code-detail">
-            <UISubheader title={data.title} />
             <h1>{data.title}</h1>
             <UIDividerPoints />
             <div

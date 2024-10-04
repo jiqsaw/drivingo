@@ -9,7 +9,7 @@ import {
     UINavigationList,
     UITestProgressCard,
     UITestProgressList,
-} from '@drivingo/ui/components';
+} from 'ui/src';
 
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
 

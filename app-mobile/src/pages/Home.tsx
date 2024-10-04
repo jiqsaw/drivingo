@@ -1,5 +1,3 @@
-import { UIButton, UILink } from '@drivingo/ui/components';
-import { UIHeader } from '@drivingo/ui/compound';
 import {
     IonContent,
     IonHeader,
@@ -8,11 +6,12 @@ import {
     IonTitle,
     IonToolbar,
 } from '@ionic/react';
+import { UIButton, UILink } from 'ui/src';
 
 const Home: React.FC = () => {
     return (
         <IonPage>
-            <UIHeader />
+            {/* <UIHeader /> */}
             <IonContent fullscreen className="ion-padding">
                 <IonHeader collapse="condense">
                     <IonToolbar>
