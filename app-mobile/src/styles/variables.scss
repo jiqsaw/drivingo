@@ -1,5 +1,21 @@
+/* 
+  - CUSTOM GLOBAL VARIABLES
+  - CUSTOM THEME VARIABLES
+*/
+
+html.ios,
+html.md {
+  --ion-default-font: "PoppinsMedium", sans-serif;
+}
+
 :root {
+  /* Ion light theme vars */
+  --ion-primary-color: #2c2d2e;
+  --ion-background-color: linear-gradient(180deg, #f0f7ff 0%, #f7f7f7 11%);
+
+  /* Custom vars */
   --font-bold: "PoppinsBold", sans-serif;
+  --font-semi-bold: "PoppinsSemiBold", sans-serif;
   --default-font-size: 16px;
   --default-padding: 1.5em;
   --background-color: linear-gradient(180deg, #f0f7ff 0%, #f7f7f7 100px);
@@ -7,8 +23,13 @@
   --ai-button-bg-color: #fff;
 }
 
+/* Ion dark theme */
 .ion-palette-dark.ios,
 .ion-palette-dark.md {
+  --ion-primary-color: #fff;
+  --ion-background-color: linear-gradient(180deg, #5c1253 0%, #0d0a2c 11%);
+
+  /* Custom dark theme vars */
   --ai-button-bg-color: #000;
   --background-color: linear-gradient(180deg, #5c1253 0%, #0d0a2c 100px);
 }

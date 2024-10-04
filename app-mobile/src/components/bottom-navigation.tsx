@@ -12,6 +12,7 @@ import './bottom-navigation.scss';
 const BottomNavigation: React.FC = () => {
     const [subMenu1, setSubMenu1] = useState(false);
 
+    return null;
     return (
         <nav slot="bottom" property="" className="main-tab">
             <ul>

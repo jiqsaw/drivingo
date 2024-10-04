@@ -1,3 +1,8 @@
+/* 
+  - IONIC CORE CSS IMPORTS  
+  - IONIC TAGS DEFAULT STYLING OVERRIDE
+*/
+
 /* Core CSS required for Ionic components to work properly */
 @import "~@ionic/react/css/core.css";
 
@@ -12,23 +17,6 @@
 /* (Optional) This is added to prevent the flashing that happens when toggling between palettes */
 ion-item {
   --transition: none;
-}
-
-html.ios,
-html.md {
-  --ion-default-font: "PoppinsMedium", sans-serif;
-}
-:root {
-  /* Light Theme */
-  --ion-primary-color: #2c2d2e;
-  --ion-background-color: linear-gradient(180deg, #f0f7ff 0%, #f7f7f7 11%);
-}
-
-/* Dark Theme */
-.ion-palette-dark.ios,
-.ion-palette-dark.md {
-  --ion-primary-color: #fff;
-  --ion-background-color: linear-gradient(180deg, #5c1253 0%, #0d0a2c 11%);
 }
 
 ion-searchbar {
