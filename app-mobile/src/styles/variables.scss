@@ -2,6 +2,7 @@
   --font-bold: "PoppinsBold", sans-serif;
   --default-font-size: 16px;
   --default-padding: 1.5em;
+  --background-color: linear-gradient(180deg, #f0f7ff 0%, #f7f7f7 100px);
   --color-highlight: #ff0e42;
   --ai-button-bg-color: #fff;
 }
@@ -9,4 +10,5 @@
 .ion-palette-dark.ios,
 .ion-palette-dark.md {
   --ai-button-bg-color: #000;
+  --background-color: linear-gradient(180deg, #5c1253 0%, #0d0a2c 100px);
 }

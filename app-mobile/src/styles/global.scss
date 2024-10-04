@@ -19,6 +19,6 @@ h3 {
 
 .container {
   display: block;
-  background: linear-gradient(180deg, #5c1253 0%, #0d0a2c 100px);
+  background: var(--background-color);
   padding: var(--default-padding);
 }
