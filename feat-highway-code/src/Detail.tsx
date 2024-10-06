@@ -23,7 +23,7 @@ const FeatHighwayCodeDetail: FC<HighwayCodeDetailProps> = ({ id, type }) => {
             <h1>{data.title}</h1>
             <UIDividerPoints />
             <div
-                className="highway-code-detail__content"
+                className={'highway-code-detail__content' + ' ' + type}
                 dangerouslySetInnerHTML={{
                     __html: data.details.body,
                 }}
