@@ -17,3 +17,4 @@ export * from './test-progress/test-progress-list';
 export * from './text-route-link/text-route-link';
 export * from './hazard-perception-video-card/hazard-perception-video-card';
 export * from './hazard-perception-video-detail/hazard-perception-video-detail';
+export * from './hazard-perception-video-finished/hazard-perception-video-finished';

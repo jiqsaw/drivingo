@@ -9,6 +9,7 @@ import HighwayCodeDetailPage from './pages/highway-code/Detail';
 import HighwayCode from './pages/highway-code/HighwayCode';
 import TheoryTest from './pages/theory-test/TheoryTest';
 import HazardPerceptionDetail from './pages/theory-test/hazard-perception/Detail';
+import HazardPerceptionFinished from './pages/theory-test/hazard-perception/Finished';
 import HazardPerception from './pages/theory-test/hazard-perception/HazardPerception';
 import Learn from './pages/theory-test/learn/Learn';
 import PractiseTopic from './pages/theory-test/learn/practise-topics/PractiseTopic';
@@ -54,6 +55,12 @@ const Router: React.FC = () => {
                 <Route
                     path="/theory-test/hazard-perception/:id"
                     render={() => <HazardPerceptionDetail />}
+                    exact={true}
+                />
+
+                <Route
+                    path="/theory-test/hazard-perception/:id/finished"
+                    render={() => <HazardPerceptionFinished />}
                     exact={true}
                 />
 
