@@ -1,5 +1,6 @@
 import { DATA_HAZAR_CLIPS } from '@drivingo/data';
 import { IHazardClip } from '@drivingo/models';
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { storeUiActions, storeUiSelectors } from 'store/src/ui/ui';
 
@@ -7,9 +8,12 @@ import {
     HazardPerceptionVideoCard,
     TextRouteLink,
     UIInlineModal,
+    UITabs,
 } from 'ui/src';
 
 const FeatHazardPerception = () => {
+    const [selectedTab, setSelectedTab] = useState(0);
+
     const instructorModal = useSelector(
         storeUiSelectors.closeMockTestIntroduction,
     );
@@ -22,6 +26,10 @@ const FeatHazardPerception = () => {
         <>
             <aside>
                 <h1>Hazard Perception</h1>
+                <UITabs
+                    items={['All', 'Unseen', 'Low Scores', 'Downloaded']}
+                    onChange={(index) => setSelectedTab(index)}
+                />
                 <TextRouteLink
                     descripton="Practice for the hazard perception part of your theory test."
                     link="#"
