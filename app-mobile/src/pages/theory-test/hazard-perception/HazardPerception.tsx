@@ -1,13 +1,17 @@
 import { FeatHazardPerception } from '@drivingo/feat-hazard-perception';
 import { IonContent, IonPage } from '@ionic/react';
+import BottomNavigation from 'app-mobile/src/components/bottom-navigation/bottom-navigation';
+import Header from 'app-mobile/src/components/header/header';
 
 const HazardPerception: React.FC = () => {
     return (
         <IonPage>
-            {/* <UIHeader /> */}
-            <h1>Hazard Perception</h1>
-            <IonContent fullscreen className="ion-padding">
-                <FeatHazardPerception />
+            <IonContent fullscreen>
+                <aside className="container">
+                    <Header />
+                    <FeatHazardPerception />
+                </aside>
+                <BottomNavigation />
             </IonContent>
         </IonPage>
     );

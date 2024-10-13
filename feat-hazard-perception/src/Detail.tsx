@@ -1,4 +1,5 @@
 import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
+import { HazardPerceptionVideoDetail } from '@drivingo/ui';
 import { FC } from 'react';
 
 type FeatHazardPerceptionDetailProps = {
@@ -10,18 +11,14 @@ const FeatHazardPerceptionDetail: FC<FeatHazardPerceptionDetailProps> = ({
 }) => {
     const data = HazardPerceptionDataProvider.getContentDetail(id);
 
+    if (!data) {
+        return null;
+    }
+
     return (
-        <div className="detail">
-            <div>
-                <video controls width="100%" height="auto">
-                    <source
-                        src={`data-clips/hazard-perception/clip${data?.code}.mp4`}
-                        type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
+        <aside>
+            <HazardPerceptionVideoDetail data={data} />
+        </aside>
     );
 };
 

@@ -1,0 +1,25 @@
+.text-route-link {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: var(--font-semi-bold);
+    color: var(--color-secondary);
+
+    &__description {
+        font-size: 14px;
+        text-align: left;
+        margin: 0;
+    }
+
+    &__link {
+        width: 48px;
+        min-width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-secondary);
+        border-radius: 40px;
+    }
+}
