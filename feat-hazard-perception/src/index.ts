@@ -1,9 +1,9 @@
 import FeatHazardPerceptionDetail from './Detail';
-import FeatHazardPerceptionFinished from './Finished';
+import FeatHazardPerceptionResult from './Result';
 import FeatHazardPerception from './Home';
 
 export {
     FeatHazardPerception,
     FeatHazardPerceptionDetail,
-    FeatHazardPerceptionFinished,
+    FeatHazardPerceptionResult,
 };

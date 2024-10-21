@@ -1,5 +1,5 @@
 import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
-import { HazardPerceptionVideoDetail } from '@drivingo/ui';
+import { HazardPerceptionVideoDetail } from './components/hazard-perception-video-detail/hazard-perception-video-detail';
 import { FC } from 'react';
 
 type FeatHazardPerceptionDetailProps = {

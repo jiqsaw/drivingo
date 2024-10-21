@@ -2,10 +2,10 @@ import { DATA_HAZAR_CLIPS } from '@drivingo/data';
 import { IHazardClip } from '@drivingo/models';
 import { IonRouterLink } from '@ionic/react';
 import { FC } from 'react';
-import { ArrowNextIcon, PhoneRotateIcon, RetryIcon } from '../icons';
+import { ArrowNextIcon, RetryIcon } from '../../../../ui/src/icons';
 
-import './hazard-perception-video-finished.scss';
 import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
+import './hazard-perception-video-result.scss';
 
 type HazardPerceptionVideoFinisedProps = {
     data: IHazardClip;
@@ -24,7 +24,7 @@ export const HazardPerceptionVideoFinished: FC<
     console.log(nextClip);
 
     return (
-        <div className="hazard-perception-video-finished">
+        <div className="hazard-perception-video-result">
             <h1 className="title">
                 SCORE
                 <br />

@@ -88,4 +88,14 @@
              font-size: 36px;
          }
      }
+
+     &__divider {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+
+         .divider-points {
+             margin-left: -20px;
+         }
+     }
  }

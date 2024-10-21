@@ -2,8 +2,8 @@ import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
 import { IHazardClip } from '@drivingo/models';
 import { IonRouterLink } from '@ionic/react';
 import { FC } from 'react';
-import { UIDividerPoints } from '../divider-points/divider-points';
-import { PlayIcon } from '../icons';
+import { UIDividerPoints } from '@drivingo/ui';
+import { PlayIcon } from '@drivingo/ui';
 
 import './hazard-perception-video-card.scss';
 
@@ -50,7 +50,9 @@ export const HazardPerceptionVideoCard: FC<HazardPerceptionVideoCardProps> = ({
                     />
                 </figure>
             </IonRouterLink>
-            <UIDividerPoints className="center my-6" />
+            <div className='hazard-perception-video-card__divider'>
+            <UIDividerPoints />
+            </div>
         </>
     );
 };
