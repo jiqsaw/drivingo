@@ -12,7 +12,7 @@ export interface IHazardClipScoreWindow {
     end: number;
 }
 
-export type HazardTestView = 'test' | 'finished' | 'review';
+export type HazardTestView = 'test' | 'result' | 'review';
 
 export interface IHazardTest {
     clipCode: string;

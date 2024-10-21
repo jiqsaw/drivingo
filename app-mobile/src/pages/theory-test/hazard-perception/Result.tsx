@@ -1,15 +1,16 @@
-import { FeatHazardPerception } from '@drivingo/feat-hazard-perception';
+import { FeatHazardPerceptionResult } from '@drivingo/feat-hazard-perception';
 import { IonContent, IonPage } from '@ionic/react';
 import BottomNavigation from 'app-mobile/src/components/bottom-navigation/bottom-navigation';
-import Header from 'app-mobile/src/components/header/header';
+import { Subheader } from 'app-mobile/src/components/subheader/subheader';
+import { useParams } from 'react-router';
 
-const HazardPerception: React.FC = () => {
+const HazardPerceptionResult: React.FC = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
                 <aside className="container">
-                    <Header />
-                    <FeatHazardPerception />
+                    <Subheader />
+                    <FeatHazardPerceptionResult />
                 </aside>
                 <BottomNavigation />
             </IonContent>
@@ -17,4 +18,4 @@ const HazardPerception: React.FC = () => {
     );
 };
 
-export default HazardPerception;
+export default HazardPerceptionResult;

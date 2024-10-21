@@ -1,6 +1,5 @@
-import { FC } from 'react';
-import './divider-points.scss';
+import "./divider-points.scss";
 
-export const UIDividerPoints: FC = () => {
-    return <div className="divider-points" />;
+export const UIDividerPoints = () => {
+  return <div className="divider-points" />;
 };
