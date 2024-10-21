@@ -1,0 +1,9 @@
+{
+  "name": "feat-test",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "feat-test/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project feat-test --web",
+  "targets": {}
+}

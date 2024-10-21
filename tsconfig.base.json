@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@drivingo/test": ["feat-test/src/index.ts"],
       "@drivingo/data": ["data/src/index.ts"],
       "@drivingo/data-provider": ["data-provider/src/index.ts"],
       "@drivingo/db/firebase": ["db/firebase/src/index.ts"],
