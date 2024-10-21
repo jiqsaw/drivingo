@@ -5,13 +5,12 @@ import { Subheader } from 'app-mobile/src/components/subheader/subheader';
 import { useParams } from 'react-router';
 
 const HazardPerceptionResult: React.FC = () => {
-    const params = useParams<{ id: string }>();
     return (
         <IonPage>
             <IonContent fullscreen>
                 <aside className="container">
                     <Subheader />
-                    <FeatHazardPerceptionResult {...params} />
+                    <FeatHazardPerceptionResult />
                 </aside>
                 <BottomNavigation />
             </IonContent>

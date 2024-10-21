@@ -1,23 +1,9 @@
-import { HazardPerceptionDataProvider } from "@drivingo/data-provider";
-import { HazardPerceptionVideoFinished } from "./components/hazard-perception-video-result/hazard-perception-video-result";
-import { FC } from "react";
+import { HazardPerceptionVideoResult } from "./components";
 
-type FeatHazardPerceptionDetailProps = {
-  id: string;
-};
-
-const FeatHazardPerceptionResult: FC<FeatHazardPerceptionDetailProps> = ({
-  id,
-}) => {
-  const data = HazardPerceptionDataProvider.getContentDetail(id);
-
-  if (!data) {
-    return null;
-  }
-
+const FeatHazardPerceptionResult = () => {
   return (
     <aside>
-      <HazardPerceptionVideoFinished data={data} />
+      <HazardPerceptionVideoResult  />
     </aside>
   );
 };

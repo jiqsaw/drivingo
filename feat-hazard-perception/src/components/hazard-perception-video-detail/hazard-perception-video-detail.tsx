@@ -16,22 +16,18 @@ export const HazardPerceptionVideoDetail: FC<
   useEffect(() => {
     const handleOrientationChange = () => {
       if (screen.orientation.type.startsWith("landscape")) {
-        // Ekran yatay olduğunda videoyu tam ekran yap
         if (videoRef.current && videoRef.current.requestFullscreen) {
           videoRef.current.requestFullscreen();
         }
       } else {
-        // Ekran dikey olduğunda tam ekran modundan çık
         if (document.fullscreenElement && document.exitFullscreen) {
           document.exitFullscreen();
         }
       }
     };
 
-    // Ekran yönü değiştiğinde handleOrientationChange fonksiyonunu çağır
     screen.orientation.addEventListener("change", handleOrientationChange);
-
-    // Cleanup event listener on component unmount
+    
     return () => {
       screen.orientation.removeEventListener("change", handleOrientationChange);
     };

@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { storeUiActions, storeUiSelectors } from "store/src/ui/ui";
 
 import { TextRouteLink, UIInlineModal, UITabs } from "ui/src";
-import { HazardPerceptionVideoCard } from "./components/hazard-perception-video-card/hazard-perception-video-card";
+import { HazardPerceptionVideoCard } from "./components";
 
 const FeatHazardPerception = () => {
   const [selectedTab, setSelectedTab] = useState(0);

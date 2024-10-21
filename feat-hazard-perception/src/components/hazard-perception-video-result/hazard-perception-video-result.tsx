@@ -7,22 +7,21 @@ import { ArrowNextIcon, RetryIcon } from '../../../../ui/src/icons';
 import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
 import './hazard-perception-video-result.scss';
 
-type HazardPerceptionVideoFinisedProps = {
-    data: IHazardClip;
-};
+ 
+export const HazardPerceptionVideoResult = () => {
 
-export const HazardPerceptionVideoFinished: FC<
-    HazardPerceptionVideoFinisedProps
-> = ({ data }) => {
+    // get redux current id
+    const activeVideo = {
+        code:""
+    }
+
     const currentIndex = DATA_HAZAR_CLIPS.findIndex(
-        (clip) => clip.code === data.code,
+        (clip) => clip.code === "",
     );
 
     const nextClip =
         DATA_HAZAR_CLIPS[(currentIndex + 1) % DATA_HAZAR_CLIPS.length];
-
-    console.log(nextClip);
-
+ 
     return (
         <div className="hazard-perception-video-result">
             <h1 className="title">
@@ -42,7 +41,7 @@ export const HazardPerceptionVideoFinished: FC<
 
                 <IonRouterLink
                     routerDirection="back"
-                    routerLink={`/theory-test/hazard-perception/${data.code}`}
+                    routerLink={`/theory-test/hazard-perception/${activeVideo.code}`}
                     className="lnk"
                 >
                     <RetryIcon />
@@ -60,7 +59,6 @@ export const HazardPerceptionVideoFinished: FC<
                             nextClip.code +
                             '.png'
                         }
-                        alt={data.code}
                     />
                     <figcaption className="code">{nextClip.code}</figcaption>
                 </figure>
