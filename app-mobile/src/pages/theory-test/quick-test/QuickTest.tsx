@@ -1,19 +1,21 @@
-// import { UIHeader } from '@drivingo/ui/compound';
+import { TestType } from '@drivingo/models';
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
+import BottomNavigation from 'app-mobile/src/components/bottom-navigation/bottom-navigation';
 
-const QuickTest: React.FC = () => {
+const QuickTest = () => {
     return (
         <IonPage>
-            {/* <UIHeader /> */}
-            <h1>Quick test</h1>
-            <IonContent fullscreen className="ion-padding">
-                <IonRouterLink
-                    routerDirection="forward"
-                    routerLink="/theory-test/car/quick-test/1"
-                >
-                    <p>Quick Topics Detail</p>
-                </IonRouterLink>
+            <IonContent fullscreen>
+                <aside className="container">
+                    <IonRouterLink
+                        routerDirection="forward"
+                        routerLink={`/theory-test/test/${TestType.QuickTest}`}
+                    >
+                        Go to test
+                    </IonRouterLink>
+                </aside>
             </IonContent>
+            <BottomNavigation />
         </IonPage>
     );
 };
