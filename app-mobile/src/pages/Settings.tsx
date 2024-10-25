@@ -1,3 +1,4 @@
+import { storeUiActions, storeUiSelectors } from '@drivingo/store';
 import {
     IonBackButton,
     IonButtons,
@@ -11,7 +12,6 @@ import {
     IonToolbar,
 } from '@ionic/react';
 import { useDispatch, useSelector } from 'react-redux';
-import { storeUiActions, storeUiSelectors } from 'store/src/ui/ui';
 
 const Settings = () => {
     const theme = useSelector(storeUiSelectors.selectUiTheme);

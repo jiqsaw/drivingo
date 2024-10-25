@@ -1,16 +1,32 @@
 import { createSelector } from '@reduxjs/toolkit';
 import { AppState } from '../store';
-import { StoreTheoryActiveTestView } from './active-test.model';
+import {
+    IStoreTheoryActiveTest,
+    StoreTheoryActiveTestView,
+} from './active-test.model';
 
-const selectTest = (state: AppState) => state.theory.activeTest;
-const selectTestFinished = (state: AppState) =>
-    state.theory.activeTest.isFinished === true
-        ? state.theory.activeTest
-        : undefined;
-const selectQuestions = createSelector(selectTest, (test) => {
+const selectActiveTest = (state: AppState) => state.theory.activeTest;
+
+const selectQuestions = createSelector(selectActiveTest, (test) => {
+    return getActiveTestQuestions(test);
+});
+
+const selectCurrentQuestion = createSelector(selectActiveTest, (test) =>
+    getCurrentQuestion(test),
+);
+
+const selectIsLastQuestion = createSelector(
+    selectActiveTest,
+    selectQuestions,
+    (activeTest, questions) => {
+        return questions.length <= activeTest.questionLocatorIndex + 1;
+    },
+);
+
+export function getActiveTestQuestions(test: IStoreTheoryActiveTest) {
     switch (test.viewType) {
         case StoreTheoryActiveTestView.flags:
-            return test.questions.filter((e) => e.flagged === true);
+            return test.questions.filter((e) => e.isFlagged === true);
         case StoreTheoryActiveTestView.review:
             return test.questions;
         case StoreTheoryActiveTestView.reviewIncorrects:
@@ -22,72 +38,60 @@ const selectQuestions = createSelector(selectTest, (test) => {
         default:
             return test.questions;
     }
-});
-const selectCurrentQuestion = createSelector(
-    selectTest,
-    selectQuestions,
-    (test, questions) => {
-        return questions.find((e) => e.questionNo === test.currentQuestionNo);
-    },
-);
-const selectIsLastQuestion = createSelector(
-    selectQuestions,
-    selectCurrentQuestion,
-    (questions, currentQuestion) => {
-        return questions.length
-            ? currentQuestion?.questionNo ===
-                  questions[questions.length - 1].questionNo
-            : false;
-    },
-);
-const selectHaveFlags = createSelector(selectQuestions, (questions) => {
-    return questions.filter((e) => e.flagged).length > 0;
-});
-const selectHasPrevQuestion = createSelector(
-    selectQuestions,
-    selectCurrentQuestion,
-    (questions, currentQuestion) => {
-        const currentQuestionIndex = questions.findIndex(
-            (e) => e === currentQuestion,
-        );
-        return currentQuestionIndex > 0;
-    },
-);
-const selectNextQuestionNo = createSelector(
-    selectQuestions,
-    selectCurrentQuestion,
-    (questions, currentQuestion) => {
-        const currentQuestionIndex = questions.findIndex(
-            (e) => e.questionNo === currentQuestion?.questionNo,
-        );
-        if (questions.length > currentQuestionIndex + 1) {
-            return questions[currentQuestionIndex + 1].questionNo;
-        }
-        return null;
-    },
-);
-const selectPrevQuestionNo = createSelector(
-    selectQuestions,
-    selectCurrentQuestion,
-    (questions, currentQuestion) => {
-        const currentQuestionIndex = questions.findIndex(
-            (e) => e.questionNo === currentQuestion?.questionNo,
-        );
-        if (currentQuestionIndex > 0) {
-            return questions[currentQuestionIndex - 1].questionNo;
-        }
-        return null;
-    },
-);
+}
+
+export function getCurrentQuestion(test: IStoreTheoryActiveTest) {
+    return test.questions[test.questionLocatorIndex];
+}
+
+/* --- ??? -- */
+
+// const selectActiveTestFinished = (state: AppState) =>
+//     state.theory.activeTest.isFinished === true
+//         ? state.theory.activeTest
+//         : undefined;
+// const selectQuestions = createSelector(selectActiveTest, (test) => {
+//     switch (test.viewType) {
+//         case StoreTheoryActiveTestView.flags:
+//             return test.questions?.filter((e) => e.isFlagged === true);
+//         case StoreTheoryActiveTestView.review:
+//             return test.questions;
+//         case StoreTheoryActiveTestView.reviewIncorrects:
+//             return test.questions?.filter(
+//                 (e) =>
+//                     e.selectedOptionChar?.toLowerCase() !==
+//                     e.answer.toLowerCase(),
+//             );
+//         default:
+//             return test.questions;
+//     }
+// });
+
+// const selectHaveFlags = createSelector(selectQuestions, (questions) => {
+//     return questions.filter((e) => e.isFlagged).length > 0;
+// });
+// const selectHasPrevQuestion = createSelector(
+//     selectQuestions,
+//     selectCurrentQuestion,
+//     (questions, currentQuestion) => {
+//         const currentQuestionIndex = questions.findIndex(
+//             (e) => e === currentQuestion,
+//         );
+//         return currentQuestionIndex > 0;
+//     },
+// );
 
 export default {
-    selectTest,
-    selectTestFinished,
-    selectQuestions,
+    selectActiveTest,
     selectCurrentQuestion,
+    selectQuestions,
     selectIsLastQuestion,
-    selectHaveFlags,
-    selectHasPrevQuestion,
-    selectNextQuestionNo,
-    selectPrevQuestionNo,
+
+    /* --- ??? ---*/
+    // selectActiveTestFinished,
+    // selectQuestions,
+    // selectCurrentQuestion,
+    // selectIsLastQuestion,
+    // selectHaveFlags,
+    // selectHasPrevQuestion,
 };

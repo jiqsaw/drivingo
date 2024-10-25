@@ -18,4 +18,7 @@ export const storeUiSelectors = {
     selectNetwork: (state: AppState) => {
         return state.ui.network;
     },
+    selectQuickTestNumberOfQuestions: (state: AppState) => {
+        return state.ui.quickTestNumberOfQuestions;
+    },
 };

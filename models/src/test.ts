@@ -1,7 +1,7 @@
 export enum TestType {
-    LearnPractice,
-    QuickTest,
-    MockTest,
+    LearnPractice = 'LEARN_PRACTICE',
+    QuickTest = 'QUICK_TEST',
+    MockTest = 'MOCK_TEST',
 }
 
 export enum TestCategory {

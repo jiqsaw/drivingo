@@ -1,20 +1,31 @@
 import {
     IQuestion,
+    ITopic,
     OptionChar,
     TestCategory,
     TestType,
 } from '@drivingo/models';
 
 export interface IStoreTheoryActiveTest {
-    type: TestType;
     viewType: StoreTheoryActiveTestView;
-    questions: IStoreTheoryActiveTestQuestion[];
-    currentQuestionNo?: number;
     isFinished: boolean;
     isPaused: boolean;
+    questions: IStoreTheoryActiveTestQuestion[];
+    questionLocatorIndex: number;
+
+    type?: TestType;
+    includingTopics?: ITopic[];
+    numberOfQuestions?: number;
+
     showFullTranslate?: boolean;
-    showAnswer?: boolean;
 }
+
+export interface IStoreTheoryActiveTestInitialParams {
+    type: TestType;
+    numberOfQuestions: number;
+}
+
+/* --- ??? --- */
 
 export interface IStoreTheoryActiveTestParam {
     type: TestType;
@@ -29,8 +40,7 @@ export interface IStoreTheoryActiveTestParam {
 }
 
 export interface IStoreTheoryActiveTestQuestion extends IQuestion {
-    questionNo?: number;
-    flagged?: boolean;
+    isFlagged?: boolean;
     selectedOptionChar?: OptionChar;
 }
 

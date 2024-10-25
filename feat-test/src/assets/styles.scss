@@ -1,0 +1,16 @@
+.test-loading {
+  margin: 2rem 0;
+}
+
+.test {
+  &__option {
+    &--selected {
+      background-color: blue;
+    }
+  }
+  &__flag {
+    &--selected {
+      background-color: green;
+    }
+  }
+}
