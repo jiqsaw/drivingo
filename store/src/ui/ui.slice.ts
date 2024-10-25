@@ -4,7 +4,7 @@ import { IStoreUI } from './ui.model';
 
 const uiInitialState: IStoreUI = {
     theme: null,
-    quickTestNumberOfQuestions: CONSTANTS.defaultQuickTestQuestionCount,
+    quickTestNumberOfQuestions: CONSTANTS.quickTestNumberOfQuestionsDefault,
     hideMockTestIntroduction: false,
     network: {
         connected: true,
@@ -27,6 +27,9 @@ export default createSlice({
                 connected: action.payload.connected,
                 connectionType: action.payload.connectionType,
             };
+        },
+        updateQuickTestNumberOfQuestions: (state, action) => {
+            state.quickTestNumberOfQuestions = action.payload;
         },
     },
 });

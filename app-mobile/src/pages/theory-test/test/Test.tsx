@@ -1,20 +1,14 @@
 import { FeatTest } from '@drivingo/test';
 import { IonContent, IonPage } from '@ionic/react';
-import { useParams } from 'react-router';
+import { TestHeader } from 'app-mobile/src/components/headers/test-header/testheader';
 
 const Test = () => {
-    const { type } = useParams<{ type: string }>();
-
-    if (!type) {
-        return; // Add no test type chosen or redirect home.
-    }
     return (
         <IonPage>
             <IonContent fullscreen>
                 <aside className="container">
-                    Test Page
-                    {/* <Header /> */}
-                    <FeatTest type={type} />
+                    <TestHeader />
+                    <FeatTest />
                 </aside>
             </IonContent>
         </IonPage>
