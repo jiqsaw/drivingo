@@ -16,7 +16,7 @@ import PractiseTopic from './pages/theory-test/learn/practise-topics/PractiseTop
 import StudyTopic from './pages/theory-test/learn/study-topics/StudyTopic';
 import MockTest from './pages/theory-test/mock-test/MockTest';
 import QuickTest from './pages/theory-test/quick-test/QuickTest';
-import QuickTestTopic from './pages/theory-test/quick-test/topics/Topics';
+import Test from './pages/theory-test/test/Test';
 
 const Router: React.FC = () => {
     return (
@@ -57,6 +57,7 @@ const Router: React.FC = () => {
                     render={() => <HazardPerceptionDetail />}
                     exact={true}
                 />
+                <Route path="/theory-test/test" component={Test} exact={true} />
 
                 <Route
                     path="/theory-test/hazard-perception/result"
@@ -73,11 +74,6 @@ const Router: React.FC = () => {
                 <Route
                     path="/theory-test/:category/learn/practise/:topic"
                     render={() => <PractiseTopic />}
-                    exact={true}
-                />
-                <Route
-                    path="/theory-test/:category/quick-test/:topic"
-                    render={() => <QuickTestTopic />}
                     exact={true}
                 />
                 <Route

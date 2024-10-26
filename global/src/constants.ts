@@ -1,6 +1,7 @@
 export default {
     questionCount: 762,
-    defaultQuickTestQuestionCount: 20,
+    quickTestNumberOfQuestionsList: [5, 10, 15, 20],
+    quickTestNumberOfQuestionsDefault: 20,
     mockTestInfo: {
         duration: 57,
         questionAmount: 50,
@@ -12,4 +13,5 @@ export default {
         average: 20,
         success: 86,
     },
+    topicCodeForVideos: 'videos',
 };
