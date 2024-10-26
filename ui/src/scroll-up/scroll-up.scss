@@ -1,0 +1,22 @@
+.scroll-up {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    background-color: var(--color-secondary);
+    color: var(--primary-color-text);
+    border-radius: 50%;
+    font-size: 20px;
+    transition: all 0.3s ease;
+
+    &.visible {
+        bottom: 20px;
+        right: 20px;
+    }
+}

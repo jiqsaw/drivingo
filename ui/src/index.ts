@@ -15,3 +15,4 @@ export * from './tabs/tabs';
 export * from './test-progress/test-progress-card';
 export * from './test-progress/test-progress-list';
 export * from './text-route-link/text-route-link';
+export * from './scroll-up/scroll-up';
