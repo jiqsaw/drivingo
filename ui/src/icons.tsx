@@ -510,6 +510,17 @@ export const ArrowBackIcon = () => {
     );
 };
 
+export const ArrowUpIcon = () => {
+    return (
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="none">
+            <path
+                d="M7 4.06332L1.4 10.0122L9.53674e-07 8.49844L8 0L16 8.49844L14.6 10.0122L9 4.06332V16.9969H7V4.06332Z"
+                fill="#343131"
+            />
+        </svg>
+    );
+};
+
 export const AIIcon = () => {
     return (
         <svg width="26" height="24" viewBox="0 0 26 24" fill="none">
