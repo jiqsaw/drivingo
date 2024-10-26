@@ -1,21 +1,110 @@
-// import { UIHeader } from '@drivingo/ui/compound';
+import { TopicDataProvider } from '@drivingo/data-provider';
+import { CONSTANTS } from '@drivingo/global';
+import { ITopic, TestType } from '@drivingo/models';
+import {
+    storeTheoryActiveTestActions,
+    storeUiActions,
+    storeUiSelectors,
+} from '@drivingo/store';
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
+import BottomNavigation from 'app-mobile/src/components/bottom-navigation/bottom-navigation';
+import { Subheader } from 'app-mobile/src/components/headers/subheader/subheader';
+import { useEffect, useRef, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
-const QuickTest: React.FC = () => {
+const QuickTest = () => {
+    const topics = TopicDataProvider.getData();
+
+    const dispatch = useDispatch();
+    const hasRunOnce = useRef(false);
+    const [selectedItems, setSelectedItems] = useState<ITopic[] | null>(null);
+    const uiQuickTestNumberOfQuestions = useSelector(
+        storeUiSelectors.selectQuickTestNumberOfQuestions,
+    );
+
+    useEffect(() => {
+        if (!hasRunOnce.current) {
+            dispatch(
+                storeTheoryActiveTestActions.initialise({
+                    type: TestType.QuickTest,
+                    numberOfQuestions: uiQuickTestNumberOfQuestions,
+                }),
+            );
+            hasRunOnce.current = true;
+        }
+    }, []);
+
+    useEffect(() => {
+        if (selectedItems !== null) {
+            dispatch(storeTheoryActiveTestActions.addTopics(selectedItems));
+        }
+    }, [selectedItems]);
+
     return (
         <IonPage>
-            {/* <UIHeader /> */}
-            <h1>Quick test</h1>
-            <IonContent fullscreen className="ion-padding">
-                <IonRouterLink
-                    routerDirection="forward"
-                    routerLink="/theory-test/car/quick-test/1"
-                >
-                    <p>Quick Topics Detail</p>
-                </IonRouterLink>
+            <IonContent fullscreen>
+                <aside className="container">
+                    <Subheader />
+                    <h1>Quick Test</h1>
+
+                    <span>Number of questions: </span>
+                    {CONSTANTS.quickTestNumberOfQuestionsList.map((item) => {
+                        return (
+                            <span
+                                key={item}
+                                onClick={() =>
+                                    handleNumberOfQuestionsChange(item)
+                                }
+                            >
+                                {uiQuickTestNumberOfQuestions === item && '✓ '}
+                                {item} &nbsp;
+                            </span>
+                        );
+                    })}
+
+                    <br />
+                    <br />
+
+                    {topics.map((topic) => {
+                        return (
+                            // Buraya topic cardlar UI libraryden gelmeli
+                            <div
+                                key={topic.code}
+                                onClick={() => selectTopic(topic)}
+                            >
+                                {selectedItems?.includes(topic) && <>✓</>}
+                                {topic.name}
+                            </div>
+                        );
+                    })}
+                    {/* Bu button sadece en az bir topic secili oldugunda gorunur olacak */}
+                    <IonRouterLink
+                        routerDirection="forward"
+                        routerLink={`/theory-test/test`}
+                    >
+                        Start
+                    </IonRouterLink>
+                </aside>
             </IonContent>
+            <BottomNavigation />
         </IonPage>
     );
+
+    function selectTopic(topic: ITopic) {
+        setSelectedItems((prevSelected) => {
+            if (prevSelected == null) {
+                return [topic];
+            }
+            return prevSelected.includes(topic)
+                ? prevSelected.filter((item) => item.code !== topic.code)
+                : [...prevSelected, topic];
+        });
+    }
+
+    function handleNumberOfQuestionsChange(item: number) {
+        dispatch(storeUiActions.updateQuickTestNumberOfQuestions(item));
+        dispatch(storeTheoryActiveTestActions.updateNumberOfQuestions(item));
+    }
 };
 
 export default QuickTest;

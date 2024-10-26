@@ -1,168 +1,79 @@
-import { DATA_TEST_QUESTIONS } from '@drivingo/data';
-import { CONSTANTS } from '@drivingo/global';
-import { OptionChar, TestCategory, TestType } from '@drivingo/models';
+import { TestDataProvider } from '@drivingo/data-provider';
+import { ITopic, OptionChar } from '@drivingo/models';
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { cloneDeep, sample, sampleSize } from 'lodash';
 import {
     IStoreTheoryActiveTest,
-    IStoreTheoryActiveTestParam,
+    IStoreTheoryActiveTestInitialParams,
     IStoreTheoryActiveTestQuestion,
     StoreTheoryActiveTestView,
 } from './active-test.model';
+import {
+    getActiveTestQuestions,
+    getCurrentQuestion,
+} from './active-test.selectors';
 
+const initialState: IStoreTheoryActiveTest = {
+    viewType: StoreTheoryActiveTestView.default,
+    isFinished: false,
+    isPaused: false,
+    questionLocatorIndex: 0,
+    questions: [],
+};
 export default createSlice({
-    name: 'active-test',
-    initialState: {} as IStoreTheoryActiveTest,
+    name: 'theory/activeTest',
+    initialState: initialState,
     reducers: {
-        generate(state, action: PayloadAction<IStoreTheoryActiveTestParam>) {
-            state.type = action.payload.type;
-            state.viewType = StoreTheoryActiveTestView.default;
-            state.showAnswer = false;
-            state.isFinished = false;
-            state.isPaused = false;
-            state.currentQuestionNo = 1;
-
-            const dataQuestions = cloneDeep(
-                DATA_TEST_QUESTIONS.filter((e) => e.topicCode !== 'videos'),
-            );
-            let questions: IStoreTheoryActiveTestQuestion[] = [];
-
-            if (action.payload.type === TestType.MockTest) {
-                questions = sampleSize(
-                    dataQuestions,
-                    CONSTANTS.mockTestInfo.questionAmount -
-                        CONSTANTS.mockTestInfo.videoQuestionAmount,
+        initialise: (
+            _state,
+            action: PayloadAction<IStoreTheoryActiveTestInitialParams>,
+        ) => {
+            return {
+                ...initialState,
+                type: action.payload.type,
+                numberOfQuestions: action.payload.numberOfQuestions,
+                viewType: StoreTheoryActiveTestView.default,
+            };
+        },
+        updateNumberOfQuestions: (state, action: PayloadAction<number>) => {
+            state.numberOfQuestions = action.payload;
+        },
+        addTopics: (state, action: PayloadAction<ITopic[]>) => {
+            state.includingTopics = action.payload;
+        },
+        start: (state) => {
+            const questions: IStoreTheoryActiveTestQuestion[] =
+                TestDataProvider.getQuestions(
+                    state.includingTopics,
+                    state.numberOfQuestions,
                 );
-
-                const videoQuestions = cloneDeep(
-                    DATA_TEST_QUESTIONS.filter((e) => e.topicCode === 'videos'),
-                );
-                const sampleItem = sample(videoQuestions);
-                const selectVideoQuestions = videoQuestions.filter(
-                    (e) => e.questionVideo === sampleItem?.questionVideo,
-                );
-
-                questions = [...questions, ...selectVideoQuestions];
-            }
-
-            if (action.payload.type === TestType.LearnPractice) {
-                const params = action.payload.filter;
-                switch (params?.category) {
-                    case TestCategory.topic:
-                        questions = dataQuestions.filter(
-                            (e) => e.topicCode === params.topicCode,
-                        );
-
-                        if (
-                            params.locationCode &&
-                            params.category === TestCategory.topic
-                        ) {
-                            const locationIndex = questions.findIndex(
-                                (e) => e.code === params.locationCode,
-                            );
-
-                            if (
-                                locationIndex &&
-                                locationIndex < questions.length - 2
-                            ) {
-                                state.currentQuestionNo = locationIndex + 1;
-                            }
-                        }
-
-                        // questions = sampleSize(questions, questions.length);
-                        break;
-                }
-
-                if (questions.length === 0) {
-                    console.warn(
-                        'no question found, instead, generated randomly!',
-                    );
-                    questions = sampleSize(
-                        dataQuestions,
-                        params?.numberOfQuestion,
-                    );
-                }
-            }
-
-            questions.map((e, i) => {
-                e.questionNo = i + 1;
-            });
             state.questions = questions;
         },
-
-        nextQuestion(state, action: PayloadAction<number>) {
-            if (state.currentQuestionNo && action.payload !== null) {
-                if (state.type !== TestType.MockTest) {
-                    state.showAnswer = false;
-                }
-                state.currentQuestionNo = action.payload;
-            }
-        },
-
-        toggleFlag(state, action: PayloadAction<boolean>) {
-            const item = state.questions.find(
-                (e) => e.questionNo === state.currentQuestionNo,
-            );
+        selectOption: (state, action: PayloadAction<OptionChar>) => {
+            const item = getCurrentQuestion(state);
             if (item) {
-                item.flagged = action.payload;
+                item.selectedOptionChar =
+                    item.selectedOptionChar === action.payload
+                        ? undefined
+                        : action.payload;
             }
         },
-
-        selectOption(state, action: PayloadAction<OptionChar>) {
-            const item = state.questions.find(
-                (e) => e.questionNo === state.currentQuestionNo,
-            );
+        flag(state) {
+            const item = getCurrentQuestion(state);
             if (item) {
-                if (state.type !== TestType.MockTest && state.showAnswer) {
-                    state.showAnswer = false;
-                }
-                item.selectedOptionChar = action.payload;
+                item.isFlagged = !item.isFlagged;
             }
         },
-
-        updateViewType(
-            state,
-            action: PayloadAction<{
-                testViewType: StoreTheoryActiveTestView;
-                currentQuestionNo?: number;
-            }>,
-        ) {
-            state.viewType = action.payload.testViewType;
-            if (action.payload.currentQuestionNo) {
-                state.currentQuestionNo = action.payload.currentQuestionNo;
-            } else {
-                if (state.viewType === StoreTheoryActiveTestView.flags) {
-                    state.currentQuestionNo = state.questions.filter(
-                        (e) => e.flagged === true,
-                    )[0].questionNo;
-                }
-            }
+        next(state) {
+            state.questionLocatorIndex = state.questionLocatorIndex + 1;
         },
-
-        pause(state) {
-            state.isPaused = true;
+        prev(state) {
+            state.questionLocatorIndex = state.questionLocatorIndex - 1;
         },
-        unpause(state) {
-            state.isPaused = false;
-        },
-
-        showFullTranslate(state, action: PayloadAction<boolean>) {
-            state.showFullTranslate = action.payload;
-        },
-
-        showAnswer(state, action: PayloadAction<boolean>) {
-            state.showAnswer = action.payload;
-        },
-
         finish(state) {
-            state.questions.map((e) => (e.flagged = false));
-            state.viewType = StoreTheoryActiveTestView.none;
-            state.isFinished = true;
-            if (state.type === TestType.LearnPractice) {
-                state.questions = state.questions.filter(
-                    (e) => e.selectedOptionChar !== undefined,
-                );
-            }
+            //????
+            state.questions.map((e) => (e.isFlagged = false));
+            (state.viewType = StoreTheoryActiveTestView.default),
+                (state.isFinished = true);
         },
     },
 });

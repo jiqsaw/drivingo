@@ -1,8 +1,7 @@
 import { FeatHazardPerceptionResult } from '@drivingo/feat-hazard-perception';
 import { IonContent, IonPage } from '@ionic/react';
 import BottomNavigation from 'app-mobile/src/components/bottom-navigation/bottom-navigation';
-import { Subheader } from 'app-mobile/src/components/subheader/subheader';
-import { useParams } from 'react-router';
+import { Subheader } from '../../../components/headers/subheader/subheader';
 
 const HazardPerceptionResult: React.FC = () => {
     return (

@@ -1,43 +1,43 @@
 {
-    "$schema": "./node_modules/nx/schemas/nx-schema.json",
-    "namedInputs": {
-        "default": ["{projectRoot}/**/*", "sharedGlobals"],
-        "production": ["default"],
-        "sharedGlobals": []
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "production": ["default"],
+    "sharedGlobals": []
+  },
+  "nxCloudAccessToken": "ODRmYjFiOTgtMzlmNS00OWQwLTgwZWEtNDdhYzgwYzczZDMyfHJlYWQtd3JpdGU=",
+  "targetDefaults": {
+    "build": {
+      "cache": true,
+      "dependsOn": ["^build"]
     },
-    "nxCloudAccessToken": "ODRmYjFiOTgtMzlmNS00OWQwLTgwZWEtNDdhYzgwYzczZDMyfHJlYWQtd3JpdGU=",
-    "targetDefaults": {
-        "build": {
-            "cache": true,
-            "dependsOn": ["^build"]
-        },
-        "@nx/js:tsc": {
-            "cache": true,
-            "dependsOn": ["^build"],
-            "inputs": ["production", "^production"]
-        }
-    },
-    "generators": {
-        "@nx/react": {
-            "application": {
-                "babel": true,
-                "style": "css",
-                "linter": "biomejs.biome",
-                "bundler": "webpack"
-            },
-            "component": {
-                "style": "css"
-            },
-            "library": {
-                "style": "css",
-                "linter": "biomejs.biome",
-                "unitTestRunner": "none"
-            }
-        }
-    },
-    "release": {
-        "version": {
-            "preVersionCommand": "npx nx run-many -t build"
-        }
+    "@nx/js:tsc": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
+  },
+  "generators": {
+    "@nx/react": {
+      "application": {
+        "babel": true,
+        "style": "css",
+        "linter": "biomejs.biome",
+        "bundler": "webpack"
+      },
+      "component": {
+        "style": "css"
+      },
+      "library": {
+        "style": "css",
+        "linter": "biomejs.biome",
+        "unitTestRunner": "none"
+      }
+    }
+  },
+  "release": {
+    "version": {
+      "preVersionCommand": "npx nx run-many -t build"
+    }
+  }
 }
