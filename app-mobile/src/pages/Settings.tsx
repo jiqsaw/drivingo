@@ -14,7 +14,7 @@ import {
 import { useDispatch, useSelector } from 'react-redux';
 
 const Settings = () => {
-    const theme = useSelector(storeUiSelectors.selectUiTheme);
+    const theme = useSelector(storeUiSelectors.theme);
     const dispatch = useDispatch();
     return (
         <IonPage>

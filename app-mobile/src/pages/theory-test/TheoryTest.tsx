@@ -39,7 +39,7 @@ const TheoryTest: React.FC = () => {
                         <UINavigationList>
                             <UINavigationItem
                                 routerDirection="forward"
-                                routerLink="/theory-test/car/learn"
+                                routerLink="/theory-test/learn"
                                 title="Learn"
                                 icon={<AppleIcon />}
                                 color="primary"
@@ -47,7 +47,7 @@ const TheoryTest: React.FC = () => {
                             />
                             <UINavigationItem
                                 routerDirection="forward"
-                                routerLink="/theory-test/car/quick-test"
+                                routerLink="/theory-test/quick-test"
                                 title="Quick Test"
                                 icon={<OclockIcon />}
                                 color="secondary"
@@ -55,7 +55,7 @@ const TheoryTest: React.FC = () => {
                             />
                             <UINavigationItem
                                 routerDirection="forward"
-                                routerLink="/theory-test/car/mock-test"
+                                routerLink="/theory-test/mock-test"
                                 title="Mock Test"
                                 icon={<AppleIcon />}
                                 color="light_blue"
@@ -63,7 +63,7 @@ const TheoryTest: React.FC = () => {
                             />
                             <UINavigationItem
                                 routerDirection="forward"
-                                routerLink="/theory-test/car/hazard-perception"
+                                routerLink="/theory-test/hazard-perception"
                                 title="Hazard Precep..."
                                 icon={<StarIcon />}
                                 color="light_tealish"
@@ -73,26 +73,26 @@ const TheoryTest: React.FC = () => {
 
                         <UITestProgressList
                             title="Study"
-                            routerLink="/theory-test/car/learn"
+                            routerLink="/theory-test/learn"
                         >
                             <UITestProgressCard
                                 title="Alertness"
                                 progress={20}
-                                routerLink="/theory-test/car/learn"
+                                routerLink="/theory-test/learn"
                                 routerDirection="forward"
                                 icon={<AlertsIcon />}
                             />
                             <UITestProgressCard
                                 title="Learn"
                                 progress={40}
-                                routerLink="/theory-test/car/learn"
+                                routerLink="/theory-test/learn"
                                 routerDirection="forward"
                                 icon={<AlertsIcon />}
                             />
                             <UITestProgressCard
                                 title="Alertness"
                                 progress={20}
-                                routerLink="/theory-test/car/learn"
+                                routerLink="/theory-test/learn"
                                 routerDirection="forward"
                                 icon={<AlertsIcon />}
                             />
@@ -100,26 +100,26 @@ const TheoryTest: React.FC = () => {
 
                         <UITestProgressList
                             title="Pratice"
-                            routerLink="/theory-test/car/learn"
+                            routerLink="/theory-test/learn"
                         >
                             <UITestProgressCard
                                 title="Alertness"
                                 progress={20}
-                                routerLink="/theory-test/car/learn"
+                                routerLink="/theory-test/learn"
                                 routerDirection="forward"
                                 icon={<AlertsIcon />}
                             />
                             <UITestProgressCard
                                 title="Learn"
                                 progress={40}
-                                routerLink="/theory-test/car/learn"
+                                routerLink="/theory-test/learn"
                                 routerDirection="forward"
                                 icon={<AlertsIcon />}
                             />
                             <UITestProgressCard
                                 title="Alertness"
                                 progress={20}
-                                routerLink="/theory-test/car/learn"
+                                routerLink="/theory-test/learn"
                                 routerDirection="forward"
                                 icon={<AlertsIcon />}
                             />
@@ -127,26 +127,26 @@ const TheoryTest: React.FC = () => {
 
                         <UITestProgressList
                             title="Hazard Perception"
-                            routerLink="/theory-test/car/learn"
+                            routerLink="/theory-test/learn"
                         >
                             <UITestProgressCard
                                 title="Alertness"
                                 progress={20}
-                                routerLink="/theory-test/car/learn"
+                                routerLink="/theory-test/learn"
                                 routerDirection="forward"
                                 icon={<AlertsIcon />}
                             />
                             <UITestProgressCard
                                 title="Learn"
                                 progress={40}
-                                routerLink="/theory-test/car/learn"
+                                routerLink="/theory-test/learn"
                                 routerDirection="forward"
                                 icon={<AlertsIcon />}
                             />
                             <UITestProgressCard
                                 title="Alertness"
                                 progress={20}
-                                routerLink="/theory-test/car/learn"
+                                routerLink="/theory-test/learn"
                                 routerDirection="forward"
                                 icon={<AlertsIcon />}
                             />
@@ -167,28 +167,28 @@ const TheoryTest: React.FC = () => {
 
                         <IonRouterLink
                             routerDirection="forward"
-                            routerLink="/theory-test/car/learn"
+                            routerLink="/theory-test/learn"
                         >
                             <p>Learn</p>
                         </IonRouterLink>
 
                         <IonRouterLink
                             routerDirection="forward"
-                            routerLink="/theory-test/car/quick-test"
+                            routerLink="/theory-test/quick-test"
                         >
                             <p>Quick Test</p>
                         </IonRouterLink>
 
                         <IonRouterLink
                             routerDirection="forward"
-                            routerLink="/theory-test/car/mock-test"
+                            routerLink="/theory-test/mock-test"
                         >
                             <p>Mock Test</p>
                         </IonRouterLink>
 
                         <IonRouterLink
                             routerDirection="forward"
-                            routerLink="/theory-test/car/hazard-perception"
+                            routerLink="/theory-test/hazard-perception"
                         >
                             <p>Hazard Perception</p>
                         </IonRouterLink>

@@ -19,7 +19,7 @@ const BottomNavigation: React.FC = () => {
                 <li>
                     <IonRouterLink
                         routerDirection="root"
-                        routerLink="/theory-test/car/home"
+                        routerLink="/theory-test/home"
                         className="nav-item firstly"
                     >
                         Theory Test

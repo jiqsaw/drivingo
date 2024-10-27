@@ -8,13 +8,13 @@ const Learn: React.FC = () => {
             <IonContent fullscreen className="ion-padding">
                 <IonRouterLink
                     routerDirection="forward"
-                    routerLink="/theory-test/car/learn/study/1"
+                    routerLink="/theory-test/learn/study/1"
                 >
                     <p>Study Topics Detail</p>
                 </IonRouterLink>
                 <IonRouterLink
                     routerDirection="forward"
-                    routerLink="/theory-test/car/learn/practise/1"
+                    routerLink="/theory-test/learn/practise/1"
                 >
                     <p>Practise Topics Detail</p>
                 </IonRouterLink>

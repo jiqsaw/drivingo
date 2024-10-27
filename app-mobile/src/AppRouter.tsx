@@ -9,8 +9,8 @@ import HighwayCodeDetailPage from './pages/highway-code/Detail';
 import HighwayCode from './pages/highway-code/HighwayCode';
 import TheoryTest from './pages/theory-test/TheoryTest';
 import HazardPerceptionDetail from './pages/theory-test/hazard-perception/Detail';
-import HazardPerceptionResult from './pages/theory-test/hazard-perception/Result';
 import HazardPerception from './pages/theory-test/hazard-perception/HazardPerception';
+import HazardPerceptionResult from './pages/theory-test/hazard-perception/Result';
 import Learn from './pages/theory-test/learn/Learn';
 import PractiseTopic from './pages/theory-test/learn/practise-topics/PractiseTopic';
 import StudyTopic from './pages/theory-test/learn/study-topics/StudyTopic';
@@ -22,33 +22,33 @@ const Router: React.FC = () => {
     return (
         <IonReactRouter>
             <IonRouterOutlet>
-                <Redirect exact path="/" to="/theory-test/car/home" />
+                <Redirect exact path="/" to="/theory-test/home" />
 
                 {/* Home - default Theory Test */}
                 <Route
-                    path="/theory-test/:category/home"
+                    path="/theory-test/home"
                     render={() => <TheoryTest />}
                     exact={true}
                 />
 
                 {/* Theory Test Segment 1 */}
                 <Route
-                    path="/theory-test/:category/learn"
+                    path="/theory-test/learn"
                     render={() => <Learn />}
                     exact={true}
                 />
                 <Route
-                    path="/theory-test/:category/quick-test"
+                    path="/theory-test/quick-test"
                     render={() => <QuickTest />}
                     exact={true}
                 />
                 <Route
-                    path="/theory-test/:category/mock-test"
+                    path="/theory-test/mock-test"
                     render={() => <MockTest />}
                     exact={true}
                 />
                 <Route
-                    path="/theory-test/:category/hazard-perception"
+                    path="/theory-test/hazard-perception"
                     render={() => <HazardPerception />}
                     exact={true}
                 />
@@ -67,17 +67,17 @@ const Router: React.FC = () => {
 
                 {/* Theory Test Segment 2 */}
                 <Route
-                    path="/theory-test/:category/learn/study/:topic"
+                    path="/theory-test/learn/study/:topic"
                     render={() => <StudyTopic />}
                     exact={true}
                 />
                 <Route
-                    path="/theory-test/:category/learn/practise/:topic"
+                    path="/theory-test/learn/practise/:topic"
                     render={() => <PractiseTopic />}
                     exact={true}
                 />
                 <Route
-                    path="/theory-test/:category/mock-test/:test-id"
+                    path="/theory-test/mock-test/:test-id"
                     render={() => <Home />}
                     exact={true}
                 />

@@ -1,33 +1,43 @@
 import {
     storeTheoryActiveTestActions,
     storeTheoryActiveTestSelectors,
+    storeUiSelectors,
 } from '@drivingo/store';
 import { UIButton } from '@drivingo/ui';
 import { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './assets/styles.scss';
+import { CONSTANTS } from '@drivingo/global';
+import { TestType } from '@drivingo/models';
 
 const FeatTest = () => {
     const dispatch = useDispatch();
     const hasRunOnce = useRef(false);
 
-    const test = useSelector(storeTheoryActiveTestSelectors.selectActiveTest);
+    const uiQuickTestNumberOfQuestions = useSelector(
+        storeUiSelectors.quickTestNumberOfQuestions,
+    );
+    const test = useSelector(storeTheoryActiveTestSelectors.activeTest);
     const testCurrentQuestion = useSelector(
-        storeTheoryActiveTestSelectors.selectCurrentQuestion,
+        storeTheoryActiveTestSelectors.currentQuestion,
     );
     const isLastQuestion = useSelector(
-        storeTheoryActiveTestSelectors.selectIsLastQuestion,
+        storeTheoryActiveTestSelectors.isLastQuestion,
     );
 
     useEffect(() => {
         if (!hasRunOnce.current) {
-            dispatch(storeTheoryActiveTestActions.start());
+            dispatch(
+                storeTheoryActiveTestActions.start({
+                    numberOfQuestions: getNumberOfQuestions(),
+                }),
+            );
             hasRunOnce.current = true;
         }
     }, []);
 
     if (!testCurrentQuestion) {
-        // TODO: error! navigate homr and show error?
+        // TODO: error! navigate and show error?
         return;
     }
 
@@ -36,7 +46,7 @@ const FeatTest = () => {
             <div>
                 <p>
                     Soru no:&nbsp;
-                    {test.questionLocatorIndex + 1}/{test.questions.length}
+                    {test.indexLocator + 1}/{test.questions.length}
                 </p>
                 <p>{testCurrentQuestion.question}</p>
             </div>
@@ -58,29 +68,46 @@ const FeatTest = () => {
                         </div>
                     );
                 })}
-                {!!testCurrentQuestion.selectedOptionChar && (
-                    <UIButton
-                        onClick={() => (!isLastQuestion ? next() : finish())}
-                        text={isLastQuestion ? 'Finish' : 'Next'}
-                    />
-                )}
+                {showProceedButton() &&
+                    (!isLastQuestion ? (
+                        <UIButton onClick={() => next()} text="Next" />
+                    ) : (
+                        <UIButton onClick={() => finish()} text="Finish" />
+                    ))}
             </div>
             <hr />
             <div>
-                {test.questionLocatorIndex > 0 && (
-                    <div onClick={prev}>Prev</div>
+                {test.indexLocator > 0 && <div onClick={prev}>Prev</div>}
+                {showFlagButton() && (
+                    <div
+                        className={`test__flag ${testCurrentQuestion.isFlagged ? 'test__flag--selected' : ''}`}
+                        onClick={() =>
+                            dispatch(storeTheoryActiveTestActions.flag())
+                        }
+                    >
+                        Flag
+                    </div>
                 )}
-                <div
-                    className={`test__flag ${testCurrentQuestion.isFlagged ? 'test__flag--selected' : ''}`}
-                    onClick={() =>
-                        dispatch(storeTheoryActiveTestActions.flag())
-                    }
-                >
-                    Flag
-                </div>
             </div>
         </aside>
     );
+
+    function getNumberOfQuestions() {
+        switch (test.type) {
+            case TestType.QuickTest:
+                return uiQuickTestNumberOfQuestions;
+            case TestType.MockTest:
+                return CONSTANTS.mockTestInfo.questionAmount;
+        }
+    }
+
+    function showProceedButton() {
+        return !!testCurrentQuestion.selectedOptionChar;
+    }
+
+    function showFlagButton() {
+        return test.type !== TestType.LearnPractice;
+    }
 
     function next() {
         dispatch(storeTheoryActiveTestActions.next());
@@ -91,6 +118,8 @@ const FeatTest = () => {
     }
 
     function finish() {
+        // show flagged question check
+        // are you sure you want to finish check
         dispatch(storeTheoryActiveTestActions.finish());
     }
 };

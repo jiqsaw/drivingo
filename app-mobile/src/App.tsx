@@ -9,8 +9,8 @@ import AppRouter from './AppRouter';
 setupIonicReact();
 
 const App: React.FC = () => {
-    const theme = useSelector(storeUiSelectors.selectUiTheme);
-    const network = useSelector(storeUiSelectors.selectNetwork);
+    const theme = useSelector(storeUiSelectors.theme);
+    const network = useSelector(storeUiSelectors.networkStatus);
     const dispatch = useDispatch();
 
     useEffect(() => {

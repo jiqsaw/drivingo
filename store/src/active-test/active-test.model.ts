@@ -1,42 +1,16 @@
-import {
-    IQuestion,
-    ITopic,
-    OptionChar,
-    TestCategory,
-    TestType,
-} from '@drivingo/models';
+import { IQuestion, ITopic, OptionChar, TestType } from '@drivingo/models';
 
 export interface IStoreTheoryActiveTest {
     viewType: StoreTheoryActiveTestView;
-    isFinished: boolean;
     isPaused: boolean;
     questions: IStoreTheoryActiveTestQuestion[];
-    questionLocatorIndex: number;
+    indexLocator: number;
+    showFlaggedOnly: boolean;
 
     type?: TestType;
     includingTopics?: ITopic[];
-    numberOfQuestions?: number;
 
     showFullTranslate?: boolean;
-}
-
-export interface IStoreTheoryActiveTestInitialParams {
-    type: TestType;
-    numberOfQuestions: number;
-}
-
-/* --- ??? --- */
-
-export interface IStoreTheoryActiveTestParam {
-    type: TestType;
-    filter?: {
-        category: TestCategory;
-        numberOfQuestion: number;
-        topicCode: string;
-        userProgressPracticeCorrects?: string[];
-        userProgressPracticeIncorrects?: string[];
-        locationCode?: string;
-    };
 }
 
 export interface IStoreTheoryActiveTestQuestion extends IQuestion {
@@ -45,12 +19,24 @@ export interface IStoreTheoryActiveTestQuestion extends IQuestion {
 }
 
 export enum StoreTheoryActiveTestView {
-    default,
-    flags,
+    notActive,
+    active,
     review,
-    reviewIncorrects,
-    none,
 }
+
+/* --- ??? --- */
+
+// export interface IStoreTheoryActiveTestParam {
+//     type: TestType;
+//     filter?: {
+//         category: TestCategory;
+//         numberOfQuestion: number;
+//         topicCode: string;
+//         userProgressPracticeCorrects?: string[];
+//         userProgressPracticeIncorrects?: string[];
+//         locationCode?: string;
+//     };
+// }
 
 export interface IStoreTheoryActiveTestResults {
     date: Date;

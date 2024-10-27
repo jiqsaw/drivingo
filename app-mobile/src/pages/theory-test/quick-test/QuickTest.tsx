@@ -19,7 +19,7 @@ const QuickTest = () => {
     const hasRunOnce = useRef(false);
     const [selectedItems, setSelectedItems] = useState<ITopic[] | null>(null);
     const uiQuickTestNumberOfQuestions = useSelector(
-        storeUiSelectors.selectQuickTestNumberOfQuestions,
+        storeUiSelectors.quickTestNumberOfQuestions,
     );
 
     useEffect(() => {
@@ -27,7 +27,6 @@ const QuickTest = () => {
             dispatch(
                 storeTheoryActiveTestActions.initialise({
                     type: TestType.QuickTest,
-                    numberOfQuestions: uiQuickTestNumberOfQuestions,
                 }),
             );
             hasRunOnce.current = true;
@@ -103,7 +102,6 @@ const QuickTest = () => {
 
     function handleNumberOfQuestionsChange(item: number) {
         dispatch(storeUiActions.updateQuickTestNumberOfQuestions(item));
-        dispatch(storeTheoryActiveTestActions.updateNumberOfQuestions(item));
     }
 };
 

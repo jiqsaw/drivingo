@@ -1,6 +1,6 @@
 import { FeatTest } from '@drivingo/test';
 import { IonContent, IonPage } from '@ionic/react';
-import { TestHeader } from 'app-mobile/src/components/headers/test-header/testheader';
+import TestHeader from '../../../components/headers/test-header/testheader';
 
 const Test = () => {
     return (

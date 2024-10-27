@@ -4,7 +4,7 @@ import uiSlice from './ui.slice';
 export const storeUiReducers = uiSlice.reducer;
 export const storeUiActions = uiSlice.actions;
 export const storeUiSelectors = {
-    selectUiTheme: (state: AppState) => {
+    theme: (state: AppState) => {
         if (state.ui.theme === null) {
             return window.matchMedia('(prefers-color-scheme: dark)').matches
                 ? 'dark'
@@ -15,10 +15,10 @@ export const storeUiSelectors = {
     closeMockTestIntroduction: (state: AppState) => {
         return state.ui.hideMockTestIntroduction;
     },
-    selectNetwork: (state: AppState) => {
+    networkStatus: (state: AppState) => {
         return state.ui.network;
     },
-    selectQuickTestNumberOfQuestions: (state: AppState) => {
+    quickTestNumberOfQuestions: (state: AppState) => {
         return state.ui.quickTestNumberOfQuestions;
     },
 };

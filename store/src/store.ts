@@ -11,7 +11,7 @@ const persistConfig = {
     version: 0,
     storage: storage,
     key: 'drivingo-store-root',
-    blacklist: ['activeTest', 'activeHazard'],
+    blacklist: ['theory'],
     debug: false,
     serialize: true,
 };

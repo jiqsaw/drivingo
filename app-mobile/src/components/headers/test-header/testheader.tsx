@@ -1,19 +1,51 @@
-import { IonBackButton, IonButtons } from '@ionic/react';
+import {
+    IonBackButton,
+    IonButton,
+    IonButtons,
+    IonNavLink,
+    IonRouterLink,
+} from '@ionic/react';
 import { arrowBack } from 'ionicons/icons';
 import { FC } from 'react';
 import './testheader.scss';
+import { storeTheoryActiveTestActions } from '@drivingo/store';
+import { useDispatch } from 'react-redux';
 
-interface Props {
-    title?: string;
-}
+const TestHeader: FC = () => {
+    const dispatch = useDispatch();
 
-export const TestHeader: FC<Props> = ({ title = '' }) => {
     return (
         <div className="test-header">
-            <IonButtons>
-                <IonBackButton text={title} icon={arrowBack} />
-            </IonButtons>
-            {/* <UIAIButton /> */}
+            {/*  IonBackButton onClick ya da callBack methodlari yok. O yuzden custom back buttonu koyup geri gitmeden once confirm modal koymamiz gerekece */}
+            {/* <IonButtons>
+                <IonBackButton text="Exit" icon={arrowBack} />
+            </IonButtons> */}
+            {/* 
+                TODO: 
+                Bu exit e basildiginda normal alert ciksin. Asagidaki mesaj yazsin.
+                Exit exam
+                Are you sure you wish to exit the test?
+
+                //sonrasinda store'daki exit dispatch olsun. Ben finish i tetiklemek icin gecici button koyuyorum. 
+                //IonBackButton olayini cozemescek bu buttonu back icon ile customise ederiz.
+            
+            */}
+            <IonRouterLink
+                routerLink="/theory-test/quick-test"
+                routerDirection="back"
+                onClick={() => exit()}
+            >
+                Exit
+            </IonRouterLink>
+
+            {/* TODO: Theme chenge icon here. Ui library e eklenebilir: UIThemeButton. Normal svg file kullanilmali (class degil). Svg ui klasoru altinda assets klasorune konulmali. */}
+            {/* TODO: Translate icon here. Button UI library a eklenebilir: UITranslateButton. Svg ayni sekilde ui/assets klasorune konulmali. */}
         </div>
     );
+
+    function exit() {
+        dispatch(storeTheoryActiveTestActions.exit());
+    }
 };
+
+export default TestHeader;

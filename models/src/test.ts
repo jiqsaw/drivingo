@@ -3,12 +3,3 @@ export enum TestType {
     QuickTest = 'QUICK_TEST',
     MockTest = 'MOCK_TEST',
 }
-
-export enum TestCategory {
-    topic,
-    // random,
-    // incorrects,
-    // unanswered,
-    // incorrectAndUnanswered,
-    // videos
-}
