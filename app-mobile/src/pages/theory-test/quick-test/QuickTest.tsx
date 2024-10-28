@@ -9,29 +9,17 @@ import {
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
 import BottomNavigation from 'app-mobile/src/components/bottom-navigation/bottom-navigation';
 import { Subheader } from 'app-mobile/src/components/headers/subheader/subheader';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 const QuickTest = () => {
     const topics = TopicDataProvider.getData();
 
     const dispatch = useDispatch();
-    const hasRunOnce = useRef(false);
     const [selectedItems, setSelectedItems] = useState<ITopic[] | null>(null);
     const uiQuickTestNumberOfQuestions = useSelector(
         storeUiSelectors.quickTestNumberOfQuestions,
     );
-
-    useEffect(() => {
-        if (!hasRunOnce.current) {
-            dispatch(
-                storeTheoryActiveTestActions.initialise({
-                    type: TestType.QuickTest,
-                }),
-            );
-            hasRunOnce.current = true;
-        }
-    }, []);
 
     useEffect(() => {
         if (selectedItems !== null) {
@@ -79,7 +67,7 @@ const QuickTest = () => {
                     {/* Bu button sadece en az bir topic secili oldugunda gorunur olacak */}
                     <IonRouterLink
                         routerDirection="forward"
-                        routerLink={`/theory-test/test`}
+                        routerLink={`/theory-test/test/${TestType.QuickTest}`}
                     >
                         Start
                     </IonRouterLink>

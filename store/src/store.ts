@@ -2,8 +2,9 @@ import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
 import { persistReducer, persistStore } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import { storeTheoryActiveHazardReducers } from './active-hazard/active-hazard';
-import { storeTheoryActiveTestReducers } from './active-test/active-test';
+import { storeTheoryActiveHazardReducers } from './theory/active-hazard/active-hazard';
+import { storeTheoryActiveTestReducers } from './theory/active-test/active-test';
+import { storeTheoryProgressReducer } from './theory/progress/progress';
 import { storeUiReducers } from './ui/ui';
 import { storeUserReducer } from './user/user';
 
@@ -22,6 +23,7 @@ const rootReducer = combineReducers({
     theory: combineReducers({
         activeTest: storeTheoryActiveTestReducers,
         activeHazard: storeTheoryActiveHazardReducers,
+        progress: storeTheoryProgressReducer,
     }),
 });
 

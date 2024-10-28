@@ -1,5 +1,5 @@
 import { createSelector } from '@reduxjs/toolkit';
-import { AppState } from '../store';
+import { AppState } from '../../store';
 import { getCurrentQuestion, getQuestions } from './active-test-utils';
 
 const activeTest = (state: AppState) => state.theory.activeTest;

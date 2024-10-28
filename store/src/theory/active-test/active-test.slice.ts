@@ -19,25 +19,21 @@ export default createSlice({
     name: 'theory/activeTest',
     initialState: initialState,
     reducers: {
-        initialise: (_state, action: PayloadAction<{ type: TestType }>) => {
-            return {
-                ...initialState,
-                type: action.payload.type,
-            };
-        },
         addTopics: (state, action: PayloadAction<ITopic[]>) => {
             state.includingTopics = action.payload;
         },
         start: (
             state,
-            action: PayloadAction<{ numberOfQuestions?: number }>,
+            action: PayloadAction<{
+                numberOfQuestions?: number;
+                type: TestType;
+            }>,
         ) => {
-            const questions: IStoreTheoryActiveTestQuestion[] =
-                TestDataProvider.getQuestions(
-                    state.includingTopics,
-                    action.payload.numberOfQuestions,
-                );
-            state.questions = questions;
+            state.type = action.payload.type;
+            state.questions = TestDataProvider.getQuestions(
+                state.includingTopics,
+                action.payload.numberOfQuestions,
+            );
             state.viewType = StoreTheoryActiveTestView.active;
         },
         selectOption: (state, action: PayloadAction<OptionChar>) => {
@@ -62,16 +58,7 @@ export default createSlice({
             state.indexLocator = state.indexLocator - 1;
         },
         finish(state) {
-            //????
-            state.questions.map((e) => (e.isFlagged = false));
             state.viewType = StoreTheoryActiveTestView.notActive;
-
-            if (state.type === TestType.LearnPractice) {
-                // Take the unanswered question out of the progress
-                state.questions = state.questions.filter(
-                    (e) => e.selectedOptionChar !== undefined,
-                );
-            }
         },
         exit(_state) {
             return { ...initialState };

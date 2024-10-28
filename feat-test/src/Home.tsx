@@ -4,15 +4,17 @@ import {
     storeUiSelectors,
 } from '@drivingo/store';
 import { UIButton } from '@drivingo/ui';
-import { useEffect, useRef } from 'react';
+import { FC, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './assets/styles.scss';
 import { CONSTANTS } from '@drivingo/global';
 import { TestType } from '@drivingo/models';
+import { useIonRouter } from '@ionic/react';
 
-const FeatTest = () => {
+const FeatTest: FC<{ type: TestType }> = ({ type }) => {
     const dispatch = useDispatch();
     const hasRunOnce = useRef(false);
+    const router = useIonRouter();
 
     const uiQuickTestNumberOfQuestions = useSelector(
         storeUiSelectors.quickTestNumberOfQuestions,
@@ -29,7 +31,8 @@ const FeatTest = () => {
         if (!hasRunOnce.current) {
             dispatch(
                 storeTheoryActiveTestActions.start({
-                    numberOfQuestions: getNumberOfQuestions(),
+                    numberOfQuestions: getNumberOfQuestions(type),
+                    type,
                 }),
             );
             hasRunOnce.current = true;
@@ -92,8 +95,8 @@ const FeatTest = () => {
         </aside>
     );
 
-    function getNumberOfQuestions() {
-        switch (test.type) {
+    function getNumberOfQuestions(type: TestType) {
+        switch (type) {
             case TestType.QuickTest:
                 return uiQuickTestNumberOfQuestions;
             case TestType.MockTest:
@@ -121,6 +124,7 @@ const FeatTest = () => {
         // show flagged question check
         // are you sure you want to finish check
         dispatch(storeTheoryActiveTestActions.finish());
+        router.push('/theory-test/test-result', 'forward');
     }
 };
 
