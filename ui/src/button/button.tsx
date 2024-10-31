@@ -1,14 +1,19 @@
 import { IonButton } from '@ionic/react';
 
 export interface UIButtonProps {
+    id?: string;
     text: string;
     onClick?: () => void;
 }
 
 export const UIButton = (props: UIButtonProps) => {
-    const { text, onClick } = props;
+    const { id, text, onClick } = props;
     return (
-        <IonButton onClick={() => onClick && onClick()} color={'medium'}>
+        <IonButton
+            id={id}
+            onClick={() => onClick && onClick()}
+            color={'medium'}
+        >
             {text}
         </IonButton>
     );

@@ -1,37 +1,37 @@
 export interface IStoreProgress {
-    quickTest?: IStoreProgressPractice;
+    quickTest: IStoreProgressQuickTest;
     // mockTest: IStoreProgressMockTest;
     // hazardPerception: IStoreProgressHazardPerception[];
 }
 
-export interface IStoreProgressPractice {
-    topics: IStoreTopicResult[];
-    results: IStoreTestResult[];
+export interface IStoreProgressQuickTest {
+    topics: IStoreProgressTopicResult[];
+    results: IStoreProgressTestResult[];
 }
 
 export interface IStoreProgressMockTest {
     average: number;
     lastCorrectCount: number;
     lastQuestionAmount: number;
-    topics: IStoreTopicResult[];
-    results: IStoreTestResult[];
+    topics: IStoreProgressTopicResult[];
+    results: IStoreProgressTestResult[];
 }
 
 export interface IStoreProgressHazardPerception {
-    date: string;
+    date: Date;
     clipCode: string;
     score: number;
 }
 
-export interface IStoreTopicResult {
+export interface IStoreProgressTopicResult {
     code: string;
-    correct?: number;
-    incorrect?: number;
-    locationCode?: string;
+    correct: number;
+    incorrect: number;
+    lastAnsweredQuestionCode?: string;
 }
 
-export interface IStoreTestResult {
-    date: string;
+export interface IStoreProgressTestResult {
+    date: Date;
     correct: number;
-    total: number;
+    questionCount: number;
 }

@@ -38,6 +38,16 @@
             "output": "data-images/highway-code"
           },
           {
+            "input": "data/src/test/images",
+            "glob": "**/*",
+            "output": "data-images/test"
+          },
+          {
+            "input": "data/src/test/videos",
+            "glob": "**/*",
+            "output": "data-videos/test"
+          },
+          {
             "input": "data/src/hazard-perception/thumbnails",
             "glob": "**/*",
             "output": "data-thumbnails/hazard-perception"

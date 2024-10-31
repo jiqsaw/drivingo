@@ -1,3 +1,4 @@
+import { FeatTestResult } from '@drivingo/test';
 import { IonContent, IonPage } from '@ionic/react';
 
 const TestResult: React.FC = () => {
@@ -5,8 +6,7 @@ const TestResult: React.FC = () => {
         <IonPage>
             <IonContent fullscreen>
                 <aside className="container">
-                    {/* Header ? */}
-                    <h1>Test Result</h1>
+                    <FeatTestResult />
                 </aside>
             </IonContent>
         </IonPage>

@@ -1,15 +1,17 @@
+import { TestDataProvider } from '@drivingo/data-provider';
+import { CONSTANTS } from '@drivingo/global';
+import { TestType } from '@drivingo/models';
 import {
     storeTheoryActiveTestActions,
     storeTheoryActiveTestSelectors,
     storeUiSelectors,
 } from '@drivingo/store';
 import { UIButton } from '@drivingo/ui';
+import { IonAlert, useIonRouter } from '@ionic/react';
 import { FC, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { storeTheoryProgressActions } from 'store/src/theory/progress/progress';
 import './assets/styles.scss';
-import { CONSTANTS } from '@drivingo/global';
-import { TestType } from '@drivingo/models';
-import { useIonRouter } from '@ionic/react';
 
 const FeatTest: FC<{ type: TestType }> = ({ type }) => {
     const dispatch = useDispatch();
@@ -25,6 +27,9 @@ const FeatTest: FC<{ type: TestType }> = ({ type }) => {
     );
     const isLastQuestion = useSelector(
         storeTheoryActiveTestSelectors.isLastQuestion,
+    );
+    const isFirstQuestion = useSelector(
+        storeTheoryActiveTestSelectors.isFirstQuestion,
     );
 
     useEffect(() => {
@@ -51,7 +56,17 @@ const FeatTest: FC<{ type: TestType }> = ({ type }) => {
                     Soru no:&nbsp;
                     {test.indexLocator + 1}/{test.questions.length}
                 </p>
-                <p>{testCurrentQuestion.question}</p>
+                <p>
+                    {testCurrentQuestion.question}
+                    {testCurrentQuestion.questionImg !== '' && (
+                        <img
+                            src={TestDataProvider.getQuestionImage(
+                                testCurrentQuestion.code,
+                            )}
+                            alt={testCurrentQuestion.code}
+                        />
+                    )}
+                </p>
             </div>
             <div>
                 {testCurrentQuestion.options.map((option, i) => {
@@ -67,7 +82,16 @@ const FeatTest: FC<{ type: TestType }> = ({ type }) => {
                                 )
                             }
                         >
-                            {option.text}
+                            {option.char}){option.text}
+                            {option.img && (
+                                <img
+                                    src={TestDataProvider.getOptionImage(
+                                        testCurrentQuestion.code,
+                                        option.char,
+                                    )}
+                                    alt={testCurrentQuestion.code}
+                                />
+                            )}
                         </div>
                     );
                 })}
@@ -75,12 +99,18 @@ const FeatTest: FC<{ type: TestType }> = ({ type }) => {
                     (!isLastQuestion ? (
                         <UIButton onClick={() => next()} text="Next" />
                     ) : (
-                        <UIButton onClick={() => finish()} text="Finish" />
+                        <UIButton
+                            id="present-alert"
+                            onClick={() =>
+                                getFlaggedQuestionsAmount() < 1 && finish()
+                            }
+                            text="Finish"
+                        />
                     ))}
             </div>
             <hr />
             <div>
-                {test.indexLocator > 0 && <div onClick={prev}>Prev</div>}
+                {!isFirstQuestion && <div onClick={prev}>Prev</div>}
                 {showFlagButton() && (
                     <div
                         className={`test__flag ${testCurrentQuestion.isFlagged ? 'test__flag--selected' : ''}`}
@@ -92,6 +122,33 @@ const FeatTest: FC<{ type: TestType }> = ({ type }) => {
                     </div>
                 )}
             </div>
+
+            {getFlaggedQuestionsAmount() > 0 && (
+                <IonAlert
+                    header={getAlertHeaderMessage()}
+                    trigger={
+                        showProceedButton() && isLastQuestion
+                            ? 'present-alert'
+                            : ''
+                    }
+                    buttons={[
+                        {
+                            text: 'Review flagged questions',
+                            role: 'confirm',
+                            handler: () => {
+                                showFlaggedQuestions();
+                            },
+                        },
+                        {
+                            text: 'Finish test',
+                            role: 'cancel',
+                            handler: () => {
+                                finish();
+                            },
+                        },
+                    ]}
+                ></IonAlert>
+            )}
         </aside>
     );
 
@@ -120,10 +177,25 @@ const FeatTest: FC<{ type: TestType }> = ({ type }) => {
         dispatch(storeTheoryActiveTestActions.prev());
     }
 
+    function getFlaggedQuestionsAmount() {
+        return test.questions.filter((question) => question.isFlagged === true)
+            .length;
+    }
+
+    function getAlertHeaderMessage() {
+        return (
+            'You have ' + getFlaggedQuestionsAmount() + ' flagged questions!'
+        );
+    }
+
+    function showFlaggedQuestions() {
+        dispatch(storeTheoryActiveTestActions.showFlaggedQuestions());
+        dispatch(storeTheoryActiveTestActions.next());
+    }
+
     function finish() {
-        // show flagged question check
-        // are you sure you want to finish check
         dispatch(storeTheoryActiveTestActions.finish());
+        dispatch(storeTheoryProgressActions.addTestResult({ test: test }));
         router.push('/theory-test/test-result', 'forward');
     }
 };
