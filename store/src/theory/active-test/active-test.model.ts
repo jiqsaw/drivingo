@@ -1,7 +1,13 @@
-import { IQuestion, ITopic, OptionChar, TestType } from '@drivingo/models';
+import {
+    IQuestion,
+    ITopic,
+    OptionChar,
+    TestType,
+    TestView,
+} from '@drivingo/models';
 
 export interface IStoreTheoryActiveTest {
-    viewType: StoreTheoryActiveTestView;
+    view: TestView;
     isPaused: boolean;
     questions: IStoreTheoryActiveTestQuestion[];
     indexLocator: number;
@@ -16,12 +22,6 @@ export interface IStoreTheoryActiveTest {
 export interface IStoreTheoryActiveTestQuestion extends IQuestion {
     isFlagged?: boolean;
     selectedOptionChar?: OptionChar;
-}
-
-export enum StoreTheoryActiveTestView {
-    notActive,
-    active,
-    review,
 }
 
 /* --- ??? --- */

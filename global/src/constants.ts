@@ -4,8 +4,8 @@ export default {
     quickTestNumberOfQuestionsDefault: 20,
     mockTestInfo: {
         duration: 57,
-        questionAmount: 50,
-        passCorrectAmount: 43,
+        questionsLength: 50,
+        passingRequiredCorrect: 43,
         videoQuestionAmount: 3,
     },
     testResultThreshold: {

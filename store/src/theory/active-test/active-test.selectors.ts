@@ -1,6 +1,8 @@
+import { CONSTANTS } from '@drivingo/global';
 import { createSelector } from '@reduxjs/toolkit';
 import { AppState } from '../../store';
 import {
+    getCorrectCount,
     getCurrentQuestion,
     getNextFlaggedQuestionIndex,
     getPrevFlaggedQuestionIndex,
@@ -41,24 +43,46 @@ const isFirstQuestion = createSelector(activeTest, (test) => {
     return prevFlaggedQuestionIndex === -1;
 });
 
-/* --- ??? -- */
+const score = createSelector(activeTest, (test) => {
+    const correctCount = getCorrectCount(test.questions);
+    const incorrectCount = test.questions.length - correctCount;
+    return correctCount + '/' + incorrectCount;
+});
 
-// const activeTestFinished = (state: AppState) =>
-//     state.theory.activeTest.isFinished === true
-//         ? state.theory.activeTest
-//         : undefined;
+const activeTestType = createSelector(activeTest, (test) => {
+    return test.type;
+});
+
+const questionsLength = createSelector(activeTest, (test) => {
+    return test.questions.length;
+});
+
+const passingRequiredCorrect = createSelector(activeTest, (test) => {
+    const passingRatio =
+        CONSTANTS.mockTestInfo.questionsLength /
+        CONSTANTS.mockTestInfo.passingRequiredCorrect;
+    return Math.ceil(test.questions.length / passingRatio);
+});
+
+const isTestResultSuccess = createSelector(
+    activeTest,
+    passingRequiredCorrect,
+    (test, passingRequiredCorrect) => {
+        const correctCount = getCorrectCount(test.questions);
+        return correctCount >= passingRequiredCorrect;
+    },
+);
+
+/* --- ??? -- */
 
 export default {
     activeTest,
     currentQuestion,
     isLastQuestion,
     isFirstQuestion,
-
-    /* --- ??? ---*/
-    // activeTestFinished,
-    // selectQuestions,
-    // currentQuestion,
-    // isLastQuestion,
-    // selectHaveFlags,
-    // selectHasPrevQuestion,
+    score,
+    activeTestType,
+    questionsLength,
+    passingRequiredCorrect,
+    isTestResultSuccess,
 };

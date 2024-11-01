@@ -1,8 +1,50 @@
+import { storeTheoryActiveTestSelectors } from '@drivingo/store';
+import { IonRouterLink } from '@ionic/react';
 import { FC } from 'react';
+import { useSelector } from 'react-redux';
 import './assets/styles.scss';
 
 const FeatTestResult: FC = () => {
-    return <aside className="test-result">Test Result</aside>;
+    const testType = useSelector(storeTheoryActiveTestSelectors.activeTestType);
+    const questionsLength = useSelector(
+        storeTheoryActiveTestSelectors.questionsLength,
+    );
+    const score = useSelector(storeTheoryActiveTestSelectors.score);
+    const passingRequiredCorrect = useSelector(
+        storeTheoryActiveTestSelectors.passingRequiredCorrect,
+    );
+    const isTestResultSuccess = useSelector(
+        storeTheoryActiveTestSelectors.isTestResultSuccess,
+    );
+
+    return (
+        <aside className="test-result">
+            Test Result <br />
+            {score} <br />
+            {isTestResultSuccess ? 'Success' : 'Fail'} <br />
+            passing mark is:
+            {passingRequiredCorrect}
+            {' / '}
+            {questionsLength}
+            <br />
+            <br />
+            <br />
+            <IonRouterLink
+                routerDirection="root"
+                routerLink="/theory-test/test-review"
+            >
+                Review test
+            </IonRouterLink>
+            <br />
+            <br />
+            <IonRouterLink
+                routerDirection="root"
+                routerLink={`/theory-test/test/${testType}`}
+            >
+                Take another test
+            </IonRouterLink>
+        </aside>
+    );
 };
 
 export default FeatTestResult;

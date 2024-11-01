@@ -18,6 +18,7 @@ import MockTest from './pages/theory-test/mock-test/MockTest';
 import QuickTest from './pages/theory-test/quick-test/QuickTest';
 import Test from './pages/theory-test/test/Test';
 import TestResult from './pages/theory-test/test/TestResult';
+import TestReview from './pages/theory-test/test/TestReview';
 
 const Router: React.FC = () => {
     return (
@@ -66,6 +67,11 @@ const Router: React.FC = () => {
                 <Route
                     path="/theory-test/test-result"
                     component={TestResult}
+                    exact={true}
+                />
+                <Route
+                    path="/theory-test/test-review"
+                    component={TestReview}
                     exact={true}
                 />
 

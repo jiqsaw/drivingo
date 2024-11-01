@@ -3,3 +3,9 @@ export enum TestType {
     QuickTest = 'QUICK_TEST',
     MockTest = 'MOCK_TEST',
 }
+
+export enum TestView {
+    notActive,
+    active,
+    review,
+}

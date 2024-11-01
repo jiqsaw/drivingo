@@ -1,6 +1,5 @@
-import { TestDataProvider } from '@drivingo/data-provider';
 import { CONSTANTS } from '@drivingo/global';
-import { TestType } from '@drivingo/models';
+import { OptionChar, TestType } from '@drivingo/models';
 import {
     storeTheoryActiveTestActions,
     storeTheoryActiveTestSelectors,
@@ -12,8 +11,9 @@ import { FC, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { storeTheoryProgressActions } from 'store/src/theory/progress/progress';
 import './assets/styles.scss';
+import FeatTestContent from './components/test-content';
 
-const FeatTest: FC<{ type: TestType }> = ({ type }) => {
+const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
     const dispatch = useDispatch();
     const hasRunOnce = useRef(false);
     const router = useIonRouter();
@@ -34,12 +34,14 @@ const FeatTest: FC<{ type: TestType }> = ({ type }) => {
 
     useEffect(() => {
         if (!hasRunOnce.current) {
-            dispatch(
-                storeTheoryActiveTestActions.start({
-                    numberOfQuestions: getNumberOfQuestions(type),
-                    type,
-                }),
-            );
+            if (type) {
+                dispatch(
+                    storeTheoryActiveTestActions.start({
+                        numberOfQuestions: getNumberOfQuestions(type),
+                        type,
+                    }),
+                );
+            }
             hasRunOnce.current = true;
         }
     }, []);
@@ -51,50 +53,21 @@ const FeatTest: FC<{ type: TestType }> = ({ type }) => {
 
     return (
         <aside className="test">
-            <div>
-                <p>
-                    Soru no:&nbsp;
-                    {test.indexLocator + 1}/{test.questions.length}
-                </p>
-                <p>
-                    {testCurrentQuestion.question}
-                    {testCurrentQuestion.questionImg !== '' && (
-                        <img
-                            src={TestDataProvider.getQuestionImage(
-                                testCurrentQuestion.code,
-                            )}
-                            alt={testCurrentQuestion.code}
-                        />
-                    )}
-                </p>
-            </div>
-            <div>
-                {testCurrentQuestion.options.map((option, i) => {
-                    return (
-                        <div
-                            className={`test__option ${testCurrentQuestion.selectedOptionChar === option.char ? 'test__option--selected' : ''}`}
-                            key={'option-' + i}
-                            onClick={() =>
-                                dispatch(
-                                    storeTheoryActiveTestActions.selectOption(
-                                        option.char,
-                                    ),
-                                )
-                            }
-                        >
-                            {option.char}){option.text}
-                            {option.img && (
-                                <img
-                                    src={TestDataProvider.getOptionImage(
-                                        testCurrentQuestion.code,
-                                        option.char,
-                                    )}
-                                    alt={testCurrentQuestion.code}
-                                />
-                            )}
-                        </div>
+            <FeatTestContent
+                questionNo={test.indexLocator + 1}
+                questionsLength={test.questions.length}
+                questionItem={testCurrentQuestion}
+                selectedOptionChar={testCurrentQuestion.selectedOptionChar}
+                testView={test.view}
+                onSelectOption={(selectedOption: OptionChar) => {
+                    dispatch(
+                        storeTheoryActiveTestActions.selectOption(
+                            selectedOption,
+                        ),
                     );
-                })}
+                }}
+            />
+            <div>
                 {showProceedButton() &&
                     (!isLastQuestion ? (
                         <UIButton onClick={() => next()} text="Next" />
@@ -157,7 +130,7 @@ const FeatTest: FC<{ type: TestType }> = ({ type }) => {
             case TestType.QuickTest:
                 return uiQuickTestNumberOfQuestions;
             case TestType.MockTest:
-                return CONSTANTS.mockTestInfo.questionAmount;
+                return CONSTANTS.mockTestInfo.questionsLength;
         }
     }
 

@@ -1,5 +1,5 @@
 import { TestDataProvider } from '@drivingo/data-provider';
-import { ITopic, OptionChar, TestType } from '@drivingo/models';
+import { ITopic, OptionChar, TestType, TestView } from '@drivingo/models';
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import {
     getCurrentQuestion,
@@ -7,13 +7,10 @@ import {
     getPrevFlaggedQuestionIndex,
     getQuestions,
 } from './active-test-utils';
-import {
-    IStoreTheoryActiveTest,
-    StoreTheoryActiveTestView,
-} from './active-test.model';
+import { IStoreTheoryActiveTest } from './active-test.model';
 
 const initialState: IStoreTheoryActiveTest = {
-    viewType: StoreTheoryActiveTestView.notActive,
+    view: TestView.notActive,
     isPaused: false,
     indexLocator: 0,
     showFlaggedOnly: false,
@@ -38,7 +35,7 @@ export default createSlice({
                 state.includingTopics,
                 action.payload.numberOfQuestions,
             );
-            state.viewType = StoreTheoryActiveTestView.active;
+            state.view = TestView.active;
         },
         selectOption: (state, action: PayloadAction<OptionChar>) => {
             const item = getCurrentQuestion(state);
@@ -94,8 +91,11 @@ export default createSlice({
             state.indexLocator = 0;
         },
         finish(state) {
-            state.viewType = StoreTheoryActiveTestView.notActive;
+            state.view = TestView.notActive;
             state.questions.map((item) => (item.isFlagged = false));
+        },
+        updateView(state, action: PayloadAction<{ view: TestView }>) {
+            state.view = action.payload.view;
         },
         exit(_state) {
             return { ...initialState };
