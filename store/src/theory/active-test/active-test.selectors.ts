@@ -1,3 +1,4 @@
+import { TopicDataProvider } from '@drivingo/data-provider';
 import { CONSTANTS } from '@drivingo/global';
 import { createSelector } from '@reduxjs/toolkit';
 import { AppState } from '../../store';
@@ -13,6 +14,10 @@ const activeTest = (state: AppState) => state.theory.activeTest;
 
 const currentQuestion = createSelector(activeTest, (test) =>
     getCurrentQuestion(test),
+);
+
+const correctCount = createSelector(activeTest, (test) =>
+    getCorrectCount(test.questions),
 );
 
 const isLastQuestion = createSelector(activeTest, (test) => {
@@ -43,12 +48,6 @@ const isFirstQuestion = createSelector(activeTest, (test) => {
     return prevFlaggedQuestionIndex === -1;
 });
 
-const score = createSelector(activeTest, (test) => {
-    const correctCount = getCorrectCount(test.questions);
-    const incorrectCount = test.questions.length - correctCount;
-    return correctCount + '/' + incorrectCount;
-});
-
 const activeTestType = createSelector(activeTest, (test) => {
     return test.type;
 });
@@ -66,23 +65,51 @@ const passingRequiredCorrect = createSelector(activeTest, (test) => {
 
 const isTestResultSuccess = createSelector(
     activeTest,
+    correctCount,
     passingRequiredCorrect,
-    (test, passingRequiredCorrect) => {
-        const correctCount = getCorrectCount(test.questions);
+    (test, correctCount, passingRequiredCorrect) => {
         return correctCount >= passingRequiredCorrect;
     },
 );
 
-/* --- ??? -- */
+const topicResults = createSelector(activeTest, (test) => {
+    const topicMap: { [key: string]: { correct: number; total: number } } = {};
+
+    test.questions.forEach((question) => {
+        const { topicCode, selectedOptionChar, answer } = question;
+
+        if (!topicMap[topicCode]) {
+            topicMap[topicCode] = { correct: 0, total: 0 };
+        }
+
+        topicMap[topicCode].total += 1;
+        if (selectedOptionChar === answer) {
+            topicMap[topicCode].correct += 1;
+        }
+    });
+
+    return TopicDataProvider.getData().map((topic) => {
+        const { code: topicCode, name: topicName } = topic;
+        const correct = topicMap[topicCode]?.correct || 0;
+        const total = topicMap[topicCode]?.total || 0;
+        return {
+            topicCode,
+            topicName,
+            correct,
+            total,
+        };
+    });
+});
 
 export default {
     activeTest,
     currentQuestion,
+    correctCount,
     isLastQuestion,
     isFirstQuestion,
-    score,
     activeTestType,
     questionsLength,
     passingRequiredCorrect,
     isTestResultSuccess,
+    topicResults,
 };

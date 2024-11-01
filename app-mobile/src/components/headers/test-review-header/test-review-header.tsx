@@ -2,9 +2,9 @@ import { storeTheoryActiveTestActions } from '@drivingo/store';
 import { IonRouterLink } from '@ionic/react';
 import { FC } from 'react';
 import { useDispatch } from 'react-redux';
-import './testheader.scss';
+import './test-review-header.scss';
 
-const TestHeader: FC = () => {
+const TestReviewHeader: FC = () => {
     const dispatch = useDispatch();
 
     return (
@@ -41,4 +41,4 @@ const TestHeader: FC = () => {
     }
 };
 
-export default TestHeader;
+export default TestReviewHeader;

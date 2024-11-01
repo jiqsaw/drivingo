@@ -6,7 +6,7 @@ const questions: IQuestion[] = [
         topicCode: 'alertness',
         question: 'What should you do before making a U-turn?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -36,7 +36,7 @@ const questions: IQuestion[] = [
         topicCode: 'alertness',
         question: 'What should you do as you approach this bridge?',
         questionImg: 'AB2003n1.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -66,7 +66,7 @@ const questions: IQuestion[] = [
         topicCode: 'alertness',
         question: 'Where should you avoid overtaking?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -96,7 +96,7 @@ const questions: IQuestion[] = [
         topicCode: 'alertness',
         question: 'What does this curved arrow road marking mean?',
         questionImg: 'AB2007n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -127,7 +127,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if your mobile phone rings while you're driving or riding?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -157,7 +157,7 @@ const questions: IQuestion[] = [
         topicCode: 'alertness',
         question: 'Why are these yellow lines painted across the road?',
         questionImg: 'AB2009n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -188,7 +188,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do when you're approaching traffic lights that have been green for some time?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -219,7 +219,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do before slowing down or stopping your vehicle?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -250,7 +250,7 @@ const questions: IQuestion[] = [
         question:
             "You're following a large vehicle. Why should you stay a safe distance behind it?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -281,7 +281,7 @@ const questions: IQuestion[] = [
         question:
             'Why should you use your mirrors when you see a hazard ahead?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -312,7 +312,7 @@ const questions: IQuestion[] = [
         question:
             "You're waiting to turn right at the end of a road. What should you do if your view is obstructed by parked vehicles?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -343,7 +343,7 @@ const questions: IQuestion[] = [
         question:
             'There are objects hanging from your interior mirror. Why could this be a hazard?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -374,7 +374,7 @@ const questions: IQuestion[] = [
         question:
             "You're on a long motorway journey. What should you do if you start to feel sleepy?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -405,7 +405,7 @@ const questions: IQuestion[] = [
         question:
             'Why should you switch your headlights on when it first starts to get dark?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -435,7 +435,7 @@ const questions: IQuestion[] = [
         topicCode: 'alertness',
         question: 'What’s most likely to distract you while you’re driving?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -466,7 +466,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving your car. When may you use a hand-held mobile phone?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -497,7 +497,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on a wet road. What should you do if you have to stop your vehicle in an emergency?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -528,7 +528,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do when you move off from behind a parked car?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -559,7 +559,7 @@ const questions: IQuestion[] = [
         question:
             "You're travelling along this road. How should you pass the cyclist?",
         questionImg: 'BB1439n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -590,7 +590,7 @@ const questions: IQuestion[] = [
         question:
             'When do windscreen pillars cause a serious obstruction to your view?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -621,7 +621,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if you can't see clearly behind when you're reversing?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -651,7 +651,7 @@ const questions: IQuestion[] = [
         topicCode: 'alertness',
         question: 'What does the term ‘blind spot’ mean?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -682,7 +682,7 @@ const questions: IQuestion[] = [
         question:
             "What's likely to happen if you use a hands-free phone while you're driving?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -713,7 +713,7 @@ const questions: IQuestion[] = [
         question:
             "You're turning right onto a dual carriageway. What should you do before emerging?",
         questionImg: 'BB1632.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -744,7 +744,7 @@ const questions: IQuestion[] = [
         question:
             "You're waiting to emerge from a junction. The windscreen pillar is restricting your view. What should you be particularly aware of?",
         questionImg: 'BB1633.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -775,7 +775,7 @@ const questions: IQuestion[] = [
         question:
             "How can you make sure that a satellite navigation (satnav) system doesn't distract you when you're driving?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -806,7 +806,7 @@ const questions: IQuestion[] = [
         question:
             'What must you do when the amber light is flashing at a pelican crossing?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -837,7 +837,7 @@ const questions: IQuestion[] = [
         question:
             'Why should you never wave people across at pedestrian crossings?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -868,7 +868,7 @@ const questions: IQuestion[] = [
         question:
             'Why is it dangerous to drive too close to the vehicle ahead?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -898,7 +898,7 @@ const questions: IQuestion[] = [
         topicCode: 'attitude',
         question: 'What will happen if you follow this vehicle too closely?',
         questionImg: 'AB2023n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -929,7 +929,7 @@ const questions: IQuestion[] = [
         question:
             "What's the minimum time gap you should leave when following a vehicle on a wet road?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -960,7 +960,7 @@ const questions: IQuestion[] = [
         question:
             "You're being overtaken by a long, heavily laden lorry. What should you do if it's taking a long time for it to overtake?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -990,7 +990,7 @@ const questions: IQuestion[] = [
         topicCode: 'attitude',
         question: 'Which vehicle will use a blue flashing beacon?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -1021,7 +1021,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if you're being followed by an ambulance showing flashing blue lights?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -1052,7 +1052,7 @@ const questions: IQuestion[] = [
         question:
             'What type of emergency vehicle is fitted with a green flashing beacon?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -1082,7 +1082,7 @@ const questions: IQuestion[] = [
         topicCode: 'attitude',
         question: 'Who should obey diamond-shaped traffic signs?',
         questionImg: 'AB2036.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -1113,7 +1113,7 @@ const questions: IQuestion[] = [
         question:
             'On a road where trams operate, which vehicles will be most at risk from the tram rails?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -1143,7 +1143,7 @@ const questions: IQuestion[] = [
         topicCode: 'attitude',
         question: "When should you use your vehicle's horn?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -1174,7 +1174,7 @@ const questions: IQuestion[] = [
         question:
             "You're in a one-way street and want to turn right. Where should you position your vehicle when there are two lanes?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -1205,7 +1205,7 @@ const questions: IQuestion[] = [
         question:
             'You wish to turn right ahead. Why should you take up the correct position in good time?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -1236,7 +1236,7 @@ const questions: IQuestion[] = [
         question:
             'Which type of crossing allows cyclists to ride across while pedestrians are also crossing?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -1267,7 +1267,7 @@ const questions: IQuestion[] = [
         question:
             "You're travelling at the legal speed limit. What should you do if the vehicle behind approaches quickly, flashing its headlights?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -1297,7 +1297,7 @@ const questions: IQuestion[] = [
         topicCode: 'attitude',
         question: 'When should you flash your headlights at other road users?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -1328,7 +1328,7 @@ const questions: IQuestion[] = [
         question:
             "You're approaching an unmarked crossroads. How should you deal with the junction?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -1359,7 +1359,7 @@ const questions: IQuestion[] = [
         question:
             "The conditions are good and dry. When should you use the 'two-second rule'?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -1389,7 +1389,7 @@ const questions: IQuestion[] = [
         topicCode: 'attitude',
         question: 'Which colour follows the green signal at a puffin crossing?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -1420,7 +1420,7 @@ const questions: IQuestion[] = [
         question:
             "You're in a line of traffic. What action should you take if the driver behind is following very closely?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -1451,7 +1451,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on a clear night. Which lights should you use if the national speed limit applies and there's a steady stream of oncoming traffic?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -1482,7 +1482,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving behind a large goods vehicle. What should you do if it signals left but steers to the right?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -1513,7 +1513,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving along this road. What should you do if the red car cuts in close in front of you?",
         questionImg: 'BB1013n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -1544,7 +1544,7 @@ const questions: IQuestion[] = [
         question:
             "You're waiting in a traffic queue at night. How can you avoid dazzling drivers behind you?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -1575,7 +1575,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving in traffic at the speed limit for the road. What should you do if the driver behind is trying to overtake?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -1606,7 +1606,7 @@ const questions: IQuestion[] = [
         question:
             'What does it mean if the signs at a bus lane show no times of operation?',
         questionImg: 'BB1022n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -1637,7 +1637,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do when a person herding sheep asks you to stop?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -1668,7 +1668,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do when you're overtaking a horse and rider?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -1699,7 +1699,7 @@ const questions: IQuestion[] = [
         question:
             "You're approaching a zebra crossing. What should you do if pedestrians are waiting to cross?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -1730,7 +1730,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if a vehicle pulls out in front of you at a junction?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -1761,7 +1761,7 @@ const questions: IQuestion[] = [
         question:
             "You're approaching a red light at a puffin crossing. Pedestrians are on the crossing. When will the red light change?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -1792,7 +1792,7 @@ const questions: IQuestion[] = [
         question:
             'Which instrument-panel warning light would show that headlights are on main beam?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -1823,7 +1823,7 @@ const questions: IQuestion[] = [
         question:
             'When should you leave a two-second gap between your vehicle and the one in front?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -1854,7 +1854,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving at night on an unlit road. What should you do if you're following another vehicle?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -1885,7 +1885,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if you're driving a slow-moving vehicle on a narrow winding road?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -1916,7 +1916,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving a car that has a diesel engine. What can a loose filler cap on your fuel tank cause?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -1946,7 +1946,7 @@ const questions: IQuestion[] = [
         topicCode: 'attitude',
         question: 'What should you do to avoid fuel spillage?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -1976,7 +1976,7 @@ const questions: IQuestion[] = [
         topicCode: 'attitude',
         question: 'What style of driving causes increased risk to everyone?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -2006,7 +2006,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'How would under-inflated tyres affect your vehicle?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -2036,7 +2036,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: "When are you not allowed to sound your vehicle's horn?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -2067,7 +2067,7 @@ const questions: IQuestion[] = [
         question:
             "What makes the vehicle in the picture 'environmentally friendly'?",
         questionImg: 'AB2060.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -2097,7 +2097,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: "Why have 'red routes' been introduced in major cities?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -2127,7 +2127,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: "What's the purpose of road humps, chicanes and narrowings?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -2157,7 +2157,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: "What's the purpose of a catalytic converter?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -2187,7 +2187,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'When should tyre pressures be checked?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -2217,7 +2217,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'When will your vehicle use more fuel?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -2247,7 +2247,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'How should you dispose of a used vehicle battery?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -2277,7 +2277,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: "What's most likely to increase fuel consumption?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -2308,7 +2308,7 @@ const questions: IQuestion[] = [
         question:
             'The fluid level in your battery is low. What fluid should you use to top it up?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -2339,7 +2339,7 @@ const questions: IQuestion[] = [
         question:
             "You're parked on the road at night. When must you use parking lights?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -2370,7 +2370,7 @@ const questions: IQuestion[] = [
         question:
             'How can you reduce the environmental harm caused by your motor vehicle?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -2400,7 +2400,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'What can cause excessive or uneven tyre wear?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -2431,7 +2431,7 @@ const questions: IQuestion[] = [
         question:
             'You need to top up your battery with distilled water. What level should you fill it to?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -2461,7 +2461,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'How can you plan your route before starting a long journey?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -2492,7 +2492,7 @@ const questions: IQuestion[] = [
         question:
             'Why is it a good idea to plan your journey to avoid busy times?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -2523,7 +2523,7 @@ const questions: IQuestion[] = [
         question:
             'How will your journey be affected by travelling outside the busy times of day?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -2554,7 +2554,7 @@ const questions: IQuestion[] = [
         question:
             'You plan your route before starting a journey. Why should you also plan an alternative route?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -2585,7 +2585,7 @@ const questions: IQuestion[] = [
         question:
             'You have to arrive on time for an appointment. How should you plan for the journey?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -2616,7 +2616,7 @@ const questions: IQuestion[] = [
         question:
             'What can you expect if you drive using rapid acceleration and heavy braking?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -2647,7 +2647,7 @@ const questions: IQuestion[] = [
         question:
             'What could cause you to crash if the level is allowed to get too low?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -2678,7 +2678,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if your anti-lock brakes (ABS) warning light stays on?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -2709,7 +2709,7 @@ const questions: IQuestion[] = [
         question:
             "What does it mean if this light comes on while you're driving?",
         questionImg: 'BB1039.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -2740,7 +2740,7 @@ const questions: IQuestion[] = [
         question:
             "Why is it important to wear suitable shoes when you're driving?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -2771,7 +2771,7 @@ const questions: IQuestion[] = [
         question:
             "If you're involved in a collision, what will reduce the risk of neck injury?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -2802,7 +2802,7 @@ const questions: IQuestion[] = [
         question:
             'What does it mean if your vehicle keeps bouncing after you sharply press down and release on the bodywork over a wheel?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -2832,7 +2832,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'How will a roof rack affect your car?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -2862,7 +2862,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'What makes your tyres illegal?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -2892,7 +2892,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: "What's the legal minimum depth of tread for car tyres?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -2923,7 +2923,7 @@ const questions: IQuestion[] = [
         question:
             "You're carrying two 13-year-old children and their parents in your car. Who's responsible for seeing that the children wear seat belts?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -2953,7 +2953,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'How can drivers help the environment?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -2983,7 +2983,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'How can you avoid wasting fuel?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -3014,7 +3014,7 @@ const questions: IQuestion[] = [
         question:
             'What could you do to reduce the volume of traffic on the roads?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -3044,7 +3044,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: "What's most likely to waste fuel?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -3075,7 +3075,7 @@ const questions: IQuestion[] = [
         question:
             'What part of the car does the law require you to keep in good condition?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -3106,7 +3106,7 @@ const questions: IQuestion[] = [
         question:
             'How much more fuel will you use by driving at 70 mph, compared with driving at 50 mph?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -3137,7 +3137,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if your vehicle pulls to one side when you use the brakes?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -3167,7 +3167,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: "What will happen if your car's wheels are unbalanced?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -3198,7 +3198,7 @@ const questions: IQuestion[] = [
         question:
             "What can be damaged if you turn the steering wheel when the car isn't moving?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -3229,7 +3229,7 @@ const questions: IQuestion[] = [
         question:
             'What’s the safest thing to do if you have to leave valuables in your car?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -3259,7 +3259,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'What may help to deter a thief from stealing your car?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -3290,7 +3290,7 @@ const questions: IQuestion[] = [
         question:
             'What should you remove from your car before leaving it unattended?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -3321,7 +3321,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do when leaving your vehicle parked and unattended?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -3351,7 +3351,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'What will reduce fuel consumption?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -3382,7 +3382,7 @@ const questions: IQuestion[] = [
         question:
             'You service your own vehicle. How should you dispose of the old engine oil?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -3412,7 +3412,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'Why do MOT tests include an exhaust emission test?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -3443,7 +3443,7 @@ const questions: IQuestion[] = [
         question:
             'How can you reduce the damage your vehicle causes to the environment?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -3474,7 +3474,7 @@ const questions: IQuestion[] = [
         question:
             "How will you benefit from following the manufacturer's service schedule for your vehicle?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -3505,7 +3505,7 @@ const questions: IQuestion[] = [
         question:
             "How should you drive when you're driving along a road that has road humps?",
         questionImg: 'BB1558n2.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -3535,7 +3535,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'When should you check the engine oil level?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -3566,7 +3566,7 @@ const questions: IQuestion[] = [
         question:
             "You're having difficulty finding a parking space in a busy town. Can you park on the zigzag lines of a zebra crossing?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -3597,7 +3597,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do when you leave your car unattended for a few minutes?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -3627,7 +3627,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'Why should you try and park in a secure car park?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -3657,7 +3657,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'Where would parking your vehicle cause an obstruction?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -3688,7 +3688,7 @@ const questions: IQuestion[] = [
         question:
             "What's the most important reason for having a properly adjusted head restraint?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -3719,7 +3719,7 @@ const questions: IQuestion[] = [
         question:
             'What can you do to reduce environmental damage caused by your vehicle?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -3750,7 +3750,7 @@ const questions: IQuestion[] = [
         question:
             'What can people who live or work in towns and cities do to help reduce urban pollution levels?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -3781,7 +3781,7 @@ const questions: IQuestion[] = [
         question:
             'How can you reduce the chances of your car being broken into when leaving it unattended?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -3811,7 +3811,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'How can you help to prevent your car radio being stolen?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -3842,7 +3842,7 @@ const questions: IQuestion[] = [
         question:
             'How can you reduce the risk of your vehicle being broken into at night?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -3872,7 +3872,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'What will help you to keep your car secure?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -3902,7 +3902,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'On a vehicle, where would you find a catalytic converter?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -3932,7 +3932,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'What can you achieve if you drive smoothly?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -3962,7 +3962,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'Which driving technique can help you save fuel?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -3993,7 +3993,7 @@ const questions: IQuestion[] = [
         question:
             'How can driving in a fuel-efficient manner help protect the environment?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -4023,7 +4023,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'What does fuel-efficient driving achieve?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -4054,7 +4054,7 @@ const questions: IQuestion[] = [
         question:
             "What's the legal minimum tread depth for tyres on your trailer or caravan?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -4084,7 +4084,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_and_your_vehicle',
         question: 'When is fuel consumption at its highest?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -4115,7 +4115,7 @@ const questions: IQuestion[] = [
         question:
             'When may a passenger travel in a car without wearing a seat belt?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -4146,7 +4146,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving a friend's children home from school. They're both under 14 years old. Who's responsible for making sure they wear a seat belt or approved child restraint where required?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -4177,7 +4177,7 @@ const questions: IQuestion[] = [
         question:
             "What's likely to happen if you put too much oil in your engine?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -4208,7 +4208,7 @@ const questions: IQuestion[] = [
         question:
             "You have to make an unexpected journey. You're carrying a five-year-old child on the back seat of your car. They're under 1.35 metres (4 feet 5 inches) tall. How should you seat them if a correct child restraint isn't available?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -4239,7 +4239,7 @@ const questions: IQuestion[] = [
         question:
             "You're carrying an 11-year-old child on the front seat of your car. They're under 1.35 metres (4 feet 5 inches) tall. What seat belt security must be in place?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -4270,7 +4270,7 @@ const questions: IQuestion[] = [
         question:
             "You're stopped at the side of the road. What must you do if you'll be waiting there for some time?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -4301,7 +4301,7 @@ const questions: IQuestion[] = [
         question:
             'You want to put a rear-facing baby seat on the front passenger seat. What must you do if the passenger seat is protected by a frontal airbag?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -4332,7 +4332,7 @@ const questions: IQuestion[] = [
         question:
             "You're leaving your vehicle parked on a road and unattended. When may you leave the engine running?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -4363,7 +4363,7 @@ const questions: IQuestion[] = [
         question:
             'What does it mean if the Electronic Stability Control (ESC) indicator lamp lights up while you’re driving?',
         questionImg: 'BB4417.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -4393,7 +4393,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_margins',
         question: 'How much can stopping distances increase in icy conditions?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -4424,7 +4424,7 @@ const questions: IQuestion[] = [
         question:
             "What requires extra care when you're driving or riding in windy conditions?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -4455,7 +4455,7 @@ const questions: IQuestion[] = [
         question:
             'Why should you keep well to the left as you approach a right-hand bend?',
         questionImg: 'AB2624.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -4486,7 +4486,7 @@ const questions: IQuestion[] = [
         question:
             'You’ve just gone through flood water. What should you do to make sure your brakes are working properly?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -4517,7 +4517,7 @@ const questions: IQuestion[] = [
         question:
             'What will be affected if the road surface becomes soft in very hot weather?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -4548,7 +4548,7 @@ const questions: IQuestion[] = [
         question:
             'Where is your vehicle most likely to be affected by side winds?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -4579,7 +4579,7 @@ const questions: IQuestion[] = [
         question:
             "You're following a vehicle on a wet road. You stay a safe distance behind it. What should you do if a driver overtakes you and pulls into the gap you've left?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -4610,7 +4610,7 @@ const questions: IQuestion[] = [
         question:
             "You're travelling on the motorway. How can you lower the risk of a collision when the vehicle behind is following too closely?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -4641,7 +4641,7 @@ const questions: IQuestion[] = [
         question:
             "You're following other vehicles in fog. You have your headlights on dipped beam. What else can you do to reduce the chances of being in a collision?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -4671,7 +4671,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_margins',
         question: "What should you do when you're using a contraflow system?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -4702,7 +4702,7 @@ const questions: IQuestion[] = [
         question:
             "How can you avoid wheelspin when you're driving on an icy road?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -4732,7 +4732,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_margins',
         question: "What's the main cause of skidding?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -4763,7 +4763,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving in freezing conditions. What should you do as you approach a sharp bend?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -4794,7 +4794,7 @@ const questions: IQuestion[] = [
         question:
             "You're about to start a journey in freezing weather. What part of your vehicle should you clear of ice and snow?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -4824,7 +4824,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_margins',
         question: 'What will help you to move off on a snowy surface?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -4854,7 +4854,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_margins',
         question: "What should you do when you're driving in snowy conditions?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -4885,7 +4885,7 @@ const questions: IQuestion[] = [
         question:
             "What's the main benefit of driving a four-wheel-drive vehicle?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -4916,7 +4916,7 @@ const questions: IQuestion[] = [
         question:
             "You're about to go down a steep hill. What should you do to control the speed of your vehicle?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -4946,7 +4946,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_margins',
         question: 'What should you do when you park a car facing downhill?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -4977,7 +4977,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving in a built-up area that has traffic-calming measures. What should you do when you approach a road hump?",
         questionImg: 'BB1076n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -5008,7 +5008,7 @@ const questions: IQuestion[] = [
         question:
             'On what type of road surface may anti-lock brakes be ineffective?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -5039,7 +5039,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving a vehicle that has anti-lock brakes. How should you apply the footbrake when you need to stop in an emergency?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -5070,7 +5070,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving along a country road. You see this sign. What should you do after dealing safely with the hazard?",
         questionImg: 'BB1351.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -5100,7 +5100,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_margins',
         question: "What would suggest you're driving on an icy road?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -5131,7 +5131,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving along a wet road. How can you tell if your vehicle’s tyres are losing their grip on the surface?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -5162,7 +5162,7 @@ const questions: IQuestion[] = [
         question:
             'In which conditions will your overall stopping distance increase?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -5193,7 +5193,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on an open road in dry weather. What distance should you keep from the vehicle in front?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -5223,7 +5223,7 @@ const questions: IQuestion[] = [
         topicCode: 'safety_margins',
         question: "How can you use your vehicle's engine as a brake?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -5254,7 +5254,7 @@ const questions: IQuestion[] = [
         question:
             'How should you use anti-lock brakes when you need to stop in an emergency?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -5285,7 +5285,7 @@ const questions: IQuestion[] = [
         question:
             "What lights should you use when you're driving on a wet motorway and vehicles are throwing up surface spray?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -5316,7 +5316,7 @@ const questions: IQuestion[] = [
         question:
             'What can result when you travel for long distances in neutral (known as coasting)?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -5347,7 +5347,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do before starting a journey in foggy weather?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -5378,7 +5378,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do when you're overtaking a motorcyclist on a windy day?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -5408,7 +5408,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'Where would you expect to see these markers?',
         questionImg: 'AB2085.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -5438,7 +5438,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: "What's the main hazard shown in this picture?",
         questionImg: 'AB2087.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -5468,7 +5468,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'Which road user has caused a hazard?',
         questionImg: 'AB2088.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -5499,7 +5499,7 @@ const questions: IQuestion[] = [
         question:
             'What should the driver of the car approaching the crossing do?',
         questionImg: 'AB2089.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -5530,7 +5530,7 @@ const questions: IQuestion[] = [
         question:
             'What should the driver of the grey car be especially aware of?',
         questionImg: 'AB2091n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -5560,7 +5560,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'What should you expect if you see this sign ahead?',
         questionImg: 'AB2098.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -5590,7 +5590,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'What should you do as you approach this cyclist?',
         questionImg: 'AB2099n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -5621,7 +5621,7 @@ const questions: IQuestion[] = [
         question:
             'Why must you take great care when emerging from this junction?',
         questionImg: 'AB2100n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -5652,7 +5652,7 @@ const questions: IQuestion[] = [
         question:
             'Which type of vehicle should you be ready to give way to as you approach this bridge?',
         questionImg: 'AB2102n1.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -5683,7 +5683,7 @@ const questions: IQuestion[] = [
         question:
             'What type of vehicle could you expect to meet in the middle of the road?',
         questionImg: 'AB2103n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -5713,7 +5713,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'What must you do at this junction?',
         questionImg: 'AB2105n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -5744,7 +5744,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if a driver pulls out of a side road in front of you, causing you to brake hard?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -5774,7 +5774,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: "How would age affect an older person's driving ability?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -5805,7 +5805,7 @@ const questions: IQuestion[] = [
         question:
             'Do you need to plan rest stops when you’re planning a long journey?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -5836,7 +5836,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if the red lights start flashing as you approach a level crossing?',
         questionImg: 'AB2596n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -5867,7 +5867,7 @@ const questions: IQuestion[] = [
         question:
             "You're approaching a crossroads. What should you do if the traffic lights have failed?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -5897,7 +5897,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'What should the driver of the red car (arrowed) do?',
         questionImg: 'AB2657.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -5928,7 +5928,7 @@ const questions: IQuestion[] = [
         question:
             "You're following a slower-moving vehicle. What should you do if there's a junction just ahead on the right?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -5958,7 +5958,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'What should you do as you approach this overhead bridge?',
         questionImg: 'AB2659.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -5988,7 +5988,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'Why are vehicle mirrors often slightly curved (convex)?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -6019,7 +6019,7 @@ const questions: IQuestion[] = [
         question:
             "You're on a three-lane motorway. How should you overtake a slow-moving lorry in the middle lane if it's showing this sign?",
         questionImg: 'AB2701.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -6050,7 +6050,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if you think the driver of the vehicle in front has forgotten to cancel their right indicator?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -6081,7 +6081,7 @@ const questions: IQuestion[] = [
         question:
             "What's the main hazard the driver of the red car (arrowed) should be aware of?",
         questionImg: 'AB2717.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -6111,7 +6111,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'What type of vehicle displays this yellow sign?',
         questionImg: 'AB2718.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -6142,7 +6142,7 @@ const questions: IQuestion[] = [
         question:
             'What hazard should you be aware of when travelling along this street?',
         questionImg: 'AB2719n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -6173,7 +6173,7 @@ const questions: IQuestion[] = [
         question:
             "What's the main hazard you should be aware of when following this cyclist?",
         questionImg: 'AB2720n1.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -6204,7 +6204,7 @@ const questions: IQuestion[] = [
         question:
             'A driver’s behaviour has upset you. How can you get over this incident safely?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -6235,7 +6235,7 @@ const questions: IQuestion[] = [
         question:
             'How should you drive in areas with traffic-calming measures?',
         questionImg: 'AB2723n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -6265,7 +6265,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'Why should you slow down as you approach this hazard?',
         questionImg: 'AB2724.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -6295,7 +6295,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'Why are place names painted on the road surface?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -6326,7 +6326,7 @@ const questions: IQuestion[] = [
         question:
             'Some two-way roads are divided into three lanes. Why are they particularly dangerous?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -6357,7 +6357,7 @@ const questions: IQuestion[] = [
         question:
             'What type of vehicle uses an amber flashing beacon on a dual carriageway?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -6388,7 +6388,7 @@ const questions: IQuestion[] = [
         question:
             'What does this signal from a police officer mean to oncoming traffic?',
         questionImg: 'AB2847n1.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -6419,7 +6419,7 @@ const questions: IQuestion[] = [
         question:
             'Why should you be cautious when going past this bus waiting at a bus stop?',
         questionImg: 'AB2848n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -6449,7 +6449,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'Where would it be unsafe to overtake?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -6479,7 +6479,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'How can drinking alcohol affect your ability to drive?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -6510,7 +6510,7 @@ const questions: IQuestion[] = [
         question:
             'What does the solid white line at the side of the road indicate?',
         questionImg: 'BB1081n1.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -6541,7 +6541,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving towards this level crossing. What would be the first warning of an approaching train?",
         questionImg: 'BB1085n1.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -6572,7 +6572,7 @@ const questions: IQuestion[] = [
         question:
             "You're behind this cyclist. When the traffic lights change, what should you do?",
         questionImg: 'BB1087n1.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -6603,7 +6603,7 @@ const questions: IQuestion[] = [
         question:
             'You intend to turn left at the traffic lights. What should you do just before turning?',
         questionImg: 'BB1095n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -6633,7 +6633,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'Why should you reduce your speed here?',
         questionImg: 'BB1096n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -6663,7 +6663,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'What might you expect to happen in this situation?',
         questionImg: 'BB1099n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -6694,7 +6694,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on a road with several lanes. What do these signs above the lanes mean?",
         questionImg: 'BB1100.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -6725,7 +6725,7 @@ const questions: IQuestion[] = [
         question:
             "You're invited to a pub lunch. What should you do if you know that you'll have to drive in the evening?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -6756,7 +6756,7 @@ const questions: IQuestion[] = [
         question:
             "What will become more expensive after you've been convicted of driving while unfit through drink or drugs?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -6787,7 +6787,7 @@ const questions: IQuestion[] = [
         question:
             'What advice should you give to a driver who has had a few alcoholic drinks at a party?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -6818,7 +6818,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do about driving if you've been taking medicine that causes drowsiness?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -6849,7 +6849,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if a doctor prescribes drugs that are likely to affect your driving?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -6880,7 +6880,7 @@ const questions: IQuestion[] = [
         question:
             'What must you do if your ability to drive is impaired during a period of illness?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -6911,7 +6911,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if you begin to feel drowsy while you're driving?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -6942,7 +6942,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if you become tired while you're driving on a motorway?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -6973,7 +6973,7 @@ const questions: IQuestion[] = [
         question:
             "You're about to drive home. What should you do if you feel very tired and have a severe headache?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -7004,7 +7004,7 @@ const questions: IQuestion[] = [
         question:
             'What can you do to help prevent tiredness on a long journey?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -7035,7 +7035,7 @@ const questions: IQuestion[] = [
         question:
             'You take some cough medicine given to you by a friend. What should you do before driving your car?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -7066,7 +7066,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on a one-way street. What should you do if you realise you've taken the wrong route?",
         questionImg: 'BB1353.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -7096,7 +7096,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: "What will be a serious distraction while you're driving?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -7127,7 +7127,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if the vehicle starts reversing off the driveway?',
         questionImg: 'BB1397n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -7158,7 +7158,7 @@ const questions: IQuestion[] = [
         question:
             "You've been involved in an argument that's made you feel angry. What should you do before starting your journey?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -7189,7 +7189,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on this dual carriageway. Why may you need to slow down?",
         questionImg: 'BB1454n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -7220,7 +7220,7 @@ const questions: IQuestion[] = [
         question:
             "You've just been overtaken by this motorcyclist. What should you do if the rider cuts in sharply?",
         questionImg: 'BB1455.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -7251,7 +7251,7 @@ const questions: IQuestion[] = [
         question:
             "You're about to drive your car. What should you do if you can't find the glasses you need to wear?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -7281,7 +7281,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'How does drinking alcohol affect your driving behaviour?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -7312,7 +7312,7 @@ const questions: IQuestion[] = [
         question:
             'Why should you check the information leaflet before taking any medicine?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -7343,7 +7343,7 @@ const questions: IQuestion[] = [
         question:
             'You need glasses to read a vehicle number plate at the required distance. When must you wear them?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -7374,7 +7374,7 @@ const questions: IQuestion[] = [
         question:
             'Which type of glasses would make driving at night more difficult?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -7404,7 +7404,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'What can seriously reduce your ability to concentrate?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -7435,7 +7435,7 @@ const questions: IQuestion[] = [
         question:
             "What must you do if your eyesight has become very poor and you're no longer able to meet the driver's eyesight requirements?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -7465,7 +7465,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'When should you use hazard warning lights?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -7496,7 +7496,7 @@ const questions: IQuestion[] = [
         question:
             'You want to turn left at this junction. What should you do if your view of the main road is restricted?',
         questionImg: 'BB1576n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -7527,7 +7527,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving a car fitted with automatic transmission. When would you use ‘kick down’?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -7558,7 +7558,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if it's raining and you're following this lorry on a motorway?",
         questionImg: 'BB1664n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -7589,7 +7589,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving towards this left-hand bend. What danger should you be anticipating?",
         questionImg: 'BB1665n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -7620,7 +7620,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if the traffic in the left-hand lane is slowing?',
         questionImg: 'BB1666n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -7650,7 +7650,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'When may you use hazard warning lights?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -7681,7 +7681,7 @@ const questions: IQuestion[] = [
         question:
             "You're waiting to emerge at a junction. Your view is restricted by parked vehicles. What can help you to see traffic on the road you're joining?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -7711,7 +7711,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'What must you do if poor health affects your driving?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -7741,7 +7741,7 @@ const questions: IQuestion[] = [
         topicCode: 'hazard_awareness',
         question: 'Why should the junction on the left be kept clear?',
         questionImg: 'BB1748.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -7772,7 +7772,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if you start to feel drowsy while you're driving on a motorway?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -7803,7 +7803,7 @@ const questions: IQuestion[] = [
         question:
             'Which sign means that there may be people walking along the road?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -7834,7 +7834,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if you want to turn left at a junction where pedestrians have started to cross?',
         questionImg: 'AB2119.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -7865,7 +7865,7 @@ const questions: IQuestion[] = [
         question:
             "What hazard should you be especially aware of if you're turning left into a side road?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -7896,7 +7896,7 @@ const questions: IQuestion[] = [
         question:
             'Why should you check for motorcyclists just before turning right into a side road?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -7926,7 +7926,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: 'Why is a toucan crossing different from other crossings?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -7956,7 +7956,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: 'How will a school crossing patrol signal you to stop?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -7986,7 +7986,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: 'Where would you see this sign?',
         questionImg: 'AB2129.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -8016,7 +8016,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: 'What does this sign mean?',
         questionImg: 'AB2134.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -8047,7 +8047,7 @@ const questions: IQuestion[] = [
         question:
             'You see a pedestrian carrying a white stick that also has a red band. What does this mean?',
         questionImg: 'AB2136n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -8078,7 +8078,7 @@ const questions: IQuestion[] = [
         question:
             'What would you do if you see older people crossing the road ahead?',
         questionImg: 'AB2138.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -8109,7 +8109,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do when you see an older person about to cross the road ahead?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -8140,7 +8140,7 @@ const questions: IQuestion[] = [
         question:
             "You're approaching a roundabout. What should you do if a cyclist ahead is signalling to turn right?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -8171,7 +8171,7 @@ const questions: IQuestion[] = [
         question:
             'Which vehicle should you allow extra room as you overtake them?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -8202,7 +8202,7 @@ const questions: IQuestion[] = [
         question:
             'Why should you look carefully for motorcyclists and cyclists at junctions?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -8233,7 +8233,7 @@ const questions: IQuestion[] = [
         question:
             "You're waiting to come out of a side road. Why should you look carefully for motorcycles?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -8263,7 +8263,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: 'Why do motorcyclists use dipped headlights in daylight?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -8293,7 +8293,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: 'Why do motorcyclists wear bright clothing?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -8324,7 +8324,7 @@ const questions: IQuestion[] = [
         question:
             'Why do motorcyclists often look round over their right shoulder just before turning right?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -8354,7 +8354,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: 'Which is the most vulnerable road user?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -8385,7 +8385,7 @@ const questions: IQuestion[] = [
         question:
             "You're approaching a roundabout. What should you do if there are horses being ridden in front of you?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -8416,7 +8416,7 @@ const questions: IQuestion[] = [
         question:
             'As you approach a pelican crossing, the lights change to green. What should you do if older people are still crossing?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -8447,7 +8447,7 @@ const questions: IQuestion[] = [
         question:
             'What action should you take when you see flashing amber lights under a school warning sign?',
         questionImg: 'AB2516n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -8477,7 +8477,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: 'Why should these road markings be kept clear?',
         questionImg: 'AB2545.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -8507,7 +8507,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: 'Where would you see this sign?',
         questionImg: 'AB2559.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -8538,7 +8538,7 @@ const questions: IQuestion[] = [
         question:
             "You're following two cyclists as they approach a roundabout in the left-hand lane. Where would you expect the cyclists to go?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -8569,7 +8569,7 @@ const questions: IQuestion[] = [
         question:
             "You're travelling behind a moped. What should you do if you want to turn left a short distance ahead?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -8600,7 +8600,7 @@ const questions: IQuestion[] = [
         question:
             "You see a horse rider as you approach a roundabout. What should you do if they're signalling right but keeping well to the left?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -8630,7 +8630,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: 'How should you react to inexperienced drivers?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -8661,7 +8661,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do when you're following a learner driver who stalls at a junction?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -8692,7 +8692,7 @@ const questions: IQuestion[] = [
         question:
             "You're on a country road that has no pavement. What should you anticipate finding on your side of the road?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -8723,7 +8723,7 @@ const questions: IQuestion[] = [
         question:
             "You're following a cyclist. What should you do when you wish to turn left a short distance ahead?",
         questionImg: 'AB2601n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -8754,7 +8754,7 @@ const questions: IQuestion[] = [
         question:
             'A horse rider is in the left-hand lane approaching a roundabout. Where should you expect the rider to go?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -8785,7 +8785,7 @@ const questions: IQuestion[] = [
         question:
             "Powered vehicles used by disabled people are small and can be hard to see. What must they display if they're travelling on a dual carriageway?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -8816,7 +8816,7 @@ const questions: IQuestion[] = [
         question:
             'What does it mean when a moving vehicle is showing a flashing amber beacon?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -8846,7 +8846,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: 'What does this sign mean?',
         questionImg: 'AB2726.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -8877,7 +8877,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do when you see these horse riders in front?',
         questionImg: 'AB2727n1.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -8907,7 +8907,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: "What's the purpose of these road markings?",
         questionImg: 'AB2729.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -8938,7 +8938,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if the left-hand pavement is closed due to street repairs?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -8969,7 +8969,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do when you're following a motorcyclist along a road that has a poor surface?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -8999,7 +8999,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: 'What does this sign mean?',
         questionImg: 'AB2840.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -9030,7 +9030,7 @@ const questions: IQuestion[] = [
         question:
             "You're approaching this roundabout. What should you do when a cyclist is keeping to the left while signalling to turn right?",
         questionImg: 'AB2849n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -9060,7 +9060,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: "What should you do when you're approaching this crossing?",
         questionImg: 'AB2850.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -9091,7 +9091,7 @@ const questions: IQuestion[] = [
         question:
             'What does it mean if you see a pedestrian with a dog that has a yellow or burgundy coat?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -9121,7 +9121,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: 'Who may use toucan crossings?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -9152,7 +9152,7 @@ const questions: IQuestion[] = [
         question:
             "This junction, controlled by traffic lights, has a marked area between two stop lines. What's this for?",
         questionImg: 'AB2860n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -9183,7 +9183,7 @@ const questions: IQuestion[] = [
         question:
             "You're about to overtake a cyclist. Why should you leave them as much room as you would give to a car?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -9214,7 +9214,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do when you're passing loose sheep on the road?",
         questionImg: 'AB2908n.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -9245,7 +9245,7 @@ const questions: IQuestion[] = [
         question:
             'At night, what does it mean if you see a pedestrian wearing reflective clothing and carrying a bright red light?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -9276,7 +9276,7 @@ const questions: IQuestion[] = [
         question:
             'You’ve just passed your driving test. How can you reduce your risk of being involved in a collision?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -9307,7 +9307,7 @@ const questions: IQuestion[] = [
         question:
             "You want to reverse into a side road. What should you do if you aren't sure that the area behind your car is clear?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -9338,7 +9338,7 @@ const questions: IQuestion[] = [
         question:
             "You're about to reverse into a side road. What should you do if a pedestrian is waiting to cross behind your car?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -9369,7 +9369,7 @@ const questions: IQuestion[] = [
         question:
             "Which road users are most difficult to see when you're reversing your car?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -9400,7 +9400,7 @@ const questions: IQuestion[] = [
         question:
             'You want to turn right from a junction. What should you do if your view is restricted by parked vehicles?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -9431,7 +9431,7 @@ const questions: IQuestion[] = [
         question:
             "You're at the front of a queue of traffic waiting to turn right into a side road. Why is it important to check your right mirror just before turning?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -9462,7 +9462,7 @@ const questions: IQuestion[] = [
         question:
             "You've driven up to a pelican crossing. What must you do while the amber light is flashing?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -9493,7 +9493,7 @@ const questions: IQuestion[] = [
         question:
             "You've stopped at a pelican crossing. What should you do if a disabled person is crossing slowly in front of you and the lights change to green?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -9524,7 +9524,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving past a line of parked cars. What should you do if a ball bounces out into the road ahead?",
         questionImg: 'BB1142n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -9555,7 +9555,7 @@ const questions: IQuestion[] = [
         question:
             'You want to turn right from a main road into a side road. What should you do just before turning?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -9586,7 +9586,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving in a slow-moving queue of traffic. What should you do just before changing lane?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -9617,7 +9617,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving in town. Why should you be careful if there's a bus at a bus stop on the other side of the road?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -9647,7 +9647,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: 'How should you overtake horse riders?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -9678,7 +9678,7 @@ const questions: IQuestion[] = [
         question:
             'Why should you allow extra room while overtaking a motorcyclist on a windy day?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -9709,7 +9709,7 @@ const questions: IQuestion[] = [
         question:
             'Where should you take particular care to look for motorcyclists and cyclists?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -9740,7 +9740,7 @@ const questions: IQuestion[] = [
         question:
             'The road outside this school is marked with yellow zigzag lines. What do these lines mean?',
         questionImg: 'BB1577n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -9771,7 +9771,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving past parked cars. What should you do if you see a bicycle wheel sticking out between the cars?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -9802,7 +9802,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving at night. What should you do if you're dazzled by a vehicle behind you?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -9833,7 +9833,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving towards a zebra crossing. What should you do if a person in a wheelchair is waiting to cross?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -9864,7 +9864,7 @@ const questions: IQuestion[] = [
         question:
             "You're about to overtake a slow-moving motorcyclist. Which sign would make you take special care?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -9895,7 +9895,7 @@ const questions: IQuestion[] = [
         question:
             "You're waiting to turn right out of a minor road. It's clear to the left but a lorry is coming from the right. Why should you wait, even if you have enough time to turn?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -9926,7 +9926,7 @@ const questions: IQuestion[] = [
         question:
             "You're following a long vehicle as it approaches a crossroads. What should you do if it signals left but moves out to the right?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -9957,7 +9957,7 @@ const questions: IQuestion[] = [
         question:
             "You're following a long vehicle approaching a crossroads. What should you do if the driver signals right but moves close to the left-hand kerb?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -9988,7 +9988,7 @@ const questions: IQuestion[] = [
         question:
             'You’re approaching a mini-roundabout. What should you do if a long vehicle in front signals left but positions over to the right?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -10019,7 +10019,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on a single carriageway road. Why should you keep well back while you're following a large vehicle?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -10050,7 +10050,7 @@ const questions: IQuestion[] = [
         question:
             "You're travelling behind a bus. What should you do if it pulls up at a bus stop?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -10081,7 +10081,7 @@ const questions: IQuestion[] = [
         question:
             "You're following a lorry on a wet road. What should you do when spray makes it difficult to see the road ahead?",
         questionImg: 'AB2193n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -10112,7 +10112,7 @@ const questions: IQuestion[] = [
         question:
             "You're leaving a safe gap as you follow a large vehicle. What should you do if a car moves into this gap?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -10143,7 +10143,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do when you're approaching a bus that's signalling to move away from a bus stop?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -10174,7 +10174,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if you want to overtake a long, slow-moving vehicle on a busy road?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -10205,7 +10205,7 @@ const questions: IQuestion[] = [
         question:
             'Which vehicles are least likely to be affected by side wind?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -10235,7 +10235,7 @@ const questions: IQuestion[] = [
         topicCode: 'other_types_of_vehicle',
         question: 'What should you do as you approach this lorry?',
         questionImg: 'AB2737.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -10266,7 +10266,7 @@ const questions: IQuestion[] = [
         question:
             "You're following a large vehicle as it approaches a crossroads. What should you do if the driver signals to turn left?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -10297,7 +10297,7 @@ const questions: IQuestion[] = [
         question:
             'Why is it more difficult to overtake a large vehicle than a car?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -10328,7 +10328,7 @@ const questions: IQuestion[] = [
         question:
             "It's very windy. What should you do if you're behind a motorcyclist who's overtaking a high-sided vehicle?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -10359,7 +10359,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if there's a bus at a bus stop ahead of you?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -10389,7 +10389,7 @@ const questions: IQuestion[] = [
         topicCode: 'other_types_of_vehicle',
         question: 'What should you be prepared to do in this situation?',
         questionImg: 'BB1399.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -10420,7 +10420,7 @@ const questions: IQuestion[] = [
         question:
             'Why should drivers be more careful on roads where trams also operate?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -10451,7 +10451,7 @@ const questions: IQuestion[] = [
         question:
             "You're towing a caravan. Which is the safest type of rear-view mirror to use?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -10482,7 +10482,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving in heavy traffic on a wet road. Which lights should you use if there's a lot of surface spray?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -10513,7 +10513,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if you overtake a cyclist when it's very windy?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -10543,7 +10543,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: 'When may you overtake another vehicle on their left?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -10574,7 +10574,7 @@ const questions: IQuestion[] = [
         question:
             "You're travelling in very heavy rain. How is this likely to affect your overall stopping distance?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -10604,7 +10604,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: "What should you do when you're overtaking at night?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -10634,7 +10634,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: 'When may you wait in a box junction?',
         questionImg: 'AB2211.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -10664,7 +10664,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: 'Which plate may appear with this road sign?',
         questionImg: 'AB2212.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -10694,7 +10694,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: "What's the reason for traffic-calming measures?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -10725,7 +10725,7 @@ const questions: IQuestion[] = [
         question:
             'What colour are the reflective studs along the left-hand edge of the motorway?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -10755,7 +10755,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: "What's a rumble device designed to do?",
         questionImg: 'AB2572n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -10786,7 +10786,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if you have to make a journey in foggy conditions?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -10816,7 +10816,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: "What must you do when you're overtaking a car at night?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -10847,7 +10847,7 @@ const questions: IQuestion[] = [
         question:
             "You're travelling on a road that has road humps. What should you do when the driver in front is travelling more slowly than you?",
         questionImg: 'AB2640n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -10878,7 +10878,7 @@ const questions: IQuestion[] = [
         question:
             'What’s the purpose of the yellow lines painted across the road?',
         questionImg: 'AB2665n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -10909,7 +10909,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do when you meet an oncoming vehicle on a single-track road?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -10940,7 +10940,7 @@ const questions: IQuestion[] = [
         question:
             'The road is wet. Why would a motorcyclist steer around drain covers while they were cornering?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -10970,7 +10970,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: 'Why should you test your brakes after this hazard?',
         questionImg: 'AB2821.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -11001,7 +11001,7 @@ const questions: IQuestion[] = [
         question:
             "Why should you reduce your speed when you're driving or riding in fog?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -11032,7 +11032,7 @@ const questions: IQuestion[] = [
         question:
             'What will happen to your car when you drive up a steep hill?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -11063,7 +11063,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on the motorway in windy conditions. What should you do as you overtake a high-sided vehicle?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -11094,7 +11094,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving in fog. Why should you keep well back from the vehicle in front?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -11124,7 +11124,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: "What should you do if you park on the road when it's foggy?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -11155,7 +11155,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving at night. What should you do if you're dazzled by headlights coming towards you?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -11185,7 +11185,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: 'When may front fog lights be used?',
         questionImg: 'BB1325n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -11216,7 +11216,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving with your front fog lights switched on. What should you do if the fog has cleared?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -11247,7 +11247,7 @@ const questions: IQuestion[] = [
         question:
             'Why should you switch off your rear fog lights when the fog has cleared?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -11278,7 +11278,7 @@ const questions: IQuestion[] = [
         question:
             'What will happen if you use rear fog lights in good conditions?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -11308,7 +11308,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: 'Why would you fit chains to your wheels?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -11339,7 +11339,7 @@ const questions: IQuestion[] = [
         question:
             "How can you use your vehicle's engine to control your speed?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -11370,7 +11370,7 @@ const questions: IQuestion[] = [
         question:
             "Why could it be dangerous to keep the clutch down, or select neutral, for long periods of time while you're driving?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -11401,7 +11401,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on an icy road. What distance from the car in front should you drive?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -11432,7 +11432,7 @@ const questions: IQuestion[] = [
         question:
             "Which lights must you use if you're driving on a well-lit motorway at night?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -11463,7 +11463,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on a motorway at night. Which lights should you have on if there are other vehicles just ahead of you?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -11493,7 +11493,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: "What will affect your vehicle's stopping distance?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -11523,7 +11523,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: 'When will you feel the effects of engine braking?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -11554,7 +11554,7 @@ const questions: IQuestion[] = [
         question:
             'Which lights should you switch on when daytime visibility is poor but not seriously reduced?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -11584,7 +11584,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: 'Why are vehicles fitted with rear fog lights?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -11615,7 +11615,7 @@ const questions: IQuestion[] = [
         question:
             "There's been a heavy fall of snow. What should you consider before driving in these conditions?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -11646,7 +11646,7 @@ const questions: IQuestion[] = [
         question:
             'What should you check before you start a journey in foggy weather?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -11677,7 +11677,7 @@ const questions: IQuestion[] = [
         question:
             "You've been driving in fog. What must you do when the visibility improves?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -11708,7 +11708,7 @@ const questions: IQuestion[] = [
         question:
             'Why is it dangerous to leave rear fog lights switched on after the fog has cleared?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -11739,7 +11739,7 @@ const questions: IQuestion[] = [
         question:
             'What will happen if you hold the clutch pedal down or roll in neutral for too long?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -11770,7 +11770,7 @@ const questions: IQuestion[] = [
         question:
             "Why is it bad technique to coast when you're driving downhill?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -11800,7 +11800,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: 'What should you do when dealing with this hazard?',
         questionImg: 'BB1718.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -11831,7 +11831,7 @@ const questions: IQuestion[] = [
         question:
             'Why is travelling in neutral for long distances (known as coasting) bad driving technique?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -11861,7 +11861,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_handling',
         question: 'When must you use dipped headlights during the day?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -11892,7 +11892,7 @@ const questions: IQuestion[] = [
         question:
             "You're joining a motorway from a slip road. How should you deal with traffic already on the motorway?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -11923,7 +11923,7 @@ const questions: IQuestion[] = [
         question:
             "What's the national speed limit on motorways for cars and motorcycles?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -11954,7 +11954,7 @@ const questions: IQuestion[] = [
         question:
             'Which vehicles should use the left-hand lane on a three-lane motorway?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -11985,7 +11985,7 @@ const questions: IQuestion[] = [
         question:
             "Which vehicles aren't allowed to use the right-hand lane of a three-lane motorway?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -12016,7 +12016,7 @@ const questions: IQuestion[] = [
         question:
             'Your vehicle breaks down on a motorway and you need to call for help. Why might it be better to use an emergency roadside telephone rather than a mobile phone?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -12047,7 +12047,7 @@ const questions: IQuestion[] = [
         question:
             'Your vehicle broke down on the hard shoulder of a motorway, but has now been repaired. How should you rejoin the main carriageway?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -12078,7 +12078,7 @@ const questions: IQuestion[] = [
         question:
             "You're travelling along a motorway. Where would you find a crawler or climbing lane?",
         questionImg: 'AB2237.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -12108,7 +12108,7 @@ const questions: IQuestion[] = [
         topicCode: 'motorway_rules',
         question: 'What do these motorway signs mean?',
         questionImg: 'AB2241.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -12138,7 +12138,7 @@ const questions: IQuestion[] = [
         topicCode: 'motorway_rules',
         question: 'Where are amber reflective studs found on a motorway?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -12169,7 +12169,7 @@ const questions: IQuestion[] = [
         question:
             'What colour are the reflective studs between the lanes on a motorway?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -12200,7 +12200,7 @@ const questions: IQuestion[] = [
         question:
             'What colour are the reflective studs between a motorway and a slip road?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -12231,7 +12231,7 @@ const questions: IQuestion[] = [
         question:
             'Your vehicle has broken down on a motorway. In which direction should you walk to find the nearest emergency telephone?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -12262,7 +12262,7 @@ const questions: IQuestion[] = [
         question:
             'Why is it important to make full use of the slip road as you join a motorway?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -12293,7 +12293,7 @@ const questions: IQuestion[] = [
         question:
             'How should you position yourself when you use the emergency telephone on a motorway?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -12324,7 +12324,7 @@ const questions: IQuestion[] = [
         question:
             'What colour are the reflective studs between the hard shoulder and the left-hand lane of a motorway?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -12355,7 +12355,7 @@ const questions: IQuestion[] = [
         question:
             "On a three-lane motorway, which lane should you use if there's no traffic ahead?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -12386,7 +12386,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do when going through a contraflow system on a motorway?',
         questionImg: 'AB2611n1.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -12417,7 +12417,7 @@ const questions: IQuestion[] = [
         question:
             "You're on a three-lane motorway. Which lane are you in if there are red reflective studs on your left and white ones to your right?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -12448,7 +12448,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do when you're approaching roadworks on a motorway?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -12478,7 +12478,7 @@ const questions: IQuestion[] = [
         topicCode: 'motorway_rules',
         question: 'Which vehicles are prohibited from using the motorway?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -12509,7 +12509,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do while you're driving or riding along a motorway?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -12539,7 +12539,7 @@ const questions: IQuestion[] = [
         topicCode: 'motorway_rules',
         question: 'What should you do immediately after joining a motorway?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -12570,7 +12570,7 @@ const questions: IQuestion[] = [
         question:
             'When would you use the right-hand lane on a three-lane motorway?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -12601,7 +12601,7 @@ const questions: IQuestion[] = [
         question:
             "You're on a motorway that isn't subject to smart motorway regulations. When should you use the hard shoulder?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -12632,7 +12632,7 @@ const questions: IQuestion[] = [
         question:
             "You're in the right-hand lane of a three-lane motorway. What do these overhead signs mean?",
         questionImg: 'AB2748.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -12662,7 +12662,7 @@ const questions: IQuestion[] = [
         topicCode: 'motorway_rules',
         question: 'When are you allowed to stop on a motorway?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -12693,7 +12693,7 @@ const questions: IQuestion[] = [
         question:
             "You're travelling in the left-hand lane of a three-lane motorway. How should you react to traffic joining from a slip road?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -12723,7 +12723,7 @@ const questions: IQuestion[] = [
         topicCode: 'motorway_rules',
         question: 'How should you use the lanes on a motorway?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -12754,7 +12754,7 @@ const questions: IQuestion[] = [
         question:
             "You're travelling along a motorway. When are you allowed to overtake on the left?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -12785,7 +12785,7 @@ const questions: IQuestion[] = [
         question:
             'When would you use an emergency refuge area on a smart motorway?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -12816,7 +12816,7 @@ const questions: IQuestion[] = [
         question:
             'Traffic officers operate on motorways and some primary routes in England and Wales. What are they authorised to do?',
         questionImg: 'AB2788n.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -12847,7 +12847,7 @@ const questions: IQuestion[] = [
         question:
             "You're on a smart motorway. What does it mean when a red cross is displayed above the hard shoulder?",
         questionImg: 'AB2789.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -12878,7 +12878,7 @@ const questions: IQuestion[] = [
         question:
             "You're on a smart motorway. What does it mean when a mandatory speed limit is displayed above the hard shoulder?",
         questionImg: 'AB2790.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -12908,7 +12908,7 @@ const questions: IQuestion[] = [
         topicCode: 'motorway_rules',
         question: 'How do smart motorways prevent traffic bunching?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -12938,7 +12938,7 @@ const questions: IQuestion[] = [
         topicCode: 'motorway_rules',
         question: 'What helps to reduce traffic bunching on a motorway?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -12968,7 +12968,7 @@ const questions: IQuestion[] = [
         topicCode: 'motorway_rules',
         question: 'When may you stop on a motorway?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -12999,7 +12999,7 @@ const questions: IQuestion[] = [
         question:
             "What's the national speed limit for a car or motorcycle on a motorway?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -13061,7 +13061,7 @@ const questions: IQuestion[] = [
         question:
             "You're on a motorway. What must you do if there's a red cross showing above every lane?",
         questionImg: 'AB2852n.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -13092,7 +13092,7 @@ const questions: IQuestion[] = [
         question:
             "You're on a smart motorway. What does it mean if a red cross is showing above the hard shoulder and mandatory speed limits above all other lanes?",
         questionImg: 'AB2856.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -13122,7 +13122,7 @@ const questions: IQuestion[] = [
         topicCode: 'motorway_rules',
         question: 'On a smart motorway, what does this sign mean?',
         questionImg: 'AB2857.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -13153,7 +13153,7 @@ const questions: IQuestion[] = [
         question:
             "Where should you stop to rest if you feel tired while you're travelling along a motorway?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -13184,7 +13184,7 @@ const questions: IQuestion[] = [
         question:
             "What's the speed limit for a car towing a trailer on a motorway?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -13214,7 +13214,7 @@ const questions: IQuestion[] = [
         topicCode: 'motorway_rules',
         question: 'When should you use the left-hand lane of a motorway?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -13245,7 +13245,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on a motorway and have to slow down suddenly due to a hazard ahead. How can you warn drivers behind of the hazard?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -13276,7 +13276,7 @@ const questions: IQuestion[] = [
         question:
             "Your car gets a puncture while you're driving on the motorway. What should you do when you've stopped on the hard shoulder?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -13307,7 +13307,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if you're driving on a motorway and you miss the exit that you wanted to take?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -13338,7 +13338,7 @@ const questions: IQuestion[] = [
         question:
             "Your vehicle has broken down on a motorway. What should you do if you aren't able to get onto the hard shoulder?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -13369,7 +13369,7 @@ const questions: IQuestion[] = [
         question:
             'Why is it particularly important to check your vehicle before making a long motorway journey?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -13400,7 +13400,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on a motorway. What does it mean if the car in front shows its hazard warning lights for a short time?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -13431,7 +13431,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on the motorway. Which lane should you get into well before you reach your exit?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -13462,7 +13462,7 @@ const questions: IQuestion[] = [
         question:
             'What restrictions apply to people who have a provisional driving licence?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -13493,7 +13493,7 @@ const questions: IQuestion[] = [
         question:
             'Your vehicle breaks down on a motorway and you manage to stop on the hard shoulder. What should you do if you use your mobile phone to call for help?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -13524,7 +13524,7 @@ const questions: IQuestion[] = [
         question:
             "You're towing a trailer along a three-lane motorway. When may you use the right-hand lane?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -13555,7 +13555,7 @@ const questions: IQuestion[] = [
         question:
             'What would you expect to find at a contraflow system on a motorway?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -13585,7 +13585,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: "What's the meaning of this sign?",
         questionImg: 'AB2246.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -13616,7 +13616,7 @@ const questions: IQuestion[] = [
         question:
             "What's the national speed limit for cars and motorcycles on a dual carriageway?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -13647,7 +13647,7 @@ const questions: IQuestion[] = [
         question:
             'There are no speed-limit signs on the road. How is a 30 mph limit generally indicated?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -13678,7 +13678,7 @@ const questions: IQuestion[] = [
         question:
             'What will the speed limit usually be where you can see street lights but no speed-limit signs?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -13708,7 +13708,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'What does this sign mean?',
         questionImg: 'AB2254.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -13739,7 +13739,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if you want to overtake a tractor but aren't sure that it's safe?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -13770,7 +13770,7 @@ const questions: IQuestion[] = [
         question:
             'Which vehicle is most likely to take an unusual course at a roundabout?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -13800,7 +13800,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'When may you stop on a clearway?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -13830,7 +13830,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: "What's the meaning of this sign?",
         questionImg: 'AB2264.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -13861,7 +13861,7 @@ const questions: IQuestion[] = [
         question:
             "You're looking for somewhere to park at night. When may you park on the right-hand side of the road?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -13892,7 +13892,7 @@ const questions: IQuestion[] = [
         question:
             'When should you use the right-hand lane of a three-lane dual carriageway?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -13923,7 +13923,7 @@ const questions: IQuestion[] = [
         question:
             "You're approaching a busy junction. What should you do when, at the last moment, you realise you're in the wrong lane?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -13953,7 +13953,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'Where may you overtake on a one-way street?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -13984,7 +13984,7 @@ const questions: IQuestion[] = [
         question:
             "What signal should you give when you're going straight ahead at a roundabout?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -14015,7 +14015,7 @@ const questions: IQuestion[] = [
         question:
             'Which vehicle might have to take a different course from normal at a roundabout?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -14045,7 +14045,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'When may you enter a box junction?',
         questionImg: 'AB2281n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -14075,7 +14075,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'When may you stop and wait in a box junction?',
         questionImg: 'AB2282n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -14105,7 +14105,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'Who is authorised to signal you to stop?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -14136,7 +14136,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if you see a pedestrian waiting at a zebra crossing?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -14166,7 +14166,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'Which road users benefit from toucan crossings?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -14197,7 +14197,7 @@ const questions: IQuestion[] = [
         question:
             'You’re waiting at a pelican crossing. What does it mean when the red light changes to flashing amber?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -14228,7 +14228,7 @@ const questions: IQuestion[] = [
         question:
             'You see these double white lines along the centre of the road. When may you park on the left?',
         questionImg: 'AB2528n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -14259,7 +14259,7 @@ const questions: IQuestion[] = [
         question:
             "You're turning right at a crossroads. An oncoming driver is also turning right. What's the advantage of turning behind the oncoming vehicle?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -14290,7 +14290,7 @@ const questions: IQuestion[] = [
         question:
             "You're travelling along a residential street. There are parked vehicles on the left-hand side. Why should you keep your speed down?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -14321,7 +14321,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do when there's an obstruction on your side of the road?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -14352,7 +14352,7 @@ const questions: IQuestion[] = [
         question:
             'When would you use the right-hand lane of a two-lane dual carriageway?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -14382,7 +14382,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'Who has priority at an unmarked crossroads?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -14412,7 +14412,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: "What's the nearest you may park to a junction?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -14443,7 +14443,7 @@ const questions: IQuestion[] = [
         question:
             "You're looking for somewhere to safely park your vehicle. Where would you choose to park?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -14474,7 +14474,7 @@ const questions: IQuestion[] = [
         question:
             "You're waiting at a level crossing. What must you do if a train passes but the lights keep flashing?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -14504,7 +14504,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'What does this sign mean?',
         questionImg: 'AB2669n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -14535,7 +14535,7 @@ const questions: IQuestion[] = [
         question:
             'What must you do if you come across roadworks that have a temporary speed limit displayed?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -14566,7 +14566,7 @@ const questions: IQuestion[] = [
         question:
             "You're in a built-up area at night and the road is well lit. Why should you use dipped headlights?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -14597,7 +14597,7 @@ const questions: IQuestion[] = [
         question:
             "You're turning right onto a dual carriageway. What should you do if the central reservation is too narrow to contain your vehicle?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -14628,7 +14628,7 @@ const questions: IQuestion[] = [
         question:
             "What's the national speed limit on a single carriageway road for cars and motorcycles?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -14659,7 +14659,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do when you park at night on a road that has a 40 mph speed limit?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -14689,7 +14689,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'Where will you see these red and white markers?',
         questionImg: 'AB2826n1.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -14720,7 +14720,7 @@ const questions: IQuestion[] = [
         question:
             "You're travelling on a motorway in England. When must you stop your vehicle?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -14751,7 +14751,7 @@ const questions: IQuestion[] = [
         question:
             "How should you signal if you're going straight ahead at a roundabout?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -14781,7 +14781,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'When may you drive over a pavement?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -14812,7 +14812,7 @@ const questions: IQuestion[] = [
         question:
             "A single carriageway road has this sign. What's the maximum permitted speed for a car towing a trailer?",
         questionImg: 'BB1207.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -14843,7 +14843,7 @@ const questions: IQuestion[] = [
         question:
             "What's the speed limit for a car towing a caravan on a dual carriageway?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -14874,7 +14874,7 @@ const questions: IQuestion[] = [
         question:
             'You want to park and you see this sign. What should you do on the days and times shown?',
         questionImg: 'BB1213.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -14905,7 +14905,7 @@ const questions: IQuestion[] = [
         question:
             'A cycle lane, marked by a solid white line, is in operation. What does this mean for car drivers?',
         questionImg: 'BB1220n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -14936,7 +14936,7 @@ const questions: IQuestion[] = [
         question:
             "You're going to turn left from a main road into a minor road. What should you do as you approach the junction?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -14967,7 +14967,7 @@ const questions: IQuestion[] = [
         question:
             "You're waiting at a level crossing. What should you do if the red warning lights continue to flash after a train has passed by?",
         questionImg: 'BB1226.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -14998,7 +14998,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if the amber lights come on and a warning sounds while you're driving over a level crossing?",
         questionImg: 'BB1227.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -15029,7 +15029,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on a busy main road. What should you do if you find that you're driving in the wrong direction?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -15059,7 +15059,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'When may you drive without wearing your seat belt?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -15089,7 +15089,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'How far are you allowed to reverse?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -15120,7 +15120,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do when you're unsure whether it's safe to reverse your vehicle?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -15151,7 +15151,7 @@ const questions: IQuestion[] = [
         question:
             'Why could it be dangerous to reverse from a side road into a main road?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -15182,7 +15182,7 @@ const questions: IQuestion[] = [
         question:
             "You want to turn right at a box junction. What should you do if there's oncoming traffic?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -15213,7 +15213,7 @@ const questions: IQuestion[] = [
         question:
             "You're reversing into a side road. When would your vehicle be the greatest hazard to passing traffic?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -15243,7 +15243,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: "Where's the safest place to park your vehicle at night?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -15273,7 +15273,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'When may you stop on an urban clearway?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -15304,7 +15304,7 @@ const questions: IQuestion[] = [
         question:
             "You're looking for somewhere to park your vehicle. What should you do if the only free spaces are marked for disabled drivers?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -15335,7 +15335,7 @@ const questions: IQuestion[] = [
         question:
             "You're on a road that's only wide enough for one vehicle. What should you do if a car is coming towards you?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -15366,7 +15366,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving at night with your headlights on main beam. A vehicle is overtaking you. When should you dip your headlights?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -15396,7 +15396,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'When may you drive a car in this bus lane?',
         questionImg: 'BB1581.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -15427,7 +15427,7 @@ const questions: IQuestion[] = [
         question:
             'Other than direction indicators, how can you give signals to other road users?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -15458,7 +15458,7 @@ const questions: IQuestion[] = [
         question:
             "You're parked in a busy high street. What's the safest way to turn your vehicle around so you can drive in the opposite direction?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -15488,7 +15488,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'Where should you park your vehicle at night?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -15519,7 +15519,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving in the right-hand lane of a dual carriageway. What should you do if you see a sign showing that the right-hand lane is closed 800 yards ahead?",
         questionImg: 'BB1694n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -15550,7 +15550,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on a road that has a cycle lane. What does it mean if the lane is marked by a broken white line?",
         questionImg: 'BB1747n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -15581,7 +15581,7 @@ const questions: IQuestion[] = [
         question:
             'When are you allowed to park in a parking bay for disabled drivers?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -15611,7 +15611,7 @@ const questions: IQuestion[] = [
         topicCode: 'rules_of_the_road',
         question: 'When must you stop your vehicle?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -15641,7 +15641,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'How can you identify traffic signs that give orders?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -15671,7 +15671,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What shape are traffic signs giving orders?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -15701,7 +15701,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Which type of sign tells you what you must not do?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -15731,7 +15731,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2296.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -15761,7 +15761,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2299.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -15791,7 +15791,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2301.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -15821,7 +15821,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2302.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -15851,7 +15851,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2303.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -15881,7 +15881,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: "Which sign means 'no entry'?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -15911,7 +15911,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2305.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -15941,7 +15941,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Which type of vehicle does this sign apply to?',
         questionImg: 'AB2306.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -15971,7 +15971,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Which sign means no motor vehicles allowed?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -16001,7 +16001,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2308.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -16031,7 +16031,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2311.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -16061,7 +16061,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2313.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -16091,7 +16091,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: "Which sign means 'no stopping'?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -16121,7 +16121,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2316.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -16151,7 +16151,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2317.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -16181,7 +16181,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2318.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -16211,7 +16211,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this traffic sign mean?',
         questionImg: 'AB2319.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -16241,7 +16241,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: "What's the meaning of this traffic sign?",
         questionImg: 'AB2320.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -16271,7 +16271,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: "What shape is a 'stop' sign?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -16302,7 +16302,7 @@ const questions: IQuestion[] = [
         question:
             'In winter, road signs can become covered by snow. What does this sign mean?',
         questionImg: 'AB2325.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -16332,7 +16332,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2327.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -16362,7 +16362,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2331.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -16392,7 +16392,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2332.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -16423,7 +16423,7 @@ const questions: IQuestion[] = [
         question:
             'What messages are given by circular traffic signs that have a blue background?',
         questionImg: 'AB2333.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -16453,7 +16453,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Where would you see a contraflow bus lane?',
         questionImg: 'AB2335n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -16483,7 +16483,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2336.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -16513,7 +16513,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does a sign with a brown background show?',
         questionImg: 'AB2338.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -16543,7 +16543,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2339.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -16573,7 +16573,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: "What's the purpose of triangular shaped signs?",
         questionImg: 'AB2340.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -16603,7 +16603,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2341.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -16633,7 +16633,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2342.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -16663,7 +16663,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2343.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -16693,7 +16693,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2344.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -16723,7 +16723,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What information would be shown in a triangular road sign?',
         questionImg: 'AB2345.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -16753,7 +16753,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2346.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -16784,7 +16784,7 @@ const questions: IQuestion[] = [
         question:
             'Which sign means that pedestrians may be walking along the road?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -16814,7 +16814,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: "Which sign means there's a double bend ahead?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -16844,7 +16844,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2352.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -16874,7 +16874,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2353.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -16904,7 +16904,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Which sign means the end of a dual carriageway?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -16934,7 +16934,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2358.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -16964,7 +16964,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2360.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -16994,7 +16994,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this traffic sign mean?',
         questionImg: 'AB2361.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -17025,7 +17025,7 @@ const questions: IQuestion[] = [
         question:
             "You're about to overtake. What should you do when you see this sign?",
         questionImg: 'AB2362.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -17055,7 +17055,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2363.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -17085,7 +17085,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2364.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -17115,7 +17115,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2365.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -17145,7 +17145,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2367.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -17175,7 +17175,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2369.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -17205,7 +17205,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2370.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -17235,7 +17235,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Which is the sign for a ring road?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -17265,7 +17265,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2378.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -17295,7 +17295,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2379.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -17325,7 +17325,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2381.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -17355,7 +17355,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does a red traffic light mean?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -17386,7 +17386,7 @@ const questions: IQuestion[] = [
         question:
             'At traffic lights, what does it mean when the amber light shows on its own?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -17417,7 +17417,7 @@ const questions: IQuestion[] = [
         question:
             "You're at a junction controlled by traffic lights. When should you wait at a green light?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -17448,7 +17448,7 @@ const questions: IQuestion[] = [
         question:
             "You're in the left-hand lane at traffic lights, waiting to turn left. Which signal means you must wait?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -17478,7 +17478,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2390n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -17508,7 +17508,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Who has priority when traffic lights are out of order?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -17538,7 +17538,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Where would you find these flashing red light signals?',
         questionImg: 'AB2393n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -17568,7 +17568,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What do these zigzag white lines mean?',
         questionImg: 'AB2394n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -17599,7 +17599,7 @@ const questions: IQuestion[] = [
         question:
             'When may you cross a double solid white line in the middle of the road?',
         questionImg: 'AB2396n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -17629,7 +17629,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this road marking mean?',
         questionImg: 'AB2398n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -17659,7 +17659,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Where would you see this road marking?',
         questionImg: 'AB2400.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -17689,7 +17689,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Which diagram shows a hazard warning line?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -17720,7 +17720,7 @@ const questions: IQuestion[] = [
         question:
             "Why does this junction have a 'stop' sign and a stop line on the road?",
         questionImg: 'AB2402n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -17751,7 +17751,7 @@ const questions: IQuestion[] = [
         question:
             'What does this line across the road at the entrance to a roundabout mean?',
         questionImg: 'AB2403n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -17782,7 +17782,7 @@ const questions: IQuestion[] = [
         question:
             'How will a police officer in a patrol vehicle signal for you to stop?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -17813,7 +17813,7 @@ const questions: IQuestion[] = [
         question:
             "You're approaching a junction where the traffic lights aren't working. What should you do when a police officer gives this signal?",
         questionImg: 'AB2407n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -17843,7 +17843,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this arm signal mean?',
         questionImg: 'AB2408n1.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -17873,7 +17873,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this motorway sign mean?',
         questionImg: 'AB2418.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -17903,7 +17903,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this motorway sign mean?',
         questionImg: 'AB2419.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -17933,7 +17933,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2420.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -17963,7 +17963,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: "What does '25' mean on this motorway sign?",
         questionImg: 'AB2422.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -17994,7 +17994,7 @@ const questions: IQuestion[] = [
         question:
             'How should the right-hand lane of a three-lane motorway be used?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -18024,7 +18024,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Where can you find reflective amber studs on a motorway?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -18054,7 +18054,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Where would you find green reflective studs on a motorway?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -18085,7 +18085,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do when you see this sign as you travel along a motorway?',
         questionImg: 'AB2426.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -18115,7 +18115,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2428.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -18145,7 +18145,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Which sign means that the national speed limit applies?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -18176,7 +18176,7 @@ const questions: IQuestion[] = [
         question:
             "What's the national speed limit on a single carriageway road?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -18206,7 +18206,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2529.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -18236,7 +18236,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign indicate?',
         questionImg: 'AB2530.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -18266,7 +18266,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this traffic sign mean?',
         questionImg: 'AB2578n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -18296,7 +18296,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What should you do when you see this sign at a crossroads?',
         questionImg: 'AB2579n1.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -18326,7 +18326,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2591.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -18357,7 +18357,7 @@ const questions: IQuestion[] = [
         question:
             "You're on a motorway. A lorry has stopped in the right-hand lane. What should you do when you see this sign on the lorry?",
         questionImg: 'AB2592.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -18388,7 +18388,7 @@ const questions: IQuestion[] = [
         question:
             "You're on a motorway. What should you do if there's a red cross showing on the signs above your lane only?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -18418,7 +18418,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: "When may you sound your vehicle's horn?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -18448,7 +18448,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Your vehicle is stationary. When may you use its horn?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -18478,7 +18478,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2670.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -18508,7 +18508,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2671.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -18538,7 +18538,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Which sign means you have priority over oncoming vehicles?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -18569,7 +18569,7 @@ const questions: IQuestion[] = [
         question:
             'What do the long white lines along the centre of the road mean?',
         questionImg: 'AB2676n1.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -18600,7 +18600,7 @@ const questions: IQuestion[] = [
         question:
             "What's the reason for the hatched area along the centre of this road?",
         questionImg: 'AB2681n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -18631,7 +18631,7 @@ const questions: IQuestion[] = [
         question:
             "Other drivers may sometimes flash their headlights at you. What's the official meaning of this signal?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -18661,7 +18661,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this signal mean?',
         questionImg: 'AB2738.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -18691,7 +18691,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Where would you find these road markings?',
         questionImg: 'AB2756.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -18722,7 +18722,7 @@ const questions: IQuestion[] = [
         question:
             'A police car is following you. What should you do if the police officer flashes the headlights and points to the left?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -18753,7 +18753,7 @@ const questions: IQuestion[] = [
         question:
             'You see this amber traffic light ahead. Which light, or lights, will come on next?',
         questionImg: 'AB2758n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -18783,7 +18783,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does it mean if you see this signal on the motorway?',
         questionImg: 'AB2760.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -18813,7 +18813,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What must you do when you see this sign?',
         questionImg: 'AB2762.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -18843,7 +18843,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: "Which shape is used for a 'give way' sign?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -18873,7 +18873,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2764.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -18903,7 +18903,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2765.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -18933,7 +18933,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2766.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -18963,7 +18963,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2767.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -18994,7 +18994,7 @@ const questions: IQuestion[] = [
         question:
             "Which sign informs you that you're coming to a 'no through road'?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -19024,7 +19024,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2769.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -19055,7 +19055,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do when you're approaching traffic lights that have red and amber showing together?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -19086,7 +19086,7 @@ const questions: IQuestion[] = [
         question:
             "You've stopped at a railway level crossing. What should you do if the red lights continue to flash after a train has gone by?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -19117,7 +19117,7 @@ const questions: IQuestion[] = [
         question:
             "You're in a tunnel and you see this sign. What does it mean?",
         questionImg: 'AB2841.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -19147,7 +19147,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: "Which sign shows that you're entering a one-way system?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -19177,7 +19177,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2886.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -19207,7 +19207,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Which of these signs warns you of a zebra crossing?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -19237,7 +19237,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2889.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -19268,7 +19268,7 @@ const questions: IQuestion[] = [
         question:
             'Which sign means there will be two-way traffic crossing your route ahead?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -19299,7 +19299,7 @@ const questions: IQuestion[] = [
         question:
             "Which arm signal tells you that the car you're following is going to pull up?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -19329,7 +19329,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'Which sign means turn left ahead?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -19360,7 +19360,7 @@ const questions: IQuestion[] = [
         question:
             "What should you be aware of if you've just passed this sign?",
         questionImg: 'AB2899.gif',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -19391,7 +19391,7 @@ const questions: IQuestion[] = [
         question:
             "You're approaching traffic lights and the red light is showing. What signal will show next?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -19421,7 +19421,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this sign mean?',
         questionImg: 'AB2912.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -19452,7 +19452,7 @@ const questions: IQuestion[] = [
         question:
             'What does the white line along the side of the road indicate?',
         questionImg: 'BB1235n1.gif',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -19482,7 +19482,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'What does this white arrow on the road mean?',
         questionImg: 'BB1236n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -19512,7 +19512,7 @@ const questions: IQuestion[] = [
         topicCode: 'road_and_traffic_signs',
         question: 'How should you give an arm signal to turn left?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -19543,7 +19543,7 @@ const questions: IQuestion[] = [
         question:
             "You're waiting at a T-junction. What should you do if a vehicle is coming from the right, with its left indicator flashing?",
         questionImg: 'BB1239.gif',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -19574,7 +19574,7 @@ const questions: IQuestion[] = [
         question:
             "When may you use hazard warning lights while you're driving?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -19605,7 +19605,7 @@ const questions: IQuestion[] = [
         question:
             'Why should you make sure that your indicators are cancelled after turning at a junction?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -19636,7 +19636,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving in busy traffic. You want to pull up just after a junction on the left. When should you signal?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -19666,7 +19666,7 @@ const questions: IQuestion[] = [
         topicCode: 'essential_documents',
         question: 'For how long is an MOT certificate normally valid?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -19696,7 +19696,7 @@ const questions: IQuestion[] = [
         topicCode: 'essential_documents',
         question: "What's a cover note?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -19727,7 +19727,7 @@ const questions: IQuestion[] = [
         question:
             "You've just passed your first practical driving test. What will you have to do if you get six penalty points on your licence in the next two years?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -19758,7 +19758,7 @@ const questions: IQuestion[] = [
         question:
             'For how long is a Statutory Off-Road Notification (SORN) valid?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -19788,7 +19788,7 @@ const questions: IQuestion[] = [
         topicCode: 'essential_documents',
         question: "What's a Statutory Off-Road Notification (SORN)?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -19819,7 +19819,7 @@ const questions: IQuestion[] = [
         question:
             "What's the maximum fine for driving or riding without insurance?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -19850,7 +19850,7 @@ const questions: IQuestion[] = [
         question:
             "Who's legally responsible for ensuring that a vehicle registration certificate (V5C) is updated?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -19881,7 +19881,7 @@ const questions: IQuestion[] = [
         question:
             'Your insurer will issue you with an insurance certificate. When must you produce this document for inspection?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -19942,7 +19942,7 @@ const questions: IQuestion[] = [
         question:
             'What do you need before you can legally use a motor vehicle on the road?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -19973,7 +19973,7 @@ const questions: IQuestion[] = [
         question:
             'What must you have when you apply to renew your vehicle tax?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -20004,7 +20004,7 @@ const questions: IQuestion[] = [
         question:
             "A police officer asks to see your documents. You don't have them with you. How many days do you have to produce them at a police station?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -20035,7 +20035,7 @@ const questions: IQuestion[] = [
         question:
             'When should you update your vehicle registration certificate?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -20066,7 +20066,7 @@ const questions: IQuestion[] = [
         question:
             "What must you check before you drive someone else's vehicle?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -20097,7 +20097,7 @@ const questions: IQuestion[] = [
         question:
             'Your car needs to pass an MOT test. What may be invalidated if you drive the car without a current MOT certificate?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -20128,7 +20128,7 @@ const questions: IQuestion[] = [
         question:
             'What legal requirement must be met by a newly qualified driver?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -20158,7 +20158,7 @@ const questions: IQuestion[] = [
         topicCode: 'essential_documents',
         question: "What's covered by third-party insurance?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -20188,7 +20188,7 @@ const questions: IQuestion[] = [
         topicCode: 'essential_documents',
         question: "Who's responsible for paying the vehicle tax?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -20219,7 +20219,7 @@ const questions: IQuestion[] = [
         question:
             'What information is found on a vehicle registration document?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -20250,7 +20250,7 @@ const questions: IQuestion[] = [
         question:
             'When must you contact the Driver and Vehicle Licensing Agency (DVLA)?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -20281,7 +20281,7 @@ const questions: IQuestion[] = [
         question:
             'What circumstances require you to notify the Driver and Vehicle Licensing Agency (DVLA)?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -20311,7 +20311,7 @@ const questions: IQuestion[] = [
         topicCode: 'essential_documents',
         question: 'When could the cost of your insurance be reduced?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -20342,7 +20342,7 @@ const questions: IQuestion[] = [
         question:
             'In order to supervise a learner driver you need to have held a full driving licence for the same category of vehicle, for at least three years. What other requirement must you meet?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -20373,7 +20373,7 @@ const questions: IQuestion[] = [
         question:
             'Your car requires an MOT certificate. When is it legal to drive it without an MOT certificate?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -20403,7 +20403,7 @@ const questions: IQuestion[] = [
         topicCode: 'essential_documents',
         question: 'When will a new car need its first MOT test?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -20433,7 +20433,7 @@ const questions: IQuestion[] = [
         topicCode: 'essential_documents',
         question: 'What does third-party insurance cover?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -20464,7 +20464,7 @@ const questions: IQuestion[] = [
         question:
             "What's the legal minimum insurance cover you must have to drive on public roads?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -20495,7 +20495,7 @@ const questions: IQuestion[] = [
         question:
             'What does it mean if your insurance policy has an excess of £500?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -20525,7 +20525,7 @@ const questions: IQuestion[] = [
         topicCode: 'incidents-accidents_and_emergencies',
         question: 'When are you allowed to use hazard warning lights?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -20556,7 +20556,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if you have to stop while you're going through a congested tunnel?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -20587,7 +20587,7 @@ const questions: IQuestion[] = [
         question:
             'You arrive at the scene of a crash where someone is bleeding heavily from a wound in their arm. Nothing is embedded in the wound. What could you do to help?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -20618,7 +20618,7 @@ const questions: IQuestion[] = [
         question:
             "You're at an incident. What could you do to help an unconscious casualty?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -20649,7 +20649,7 @@ const questions: IQuestion[] = [
         question:
             "A casualty isn't breathing normally and needs CPR. At what rate should you press down and release on the centre of their chest?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -20680,7 +20680,7 @@ const questions: IQuestion[] = [
         question:
             'Following a collision, a person has been injured. What would be a warning sign for shock?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -20711,7 +20711,7 @@ const questions: IQuestion[] = [
         question:
             "An injured person has been placed in the recovery position. They're unconscious but breathing normally. What else should be done?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -20742,7 +20742,7 @@ const questions: IQuestion[] = [
         question:
             "An injured motorcyclist is lying unconscious in the road. The traffic has stopped and there's no further danger. What could you do to help?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -20773,7 +20773,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if you see a large box fall from a lorry onto the motorway?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -20804,7 +20804,7 @@ const questions: IQuestion[] = [
         question:
             "You're going through a long tunnel. What will warn you of congestion or an incident ahead?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -20835,7 +20835,7 @@ const questions: IQuestion[] = [
         question:
             "An adult casualty isn't breathing. To maintain circulation, CPR should be given. What's the correct depth to press down on their chest?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -20866,7 +20866,7 @@ const questions: IQuestion[] = [
         question:
             "You're the first person to arrive at an incident where people are badly injured. You’ve switched on your hazard warning lights and checked all engines are stopped. What else should you do?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -20897,7 +20897,7 @@ const questions: IQuestion[] = [
         question:
             'You arrive at the scene of a motorcycle crash. The rider is injured. When should their helmet be removed?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -20928,7 +20928,7 @@ const questions: IQuestion[] = [
         question:
             "You arrive at an incident. There's no danger from fire or further collisions and the emergency services have been called. What's your first priority when attending to an unconscious motorcyclist?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -20959,7 +20959,7 @@ const questions: IQuestion[] = [
         question:
             'At an incident, someone is unconscious and you want to help. What would be the first thing to check?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -20989,7 +20989,7 @@ const questions: IQuestion[] = [
         topicCode: 'incidents-accidents_and_emergencies',
         question: 'What could you do to help injured people at an incident?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -21020,7 +21020,7 @@ const questions: IQuestion[] = [
         question:
             "There's been a collision. How can you help a driver who's suffering from shock?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -21051,7 +21051,7 @@ const questions: IQuestion[] = [
         question:
             "You arrive at the scene of a motorcycle crash. No other vehicle is involved. The rider is unconscious and lying in the middle of the road. What's the first thing you should do at the scene?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -21082,7 +21082,7 @@ const questions: IQuestion[] = [
         question:
             "At an incident, how could you help a small child who isn't breathing?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -21113,7 +21113,7 @@ const questions: IQuestion[] = [
         question:
             "At an incident, a casualty isn't breathing. What should you do while helping them to start breathing again?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -21144,7 +21144,7 @@ const questions: IQuestion[] = [
         question:
             'At an incident, someone is suffering from severe burns. How could you help them?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -21175,7 +21175,7 @@ const questions: IQuestion[] = [
         question:
             "You arrive at an incident. A pedestrian is bleeding heavily from a leg wound. The leg isn't broken and there's nothing in the wound. How could you help?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -21206,7 +21206,7 @@ const questions: IQuestion[] = [
         question:
             'At an incident, a casualty is unconscious but breathing. When should you move them?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -21237,7 +21237,7 @@ const questions: IQuestion[] = [
         question:
             "At an incident, it's important to look after any casualties. What should you do with them when the area is safe?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -21267,7 +21267,7 @@ const questions: IQuestion[] = [
         topicCode: 'incidents-accidents_and_emergencies',
         question: 'Which sign shows that a tanker is carrying dangerous goods?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -21298,7 +21298,7 @@ const questions: IQuestion[] = [
         question:
             "Which document may the police ask you to produce after you've been involved in a collision?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -21329,7 +21329,7 @@ const questions: IQuestion[] = [
         question:
             'After a collision, someone is unconscious in their vehicle. When should you call the emergency services?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -21360,7 +21360,7 @@ const questions: IQuestion[] = [
         question:
             'A collision has just happened. An injured person is lying in a busy road. What’s the first thing you should do?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -21391,7 +21391,7 @@ const questions: IQuestion[] = [
         question:
             'At an incident, how could you help a casualty who has stopped breathing?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -21422,7 +21422,7 @@ const questions: IQuestion[] = [
         question:
             "You’re at the scene of an incident. How could you help someone who's suffering from shock?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -21453,7 +21453,7 @@ const questions: IQuestion[] = [
         question:
             "There's been a collision. A motorcyclist is lying injured and unconscious. Why should you only remove their helmet if it’s essential?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -21484,7 +21484,7 @@ const questions: IQuestion[] = [
         question:
             "You've broken down on a two-way road. You have a warning triangle. At least how far from your vehicle should you place the warning triangle?",
         questionImg: 'BB1252n1.gif',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -21515,7 +21515,7 @@ const questions: IQuestion[] = [
         question:
             "Your car breaks down on a level crossing. What's the first thing you should do?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -21545,7 +21545,7 @@ const questions: IQuestion[] = [
         topicCode: 'incidents-accidents_and_emergencies',
         question: 'What should you do if a tyre bursts while you’re driving?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -21576,7 +21576,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do if your vehicle has a puncture on a motorway?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -21607,7 +21607,7 @@ const questions: IQuestion[] = [
         question:
             "Your vehicle has stalled in the middle of a level crossing. What should you do if the warning bells start to ring while you're trying to restart the engine?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -21637,7 +21637,7 @@ const questions: IQuestion[] = [
         topicCode: 'incidents-accidents_and_emergencies',
         question: 'What should you do before driving into a tunnel?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -21668,7 +21668,7 @@ const questions: IQuestion[] = [
         question:
             "Which lights should you use when you're driving in a tunnel?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -21699,7 +21699,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do to reduce the risk of your vehicle catching fire?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -21730,7 +21730,7 @@ const questions: IQuestion[] = [
         question:
             "You're driving on the motorway. What should you do if luggage falls from your vehicle?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -21761,7 +21761,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if an instrument panel warning light comes on while you're driving?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -21791,7 +21791,7 @@ const questions: IQuestion[] = [
         topicCode: 'incidents-accidents_and_emergencies',
         question: 'What should you do if your vehicle breaks down in a tunnel?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -21822,7 +21822,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if your vehicle catches fire while you're driving through a tunnel?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -21853,7 +21853,7 @@ const questions: IQuestion[] = [
         question:
             'What should you do first if your vehicle has broken down on an automatic railway level crossing?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -21884,7 +21884,7 @@ const questions: IQuestion[] = [
         question:
             "What's the first thing you must do if you have a collision while you're driving your car?",
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -21915,7 +21915,7 @@ const questions: IQuestion[] = [
         question:
             'What information should you share if you’re involved in a collision that causes damage to another vehicle?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -21946,7 +21946,7 @@ const questions: IQuestion[] = [
         question:
             "You lose control of your car and damage a garden wall. What must you do if the property owner isn't available?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -21977,7 +21977,7 @@ const questions: IQuestion[] = [
         question:
             "What restrictions apply if you're towing a trailer on a three-lane motorway?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -22008,7 +22008,7 @@ const questions: IQuestion[] = [
         question:
             "What should you do if you're towing a trailer and it starts to swing from side to side?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -22039,7 +22039,7 @@ const questions: IQuestion[] = [
         question:
             "When would you increase the pressure in your tyres so that it's above the normal value?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -22070,7 +22070,7 @@ const questions: IQuestion[] = [
         question:
             "How will a heavy load on your roof rack affect your vehicle's handling?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -22101,7 +22101,7 @@ const questions: IQuestion[] = [
         question:
             'What would be affected if you carry a very heavy load on your vehicle?',
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -22132,7 +22132,7 @@ const questions: IQuestion[] = [
         question:
             "Who's responsible for making sure that a vehicle isn't overloaded?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -22163,7 +22163,7 @@ const questions: IQuestion[] = [
         question:
             "You're planning to tow a caravan. What will help the handling of the combination?",
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -22194,7 +22194,7 @@ const questions: IQuestion[] = [
         question:
             "Are passengers allowed to ride in a caravan that's being towed?",
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -22225,7 +22225,7 @@ const questions: IQuestion[] = [
         question:
             'What safety device must be fitted to a trailer braking system?',
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -22256,7 +22256,7 @@ const questions: IQuestion[] = [
         question:
             'You wish to tow a trailer. Where would you find the maximum noseweight for your vehicle’s tow hitch?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -22286,7 +22286,7 @@ const questions: IQuestion[] = [
         topicCode: 'vehicle_loading',
         question: 'How should a load be carried on your roof rack?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -22317,7 +22317,7 @@ const questions: IQuestion[] = [
         question:
             "You're carrying a child under three years old in your car. Which restraint is suitable for a child of this age?",
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -22347,7 +22347,7 @@ const questions: IQuestion[] = [
         topicCode: 'videos',
         question: 'When are you allowed to wait on the yellow grid markings?',
         questionVideo: 'box_junction',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 text: 'When you are going straight on',
@@ -22373,7 +22373,7 @@ const questions: IQuestion[] = [
         topicCode: 'videos',
         question: 'Why did the lorry driver start turning so late?',
         questionVideo: 'box_junction',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 text: 'Because the lorry needs the room to turn',
@@ -22399,7 +22399,7 @@ const questions: IQuestion[] = [
         topicCode: 'videos',
         question: 'When may you wait in the area marked with a cycle?',
         questionVideo: 'box_junction',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 text: "When you've checked your mirrors for cyclists",
@@ -22426,7 +22426,7 @@ const questions: IQuestion[] = [
         question:
             'What hazard do you need to look out for as you drive under the bridge?',
         questionVideo: 'rural_railway_crossing',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -22452,7 +22452,7 @@ const questions: IQuestion[] = [
         topicCode: 'videos',
         question: "What's the speed limit on this road?",
         questionVideo: 'rural_railway_crossing',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -22479,7 +22479,7 @@ const questions: IQuestion[] = [
         question:
             'What does the single yellow line along the side of the road mean?',
         questionVideo: 'rural_railway_crossing',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -22506,7 +22506,7 @@ const questions: IQuestion[] = [
         question:
             "What's the speed limit for the car towing the caravan on this road?",
         questionVideo: 'caravan',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 text: '60 mph',
@@ -22533,7 +22533,7 @@ const questions: IQuestion[] = [
         question:
             'The caravan starts to swing from side to side. What should the driver do to bring it back under control?',
         questionVideo: 'caravan',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -22559,7 +22559,7 @@ const questions: IQuestion[] = [
         topicCode: 'videos',
         question: 'Why is the caravan unstable and swinging from side to side?',
         questionVideo: 'caravan',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 text: 'Because the other cars are passing too close to it',
@@ -22585,7 +22585,7 @@ const questions: IQuestion[] = [
         topicCode: 'videos',
         question: "Why is there a warning 'Reduce speed now'?",
         questionVideo: 'hadley_road',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 text: 'Traffic is merging from the left',
@@ -22611,7 +22611,7 @@ const questions: IQuestion[] = [
         topicCode: 'videos',
         question: 'Why has the line in the centre of the road changed?',
         questionVideo: 'hadley_road',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -22638,7 +22638,7 @@ const questions: IQuestion[] = [
         question:
             'The driver towing the caravan wants to turn right onto the dual carriageway. What should they do?',
         questionVideo: 'hadley_road',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 text: "Move partly into the central reservation and wait until it's safe to turn",
@@ -22664,7 +22664,7 @@ const questions: IQuestion[] = [
         topicCode: 'videos',
         question: 'What do the lines along the centre of the road mean?',
         questionVideo: 'hill_farm',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 text: 'No stopping',
@@ -22690,7 +22690,7 @@ const questions: IQuestion[] = [
         topicCode: 'videos',
         question: 'You want to overtake the tractor. What should you do?',
         questionVideo: 'hill_farm',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 text: 'Speed up and overtake before you get to the bend',
@@ -22716,7 +22716,7 @@ const questions: IQuestion[] = [
         topicCode: 'videos',
         question: 'Why has the tractor got flashing amber lights?',
         questionVideo: 'hill_farm',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -22743,7 +22743,7 @@ const questions: IQuestion[] = [
         question:
             'Why should you take care driving past the man with the cane?',
         questionVideo: 'zebra_crossing',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 text: "He's deaf",
@@ -22769,7 +22769,7 @@ const questions: IQuestion[] = [
         topicCode: 'videos',
         question: 'How should you approach the zebra crossing?',
         questionVideo: 'zebra_crossing',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 text: 'Be ready to slow down or stop to allow pedestrians to cross',
@@ -22796,7 +22796,7 @@ const questions: IQuestion[] = [
         question:
             "You've stopped at the zebra crossing. When may you move off?",
         questionVideo: 'zebra_crossing',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 text: 'When the pedestrians have cleared your side of the road',
@@ -22823,7 +22823,7 @@ const questions: IQuestion[] = [
         question:
             "As you approach the roundabout, there's a sign showing a single white bar on a green background. What does this sign tell you?",
         questionVideo: 'multi_lane',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 text: 'There are chevrons on the roundabout',
@@ -22850,7 +22850,7 @@ const questions: IQuestion[] = [
         question:
             'As you approach the roundabout, you want to change lanes. What routine should you follow?',
         questionVideo: 'multi_lane',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 text: 'Mirrors, signal, manoeuvre',
@@ -22877,7 +22877,7 @@ const questions: IQuestion[] = [
         question:
             'You want to travel on the A61. Which lane should you use at the roundabout?',
         questionVideo: 'multi_lane',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 text: 'Only the left lane',
@@ -22903,7 +22903,7 @@ const questions: IQuestion[] = [
         topicCode: 'videos',
         question: 'Why has the bus driver positioned the bus on the left?',
         questionVideo: 'roundabout_bus',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -22930,7 +22930,7 @@ const questions: IQuestion[] = [
         question:
             'Why does the cyclist take the longer route around the roundabout?',
         questionVideo: 'roundabout_bus',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -22956,7 +22956,7 @@ const questions: IQuestion[] = [
         topicCode: 'videos',
         question: 'What do the yellow lines along the edge of the road mean?',
         questionVideo: 'roundabout_bus',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -22982,7 +22982,7 @@ const questions: IQuestion[] = [
         topicCode: 'videos',
         question: 'Why is it dangerous to overtake near a junction?',
         questionVideo: 'motorcycles_overtaking',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 text: 'The road surface will be slippery',
@@ -23009,7 +23009,7 @@ const questions: IQuestion[] = [
         question:
             'What is the speed limit on this road for the car towing the caravan?',
         questionVideo: 'motorcycles_overtaking',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -23036,7 +23036,7 @@ const questions: IQuestion[] = [
         question:
             'What do the white diagonal stripe markings in the middle of the road mean?',
         questionVideo: 'motorcycles_overtaking',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -23062,7 +23062,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: `You're turning right from a main road into a side road. There's no oncoming traffic. What should you do if pedestrians are standing on the pavement waiting to cross the side road?`,
         questionImg: '',
-        answer: 'C',
+        answer: 'c',
         options: [
             {
                 char: 'a',
@@ -23093,7 +23093,7 @@ const questions: IQuestion[] = [
         question:
             'You are travelling on a narrow section of road. What should you do if a horse rider ahead is riding in the centre of the lane?',
         questionImg: '',
-        answer: 'B',
+        answer: 'b',
         options: [
             {
                 char: 'a',
@@ -23123,7 +23123,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: `You are about to overtake a cyclist on a road that has a 30 mph speed limit. How much room should you leave them as you overtake?`,
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -23153,7 +23153,7 @@ const questions: IQuestion[] = [
         topicCode: 'vulnerable_road_users',
         question: `You are turning left from a main road into a side road. What should you do if there’s a pedestrian on the pavement waiting to cross the side road?`,
         questionImg: '',
-        answer: 'D',
+        answer: 'd',
         options: [
             {
                 char: 'a',
@@ -23184,7 +23184,7 @@ const questions: IQuestion[] = [
         question:
             'You have stopped in an emergency refuge area. What must you do before you rejoin the carriageway?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',
@@ -23215,7 +23215,7 @@ const questions: IQuestion[] = [
         question:
             'How should you rejoin the motorway after a breakdown on the hard shoulder?',
         questionImg: '',
-        answer: 'A',
+        answer: 'a',
         options: [
             {
                 char: 'a',

@@ -17,6 +17,9 @@ const FeatTestReview: FC = () => {
     const [selectedQuestionIndex, setSelectedQuestionIndex] = useState<
         number | undefined
     >();
+    const topicResults = useSelector(
+        storeTheoryActiveTestSelectors.topicResults,
+    );
 
     useEffect(() => {
         if (!hasRunOnce.current) {
@@ -45,7 +48,8 @@ const FeatTestReview: FC = () => {
                         return (
                             <div>
                                 {i + 1} -
-                                {item.answer === item.selectedOptionChar
+                                {item.answer.toLowerCase() ===
+                                item.selectedOptionChar?.toLowerCase()
                                     ? 'Check'
                                     : 'Fail'}{' '}
                                 {item.question}
@@ -76,7 +80,15 @@ const FeatTestReview: FC = () => {
                     )}
                 </div>
             )}
-            {selectedTab === 1 && <p>Topics</p>}
+            {selectedTab === 1 && (
+                <div>
+                    {topicResults.map((item) => (
+                        <div>
+                            {item.topicName}: {item.correct}/{item.total}
+                        </div>
+                    ))}
+                </div>
+            )}
         </aside>
     );
 };

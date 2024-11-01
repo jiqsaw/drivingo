@@ -9,7 +9,9 @@ const FeatTestResult: FC = () => {
     const questionsLength = useSelector(
         storeTheoryActiveTestSelectors.questionsLength,
     );
-    const score = useSelector(storeTheoryActiveTestSelectors.score);
+    const correctCount = useSelector(
+        storeTheoryActiveTestSelectors.correctCount,
+    );
     const passingRequiredCorrect = useSelector(
         storeTheoryActiveTestSelectors.passingRequiredCorrect,
     );
@@ -20,7 +22,7 @@ const FeatTestResult: FC = () => {
     return (
         <aside className="test-result">
             Test Result <br />
-            {score} <br />
+            {correctCount} / {questionsLength} <br />
             {isTestResultSuccess ? 'Success' : 'Fail'} <br />
             passing mark is:
             {passingRequiredCorrect}

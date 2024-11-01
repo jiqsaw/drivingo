@@ -73,7 +73,7 @@ export const DATA_TOPICS: ITopic[] = [
     },
     {
         code: 'videos',
-        name: 'Video Questions',
+        name: 'Video questions',
         count: 27,
     },
 ];
