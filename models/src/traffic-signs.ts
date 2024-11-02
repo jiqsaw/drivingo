@@ -1,5 +1,10 @@
 export interface ITrafficSign {
-  src: string;
-  srcPrefix?: string;
-  desc: string;
+    title: string;
+    description: string;
+    items: ITrafficSignItem[];
+}
+
+export interface ITrafficSignItem {
+    imgPath: string;
+    desc: string;
 }

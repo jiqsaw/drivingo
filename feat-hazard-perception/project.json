@@ -1,0 +1,9 @@
+{
+    "name": "feat-hazard-perception",
+    "$schema": "../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "feat-hazard-perception/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project feat-hazard-perception --web",
+    "targets": {}
+}

@@ -1,0 +1,3 @@
+@function color-modifier($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}

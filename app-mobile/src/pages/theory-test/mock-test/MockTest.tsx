@@ -1,24 +1,27 @@
-import { DATA_TOPICS } from '@drivingo/data';
-import { UIButton, UILink } from '@drivingo/ui/components';
-import { UIHeader } from '@drivingo/ui/compound';
-import {
-  IonContent,
-  IonHeader,
-  IonPage,
-  IonRouterLink,
-  IonTitle,
-  IonToolbar,
-} from '@ionic/react';
+import { TestType } from '@drivingo/models';
+import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
+import { Subheader } from '../../../components/headers/subheader/subheader';
 
 const MockTest: React.FC = () => {
-  return (
-    <IonPage>
-      <UIHeader title='Mock Test' />
-      <IonContent fullscreen className='ion-padding'>
-        Mock Test
-      </IonContent>
-    </IonPage>
-  );
+    return (
+        <IonPage>
+            <IonContent fullscreen>
+                <aside className="container">
+                    <Subheader />
+                    <h1>Mock Test</h1>
+                    <br />
+                    <br />
+                    {/* Bu button sadece en az bir topic secili oldugunda gorunur olacak */}
+                    <IonRouterLink
+                        routerDirection="forward"
+                        routerLink={`/theory-test/test/${TestType.MockTest}`}
+                    >
+                        Start
+                    </IonRouterLink>
+                </aside>
+            </IonContent>
+        </IonPage>
+    );
 };
 
 export default MockTest;

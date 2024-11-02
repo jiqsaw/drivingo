@@ -11,26 +11,55 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/app-mobile",
+        "outputPath": "app-mobile/build",
         "index": "app-mobile/src/index.html",
         "baseHref": "/",
         "main": "app-mobile/src/main.tsx",
         "tsConfig": "app-mobile/tsconfig.app.json",
         "assets": [
-          "app-mobile/src/assets",
-          "./app-mobile/src/manifest.json",
           {
-            "glob": "**/*.svg",
-            "input": "node_modules/ionicons/dist/ionicons/svg",
-            "output": "./svg"
-          }
-        ],
-        "styles": [
-          "app-mobile/src/styles.css",
+            "input": "app-mobile/src/assets",
+            "glob": "**/*",
+            "output": "/assets"
+          },
           {
-            "input": "./app-mobile/src/theme/variables.css"
-          }
+            "input": "ui/src/assets",
+            "glob": "**/*",
+            "output": "/assets"
+          },
+          {
+            "input": "data/src/traffic-signs/images",
+            "glob": "**/*",
+            "output": "data-images/traffic-signs"
+          },
+          {
+            "input": "data/src/highway-code/images",
+            "glob": "**/*",
+            "output": "data-images/highway-code"
+          },
+          {
+            "input": "data/src/test/images",
+            "glob": "**/*",
+            "output": "data-images/test"
+          },
+          {
+            "input": "data/src/test/videos",
+            "glob": "**/*",
+            "output": "data-videos/test"
+          },
+          {
+            "input": "data/src/hazard-perception/thumbnails",
+            "glob": "**/*",
+            "output": "data-thumbnails/hazard-perception"
+          },
+          {
+            "input": "data/src/hazard-perception/clips",
+            "glob": "**/*",
+            "output": "data-clips/hazard-perception"
+          },
+          "app-mobile/src/manifest.json"
         ],
+        "styles": ["app-mobile/src/styles/index.scss"],
         "scripts": [],
         "webpackConfig": "app-mobile/webpack.config.js"
       },
@@ -73,9 +102,6 @@
           "hmr": false
         }
       }
-    },
-    "lint": {
-      "executor": "@nx/eslint:lint"
     },
     "cap": {
       "executor": "@nxext/capacitor:cap",

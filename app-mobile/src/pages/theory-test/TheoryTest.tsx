@@ -1,69 +1,230 @@
-import { DATA_TOPICS } from '@drivingo/data';
-import { UIButton, UILink } from '@drivingo/ui/components';
-import { UIHeader } from '@drivingo/ui/compound';
 import {
-  IonContent,
-  IonHeader,
-  IonPage,
-  IonRouterLink,
-  IonTitle,
-  IonToolbar,
-} from '@ionic/react';
+    AlertsIcon,
+    AppleIcon,
+    OclockIcon,
+    StarIcon,
+    UIButton,
+    UILink,
+    UINavigationItem,
+    UINavigationList,
+    UITestProgressCard,
+    UITestProgressList,
+} from 'ui/src';
+
+import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
+
+import '../../styles/pages/home.scss';
 
 const TheoryTest: React.FC = () => {
-  return (
+    return (
+        <IonPage>
+            {/* <UIHeader title='Theory Test' /> */}
+            <IonContent fullscreen>
+                <div className="page-container homepage">
+                    <div className="header">
+                        <h1>Car</h1>
+                        <img
+                            className="top-img"
+                            src="/assets/images/top-car.png"
+                            alt="car"
+                        />
+                    </div>
+                    <div className="main-content">
+                        {/* <IonHeader collapse="condense">
+                        <IonToolbar>
+                            <IonTitle size="large">TheoryTest asdas</IonTitle>
+                        </IonToolbar>
+                    </IonHeader> */}
 
-    <IonPage>
-      <UIHeader title='Theory Test' />
-      <IonContent fullscreen className='ion-padding'>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">TheoryTest</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <IonRouterLink routerDirection='root' routerLink='/traffic-signs'>
-          <p>Traffic Signs</p>
-        </IonRouterLink>
-        <UIButton text='example button' /><br /><br />
-        <span> example data: {DATA_TOPICS[0].name} </span>
-        <br /><br />
-        <UILink text='link example' />
+                        <UINavigationList>
+                            <UINavigationItem
+                                routerDirection="forward"
+                                routerLink="/theory-test/learn"
+                                title="Learn"
+                                icon={<AppleIcon />}
+                                color="primary"
+                                desctioption="Lorem ipsum dolor sit amet"
+                            />
+                            <UINavigationItem
+                                routerDirection="forward"
+                                routerLink="/theory-test/quick-test"
+                                title="Quick Test"
+                                icon={<OclockIcon />}
+                                color="secondary"
+                                desctioption="Lorem ipsum dolor sit amet"
+                            />
+                            <UINavigationItem
+                                routerDirection="forward"
+                                routerLink="/theory-test/mock-test"
+                                title="Mock Test"
+                                icon={<AppleIcon />}
+                                color="light_blue"
+                                desctioption="Lorem ipsum dolor sit amet"
+                            />
+                            <UINavigationItem
+                                routerDirection="forward"
+                                routerLink="/theory-test/hazard-perception"
+                                title="Hazard Precep..."
+                                icon={<StarIcon />}
+                                color="light_tealish"
+                                desctioption="Lorem ipsum dolor sit amet"
+                            />
+                        </UINavigationList>
 
-        <IonRouterLink routerDirection='forward' routerLink='/theory-test/car/learn'>
-          <p>Learn</p>
-        </IonRouterLink>
+                        <UITestProgressList
+                            title="Study"
+                            routerLink="/theory-test/learn"
+                        >
+                            <UITestProgressCard
+                                title="Alertness"
+                                progress={20}
+                                routerLink="/theory-test/learn"
+                                routerDirection="forward"
+                                icon={<AlertsIcon />}
+                            />
+                            <UITestProgressCard
+                                title="Learn"
+                                progress={40}
+                                routerLink="/theory-test/learn"
+                                routerDirection="forward"
+                                icon={<AlertsIcon />}
+                            />
+                            <UITestProgressCard
+                                title="Alertness"
+                                progress={20}
+                                routerLink="/theory-test/learn"
+                                routerDirection="forward"
+                                icon={<AlertsIcon />}
+                            />
+                        </UITestProgressList>
 
-        <IonRouterLink routerDirection='forward' routerLink='/theory-test/car/quick-test'>
-          <p>Quick Test</p>
-        </IonRouterLink>
+                        <UITestProgressList
+                            title="Pratice"
+                            routerLink="/theory-test/learn"
+                        >
+                            <UITestProgressCard
+                                title="Alertness"
+                                progress={20}
+                                routerLink="/theory-test/learn"
+                                routerDirection="forward"
+                                icon={<AlertsIcon />}
+                            />
+                            <UITestProgressCard
+                                title="Learn"
+                                progress={40}
+                                routerLink="/theory-test/learn"
+                                routerDirection="forward"
+                                icon={<AlertsIcon />}
+                            />
+                            <UITestProgressCard
+                                title="Alertness"
+                                progress={20}
+                                routerLink="/theory-test/learn"
+                                routerDirection="forward"
+                                icon={<AlertsIcon />}
+                            />
+                        </UITestProgressList>
 
-        <IonRouterLink routerDirection='forward' routerLink='/theory-test/car/mock-test'>
-          <p>Mock Test</p>
-        </IonRouterLink>
+                        <UITestProgressList
+                            title="Hazard Perception"
+                            routerLink="/theory-test/learn"
+                        >
+                            <UITestProgressCard
+                                title="Alertness"
+                                progress={20}
+                                routerLink="/theory-test/learn"
+                                routerDirection="forward"
+                                icon={<AlertsIcon />}
+                            />
+                            <UITestProgressCard
+                                title="Learn"
+                                progress={40}
+                                routerLink="/theory-test/learn"
+                                routerDirection="forward"
+                                icon={<AlertsIcon />}
+                            />
+                            <UITestProgressCard
+                                title="Alertness"
+                                progress={20}
+                                routerLink="/theory-test/learn"
+                                routerDirection="forward"
+                                icon={<AlertsIcon />}
+                            />
+                        </UITestProgressList>
 
-        <IonRouterLink routerDirection='forward' routerLink='/theory-test/car/hazard-perception'>
-          <p>Hazard Perception</p>
-        </IonRouterLink>
+                        <IonRouterLink
+                            routerDirection="root"
+                            routerLink="/traffic-signs"
+                        >
+                            <p>Traffic Signs</p>
+                        </IonRouterLink>
+                        <UIButton text="example button" />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <UILink text="link example" />
 
-        <IonRouterLink routerDirection='forward' routerLink='/highway-code'>
-          <p>Highway Code</p>
-        </IonRouterLink>
+                        <IonRouterLink
+                            routerDirection="forward"
+                            routerLink="/theory-test/learn"
+                        >
+                            <p>Learn</p>
+                        </IonRouterLink>
 
-        <IonRouterLink routerDirection='forward' routerLink='/traffic-signs'>
-          <p>Traffic Signs</p>
-        </IonRouterLink>
+                        <IonRouterLink
+                            routerDirection="forward"
+                            routerLink="/theory-test/quick-test"
+                        >
+                            <p>Quick Test</p>
+                        </IonRouterLink>
 
-        <IonRouterLink routerDirection='forward' routerLink='/settings'>
-          <p>Settings</p>
-        </IonRouterLink>
+                        <IonRouterLink
+                            routerDirection="forward"
+                            routerLink="/theory-test/mock-test"
+                        >
+                            <p>Mock Test</p>
+                        </IonRouterLink>
 
-        <IonRouterLink routerDirection='forward' routerLink='/subsciripton'>
-          <p>Subsciripton</p>
-        </IonRouterLink>
+                        <IonRouterLink
+                            routerDirection="forward"
+                            routerLink="/theory-test/hazard-perception"
+                        >
+                            <p>Hazard Perception</p>
+                        </IonRouterLink>
 
-      </IonContent>
-    </IonPage>
-  );
+                        <IonRouterLink
+                            routerDirection="forward"
+                            routerLink="/highway-code"
+                        >
+                            <p>Highway Code</p>
+                        </IonRouterLink>
+
+                        <IonRouterLink
+                            routerDirection="forward"
+                            routerLink="/traffic-signs"
+                        >
+                            <p>Traffic Signs</p>
+                        </IonRouterLink>
+
+                        <IonRouterLink
+                            routerDirection="forward"
+                            routerLink="/settings"
+                        >
+                            <p>Settings</p>
+                        </IonRouterLink>
+
+                        <IonRouterLink
+                            routerDirection="forward"
+                            routerLink="/subsciripton"
+                        >
+                            <p>Subsciripton</p>
+                        </IonRouterLink>
+                    </div>
+                </div>
+            </IonContent>
+        </IonPage>
+    );
 };
 
 export default TheoryTest;

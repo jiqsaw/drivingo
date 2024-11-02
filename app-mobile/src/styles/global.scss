@@ -1,0 +1,24 @@
+html {
+  font-size: var(--default-font-size); /* Base Font size */
+}
+
+h1 {
+  font-size: 1.75em;
+  font-family: var(--font-bold);
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: var(--font-bold);
+}
+
+h3 {
+  font-size: 1.2em;
+  font-family: var(--font-bold);
+}
+
+aside.container {
+  display: block;
+  background: var(--background-color);
+  padding: var(--default-padding);
+}

@@ -1,0 +1,19 @@
+{
+    "name": "global",
+    "$schema": "../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "global/src",
+    "projectType": "library",
+    "tags": [],
+    "targets": {
+        "build": {
+            "executor": "@nx/js:tsc",
+            "outputs": ["{options.outputPath}"],
+            "options": {
+                "outputPath": "dist/global",
+                "main": "global/src/index.ts",
+                "tsConfig": "global/tsconfig.lib.json",
+                "assets": []
+            }
+        }
+    }
+}

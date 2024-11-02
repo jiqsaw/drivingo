@@ -1,0 +1,29 @@
+.tabs {
+  display: flex;
+  overflow-x: auto;
+  margin: 1em 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__item {
+    height: 44px;
+    padding: 0px var(--default-padding);
+    border-radius: 100px;
+    background-color: transparent;
+    text-wrap: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-bold);
+    opacity: 0.7;
+    color: var(--ion-primary-color);
+    letter-spacing: 0.05em;
+  }
+
+  &--active {
+    background: var(--color-highlight);
+    opacity: 1;
+    color: white;
+  }
+}

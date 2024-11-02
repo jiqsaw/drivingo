@@ -1,9 +1,9 @@
 {
-  "name": "feat-traffic-signs",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "feat-traffic-signs/src",
-  "projectType": "library",
-  "tags": [],
-  "// targets": "to see all targets run: nx show project feat-traffic-signs --web",
-  "targets": {}
+    "name": "feat-traffic-signs",
+    "$schema": "../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "feat-traffic-signs/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project feat-traffic-signs --web",
+    "targets": {}
 }

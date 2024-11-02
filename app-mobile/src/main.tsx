@@ -1,20 +1,24 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './App';
 import { Provider } from 'react-redux';
+import App from './App';
 
+import { drivingoStore, persistor } from '@drivingo/store';
 import { BrowserRouter } from 'react-router-dom';
-import { store } from './state/store';
+import { PersistGate } from 'redux-persist/integration/react';
 
 const container = document.getElementById('root');
-// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-const root = createRoot(container!);
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </BrowserRouter>
-  </React.StrictMode>
-);
+if (container) {
+    const root = createRoot(container);
+    root.render(
+        <React.StrictMode>
+            <BrowserRouter>
+                <Provider store={drivingoStore}>
+                    <PersistGate loading={null} persistor={persistor}>
+                        <App />
+                    </PersistGate>
+                </Provider>
+            </BrowserRouter>
+        </React.StrictMode>,
+    );
+}

@@ -1,0 +1,43 @@
+/* 
+  - IONIC CORE CSS IMPORTS  
+  - IONIC TAGS DEFAULT STYLING OVERRIDE
+*/
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/react/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/react/css/normalize.css";
+@import "~@ionic/react/css/structure.css";
+@import "~@ionic/react/css/typography.css";
+
+/* Theme variables */
+@import "~@ionic/react/css/palettes/dark.class.css";
+
+/* (Optional) This is added to prevent the flashing that happens when toggling between palettes */
+ion-item {
+  --transition: none;
+}
+
+ion-searchbar {
+  padding: 0 !important;
+
+  .searchbar-input-container {
+    height: 44px !important;
+
+    .searchbar-input {
+      border-radius: 100px !important;
+      font-size: 14px;
+      padding: 0 3em !important;
+    }
+
+    .searchbar-search-icon {
+      margin: 0 0.5em !important;
+    }
+  }
+}
+
+ion-back-button {
+  display: block;
+  color: var(--ion-primary-color);
+}

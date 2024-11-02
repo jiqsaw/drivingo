@@ -2,11 +2,7 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
-    "production": [
-      "default",
-      "!{projectRoot}/.eslintrc.json",
-      "!{projectRoot}/eslint.config.js"
-    ],
+    "production": ["default"],
     "sharedGlobals": []
   },
   "nxCloudAccessToken": "ODRmYjFiOTgtMzlmNS00OWQwLTgwZWEtNDdhYzgwYzczZDMyfHJlYWQtd3JpdGU=",
@@ -14,15 +10,6 @@
     "build": {
       "cache": true,
       "dependsOn": ["^build"]
-    },
-    "@nx/eslint:lint": {
-      "cache": true,
-      "inputs": [
-        "default",
-        "{workspaceRoot}/.eslintrc.json",
-        "{workspaceRoot}/.eslintignore",
-        "{workspaceRoot}/eslint.config.js"
-      ]
     },
     "@nx/js:tsc": {
       "cache": true,
@@ -35,7 +22,7 @@
       "application": {
         "babel": true,
         "style": "css",
-        "linter": "eslint",
+        "linter": "biomejs.biome",
         "bundler": "webpack"
       },
       "component": {
@@ -43,20 +30,11 @@
       },
       "library": {
         "style": "css",
-        "linter": "eslint",
+        "linter": "biomejs.biome",
         "unitTestRunner": "none"
       }
     }
   },
-  "plugins": [
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "eslint:lint",
-        "extensions": ["ts", "tsx", "js", "jsx", "html", "vue"]
-      }
-    }
-  ],
   "release": {
     "version": {
       "preVersionCommand": "npx nx run-many -t build"
