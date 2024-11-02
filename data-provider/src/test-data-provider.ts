@@ -4,11 +4,11 @@ import { cloneDeep, sampleSize } from 'lodash';
 
 export const TestDataProvider = {
     imgBasePath: 'data-images/test/',
-    getQuestions: (includingTopics?: ITopic[], numberOfQuestions?: number) => {
+    getQuestions: (numberOfQuestions?: number, filteredTopics?: ITopic[]) => {
         let questions = cloneDeep(DATA_TEST_QUESTIONS);
-        if (includingTopics) {
+        if (filteredTopics) {
             questions = questions.filter((item) =>
-                includingTopics
+                filteredTopics
                     ?.map((topic) => topic.code)
                     .includes(item.topicCode),
             );

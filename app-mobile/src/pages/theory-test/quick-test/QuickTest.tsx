@@ -7,10 +7,9 @@ import {
     storeUiSelectors,
 } from '@drivingo/store';
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
-import BottomNavigation from 'app-mobile/src/components/bottom-navigation/bottom-navigation';
-import { Subheader } from 'app-mobile/src/components/headers/subheader/subheader';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Subheader } from '../../../components/headers/subheader/subheader';
 
 const QuickTest = () => {
     const topics = TopicDataProvider.getData();
@@ -73,7 +72,6 @@ const QuickTest = () => {
                     </IonRouterLink>
                 </aside>
             </IonContent>
-            <BottomNavigation />
         </IonPage>
     );
 

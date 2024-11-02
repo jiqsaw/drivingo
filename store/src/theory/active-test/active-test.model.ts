@@ -13,7 +13,7 @@ export interface IStoreTheoryActiveTest {
     indexLocator: number;
     showFlaggedOnly: boolean;
     type?: TestType;
-    includingTopics?: ITopic[];
+    filteredTopics?: ITopic[];
     showFullTranslate?: boolean;
 }
 

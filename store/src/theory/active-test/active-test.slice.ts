@@ -21,7 +21,7 @@ export default createSlice({
     initialState: initialState,
     reducers: {
         addTopics: (state, action: PayloadAction<ITopic[]>) => {
-            state.includingTopics = action.payload;
+            state.filteredTopics = action.payload;
         },
         start: (
             state,
@@ -32,8 +32,10 @@ export default createSlice({
         ) => {
             state.type = action.payload.type;
             state.questions = TestDataProvider.getQuestions(
-                state.includingTopics,
                 action.payload.numberOfQuestions,
+                state.type !== TestType.MockTest
+                    ? state.filteredTopics
+                    : undefined,
             );
             state.view = TestView.active;
         },
