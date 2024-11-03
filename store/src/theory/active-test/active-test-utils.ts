@@ -3,7 +3,7 @@ import {
     IStoreTheoryActiveTestQuestion,
 } from './active-test.model';
 
-export function getQuestions(test: IStoreTheoryActiveTest) {
+export function getActiveTestQuestions(test: IStoreTheoryActiveTest) {
     return test.questions;
 }
 

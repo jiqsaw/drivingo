@@ -1,14 +1,16 @@
-import { CONSTANTS } from '@drivingo/global';
-import { OptionChar, TestType } from '@drivingo/models';
+import { TestDataProvider } from '@drivingo/data-provider';
+
+import { OptionChar, TestLearnPracticeGroup, TestType } from '@drivingo/models';
 import {
     storeTheoryActiveTestActions,
     storeTheoryActiveTestSelectors,
     storeUiSelectors,
 } from '@drivingo/store';
 import { UIButton, UITimer } from '@drivingo/ui';
-import { IonAlert, useIonRouter } from '@ionic/react';
-import { FC, useEffect, useRef } from 'react';
+import { IonAlert, IonModal, useIonRouter } from '@ionic/react';
+import { FC, useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useLocation } from 'react-router-dom';
 import { storeTheoryProgressActions } from 'store/src/theory/progress/progress';
 import './assets/styles.scss';
 import FeatTestContent from './components/test-content';
@@ -32,15 +34,46 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
         storeTheoryActiveTestSelectors.isFirstQuestion,
     );
 
+    const modalExplanation = useRef<HTMLIonModalElement>(null);
+    const [showExplanation, setShowExplanation] = useState<boolean>(false);
+
+    let paramLearnPracticeGroup = TestLearnPracticeGroup.All;
+
+    if (type === TestType.LearnPractice) {
+        const location = useLocation();
+        const queryParams = new URLSearchParams(location.search);
+        paramLearnPracticeGroup = queryParams.get(
+            'learnPracticeGroup',
+        ) as unknown as TestLearnPracticeGroup;
+
+        console.log('paramLearnPracticeGroup:', paramLearnPracticeGroup);
+    }
+
     useEffect(() => {
         if (!hasRunOnce.current) {
             if (type) {
-                dispatch(
-                    storeTheoryActiveTestActions.start({
-                        numberOfQuestions: getNumberOfQuestions(type),
-                        type,
-                    }),
-                );
+                switch (type) {
+                    case TestType.LearnPractice:
+                        dispatch(
+                            storeTheoryActiveTestActions.startLearnPracticeTest(
+                                {
+                                    testLearnPracticeGroup:
+                                        paramLearnPracticeGroup,
+                                },
+                            ),
+                        );
+                        break;
+                    case TestType.QuickTest:
+                        dispatch(
+                            storeTheoryActiveTestActions.startQuickTest({
+                                numberOfQuestions: uiQuickTestNumberOfQuestions,
+                            }),
+                        );
+                        break;
+                    case TestType.MockTest:
+                        dispatch(storeTheoryActiveTestActions.startMockTest());
+                        break;
+                }
             }
             hasRunOnce.current = true;
         }
@@ -75,13 +108,9 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
                 questionItem={testCurrentQuestion}
                 selectedOptionChar={testCurrentQuestion.selectedOptionChar}
                 testView={test.view}
-                onSelectOption={(selectedOption: OptionChar) => {
-                    dispatch(
-                        storeTheoryActiveTestActions.selectOption(
-                            selectedOption,
-                        ),
-                    );
-                }}
+                onSelectOption={(selectedOption: OptionChar) =>
+                    selectOption(selectedOption)
+                }
             />
             <div>
                 {showProceedButton() &&
@@ -138,17 +167,20 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
                     ]}
                 ></IonAlert>
             )}
+
+            <IonModal
+                ref={modalExplanation}
+                isOpen={showExplanation}
+                initialBreakpoint={0.25}
+                breakpoints={[0, 0.25, 0.5, 0.75]}
+                backdropDismiss={false}
+                backdropBreakpoint={0.5}
+                onDidDismiss={() => setShowExplanation(false)}
+            >
+                {TestDataProvider.getExplanation(testCurrentQuestion.code)}
+            </IonModal>
         </aside>
     );
-
-    function getNumberOfQuestions(type: TestType) {
-        switch (type) {
-            case TestType.QuickTest:
-                return uiQuickTestNumberOfQuestions;
-            case TestType.MockTest:
-                return CONSTANTS.mockTestInfo.questionsLength;
-        }
-    }
 
     function showProceedButton() {
         return !!testCurrentQuestion.selectedOptionChar;
@@ -156,6 +188,13 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
 
     function showFlagButton() {
         return test.type !== TestType.LearnPractice;
+    }
+
+    function selectOption(selectedOption: OptionChar) {
+        dispatch(storeTheoryActiveTestActions.selectOption(selectedOption));
+        if (test.type === TestType.LearnPractice) {
+            setShowExplanation(true);
+        }
     }
 
     function next() {

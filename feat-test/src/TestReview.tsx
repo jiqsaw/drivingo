@@ -25,7 +25,7 @@ const FeatTestReview: FC = () => {
         if (!hasRunOnce.current) {
             dispatch(
                 storeTheoryActiveTestActions.updateView({
-                    view: TestView.review,
+                    view: TestView.Review,
                 }),
             );
             hasRunOnce.current = true;
@@ -68,7 +68,7 @@ const FeatTestReview: FC = () => {
                                 test.questions[selectedQuestionIndex]
                                     .selectedOptionChar
                             }
-                            testView={TestView.review}
+                            testView={TestView.Review}
                             onSelectOption={(selectedOption: OptionChar) => {
                                 dispatch(
                                     storeTheoryActiveTestActions.selectOption(

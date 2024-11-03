@@ -5,7 +5,14 @@ export enum TestType {
 }
 
 export enum TestView {
-    notActive,
-    active,
-    review,
+    NotActive,
+    Active,
+    Review,
+}
+
+export enum TestLearnPracticeGroup {
+    All,
+    Unanswered,
+    Incorrect,
+    IncorrectAndUnanswered,
 }

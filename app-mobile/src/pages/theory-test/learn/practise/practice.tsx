@@ -1,5 +1,5 @@
 import { TopicDataProvider } from '@drivingo/data-provider';
-import { ITopic, TestType } from '@drivingo/models';
+import { ITopic, TestLearnPracticeGroup, TestType } from '@drivingo/models';
 import {
     storeTheoryActiveTestActions,
     storeTheoryActiveTestSelectors,
@@ -43,19 +43,19 @@ const LearnPractice = () => {
                 buttons={[
                     {
                         text: 'All',
-                        role: 'all',
+                        role: TestLearnPracticeGroup.All.toString(),
                     },
                     {
                         text: 'Unanswered',
-                        role: 'unanswered',
+                        role: TestLearnPracticeGroup.Unanswered.toString(),
                     },
                     {
                         text: 'Incorrect',
-                        role: 'incorrect',
+                        role: TestLearnPracticeGroup.Incorrect.toString(),
                     },
                     {
                         text: 'Incorrect and unanswered',
-                        role: 'incorrect-and-unanswered',
+                        role: TestLearnPracticeGroup.IncorrectAndUnanswered.toString(),
                     },
                     {
                         text: 'Cancel',
@@ -72,8 +72,10 @@ const LearnPractice = () => {
     }
 
     function onActionSheetDismiss(result: OverlayEventDetail) {
-        console.log('result:', result.role);
-        router.push(`/theory-test/test/${TestType.LearnPractice}`, 'forward');
+        router.push(
+            `/theory-test/test/${TestType.LearnPractice}?learnPracticeGroup=${result.role}`,
+            'forward',
+        );
     }
 };
 

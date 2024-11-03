@@ -11,6 +11,7 @@ interface Props {
     onSelectOption?: (selectedOption: OptionChar) => void;
 }
 
+// ????? show correct and incorrect option (even the selected option is correct) on selectOption
 const FeatTestContent: FC<Props> = (props) => {
     const {
         questionNo,
@@ -45,7 +46,7 @@ const FeatTestContent: FC<Props> = (props) => {
                             className={`test__option ${selectedOptionChar === option.char ? 'test__option--selected' : ''}`}
                             key={'option-' + i}
                             onClick={() =>
-                                TestView.active &&
+                                TestView.Active &&
                                 onSelectOption &&
                                 onSelectOption(option.char)
                             }

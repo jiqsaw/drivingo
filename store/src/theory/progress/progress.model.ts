@@ -1,21 +1,17 @@
 export interface IStoreProgress {
     quickTest: IStoreProgressQuickTest;
-    // mockTest: IStoreProgressMockTest;
+    mockTest: IStoreProgressMockTest;
     // hazardPerception: IStoreProgressHazardPerception[];
 }
 
-export interface IStoreProgressQuickTest {
+export interface IStoreProgressTestBase {
     topics: IStoreProgressTopicResult[];
     results: IStoreProgressTestResult[];
 }
 
-export interface IStoreProgressMockTest {
-    average: number;
-    lastCorrectCount: number;
-    lastQuestionAmount: number;
-    topics: IStoreProgressTopicResult[];
-    results: IStoreProgressTestResult[];
-}
+export interface IStoreProgressQuickTest extends IStoreProgressTestBase {}
+
+export interface IStoreProgressMockTest extends IStoreProgressTestBase {}
 
 export interface IStoreProgressHazardPerception {
     date: Date;

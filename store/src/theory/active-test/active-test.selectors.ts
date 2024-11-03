@@ -3,11 +3,11 @@ import { CONSTANTS } from '@drivingo/global';
 import { createSelector } from '@reduxjs/toolkit';
 import { AppState } from '../../store';
 import {
+    getActiveTestQuestions,
     getCorrectCount,
     getCurrentQuestion,
     getNextFlaggedQuestionIndex,
     getPrevFlaggedQuestionIndex,
-    getQuestions,
 } from './active-test-utils';
 
 const activeTest = (state: AppState) => state.theory.activeTest;
@@ -26,7 +26,7 @@ const correctCount = createSelector(activeTest, (test) =>
 
 const isLastQuestion = createSelector(activeTest, (test) => {
     if (!test.showFlaggedOnly) {
-        return getQuestions(test).length <= test.indexLocator + 1;
+        return getActiveTestQuestions(test).length <= test.indexLocator + 1;
     }
     const nextFlaggedQuestionIndex = getNextFlaggedQuestionIndex(
         test.questions,

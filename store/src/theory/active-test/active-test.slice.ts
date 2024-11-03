@@ -1,16 +1,22 @@
 import { TestDataProvider } from '@drivingo/data-provider';
-import { ITopic, OptionChar, TestType, TestView } from '@drivingo/models';
+import {
+    ITopic,
+    OptionChar,
+    TestLearnPracticeGroup,
+    TestType,
+    TestView,
+} from '@drivingo/models';
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import {
+    getActiveTestQuestions,
     getCurrentQuestion,
     getNextFlaggedQuestionIndex,
     getPrevFlaggedQuestionIndex,
-    getQuestions,
 } from './active-test-utils';
 import { IStoreTheoryActiveTest } from './active-test.model';
 
 const initialState: IStoreTheoryActiveTest = {
-    view: TestView.notActive,
+    view: TestView.NotActive,
     isPaused: false,
     indexLocator: 0,
     showFlaggedOnly: false,
@@ -40,21 +46,37 @@ export default createSlice({
                 }
             }
         },
-        start: (
+        startLearnPracticeTest: (
             state,
             action: PayloadAction<{
-                numberOfQuestions?: number;
-                type: TestType;
+                testLearnPracticeGroup: TestLearnPracticeGroup;
             }>,
         ) => {
-            state.type = action.payload.type;
-            state.questions = TestDataProvider.getQuestions(
-                action.payload.numberOfQuestions,
-                state.type !== TestType.MockTest
-                    ? state.filteredTopics
-                    : undefined,
+            state.type = TestType.LearnPractice;
+            // Unanswered etc filtre ???
+            state.questions = TestDataProvider.getNewLearnPracticeTest(
+                action.payload.testLearnPracticeGroup,
+                state.filteredTopics,
             );
-            state.view = TestView.active;
+            state.view = TestView.Active;
+        },
+        startQuickTest: (
+            state,
+            action: PayloadAction<{
+                numberOfQuestions: number;
+            }>,
+        ) => {
+            state.type = TestType.QuickTest;
+            state.questions = TestDataProvider.getNewQuickTest(
+                action.payload.numberOfQuestions,
+                state.filteredTopics,
+            );
+            state.view = TestView.Active;
+        },
+        startMockTest: (state) => {
+            state.type = TestType.MockTest;
+            state.questions = TestDataProvider.getNewMockTest();
+            state.view = TestView.Active;
         },
         selectOption: (state, action: PayloadAction<OptionChar>) => {
             const item = getCurrentQuestion(state);
@@ -76,7 +98,7 @@ export default createSlice({
                 state.indexLocator = state.indexLocator + 1;
             } else {
                 let nextFlaggedQuestionIndex = getNextFlaggedQuestionIndex(
-                    getQuestions(state),
+                    getActiveTestQuestions(state),
                     state.indexLocator,
                 );
                 if (nextFlaggedQuestionIndex >= 0) {
@@ -93,7 +115,7 @@ export default createSlice({
                 state.indexLocator = state.indexLocator - 1;
             } else {
                 let prevFlaggedQuestionIndex = getPrevFlaggedQuestionIndex(
-                    getQuestions(state),
+                    getActiveTestQuestions(state),
                     state.indexLocator,
                 );
                 if (prevFlaggedQuestionIndex >= 0) {
@@ -116,7 +138,7 @@ export default createSlice({
             state.isPaused = false;
         },
         finish(state) {
-            state.view = TestView.notActive;
+            state.view = TestView.NotActive;
             state.questions.map((item) => (item.isFlagged = false));
         },
         updateView(state, action: PayloadAction<{ view: TestView }>) {

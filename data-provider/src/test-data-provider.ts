@@ -1,10 +1,18 @@
-import { DATA_TEST_IMAGES, DATA_TEST_QUESTIONS } from '@drivingo/data';
-import { ITopic, OptionChar } from '@drivingo/models';
+import {
+    DATA_TEST_EXPLANATIONS,
+    DATA_TEST_IMAGES,
+    DATA_TEST_QUESTIONS,
+} from '@drivingo/data';
+import { CONSTANTS } from '@drivingo/global';
+import { ITopic, OptionChar, TestLearnPracticeGroup } from '@drivingo/models';
 import { cloneDeep, sampleSize } from 'lodash';
 
 export const TestDataProvider = {
     imgBasePath: 'data-images/test/',
-    getQuestions: (numberOfQuestions?: number, filteredTopics?: ITopic[]) => {
+    getNewLearnPracticeTest: (
+        group: TestLearnPracticeGroup,
+        filteredTopics?: ITopic[],
+    ) => {
         let questions = cloneDeep(DATA_TEST_QUESTIONS);
         if (filteredTopics) {
             questions = questions.filter((item) =>
@@ -13,10 +21,23 @@ export const TestDataProvider = {
                     .includes(item.topicCode),
             );
         }
-        if (numberOfQuestions) {
-            questions = sampleSize(questions, numberOfQuestions);
-        }
+        console.log('group:', group);
         return questions;
+    },
+    getNewQuickTest: (numberOfQuestions: number, filteredTopics?: ITopic[]) => {
+        let questions = cloneDeep(DATA_TEST_QUESTIONS);
+        if (filteredTopics) {
+            questions = questions.filter((item) =>
+                filteredTopics
+                    ?.map((topic) => topic.code)
+                    .includes(item.topicCode),
+            );
+        }
+        return sampleSize(questions, numberOfQuestions);
+    },
+    getNewMockTest: () => {
+        let questions = cloneDeep(DATA_TEST_QUESTIONS);
+        return sampleSize(questions, CONSTANTS.mockTestInfo.questionsLength);
     },
     getQuestionImage(code: string) {
         const imgItem = DATA_TEST_IMAGES.find(
@@ -35,5 +56,10 @@ export const TestDataProvider = {
             return this.imgBasePath + imgItem.src;
         }
         return '';
+    },
+    getExplanation(questionCode: string) {
+        return DATA_TEST_EXPLANATIONS.find(
+            (item) => item.questionCode === questionCode,
+        )?.content;
     },
 };
