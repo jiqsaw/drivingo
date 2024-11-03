@@ -16,4 +16,8 @@ export * from './tabs/tabs';
 export * from './test-progress/test-progress-card';
 export * from './test-progress/test-progress-list';
 export * from './text-route-link/text-route-link';
+export * from './scroll-up/scroll-up';
 export * from './timer/timer';
+export * from './card-list/card-list';
+export * from './test-result-card/test-result-card';
+export * from './test-answer-card/test-answer-card';

@@ -1,0 +1,106 @@
+.test-progress-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.list-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.see-all {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.list-title {
+    color: rgba(255, 255, 255, 0.90);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8px;
+    width: 100%;
+}
+
+.test-progress-card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    border-radius: 16px;
+    background-color: #352494;
+    position: relative;
+
+    .progress-count {
+        color: var(--color-secondary);
+        font-size: 13px;
+        font-weight: 600;
+        margin-top: 24px;
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 16px;
+        height: 16px;
+
+    }
+
+    .card-title {
+        color: var(--color-secondary);
+        height: 32px;
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .card-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 16px;
+        margin-top: 0;
+
+        svg {
+            path {
+                stroke: var(--color-secondary);
+            }
+        }
+    }
+
+    .card-progress {
+        width: 100%;
+        height: 4px;
+        margin-top: 4px;
+        border-radius: 10px;
+        background-color: #fff;
+        position: relative;
+        overflow: hidden;
+
+        .progress-bar {
+            display: block;
+            height: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            background-color: #644DE4;
+        }
+    }
+}

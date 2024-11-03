@@ -116,62 +116,71 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
                     selectOption(selectedOption)
                 }
             />
-            <div>
-                {showProceedButton() &&
-                    (!isLastQuestion ? (
-                        <UIButton onClick={() => next()} text="Next" />
-                    ) : (
-                        <UIButton
-                            id="present-alert"
+
+            <div className="fixed-bottom-button">
+                <div className="button-fix-height">
+                    {showProceedButton() &&
+                        (!isLastQuestion ? (
+                            <UIButton
+                                onClick={() => next()}
+                                text="Next"
+                                nextIcon={true}
+                                className="full-width btn-primary full-rounded"
+                            />
+                        ) : (
+                            <UIButton
+                                id="present-alert"
+                                className="full-width btn-primary full-rounded"
+                                onClick={() =>
+                                    getFlaggedQuestionsAmount() < 1 && finish()
+                                }
+                                text="Finish"
+                            />
+                        ))}
+                </div>
+
+                <hr />
+                <div className="buttom-nav">
+                    {!isFirstQuestion && <div onClick={prev}>Prev</div>}
+                    {showFlagButton() && (
+                        <div
+                            className={`test__flag ${testCurrentQuestion.isFlagged ? 'test__flag--selected' : ''}`}
                             onClick={() =>
-                                getFlaggedQuestionsAmount() < 1 && finish()
+                                dispatch(storeTheoryActiveTestActions.flag())
                             }
-                            text="Finish"
-                        />
-                    ))}
-            </div>
-            <hr />
-            <div>
-                {!isFirstQuestion && <div onClick={prev}>Prev</div>}
-                {showFlagButton() && (
-                    <div
-                        className={`test__flag ${testCurrentQuestion.isFlagged ? 'test__flag--selected' : ''}`}
-                        onClick={() =>
-                            dispatch(storeTheoryActiveTestActions.flag())
-                        }
-                    >
-                        Flag
-                    </div>
-                )}
-            </div>
+                        >
+                            Flag
+                        </div>
+                    )}
 
-            {getFlaggedQuestionsAmount() > 0 && (
-                <IonAlert
-                    header={getAlertHeaderMessage()}
-                    trigger={
-                        showProceedButton() && isLastQuestion
-                            ? 'present-alert'
-                            : ''
-                    }
-                    buttons={[
-                        {
-                            text: 'Review flagged questions',
-                            role: 'confirm',
-                            handler: () => {
-                                showFlaggedQuestions();
-                            },
-                        },
-                        {
-                            text: 'Finish test',
-                            role: 'cancel',
-                            handler: () => {
-                                finish();
-                            },
-                        },
-                    ]}
-                ></IonAlert>
-            )}
-
+                    {getFlaggedQuestionsAmount() > 0 && (
+                        <IonAlert
+                            header={getAlertHeaderMessage()}
+                            trigger={
+                                showProceedButton() && isLastQuestion
+                                    ? 'present-alert'
+                                    : ''
+                            }
+                            buttons={[
+                                {
+                                    text: 'Review flagged questions',
+                                    role: 'confirm',
+                                    handler: () => {
+                                        showFlaggedQuestions();
+                                    },
+                                },
+                                {
+                                    text: 'Finish test',
+                                    role: 'cancel',
+                                    handler: () => {
+                                        finish();
+                                    },
+                                },
+                            ]}
+                        ></IonAlert>
+                    )}
+                </div>
+            </div>
             <IonModal
                 ref={modalExplanation}
                 isOpen={showExplanation}

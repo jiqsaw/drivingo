@@ -48,6 +48,7 @@ const FeatHazardPerception = () => {
             <UIInlineModal
                 isOpen={!instructorModal}
                 onClose={handleInstructorClose}
+                type="inline"
             >
                 <video controls width="100%" height="auto">
                     <source

@@ -28,22 +28,20 @@ const FeatTestContent: FC<Props> = (props) => {
     } = props;
     return (
         <>
-            <div>
-                <p>
-                    Question no:&nbsp;
-                    {questionNo}/{questionsLength}
-                </p>
-                <p>
-                    {questionItem.question}
-                    {questionItem.questionImg !== '' && (
-                        <img
-                            src={TestDataProvider.getQuestionImage(
-                                questionItem.code,
-                            )}
-                            alt={questionItem.code}
-                        />
-                    )}
-                </p>
+            <div className="test__no">
+                {questionNo}/{questionsLength}
+            </div>
+            <div className="test__question">
+                {questionItem.question}
+                {questionItem.questionImg !== '' && (
+                    <img
+                        className="test__question-img"
+                        src={TestDataProvider.getQuestionImage(
+                            questionItem.code,
+                        )}
+                        alt={questionItem.code}
+                    />
+                )}
             </div>
             <div>
                 {questionItem.options.map((option, i) => {
@@ -57,18 +55,21 @@ const FeatTestContent: FC<Props> = (props) => {
                                 onSelectOption(option.char)
                             }
                         >
-                            {getOptionIndicator(option, questionItem.answer)}
-
-                            {option.text}
-                            {option.img && (
-                                <img
-                                    src={TestDataProvider.getOptionImage(
-                                        questionItem.code,
-                                        option.char,
-                                    )}
-                                    alt={questionItem.code}
-                                />
-                            )}
+                            <span className="test__option-prefix">
+                                {getOptionIndicator(option, questionItem.answer)}
+                            </span>
+                            <span className="test__option-text">
+                                {option.text}
+                                {option.img && (
+                                    <img
+                                        src={TestDataProvider.getOptionImage(
+                                            questionItem.code,
+                                            option.char,
+                                        )}
+                                        alt={questionItem.code}
+                                    />
+                                )}
+                            </span>
                         </div>
                     );
                 })}

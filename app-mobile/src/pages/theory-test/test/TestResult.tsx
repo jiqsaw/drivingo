@@ -6,7 +6,7 @@ const TestResult: React.FC = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
-                <aside className="container">
+                <aside className="container pb-60">
                     <TestResultHeader />
                     <FeatTestResult />
                 </aside>

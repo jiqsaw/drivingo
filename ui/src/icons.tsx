@@ -233,74 +233,62 @@ export const AIStarsIcon = () => {
 export const AlertsIcon = () => {
     return (
         <svg width="31" height="36" viewBox="0 0 31 36" fill="none">
-            <g opacity="0.15" clipPath="url(#clip0_18_749)">
-                <path
-                    d="M24.3854 18.5552C24.3854 13.6449 20.3337 9.66589 15.3337 9.66589C10.3337 9.66589 6.28198 13.6449 6.28198 18.5552V28.8556H24.3854V18.5552Z"
-                    stroke="white"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                />
-                <path
-                    d="M28.2647 32.6653C28.2647 30.57 26.519 28.8556 24.3854 28.8556H6.28196C4.14834 28.8556 2.40265 30.57 2.40265 32.6653V34.0763C2.40265 34.4643 2.72592 34.7818 3.12104 34.7818H27.5463C27.9414 34.7818 28.2647 34.4643 28.2647 34.0763V32.6653Z"
-                    stroke="white"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                />
-                <path
-                    d="M15.3337 5.43999V1.19991C15.3337 1.19991 15.348 1.19286 15.348 1.19991V5.43293L15.3337 5.43999Z"
-                    stroke="white"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                />
-                <path
-                    d="M22.0147 7.19667C22.0147 7.19667 22.0147 7.19667 22.0147 7.18962L23.4515 4.93201C23.4515 4.93201 23.4515 4.93201 23.4587 4.93201C23.4587 4.93201 23.4587 4.93201 23.4587 4.93906L22.0219 7.19667H22.0147Z"
-                    stroke="white"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                />
-                <path
-                    d="M26.907 12.0012V11.9941L29.9242 10.5831H29.9314V10.5902L26.9142 12.0012H26.907Z"
-                    stroke="white"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                />
-                <path
-                    d="M8.65266 7.19667L7.21588 4.93906V4.93201H7.22307L8.65985 7.18962V7.19667H8.65266Z"
-                    stroke="white"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                />
-                <path
-                    d="M3.76761 12.0012L0.750366 10.5902C0.750366 10.5902 0.750366 10.5902 0.750366 10.5831C0.750366 10.5831 0.750366 10.5831 0.75755 10.5831L3.77479 11.9941C3.77479 11.9941 3.77479 11.9941 3.77479 12.0012H3.76761Z"
-                    stroke="white"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                />
-                <path
-                    d="M18.1139 20.3895C18.1139 18.8304 16.828 17.5675 15.2403 17.5675C13.6527 17.5675 12.3668 18.8304 12.3668 20.3895C12.3668 21.4337 12.9487 22.3297 13.8035 22.8235V28.8556H16.6771V22.8235C17.532 22.3367 18.1139 21.4337 18.1139 20.3895Z"
-                    stroke="white"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                />
-            </g>
-            <defs>
-                <clipPath id="clip0_18_749">
-                    <rect
-                        width="30.625"
-                        height="35"
-                        fill="white"
-                        transform="translate(0.0247803 0.487305)"
-                    />
-                </clipPath>
-            </defs>
+            <path
+                d="M24.3854 18.5552C24.3854 13.6449 20.3337 9.66589 15.3337 9.66589C10.3337 9.66589 6.28198 13.6449 6.28198 18.5552V28.8556H24.3854V18.5552Z"
+                stroke="white"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M28.2647 32.6653C28.2647 30.57 26.519 28.8556 24.3854 28.8556H6.28196C4.14834 28.8556 2.40265 30.57 2.40265 32.6653V34.0763C2.40265 34.4643 2.72592 34.7818 3.12104 34.7818H27.5463C27.9414 34.7818 28.2647 34.4643 28.2647 34.0763V32.6653Z"
+                stroke="white"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M15.3337 5.43999V1.19991C15.3337 1.19991 15.348 1.19286 15.348 1.19991V5.43293L15.3337 5.43999Z"
+                stroke="white"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M22.0147 7.19667C22.0147 7.19667 22.0147 7.19667 22.0147 7.18962L23.4515 4.93201C23.4515 4.93201 23.4515 4.93201 23.4587 4.93201C23.4587 4.93201 23.4587 4.93201 23.4587 4.93906L22.0219 7.19667H22.0147Z"
+                stroke="white"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M26.907 12.0012V11.9941L29.9242 10.5831H29.9314V10.5902L26.9142 12.0012H26.907Z"
+                stroke="white"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M8.65266 7.19667L7.21588 4.93906V4.93201H7.22307L8.65985 7.18962V7.19667H8.65266Z"
+                stroke="white"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M3.76761 12.0012L0.750366 10.5902C0.750366 10.5902 0.750366 10.5902 0.750366 10.5831C0.750366 10.5831 0.750366 10.5831 0.75755 10.5831L3.77479 11.9941C3.77479 11.9941 3.77479 11.9941 3.77479 12.0012H3.76761Z"
+                stroke="white"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+            <path
+                d="M18.1139 20.3895C18.1139 18.8304 16.828 17.5675 15.2403 17.5675C13.6527 17.5675 12.3668 18.8304 12.3668 20.3895C12.3668 21.4337 12.9487 22.3297 13.8035 22.8235V28.8556H16.6771V22.8235C17.532 22.3367 18.1139 21.4337 18.1139 20.3895Z"
+                stroke="white"
+                strokeWidth="1.75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
         </svg>
     );
 };
@@ -627,6 +615,17 @@ export const RetryIcon = () => {
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
+            />
+        </svg>
+    );
+};
+
+export const CheckIcon = () => {
+    return (
+        <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
+            <path
+                d="M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z"
+                fill="#FEF7FF"
             />
         </svg>
     );

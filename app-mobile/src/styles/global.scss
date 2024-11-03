@@ -1,5 +1,6 @@
 html {
-  font-size: var(--default-font-size); /* Base Font size */
+  font-size: var(--default-font-size);
+  /* Base Font size */
 }
 
 h1 {
@@ -21,4 +22,8 @@ aside.container {
   display: block;
   background: var(--background-color);
   padding: var(--default-padding);
+}
+
+.full-width {
+  width: 100%;
 }

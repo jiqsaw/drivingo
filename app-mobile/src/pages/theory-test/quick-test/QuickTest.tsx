@@ -7,9 +7,13 @@ import {
     storeUiActions,
     storeUiSelectors,
 } from '@drivingo/store';
+import { ArrowNextIcon, UIButton, UICardList } from '@drivingo/ui';
+import { AlertsIcon, UITestProgressCard } from '@drivingo/ui';
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
 import { useDispatch, useSelector } from 'react-redux';
+
 import { Subheader } from '../../../components/headers/subheader/subheader';
+import '../../../styles/pages/subpage.scss';
 
 const QuickTest = () => {
     const topics = TopicDataProvider.getData();
@@ -24,9 +28,13 @@ const QuickTest = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
-                <aside className="container">
+                <aside className="container pb-60">
                     <Subheader />
                     <h1>Quick Test</h1>
+                    <p>
+                        Select multiple topics and build your own custom test.
+                        Analyse your progress.
+                    </p>
 
                     <span>Number of questions: </span>
                     {CONSTANTS.quickTestNumberOfQuestionsList.map((item) => {
@@ -43,28 +51,46 @@ const QuickTest = () => {
                         );
                     })}
 
-                    <br />
-                    <br />
-
-                    {topics.map((topic) => {
-                        return (
-                            // Buraya topic cardlar UI libraryden gelmeli
-                            <div
-                                key={topic.code}
-                                onClick={() => selectTopic(topic)}
-                            >
-                                {filteredTopics?.includes(topic) && <>✓</>}
-                                {topic.name}
-                            </div>
-                        );
-                    })}
-                    {/* Bu button sadece en az bir topic secili oldugunda gorunur olacak */}
-                    <IonRouterLink
-                        routerDirection="forward"
-                        routerLink={`/theory-test/test/${TestType.QuickTest}`}
+                    <UICardList className="grid-2-cols">
+                        {topics.map((topic) => {
+                            console.log('topic', topic);
+                            return (
+                                <>
+                                    <UITestProgressCard
+                                        key={topic.code}
+                                        title={topic.name}
+                                        progress={topic.count}
+                                        icon={<AlertsIcon />}
+                                        checkmark={filteredTopics?.includes(
+                                            topic,
+                                        )}
+                                        onClick={() => selectTopic(topic)}
+                                    />
+                                </>
+                                // Buraya topic cardlar UI libraryden gelmeli
+                            );
+                        })}
+                    </UICardList>
+                    <div
+                        className={`fixed-bottom-button  ${
+                            selectedItems && selectedItems.length > 0
+                                ? 'active'
+                                : 'disabled'
+                        }`}
                     >
-                        Start
-                    </IonRouterLink>
+                        <IonRouterLink
+                            className={`w-full`}
+                            routerDirection="forward"
+                            routerLink={`/theory-test/test/${TestType.QuickTest}`}
+                        >
+                            <UIButton
+                                id="present-alert"
+                                className="full-width btn-primary full-rounded"
+                                text="Start"
+                                nextIcon={true}
+                            />
+                        </IonRouterLink>
+                    </div>
                 </aside>
             </IonContent>
         </IonPage>

@@ -1,12 +1,13 @@
-import { IonIcon, IonModal } from '@ionic/react';
-import { closeCircle } from 'ionicons/icons';
+import { IonModal } from '@ionic/react';
 import { FC, useEffect, useRef } from 'react';
 
+import { CloseIcon } from '../icons';
 import styles from './modal.module.scss';
 
 export interface UIInlineModalProps {
     isOpen: boolean;
-    type?: 'default' | 'full';
+    type?: 'default' | 'full' | 'inline';
+    breakpoint?: number;
     onClose?: () => void;
     children: React.ReactNode;
 }
@@ -16,9 +17,12 @@ export const UIInlineModal: FC<UIInlineModalProps> = ({
     isOpen,
     onClose,
     type,
+    breakpoint,
 }) => {
     const modal = useRef<HTMLIonModalElement>(null);
     type = type || 'default';
+
+    console.log(breakpoint);
 
     useEffect(() => {
         if (modal.current) {
@@ -38,7 +42,12 @@ export const UIInlineModal: FC<UIInlineModalProps> = ({
     };
 
     return (
-        <IonModal ref={modal} className={`${styles.modal} ${type}`}>
+        <IonModal
+            ref={modal}
+            className={`${styles.modal} ${type} ${breakpoint ? 'breakpoint-modal' : 'ss'}`}
+            initialBreakpoint={breakpoint || 0.75}
+            breakpoints={[0, 0.25, 0.5, 0.75, 1]}
+        >
             <div className="wrapper">
                 {children}
                 <div
@@ -47,8 +56,7 @@ export const UIInlineModal: FC<UIInlineModalProps> = ({
                         handleClose();
                     }}
                 >
-                    {/* <ion-icon name="close-outline"></ion-icon> */}
-                    <IonIcon icon={closeCircle} />
+                    <CloseIcon />
                 </div>
             </div>
         </IonModal>

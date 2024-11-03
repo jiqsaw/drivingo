@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 import { IonRouterLink } from '@ionic/react';
-import styles from './test-progress.module.scss';
+import './test-progress.scss';
 
 interface TestProgressListProps {
     children: React.ReactNode;
@@ -15,20 +15,20 @@ export const UITestProgressList: FC<TestProgressListProps> = ({
     routerLink,
 }) => {
     return (
-        <div className={`${styles.main}`}>
-            <div className={styles.header}>
-                <h3 className={styles.title}>{title}</h3>
+        <div className="test-progress-list">
+            <div className="list-header">
+                <h3 className="list-title">{title}</h3>
                 {routerLink && (
                     <IonRouterLink
                         routerDirection={'forward'}
                         routerLink={routerLink}
-                        className={styles.see_all}
+                        className="see-all"
                     >
                         See All
                     </IonRouterLink>
                 )}
             </div>
-            <div className={styles.list}>{children}</div>
+            <div className="list">{children}</div>
         </div>
     );
 };
