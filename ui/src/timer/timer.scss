@@ -1,0 +1,16 @@
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+  color: var(--color-highlight);
+}

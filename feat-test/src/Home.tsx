@@ -5,7 +5,7 @@ import {
     storeTheoryActiveTestSelectors,
     storeUiSelectors,
 } from '@drivingo/store';
-import { UIButton } from '@drivingo/ui';
+import { UIButton, UITimer } from '@drivingo/ui';
 import { IonAlert, useIonRouter } from '@ionic/react';
 import { FC, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -53,6 +53,21 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
 
     return (
         <aside className="test">
+            {/* Eksi margin top ya da position absolute ile yukari konumlanrilmali */}
+            {type === TestType.MockTest && (
+                <div className="test__timer">
+                    <UITimer
+                        type="clock"
+                        warningFromNumber={5}
+                        initialCountdownValue={
+                            // CONSTANTS.mockTestInfo.duration * 60
+                            60
+                        }
+                        onFinish={() => finish()}
+                    />
+                </div>
+            )}
+
             <FeatTestContent
                 questionNo={test.indexLocator + 1}
                 questionsLength={test.questions.length}

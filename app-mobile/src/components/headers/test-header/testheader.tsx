@@ -1,10 +1,11 @@
+import { TestType } from '@drivingo/models';
 import { storeTheoryActiveTestActions } from '@drivingo/store';
 import { IonRouterLink } from '@ionic/react';
 import { FC } from 'react';
 import { useDispatch } from 'react-redux';
 import './testheader.scss';
 
-const TestHeader: FC = () => {
+const TestHeader: FC<{ type?: TestType }> = ({ type }) => {
     const dispatch = useDispatch();
 
     return (
@@ -24,7 +25,7 @@ const TestHeader: FC = () => {
             
             */}
             <IonRouterLink
-                routerLink="/theory-test/quick-test"
+                routerLink={`/theory-test/${type}`}
                 routerDirection="back"
                 onClick={() => exit()}
             >
