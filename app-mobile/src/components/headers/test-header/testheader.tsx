@@ -1,12 +1,16 @@
 import { TestType } from '@drivingo/models';
-import { storeTheoryActiveTestActions } from '@drivingo/store';
+import {
+    storeTheoryActiveTestActions,
+    storeTheoryActiveTestSelectors,
+} from '@drivingo/store';
 import { IonRouterLink } from '@ionic/react';
 import { FC } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import './testheader.scss';
 
 const TestHeader: FC<{ type?: TestType }> = ({ type }) => {
     const dispatch = useDispatch();
+    const isPaused = useSelector(storeTheoryActiveTestSelectors.isPaused);
 
     return (
         <div className="test-header">
@@ -32,10 +36,27 @@ const TestHeader: FC<{ type?: TestType }> = ({ type }) => {
                 Exit
             </IonRouterLink>
 
+            {/* Exit e tiklaninca alert cikacak, pause orada olacak. Bknz mevcut app */}
+            <button onClick={() => onPauseHandler()}>
+                {isPaused ? 'Resume' : 'Pause'}
+            </button>
+
+            {isPaused && (
+                <button onClick={() => onPauseHandler()}>Resume</button>
+            )}
+
             {/* TODO: Theme chenge icon here. Ui library e eklenebilir: UIThemeButton. Normal svg file kullanilmali (class degil). Svg ui klasoru altinda assets klasorune konulmali. */}
             {/* TODO: Translate icon here. Button UI library a eklenebilir: UITranslateButton. Svg ayni sekilde ui/assets klasorune konulmali. */}
         </div>
     );
+
+    function onPauseHandler() {
+        if (isPaused) {
+            dispatch(storeTheoryActiveTestActions.unpause());
+        } else {
+            dispatch(storeTheoryActiveTestActions.pause());
+        }
+    }
 
     function exit() {
         dispatch(storeTheoryActiveTestActions.exit());

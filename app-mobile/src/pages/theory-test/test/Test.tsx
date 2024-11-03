@@ -9,7 +9,6 @@ import './styles.scss';
 
 const Test = () => {
     const testType = useParams<{ type: string }>().type as unknown as TestType;
-
     const [showCountdown, setShowCountdown] = useState<boolean>(
         testType === TestType.MockTest,
     );

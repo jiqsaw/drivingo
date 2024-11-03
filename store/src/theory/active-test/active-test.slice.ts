@@ -92,6 +92,12 @@ export default createSlice({
             state.showFlaggedOnly = true;
             state.indexLocator = 0;
         },
+        pause(state) {
+            state.isPaused = true;
+        },
+        unpause(state) {
+            state.isPaused = false;
+        },
         finish(state) {
             state.view = TestView.notActive;
             state.questions.map((item) => (item.isFlagged = false));

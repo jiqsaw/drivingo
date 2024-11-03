@@ -24,7 +24,7 @@ const TestReviewHeader: FC = () => {
             
             */}
             <IonRouterLink
-                routerLink="/theory-test/quick-test"
+                routerLink="/"
                 routerDirection="back"
                 onClick={() => exit()}
             >

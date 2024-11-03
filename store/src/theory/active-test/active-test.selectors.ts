@@ -72,6 +72,10 @@ const isTestResultSuccess = createSelector(
     },
 );
 
+const isPaused = createSelector(activeTest, (test) => {
+    return test.isPaused;
+});
+
 const topicResults = createSelector(activeTest, (test) => {
     const topicMap: { [key: string]: { correct: number; total: number } } = {};
 
@@ -111,5 +115,6 @@ export default {
     questionsLength,
     passingRequiredCorrect,
     isTestResultSuccess,
+    isPaused,
     topicResults,
 };

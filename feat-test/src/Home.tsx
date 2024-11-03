@@ -52,13 +52,14 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
     }
 
     return (
-        <aside className="test">
+        <aside className={`test ${test.isPaused ? 'paused' : ''}`}>
             {/* Eksi margin top ya da position absolute ile yukari konumlanrilmali */}
             {type === TestType.MockTest && (
                 <div className="test__timer">
                     <UITimer
                         type="clock"
                         warningFromNumber={5}
+                        isPaused={test.isPaused}
                         initialCountdownValue={
                             // CONSTANTS.mockTestInfo.duration * 60
                             60

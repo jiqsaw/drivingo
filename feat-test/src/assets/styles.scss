@@ -18,3 +18,8 @@
 .test__timer {
   // tasarim entegrasyonu bu css ile. Timer icindeki css e dokunmayalim.
 }
+
+.paused {
+  filter: blur(5px);
+  pointer-events: none;
+}

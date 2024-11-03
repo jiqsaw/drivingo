@@ -4,25 +4,34 @@ import './timer.scss';
 type TimerProps = {
     type: 'number' | 'clock';
     initialCountdownValue: number;
-    // isPaused: boolean;
-    // onChange?: (no: number) => void;
     warningFromNumber?: number;
+    isPaused?: boolean;
     onFinish: () => void;
 };
 
 export const UITimer: FC<TimerProps> = (props: TimerProps) => {
-    const { type, initialCountdownValue, warningFromNumber, onFinish } = props;
+    const {
+        type,
+        initialCountdownValue,
+        warningFromNumber,
+        isPaused,
+        onFinish,
+    } = props;
     const [currentCount, setCurrentCount] = useState(initialCountdownValue);
+    const [finished, setFinished] = useState(false); // Prevent multiple calls to onFinish
 
     useEffect(() => {
-        if (currentCount > 0) {
+        if (currentCount > 0 && !isPaused) {
             const countdownInterval = setInterval(() => {
                 setCurrentCount((prevCount) => {
                     if (prevCount <= 1) {
                         clearInterval(countdownInterval);
-                        setTimeout(() => {
-                            onFinish();
-                        }, 10);
+                        if (!finished) {
+                            setFinished(true);
+                            setTimeout(() => {
+                                onFinish();
+                            }, 10);
+                        }
                         return 0;
                     }
                     return prevCount - 1;
@@ -31,7 +40,7 @@ export const UITimer: FC<TimerProps> = (props: TimerProps) => {
 
             return () => clearInterval(countdownInterval);
         }
-    }, [onFinish]);
+    }, [currentCount, isPaused, finished, onFinish]);
 
     return (
         <span
