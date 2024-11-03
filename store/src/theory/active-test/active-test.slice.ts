@@ -23,6 +23,23 @@ export default createSlice({
         addTopics: (state, action: PayloadAction<ITopic[]>) => {
             state.filteredTopics = action.payload;
         },
+        selectTopic: (state, action: PayloadAction<{ topic: ITopic }>) => {
+            const topic = action.payload.topic;
+            if (!state.filteredTopics) {
+                state.filteredTopics = [topic];
+            } else {
+                const isExist = state.filteredTopics.some(
+                    (item) => item.code === topic.code,
+                );
+                if (isExist) {
+                    state.filteredTopics = state.filteredTopics.filter(
+                        (item) => item.code !== topic.code,
+                    );
+                } else {
+                    state.filteredTopics = [...state.filteredTopics, topic];
+                }
+            }
+        },
         start: (
             state,
             action: PayloadAction<{

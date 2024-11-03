@@ -4,7 +4,7 @@ import { UITimer } from '@drivingo/ui';
 import { IonContent, IonPage } from '@ionic/react';
 import { useState } from 'react';
 import { useParams } from 'react-router';
-import TestHeader from '../../../components/headers/test-header/testheader';
+import TestHeader from '../../../components/headers/test-header/test-header';
 import './styles.scss';
 
 const Test = () => {

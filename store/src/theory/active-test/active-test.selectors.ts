@@ -16,6 +16,10 @@ const currentQuestion = createSelector(activeTest, (test) =>
     getCurrentQuestion(test),
 );
 
+const filteredTopics = createSelector(activeTest, (test) => {
+    return test.filteredTopics;
+});
+
 const correctCount = createSelector(activeTest, (test) =>
     getCorrectCount(test.questions),
 );
@@ -108,6 +112,7 @@ const topicResults = createSelector(activeTest, (test) => {
 export default {
     activeTest,
     currentQuestion,
+    filteredTopics,
     correctCount,
     isLastQuestion,
     isFirstQuestion,

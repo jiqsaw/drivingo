@@ -3,28 +3,23 @@ import { CONSTANTS } from '@drivingo/global';
 import { ITopic, TestType } from '@drivingo/models';
 import {
     storeTheoryActiveTestActions,
+    storeTheoryActiveTestSelectors,
     storeUiActions,
     storeUiSelectors,
 } from '@drivingo/store';
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
-import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Subheader } from '../../../components/headers/subheader/subheader';
 
 const QuickTest = () => {
     const topics = TopicDataProvider.getData();
-
     const dispatch = useDispatch();
-    const [selectedItems, setSelectedItems] = useState<ITopic[] | null>(null);
+    const filteredTopics = useSelector(
+        storeTheoryActiveTestSelectors.filteredTopics,
+    );
     const uiQuickTestNumberOfQuestions = useSelector(
         storeUiSelectors.quickTestNumberOfQuestions,
     );
-
-    useEffect(() => {
-        if (selectedItems !== null) {
-            dispatch(storeTheoryActiveTestActions.addTopics(selectedItems));
-        }
-    }, [selectedItems]);
 
     return (
         <IonPage>
@@ -58,7 +53,7 @@ const QuickTest = () => {
                                 key={topic.code}
                                 onClick={() => selectTopic(topic)}
                             >
-                                {selectedItems?.includes(topic) && <>✓</>}
+                                {filteredTopics?.includes(topic) && <>✓</>}
                                 {topic.name}
                             </div>
                         );
@@ -76,14 +71,7 @@ const QuickTest = () => {
     );
 
     function selectTopic(topic: ITopic) {
-        setSelectedItems((prevSelected) => {
-            if (prevSelected == null) {
-                return [topic];
-            }
-            return prevSelected.includes(topic)
-                ? prevSelected.filter((item) => item.code !== topic.code)
-                : [...prevSelected, topic];
-        });
+        dispatch(storeTheoryActiveTestActions.selectTopic({ topic }));
     }
 
     function handleNumberOfQuestionsChange(item: number) {

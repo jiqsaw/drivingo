@@ -6,7 +6,7 @@ import {
 import { IonRouterLink } from '@ionic/react';
 import { FC } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import './testheader.scss';
+import './test-header.scss';
 
 const TestHeader: FC<{ type?: TestType }> = ({ type }) => {
     const dispatch = useDispatch();
@@ -36,7 +36,12 @@ const TestHeader: FC<{ type?: TestType }> = ({ type }) => {
                 Exit
             </IonRouterLink>
 
-            {/* Exit e tiklaninca alert cikacak, pause orada olacak. Bknz mevcut app */}
+            {/* Exit e tiklaninca alert cikacak, pause orada olacak. Bknz mevcut app 
+            Alert => Exit - Pause = Cancel
+                Exit => exit()
+                Pause => onPauseHandler()
+                Cancel =? dismiss alert
+            */}
             <button onClick={() => onPauseHandler()}>
                 {isPaused ? 'Resume' : 'Pause'}
             </button>

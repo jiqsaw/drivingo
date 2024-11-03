@@ -1,7 +1,6 @@
 import { IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router';
-import Home from './pages/Home';
 import Settings from './pages/Settings';
 import Subscription from './pages/Subscription';
 import TrafficSigns from './pages/TrafficSigns';
@@ -12,8 +11,6 @@ import HazardPerceptionDetail from './pages/theory-test/hazard-perception/Detail
 import HazardPerception from './pages/theory-test/hazard-perception/HazardPerception';
 import HazardPerceptionResult from './pages/theory-test/hazard-perception/Result';
 import Learn from './pages/theory-test/learn/Learn';
-import PractiseTopic from './pages/theory-test/learn/practise-topics/PractiseTopic';
-import StudyTopic from './pages/theory-test/learn/study-topics/StudyTopic';
 import MockTest from './pages/theory-test/mock-test/MockTest';
 import QuickTest from './pages/theory-test/quick-test/QuickTest';
 import Test from './pages/theory-test/test/Test';
@@ -78,23 +75,6 @@ const Router: React.FC = () => {
                 <Route
                     path="/theory-test/hazard-perception/result"
                     render={() => <HazardPerceptionResult />}
-                    exact={true}
-                />
-
-                {/* Theory Test Segment 2 */}
-                <Route
-                    path="/theory-test/learn/study/:topic"
-                    render={() => <StudyTopic />}
-                    exact={true}
-                />
-                <Route
-                    path="/theory-test/learn/practise/:topic"
-                    render={() => <PractiseTopic />}
-                    exact={true}
-                />
-                <Route
-                    path="/theory-test/mock-test/:test-id"
-                    render={() => <Home />}
                     exact={true}
                 />
 
