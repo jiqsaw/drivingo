@@ -67,7 +67,7 @@ const FeatTestReview: FC = () => {
                                     number={i + 1}
                                     question={item.question}
                                     status={
-                                        item.answer.toLowerCase() ===
+                                        item.answer ===
                                         item.selectedOptionChar?.toLowerCase()
                                     }
                                     onClick={() => {

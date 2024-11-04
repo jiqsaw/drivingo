@@ -83,7 +83,7 @@ const QuickTest = () => {
                     </UICardList>
                     <div
                         className={`fixed-bottom-button  ${
-                            selectedItems && selectedItems.length > 0
+                            filteredTopics && filteredTopics.length > 0
                                 ? 'active'
                                 : 'disabled'
                         }`}
