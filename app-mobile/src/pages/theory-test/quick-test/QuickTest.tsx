@@ -35,21 +35,31 @@ const QuickTest = () => {
                         Select multiple topics and build your own custom test.
                         Analyse your progress.
                     </p>
-
-                    <span>Number of questions: </span>
-                    {CONSTANTS.quickTestNumberOfQuestionsList.map((item) => {
-                        return (
-                            <span
-                                key={item}
-                                onClick={() =>
-                                    handleNumberOfQuestionsChange(item)
-                                }
-                            >
-                                {uiQuickTestNumberOfQuestions === item && '✓ '}
-                                {item} &nbsp;
-                            </span>
-                        );
-                    })}
+                    <div className="quick-test-number-of-questions">
+                        <h4 className="quick-test-number-of-questions__title">
+                            Number of questions:{' '}
+                        </h4>
+                        {CONSTANTS.quickTestNumberOfQuestionsList.map(
+                            (item) => {
+                                return (
+                                    <span
+                                        className={`quick-test-number-of-questions__item ${
+                                            uiQuickTestNumberOfQuestions ===
+                                            item
+                                                ? 'active'
+                                                : ''
+                                        }`}
+                                        key={item}
+                                        onClick={() =>
+                                            handleNumberOfQuestionsChange(item)
+                                        }
+                                    >
+                                        {item}
+                                    </span>
+                                );
+                            },
+                        )}
+                    </div>
 
                     <UICardList className="grid-2-cols">
                         {topics.map((topic) => {
