@@ -58,7 +58,7 @@ export default createSlice({
                 action.payload.testLearnPracticeGroup,
                 state.filteredTopics,
             );
-            state.view = TestView.Active;
+            state.view = TestView.Review;
         },
         startQuickTest: (
             state,

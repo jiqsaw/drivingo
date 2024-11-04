@@ -1,5 +1,10 @@
 import { TestDataProvider } from '@drivingo/data-provider';
-import { IQuestion, OptionChar, TestView } from '@drivingo/models';
+import {
+    IQuestion,
+    IQuestionOption,
+    OptionChar,
+    TestView,
+} from '@drivingo/models';
 import { FC } from 'react';
 
 interface Props {
@@ -18,13 +23,14 @@ const FeatTestContent: FC<Props> = (props) => {
         questionsLength,
         questionItem,
         selectedOptionChar,
+        testView,
         onSelectOption,
     } = props;
     return (
         <>
             <div>
                 <p>
-                    Soru no:&nbsp;
+                    Question no:&nbsp;
                     {questionNo}/{questionsLength}
                 </p>
                 <p>
@@ -46,12 +52,14 @@ const FeatTestContent: FC<Props> = (props) => {
                             className={`test__option ${selectedOptionChar === option.char ? 'test__option--selected' : ''}`}
                             key={'option-' + i}
                             onClick={() =>
-                                TestView.Active &&
+                                testView === TestView.Active &&
                                 onSelectOption &&
                                 onSelectOption(option.char)
                             }
                         >
-                            {option.char}){option.text}
+                            {getOptionIndicator(option, questionItem.answer)}
+
+                            {option.text}
                             {option.img && (
                                 <img
                                     src={TestDataProvider.getOptionImage(
@@ -67,6 +75,24 @@ const FeatTestContent: FC<Props> = (props) => {
             </div>
         </>
     );
+
+    // ?? Use this method or extract the logic into another method to apply the same logic for the option item background
+    function getOptionIndicator(option: IQuestionOption, answer: OptionChar) {
+        const isSelectedOption = selectedOptionChar === option.char;
+        const isOptionCorrect =
+            option.char?.toLowerCase() === answer?.toLowerCase();
+
+        if (testView === TestView.Review) {
+            if (isSelectedOption) {
+                return isOptionCorrect ? '✓ ' : 'X ';
+            }
+            if (isOptionCorrect) {
+                return '✓ ';
+            }
+        }
+
+        return option.char;
+    }
 };
 
 export default FeatTestContent;

@@ -12,11 +12,7 @@ export function getCurrentQuestion(test: IStoreTheoryActiveTest) {
 }
 
 export function getCorrectCount(questions: IStoreTheoryActiveTestQuestion[]) {
-    return questions.filter(
-        (e) =>
-            e.answer.toLowerCase() ===
-            e.selectedOptionChar?.toString().toLowerCase(),
-    ).length;
+    return questions.filter((e) => e.answer === e.selectedOptionChar).length;
 }
 
 export function getNextFlaggedQuestionIndex(

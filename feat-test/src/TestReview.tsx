@@ -48,8 +48,7 @@ const FeatTestReview: FC = () => {
                         return (
                             <div>
                                 {i + 1} -
-                                {item.answer.toLowerCase() ===
-                                item.selectedOptionChar?.toLowerCase()
+                                {item.answer === item.selectedOptionChar
                                     ? 'Check'
                                     : 'Fail'}{' '}
                                 {item.question}

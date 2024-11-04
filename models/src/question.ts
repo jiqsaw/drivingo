@@ -7,7 +7,7 @@ export interface IQuestion extends IQuestionBase {
     topicCode: string;
     questionImg?: string;
     questionVideo?: string;
-    answer: string;
+    answer: OptionChar;
     isNIExempts: boolean;
 }
 
