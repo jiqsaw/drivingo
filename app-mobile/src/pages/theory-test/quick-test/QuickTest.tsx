@@ -69,7 +69,7 @@ const QuickTest = () => {
                                     <UITestProgressCard
                                         key={topic.code}
                                         title={topic.name}
-                                        progress={topic.count}
+                                        progress={20}
                                         icon={<AlertsIcon />}
                                         checkmark={filteredTopics?.includes(
                                             topic,
