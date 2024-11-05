@@ -1,7 +1,7 @@
 export default {
     questionCount: 762,
-    quickTestNumberOfQuestionsList: [5, 10, 15, 20],
-    quickTestNumberOfQuestionsDefault: 20,
+    quickTestNumberOfQuestionsList: [10, 20, 30, 40],
+    quickTestNumberOfQuestionsDefault: 10,
     mockTestInfo: {
         duration: 57,
         questionsLength: 50,

@@ -76,7 +76,7 @@ const FeatTestContent: FC<Props> = (props) => {
         </>
     );
 
-    // ?? Use this method or extract the logic into another method to apply the same logic for the option item background
+    // ???? Use this method or extract the logic into another method to apply the same logic for the option item background
     function getOptionIndicator(option: IQuestionOption, answer: OptionChar) {
         const isSelectedOption = selectedOptionChar === option.char;
         const isOptionCorrect =
