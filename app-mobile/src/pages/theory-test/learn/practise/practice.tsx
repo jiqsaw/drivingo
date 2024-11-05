@@ -8,6 +8,7 @@ import { IonActionSheet, IonButton, useIonRouter } from '@ionic/react';
 import { OverlayEventDetail } from '@ionic/react/dist/types/components/react-component-lib/interfaces';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { storeTheoryProgressSelectors } from 'store/src/theory/progress/progress';
 
 const LearnPractice = () => {
     const dispatch = useDispatch();
@@ -16,6 +17,7 @@ const LearnPractice = () => {
     const filteredTopics = useSelector(
         storeTheoryActiveTestSelectors.filteredTopics,
     );
+    const progress = useSelector(storeTheoryProgressSelectors.progress);
 
     const [isActionSheetOpen, setIsActionSheetOpen] = useState(false);
 
@@ -37,24 +39,25 @@ const LearnPractice = () => {
                 Start
             </IonButton>
 
+            {/* ????? backdrop error */}
             <IonActionSheet
                 isOpen={isActionSheetOpen}
                 header="Please select which questions to answer"
                 buttons={[
                     {
-                        text: 'All',
+                        text: `All (${getTotalAll()})`,
                         role: TestLearnPracticeGroup.All.toString(),
                     },
                     {
-                        text: 'Unanswered',
+                        text: `Unanswered (${getTotalUnanswered()})`,
                         role: TestLearnPracticeGroup.Unanswered.toString(),
                     },
                     {
-                        text: 'Incorrect',
+                        text: `Incorrect (${getTotalIncorrect()})`,
                         role: TestLearnPracticeGroup.Incorrect.toString(),
                     },
                     {
-                        text: 'Incorrect and unanswered',
+                        text: `Incorrect and unanswered (${getTotalUnanswered() + getTotalIncorrect()})`,
                         role: TestLearnPracticeGroup.IncorrectAndUnanswered.toString(),
                     },
                     {
@@ -72,10 +75,61 @@ const LearnPractice = () => {
     }
 
     function onActionSheetDismiss(result: OverlayEventDetail) {
-        router.push(
-            `/theory-test/test/${TestType.LearnPractice}?learnPracticeGroup=${result.role}`,
-            'forward',
+        setIsActionSheetOpen(false);
+        const { role } = result;
+        if (role && role !== 'backdrop' && role !== 'cancel') {
+            router.push(
+                `/theory-test/test/${TestType.LearnPractice}?learnPracticeGroup=${role}`,
+                'forward',
+            );
+        }
+    }
+
+    function getTotalAll() {
+        if (!filteredTopics || !topics) return 0;
+
+        const filteredTopicCodes = new Set(
+            filteredTopics.map((item) => item.code),
         );
+
+        return topics.reduce((sum, topic) => {
+            return filteredTopicCodes.has(topic.code) ? sum + topic.count : sum;
+        }, 0);
+    }
+
+    function getTotalUnanswered() {
+        if (!filteredTopics || !progress.learnPractice.topics) return 0;
+
+        const filteredTopicCodes = new Set(
+            filteredTopics.map((item) => item.code),
+        );
+
+        return progress.learnPractice.topics.reduce((total, item) => {
+            if (filteredTopicCodes.has(item.code)) {
+                const topicCount =
+                    topics.find((topic) => topic.code === item.code)?.count ||
+                    0;
+                const unansweredCount =
+                    topicCount -
+                    (item.corrects.length + item.incorrects.length);
+                return total + unansweredCount;
+            }
+            return total;
+        }, 0);
+    }
+
+    function getTotalIncorrect() {
+        if (!filteredTopics || !progress.learnPractice.topics) return 0;
+
+        const filteredTopicCodes = new Set(
+            filteredTopics.map((item) => item.code),
+        );
+
+        return progress.learnPractice.topics.reduce((total, item) => {
+            return filteredTopicCodes.has(item.code)
+                ? total + item.incorrects.length
+                : total;
+        }, 0);
     }
 };
 

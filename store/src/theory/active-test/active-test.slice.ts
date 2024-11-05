@@ -7,6 +7,7 @@ import {
     TestView,
 } from '@drivingo/models';
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { IStoreProgressTestBase } from '../progress/progress.model';
 import {
     getActiveTestQuestions,
     getCurrentQuestion,
@@ -50,14 +51,50 @@ export default createSlice({
             state,
             action: PayloadAction<{
                 testLearnPracticeGroup: TestLearnPracticeGroup;
+                progress: IStoreProgressTestBase;
             }>,
         ) => {
+            const progressTopics = action.payload.progress.topics;
             state.type = TestType.LearnPractice;
-            // Unanswered etc filtre ???
-            state.questions = TestDataProvider.getNewLearnPracticeTest(
+
+            let questions = TestDataProvider.getNewLearnPracticeTest(
                 action.payload.testLearnPracticeGroup,
                 state.filteredTopics,
             );
+
+            const allCorrects = progressTopics.flatMap((item) => item.corrects);
+            const allIncorrects = progressTopics.flatMap(
+                (item) => item.incorrects,
+            );
+
+            const questionsFilteredByIncorrects = questions.filter((item) =>
+                allIncorrects.includes(item.code),
+            );
+
+            const questionsFilteredByUnanswered = questions.filter(
+                (item) =>
+                    !allCorrects.includes(item.code) &&
+                    !allIncorrects.includes(item.code),
+            );
+
+            switch (action.payload.testLearnPracticeGroup) {
+                case TestLearnPracticeGroup.Unanswered:
+                    state.questions = questionsFilteredByUnanswered;
+                    break;
+                case TestLearnPracticeGroup.Incorrect:
+                    state.questions = questionsFilteredByIncorrects;
+                    break;
+                case TestLearnPracticeGroup.IncorrectAndUnanswered:
+                    state.questions = [
+                        ...questionsFilteredByUnanswered,
+                        ...questionsFilteredByIncorrects,
+                    ];
+                    break;
+                default:
+                    state.questions = questions;
+                    break;
+            }
+
             state.view = TestView.Review;
         },
         startQuickTest: (

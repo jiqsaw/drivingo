@@ -21,7 +21,6 @@ export const TestDataProvider = {
                     .includes(item.topicCode),
             );
         }
-        console.log('group:', group);
         return questions;
     },
     getNewQuickTest: (numberOfQuestions: number, filteredTopics?: ITopic[]) => {

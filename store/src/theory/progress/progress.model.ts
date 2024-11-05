@@ -1,4 +1,5 @@
 export interface IStoreProgress {
+    learnPractice: IStoreProgressLearnPracticeTest;
     quickTest: IStoreProgressQuickTest;
     mockTest: IStoreProgressMockTest;
     // hazardPerception: IStoreProgressHazardPerception[];
@@ -8,6 +9,9 @@ export interface IStoreProgressTestBase {
     topics: IStoreProgressTopicResult[];
     results: IStoreProgressTestResult[];
 }
+
+export interface IStoreProgressLearnPracticeTest
+    extends IStoreProgressTestBase {}
 
 export interface IStoreProgressQuickTest extends IStoreProgressTestBase {}
 
@@ -21,8 +25,8 @@ export interface IStoreProgressHazardPerception {
 
 export interface IStoreProgressTopicResult {
     code: string;
-    correct: number;
-    incorrect: number;
+    corrects: string[];
+    incorrects: string[];
     lastAnsweredQuestionCode?: string;
 }
 

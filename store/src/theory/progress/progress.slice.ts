@@ -14,8 +14,8 @@ const initialState: IStoreProgressTestBase = {
     topics: TopicDataProvider.getData().map((topic) => {
         const item: IStoreProgressTopicResult = {
             code: topic.code,
-            correct: 0,
-            incorrect: 0,
+            corrects: [],
+            incorrects: [],
         };
         return item;
     }),
@@ -25,6 +25,9 @@ const initialState: IStoreProgressTestBase = {
 export default createSlice({
     name: 'theory/progress',
     initialState: {
+        learnPractice: {
+            ...initialState,
+        },
         quickTest: {
             ...initialState,
         },
@@ -58,9 +61,25 @@ export default createSlice({
                 );
                 if (topic) {
                     if (question.selectedOptionChar === question.answer) {
-                        topic.correct += 1;
+                        if (!topic.corrects.includes(question.code)) {
+                            topic.corrects.push(question.code);
+                        }
+                        if (topic.incorrects.includes(question.code)) {
+                            topic.incorrects = topic.incorrects.filter(
+                                (questionCode) =>
+                                    questionCode !== question.code,
+                            );
+                        }
                     } else {
-                        topic.incorrect += 1;
+                        if (!topic.incorrects.includes(question.code)) {
+                            topic.incorrects.push(question.code);
+                        }
+                        if (topic.corrects.includes(question.code)) {
+                            topic.corrects = topic.corrects.filter(
+                                (questionCode) =>
+                                    questionCode !== question.code,
+                            );
+                        }
                     }
                     topic.lastAnsweredQuestionCode = question.code;
                 }
@@ -72,6 +91,9 @@ export default createSlice({
             };
 
             switch (test.type) {
+                case TestType.LearnPractice:
+                    state.learnPractice = { ...progressTestBase };
+                    break;
                 case TestType.QuickTest:
                     state.quickTest = { ...progressTestBase };
                     break;

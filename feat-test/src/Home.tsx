@@ -11,7 +11,10 @@ import { IonAlert, IonModal, useIonRouter } from '@ionic/react';
 import { FC, useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
-import { storeTheoryProgressActions } from 'store/src/theory/progress/progress';
+import {
+    storeTheoryProgressActions,
+    storeTheoryProgressSelectors,
+} from 'store/src/theory/progress/progress';
 import './assets/styles.scss';
 import FeatTestContent from './components/test-content';
 
@@ -34,6 +37,8 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
         storeTheoryActiveTestSelectors.isFirstQuestion,
     );
 
+    const progress = useSelector(storeTheoryProgressSelectors.progress);
+
     const modalExplanation = useRef<HTMLIonModalElement>(null);
     const [showExplanation, setShowExplanation] = useState<boolean>(false);
 
@@ -45,8 +50,6 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
         paramLearnPracticeGroup = queryParams.get(
             'learnPracticeGroup',
         ) as unknown as TestLearnPracticeGroup;
-
-        console.log('paramLearnPracticeGroup:', paramLearnPracticeGroup);
     }
 
     useEffect(() => {
@@ -59,6 +62,7 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
                                 {
                                     testLearnPracticeGroup:
                                         paramLearnPracticeGroup,
+                                    progress: progress.learnPractice,
                                 },
                             ),
                         );

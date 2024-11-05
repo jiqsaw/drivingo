@@ -46,6 +46,7 @@ const TestHeader: FC<{ type?: TestType }> = ({ type }) => {
                 {isPaused ? 'Resume' : 'Pause'}
             </button>
 
+            {/* ??? https://ionicframework.com/docs/api/backdrop */}
             {isPaused && (
                 <button onClick={() => onPauseHandler()}>Resume</button>
             )}
