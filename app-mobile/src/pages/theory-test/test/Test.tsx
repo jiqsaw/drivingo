@@ -25,7 +25,7 @@ const Test = () => {
                         />
                     </aside>
                 ) : (
-                    <aside className="container pb-140">
+                    <aside className="container">
                         <TestHeader type={testType} />
                         <FeatTest type={testType} />
                     </aside>

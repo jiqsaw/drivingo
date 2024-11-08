@@ -125,12 +125,14 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
                                 onClick={() => next()}
                                 text="Next"
                                 nextIcon={true}
-                                className="full-width btn-primary full-rounded"
+                                fullWidth
+                                fullRounded
                             />
                         ) : (
                             <UIButton
                                 id="present-alert"
-                                className="full-width btn-primary full-rounded"
+                                fullWidth
+                                fullRounded
                                 onClick={() =>
                                     getFlaggedQuestionsAmount() < 1 && finish()
                                 }

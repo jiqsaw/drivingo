@@ -1,5 +1,5 @@
 import { FeatTrafficSigns } from '@drivingo/feat-traffic-signs';
-import { UIScrollUp } from '@drivingo/ui';
+import { UIScrollTop } from '@drivingo/ui';
 import { IonContent, IonPage, ScrollDetail } from '@ionic/react';
 import { createRef, useState } from 'react';
 import BottomNavigation from '../components/bottom-navigation/bottom-navigation';
@@ -26,7 +26,7 @@ const TrafficSigns: React.FC = () => {
                 </aside>
                 <BottomNavigation />
             </IonContent>
-            <UIScrollUp
+            <UIScrollTop
                 visibled={visibledScrollTop}
                 handleScrollUp={() => {
                     contentRef.current?.scrollToTop(0);

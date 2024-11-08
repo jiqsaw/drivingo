@@ -22,8 +22,6 @@ export const UIInlineModal: FC<UIInlineModalProps> = ({
     const modal = useRef<HTMLIonModalElement>(null);
     type = type || 'default';
 
-    console.log(breakpoint);
-
     useEffect(() => {
         if (modal.current) {
             if (isOpen) {

@@ -5,7 +5,7 @@ import { CheckIcon } from '../icons';
 interface TestProgressCardProps {
     title: string;
     progress: number;
-    checkmark?: boolean;
+    isChecked?: boolean;
     icon: React.ReactNode;
     onClick?: () => void;
 }
@@ -13,14 +13,14 @@ interface TestProgressCardProps {
 export const UITestProgressCard: FC<TestProgressCardProps> = ({
     title,
     progress,
-    checkmark,
+    isChecked,
     icon,
     onClick,
 }) => {
     return (
         <div className="test-progress-card" onClick={onClick}>
             <div className="card-icon">{icon}</div>
-            {checkmark && <div className="checkmark"><CheckIcon /></div>}
+            {isChecked && <div className="checkmark"><CheckIcon /></div>}
             <h3 className="card-title">{title}</h3>
             <div className="progress-count">{progress}%</div>
             <div className="card-progress">

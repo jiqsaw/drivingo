@@ -51,11 +51,7 @@ const FeatTestResult: FC = () => {
                     routerLink="/theory-test/test-review"
                     className="full-width"
                 >
-                    <UIButton
-                        text="Review test"
-                        className="full-width"
-                        nextIcon={true}
-                    />
+                    <UIButton text="Review test" fullWidth nextIcon={true} />
                 </IonRouterLink>
             </div>
         </aside>

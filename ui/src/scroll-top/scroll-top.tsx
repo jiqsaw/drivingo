@@ -1,14 +1,14 @@
 import { FC } from 'react';
 import { ArrowUpIcon } from '../icons';
 
-import './scroll-up.scss';
+import './scroll-top.scss';
 
-type UIScrollUpProps = {
+type UIScrollTopProps = {
     visibled: boolean;
     handleScrollUp?: () => void;
 };
 
-export const UIScrollUp: FC<UIScrollUpProps> = ({
+export const UIScrollTop: FC<UIScrollTopProps> = ({
     visibled,
     handleScrollUp,
 }) => {

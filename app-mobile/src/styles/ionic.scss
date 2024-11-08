@@ -41,3 +41,12 @@ ion-back-button {
   display: block;
   color: var(--ion-primary-color);
 }
+
+
+ion-button {
+  --background: #ffbbbb;
+  --background-focused: #ffbbbb;
+  --background-hover: #ffbbbb;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+}

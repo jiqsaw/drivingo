@@ -63,7 +63,6 @@ const QuickTest = () => {
 
                     <UICardList className="grid-2-cols">
                         {topics.map((topic) => {
-                            console.log('topic', topic);
                             return (
                                 <>
                                     <UITestProgressCard
@@ -71,7 +70,7 @@ const QuickTest = () => {
                                         title={topic.name}
                                         progress={20}
                                         icon={<AlertsIcon />}
-                                        checkmark={filteredTopics?.includes(
+                                        isChecked={filteredTopics?.includes(
                                             topic,
                                         )}
                                         onClick={() => selectTopic(topic)}
@@ -95,7 +94,8 @@ const QuickTest = () => {
                         >
                             <UIButton
                                 id="present-alert"
-                                className="full-width btn-primary full-rounded"
+                                fullWidth
+                                fullRounded
                                 text="Start"
                                 nextIcon={true}
                             />
