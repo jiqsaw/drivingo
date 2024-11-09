@@ -7,7 +7,7 @@ import {
     TestView,
 } from '@drivingo/models';
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { IStoreProgressTestBase } from '../progress/progress.model';
+import { IStoreAnalysisTestBase } from 'store/src/analysis/analysis.model';
 import {
     getActiveTestQuestions,
     getCurrentQuestion,
@@ -51,10 +51,10 @@ export default createSlice({
             state,
             action: PayloadAction<{
                 testLearnPracticeGroup: TestLearnPracticeGroup;
-                progress: IStoreProgressTestBase;
+                analysis: IStoreAnalysisTestBase;
             }>,
         ) => {
-            const progressTopics = action.payload.progress.topics;
+            const analysisTopics = action.payload.analysis.topics;
             state.type = TestType.LearnPractice;
 
             let questions = TestDataProvider.getNewLearnPracticeTest(
@@ -62,8 +62,8 @@ export default createSlice({
                 state.filteredTopics,
             );
 
-            const allCorrects = progressTopics.flatMap((item) => item.corrects);
-            const allIncorrects = progressTopics.flatMap(
+            const allCorrects = analysisTopics.flatMap((item) => item.corrects);
+            const allIncorrects = analysisTopics.flatMap(
                 (item) => item.incorrects,
             );
 

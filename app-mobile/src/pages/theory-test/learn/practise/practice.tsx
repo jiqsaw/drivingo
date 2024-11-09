@@ -8,7 +8,7 @@ import { IonActionSheet, IonButton, useIonRouter } from '@ionic/react';
 import { OverlayEventDetail } from '@ionic/react/dist/types/components/react-component-lib/interfaces';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { storeTheoryProgressSelectors } from 'store/src/theory/progress/progress';
+import { storeAnalysisSelectors } from 'store/src/analysis/analysis';
 
 const LearnPractice = () => {
     const dispatch = useDispatch();
@@ -17,7 +17,7 @@ const LearnPractice = () => {
     const filteredTopics = useSelector(
         storeTheoryActiveTestSelectors.filteredTopics,
     );
-    const progress = useSelector(storeTheoryProgressSelectors.progress);
+    const analysis = useSelector(storeAnalysisSelectors.analysis);
 
     const [isActionSheetOpen, setIsActionSheetOpen] = useState(false);
 
@@ -98,13 +98,13 @@ const LearnPractice = () => {
     }
 
     function getTotalUnanswered() {
-        if (!filteredTopics || !progress.learnPractice.topics) return 0;
+        if (!filteredTopics || !analysis.learnPractice.topics) return 0;
 
         const filteredTopicCodes = new Set(
             filteredTopics.map((item) => item.code),
         );
 
-        return progress.learnPractice.topics.reduce((total, item) => {
+        return analysis.learnPractice.topics.reduce((total, item) => {
             if (filteredTopicCodes.has(item.code)) {
                 const topicCount =
                     topics.find((topic) => topic.code === item.code)?.count ||
@@ -119,13 +119,13 @@ const LearnPractice = () => {
     }
 
     function getTotalIncorrect() {
-        if (!filteredTopics || !progress.learnPractice.topics) return 0;
+        if (!filteredTopics || !analysis.learnPractice.topics) return 0;
 
         const filteredTopicCodes = new Set(
             filteredTopics.map((item) => item.code),
         );
 
-        return progress.learnPractice.topics.reduce((total, item) => {
+        return analysis.learnPractice.topics.reduce((total, item) => {
             return filteredTopicCodes.has(item.code)
                 ? total + item.incorrects.length
                 : total;

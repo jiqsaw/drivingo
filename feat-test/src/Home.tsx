@@ -11,10 +11,11 @@ import { IonAlert, IonModal, useIonRouter } from '@ionic/react';
 import { FC, useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
+
 import {
-    storeTheoryProgressActions,
-    storeTheoryProgressSelectors,
-} from 'store/src/theory/progress/progress';
+    storeAnalysisActions,
+    storeAnalysisSelectors,
+} from 'store/src/analysis/analysis';
 import './assets/styles.scss';
 import FeatTestContent from './components/test-content';
 
@@ -37,7 +38,7 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
         storeTheoryActiveTestSelectors.isFirstQuestion,
     );
 
-    const progress = useSelector(storeTheoryProgressSelectors.progress);
+    const analysis = useSelector(storeAnalysisSelectors.analysis);
 
     const modalExplanation = useRef<HTMLIonModalElement>(null);
     const [showExplanation, setShowExplanation] = useState<boolean>(false);
@@ -62,7 +63,7 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
                                 {
                                     testLearnPracticeGroup:
                                         paramLearnPracticeGroup,
-                                    progress: progress.learnPractice,
+                                    analysis: analysis.learnPractice,
                                 },
                             ),
                         );
@@ -238,7 +239,7 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
 
     function finish() {
         dispatch(storeTheoryActiveTestActions.finish());
-        dispatch(storeTheoryProgressActions.addTestResult({ test: test }));
+        dispatch(storeAnalysisActions.addTestResult({ test: test }));
         router.push('/theory-test/test-result', 'forward');
     }
 };

@@ -1,18 +1,18 @@
 import { TopicDataProvider } from '@drivingo/data-provider';
 import { TestType } from '@drivingo/models';
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import { getCorrectCount } from '../active-test/active-test-utils';
-import { IStoreTheoryActiveTest } from '../active-test/active-test.model';
+import { getCorrectCount } from '../theory/active-test/active-test-utils';
+import { IStoreTheoryActiveTest } from '../theory/active-test/active-test.model';
 import {
-    IStoreProgress,
-    IStoreProgressTestBase,
-    IStoreProgressTestResult,
-    IStoreProgressTopicResult,
-} from './progress.model';
+    IStoreAnalysis,
+    IStoreAnalysisTestBase,
+    IStoreAnalysisTestResult,
+    IStoreAnalysisTopicResult,
+} from './analysis.model';
 
-const initialState: IStoreProgressTestBase = {
+const initialState: IStoreAnalysisTestBase = {
     topics: TopicDataProvider.getData().map((topic) => {
-        const item: IStoreProgressTopicResult = {
+        const item: IStoreAnalysisTopicResult = {
             code: topic.code,
             corrects: [],
             incorrects: [],
@@ -23,7 +23,7 @@ const initialState: IStoreProgressTestBase = {
 };
 
 export default createSlice({
-    name: 'theory/progress',
+    name: 'analysis',
     initialState: {
         learnPractice: {
             ...initialState,
@@ -34,20 +34,20 @@ export default createSlice({
         mockTest: {
             ...initialState,
         },
-    } as IStoreProgress,
+    } as IStoreAnalysis,
     reducers: {
         addTestResult: (
             state,
             action: PayloadAction<{ test: IStoreTheoryActiveTest }>,
         ) => {
             const test = action.payload.test;
-            const testResult: IStoreProgressTestResult = {
+            const testResult: IStoreAnalysisTestResult = {
                 date: new Date(),
                 correct: getCorrectCount(action.payload.test.questions),
                 questionCount: action.payload.test.questions.length,
             };
 
-            let storedTopics: IStoreProgressTopicResult[];
+            let storedTopics: IStoreAnalysisTopicResult[];
             if (test.type === TestType.QuickTest) {
                 storedTopics = state.quickTest.topics;
             } else if (test.type === TestType.MockTest) {
@@ -85,21 +85,21 @@ export default createSlice({
                 }
             });
 
-            const progressTestBase: IStoreProgressTestBase = {
+            const analysisTestBase: IStoreAnalysisTestBase = {
                 topics: storedTopics,
                 results: [testResult, ...state.quickTest.results],
             };
 
             switch (test.type) {
                 case TestType.LearnPractice:
-                    state.learnPractice = { ...progressTestBase };
+                    state.learnPractice = { ...analysisTestBase };
                     break;
                 case TestType.QuickTest:
-                    state.quickTest = { ...progressTestBase };
+                    state.quickTest = { ...analysisTestBase };
                     break;
                 case TestType.MockTest:
                     state.mockTest = {
-                        ...progressTestBase,
+                        ...analysisTestBase,
                     };
                     break;
             }
