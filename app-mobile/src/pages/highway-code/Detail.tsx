@@ -1,5 +1,5 @@
+import { UIScrollTop } from '@drivingo/ui';
 import { IonContent, IonPage, ScrollDetail } from '@ionic/react';
-import { UIScrollUp } from '@drivingo/ui';
 import { Subheader } from 'app-mobile/src/components/headers/subheader/subheader';
   
 import FeatHighwayCodeDetail from 'feat-highway-code/src/Detail';
@@ -28,7 +28,7 @@ const HighwayCodeDetail = () => {
                     <FeatHighwayCodeDetail {...params} />
                 </aside>
             </IonContent>
-            <UIScrollUp
+            <UIScrollTop
                 visibled={visibledScrollTop}
                 handleScrollUp={() => {
                     contentRef.current?.scrollToTop(0);

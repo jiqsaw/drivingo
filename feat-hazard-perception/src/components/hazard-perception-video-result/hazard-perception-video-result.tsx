@@ -34,7 +34,7 @@ export const HazardPerceptionVideoResult = () => {
                 <p>
                     Practice for the hazard perception part of your theory test.
                 </p>
-                <IonRouterLink className="btn">
+                <IonRouterLink className="button">
                     <span>Review your test</span>
                     <ArrowNextIcon />
                 </IonRouterLink>

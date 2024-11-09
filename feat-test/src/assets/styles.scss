@@ -3,12 +3,67 @@
 }
 
 .test {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0 140px 0;
+
+  &__no {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.5;
+  }
+
+  &__question {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 20px;
+    font-weight: 700;
+    color: #F6E1CA;
+  }
+
+  &__question-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+
   &__option {
+    width: calc(100% + 16px);
+    display: flex;
+    gap: 4px;
+    border-radius: 16px;
+    padding: 8px 16px;
+    margin-left: -8px;
+    margin-right: -8px;
+
+    &-prefix {}
+
+    &-text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      img {
+        width: 100%;
+      }
+    }
+
     &--selected {
-      background-color: blue;
+      background-color: #BD2B65;
     }
   }
+
   &__flag {
+    margin-left: auto;
+
     &--selected {
       background-color: green;
     }
@@ -22,4 +77,87 @@
 .paused {
   filter: blur(5px);
   pointer-events: none;
+}
+
+.test-result {
+  width: 100%;
+  height: calc(100vh - 110px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+
+  &__status {
+    width: 220px;
+    height: 220px;
+    border-width: 21px;
+    border-style: solid;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 14px;
+    margin: 0 auto;
+    font-size: 32px;
+
+    svg {
+      width: 42px;
+      height: 42px;
+    }
+
+    &.success {
+      border-color: #5a9408;
+    }
+
+    &.fail {
+      border-color: #5F222A;
+    }
+  }
+
+  &__score {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  &__score-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__score-count {
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  &__actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+
+    .link {
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      display: block;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        position: relative;
+        top: 5px;
+      }
+    }
+  }
 }

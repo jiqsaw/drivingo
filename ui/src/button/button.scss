@@ -1,0 +1,28 @@
+.button {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.full-rounded {
+    border-radius: 30px;
+  }
+
+  .button-inner {
+    display: block;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 20px;
+
+    path {
+      fill: #343131;
+    }
+  }
+}
