@@ -2,10 +2,11 @@ import { IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router';
 import Settings from './pages/Settings';
-import Subscription from './pages/Subscription';
 import TrafficSigns from './pages/TrafficSigns';
 import HighwayCodeDetailPage from './pages/highway-code/Detail';
 import HighwayCode from './pages/highway-code/HighwayCode';
+import Login from './pages/login/Login';
+import Subscription from './pages/subscription/Subscription';
 import TheoryTest from './pages/theory-test/TheoryTest';
 import HazardPerceptionDetail from './pages/theory-test/hazard-perception/Detail';
 import HazardPerception from './pages/theory-test/hazard-perception/HazardPerception';
@@ -103,12 +104,15 @@ const Router: React.FC = () => {
                     exact={true}
                 />
 
-                {/* Subsciripton */}
+                {/* Subscription */}
                 <Route
-                    path="/subsciripton"
+                    path="/subscription"
                     render={() => <Subscription />}
                     exact={true}
                 />
+
+                {/* Login */}
+                <Route path="/login" render={() => <Login />} exact={true} />
             </IonRouterOutlet>
         </IonReactRouter>
     );

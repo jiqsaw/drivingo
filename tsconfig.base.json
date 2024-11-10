@@ -24,8 +24,10 @@
       "@drivingo/feat-highway-code": ["feat-highway-code/src/index.ts"],
       "@drivingo/feat-traffic-signs": ["feat-traffic-signs/src/index.ts"],
       "@drivingo/global": ["global/src/index.ts"],
+      "@drivingo/login": ["feat-login/src/index.ts"],
       "@drivingo/models": ["models/src/index.ts"],
       "@drivingo/store": ["store/src/index.ts"],
+      "@drivingo/subscription": ["feat-subscription/src/index.ts"],
       "@drivingo/test": ["feat-test/src/index.ts"],
       "@drivingo/ui": ["ui/src/index.ts"]
     }

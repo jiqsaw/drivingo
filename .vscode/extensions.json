@@ -1,3 +1,7 @@
 {
-  "recommendations": ["nrwl.angular-console", "biomejs.biome"]
+  "recommendations": [
+    "nrwl.angular-console",
+    "biomejs.biome",
+    "esbenp.prettier-vscode"
+  ]
 }
