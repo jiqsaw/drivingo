@@ -1,13 +1,9 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-    appId: 'io.ionic.starter',
-    appName: 'mobile',
+    appId: 'uk.co.drivingo',
+    appName: 'Drivingo',
     webDir: 'build',
-    bundledWebRuntime: false,
-    server: {
-        androidScheme: 'https',
-    },
 };
 
 export default config;
