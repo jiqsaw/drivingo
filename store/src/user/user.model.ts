@@ -1,3 +1,4 @@
 export interface IStoreUser {
-    name: string;
+    isLoggedIn: boolean;
+    name?: string;
 }

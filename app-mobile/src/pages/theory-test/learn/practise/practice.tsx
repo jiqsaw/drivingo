@@ -1,6 +1,7 @@
 import { TopicDataProvider } from '@drivingo/data-provider';
 import { ITopic, TestLearnPracticeGroup, TestType } from '@drivingo/models';
 import {
+    storeAnalysisSelectors,
     storeTheoryActiveTestActions,
     storeTheoryActiveTestSelectors,
 } from '@drivingo/store';
@@ -8,7 +9,6 @@ import { IonActionSheet, IonButton, useIonRouter } from '@ionic/react';
 import { OverlayEventDetail } from '@ionic/react/dist/types/components/react-component-lib/interfaces';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { storeAnalysisSelectors } from 'store/src/analysis/analysis';
 
 const LearnPractice = () => {
     const dispatch = useDispatch();

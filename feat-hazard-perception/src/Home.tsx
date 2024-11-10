@@ -2,8 +2,8 @@ import { DATA_HAZAR_CLIPS } from '@drivingo/data';
 import { IHazardClip } from '@drivingo/models';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { storeUiActions, storeUiSelectors } from 'store/src/ui/ui';
 
+import { storeUiActions, storeUiSelectors } from '@drivingo/store';
 import { TextRouteLink, UIInlineModal, UITabs } from 'ui/src';
 import { HazardPerceptionVideoCard } from './components';
 

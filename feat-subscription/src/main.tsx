@@ -1,8 +1,10 @@
+import { storeSubscriptionActions } from '@drivingo/store';
 import { UIButton } from '@drivingo/ui';
-import { IonAlert, useIonRouter } from '@ionic/react';
+import { IonAlert } from '@ionic/react';
+import { useDispatch } from 'react-redux';
 
 const FeatSubscription = () => {
-    const router = useIonRouter();
+    const dispatch = useDispatch();
 
     return (
         <aside>
@@ -28,7 +30,7 @@ const FeatSubscription = () => {
 
     function handleUpgrade() {
         console.log('handleUpgrade');
-        router.push('/login', 'forward');
+        dispatch(storeSubscriptionActions.unlimitedAccessMonthly());
     }
 };
 

@@ -2,6 +2,8 @@ import { TestDataProvider } from '@drivingo/data-provider';
 
 import { OptionChar, TestLearnPracticeGroup, TestType } from '@drivingo/models';
 import {
+    storeAnalysisActions,
+    storeAnalysisSelectors,
     storeTheoryActiveTestActions,
     storeTheoryActiveTestSelectors,
     storeUiSelectors,
@@ -11,11 +13,6 @@ import { IonAlert, IonModal, useIonRouter } from '@ionic/react';
 import { FC, useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
-
-import {
-    storeAnalysisActions,
-    storeAnalysisSelectors,
-} from 'store/src/analysis/analysis';
 import './assets/styles.scss';
 import FeatTestContent from './components/test-content';
 

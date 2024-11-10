@@ -1,6 +1,7 @@
 import { IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router';
+import ProtectedRoute from './ProtectedRoute';
 import Settings from './pages/Settings';
 import TrafficSigns from './pages/TrafficSigns';
 import HighwayCodeDetailPage from './pages/highway-code/Detail';
@@ -54,28 +55,58 @@ const Router: React.FC = () => {
                 />
                 <Route
                     path="/theory-test/hazard-perception/:id"
-                    render={() => <HazardPerceptionDetail />}
+                    render={() => {
+                        return (
+                            <ProtectedRoute>
+                                <HazardPerceptionDetail />
+                            </ProtectedRoute>
+                        );
+                    }}
                     exact={true}
                 />
                 <Route
                     path="/theory-test/test/:type"
-                    component={Test}
+                    render={() => {
+                        return (
+                            <ProtectedRoute>
+                                <Test />
+                            </ProtectedRoute>
+                        );
+                    }}
                     exact={true}
                 />
                 <Route
                     path="/theory-test/test-result"
-                    component={TestResult}
+                    render={() => {
+                        return (
+                            <ProtectedRoute>
+                                <TestResult />
+                            </ProtectedRoute>
+                        );
+                    }}
                     exact={true}
                 />
                 <Route
                     path="/theory-test/test-review"
-                    component={TestReview}
+                    render={() => {
+                        return (
+                            <ProtectedRoute>
+                                <TestReview />
+                            </ProtectedRoute>
+                        );
+                    }}
                     exact={true}
                 />
 
                 <Route
                     path="/theory-test/hazard-perception/result"
-                    render={() => <HazardPerceptionResult />}
+                    render={() => {
+                        return (
+                            <ProtectedRoute>
+                                <HazardPerceptionResult />
+                            </ProtectedRoute>
+                        );
+                    }}
                     exact={true}
                 />
 

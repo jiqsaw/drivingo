@@ -4,7 +4,8 @@ import { IStoreUser } from './user.model';
 export default createSlice({
     name: 'user',
     initialState: {
-        name: '',
+        // isLoggedIn: false,
+        isLoggedIn: true, // logged in for test purposes ???
     } as IStoreUser,
     reducers: {},
 });
