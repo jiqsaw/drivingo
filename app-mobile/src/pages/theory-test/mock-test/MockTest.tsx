@@ -6,7 +6,7 @@ const MockTest: React.FC = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
-                <aside className="container bg-style-theory-test">
+                <aside className="container theory-test">
                     <Subheader />
                     <h1>Mock Test</h1>
                     <br />
