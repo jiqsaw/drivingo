@@ -13,7 +13,7 @@ const persistConfig = {
     version: 0,
     storage: storage,
     key: 'drivingo-store-root',
-    blacklist: ['user', 'subscription', 'ui', 'theory'],
+    blacklist: ['subscription', 'theory'],
     debug: false,
     serialize: true,
 };

@@ -1,42 +1,19 @@
-import { Analytics, getAnalytics } from 'firebase/analytics';
-import { FirebaseApp, initializeApp } from 'firebase/app';
-import { User } from 'firebase/auth';
-import { Firestore, getFirestore } from 'firebase/firestore/lite';
-import { BehaviorSubject } from 'rxjs';
+import { FirebaseApp, getApps, initializeApp } from 'firebase/app';
+// import { getFirestore } from 'firebase/firestore/lite';
 import { FIREBASE_CONFIG } from './config';
 
-export const db = () => DbFirebase.getInstance();
+let firebaseApp: FirebaseApp;
 
-class DbFirebase {
-    app: FirebaseApp;
-    analytics: Analytics;
-    fireStore: Firestore;
-    authState$ = new BehaviorSubject<User | null>(null);
-
-    private static instance: DbFirebase;
-
-    public static getInstance(): DbFirebase {
-        if (!DbFirebase.instance) {
-            DbFirebase.instance = new DbFirebase();
-        }
-        return DbFirebase.instance;
+export const getFirebaseApp = (): FirebaseApp => {
+    if (!getApps().length) {
+        firebaseApp = initializeApp(FIREBASE_CONFIG);
+    } else {
+        firebaseApp = getApps()[0];
     }
+    return firebaseApp;
+};
 
-    constructor() {
-        console.log('DbFirebase Constructor');
+// export const db = getFirestore(getFirebaseApp());
+// export const analytics = getAnalytics(getFirebaseApp());
 
-        this.app = initializeApp(FIREBASE_CONFIG);
-        this.analytics = getAnalytics(this.app);
-        this.fireStore = getFirestore(this.app);
-
-        // this.auth();
-    }
-
-    // private auth() {
-    //     const auth = getAuth(this.app);
-    //     onAuthStateChanged(auth, (firebaseUser) => {
-    //         console.log('db/firbase: onAuthStateChanged:', firebaseUser);
-    //         this.authState$.next(firebaseUser);
-    //     });
-    // }
-}
+export * from './auth';

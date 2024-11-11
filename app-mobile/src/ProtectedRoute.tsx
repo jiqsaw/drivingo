@@ -15,14 +15,12 @@ const ProtectedRoute: FC<Props> = ({ children }) => {
     const isSubscribed = useSelector(storeSubscriptionSelectors.isSubscribed);
     const isLoggedIn = useSelector(storeUserSelectors.isLoggedIn);
 
-    if (!isSubscribed || !isLoggedIn) {
-        if (!isSubscribed) {
-            return <Subscription />;
-        } else {
-            return <Login />;
-        }
+    if (!isSubscribed) {
+        return <Subscription />;
+    } else if (!isLoggedIn) {
+        return <Login />;
     } else {
-        return children;
+        return <>{children}</>;
     }
 };
 

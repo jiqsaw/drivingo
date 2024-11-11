@@ -135,14 +135,12 @@ const Router: React.FC = () => {
                     exact={true}
                 />
 
-                {/* Subscription */}
                 <Route
                     path="/subscription"
                     render={() => <Subscription />}
                     exact={true}
                 />
 
-                {/* Login */}
                 <Route path="/login" render={() => <Login />} exact={true} />
             </IonRouterOutlet>
         </IonReactRouter>

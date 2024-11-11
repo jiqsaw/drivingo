@@ -1,4 +1,4 @@
-import { FeatLogin } from '@drivingo/login';
+import { FeatLogin } from '@drivingo/auth';
 import { IonContent, IonPage } from '@ionic/react';
 const Login = () => {
     return (
@@ -6,7 +6,6 @@ const Login = () => {
             <IonContent fullscreen>
                 <aside className="container">
                     <FeatLogin />
-                    {}
                 </aside>
             </IonContent>
         </IonPage>

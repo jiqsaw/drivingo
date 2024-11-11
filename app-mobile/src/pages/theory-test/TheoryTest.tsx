@@ -13,9 +13,13 @@ import {
 
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
 
+import { signOut } from '@drivingo/db/firebase';
+import { useDispatch } from 'react-redux';
 import '../../styles/pages/home.scss';
 
 const TheoryTest: React.FC = () => {
+    const dispatch = useDispatch();
+
     return (
         <IonPage>
             {/* <UIHeader title='Theory Test' /> */}
@@ -190,6 +194,7 @@ const TheoryTest: React.FC = () => {
                         >
                             <p>Subscription</p>
                         </IonRouterLink>
+                        <UIButton onClick={() => signOut()} text="Logout" />
                     </div>
                 </div>
             </IonContent>
