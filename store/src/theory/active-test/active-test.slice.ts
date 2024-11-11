@@ -182,7 +182,7 @@ export default createSlice({
             state.view = action.payload.view;
         },
         exit(_state) {
-            return { ...initialState };
+            return initialState;
         },
     },
 });

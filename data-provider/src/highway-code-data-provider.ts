@@ -16,7 +16,6 @@ export const HighwayCodeDataProvider = {
         }
         return contentTopics;
     },
-
     getSignTopics: (searchText?: string) => {
         const signTopics = DATA_HIGHWAY_CODE.signTopics;
         if (searchText) {

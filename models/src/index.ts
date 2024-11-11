@@ -6,3 +6,4 @@ export * from './test';
 export * from './theme';
 export * from './topic';
 export * from './traffic-signs';
+export * from './user';

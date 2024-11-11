@@ -1,3 +1,4 @@
+import { signInWithGoogle } from '@drivingo/db/firebase';
 import { UIButton } from '@drivingo/ui';
 
 const FeatLogin = () => {
@@ -7,22 +8,21 @@ const FeatLogin = () => {
             <p>content...</p>
             <UIButton
                 text="Login with Google"
-                onClick={() => loginWithGoogle()}
+                onClick={() => signInWithGoogle()}
             />{' '}
             <br />
             <br />
             <UIButton
                 text="Login with Apple"
-                onClick={() => loginWithApple()}
+                type="secondary"
+                onClick={() => appleSignIn()}
             />
+            <br />
+            <br />
         </aside>
     );
 
-    function loginWithGoogle() {
-        console.log('handle Google login');
-    }
-
-    function loginWithApple() {
+    async function appleSignIn() {
         console.log('handle Apple login');
     }
 };
