@@ -22,6 +22,18 @@ aside.container {
   display: block;
   background: var(--background-color);
   padding: var(--default-padding);
+
+  &.bg-style-highway-code {
+    background: var(--background-color-style-1);
+  }
+
+  &.bg-style-traffic-signs {
+    background: var(--background-color-style-2);
+  }
+
+  &.bg-style-theory-test {
+    background: var(--background-color-style-3);
+  }
 }
 
 .full-width {
