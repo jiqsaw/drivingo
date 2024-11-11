@@ -23,7 +23,7 @@ const HighwayCodeDetail = () => {
                     setVisibledScrollTop(ev.detail.scrollTop > 300);
                 }}
             >
-                <aside className="container">
+                <aside className="container bg-style-highway-code">
                     <Subheader />
                     <FeatHighwayCodeDetail {...params} />
                 </aside>

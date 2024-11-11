@@ -20,7 +20,7 @@ const TrafficSigns: React.FC = () => {
                     setVisibledScrollTop(ev.detail.scrollTop > 300);
                 }}
             >
-                <aside className="container">
+                <aside className="container bg-style-traffic-signs">
                     <Header />
                     <FeatTrafficSigns />
                 </aside>
