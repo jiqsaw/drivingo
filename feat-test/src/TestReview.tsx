@@ -13,8 +13,8 @@ import {
 } from '@drivingo/ui';
 import { FC, useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import FeatTestContent from './components/test-content';
 import './assets/styles.scss';
+import FeatTestContent from './components/test-content';
 
 const FeatTestReview: FC = () => {
     const hasRunOnce = useRef(false);
@@ -116,7 +116,6 @@ const FeatTestReview: FC = () => {
                 <div>
                     <UICardList className="column">
                         {topicResults.map((item) => {
-                            console.log(item);
                             return (
                                 <UITestResultCard
                                     count={`${item.correct}/${item.total}`}

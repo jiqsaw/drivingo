@@ -8,10 +8,11 @@ import {
 } from 'firebase/auth';
 import { getFirebaseApp } from '.';
 
-export const auth = getAuth(getFirebaseApp());
+export const auth = () => getAuth(getFirebaseApp());
+export const userEmail = () => auth().currentUser?.email;
 
-export function authStateChange(callback: (user: IUser) => void) {
-    const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
+export function authStateChange(callback: (user: IUser | null) => void) {
+    const unsubscribe = onAuthStateChanged(auth(), (firebaseUser) => {
         if (firebaseUser) {
             const user: IUser = {
                 uid: firebaseUser.uid,
@@ -19,10 +20,9 @@ export function authStateChange(callback: (user: IUser) => void) {
                 email: firebaseUser.email,
                 photoURL: firebaseUser.photoURL,
             };
-
             callback(user);
         } else {
-            console.error('Firebase user cannot be found!');
+            callback(null);
         }
     });
 
@@ -31,12 +31,12 @@ export function authStateChange(callback: (user: IUser) => void) {
 
 export async function signInWithGoogle() {
     try {
-        await signInWithPopup(auth, new GoogleAuthProvider());
+        await signInWithPopup(auth(), new GoogleAuthProvider());
     } catch (error) {
         console.error('Error during Google login:', error);
     }
 }
 
 export async function signOut() {
-    await _signOut(auth);
+    await _signOut(auth());
 }

@@ -29,7 +29,6 @@ const FeatSubscription = () => {
     );
 
     function handleUpgrade() {
-        console.log('handleUpgrade');
         dispatch(storeSubscriptionActions.unlimitedAccessMonthly());
     }
 };

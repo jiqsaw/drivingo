@@ -18,7 +18,7 @@
       "@drivingo/auth": ["feat-auth/src/index.ts"],
       "@drivingo/data": ["data/src/index.ts"],
       "@drivingo/data-provider": ["data-provider/src/index.ts"],
-      "@drivingo/db/firebase": ["db/firebase/src/index.ts"],
+      "@drivingo/db-client": ["db-client/src/index.ts"],
       "@drivingo/feat-hazard-perception": [
         "feat-hazard-perception/src/index.ts"
       ],
