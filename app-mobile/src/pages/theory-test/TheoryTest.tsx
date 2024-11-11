@@ -13,7 +13,7 @@ import {
 
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
 
-import { signOut } from '@drivingo/db/firebase';
+import { signOut } from '@drivingo/db-client';
 import { useDispatch } from 'react-redux';
 import '../../styles/pages/home.scss';
 

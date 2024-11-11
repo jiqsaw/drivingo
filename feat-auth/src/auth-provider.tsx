@@ -1,4 +1,4 @@
-import { authStateChange } from '@drivingo/db/firebase';
+import { authStateChange } from '@drivingo/db-client';
 import { storeUserActions } from '@drivingo/store';
 import React, { FC, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
@@ -12,7 +12,6 @@ const AuthProvider: FC<Props> = ({ children }) => {
 
     useEffect(() => {
         const unsubscribe = authStateChange((user) => {
-            console.log('user:', user);
             if (user) {
                 dispatch(storeUserActions.setUser(user));
             } else {

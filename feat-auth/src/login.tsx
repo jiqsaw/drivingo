@@ -1,4 +1,4 @@
-import { signInWithGoogle } from '@drivingo/db/firebase';
+import { signInWithGoogle } from '@drivingo/db-client';
 import { UIButton } from '@drivingo/ui';
 
 const FeatLogin = () => {

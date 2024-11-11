@@ -1,4 +1,5 @@
 import { TopicDataProvider } from '@drivingo/data-provider';
+import { dbAnalysis } from '@drivingo/db-client';
 import { TestType } from '@drivingo/models';
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { getCorrectCount } from '../theory/active-test/active-test-utils';
@@ -103,6 +104,8 @@ export default createSlice({
                     };
                     break;
             }
+
+            dbAnalysis.setTestResults(state);
         },
     },
 });
