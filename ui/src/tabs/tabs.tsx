@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
 import './tabs.scss';
 
 interface Props {
@@ -13,9 +13,29 @@ export const UITabs: FC<Props> = ({
     onChange,
 }) => {
     const [selected, setSelected] = useState(initialSelectedIndex);
+    const tabsRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const activeTab = document.querySelector(
+            '.tabs--active',
+        ) as HTMLElement;
+        const container = tabsRef.current;
+
+        if (activeTab && container) {
+            const scrollLeft =
+                activeTab.offsetLeft -
+                container.offsetWidth / 2 +
+                activeTab.offsetWidth / 2;
+
+            container.scrollTo({
+                left: scrollLeft,
+                behavior: 'smooth',
+            });
+        }
+    }, [selected]);
 
     return (
-        <div className="tabs">
+        <div className="tabs" ref={tabsRef}>
             {items.map((item, index) => (
                 <button
                     type="button"
