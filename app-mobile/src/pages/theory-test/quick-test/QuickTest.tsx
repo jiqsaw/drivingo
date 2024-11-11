@@ -28,7 +28,7 @@ const QuickTest = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
-                <aside className="container pb-60">
+                <aside className="container bg-style-theory-test pb-60">
                     <Subheader />
                     <h1>Quick Test</h1>
                     <p>
