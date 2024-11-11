@@ -7,7 +7,7 @@ const HighwayCode = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
-                <aside className="container bg-style-highway-code">
+                <aside className="container highway-code">
                     <Header />
                     <FeatHighwayCode />
                 </aside>

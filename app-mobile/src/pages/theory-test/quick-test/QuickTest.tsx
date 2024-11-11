@@ -7,8 +7,12 @@ import {
     storeUiActions,
     storeUiSelectors,
 } from '@drivingo/store';
-import { ArrowNextIcon, UIButton, UICardList } from '@drivingo/ui';
-import { AlertsIcon, UITestProgressCard } from '@drivingo/ui';
+import {
+    AlertsIcon,
+    UIButton,
+    UICardList,
+    UITestProgressCard,
+} from '@drivingo/ui';
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -28,7 +32,7 @@ const QuickTest = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
-                <aside className="container bg-style-theory-test pb-60">
+                <aside className="container theory-test pb-60">
                     <Subheader />
                     <h1>Quick Test</h1>
                     <p>
