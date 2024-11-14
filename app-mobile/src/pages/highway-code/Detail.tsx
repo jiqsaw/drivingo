@@ -31,7 +31,7 @@ const HighwayCodeDetail = () => {
             <UIScrollTop
                 visibled={visibledScrollTop}
                 handleScrollUp={() => {
-                    contentRef.current?.scrollToTop(0);
+                    contentRef.current?.scrollToTop(500);
                 }}
             />
         </IonPage>
