@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { storeUiActions, storeUiSelectors } from '@drivingo/store';
-import { TextRouteLink, UIInlineModal, UITabs } from 'ui/src';
+import { MainTitle, UIInlineModal, UITabs } from 'ui/src';
 import { HazardPerceptionVideoCard } from './components';
 
 const FeatHazardPerception = () => {
@@ -21,15 +21,16 @@ const FeatHazardPerception = () => {
     return (
         <>
             <aside>
-                <h1>Hazard Perception</h1>
-                <UITabs
-                    items={['All', 'Unseen', 'Low Scores', 'Downloaded']}
-                    onChange={(index) => setSelectedTab(index)}
-                />
-                <TextRouteLink
+                <MainTitle
+                    title="Hazard Perception"
                     descripton="Practice for the hazard perception part of your theory test."
                     link="#"
                     routerDirection="root"
+                    icon="/assets/icons/traffic-barrier.png"
+                />
+                <UITabs
+                    items={['All', 'Unseen', 'Low Scores', 'Downloaded']}
+                    onChange={(index) => setSelectedTab(index)}
                 />
                 {DATA_HAZAR_CLIPS.length > 0 ? (
                     DATA_HAZAR_CLIPS.map((item: IHazardClip, index) => {
@@ -48,7 +49,7 @@ const FeatHazardPerception = () => {
             <UIInlineModal
                 isOpen={!instructorModal}
                 onClose={handleInstructorClose}
-                type="inline"
+                type="full"
             >
                 <video controls width="100%" height="auto">
                     <source

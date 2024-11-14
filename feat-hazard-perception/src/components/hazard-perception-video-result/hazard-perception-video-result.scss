@@ -13,11 +13,22 @@
         color: var(--color-secondary);
         font-size: 18px;
 
+        &.fail {
+            color: #BB1C30;
+        }
+
+        &.pass {
+            color: #6AC71A;
+        }
+
         span {
             display: block;
             margin-top: 10px;
             font-size: 80px;
             font-style: italic;
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
         }
     }
 

@@ -1,33 +1,41 @@
 import { DATA_HAZAR_CLIPS } from '@drivingo/data';
+import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
 import { IHazardClip } from '@drivingo/models';
 import { IonRouterLink } from '@ionic/react';
 import { FC } from 'react';
 import { ArrowNextIcon, RetryIcon } from '../../../../ui/src/icons';
-
-import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
 import './hazard-perception-video-result.scss';
+import { storeTheoryActiveTestSelectors } from '@drivingo/store';
+import { useSelector } from 'react-redux';
 
- 
 export const HazardPerceptionVideoResult = () => {
-
-    // get redux current id
     const activeVideo = {
-        code:""
-    }
+        code: '',
+    };
 
-    const currentIndex = DATA_HAZAR_CLIPS.findIndex(
-        (clip) => clip.code === "",
+    const isTestResultSuccess = useSelector(
+        storeTheoryActiveTestSelectors.isTestResultSuccess,
     );
+
+    const questionsLength = useSelector(
+        storeTheoryActiveTestSelectors.questionsLength,
+    );
+    const correctCount = useSelector(
+        storeTheoryActiveTestSelectors.correctCount,
+    );
+
+    const currentIndex = DATA_HAZAR_CLIPS.findIndex((clip) => clip.code === '');
 
     const nextClip =
         DATA_HAZAR_CLIPS[(currentIndex + 1) % DATA_HAZAR_CLIPS.length];
- 
+
     return (
         <div className="hazard-perception-video-result">
-            <h1 className="title">
+            <h1 className={`title ${isTestResultSuccess ? 'pass' : 'fail'}`}>
                 SCORE
-                <br />
-                <span>3/5</span>
+                <span>
+                    {correctCount}/{questionsLength}
+                </span>
             </h1>
 
             <div className="content-body">
