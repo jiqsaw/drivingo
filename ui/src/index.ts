@@ -15,7 +15,7 @@ export * from './searchbar/searchbar';
 export * from './tabs/tabs';
 export * from './test-progress/test-progress-card';
 export * from './test-progress/test-progress-list';
-export * from './text-route-link/text-route-link';
+export * from './main-title/main-title';
 export * from './scroll-top/scroll-top';
 export * from './timer/timer';
 export * from './card-list/card-list';

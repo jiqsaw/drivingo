@@ -42,8 +42,8 @@ export const UIInlineModal: FC<UIInlineModalProps> = ({
     return (
         <IonModal
             ref={modal}
-            className={`${styles.modal} ${type} ${breakpoint ? 'breakpoint-modal' : 'ss'}`}
-            initialBreakpoint={breakpoint || 0.75}
+            className={`${styles.modal} ${type} ${breakpoint ? 'breakpoint-modal' : ''}`}
+            initialBreakpoint={breakpoint || 1}
             breakpoints={[0, 0.25, 0.5, 0.75, 1]}
         >
             <div className="wrapper">
