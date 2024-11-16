@@ -45,4 +45,10 @@ app-mobile/ios/*
 
 app-mobile/build
 
+firebase-debug.log
+
+functions/dist
+functions/firebase-private-key.json
+functions/.env
+
 local-notes.txt

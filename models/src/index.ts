@@ -1,3 +1,4 @@
+export * from './functions';
 export * from './hazard-perception';
 export * from './highway-code';
 export * from './question';

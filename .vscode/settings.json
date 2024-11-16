@@ -19,7 +19,8 @@
     "dist": true,
     "node_modules": true,
     "nx.json": true,
-    "package-lock.json": true
+    "package-lock.json": true,
+    "tmp": true
   },
   "editor.defaultFormatter": "biomejs.biome",
   "[javascript]": {
