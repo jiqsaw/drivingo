@@ -5,6 +5,7 @@ export interface IStoreUI {
     quickTestNumberOfQuestions: number;
     hideMockTestIntroduction: boolean;
     network: IStoreNetwork;
+    language?: string;
 }
 
 export interface IStoreNetwork {
