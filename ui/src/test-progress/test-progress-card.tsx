@@ -18,9 +18,16 @@ export const UITestProgressCard: FC<TestProgressCardProps> = ({
     onClick,
 }) => {
     return (
-        <div className="test-progress-card" onClick={onClick}>
+        <div
+            className={`test-progress-card ${isChecked ? 'selected' : ''}`}
+            onClick={onClick}
+        >
             <div className="card-icon">{icon}</div>
-            {isChecked && <div className="checkmark"><CheckIcon /></div>}
+            {isChecked && (
+                <div className="checkmark">
+                    <CheckIcon />
+                </div>
+            )}
             <h3 className="card-title">{title}</h3>
             <div className="progress-count">{progress}%</div>
             <div className="card-progress">

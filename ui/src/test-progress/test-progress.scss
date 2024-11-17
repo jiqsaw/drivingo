@@ -44,6 +44,11 @@
     border-radius: 16px;
     background-color: #352494;
     position: relative;
+    transition: background-color 0.3s ease;
+
+    &.selected {
+        background-color: #4321FE;
+    }
 
     .progress-count {
         color: var(--color-secondary);
