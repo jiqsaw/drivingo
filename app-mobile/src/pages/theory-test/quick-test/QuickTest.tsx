@@ -9,6 +9,7 @@ import {
 } from '@drivingo/store';
 import {
     AlertsIcon,
+    PageIntro,
     UIButton,
     UICardList,
     UITestProgressCard,
@@ -34,11 +35,14 @@ const QuickTest = () => {
             <IonContent fullscreen>
                 <aside className="container theory-test pb-60">
                     <Subheader />
-                    <h1>Quick Test</h1>
-                    <p>
-                        Select multiple topics and build your own custom test.
-                        Analyse your progress.
-                    </p>
+
+                    <PageIntro
+                        title="Quick Test"
+                        descripton="Select multiple topics and build your own custom test.
+                        Analyse your progress."
+                        icon="/assets/icons/note.png"
+                    />
+
                     <div className="quick-test-number-of-questions">
                         <h4 className="quick-test-number-of-questions__title">
                             Number of questions:{' '}
