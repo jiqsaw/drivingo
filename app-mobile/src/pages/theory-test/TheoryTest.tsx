@@ -14,21 +14,7 @@ const TheoryTest: React.FC = () => {
             {/* <UIHeader title='Theory Test' /> */}
             <IonContent fullscreen>
                 <div className="page-container homepage">
-                    <div className="header">
-                        <h1>Car</h1>
-                        <img
-                            className="top-img"
-                            src="/assets/images/top-car.png"
-                            alt="car"
-                        />
-                    </div>
                     <div className="main-content">
-                        {/* <IonHeader collapse="condense">
-                        <IonToolbar>
-                            <IonTitle size="large">TheoryTest asdas</IonTitle>
-                        </IonToolbar>
-                    </IonHeader> */}
-
                         <IonRouterLink
                             routerDirection="root"
                             routerLink="/traffic-signs"
