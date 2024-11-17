@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__back {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+
+    span {
+      margin-left: 4px;
+    }
+  }
+
+  &__right-container {
+    display: flex;
+    button {
+      margin-left: 8px;
+
+      img {
+        filter: invert(49%) sepia(81%) saturate(644%) hue-rotate(218deg)
+          brightness(94%) contrast(95%);
+      }
+    }
+  }
+}
+
+.ion-palette-dark .header__right-container button img {
+  filter: none;
+}

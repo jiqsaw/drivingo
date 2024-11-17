@@ -2,9 +2,9 @@ import { DATA_TEST_QUESTIONS } from '@drivingo/data';
 import { translateQuestion } from '@drivingo/db-client';
 import { IQuestionBase, TestType } from '@drivingo/models';
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
+import Header from 'app-mobile/src/components/header/header';
 import { useSelector } from 'react-redux';
 import uiSelectors from 'store/src/ui/ui.selectors';
-import { Subheader } from '../../../components/headers/subheader/subheader';
 
 const questionData = DATA_TEST_QUESTIONS[1] as IQuestionBase;
 
@@ -15,10 +15,10 @@ const MockTest: React.FC = () => {
         <IonPage>
             <IonContent fullscreen>
                 <aside className="container theory-test">
-                    <Subheader />
+                    <Header />
                     <h1>Mock Test</h1>
                     <button onClick={() => translate()}>
-                        Call helloWorldo Function
+                        Call translate Function
                     </button>
 
                     <br />

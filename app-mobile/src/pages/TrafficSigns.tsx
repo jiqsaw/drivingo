@@ -3,7 +3,7 @@ import { UIScrollTop } from '@drivingo/ui';
 import { IonContent, IonPage, ScrollDetail } from '@ionic/react';
 import { createRef, useState } from 'react';
 import BottomNavigation from '../components/bottom-navigation/bottom-navigation';
-import Header from '../components/headers/header/header';
+import Header from '../components/header/header';
 
 const TrafficSigns: React.FC = () => {
     const contentRef = createRef<HTMLIonContentElement>();

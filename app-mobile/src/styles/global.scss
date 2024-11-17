@@ -18,6 +18,10 @@ h3 {
   font-family: var(--font-bold);
 }
 
+button {
+  background: transparent;
+}
+
 aside.container {
   display: block;
   padding: var(--default-padding);

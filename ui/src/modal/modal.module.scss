@@ -6,7 +6,6 @@
   }
 
   &:global {
-
     &.inline {
       --width: fit-content;
       --min-width: 250px;
@@ -45,14 +44,12 @@
         padding: 60px 40px;
         border-radius: 32px;
         overflow: hidden;
-        background-color: #110F20 !important;
+        background-color: #110f20 !important;
         overflow: hidden;
         border-color: #000;
         border-width: 8px;
         border-style: solid;
       }
-
-
     }
   }
 }
@@ -65,7 +62,7 @@
   position: absolute;
   top: 30px;
   right: 30px;
-  background-color: var(--ai-button-bg-color);
+  background-color: black;
   font-size: 24px;
   width: 40px;
   height: 40px;

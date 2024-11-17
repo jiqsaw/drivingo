@@ -25,7 +25,7 @@ const App: React.FC = () => {
         Network.getStatus().then((response) =>
             dispatch(storeUiActions.networkStatusChange(response)),
         );
-    }, [dispatch]);
+    }, [theme]);
 
     return (
         <IonApp>

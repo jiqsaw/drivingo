@@ -1,16 +1,14 @@
 import { FC } from 'react';
 import './ai-button.scss';
 
-interface Props {
-    viewMode?: 'drivingo' | 'ai' | 'iconOnly';
-}
-
-export const UIAIButton: FC<Props> = ({ viewMode = 'iconOnly' }) => {
+export const UIAIButton: FC = () => {
     return (
-        <div className="ai-button">
-            {viewMode === 'drivingo' && <span>drivingo AI</span>}
-            {viewMode === 'ai' && <span>AI</span>}
-            {viewMode === 'iconOnly' && <span></span>}
-        </div>
+        <button onClick={() => onAiPressHandler()} className="ai-button">
+            <img src="assets/icon-ai.svg" />
+        </button>
     );
+
+    function onAiPressHandler() {
+        console.log('onAiHandler');
+    }
 };

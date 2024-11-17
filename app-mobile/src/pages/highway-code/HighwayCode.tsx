@@ -1,7 +1,7 @@
 import { FeatHighwayCode } from '@drivingo/feat-highway-code';
 import { IonContent, IonPage } from '@ionic/react';
 import BottomNavigation from 'app-mobile/src/components/bottom-navigation/bottom-navigation';
-import Header from 'app-mobile/src/components/headers/header/header';
+import Header from 'app-mobile/src/components/header/header';
 
 const HighwayCode = () => {
     return (

@@ -1,6 +1,6 @@
 import { UITabs } from '@drivingo/ui';
 import { IonContent, IonPage } from '@ionic/react';
-import { Subheader } from 'app-mobile/src/components/headers/subheader/subheader';
+import Header from 'app-mobile/src/components/header/header';
 import { useState } from 'react';
 import LearnPractice from './practise/practice';
 import LearnStudy from './study/study';
@@ -12,7 +12,7 @@ const Learn: React.FC = () => {
         <IonPage>
             <IonContent fullscreen>
                 <aside className="container">
-                    <Subheader />
+                    <Header />
                     <aside>
                         <h1>Learn</h1>
                         <UITabs
