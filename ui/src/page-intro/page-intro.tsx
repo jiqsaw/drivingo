@@ -1,8 +1,8 @@
 import { IonRouterLink } from '@ionic/react';
 import { FC } from 'react';
-import './main-title.scss';
+import './page-intro.scss';
 
-type MainTitleProps = {
+type PageIntroProps = {
     title?: string;
     descripton: string;
     link?: string;
@@ -10,7 +10,7 @@ type MainTitleProps = {
     routerDirection?: 'root' | 'forward';
 };
 
-export const MainTitle: FC<MainTitleProps> = ({
+export const PageIntro: FC<PageIntroProps> = ({
     title,
     descripton,
     link,
@@ -18,14 +18,14 @@ export const MainTitle: FC<MainTitleProps> = ({
     routerDirection = 'forward',
 }) => {
     return (
-        <div className="main-title">
-            <div className="main-title__body">
-                {title && <h1 className="main-title__title">{title}</h1>}
-                <p className="main-title__description">
+        <div className="page-intro">
+            <div className="page-intro__body">
+                {title && <h1 className="page-intro__title">{title}</h1>}
+                <p className="page-intro__description">
                     {descripton}{' '}
                     {link && (
                         <IonRouterLink
-                            className="main-title__link"
+                            className="page-intro__link"
                             routerDirection={routerDirection}
                             routerLink={link}
                         >
@@ -34,7 +34,7 @@ export const MainTitle: FC<MainTitleProps> = ({
                     )}
                 </p>
             </div>
-            {icon && <img className="main-title__icon" src={icon} />}
+            {icon && <img className="page-intro__icon" src={icon} />}
         </div>
     );
 };

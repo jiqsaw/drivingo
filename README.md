@@ -81,25 +81,29 @@ Then:
 
 ---
 
-### Environment Variables 
+### Firebase Admin Init with Private key
 
-To access and execute transactions on Firebase databases like Firestore, Firebase Admin must be initialized. The initialization process requires credentials containing the service account information and private key.
+To access and execute transactions on Firebase databases like Firestore, the Firebase Admin SDK must be initialized. This initialization process requires credentials containing the service account information and a private key.
 
-Secret keys, environment variables, api keys are stored in `.env` files. These variables can easily be accessed within Firebase function parameters. No need to export/define an environment variable in terminal or keep a separate json file. 
+The key file can be generated and downloaded from the Firebase Project Settings page. It should be stored in the functions folder with the filename firebase-private-key.json. The Admin SDK initializes by directly loading this JSON file using:
+```
+var serviceAccount = require('../firebase-private-key.json');
+```
+To load a JSON file in a TypeScript project, the "resolveJsonModule": true option must be added to the tsconfig.app.json file.
 
+Nx build exports create additional directories in the output structure. To include the JSON file in the build output, it should be specified in the assets node of the project.json for the functions project. This ensures consistency between the source and build directories when referencing the JSON file.
 
-"resolveJsonModule": true
+```
+"assets": [
+  {
+    "glob": "firebase-private-key.json",
+    "input": "functions",
+    "output": "functions"
+  }
+],
+```
 
+### Environment variabls (.env, .env.local, .env.production)
+Environment variables and API keys are stored in `.env` files. These variables can be easily accessed in Firebase function parameters without the need to manually export or define them in the terminal. .env files also act as secure storage for sensitive information like secret keys when deployed to Google Cloud.
 
-        "assets": [
-          {
-            "glob": "firebase-private-key.json",
-            "input": "functions",
-            "output": "functions"
-          }
-        ],
-
-        var serviceAccount = require('../firebase-private-key.json');
-
-
-Avoid using other projects refernces because functions would exported too bug
+Note: Avoid referencing other projects unnecessarily, as this can significantly increase the size of the deployed function.

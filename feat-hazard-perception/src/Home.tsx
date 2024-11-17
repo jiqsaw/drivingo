@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { storeUiActions, storeUiSelectors } from '@drivingo/store';
-import { MainTitle, UIInlineModal, UITabs } from 'ui/src';
+import { PageIntro, UIInlineModal, UITabs } from 'ui/src';
 import { HazardPerceptionVideoCard } from './components';
 
 const FeatHazardPerception = () => {
@@ -21,7 +21,7 @@ const FeatHazardPerception = () => {
     return (
         <>
             <aside>
-                <MainTitle
+                <PageIntro
                     title="Hazard Perception"
                     descripton="Practice for the hazard perception part of your theory test."
                     link="#"
