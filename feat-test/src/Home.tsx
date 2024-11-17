@@ -8,7 +8,7 @@ import {
     storeTheoryActiveTestSelectors,
     storeUiSelectors,
 } from '@drivingo/store';
-import { UIButton, UITimer } from '@drivingo/ui';
+import { FlagIcon, UIButton, UITimer } from '@drivingo/ui';
 import { IonAlert, IonModal, useIonRouter } from '@ionic/react';
 import { FC, useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -138,10 +138,12 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
                             />
                         ))}
                 </div>
-
-                <hr />
-                <div className="buttom-nav">
-                    {!isFirstQuestion && <div onClick={prev}>Prev</div>}
+                <div className="test__buttom-nav">
+                    {!isFirstQuestion && (
+                        <button className="test__btn-previous" onClick={prev}>
+                            {'<'}previous
+                        </button>
+                    )}
                     {showFlagButton() && (
                         <div
                             className={`test__flag ${testCurrentQuestion.isFlagged ? 'test__flag--selected' : ''}`}
@@ -149,7 +151,7 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
                                 dispatch(storeTheoryActiveTestActions.flag())
                             }
                         >
-                            Flag
+                            <FlagIcon /> flag
                         </div>
                     )}
 
