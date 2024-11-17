@@ -2,8 +2,6 @@ import { IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router';
 import ProtectedRoute from './ProtectedRoute';
-import Settings from './pages/Settings';
-import TrafficSigns from './pages/TrafficSigns';
 import HighwayCodeDetailPage from './pages/highway-code/Detail';
 import HighwayCode from './pages/highway-code/HighwayCode';
 import Login from './pages/login/Login';
@@ -18,6 +16,7 @@ import QuickTest from './pages/theory-test/quick-test/QuickTest';
 import Test from './pages/theory-test/test/Test';
 import TestResult from './pages/theory-test/test/TestResult';
 import TestReview from './pages/theory-test/test/TestReview';
+import TrafficSigns from './pages/traffic-signs/TrafficSigns';
 
 const Router: React.FC = () => {
     return (
@@ -125,13 +124,6 @@ const Router: React.FC = () => {
                 <Route
                     path="/traffic-signs"
                     render={() => <TrafficSigns />}
-                    exact={true}
-                />
-
-                {/* Settings */}
-                <Route
-                    path="/settings"
-                    render={() => <Settings />}
                     exact={true}
                 />
 

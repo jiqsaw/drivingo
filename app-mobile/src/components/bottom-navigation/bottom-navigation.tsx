@@ -4,7 +4,6 @@ import {
     CloseIcon,
     CymbalIcon,
     GridIcon,
-    SettingsIcon,
     TrafficLightIcon,
 } from 'ui/src';
 import './bottom-navigation.scss';
@@ -61,15 +60,6 @@ const BottomNavigation: React.FC = () => {
                             </IonRouterLink>
                         </li>
                     </ul>
-                </li>
-                <li>
-                    <IonRouterLink
-                        routerDirection="root"
-                        routerLink="/settings"
-                        className="nav-item"
-                    >
-                        <SettingsIcon />
-                    </IonRouterLink>
                 </li>
             </ul>
         </nav>
