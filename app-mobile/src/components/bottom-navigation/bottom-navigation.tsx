@@ -4,7 +4,6 @@ import {
     CloseIcon,
     CymbalIcon,
     GridIcon,
-    SettingsIcon,
     TrafficLightIcon,
 } from 'ui/src';
 import './bottom-navigation.scss';
