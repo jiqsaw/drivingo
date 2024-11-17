@@ -8,13 +8,13 @@ import {
     storeTheoryActiveTestSelectors,
     storeUiSelectors,
 } from '@drivingo/store';
-import { ArrowBackIcon, FlagIcon, UIButton, UITimer } from '@drivingo/ui';
+import { FlagIcon, UIButton, UITimer } from '@drivingo/ui';
 import { IonAlert, IonModal, useIonRouter } from '@ionic/react';
 import { FC, useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
-import FeatTestContent from './components/test-content';
 import './assets/styles.scss';
+import FeatTestContent from './components/test-content';
 
 const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
     const dispatch = useDispatch();
