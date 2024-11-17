@@ -1,9 +1,9 @@
 import { FeatTrafficSigns } from '@drivingo/feat-traffic-signs';
 import { UIScrollTop } from '@drivingo/ui';
 import { IonContent, IonPage, ScrollDetail } from '@ionic/react';
+import BottomNavigation from 'app-mobile/src/components/bottom-navigation/bottom-navigation';
+import Header from 'app-mobile/src/components/header/header';
 import { createRef, useState } from 'react';
-import BottomNavigation from '../components/bottom-navigation/bottom-navigation';
-import Header from '../components/header/header';
 
 const TrafficSigns: React.FC = () => {
     const contentRef = createRef<HTMLIonContentElement>();
