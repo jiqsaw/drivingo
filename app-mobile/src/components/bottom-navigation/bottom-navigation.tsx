@@ -62,15 +62,6 @@ const BottomNavigation: React.FC = () => {
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <IonRouterLink
-                        routerDirection="root"
-                        routerLink="/settings"
-                        className="nav-item"
-                    >
-                        <SettingsIcon />
-                    </IonRouterLink>
-                </li>
             </ul>
         </nav>
     );

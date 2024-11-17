@@ -1,15 +1,4 @@
-import {
-    AlertsIcon,
-    AppleIcon,
-    OclockIcon,
-    StarIcon,
-    UIButton,
-    UILink,
-    UINavigationItem,
-    UINavigationList,
-    UITestProgressCard,
-    UITestProgressList,
-} from 'ui/src';
+import { UIButton, UILink } from 'ui/src';
 
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
 
@@ -39,95 +28,6 @@ const TheoryTest: React.FC = () => {
                             <IonTitle size="large">TheoryTest asdas</IonTitle>
                         </IonToolbar>
                     </IonHeader> */}
-
-                        <UINavigationList>
-                            <UINavigationItem
-                                routerDirection="forward"
-                                routerLink="/theory-test/quick-test"
-                                title="Learn"
-                                icon={<AppleIcon />}
-                                color="primary"
-                                desctioption="Lorem ipsum dolor sit amet"
-                            />
-                            <UINavigationItem
-                                routerDirection="forward"
-                                routerLink="/theory-test/quick-test"
-                                title="Quick Test"
-                                icon={<OclockIcon />}
-                                color="secondary"
-                                desctioption="Lorem ipsum dolor sit amet"
-                            />
-                            <UINavigationItem
-                                routerDirection="forward"
-                                routerLink="/theory-test/mock-test"
-                                title="Mock Test"
-                                icon={<AppleIcon />}
-                                color="light_blue"
-                                desctioption="Lorem ipsum dolor sit amet"
-                            />
-                            <UINavigationItem
-                                routerDirection="forward"
-                                routerLink="/theory-test/hazard-perception"
-                                title="Hazard Precep..."
-                                icon={<StarIcon />}
-                                color="light_tealish"
-                                desctioption="Lorem ipsum dolor sit amet"
-                            />
-                        </UINavigationList>
-
-                        <UITestProgressList title="Study">
-                            <UITestProgressCard
-                                title="Alertness"
-                                progress={20}
-                                icon={<AlertsIcon />}
-                            />
-                            <UITestProgressCard
-                                title="Learn"
-                                progress={40}
-                                icon={<AlertsIcon />}
-                            />
-                            <UITestProgressCard
-                                title="Alertness"
-                                progress={20}
-                                icon={<AlertsIcon />}
-                            />
-                        </UITestProgressList>
-
-                        <UITestProgressList title="Pratice">
-                            <UITestProgressCard
-                                title="Alertness"
-                                progress={20}
-                                icon={<AlertsIcon />}
-                            />
-                            <UITestProgressCard
-                                title="Learn"
-                                progress={40}
-                                icon={<AlertsIcon />}
-                            />
-                            <UITestProgressCard
-                                title="Alertness"
-                                progress={20}
-                                icon={<AlertsIcon />}
-                            />
-                        </UITestProgressList>
-
-                        <UITestProgressList title="Hazard Perception">
-                            <UITestProgressCard
-                                title="Alertness"
-                                progress={20}
-                                icon={<AlertsIcon />}
-                            />
-                            <UITestProgressCard
-                                title="Learn"
-                                progress={40}
-                                icon={<AlertsIcon />}
-                            />
-                            <UITestProgressCard
-                                title="Alertness"
-                                progress={20}
-                                icon={<AlertsIcon />}
-                            />
-                        </UITestProgressList>
 
                         <IonRouterLink
                             routerDirection="root"
@@ -179,13 +79,6 @@ const TheoryTest: React.FC = () => {
                             routerLink="/traffic-signs"
                         >
                             <p>Traffic Signs</p>
-                        </IonRouterLink>
-
-                        <IonRouterLink
-                            routerDirection="forward"
-                            routerLink="/settings"
-                        >
-                            <p>Settings</p>
                         </IonRouterLink>
 
                         <IonRouterLink
