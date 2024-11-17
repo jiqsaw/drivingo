@@ -52,10 +52,14 @@ const LearnPractice = () => {
                         text: `Unanswered (${getTotalUnanswered()})`,
                         role: TestLearnPracticeGroup.Unanswered.toString(),
                     },
-                    {
-                        text: `Incorrect (${getTotalIncorrect()})`,
-                        role: TestLearnPracticeGroup.Incorrect.toString(),
-                    },
+                    ...(getTotalIncorrect() > 0
+                        ? [
+                              {
+                                  text: `Incorrect (${getTotalIncorrect()})`,
+                                  role: TestLearnPracticeGroup.Incorrect.toString(),
+                              },
+                          ]
+                        : []),
                     {
                         text: `Incorrect and unanswered (${getTotalUnanswered() + getTotalIncorrect()})`,
                         role: TestLearnPracticeGroup.IncorrectAndUnanswered.toString(),

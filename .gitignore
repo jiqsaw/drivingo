@@ -41,7 +41,7 @@ Thumbs.db
 .nx/cache
 .nx/workspace-data
 yarn.lock
-app-mobile/ios/*
+app-mobile/ios
 
 app-mobile/build
 

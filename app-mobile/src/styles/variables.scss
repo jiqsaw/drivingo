@@ -19,14 +19,26 @@ html.md {
   --default-font-size: 16px;
   --default-padding: 1.5em;
   --background-color: linear-gradient(180deg, #f0f7ff 0%, #f7f7f7 100px);
-  --background-color-style-1: linear-gradient(180deg, #f0f7ff 0%, #f7f7f7 240px);
-  --background-color-style-2: linear-gradient(180deg, #f0f7ff 0%, #f7f7f7 240px);
-  --background-color-style-3: linear-gradient(180deg, #f0f7ff 0%, #f7f7f7 140px);
+  --background-color-style-1: linear-gradient(
+    180deg,
+    #f0f7ff 0%,
+    #f7f7f7 240px
+  );
+  --background-color-style-2: linear-gradient(
+    180deg,
+    #f0f7ff 0%,
+    #f7f7f7 240px
+  );
+  --background-color-style-3: linear-gradient(
+    180deg,
+    #f0f7ff 0%,
+    #f7f7f7 140px
+  );
   --color-highlight: #ff0e42;
   --color-secondary: #000;
   --color-purple-100: #fff;
   --bg-secondary: #fff;
-  --ai-button-bg-color: #fff;
+  --header-button-bg: #fff;
   --light-box-shadow: 2px 2px 2px 2px #f2f4f4;
   --color-full-dark: #000;
 }
@@ -38,11 +50,23 @@ html.md {
   --ion-background-color: linear-gradient(180deg, #5c1253 0%, #0d0a2c 11%);
 
   /* Custom dark theme vars */
-  --ai-button-bg-color: #000;
+  --header-button-bg: rgba(0, 0, 0, 0.2);
   --background-color: linear-gradient(180deg, #5c1253 0%, #0d0a2c 100px);
-  --background-color-style-1: linear-gradient(180deg, #2F2570 0%, #0D0A2C 240px);
-  --background-color-style-2: linear-gradient(180deg, #3E384B 0%, #0D0A2C 240px);
-  --background-color-style-3: linear-gradient(180deg, #5C1253 0%, #0D0A2C 140px);
+  --background-color-style-1: linear-gradient(
+    180deg,
+    #2f2570 0%,
+    #0d0a2c 240px
+  );
+  --background-color-style-2: linear-gradient(
+    180deg,
+    #3e384b 0%,
+    #0d0a2c 240px
+  );
+  --background-color-style-3: linear-gradient(
+    180deg,
+    #5c1253 0%,
+    #0d0a2c 140px
+  );
   --light-box-shadow: 0;
   --color-secondary: #fff;
   --color-purple-100: #262444;

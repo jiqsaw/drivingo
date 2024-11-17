@@ -16,7 +16,7 @@ import {
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Subheader } from '../../../components/headers/subheader/subheader';
+import Header from 'app-mobile/src/components/header/header';
 import '../../../styles/pages/subpage.scss';
 
 const QuickTest = () => {
@@ -33,7 +33,7 @@ const QuickTest = () => {
         <IonPage>
             <IonContent fullscreen>
                 <aside className="container theory-test pb-60">
-                    <Subheader />
+                    <Header />
                     <h1>Quick Test</h1>
                     <p>
                         Select multiple topics and build your own custom test.

@@ -16,4 +16,6 @@ export * from './tabs/tabs';
 export * from './test-answer-card/test-answer-card';
 export * from './test-progress/test-progress-card';
 export * from './test-result-card/test-result-card';
+export * from './theme-switcher/theme-switcher';
 export * from './timer/timer';
+export * from './translate-button/translate-button';
