@@ -40,7 +40,7 @@ const QuickTest = () => {
                         title="Quick Test"
                         descripton="Select multiple topics and build your own custom test.
                         Analyse your progress."
-                        icon="/assets/icons/note.png"
+                        icon="/assets/images/note.png"
                     />
 
                     <div className="quick-test-number-of-questions">
