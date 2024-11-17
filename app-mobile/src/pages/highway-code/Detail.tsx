@@ -1,7 +1,7 @@
 import { UIScrollTop } from '@drivingo/ui';
 import { IonContent, IonPage, ScrollDetail } from '@ionic/react';
-import { Subheader } from 'app-mobile/src/components/headers/subheader/subheader';
-  
+import Header from '../../components/header/header';
+
 import FeatHighwayCodeDetail from 'feat-highway-code/src/Detail';
 import { createRef, useState } from 'react';
 import { useParams } from 'react-router';
@@ -24,7 +24,7 @@ const HighwayCodeDetail = () => {
                 }}
             >
                 <aside className="container bg-style-highway-code">
-                    <Subheader />
+                    <Header isRoot={false} />
                     <FeatHighwayCodeDetail {...params} />
                 </aside>
             </IonContent>

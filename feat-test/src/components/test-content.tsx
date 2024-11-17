@@ -56,7 +56,10 @@ const FeatTestContent: FC<Props> = (props) => {
                             }
                         >
                             <span className="test__option-prefix">
-                                {getOptionIndicator(option, questionItem.answer)}
+                                {getOptionIndicator(
+                                    option,
+                                    questionItem.answer,
+                                )}
                             </span>
                             <span className="test__option-text">
                                 {option.text}
@@ -92,7 +95,7 @@ const FeatTestContent: FC<Props> = (props) => {
             }
         }
 
-        return option.char;
+        return option.char + ')';
     }
 };
 
