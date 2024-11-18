@@ -60,6 +60,17 @@ const questionsLength = createSelector(activeTest, (test) => {
     return test.questions.length;
 });
 
+const currentQuestionTranslate = createSelector(activeTest, (test) => {
+    if (!test.translatedData) {
+        return;
+    }
+    const question = getCurrentQuestion(test);
+    const result = test.translatedData.find(
+        (item) => item.code === question.code,
+    );
+    return result;
+});
+
 const passingRequiredCorrect = createSelector(activeTest, (test) => {
     const passingRatio =
         CONSTANTS.mockTestInfo.questionsLength /
@@ -78,6 +89,10 @@ const isTestResultSuccess = createSelector(
 
 const isPaused = createSelector(activeTest, (test) => {
     return test.isPaused;
+});
+
+const showTranslate = createSelector(activeTest, (test) => {
+    return test.showTranslate;
 });
 
 const topicResults = createSelector(activeTest, (test) => {
@@ -122,4 +137,6 @@ export default {
     isTestResultSuccess,
     isPaused,
     topicResults,
+    currentQuestionTranslate,
+    showTranslate,
 };

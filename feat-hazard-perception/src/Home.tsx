@@ -26,7 +26,7 @@ const FeatHazardPerception = () => {
                     descripton="Practice for the hazard perception part of your theory test."
                     link="#"
                     routerDirection="root"
-                    icon="/assets/icons/traffic-barrier.png"
+                    icon="/assets/images/traffic-barrier.png"
                 />
                 <UITabs
                     items={['All', 'Unseen', 'Low Scores', 'Downloaded']}

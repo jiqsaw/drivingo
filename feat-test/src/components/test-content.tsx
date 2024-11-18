@@ -1,6 +1,7 @@
 import { TestDataProvider } from '@drivingo/data-provider';
 import {
     IQuestion,
+    IQuestionBase,
     IQuestionOption,
     OptionChar,
     TestView,
@@ -14,6 +15,8 @@ interface Props {
     selectedOptionChar: OptionChar;
     testView: TestView;
     onSelectOption?: (selectedOption: OptionChar) => void;
+    translatedData?: IQuestionBase;
+    showTranslate?: boolean;
 }
 
 // ????? show correct and incorrect option (even the selected option is correct) on selectOption
@@ -25,6 +28,8 @@ const FeatTestContent: FC<Props> = (props) => {
         selectedOptionChar,
         testView,
         onSelectOption,
+        translatedData,
+        showTranslate,
     } = props;
     return (
         <>
@@ -32,7 +37,9 @@ const FeatTestContent: FC<Props> = (props) => {
                 {questionNo}/{questionsLength}
             </div>
             <div className="test__question">
-                {questionItem.question}
+                {translatedData && showTranslate
+                    ? translatedData.question
+                    : questionItem.question}
                 {questionItem.questionImg !== '' && (
                     <img
                         className="test__question-img"
@@ -62,7 +69,11 @@ const FeatTestContent: FC<Props> = (props) => {
                                 )}
                             </span>
                             <span className="test__option-text">
-                                {option.text}
+                                {translatedData && showTranslate
+                                    ? translatedData.options.find(
+                                          (o) => o.char === option.char,
+                                      )?.text
+                                    : option.text}
                                 {option.img && (
                                     <img
                                         src={TestDataProvider.getOptionImage(

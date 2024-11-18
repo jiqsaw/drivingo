@@ -1,5 +1,6 @@
 import { TestDataProvider } from '@drivingo/data-provider';
 import {
+    IQuestionBase,
     ITopic,
     OptionChar,
     TestLearnPracticeGroup,
@@ -146,6 +147,7 @@ export default createSlice({
                     );
                 }
             }
+            state.showTranslate = false;
         },
         prev(state) {
             if (!state.showFlaggedOnly) {
@@ -163,6 +165,7 @@ export default createSlice({
                     );
                 }
             }
+            state.showTranslate = false;
         },
         showFlaggedQuestions(state) {
             state.showFlaggedOnly = true;
@@ -177,12 +180,32 @@ export default createSlice({
         finish(state) {
             state.view = TestView.NotActive;
             state.questions.map((item) => (item.isFlagged = false));
+            state.showTranslate = false;
         },
         updateView(state, action: PayloadAction<{ view: TestView }>) {
             state.view = action.payload.view;
         },
         exit(_state) {
             return initialState;
+        },
+        addTranslate(state, action: PayloadAction<IQuestionBase>) {
+            if (!state.translatedData) {
+                state.translatedData = [];
+            }
+            const testQuestion = action.payload;
+            const existingItem = state.translatedData.find(
+                (item) => item.code === testQuestion.code,
+            );
+            if (!existingItem) {
+                state.translatedData.push(testQuestion);
+                state.showTranslate = true;
+            }
+        },
+        showTranslate(state) {
+            state.showTranslate = true;
+        },
+        hideTranslate(state) {
+            state.showTranslate = false;
         },
     },
 });

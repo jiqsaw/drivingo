@@ -11,7 +11,17 @@ import { FC, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './test-header.scss';
 
-const TestHeader: FC<{ type?: TestType }> = ({ type }) => {
+interface IUITranslateButtonProps {
+    type?: TestType;
+    loadingTranslate: boolean;
+    onTranslate?: () => void;
+}
+
+const TestHeader: FC<IUITranslateButtonProps> = ({
+    type,
+    loadingTranslate,
+    onTranslate,
+}) => {
     const alertButtons = [
         {
             text: 'Cancel',
@@ -39,8 +49,14 @@ const TestHeader: FC<{ type?: TestType }> = ({ type }) => {
     };
 
     const dispatch = useDispatch();
-    const isPaused = useSelector(storeTheoryActiveTestSelectors.isPaused);
     const theme = useSelector(storeUiSelectors.theme);
+    const isPaused = useSelector(storeTheoryActiveTestSelectors.isPaused);
+    const showTranslate = useSelector(
+        storeTheoryActiveTestSelectors.showTranslate,
+    );
+    const currentQuestionTranslate = useSelector(
+        storeTheoryActiveTestSelectors.currentQuestionTranslate,
+    );
     const [showConfirmAlert, setShowConfirmAlert] = useState<boolean>(false);
 
     const router = useIonRouter();
@@ -70,7 +86,11 @@ const TestHeader: FC<{ type?: TestType }> = ({ type }) => {
                                 dispatch(storeUiActions.switchTheme())
                             }
                         />
-                        <UITranslateButton />
+                        <UITranslateButton
+                            selected={showTranslate}
+                            loadingTranslate={loadingTranslate}
+                            onPress={() => onTranslateHandler()}
+                        />
                     </>
                 )}
             </div>
@@ -104,6 +124,18 @@ const TestHeader: FC<{ type?: TestType }> = ({ type }) => {
     function onDidExit() {
         dispatch(storeTheoryActiveTestActions.exit());
         router.push(`/theory-test/${type}`, 'back');
+    }
+
+    function onTranslateHandler() {
+        if (showTranslate) {
+            dispatch(storeTheoryActiveTestActions.hideTranslate());
+        } else {
+            if (currentQuestionTranslate) {
+                dispatch(storeTheoryActiveTestActions.showTranslate());
+            } else {
+                onTranslate && onTranslate();
+            }
+        }
     }
 };
 

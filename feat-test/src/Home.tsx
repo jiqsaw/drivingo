@@ -1,5 +1,6 @@
 import { TestDataProvider } from '@drivingo/data-provider';
 
+import { CONSTANTS } from '@drivingo/global';
 import { OptionChar, TestLearnPracticeGroup, TestType } from '@drivingo/models';
 import {
     storeAnalysisActions,
@@ -16,7 +17,11 @@ import { useLocation } from 'react-router-dom';
 import './assets/styles.scss';
 import FeatTestContent from './components/test-content';
 
-const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
+interface IFeatTestProps {
+    type: TestType;
+}
+
+const FeatTest: FC<IFeatTestProps> = ({ type }) => {
     const dispatch = useDispatch();
     const hasRunOnce = useRef(false);
     const router = useIonRouter();
@@ -33,6 +38,14 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
     );
     const isFirstQuestion = useSelector(
         storeTheoryActiveTestSelectors.isFirstQuestion,
+    );
+
+    const translatedData = useSelector(
+        storeTheoryActiveTestSelectors.currentQuestionTranslate,
+    );
+
+    const showTranslate = useSelector(
+        storeTheoryActiveTestSelectors.showTranslate,
     );
 
     const analysis = useSelector(storeAnalysisSelectors.analysis);
@@ -96,8 +109,8 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
                         warningFromNumber={5}
                         isPaused={test.isPaused}
                         initialCountdownValue={
-                            // CONSTANTS.mockTestInfo.duration * 60
-                            60
+                            CONSTANTS.mockTestInfo.duration * 60
+                            // 60
                         }
                         onFinish={() => finish()}
                     />
@@ -113,6 +126,8 @@ const FeatTest: FC<{ type?: TestType }> = ({ type }) => {
                 onSelectOption={(selectedOption: OptionChar) =>
                     selectOption(selectedOption)
                 }
+                translatedData={translatedData}
+                showTranslate={showTranslate}
             />
 
             <div className="fixed-bottom-button">

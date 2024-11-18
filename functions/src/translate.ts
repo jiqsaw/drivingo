@@ -69,7 +69,6 @@ export async function translate(languageCode: string, question: IQuestionBase) {
             throw new Error('Empty response from OpenAI API.');
         }
 
-        console.log('Translated text: ', translatedText);
         const translatedData: IOpenAITranslateResponse =
             JSON.parse(translatedText);
 

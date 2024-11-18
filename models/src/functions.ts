@@ -6,10 +6,8 @@ export interface IFunctionTranslateRequest {
 }
 
 export interface IFunctionTranslateResponse {
-    result: {
-        success: boolean;
-        data: IOpenAITranslateResponse;
-    };
+    success: boolean;
+    data: IOpenAITranslateResponse;
 }
 
 export interface IOpenAITranslateResponse extends Omit<IQuestionBase, 'code'> {}

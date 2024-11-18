@@ -1,5 +1,6 @@
 import {
     IQuestion,
+    IQuestionBase,
     ITopic,
     OptionChar,
     TestType,
@@ -14,7 +15,8 @@ export interface IStoreTheoryActiveTest {
     showFlaggedOnly: boolean;
     type?: TestType;
     filteredTopics?: ITopic[];
-    showFullTranslate?: boolean;
+    translatedData?: IQuestionBase[];
+    showTranslate?: boolean;
 }
 
 export interface IStoreTheoryActiveTestQuestion extends IQuestion {
