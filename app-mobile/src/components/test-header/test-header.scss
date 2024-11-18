@@ -15,7 +15,7 @@
   &__right-container {
     display: flex;
     button,
-    .translate-button {
+    div:first-of-type {
       margin-left: 8px;
 
       img {

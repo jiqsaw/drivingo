@@ -22,8 +22,10 @@ export const UITranslateButton: FC<IUITranslateButtonProps> = ({
                     <img src="assets/icon-translate.svg" />
                 </button>
             ) : (
-                <div className="translate-button">
-                    <div className="loading-dot"></div>
+                <div className="three-dot-loader">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             )}
         </>
