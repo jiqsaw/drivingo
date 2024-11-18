@@ -5,7 +5,18 @@ import {
     storeTheoryActiveTestActions,
     storeTheoryActiveTestSelectors,
 } from '@drivingo/store';
-import { IonActionSheet, IonButton, useIonRouter } from '@ionic/react';
+import {
+    AlertsIcon,
+    UIButton,
+    UICardList,
+    UITestProgressCard,
+} from '@drivingo/ui';
+import {
+    IonActionSheet,
+    IonButton,
+    IonRouterLink,
+    useIonRouter,
+} from '@ionic/react';
 import { OverlayEventDetail } from '@ionic/react/dist/types/components/react-component-lib/interfaces';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -22,56 +33,73 @@ const LearnPractice = () => {
     const [isActionSheetOpen, setIsActionSheetOpen] = useState(false);
 
     return (
-        <aside>
-            <span>Practice</span>
+        <>
+            <UICardList className="grid-1-cols">
+                {topics.map((topic) => {
+                    return (
+                        <>
+                            <UITestProgressCard
+                                key={topic.code}
+                                title={topic.name}
+                                progress={20}
+                                icon={<AlertsIcon />}
+                                isChecked={filteredTopics?.includes(topic)}
+                                onClick={() => selectTopic(topic)}
+                                type="horizontal"
+                            />
+                        </>
+                    );
+                })}
+            </UICardList>
 
-            {topics.map((topic) => {
-                return (
-                    // Buraya topic cardlar UI libraryden gelmeli
-                    <div key={topic.code} onClick={() => selectTopic(topic)}>
-                        {filteredTopics?.includes(topic) && <>✓</>}
-                        {topic.name}
-                    </div>
-                );
-            })}
-            {/* Bu button sadece en az bir topic secili oldugunda gorunur olacak */}
-            <IonButton onClick={() => setIsActionSheetOpen(true)}>
-                Start
-            </IonButton>
+            <div
+                className={`fixed-bottom-button   ${
+                    filteredTopics && filteredTopics.length > 0
+                        ? 'active'
+                        : 'disabled'
+                }`}
+            >
+                <IonButton
+                    className={`w-full`}
+                    onClick={() => setIsActionSheetOpen(true)}
+                >
+                    Start
+                </IonButton>
 
-            {/* ????? backdrop error */}
-            <IonActionSheet
-                isOpen={isActionSheetOpen}
-                header="Please select which questions to answer"
-                buttons={[
-                    {
-                        text: `All (${getTotalAll()})`,
-                        role: TestLearnPracticeGroup.All.toString(),
-                    },
-                    {
-                        text: `Unanswered (${getTotalUnanswered()})`,
-                        role: TestLearnPracticeGroup.Unanswered.toString(),
-                    },
-                    ...(getTotalIncorrect() > 0
-                        ? [
-                              {
-                                  text: `Incorrect (${getTotalIncorrect()})`,
-                                  role: TestLearnPracticeGroup.Incorrect.toString(),
-                              },
-                          ]
-                        : []),
-                    {
-                        text: `Incorrect and unanswered (${getTotalUnanswered() + getTotalIncorrect()})`,
-                        role: TestLearnPracticeGroup.IncorrectAndUnanswered.toString(),
-                    },
-                    {
-                        text: 'Cancel',
-                        role: 'cancel',
-                    },
-                ]}
-                onDidDismiss={({ detail }) => onActionSheetDismiss(detail)}
-            ></IonActionSheet>
-        </aside>
+                {/* ????? backdrop error */}
+                <IonActionSheet
+                    isOpen={isActionSheetOpen}
+                    header="Please select which questions to answer"
+                    buttons={[
+                        {
+                            text: `All (${getTotalAll()})`,
+                            role: TestLearnPracticeGroup.All.toString(),
+                        },
+                        {
+                            text: `Unanswered (${getTotalUnanswered()})`,
+                            role: TestLearnPracticeGroup.Unanswered.toString(),
+                        },
+                        ...(getTotalIncorrect() > 0
+                            ? [
+                                  {
+                                      text: `Incorrect (${getTotalIncorrect()})`,
+                                      role: TestLearnPracticeGroup.Incorrect.toString(),
+                                  },
+                              ]
+                            : []),
+                        {
+                            text: `Incorrect and unanswered (${getTotalUnanswered() + getTotalIncorrect()})`,
+                            role: TestLearnPracticeGroup.IncorrectAndUnanswered.toString(),
+                        },
+                        {
+                            text: 'Cancel',
+                            role: 'cancel',
+                        },
+                    ]}
+                    onDidDismiss={({ detail }) => onActionSheetDismiss(detail)}
+                ></IonActionSheet>
+            </div>
+        </>
     );
 
     function selectTopic(topic: ITopic) {

@@ -1,6 +1,12 @@
 .card-list {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+
+    &.grid-1-cols {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     &.grid-2-cols {
         display: grid;

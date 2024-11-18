@@ -46,6 +46,40 @@
     position: relative;
     transition: background-color 0.3s ease;
 
+    &.horizontal {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding-left: 40px;
+
+        .card-icon {
+            margin-bottom: 0;
+        }
+
+        .card-progress {
+            display: none;
+        }
+
+        .checkmark {
+            top: 50%;
+            right: auto;
+            left: 16px;
+            transform: translateY(-50%);
+        }
+
+        .card-title {
+            margin-right: auto;
+            height: auto;
+            max-width: 124px;
+        }
+
+        .progress-count {
+            margin-top: 0;
+            margin-bottom: auto;
+        }
+    }
+
     &.selected {
         background-color: #4321FE;
     }
