@@ -18,7 +18,7 @@ export interface IHeaderProps {
 const Header: FC<IHeaderProps> = (props) => {
     const { isRoot = true, backPath, backText } = props;
 
-    const isLoggedIn = useSelector(storeUserSelectors.isLoggedIn);
+    const user = useSelector(storeUserSelectors.user);
     const router = useIonRouter();
 
     const theme = useSelector(storeUiSelectors.theme);
@@ -27,10 +27,10 @@ const Header: FC<IHeaderProps> = (props) => {
     return (
         <div className="header">
             {isRoot &&
-                (!isLoggedIn ? (
+                (!user.isLoggedIn ? (
                     <img src="assets/images/drivingo-logo.svg" />
                 ) : (
-                    <UIProfileButton />
+                    <UIProfileButton photoURL={user.photoURL} />
                 ))}
             {!isRoot && (
                 <button

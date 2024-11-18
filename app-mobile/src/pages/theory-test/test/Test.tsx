@@ -67,6 +67,8 @@ const Test = () => {
                     }),
                 );
                 setLoadingTranslate(false);
+            } else {
+                // ??? Show language selection panel
             }
         } catch (error) {
             console.error('Error calling translateQuestion function:', error);
