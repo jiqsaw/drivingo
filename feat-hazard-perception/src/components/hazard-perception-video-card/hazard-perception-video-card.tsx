@@ -1,26 +1,23 @@
 import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
 import { IHazardClip } from '@drivingo/models';
-import { IonRouterLink } from '@ionic/react';
+import { PlayIcon, UIDividerPoints } from '@drivingo/ui';
+import { IonImg, IonRouterLink } from '@ionic/react';
 import { FC } from 'react';
-import { UIDividerPoints } from '@drivingo/ui';
-import { PlayIcon } from '@drivingo/ui';
 
 import './hazard-perception-video-card.scss';
 
 type HazardPerceptionVideoCardProps = {
     data: IHazardClip;
-    routerDirection: 'root' | 'forward';
 };
 
 export const HazardPerceptionVideoCard: FC<HazardPerceptionVideoCardProps> = ({
     data,
-    routerDirection,
 }) => {
     return (
         <>
             <IonRouterLink
                 routerLink={`/theory-test/hazard-perception/${data.code}`}
-                routerDirection={routerDirection}
+                routerDirection="forward"
                 className="hazard-perception-video-card"
             >
                 <div className="hazard-perception-video-card__body">
@@ -37,9 +34,7 @@ export const HazardPerceptionVideoCard: FC<HazardPerceptionVideoCardProps> = ({
                     <span className="hazard-perception-video-card__play">
                         <PlayIcon />
                     </span>
-                    <img
-                        width={200}
-                        height={150}
+                    <IonImg
                         src={
                             HazardPerceptionDataProvider.imgBasePath +
                             'clip' +
@@ -47,11 +42,11 @@ export const HazardPerceptionVideoCard: FC<HazardPerceptionVideoCardProps> = ({
                             '.png'
                         }
                         alt={data.code}
-                    />
+                    ></IonImg>
                 </figure>
             </IonRouterLink>
-            <div className='hazard-perception-video-card__divider'>
-            <UIDividerPoints />
+            <div className="hazard-perception-video-card__divider">
+                <UIDividerPoints />
             </div>
         </>
     );

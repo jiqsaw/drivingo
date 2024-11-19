@@ -38,7 +38,6 @@ const FeatHazardPerception = () => {
                             <HazardPerceptionVideoCard
                                 key={index}
                                 data={item}
-                                routerDirection="forward"
                             />
                         );
                     })
