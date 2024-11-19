@@ -50,7 +50,7 @@
           {
             "input": "data/src/hazard-perception/thumbnails",
             "glob": "**/*",
-            "output": "data-thumbnails/hazard-perception"
+            "output": "data-images/hazard-perception/thumbnails"
           },
           {
             "input": "data/src/hazard-perception/clips",

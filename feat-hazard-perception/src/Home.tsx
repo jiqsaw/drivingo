@@ -51,7 +51,7 @@ const FeatHazardPerception = () => {
                 onClose={handleInstructorClose}
                 type="full"
             >
-                <video controls width="100%" height="auto">
+                <video controls width="100%" height="auto" autoPlay={false}>
                     <source
                         src="data-clips/hazard-perception/instructor.mp4"
                         type="video/mp4"
