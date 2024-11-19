@@ -28,7 +28,10 @@ const TheoryTest: React.FC = () => {
                         <br />
                         <UILink text="link example" />
 
-                        <IonRouterLink routerDirection="forward">
+                        <IonRouterLink
+                            routerLink="/theory-test/learn"
+                            routerDirection="forward"
+                        >
                             <p>Learn</p>
                         </IonRouterLink>
 
