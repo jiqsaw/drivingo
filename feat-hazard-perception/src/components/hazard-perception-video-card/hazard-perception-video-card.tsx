@@ -1,5 +1,5 @@
 import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
-import { IHazardClip } from '@drivingo/models';
+import { IHazardClipListView } from '@drivingo/models';
 import { PlayIcon, UIDividerPoints } from '@drivingo/ui';
 import { IonImg, IonRouterLink } from '@ionic/react';
 import { FC } from 'react';
@@ -7,7 +7,7 @@ import { FC } from 'react';
 import './hazard-perception-video-card.scss';
 
 type HazardPerceptionVideoCardProps = {
-    data: IHazardClip;
+    data: IHazardClipListView;
 };
 
 export const HazardPerceptionVideoCard: FC<HazardPerceptionVideoCardProps> = ({
@@ -27,7 +27,7 @@ export const HazardPerceptionVideoCard: FC<HazardPerceptionVideoCardProps> = ({
                     </h4>
                     <h4 className="hazard-perception-video-card__score">
                         <span className="key">Score</span>
-                        <span className="value">{data.frameCount}</span>
+                        <span className="value">{data.lastScore}/5</span>
                     </h4>
                 </div>
                 <figure className="hazard-perception-video-card__image">

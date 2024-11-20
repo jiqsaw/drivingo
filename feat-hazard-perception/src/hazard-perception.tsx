@@ -1,4 +1,4 @@
-import { HazardFilterType, IHazardClip } from '@drivingo/models';
+import { HazardFilterType, IHazardClipListView } from '@drivingo/models';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 
@@ -35,7 +35,7 @@ const FeatHazardPerception = () => {
                 />
                 <UITabs items={tabs} onChange={(index) => onTabChange(index)} />
                 {filteredItems.length > 0 ? (
-                    filteredItems.map((item: IHazardClip, index) => {
+                    filteredItems.map((item: IHazardClipListView, index) => {
                         return (
                             <HazardPerceptionVideoCard
                                 key={index}
