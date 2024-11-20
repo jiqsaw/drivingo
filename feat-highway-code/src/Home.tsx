@@ -6,7 +6,7 @@ import HighwayCodeSigns from './Signs';
 
 const FeatHighwayCode = () => {
     const [selectedTab, setSelectedTab] = useState(0);
-    const [filteredContents, setFilteredAllSigns] = useState(
+    const [filteredContent, setFilterContent] = useState(
         HighwayCodeDataProvider.getContentTopics(),
     );
     const [filteredSigns, setFilteredSigns] = useState(
@@ -22,17 +22,13 @@ const FeatHighwayCode = () => {
                 onChange={(index) => setSelectedTab(index)}
             />
 
-            {selectedTab === 0 && (
-                <HighwayCodeContent data={filteredContents} />
-            )}
+            {selectedTab === 0 && <HighwayCodeContent data={filteredContent} />}
             {selectedTab === 1 && <HighwayCodeSigns data={filteredSigns} />}
         </aside>
     );
 
     function handleSearch(searchText: string) {
-        setFilteredAllSigns(
-            HighwayCodeDataProvider.getContentTopics(searchText),
-        );
+        setFilterContent(HighwayCodeDataProvider.getContentTopics(searchText));
         setFilteredSigns(HighwayCodeDataProvider.getSignTopics(searchText));
     }
 };

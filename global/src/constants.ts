@@ -14,4 +14,6 @@ export default {
         success: 86,
     },
     topicCodeForVideos: 'videos',
+    hazardClipMaxFlag: 10,
+    hazardLowScoreThreshold: 3, // <= 3
 };

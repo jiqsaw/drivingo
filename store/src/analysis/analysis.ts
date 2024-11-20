@@ -1,8 +1,6 @@
-import { AppState } from '../store';
+import analysisSelectors from './analysis.selectors';
 import analysisSlice from './analysis.slice';
 
 export const storeAnalysisReducer = analysisSlice.reducer;
 export const storeAnalysisActions = analysisSlice.actions;
-export const storeAnalysisSelectors = {
-    analysis: (state: AppState) => state.analysis,
-};
+export const storeAnalysisSelectors = analysisSelectors;

@@ -1,8 +1,10 @@
+import { IHazardPerceptionResult } from '@drivingo/models';
+
 export interface IStoreAnalysis {
     learnPractice: IStoreAnalysisLearnPracticeTest;
     quickTest: IStoreAnalysisQuickTest;
     mockTest: IStoreAnalysisMockTest;
-    // hazardPerception: IStoreAnalysisHazardPerception[];
+    hazardPerception: IHazardPerceptionResult[];
 }
 
 export interface IStoreAnalysisTestBase {
@@ -16,12 +18,6 @@ export interface IStoreAnalysisLearnPracticeTest
 export interface IStoreAnalysisQuickTest extends IStoreAnalysisTestBase {}
 
 export interface IStoreAnalysisMockTest extends IStoreAnalysisTestBase {}
-
-export interface IStoreAnalysisHazardPerception {
-    date: Date;
-    clipCode: string;
-    score: number;
-}
 
 export interface IStoreAnalysisTopicResult {
     code: string;

@@ -11,7 +11,7 @@ import {
     IStoreAnalysisTopicResult,
 } from './analysis.model';
 
-const initialState: IStoreAnalysisTestBase = {
+const testInitialState: IStoreAnalysisTestBase = {
     topics: TopicDataProvider.getData().map((topic) => {
         const item: IStoreAnalysisTopicResult = {
             code: topic.code,
@@ -27,14 +27,15 @@ export default createSlice({
     name: 'analysis',
     initialState: {
         learnPractice: {
-            ...initialState,
+            ...testInitialState,
         },
         quickTest: {
-            ...initialState,
+            ...testInitialState,
         },
         mockTest: {
-            ...initialState,
+            ...testInitialState,
         },
+        hazardPerception: [],
     } as IStoreAnalysis,
     reducers: {
         addTestResult: (
@@ -86,26 +87,37 @@ export default createSlice({
                 }
             });
 
-            const analysisTestBase: IStoreAnalysisTestBase = {
-                topics: storedTopics,
-                results: [testResult, ...state.quickTest.results],
-            };
-
             switch (test.type) {
                 case TestType.LearnPractice:
-                    state.learnPractice = { ...analysisTestBase };
+                    state.learnPractice = {
+                        topics: storedTopics,
+                        results: [testResult, ...state.learnPractice.results],
+                    };
                     break;
                 case TestType.QuickTest:
-                    state.quickTest = { ...analysisTestBase };
+                    state.quickTest = {
+                        topics: storedTopics,
+                        results: [testResult, ...state.quickTest.results],
+                    };
                     break;
                 case TestType.MockTest:
                     state.mockTest = {
-                        ...analysisTestBase,
+                        topics: storedTopics,
+                        results: [testResult, ...state.mockTest.results],
                     };
                     break;
             }
 
             dbAnalysis.setTestResults(state);
+        },
+
+        addHazardTestResult(
+            state,
+            action: PayloadAction<{ clipCode: string; score: number }>,
+        ) {
+            const { clipCode, score } = action.payload;
+
+            state.hazardPerception.push({ date: new Date(), clipCode, score });
         },
     },
 });
