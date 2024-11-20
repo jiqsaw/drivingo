@@ -25,30 +25,38 @@ const FeatTestResult: FC = () => {
             <div
                 className={`test-result__status ${isTestResultSuccess ? 'success' : 'fail'}`}
             >
+                {isTestResultSuccess ? <CheckIcon /> : <CloseIcon />}
                 <span>{isTestResultSuccess ? 'PASS' : 'FAIL'}</span>
-                <span>
+            </div>
+
+            <div className="test-result__number-status">
+                <h4 className="title">YOUR SCORE</h4>
+                <span className="pass-result">
                     {passingRequiredCorrect}/{questionsLength}
                 </span>
-            </div>
-            <div className="test-result__description">
-                Practice for the hazard perception part of your theory test.
+                <span className="min-pass">
+                    pass mark is 2/{questionsLength}
+                </span>
             </div>
             <div className="test-result__actions">
-                <IonRouterLink
-                    routerDirection="root"
-                    routerLink="/theory-test/test-review"
-                    className="full-width"
-                >
-                    <UIButton text="Review test" fullWidth nextIcon={true} />
-                </IonRouterLink>
-
                 <IonRouterLink
                     className="link"
                     routerDirection="root"
                     routerLink={`/theory-test/test/${testType}`}
                 >
                     <RetryIcon />
-                    Retry
+                    Take another test
+                </IonRouterLink>
+                <IonRouterLink
+                    routerDirection="root"
+                    routerLink="/theory-test/test-review"
+                    className="full-width"
+                >
+                    <UIButton
+                        text="Review your test"
+                        fullWidth
+                        nextIcon={true}
+                    />
                 </IonRouterLink>
             </div>
         </aside>

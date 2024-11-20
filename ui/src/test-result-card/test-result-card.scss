@@ -4,13 +4,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #4321FE;
+    background-color: #352494;
     border-radius: 20px;
     padding: 12px 24px;
     gap: 18px;
     font-size: 13px;
+    opacity: 0.5;
 
-    &__icon {}
+    &.higlight {
+        background-color: #4321FE;
+        opacity: 1;
+    }
 
     &__title {
         color: #fff;
@@ -25,5 +29,5 @@
         font-weight: 700;
     }
 
-   
+
 }
