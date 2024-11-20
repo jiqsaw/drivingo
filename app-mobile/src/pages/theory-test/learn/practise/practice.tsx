@@ -45,7 +45,7 @@ const LearnPractice = () => {
                                 icon={<AlertsIcon />}
                                 isChecked={filteredTopics?.includes(topic)}
                                 onClick={() => selectTopic(topic)}
-                                type="horizontal"
+                                direction="horizontal"
                             />
                         </>
                     );
@@ -65,8 +65,7 @@ const LearnPractice = () => {
                 >
                     Start
                 </IonButton>
-
-                {/* ????? backdrop error */}
+                
                 <IonActionSheet
                     isOpen={isActionSheetOpen}
                     header="Please select which questions to answer"

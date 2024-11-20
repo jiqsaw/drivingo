@@ -7,7 +7,7 @@ interface TestProgressCardProps {
     progress?: number;
     isChecked?: boolean;
     icon: React.ReactNode;
-    type?: 'square' | 'horizontal';
+    direction?: 'square' | 'horizontal';
     onClick?: () => void;
 }
 
@@ -16,7 +16,7 @@ const optionsInitial: TestProgressCardProps = {
     progress: 0,
     isChecked: false,
     icon: <CheckIcon />,
-    type: 'square',
+    direction: 'square',
     onClick: () => {},
 };
 
@@ -25,12 +25,12 @@ export const UITestProgressCard: FC<TestProgressCardProps> = ({
     progress,
     isChecked,
     icon,
-    type,
+    direction,
     onClick,
 } = optionsInitial) => {
     return (
         <div
-            className={`test-progress-card ${isChecked ? 'selected' : ''} ${type || ''}`}
+            className={`test-progress-card ${isChecked ? 'selected' : ''} ${direction || ''}`}
             onClick={onClick}
         >
             {isChecked && (

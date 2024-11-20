@@ -48,7 +48,7 @@
 
     &.horizontal {
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         gap: 16px;
         padding-left: 40px;
@@ -72,6 +72,7 @@
             margin-right: auto;
             height: auto;
             max-width: 124px;
+            line-height: 1.6;
         }
 
         .progress-count {
@@ -113,8 +114,8 @@
     }
 
     .card-icon {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         margin-bottom: 16px;
         margin-top: 0;
 
