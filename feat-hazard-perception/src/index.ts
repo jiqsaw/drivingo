@@ -1,6 +1,6 @@
-import FeatHazardPerceptionDetail from './Detail';
-import FeatHazardPerceptionResult from './Result';
-import FeatHazardPerception from './Home';
+import FeatHazardPerception from './hazard-perception';
+import FeatHazardPerceptionDetail from './hazard-perception-detail';
+import FeatHazardPerceptionResult from './hazard-perception-result';
 
 export {
     FeatHazardPerception,
