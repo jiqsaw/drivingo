@@ -1,5 +1,11 @@
 import { storeTheoryActiveTestSelectors } from '@drivingo/store';
-import { CheckIcon, CloseIcon, RetryIcon, UIButton } from '@drivingo/ui';
+import {
+    CheckIcon,
+    CloseIcon,
+    RetryIcon,
+    ShareIcon,
+    UIButton,
+} from '@drivingo/ui';
 import { IonRouterLink } from '@ionic/react';
 import { FC } from 'react';
 import { useSelector } from 'react-redux';
@@ -20,6 +26,11 @@ const FeatTestResult: FC = () => {
         storeTheoryActiveTestSelectors.isTestResultSuccess,
     );
 
+    const shareTestResult = () => {
+        // this function will be implemented later.
+        // https://ionicframework.com/docs/native/share
+    };
+
     return (
         <aside className="test-result">
             <div
@@ -38,7 +49,16 @@ const FeatTestResult: FC = () => {
                     pass mark is 2/{questionsLength}
                 </span>
             </div>
+
             <div className="test-result__actions">
+                <button
+                    type="button"
+                    className="share"
+                    onClick={shareTestResult}
+                >
+                    <ShareIcon />
+                    Share
+                </button>
                 <IonRouterLink
                     className="link"
                     routerDirection="root"

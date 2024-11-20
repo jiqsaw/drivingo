@@ -153,11 +153,12 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
 
   &__status {
     width: 220px;
     height: 220px;
+    min-height: 220px;
     border-width: 21px;
     border-style: solid;
     border-radius: 50%;
@@ -235,7 +236,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
+
+    .share {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
 
     .link {
       width: 100%;
@@ -252,4 +259,6 @@
       }
     }
   }
+
+
 }
