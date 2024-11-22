@@ -1,5 +1,11 @@
 import { storeTheoryActiveTestSelectors } from '@drivingo/store';
-import { CheckIcon, CloseIcon, RetryIcon, UIButton } from '@drivingo/ui';
+import {
+    CheckIcon,
+    CloseIcon,
+    RetryIcon,
+    ShareIcon,
+    UIButton,
+} from '@drivingo/ui';
 import { IonRouterLink } from '@ionic/react';
 import { FC } from 'react';
 import { useSelector } from 'react-redux';
@@ -25,34 +31,56 @@ const FeatTestResult: FC = () => {
             <div
                 className={`test-result__status ${isTestResultSuccess ? 'success' : 'fail'}`}
             >
+                {isTestResultSuccess ? <CheckIcon /> : <CloseIcon />}
                 <span>{isTestResultSuccess ? 'PASS' : 'FAIL'}</span>
-                <span>
+            </div>
+
+            <div className="test-result__number-status">
+                <h4 className="title">YOUR SCORE</h4>
+                <span className="pass-result">
                     {passingRequiredCorrect}/{questionsLength}
                 </span>
+                <span className="min-pass">
+                    pass mark is {correctCount}/{questionsLength}
+                </span>
             </div>
-            <div className="test-result__description">
-                Practice for the hazard perception part of your theory test.
-            </div>
-            <div className="test-result__actions">
-                <IonRouterLink
-                    routerDirection="root"
-                    routerLink="/theory-test/test-review"
-                    className="full-width"
-                >
-                    <UIButton text="Review test" fullWidth nextIcon={true} />
-                </IonRouterLink>
 
+            <div className="test-result__actions">
+                <button
+                    type="button"
+                    className="share"
+                    onClick={shareTestResult}
+                >
+                    <ShareIcon />
+                    Share
+                </button>
                 <IonRouterLink
                     className="link"
                     routerDirection="root"
                     routerLink={`/theory-test/test/${testType}`}
                 >
                     <RetryIcon />
-                    Retry
+                    Take another test
+                </IonRouterLink>
+                <IonRouterLink
+                    routerDirection="root"
+                    routerLink="/theory-test/test-review"
+                    className="full-width"
+                >
+                    <UIButton
+                        text="Review your test"
+                        fullWidth
+                        nextIcon={true}
+                    />
                 </IonRouterLink>
             </div>
         </aside>
     );
+
+    function shareTestResult() {
+        // this function will be implemented later.
+        // https://ionicframework.com/docs/native/share
+    }
 };
 
 export default FeatTestResult;

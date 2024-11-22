@@ -24,12 +24,18 @@ export const UITestAnswerCard: FC<TestAnswerCardProps> = ({
                     {status ? <CheckIcon /> : <CloseIcon />}
                 </div>
                 <div className="test-answer-card__question">
-                    <span className="number">{number}</span>
+                    <span className="number">
+                        {number.toString().padStart(2, '0')}
+                    </span>
                     <p className="question">{question}</p>
                 </div>
-                <div className="test-answer-card__link" onClick={onClick}>
+                <button
+                    type="button"
+                    className="test-answer-card__link"
+                    onClick={onClick}
+                >
                     <RedirectOkIcon />
-                </div>
+                </button>
             </div>
         </>
     );

@@ -84,10 +84,11 @@ const FeatTestReview: FC = () => {
                     <UIInlineModal
                         isOpen={modalOpen}
                         onClose={handleInstructorClose}
-                        breakpoint={0.96}
+                        type="full"
                     >
                         {selectedQuestionIndex && (
                             <FeatTestContent
+                                reviewMode={true}
                                 questionNo={selectedQuestionIndex + 1}
                                 questionsLength={test.questions.length}
                                 questionItem={
@@ -115,10 +116,12 @@ const FeatTestReview: FC = () => {
             {selectedTab === 1 && (
                 <div>
                     <UICardList className="column">
-                        {topicResults.map((item) => {
+                        {topicResults.map((item, index) => {
                             return (
                                 <UITestResultCard
-                                    count={`${item.correct}/${item.total}`}
+                                    key={index}
+                                    correct={item.correct}
+                                    total={item.total}
                                     icon={<AlertsIcon />}
                                     title={item.topicName}
                                 />
