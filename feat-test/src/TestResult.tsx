@@ -26,11 +26,6 @@ const FeatTestResult: FC = () => {
         storeTheoryActiveTestSelectors.isTestResultSuccess,
     );
 
-    const shareTestResult = () => {
-        // this function will be implemented later.
-        // https://ionicframework.com/docs/native/share
-    };
-
     return (
         <aside className="test-result">
             <div
@@ -46,7 +41,7 @@ const FeatTestResult: FC = () => {
                     {passingRequiredCorrect}/{questionsLength}
                 </span>
                 <span className="min-pass">
-                    pass mark is 2/{questionsLength}
+                    pass mark is {correctCount}/{questionsLength}
                 </span>
             </div>
 
@@ -81,6 +76,11 @@ const FeatTestResult: FC = () => {
             </div>
         </aside>
     );
+
+    function shareTestResult() {
+        // this function will be implemented later.
+        // https://ionicframework.com/docs/native/share
+    }
 };
 
 export default FeatTestResult;
