@@ -8,6 +8,7 @@ import {
 
 export const HazardPerceptionDataProvider = {
     imgBasePath: 'data-images/hazard-perception/thumbnails/',
+    videoBasePath: 'data-videos/hazard-perception/clips/',
     getContentDetail: (id: string) =>
         DATA_HAZAR_CLIPS.find((i) => i.code === id),
     getHazardClipsList: (
@@ -25,7 +26,7 @@ export const HazardPerceptionDataProvider = {
                     ? matchingResults[matchingResults.length - 1].score
                     : 0;
 
-            const downloaded = true; // ??? Check if the vide downloaded by user
+            const downloaded = true; // ??? Check if the video downloaded by user
             return {
                 ...clip,
                 lastScore,
@@ -34,7 +35,6 @@ export const HazardPerceptionDataProvider = {
             };
         });
 
-        console.log('filterType:', filterType);
         switch (filterType) {
             case HazardFilterType.All:
                 return viewData;
@@ -49,5 +49,18 @@ export const HazardPerceptionDataProvider = {
             case HazardFilterType.Downloaded:
                 return viewData.filter((item) => item.downloaded === true);
         }
+    },
+    getClipUrl(clipCode: string) {
+        // ??? This should be in File documentary after downloaded from cloud
+        return this.videoBasePath + 'clip' + clipCode + '.mp4';
+    },
+    getNextClipDetail(currentClipCode: string) {
+        const currentVideIndex = DATA_HAZAR_CLIPS.findIndex(
+            (item) => item.code === currentClipCode,
+        );
+        if (DATA_HAZAR_CLIPS.length > currentVideIndex + 1) {
+            return DATA_HAZAR_CLIPS[currentVideIndex + 1];
+        }
+        return null;
     },
 };

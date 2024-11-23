@@ -48,14 +48,19 @@
             "output": "data-videos/test"
           },
           {
-            "input": "data/src/hazard-perception/thumbnails",
+            "input": "feat-hazard-perception/src/assets",
             "glob": "**/*",
-            "output": "data-images/hazard-perception/thumbnails"
+            "output": "/assets"
           },
           {
             "input": "data/src/hazard-perception/clips",
             "glob": "**/*",
-            "output": "data-clips/hazard-perception"
+            "output": "data-videos/hazard-perception/clips"
+          },
+          {
+            "input": "data/src/hazard-perception/thumbnails",
+            "glob": "**/*",
+            "output": "data-images/hazard-perception/thumbnails"
           },
           "app-mobile/src/manifest.json"
         ],

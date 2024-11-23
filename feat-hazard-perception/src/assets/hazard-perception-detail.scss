@@ -23,7 +23,7 @@
 
   .video {
     width: calc(100% + var(--default-padding) * 2);
-    margin-left: -var(--default-padding);
+    position: relative;
   }
 
   .video-info {
@@ -38,5 +38,12 @@
     padding: 0 20px;
     max-width: 220px;
     margin: 0 auto;
+  }
+}
+
+.flags {
+  img {
+    position: absolute;
+    bottom: 10px;
   }
 }

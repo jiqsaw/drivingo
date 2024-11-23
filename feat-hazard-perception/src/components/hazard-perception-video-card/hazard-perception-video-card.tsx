@@ -1,9 +1,11 @@
 import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
 import { IHazardClipListView } from '@drivingo/models';
 import { PlayIcon, UIDividerPoints } from '@drivingo/ui';
-import { IonImg, IonRouterLink } from '@ionic/react';
+import { IonImg, useIonRouter } from '@ionic/react';
 import { FC } from 'react';
 
+import { storeTheoryActiveHazardActions } from '@drivingo/store';
+import { useDispatch } from 'react-redux';
 import './hazard-perception-video-card.scss';
 
 type HazardPerceptionVideoCardProps = {
@@ -13,14 +15,16 @@ type HazardPerceptionVideoCardProps = {
 export const HazardPerceptionVideoCard: FC<HazardPerceptionVideoCardProps> = ({
     data,
 }) => {
+    const router = useIonRouter();
+    const dispatch = useDispatch();
+
     return (
         <>
-            <IonRouterLink
-                routerLink={`/theory-test/hazard-perception/${data.code}`}
-                routerDirection="forward"
-                className="hazard-perception-video-card"
-            >
-                <div className="hazard-perception-video-card__body">
+            <div className="hazard-perception-video-card">
+                <div
+                    className="hazard-perception-video-card__body"
+                    onClick={() => itemPressHandler(data.code)}
+                >
                     <h4 className="hazard-perception-video-card__clip">
                         <span className="key">Clip</span>
                         <span className="value">{data.code}</span>
@@ -44,10 +48,15 @@ export const HazardPerceptionVideoCard: FC<HazardPerceptionVideoCardProps> = ({
                         alt={data.code}
                     ></IonImg>
                 </figure>
-            </IonRouterLink>
+            </div>
             <div className="hazard-perception-video-card__divider">
                 <UIDividerPoints />
             </div>
         </>
     );
+
+    function itemPressHandler(clipCode: string) {
+        dispatch(storeTheoryActiveHazardActions.start({ clipCode }));
+        router.push(`/theory-test/hazard-perception/${clipCode}`);
+    }
 };

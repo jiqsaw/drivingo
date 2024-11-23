@@ -1,42 +1,38 @@
-import { DATA_HAZAR_CLIPS } from '@drivingo/data';
 import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
-import { storeTheoryActiveTestSelectors } from '@drivingo/store';
+import {
+    storeTheoryActiveHazardActions,
+    storeTheoryActiveHazardSelectors,
+    storeTheoryActiveTestSelectors,
+} from '@drivingo/store';
 import { ArrowNextIcon, RetryIcon } from '@drivingo/ui';
-import { IonRouterLink } from '@ionic/react';
-import { useSelector } from 'react-redux';
+import { IonRouterLink, useIonRouter } from '@ionic/react';
+import { useDispatch, useSelector } from 'react-redux';
 import './assets/hazard-perception-result.scss';
 
 const FeatHazardPerceptionResult = () => {
-    const activeVideo = {
-        code: '',
-    };
+    const dispatch = useDispatch();
+    const router = useIonRouter();
 
     const isTestResultSuccess = useSelector(
         storeTheoryActiveTestSelectors.isTestResultSuccess,
     );
 
-    const questionsLength = useSelector(
-        storeTheoryActiveTestSelectors.questionsLength,
-    );
-    const correctCount = useSelector(
-        storeTheoryActiveTestSelectors.correctCount,
+    const activeHazard = useSelector(
+        storeTheoryActiveHazardSelectors.activeHazard,
     );
 
-    const currentIndex = DATA_HAZAR_CLIPS.findIndex((clip) => clip.code === '');
-
-    const nextClip =
-        DATA_HAZAR_CLIPS[(currentIndex + 1) % DATA_HAZAR_CLIPS.length];
+    const nextClip = HazardPerceptionDataProvider.getNextClipDetail(
+        activeHazard.clipCode,
+    );
 
     return (
         <aside>
-            <div className="hazard-perception-video-result">
+            <div className="hazard-perception-result">
                 <h1
                     className={`title ${isTestResultSuccess ? 'pass' : 'fail'}`}
                 >
                     SCORE
-                    <span>
-                        {correctCount}/{questionsLength}
-                    </span>
+                    <span>{activeHazard.score}/5</span>
                 </h1>
 
                 <div className="content-body">
@@ -49,42 +45,59 @@ const FeatHazardPerceptionResult = () => {
                         <ArrowNextIcon />
                     </IonRouterLink>
 
-                    <IonRouterLink
-                        routerDirection="back"
-                        routerLink={`/theory-test/hazard-perception/${activeVideo.code}`}
-                        className="lnk"
-                    >
+                    <div className="lnk" onClick={retry}>
                         <RetryIcon />
                         <span>Retry</span>
-                    </IonRouterLink>
+                    </div>
                 </div>
 
-                <div className="next-clip">
-                    <figure className="image">
-                        <img
-                            width={200}
-                            src={
-                                HazardPerceptionDataProvider.imgBasePath +
-                                'clip' +
-                                nextClip.code +
-                                '.png'
-                            }
-                        />
-                        <figcaption className="code">
-                            {nextClip.code}
-                        </figcaption>
-                    </figure>
-                    <IonRouterLink
-                        routerDirection="forward"
-                        routerLink={`/theory-test/hazard-perception/${nextClip.code}`}
-                        className="next-link lnk"
-                    >
-                        {'>'} Next clip
-                    </IonRouterLink>
-                </div>
+                {nextClip !== null && (
+                    <div className="next-clip" onClick={nextClipHandler}>
+                        <figure className="image">
+                            <img
+                                width={200}
+                                src={
+                                    HazardPerceptionDataProvider.imgBasePath +
+                                    'clip' +
+                                    nextClip.code +
+                                    '.png'
+                                }
+                            />
+                            <figcaption className="code">
+                                {nextClip.code}
+                            </figcaption>
+                        </figure>
+                        <div
+                            className="next-link lnk"
+                            onClick={nextClipHandler}
+                        >
+                            {'>'} Next clip
+                        </div>
+                    </div>
+                )}
             </div>
         </aside>
     );
+
+    function retry() {
+        dispatch(
+            storeTheoryActiveHazardActions.start({
+                clipCode: activeHazard.clipCode,
+            }),
+        );
+        router.push(`/theory-test/hazard-perception/${activeHazard.clipCode}`);
+    }
+
+    function nextClipHandler() {
+        if (nextClip !== null) {
+            dispatch(
+                storeTheoryActiveHazardActions.start({
+                    clipCode: nextClip.code,
+                }),
+            );
+            router.push(`/theory-test/hazard-perception/${nextClip.code}`);
+        }
+    }
 };
 
 export default FeatHazardPerceptionResult;

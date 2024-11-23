@@ -12,7 +12,11 @@ export interface IHazardClipScoreWindow {
     end: number;
 }
 
-export type HazardTestView = 'test' | 'result' | 'review';
+export enum HazardView {
+    Test,
+    Result,
+    Review,
+}
 
 export interface IHazardClipListView extends IHazardClip {
     lastScore?: number;

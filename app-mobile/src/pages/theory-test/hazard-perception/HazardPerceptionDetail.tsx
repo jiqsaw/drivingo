@@ -10,7 +10,10 @@ const HazardPerceptionDetail: React.FC = () => {
         <IonPage>
             <IonContent fullscreen>
                 <aside className="container">
-                    <Header isRoot={false} />
+                    <Header
+                        isRoot={false}
+                        backPath="/theory-test/hazard-perception"
+                    />
                     <FeatHazardPerceptionDetail {...params} />
                 </aside>
                 <BottomNavigation />
