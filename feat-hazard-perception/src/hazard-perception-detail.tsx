@@ -88,12 +88,11 @@ const FeatHazardPerceptionDetail: FC = () => {
                                     key={`flag-${index}`}
                                     src="assets/flag-fill.svg"
                                     style={{
-                                        left: getFlagPosition(flag.second),
+                                        left: getFlagPosition(flag),
                                         opacity:
                                             activeHazard.viewMode ===
                                                 HazardView.Review &&
-                                            flag.second !==
-                                                activeHazard.scoreFlag
+                                            flag !== activeHazard.scoreFlag
                                                 ? 0.5
                                                 : 1,
                                     }}
@@ -150,7 +149,6 @@ const FeatHazardPerceptionDetail: FC = () => {
                 dispatch(
                     storeTheoryActiveHazardActions.addFlag({
                         second,
-                        flagPositionLeft,
                     }),
                 );
             } else {

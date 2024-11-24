@@ -2,10 +2,7 @@ import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
 import { CONSTANTS } from '@drivingo/global';
 import { HazardView } from '@drivingo/models';
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
-import {
-    IStoreTheoryActiveHazard,
-    IStoreTheoryActiveHazardUserFlag,
-} from './active-hazard.model';
+import { IStoreTheoryActiveHazard } from './active-hazard.model';
 
 export default createSlice({
     name: 'active-hazard-perception',
@@ -29,19 +26,15 @@ export default createSlice({
             state.viewMode = HazardView.Test;
         },
 
-        addFlag(
-            state,
-            action: PayloadAction<IStoreTheoryActiveHazardUserFlag>,
-        ) {
-            state.userFlags = [...state.userFlags, action.payload];
+        addFlag(state, action: PayloadAction<{ second: number }>) {
+            state.userFlags = [...state.userFlags, action.payload.second];
         },
 
         finish(state) {
             state.score = 0;
             if (state.userFlags.length < CONSTANTS.hazardClipMaxFlag) {
                 if (state.videoData) {
-                    const seconds = state.userFlags.map((item) => item.second);
-                    for (const second of seconds) {
+                    for (const second of state.userFlags) {
                         for (const scoreWindow of state.videoData.scoreWindow) {
                             if (
                                 second >= scoreWindow.start &&

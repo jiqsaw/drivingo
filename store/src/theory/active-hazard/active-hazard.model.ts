@@ -7,10 +7,5 @@ export interface IStoreTheoryActiveHazard {
     videoData?: IHazardClip;
     videoSource?: any;
     viewMode: HazardView;
-    userFlags: IStoreTheoryActiveHazardUserFlag[];
-}
-
-export interface IStoreTheoryActiveHazardUserFlag {
-    second: number;
-    flagPositionLeft: number;
+    userFlags: number[];
 }
