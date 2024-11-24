@@ -123,7 +123,6 @@ const FeatHazardPerceptionDetail: FC<FeatHazardPerceptionDetailProps> = ({
                         flagPositionLeft,
                     }),
                 );
-                handleVideoEnded();
             } else {
                 setShowExcessiveTapAlert(true);
             }
