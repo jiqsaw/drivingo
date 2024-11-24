@@ -51,4 +51,4 @@ functions/dist
 functions/firebase-private-key.json
 functions/.env
 
-local-notes.txt
+local.**.txt
