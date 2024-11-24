@@ -19,7 +19,7 @@ export const UITranslateButton: FC<IUITranslateButtonProps> = ({
                     onClick={() => onPress()}
                     className={`${!selected ? 'translate-button' : 'translate-button translate-button__selected'}`}
                 >
-                    <img src="assets/icon-translate.svg" />
+                    <img src="assets/images/icon-translate.svg" />
                 </button>
             ) : (
                 <div className="three-dot-loader">

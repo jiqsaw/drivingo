@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import './hazard-perception-score-bars.scss';
+import '../styles/hazard-perception-score-bars.scss';
 
 type HazardPerceptionScoreBarsProps = {
     barPositions: number[];

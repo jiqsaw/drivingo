@@ -6,7 +6,7 @@ import { FC } from 'react';
 
 import { storeTheoryActiveHazardActions } from '@drivingo/store';
 import { useDispatch } from 'react-redux';
-import './hazard-perception-video-card.scss';
+import '../styles/hazard-perception-video-card.scss';
 
 type HazardPerceptionVideoCardProps = {
     data: IHazardClipListView;

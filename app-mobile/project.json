@@ -18,12 +18,7 @@
         "tsConfig": "app-mobile/tsconfig.app.json",
         "assets": [
           {
-            "input": "app-mobile/src/assets",
-            "glob": "**/*",
-            "output": "/assets"
-          },
-          {
-            "input": "ui/src/assets",
+            "input": "assets",
             "glob": "**/*",
             "output": "/assets"
           },
@@ -46,11 +41,6 @@
             "input": "data/src/test/videos",
             "glob": "**/*",
             "output": "data-videos/test"
-          },
-          {
-            "input": "feat-hazard-perception/src/assets",
-            "glob": "**/*",
-            "output": "/assets"
           },
           {
             "input": "data/src/hazard-perception/clips",

@@ -9,8 +9,8 @@ import { PhoneRotateIcon, PlayIcon } from '@drivingo/ui';
 import { IonAlert, useIonRouter } from '@ionic/react';
 import { FC, useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import './assets/hazard-perception-detail.scss';
 import { HazardPerceptionScoreBars } from './components';
+import './styles/hazard-perception-detail.scss';
 
 const FeatHazardPerceptionDetail: FC = () => {
     const dispatch = useDispatch();
@@ -86,7 +86,7 @@ const FeatHazardPerceptionDetail: FC = () => {
                             {activeHazard.userFlags.map((flag, index) => (
                                 <img
                                     key={`flag-${index}`}
-                                    src="assets/flag-fill.svg"
+                                    src="assets/images/flag-fill.svg"
                                     style={{
                                         left: getFlagPosition(flag),
                                         opacity:

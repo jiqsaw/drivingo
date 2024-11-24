@@ -9,7 +9,7 @@ import { ArrowNextIcon, RetryIcon } from '@drivingo/ui';
 import { useIonRouter } from '@ionic/react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import './assets/hazard-perception-result.scss';
+import './styles/hazard-perception-result.scss';
 
 const FeatHazardPerceptionResult = () => {
     const dispatch = useDispatch();
