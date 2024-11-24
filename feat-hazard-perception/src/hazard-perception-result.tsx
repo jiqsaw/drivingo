@@ -1,11 +1,13 @@
 import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
 import {
+    storeAnalysisActions,
     storeTheoryActiveHazardActions,
     storeTheoryActiveHazardSelectors,
     storeTheoryActiveTestSelectors,
 } from '@drivingo/store';
 import { ArrowNextIcon, RetryIcon } from '@drivingo/ui';
 import { useIonRouter } from '@ionic/react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './assets/hazard-perception-result.scss';
 
@@ -24,6 +26,17 @@ const FeatHazardPerceptionResult = () => {
     const nextClip = HazardPerceptionDataProvider.getNextClipDetail(
         activeHazard.clipCode,
     );
+
+    useEffect(() => {
+        return () => {
+            dispatch(
+                storeAnalysisActions.addHazardTestResult({
+                    clipCode: activeHazard.clipCode,
+                    score: Number(activeHazard.score),
+                }),
+            );
+        };
+    }, []);
 
     return (
         <aside>

@@ -138,7 +138,7 @@ const FeatHazardPerceptionDetail: FC = () => {
     }
 
     function onVideoClick() {
-        if (activeHazard.viewMode !== HazardView.Test) {
+        if (showPlay) {
             start();
         }
         if (activeHazard.viewMode === HazardView.Test) {

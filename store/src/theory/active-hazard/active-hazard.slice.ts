@@ -51,7 +51,6 @@ export default createSlice({
                     }
                 }
             }
-            // ??? Db ye yaz
         },
 
         review(state) {

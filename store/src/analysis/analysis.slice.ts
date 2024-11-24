@@ -116,8 +116,9 @@ export default createSlice({
             action: PayloadAction<{ clipCode: string; score: number }>,
         ) {
             const { clipCode, score } = action.payload;
-
             state.hazardPerception.push({ date: new Date(), clipCode, score });
+
+            dbAnalysis.setTestResults(state);
         },
     },
 });
