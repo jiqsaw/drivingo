@@ -1,9 +1,11 @@
 import { CONSTANTS } from '@drivingo/global';
+import { QuestionBank } from '@drivingo/models';
 import { createSlice } from '@reduxjs/toolkit';
 import { IStoreUI } from './ui.model';
 
 const uiInitialState: IStoreUI = {
     theme: null,
+    questionBank: QuestionBank.Car,
     quickTestNumberOfQuestions: CONSTANTS.quickTestNumberOfQuestionsDefault,
     hideMockTestIntroduction: false,
     network: {

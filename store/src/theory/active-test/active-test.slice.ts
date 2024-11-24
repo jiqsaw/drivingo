@@ -59,7 +59,6 @@ export default createSlice({
             state.type = TestType.LearnPractice;
 
             let questions = TestDataProvider.getNewLearnPracticeTest(
-                action.payload.testLearnPracticeGroup,
                 state.filteredTopics,
             );
 

@@ -4,15 +4,12 @@ import {
     DATA_TEST_QUESTIONS,
 } from '@drivingo/data';
 import { CONSTANTS } from '@drivingo/global';
-import { ITopic, OptionChar, TestLearnPracticeGroup } from '@drivingo/models';
+import { ITopic, OptionChar } from '@drivingo/models';
 import { cloneDeep, sampleSize } from 'lodash';
 
 export const TestDataProvider = {
     imgBasePath: 'data-images/test/',
-    getNewLearnPracticeTest: (
-        group: TestLearnPracticeGroup,
-        filteredTopics?: ITopic[],
-    ) => {
+    getNewLearnPracticeTest: (filteredTopics?: ITopic[]) => {
         let questions = cloneDeep(DATA_TEST_QUESTIONS);
         if (filteredTopics) {
             questions = questions.filter((item) =>
