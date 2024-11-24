@@ -50,10 +50,17 @@ export const HazardPerceptionDataProvider = {
                 return viewData.filter((item) => item.downloaded === true);
         }
     },
-    getClipUrl(clipCode: string) {
+    getClipUrl(clipCode: string, isReviewVideo = false) {
         // ??? This should be in File documentary after downloaded from cloud
-        return this.videoBasePath + 'clip' + clipCode + '.mp4';
+        return (
+            this.videoBasePath +
+            'clip' +
+            clipCode +
+            (isReviewVideo ? '-review' : '') +
+            '.mp4'
+        );
     },
+
     getNextClipDetail(currentClipCode: string) {
         const currentVideIndex = DATA_HAZAR_CLIPS.findIndex(
             (item) => item.code === currentClipCode,

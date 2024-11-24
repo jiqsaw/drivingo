@@ -11,7 +11,7 @@ export default createSlice({
     name: 'active-hazard-perception',
     initialState: {} as IStoreTheoryActiveHazard,
     reducers: {
-        start: (state, action: PayloadAction<{ clipCode: string }>) => {
+        init: (state, action: PayloadAction<{ clipCode: string }>) => {
             state.clipCode = action.payload.clipCode;
             state.score = null;
             state.scoreFlag = null;
@@ -21,8 +21,12 @@ export default createSlice({
             state.videoSource = HazardPerceptionDataProvider.getClipUrl(
                 action.payload.clipCode,
             );
-            state.viewMode = HazardView.Test;
+            state.viewMode = HazardView.Init;
             state.userFlags = [];
+        },
+
+        start: (state) => {
+            state.viewMode = HazardView.Test;
         },
 
         addFlag(
@@ -54,14 +58,16 @@ export default createSlice({
                     }
                 }
             }
-            state.userFlags = [];
             // ??? Db ye yaz
         },
 
         review(state) {
             state.viewMode = HazardView.Review;
             if (state.videoData?.hasReviewVideo) {
-                // state.videoSource = FileSystem.documentDirectory + CONSTANTS.storageHazard.folder + 'clip' + state.clipCode + '-review.mp4';
+                state.videoSource = HazardPerceptionDataProvider.getClipUrl(
+                    state.clipCode,
+                    true,
+                );
             }
         },
     },

@@ -53,7 +53,7 @@ const Router: React.FC = () => {
                     exact={true}
                 />
                 <Route
-                    path="/theory-test/hazard-perception/:id"
+                    path="/theory-test/hazard-perception/detail"
                     render={() => {
                         return (
                             <ProtectedRoute>

@@ -3,6 +3,7 @@ export interface IHazardClip {
     type: 'time' | 'frame';
     frameCount?: number;
     hasReviewVideo: boolean;
+    duration: number;
     scoreWindow: IHazardClipScoreWindow[];
 }
 
@@ -13,8 +14,8 @@ export interface IHazardClipScoreWindow {
 }
 
 export enum HazardView {
+    Init,
     Test,
-    Result,
     Review,
 }
 

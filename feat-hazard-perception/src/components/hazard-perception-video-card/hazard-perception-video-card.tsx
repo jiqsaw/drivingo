@@ -56,7 +56,7 @@ export const HazardPerceptionVideoCard: FC<HazardPerceptionVideoCardProps> = ({
     );
 
     function itemPressHandler(clipCode: string) {
-        dispatch(storeTheoryActiveHazardActions.start({ clipCode }));
-        router.push(`/theory-test/hazard-perception/${clipCode}`);
+        dispatch(storeTheoryActiveHazardActions.init({ clipCode }));
+        router.push(`/theory-test/hazard-perception/detail`);
     }
 };

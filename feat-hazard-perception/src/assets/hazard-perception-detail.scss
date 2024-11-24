@@ -41,9 +41,15 @@
   }
 }
 
-.flags {
+.hazard-perception-detail .flags {
   img {
     position: absolute;
     bottom: 10px;
   }
+}
+
+.hazard-perception-detail .play {
+  position: absolute;
+  left: calc(50% - 24px);
+  bottom: calc(50% - 24px);
 }

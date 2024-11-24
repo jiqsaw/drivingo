@@ -5,7 +5,7 @@ import {
     storeTheoryActiveTestSelectors,
 } from '@drivingo/store';
 import { ArrowNextIcon, RetryIcon } from '@drivingo/ui';
-import { IonRouterLink, useIonRouter } from '@ionic/react';
+import { useIonRouter } from '@ionic/react';
 import { useDispatch, useSelector } from 'react-redux';
 import './assets/hazard-perception-result.scss';
 
@@ -40,10 +40,10 @@ const FeatHazardPerceptionResult = () => {
                         Practice for the hazard perception part of your theory
                         test.
                     </p>
-                    <IonRouterLink className="button">
+                    <div className="button" onClick={review}>
                         <span>Review your test</span>
                         <ArrowNextIcon />
-                    </IonRouterLink>
+                    </div>
 
                     <div className="lnk" onClick={retry}>
                         <RetryIcon />
@@ -81,22 +81,27 @@ const FeatHazardPerceptionResult = () => {
 
     function retry() {
         dispatch(
-            storeTheoryActiveHazardActions.start({
+            storeTheoryActiveHazardActions.init({
                 clipCode: activeHazard.clipCode,
             }),
         );
-        router.push(`/theory-test/hazard-perception/${activeHazard.clipCode}`);
+        router.push(`/theory-test/hazard-perception/detail`);
     }
 
     function nextClipHandler() {
         if (nextClip !== null) {
             dispatch(
-                storeTheoryActiveHazardActions.start({
+                storeTheoryActiveHazardActions.init({
                     clipCode: nextClip.code,
                 }),
             );
-            router.push(`/theory-test/hazard-perception/${nextClip.code}`);
+            router.push(`/theory-test/hazard-perception/detail`);
         }
+    }
+
+    function review() {
+        dispatch(storeTheoryActiveHazardActions.review());
+        router.push(`/theory-test/hazard-perception/detail`);
     }
 };
 
