@@ -35,6 +35,11 @@
       }
     }
 
+    &.light {
+      --background-color: #fff;
+      --color: #000;
+    }
+
     &.breakpoint-modal {
       --ion-background-color-step-100: transparent;
 

@@ -7,6 +7,7 @@ import styles from './modal.module.scss';
 export interface UIInlineModalProps {
     isOpen: boolean;
     type?: 'default' | 'full' | 'inline';
+    theme?: 'light' | 'dark';
     breakpoint?: number;
     onClose?: () => void;
     children: React.ReactNode;
@@ -18,6 +19,7 @@ export const UIInlineModal: FC<UIInlineModalProps> = ({
     onClose,
     type,
     breakpoint,
+    theme,
 }) => {
     const modal = useRef<HTMLIonModalElement>(null);
     type = type || 'default';
@@ -42,7 +44,7 @@ export const UIInlineModal: FC<UIInlineModalProps> = ({
     return (
         <IonModal
             ref={modal}
-            className={`${styles.modal} ${type} ${breakpoint ? 'breakpoint-modal' : ''}`}
+            className={`${styles.modal} ${type} ${theme} ${breakpoint ? 'breakpoint-modal' : ''}`}
             initialBreakpoint={breakpoint || 1}
             breakpoints={[0, 0.25, 0.5, 0.75, 1]}
         >
