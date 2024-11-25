@@ -1,0 +1,15 @@
+.side-select-language {
+    height: 100%;
+
+
+    &::part(backdrop) {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &::part(container) {
+        border-radius: 23px 0px 0px 23px;
+        padding: 45px 32px;
+        background: #080808;
+        box-shadow: 4px 0px 16px rgba(255, 0, 255, 0.18);
+    }
+}

@@ -12,7 +12,7 @@ const uiInitialState: IStoreUI = {
         connected: true,
         connectionType: '',
     },
-    language: 'tr-TR', // ???? temprary mock
+    // language: 'tr-TR', // ???? temprary mock
 };
 
 export default createSlice({
