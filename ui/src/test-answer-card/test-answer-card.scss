@@ -7,7 +7,19 @@
     padding: 24px 16px;
 
     &.wrong {
-        background-color: #5F222A;
+        background-color: #BB1C30;
+    }
+
+    &.correct {
+        background-color: rgba(255, 255, 255, 0.07);
+
+        .test-answer-card__status {
+
+            svg,
+            path {
+                fill: #6AC71A;
+            }
+        }
     }
 
     &__status {
@@ -40,6 +52,7 @@
 
     &__link {
         width: 40px;
+        min-width: 40px;
         height: 40px;
         border-radius: 20px;
         display: flex;

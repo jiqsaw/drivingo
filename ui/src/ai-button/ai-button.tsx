@@ -4,7 +4,7 @@ import './ai-button.scss';
 export const UIAIButton: FC = () => {
     return (
         <button onClick={() => onAiPressHandler()} className="ai-button">
-            <img src="assets/icon-ai.svg" />
+            <img src="assets/images/icon-ai.svg" />
         </button>
     );
 

@@ -6,6 +6,7 @@ export default [
         type: 'time',
         frameCount: 25,
         hasReviewVideo: true,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 18.19, end: 19.18 },
             { score: 4, start: 19.19, end: 20.18 },
@@ -19,6 +20,7 @@ export default [
         type: 'time',
         frameCount: 20,
         hasReviewVideo: true,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 32.06, end: 33.0 },
             { score: 4, start: 33.01, end: 33.2 },
@@ -32,6 +34,7 @@ export default [
         type: 'time',
         frameCount: 20,
         hasReviewVideo: true,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 28.13, end: 29.07 },
             { score: 4, start: 29.08, end: 30.02 },
@@ -45,6 +48,7 @@ export default [
         type: 'time',
         frameCount: 25,
         hasReviewVideo: true,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 31.0, end: 32.0 },
             { score: 4, start: 32.01, end: 33.0 },
@@ -58,6 +62,7 @@ export default [
         type: 'time',
         frameCount: 40,
         hasReviewVideo: true,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 32.09, end: 33.23 },
             { score: 4, start: 33.24, end: 35.13 },
@@ -71,6 +76,7 @@ export default [
         type: 'time',
         frameCount: 55,
         hasReviewVideo: true,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 14.18, end: 16.22 },
             { score: 4, start: 16.23, end: 19.02 },
@@ -84,6 +90,7 @@ export default [
         type: 'time',
         frameCount: 37,
         hasReviewVideo: true,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 44.02, end: 45.13 },
             { score: 4, start: 45.14, end: 47.0 },
@@ -97,6 +104,7 @@ export default [
         type: 'time',
         frameCount: 50,
         hasReviewVideo: true,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 30.0, end: 31.24 },
             { score: 4, start: 32.0, end: 33.24 },
@@ -110,6 +118,7 @@ export default [
         type: 'time',
         frameCount: 21,
         hasReviewVideo: true,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 34.0, end: 34.2 },
             { score: 4, start: 34.21, end: 35.16 },
@@ -123,6 +132,7 @@ export default [
         type: 'time',
         frameCount: 35,
         hasReviewVideo: true,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 15.0, end: 16.09 },
             { score: 4, start: 16.1, end: 17.19 },
@@ -136,6 +146,7 @@ export default [
         type: 'frame',
         frameCount: 56,
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 2, end: 4.3 },
             { score: 4, start: 4.3, end: 6.5 },
@@ -149,6 +160,7 @@ export default [
         type: 'frame',
         frameCount: 33,
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 29.5, end: 30.9 },
             { score: 4, start: 30.9, end: 32.2 },
@@ -162,6 +174,7 @@ export default [
         type: 'frame',
         frameCount: 29,
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 30.9, end: 32.1 },
             { score: 4, start: 32.1, end: 33.3 },
@@ -175,6 +188,7 @@ export default [
         type: 'frame',
         frameCount: 20,
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 28.5, end: 29.3 },
             { score: 4, start: 29.3, end: 30.1 },
@@ -188,6 +202,7 @@ export default [
         type: 'frame',
         frameCount: 16,
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 37.2, end: 37.9 },
             { score: 4, start: 37.9, end: 38.6 },
@@ -201,6 +216,7 @@ export default [
         type: 'frame',
         frameCount: 28,
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 48.2, end: 49.4 },
             { score: 4, start: 49.4, end: 50.5 },
@@ -214,6 +230,7 @@ export default [
         type: 'frame',
         frameCount: 26,
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 28.5, end: 29.9 },
             { score: 4, start: 29.9, end: 31.4 },
@@ -227,6 +244,7 @@ export default [
         type: 'frame',
         frameCount: 39,
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 31.3, end: 32.9 },
             { score: 4, start: 32.9, end: 34.5 },
@@ -240,6 +258,7 @@ export default [
         type: 'frame',
         frameCount: 22,
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 90.4, end: 10.7 },
             { score: 4, start: 10.7, end: 12 },
@@ -253,6 +272,7 @@ export default [
         type: 'frame',
         frameCount: 30,
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 13.2, end: 14.4 },
             { score: 4, start: 14.4, end: 15.7 },
@@ -265,6 +285,7 @@ export default [
         code: '21',
         type: 'frame',
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 39.9, end: 41 },
             { score: 4, start: 41, end: 42 },
@@ -277,6 +298,7 @@ export default [
         code: '22',
         type: 'frame',
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 21.7, end: 23.6 },
             { score: 4, start: 23.6, end: 25.5 },
@@ -289,6 +311,7 @@ export default [
         code: '23',
         type: 'frame',
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 20.7, end: 21.6 },
             { score: 4, start: 21.6, end: 22.4 },
@@ -301,6 +324,7 @@ export default [
         code: '24',
         type: 'frame',
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 15.9, end: 17.3 },
             { score: 4, start: 17.3, end: 18.7 },
@@ -313,6 +337,7 @@ export default [
         code: '25',
         type: 'frame',
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 17.1, end: 18.3 },
             { score: 4, start: 18.3, end: 19.4 },
@@ -325,6 +350,7 @@ export default [
         code: '26',
         type: 'frame',
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 29.9, end: 30.8 },
             { score: 4, start: 30.8, end: 31.6 },
@@ -337,6 +363,7 @@ export default [
         code: '27',
         type: 'frame',
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 14.8, end: 15.7 },
             { score: 4, start: 15.7, end: 16.5 },
@@ -349,6 +376,7 @@ export default [
         code: '28',
         type: 'frame',
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 32.9, end: 33.6 },
             { score: 4, start: 33.6, end: 34.3 },
@@ -361,6 +389,7 @@ export default [
         code: '29',
         type: 'frame',
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 24.6, end: 25.5 },
             { score: 4, start: 25.5, end: 26.4 },
@@ -373,6 +402,7 @@ export default [
         code: '30',
         type: 'frame',
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 30.9, end: 31.6 },
             { score: 4, start: 31.6, end: 32.3 },
@@ -385,6 +415,7 @@ export default [
         code: '31',
         type: 'frame',
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 16.2, end: 17.3 },
             { score: 4, start: 17.3, end: 18.3 },
@@ -397,6 +428,7 @@ export default [
         code: '32',
         type: 'frame',
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 23.4, end: 24.2 },
             { score: 4, start: 24.2, end: 25.1 },
@@ -409,6 +441,7 @@ export default [
         code: '33',
         type: 'frame',
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 32.5, end: 33.5 },
             { score: 4, start: 33.5, end: 34.5 },
@@ -421,6 +454,7 @@ export default [
         code: '34',
         type: 'frame',
         hasReviewVideo: false,
+        duration: 60,
         scoreWindow: [
             { score: 5, start: 25.1, end: 26.1 },
             { score: 4, start: 26.1, end: 27.1 },

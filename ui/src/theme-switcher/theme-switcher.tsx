@@ -12,8 +12,12 @@ export const UIThemeSwitcher: FC<IUIThemeSwitcherProps> = ({
 }) => {
     return (
         <button onClick={onPress} className="theme-switcher">
-            {theme === 'light' && <img src="assets/icon-theme-dark.svg" />}
-            {theme === 'dark' && <img src="assets/icon-theme-light.svg" />}
+            {theme === 'light' && (
+                <img src="assets/images/icon-theme-dark.svg" />
+            )}
+            {theme === 'dark' && (
+                <img src="assets/images/icon-theme-light.svg" />
+            )}
         </button>
     );
 };

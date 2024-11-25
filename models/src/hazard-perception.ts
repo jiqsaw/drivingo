@@ -3,6 +3,7 @@ export interface IHazardClip {
     type: 'time' | 'frame';
     frameCount?: number;
     hasReviewVideo: boolean;
+    duration: number;
     scoreWindow: IHazardClipScoreWindow[];
 }
 
@@ -12,22 +13,27 @@ export interface IHazardClipScoreWindow {
     end: number;
 }
 
-export type HazardTestView = 'test' | 'result' | 'review';
-
-export interface IHazardTest {
-    clipCode: string;
-    userFlags: number[];
-    score: number | null;
-    scoreFlag: number | null;
-    videoData?: IHazardClip;
-    videoSource?: any;
-    viewMode: HazardTestView;
+export enum HazardView {
+    Init,
+    Test,
+    Review,
 }
 
 export interface IHazardClipListView extends IHazardClip {
     lastScore?: number;
-    lastScoreInPercentage: number;
     taken: number;
-    pngUri: string | null;
-    ready: boolean;
+    downloaded: boolean;
+}
+
+export interface IHazardPerceptionResult {
+    date: Date;
+    clipCode: string;
+    score: number;
+}
+
+export enum HazardFilterType {
+    All = 'All',
+    Unseen = 'Unseen',
+    LowScores = 'Low Scores',
+    Downloaded = 'Downloaded',
 }

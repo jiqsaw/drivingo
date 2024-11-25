@@ -6,6 +6,7 @@ import {
     OptionChar,
     TestView,
 } from '@drivingo/models';
+import { CheckIcon, CloseIcon } from '@drivingo/ui';
 import { FC } from 'react';
 
 interface Props {
@@ -14,6 +15,7 @@ interface Props {
     questionItem: IQuestion;
     selectedOptionChar: OptionChar;
     testView: TestView;
+    reviewMode?: boolean;
     onSelectOption?: (selectedOption: OptionChar) => void;
     translatedData?: IQuestionBase;
     showTranslate?: boolean;
@@ -27,12 +29,13 @@ const FeatTestContent: FC<Props> = (props) => {
         questionItem,
         selectedOptionChar,
         testView,
+        reviewMode,
         onSelectOption,
         translatedData,
         showTranslate,
     } = props;
     return (
-        <>
+        <div className="test__question-wrap">
             <div className="test__no">
                 {questionNo}/{questionsLength}
             </div>
@@ -50,11 +53,16 @@ const FeatTestContent: FC<Props> = (props) => {
                     />
                 )}
             </div>
-            <div>
+            <div
+                className={`test__options ${reviewMode ? 'test__option--review' : ''}`}
+            >
                 {questionItem.options.map((option, i) => {
                     return (
                         <div
-                            className={`test__option ${selectedOptionChar === option.char ? 'test__option--selected' : ''}`}
+                            className={`test__option ${selectedOptionChar === option.char ? 'test__option--selected' : ''} ${getOptionBackground(
+                                option,
+                                questionItem.answer,
+                            )}`}
                             key={'option-' + i}
                             onClick={() =>
                                 testView === TestView.Active &&
@@ -88,10 +96,9 @@ const FeatTestContent: FC<Props> = (props) => {
                     );
                 })}
             </div>
-        </>
+        </div>
     );
 
-    // ???? Use this method or extract the logic into another method to apply the same logic for the option item background
     function getOptionIndicator(option: IQuestionOption, answer: OptionChar) {
         const isSelectedOption = selectedOptionChar === option.char;
         const isOptionCorrect =
@@ -99,14 +106,31 @@ const FeatTestContent: FC<Props> = (props) => {
 
         if (testView === TestView.Review) {
             if (isSelectedOption) {
-                return isOptionCorrect ? '✓ ' : 'X ';
+                return isOptionCorrect ? <CheckIcon /> : <CloseIcon />;
             }
             if (isOptionCorrect) {
-                return '✓ ';
+                return <CheckIcon />;
             }
         }
 
-        return option.char + ')';
+        return option.char;
+    }
+
+    function getOptionBackground(option: IQuestionOption, answer: OptionChar) {
+        const isSelectedOption = selectedOptionChar === option.char;
+        const isOptionCorrect =
+            option.char?.toLowerCase() === answer?.toLowerCase();
+
+        if (testView === TestView.Review) {
+            if (isSelectedOption) {
+                return isOptionCorrect ? 'correct' : 'wrong';
+            }
+            if (isOptionCorrect) {
+                return 'correct';
+            }
+        }
+
+        return '';
     }
 };
 

@@ -49,6 +49,7 @@ export const UIMasonryList: FC<UIMasonryList> = ({ data, imgBasePath }) => {
                 isOpen={modalOpened}
                 onClose={handleModelClose}
                 type="full"
+                theme="light"
             >
                 <figure className="modal-image">
                     <img src={imgBasePath + item.image} alt={item.title} />

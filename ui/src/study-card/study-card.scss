@@ -1,0 +1,70 @@
+.study-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 20px 32px;
+    background-color: #27225E;
+    color: #E5E6E8;
+    font-size: 12px;
+    position: relative;
+    transition: background-color 0.3s ease;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+
+        span {
+            display: block;
+            margin-top: 4px;
+        }
+    }
+
+    &__next-icon {
+        width: 24px;
+        margin-left: 16px;
+
+        svg {
+            width: 100%;
+            margin: auto 0;
+            display: block;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 16px;
+    }
+
+    &__progress-item {
+        font-size: 12px;
+        font-weight: 500;
+        gap: 8px;
+
+
+        &--big-text {
+            font-size: 21px;
+            font-weight: 600;
+            line-height: 21px;
+        }
+
+        &--opacity-50 {
+            opacity: 0.5;
+        }
+
+        &--opacity-84 {
+            opacity: 0.84;
+        }
+    }
+}

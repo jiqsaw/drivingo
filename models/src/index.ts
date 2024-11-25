@@ -2,6 +2,7 @@ export * from './functions';
 export * from './hazard-perception';
 export * from './highway-code';
 export * from './question';
+export * from './question-bank';
 export * from './subscriptions';
 export * from './test';
 export * from './theme';

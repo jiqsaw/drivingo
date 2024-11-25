@@ -1,0 +1,75 @@
+.hazard-perception-video-card {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0 36px;
+  }
+  &__image {
+    margin: 0;
+    ion-img::part(image) {
+      border-radius: 10px;
+      filter: sepia(80%) saturate(200%) hue-rotate(210deg);
+      box-shadow: 4px 6px 6px 1px rgb(10 10 11);
+    }
+  }
+
+  &__play {
+    // center the play button
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__clip,
+  &__score {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-secondary);
+    font-family: var(--font-bold);
+    font-size: 18px;
+
+    .key {
+      text-shadow: 1px 1px 2px #17152b;
+    }
+
+    .value {
+      font-size: 36px;
+      text-shadow: 1px 1px 2px #17152b;
+    }
+  }
+
+  &__divider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .divider-points {
+      margin-left: -20px;
+    }
+  }
+}

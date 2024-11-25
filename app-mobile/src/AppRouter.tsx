@@ -7,9 +7,9 @@ import HighwayCode from './pages/highway-code/HighwayCode';
 import Login from './pages/login/Login';
 import Subscription from './pages/subscription/Subscription';
 import TheoryTest from './pages/theory-test/TheoryTest';
-import HazardPerceptionDetail from './pages/theory-test/hazard-perception/Detail';
 import HazardPerception from './pages/theory-test/hazard-perception/HazardPerception';
-import HazardPerceptionResult from './pages/theory-test/hazard-perception/Result';
+import HazardPerceptionDetail from './pages/theory-test/hazard-perception/HazardPerceptionDetail';
+import HazardPerceptionResult from './pages/theory-test/hazard-perception/HazardPerceptionResult';
 import Learn from './pages/theory-test/learn/Learn';
 import MockTest from './pages/theory-test/mock-test/MockTest';
 import QuickTest from './pages/theory-test/quick-test/QuickTest';
@@ -53,7 +53,7 @@ const Router: React.FC = () => {
                     exact={true}
                 />
                 <Route
-                    path="/theory-test/hazard-perception/:id"
+                    path="/theory-test/hazard-perception/detail"
                     render={() => {
                         return (
                             <ProtectedRoute>

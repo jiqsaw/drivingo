@@ -1,22 +1,27 @@
-import { DATA_HAZAR_CLIPS } from '@drivingo/data';
-import { IHazardClip } from '@drivingo/models';
+import { HazardFilterType, IHazardClipListView } from '@drivingo/models';
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
-import { storeUiActions, storeUiSelectors } from '@drivingo/store';
+import { HazardPerceptionDataProvider } from '@drivingo/data-provider';
+import { storeAnalysisSelectors } from '@drivingo/store';
 import { PageIntro, UIInlineModal, UITabs } from 'ui/src';
 import { HazardPerceptionVideoCard } from './components';
 
 const FeatHazardPerception = () => {
-    const [selectedTab, setSelectedTab] = useState(0);
-
-    const instructorModal = useSelector(
-        storeUiSelectors.closeMockTestIntroduction,
+    const results = useSelector(storeAnalysisSelectors.hazardPerceptionResults);
+    const [selectedTab, setSelectedTab] = useState<HazardFilterType>(
+        HazardFilterType.All,
     );
-    const dispatch = useDispatch();
-    const handleInstructorClose = () => {
-        dispatch(storeUiActions.mockTestIntroductionClose());
-    };
+    const [filteredItems, setFilteredItems] = useState(
+        HazardPerceptionDataProvider.getHazardClipsList(results, selectedTab),
+    );
+
+    const tabs = [
+        HazardFilterType.All,
+        HazardFilterType.Unseen,
+        HazardFilterType.LowScores,
+        HazardFilterType.Downloaded,
+    ];
 
     return (
         <>
@@ -28,17 +33,13 @@ const FeatHazardPerception = () => {
                     routerDirection="root"
                     icon="/assets/images/traffic-barrier.png"
                 />
-                <UITabs
-                    items={['All', 'Unseen', 'Low Scores', 'Downloaded']}
-                    onChange={(index) => setSelectedTab(index)}
-                />
-                {DATA_HAZAR_CLIPS.length > 0 ? (
-                    DATA_HAZAR_CLIPS.map((item: IHazardClip, index) => {
+                <UITabs items={tabs} onChange={(index) => onTabChange(index)} />
+                {filteredItems.length > 0 ? (
+                    filteredItems.map((item: IHazardClipListView, index) => {
                         return (
                             <HazardPerceptionVideoCard
                                 key={index}
                                 data={item}
-                                routerDirection="forward"
                             />
                         );
                     })
@@ -46,12 +47,8 @@ const FeatHazardPerception = () => {
                     <p>No clips found</p>
                 )}
             </aside>
-            <UIInlineModal
-                isOpen={!instructorModal}
-                onClose={handleInstructorClose}
-                type="full"
-            >
-                <video controls width="100%" height="auto">
+            <UIInlineModal isOpen={false} onClose={() => {}} type="full">
+                <video controls width="100%" height="auto" autoPlay={false}>
                     <source
                         src="data-clips/hazard-perception/instructor.mp4"
                         type="video/mp4"
@@ -61,6 +58,10 @@ const FeatHazardPerception = () => {
             </UIInlineModal>
         </>
     );
+
+    function onTabChange(tabIndex: number) {
+        setSelectedTab(tabs[tabIndex]);
+    }
 };
 
 export default FeatHazardPerception;

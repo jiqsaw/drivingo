@@ -20,7 +20,7 @@ export const PageIntro: FC<PageIntroProps> = ({
     return (
         <div className="page-intro">
             <div className="page-intro__body">
-                {title && <h1 className="page-intro__title">{title}</h1>}
+                {title && <h1>{title}</h1>}
                 <p className="page-intro__description">
                     {descripton}{' '}
                     {link && (

@@ -19,3 +19,4 @@ export * from './test-result-card/test-result-card';
 export * from './theme-switcher/theme-switcher';
 export * from './timer/timer';
 export * from './translate-button/translate-button';
+export * from './study-card/study-card';

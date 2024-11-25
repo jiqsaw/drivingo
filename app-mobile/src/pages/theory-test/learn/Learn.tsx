@@ -1,4 +1,4 @@
-import { UITabs } from '@drivingo/ui';
+import { PageIntro, UITabs } from '@drivingo/ui';
 import { IonContent, IonPage } from '@ionic/react';
 import Header from 'app-mobile/src/components/header/header';
 import { useState } from 'react';
@@ -13,8 +13,12 @@ const Learn: React.FC = () => {
             <IonContent fullscreen>
                 <aside className="container">
                     <Header />
+                    <PageIntro
+                        title="Learn"
+                        descripton="This is where you start to study. Look through the topics."
+                        icon="/assets/images/learn.png"
+                    />
                     <aside>
-                        <h1>Learn</h1>
                         <UITabs
                             items={['Study', 'Practice']}
                             onChange={(index) => setSelectedTab(index)}

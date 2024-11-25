@@ -6,6 +6,7 @@ import {
 import { useIonRouter } from '@ionic/react';
 import { FC } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useHistory } from 'react-router';
 import { UIAIButton, UIProfileButton, UIThemeSwitcher } from 'ui/src';
 import './header.scss';
 
@@ -23,6 +24,8 @@ const Header: FC<IHeaderProps> = (props) => {
 
     const theme = useSelector(storeUiSelectors.theme);
     const dispatch = useDispatch();
+
+    const history = useHistory();
 
     return (
         <div className="header">
@@ -53,6 +56,7 @@ const Header: FC<IHeaderProps> = (props) => {
 
     function onBackHandler() {
         if (backPath) {
+            history.replace('/');
             router.push(backPath, 'back');
         } else {
             router.goBack();
