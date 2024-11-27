@@ -74,8 +74,6 @@ const Test = () => {
                 setLoadingTranslate(false);
             } else {
                 await menuController.open('end');
-                console.error('User language is not set');
-                // ??? Show language selection panel
             }
         } catch (error) {
             console.error('Error calling translateQuestion function:', error);

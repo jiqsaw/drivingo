@@ -34,5 +34,8 @@ export default createSlice({
         updateQuickTestNumberOfQuestions: (state, action) => {
             state.quickTestNumberOfQuestions = action.payload;
         },
+        setLanguage: (state, action) => {
+            state.language = action.payload;
+        },
     },
 });

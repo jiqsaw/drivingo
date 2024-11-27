@@ -1,4 +1,4 @@
-import { IonButton } from '@ionic/react';
+import { IonButton, IonSpinner } from '@ionic/react';
 import { ArrowNextIcon } from '../icons';
 
 import './button.scss';
@@ -10,17 +10,33 @@ export interface UIButtonProps {
     fullWidth?: boolean;
     fullRounded?: boolean;
     nextIcon?: boolean;
+    disabled?: boolean;
+    loading?: boolean;
     onClick?: () => void;
 }
 
 export const UIButton = (props: UIButtonProps) => {
-    const { id, text, onClick, nextIcon, type, fullWidth, fullRounded } = props;
+    const {
+        id,
+        text,
+        onClick,
+        nextIcon,
+        type,
+        fullWidth,
+        fullRounded,
+        disabled,
+        loading,
+    } = props;
     return (
         <IonButton
             id={id}
             onClick={() => onClick && onClick()}
             className={`button ${type} ${fullWidth ? 'full-width' : ''} ${fullRounded ? 'full-rounded' : ''}`}
+            disabled={disabled}
         >
+            {loading && disabled && (
+                <IonSpinner name="crescent" className="loading"></IonSpinner>
+            )}
             {text}
             {nextIcon && <ArrowNextIcon />}
         </IonButton>
