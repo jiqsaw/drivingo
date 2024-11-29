@@ -5,10 +5,11 @@ import {
     storeTheoryActiveTestActions,
     storeTheoryActiveTestSelectors,
     storeUiActions,
+    storeUiSelectors,
 } from '@drivingo/store';
 import { CheckIcon, UIButton, UISearchBox } from '@drivingo/ui';
 import { IonMenu } from '@ionic/react';
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import './side-select-language.scss';
@@ -25,9 +26,32 @@ export const SideSelectLanguage: FC<SideSelectLanguageProps> = ({
     const currentQuestion = useSelector(
         storeTheoryActiveTestSelectors.currentQuestion,
     );
+
+    const activeLanguage = useSelector(storeUiSelectors.language);
     const [selectedLanguage, setSelectedLanguage] = useState<string>('');
     const [filteredLanguages, setFilteredLanguages] = useState(LANGUAGES);
     const [loading, setLoading] = useState<boolean>(false);
+
+    useEffect(() => {
+        (async () => {
+            if (!activeLanguage || !currentQuestion) return;
+            setLoading(true);
+            const response = await translateQuestion(
+                activeLanguage as string,
+                currentQuestion,
+            );
+            dispatch(
+                storeTheoryActiveTestActions.addTranslate({
+                    code: currentQuestion.code,
+                    ...response.data.data,
+                }),
+            );
+            setLoading(false);
+
+            const menu = document.querySelector('ion-menu');
+            menu && menu.close();
+        })();
+    }, [activeLanguage]);
 
     return (
         <IonMenu
@@ -78,7 +102,7 @@ export const SideSelectLanguage: FC<SideSelectLanguageProps> = ({
                         text="Translate"
                         fullWidth
                         nextIcon
-                        onClick={onTranslateHandler}
+                        onClick={onSelectLanguageHandler}
                         loading={loading}
                         disabled={!selectedLanguage || loading}
                     ></UIButton>
@@ -107,24 +131,9 @@ export const SideSelectLanguage: FC<SideSelectLanguageProps> = ({
         setFilteredLanguages(filteredLanguages);
     }
 
-    async function onTranslateHandler() {
-        setLoading(true);
+    async function onSelectLanguageHandler() {
         if (selectedLanguage) {
-            const response = await translateQuestion(
-                selectedLanguage,
-                currentQuestion,
-            );
-            dispatch(
-                storeTheoryActiveTestActions.addTranslate({
-                    code: currentQuestion.code,
-                    ...response.data.data,
-                }),
-            );
+            dispatch(storeUiActions.setLanguage(selectedLanguage));
         }
-        setLoading(false);
-
-        dispatch(storeUiActions.setLanguage(selectedLanguage));
-        const menu = document.querySelector('ion-menu');
-        menu && menu.close();
     }
 };
