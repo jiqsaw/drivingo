@@ -127,6 +127,7 @@ const TestHeader: FC<IUITranslateButtonProps> = ({
     }
 
     function onTranslateHandler() {
+        console.log('onTranslateHandler');
         if (showTranslate) {
             dispatch(storeTheoryActiveTestActions.hideTranslate());
         } else {

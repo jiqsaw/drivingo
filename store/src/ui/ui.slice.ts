@@ -12,7 +12,7 @@ const uiInitialState: IStoreUI = {
         connected: true,
         connectionType: '',
     },
-    language: 'tr-TR', // ???? temprary mock
+    // language: 'tr-TR', // ???? temprary mock
 };
 
 export default createSlice({
@@ -33,6 +33,9 @@ export default createSlice({
         },
         updateQuickTestNumberOfQuestions: (state, action) => {
             state.quickTestNumberOfQuestions = action.payload;
+        },
+        setLanguage: (state, action) => {
+            state.language = action.payload;
         },
     },
 });
