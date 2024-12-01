@@ -1,5 +1,7 @@
 .learn-study-detail {
     width: 100%;
+    padding-bottom: 120px;
+    height: 100%;
 
     h1 {
         font-size: 1.5em;
@@ -25,5 +27,24 @@
         font-size: 0.9em;
         text-decoration: none;
         opacity: 0.8;
+    }
+
+    .fixed-bottom-button {
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        width: 100%;
+
+        .btn-prev {
+            color: #fff;
+            position: relative;
+            z-index: 10;
+        }
+
     }
 }

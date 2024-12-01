@@ -13,6 +13,19 @@
     border-radius: 30px;
   }
 
+  &.icon-only {
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+
+    svg {
+      position: relative;
+      right: 0;
+      width: 36px;
+      height: 36px;
+    }
+  }
+
   .button-inner {
     display: block;
   }
