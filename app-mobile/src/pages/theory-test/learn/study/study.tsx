@@ -1,4 +1,4 @@
-import { UICardList, UIStudyCard } from "@drivingo/ui";
+import { UICardList, UIStudyCard } from '@drivingo/ui';
 
 const LearnStudy = () => {
     return (

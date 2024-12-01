@@ -3,7 +3,7 @@ import { IonContent, IonPage } from '@ionic/react';
 import Header from 'app-mobile/src/components/header/header';
 import { useState } from 'react';
 import LearnPractice from './practise/practice';
-import LearnStudy from './study/study';
+import LearnStudy from './study/Study';
 
 const Learn: React.FC = () => {
     const [selectedTab, setSelectedTab] = useState(0);
