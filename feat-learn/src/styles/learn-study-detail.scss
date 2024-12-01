@@ -1,0 +1,29 @@
+.learn-study-detail {
+    width: 100%;
+
+    h1 {
+        font-size: 1.5em;
+        padding-right: 3em;
+        text-transform: uppercase;
+        line-height: 1.4em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin-top: 2em;
+        line-height: 1.4em;
+    }
+
+    li,
+    p {
+        opacity: 0.9;
+        font-size: 0.9em;
+        line-height: 1.6em;
+    }
+
+    a {
+        font-size: 0.9em;
+        text-decoration: none;
+        opacity: 0.8;
+    }
+}

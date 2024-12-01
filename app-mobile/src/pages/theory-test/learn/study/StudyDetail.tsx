@@ -1,3 +1,5 @@
+import { FeatHazardPerceptionDetail } from '@drivingo/feat-hazard-perception';
+import { FeatLearnStudyDetail } from '@drivingo/feat-learn';
 import { UIScrollTop } from '@drivingo/ui';
 import { IonContent, IonPage, ScrollDetail } from '@ionic/react';
 import Header from 'app-mobile/src/components/header/header';
@@ -20,7 +22,7 @@ const LearnStudyDetail: React.FC = () => {
             >
                 <aside className="container">
                     <Header isRoot={false} />
-                    asdasadsdasdsa
+                    <FeatLearnStudyDetail />
                 </aside>
             </IonContent>
             <UIScrollTop
