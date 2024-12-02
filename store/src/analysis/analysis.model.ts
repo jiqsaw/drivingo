@@ -1,23 +1,27 @@
-import { IHazardPerceptionResult } from '@drivingo/models';
+import { IHazardPerceptionResult, QuestionBank } from '@drivingo/models';
 
 export interface IStoreAnalysis {
-    learnPractice: IStoreAnalysisLearnPracticeTest;
-    quickTest: IStoreAnalysisQuickTest;
-    mockTest: IStoreAnalysisMockTest;
-    hazardPerception: IHazardPerceptionResult[];
+    test: IStoreAnalysisTest;
+    hazardPerception?: IStoreHazardPerceptionResult[];
+}
+
+export interface IStoreAnalysisTest {
+    [QuestionBank.Car]: IStoreAnalysisTestCategory;
+    [QuestionBank.Motorcycle]: IStoreAnalysisTestCategory;
+    [QuestionBank.LGV_PCV]: IStoreAnalysisTestCategory;
+    [QuestionBank.ADI]: IStoreAnalysisTestCategory;
+}
+
+export interface IStoreAnalysisTestCategory {
+    learnPractice: IStoreAnalysisTestBase;
+    quickTest: IStoreAnalysisTestBase;
+    mockTest: IStoreAnalysisTestBase;
 }
 
 export interface IStoreAnalysisTestBase {
     topics: IStoreAnalysisTopicResult[];
     results: IStoreAnalysisTestResult[];
 }
-
-export interface IStoreAnalysisLearnPracticeTest
-    extends IStoreAnalysisTestBase {}
-
-export interface IStoreAnalysisQuickTest extends IStoreAnalysisTestBase {}
-
-export interface IStoreAnalysisMockTest extends IStoreAnalysisTestBase {}
 
 export interface IStoreAnalysisTopicResult {
     code: string;
@@ -31,3 +35,5 @@ export interface IStoreAnalysisTestResult {
     correct: number;
     questionCount: number;
 }
+
+export interface IStoreHazardPerceptionResult extends IHazardPerceptionResult {}

@@ -1,6 +1,6 @@
 import { CONSTANTS } from '@drivingo/global';
 import { QuestionBank } from '@drivingo/models';
-import { createSlice } from '@reduxjs/toolkit';
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { IStoreUI } from './ui.model';
 
 const uiInitialState: IStoreUI = {
@@ -33,6 +33,12 @@ export default createSlice({
         },
         updateQuickTestNumberOfQuestions: (state, action) => {
             state.quickTestNumberOfQuestions = action.payload;
+        },
+        updateQuestionBank: (
+            state,
+            action: PayloadAction<{ questionBank: QuestionBank }>,
+        ) => {
+            state.questionBank = action.payload.questionBank;
         },
         setLanguage: (state, action) => {
             state.language = action.payload;

@@ -25,6 +25,7 @@ const FeatTest: FC<IFeatTestProps> = ({ type }) => {
     const dispatch = useDispatch();
     const hasRunOnce = useRef(false);
     const router = useIonRouter();
+    const questionBank = useSelector(storeUiSelectors.questionBank);
 
     const uiQuickTestNumberOfQuestions = useSelector(
         storeUiSelectors.quickTestNumberOfQuestions,
@@ -73,7 +74,9 @@ const FeatTest: FC<IFeatTestProps> = ({ type }) => {
                                 {
                                     testLearnPracticeGroup:
                                         paramLearnPracticeGroup,
-                                    analysis: analysis.learnPractice,
+                                    analysis:
+                                        analysis.test[questionBank]
+                                            .learnPractice,
                                 },
                             ),
                         );
@@ -253,7 +256,7 @@ const FeatTest: FC<IFeatTestProps> = ({ type }) => {
 
     function finish() {
         dispatch(storeTheoryActiveTestActions.finish());
-        dispatch(storeAnalysisActions.addTestResult({ test: test }));
+        dispatch(storeAnalysisActions.addTestResult({ test, questionBank }));
         router.push('/theory-test/test-result', 'forward');
     }
 };

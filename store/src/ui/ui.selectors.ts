@@ -24,6 +24,8 @@ const quickTestNumberOfQuestions = createSelector(
 
 const language = createSelector([ui], (ui) => ui.language);
 
+const questionBank = createSelector([ui], (ui) => ui.questionBank);
+
 export default {
     ui,
     theme,
@@ -31,4 +33,5 @@ export default {
     networkStatus,
     quickTestNumberOfQuestions,
     language,
+    questionBank,
 };

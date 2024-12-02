@@ -33,24 +33,39 @@
             "output": "data-images/highway-code"
           },
           {
-            "input": "data/src/test/images",
+            "input": "data/src/test/car/images",
             "glob": "**/*",
             "output": "data-images/test"
           },
           {
-            "input": "data/src/test/videos",
+            "input": "data/src/test/motorcycle/images",
             "glob": "**/*",
-            "output": "data-videos/test"
+            "output": "data-images/test"
           },
           {
-            "input": "data/src/hazard-perception/clips",
+            "input": "data/src/test/lgv-pcv/images",
             "glob": "**/*",
-            "output": "data-videos/hazard-perception/clips"
+            "output": "data-images/test"
+          },
+          {
+            "input": "data/src/test/adi/images",
+            "glob": "**/*",
+            "output": "data-images/test"
+          },
+          {
+            "input": "data/src/test/car/videos",
+            "glob": "**/*",
+            "output": "data-videos/test"
           },
           {
             "input": "data/src/hazard-perception/thumbnails",
             "glob": "**/*",
             "output": "data-images/hazard-perception/thumbnails"
+          },
+          {
+            "input": "data/src/hazard-perception/clips",
+            "glob": "**/*",
+            "output": "data-videos/hazard-perception/clips"
           },
           "app-mobile/src/manifest.json"
         ],

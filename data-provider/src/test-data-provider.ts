@@ -1,16 +1,26 @@
-import {
-    DATA_TEST_EXPLANATIONS,
-    DATA_TEST_IMAGES,
-    DATA_TEST_QUESTIONS,
-} from '@drivingo/data';
+import { DATA_QUESTION_BANK } from '@drivingo/data';
 import { CONSTANTS } from '@drivingo/global';
-import { ITopic, OptionChar } from '@drivingo/models';
+import { ITopic, OptionChar, QuestionBank } from '@drivingo/models';
 import { cloneDeep, sampleSize } from 'lodash';
+
+export const currentQuestionBank = QuestionBank.Car;
 
 export const TestDataProvider = {
     imgBasePath: 'data-images/test/',
+    getQuestionBankData: (questionBank: QuestionBank.Car) => {
+        return DATA_QUESTION_BANK.find((item) => item.type === questionBank)
+            ?.data;
+    },
+    getQuestions: (questionBank: QuestionBank.Car) => {
+        const data = TestDataProvider.getQuestionBankData(questionBank);
+        if (data) {
+            return cloneDeep(data.questions);
+        }
+        console.error('Questions can not be found! - ' + questionBank);
+        return [];
+    },
     getNewLearnPracticeTest: (filteredTopics?: ITopic[]) => {
-        let questions = cloneDeep(DATA_TEST_QUESTIONS);
+        let questions = TestDataProvider.getQuestions(currentQuestionBank);
         if (filteredTopics) {
             questions = questions.filter((item) =>
                 filteredTopics
@@ -21,7 +31,7 @@ export const TestDataProvider = {
         return questions;
     },
     getNewQuickTest: (numberOfQuestions: number, filteredTopics?: ITopic[]) => {
-        let questions = cloneDeep(DATA_TEST_QUESTIONS);
+        let questions = TestDataProvider.getQuestions(currentQuestionBank);
         if (filteredTopics) {
             questions = questions.filter((item) =>
                 filteredTopics
@@ -32,30 +42,31 @@ export const TestDataProvider = {
         return sampleSize(questions, numberOfQuestions);
     },
     getNewMockTest: () => {
-        let questions = cloneDeep(DATA_TEST_QUESTIONS);
+        let questions = TestDataProvider.getQuestions(currentQuestionBank);
         return sampleSize(questions, CONSTANTS.mockTestInfo.questionsLength);
     },
     getQuestionImage(code: string) {
-        const imgItem = DATA_TEST_IMAGES.find(
-            (item) => item.code === code && !item.option,
-        );
+        const imgItem = TestDataProvider.getQuestionBankData(
+            currentQuestionBank,
+        )?.images.find((item) => item.code === code && !item.option);
         if (imgItem) {
             return this.imgBasePath + imgItem.src;
         }
         return '';
     },
     getOptionImage(code: string, option: OptionChar) {
-        const imgItem = DATA_TEST_IMAGES.find(
-            (item) => item.code === code && item.option === option,
-        );
+        const imgItem = TestDataProvider.getQuestionBankData(
+            currentQuestionBank,
+        )?.images.find((item) => item.code === code && item.option === option);
         if (imgItem) {
             return this.imgBasePath + imgItem.src;
         }
         return '';
     },
     getExplanation(questionCode: string) {
-        return DATA_TEST_EXPLANATIONS.find(
-            (item) => item.questionCode === questionCode,
-        )?.content;
+        return TestDataProvider.getQuestionBankData(
+            currentQuestionBank,
+        )?.explanations.find((item) => item.questionCode === questionCode)
+            ?.content;
     },
 };

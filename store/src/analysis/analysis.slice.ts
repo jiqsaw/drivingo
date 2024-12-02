@@ -1,48 +1,29 @@
-import { TopicDataProvider } from '@drivingo/data-provider';
 import { dbAnalysis } from '@drivingo/db-client';
-import { TestType } from '@drivingo/models';
+import { QuestionBank, TestType } from '@drivingo/models';
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { getCorrectCount } from '../theory/active-test/active-test-utils';
 import { IStoreTheoryActiveTest } from '../theory/active-test/active-test.model';
 import {
     IStoreAnalysis,
-    IStoreAnalysisTestBase,
     IStoreAnalysisTestResult,
     IStoreAnalysisTopicResult,
 } from './analysis.model';
 
-const testInitialState: IStoreAnalysisTestBase = {
-    topics: TopicDataProvider.getData().map((topic) => {
-        const item: IStoreAnalysisTopicResult = {
-            code: topic.code,
-            corrects: [],
-            incorrects: [],
-        };
-        return item;
-    }),
-    results: [],
-};
-
 export default createSlice({
     name: 'analysis',
     initialState: {
-        learnPractice: {
-            ...testInitialState,
-        },
-        quickTest: {
-            ...testInitialState,
-        },
-        mockTest: {
-            ...testInitialState,
-        },
+        // test: {},
         hazardPerception: [],
     } as IStoreAnalysis,
     reducers: {
         addTestResult: (
             state,
-            action: PayloadAction<{ test: IStoreTheoryActiveTest }>,
+            action: PayloadAction<{
+                test: IStoreTheoryActiveTest;
+                questionBank: QuestionBank;
+            }>,
         ) => {
-            const test = action.payload.test;
+            const { test, questionBank } = action.payload;
             const testResult: IStoreAnalysisTestResult = {
                 date: new Date(),
                 correct: getCorrectCount(action.payload.test.questions),
@@ -50,10 +31,11 @@ export default createSlice({
             };
 
             let storedTopics: IStoreAnalysisTopicResult[];
+
             if (test.type === TestType.QuickTest) {
-                storedTopics = state.quickTest.topics;
+                storedTopics = state.test[questionBank].quickTest.topics;
             } else if (test.type === TestType.MockTest) {
-                storedTopics = state.mockTest.topics;
+                storedTopics = state.test[questionBank].mockTest.topics;
             } else {
                 storedTopics = [];
             }
@@ -89,21 +71,30 @@ export default createSlice({
 
             switch (test.type) {
                 case TestType.LearnPractice:
-                    state.learnPractice = {
+                    state.test[questionBank].learnPractice = {
                         topics: storedTopics,
-                        results: [testResult, ...state.learnPractice.results],
+                        results: [
+                            testResult,
+                            ...state.test[questionBank].learnPractice.results,
+                        ],
                     };
                     break;
                 case TestType.QuickTest:
-                    state.quickTest = {
+                    state.test[questionBank].quickTest = {
                         topics: storedTopics,
-                        results: [testResult, ...state.quickTest.results],
+                        results: [
+                            testResult,
+                            ...state.test[questionBank].quickTest.results,
+                        ],
                     };
                     break;
                 case TestType.MockTest:
-                    state.mockTest = {
+                    state.test[questionBank].mockTest = {
                         topics: storedTopics,
-                        results: [testResult, ...state.mockTest.results],
+                        results: [
+                            testResult,
+                            ...state.test[questionBank].mockTest.results,
+                        ],
                     };
                     break;
             }
@@ -116,8 +107,12 @@ export default createSlice({
             action: PayloadAction<{ clipCode: string; score: number }>,
         ) {
             const { clipCode, score } = action.payload;
-            state.hazardPerception.push({ date: new Date(), clipCode, score });
-
+            const results = { date: new Date(), clipCode, score };
+            if (!state.hazardPerception) {
+                state.hazardPerception = [results];
+            } else {
+                state.hazardPerception.push(results);
+            }
             dbAnalysis.setTestResults(state);
         },
     },

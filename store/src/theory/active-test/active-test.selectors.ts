@@ -1,6 +1,7 @@
 import { TopicDataProvider } from '@drivingo/data-provider';
 import { CONSTANTS } from '@drivingo/global';
 import { createSelector } from '@reduxjs/toolkit';
+import uiSelectors from 'store/src/ui/ui.selectors';
 import { AppState } from '../../store';
 import {
     getActiveTestQuestions,
@@ -95,34 +96,39 @@ const showTranslate = createSelector(activeTest, (test) => {
     return test.showTranslate;
 });
 
-const topicResults = createSelector(activeTest, (test) => {
-    const topicMap: { [key: string]: { correct: number; total: number } } = {};
+const topicResults = createSelector(
+    activeTest,
+    uiSelectors.questionBank,
+    (test, questionBank) => {
+        const topicMap: { [key: string]: { correct: number; total: number } } =
+            {};
 
-    test.questions.forEach((question) => {
-        const { topicCode, selectedOptionChar, answer } = question;
+        test.questions.forEach((question) => {
+            const { topicCode, selectedOptionChar, answer } = question;
 
-        if (!topicMap[topicCode]) {
-            topicMap[topicCode] = { correct: 0, total: 0 };
-        }
+            if (!topicMap[topicCode]) {
+                topicMap[topicCode] = { correct: 0, total: 0 };
+            }
 
-        topicMap[topicCode].total += 1;
-        if (selectedOptionChar === answer) {
-            topicMap[topicCode].correct += 1;
-        }
-    });
+            topicMap[topicCode].total += 1;
+            if (selectedOptionChar === answer) {
+                topicMap[topicCode].correct += 1;
+            }
+        });
 
-    return TopicDataProvider.getData().map((topic) => {
-        const { code: topicCode, name: topicName } = topic;
-        const correct = topicMap[topicCode]?.correct || 0;
-        const total = topicMap[topicCode]?.total || 0;
-        return {
-            topicCode,
-            topicName,
-            correct,
-            total,
-        };
-    });
-});
+        return TopicDataProvider.getData(questionBank).map((topic) => {
+            const { code: topicCode, name: topicName } = topic;
+            const correct = topicMap[topicCode]?.correct || 0;
+            const total = topicMap[topicCode]?.total || 0;
+            return {
+                topicCode,
+                topicName,
+                correct,
+                total,
+            };
+        });
+    },
+);
 
 export default {
     activeTest,

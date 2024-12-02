@@ -21,14 +21,15 @@ import Header from 'app-mobile/src/components/header/header';
 import '../../../styles/pages/subpage.scss';
 
 const QuickTest = () => {
-    const topics = TopicDataProvider.getData();
     const dispatch = useDispatch();
+    const questionBank = useSelector(storeUiSelectors.questionBank);
     const filteredTopics = useSelector(
         storeTheoryActiveTestSelectors.filteredTopics,
     );
     const uiQuickTestNumberOfQuestions = useSelector(
         storeUiSelectors.quickTestNumberOfQuestions,
     );
+    const topics = TopicDataProvider.getData(questionBank);
 
     return (
         <IonPage>

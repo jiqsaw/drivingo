@@ -4,6 +4,7 @@ import {
     storeAnalysisSelectors,
     storeTheoryActiveTestActions,
     storeTheoryActiveTestSelectors,
+    storeUiSelectors,
 } from '@drivingo/store';
 import { AlertsIcon, UICardList, UITestProgressCard } from '@drivingo/ui';
 import { IonActionSheet, IonButton, useIonRouter } from '@ionic/react';
@@ -14,7 +15,9 @@ import { useDispatch, useSelector } from 'react-redux';
 const LearnPractice = () => {
     const dispatch = useDispatch();
     const router = useIonRouter();
-    const topics = TopicDataProvider.getData();
+    const questionBank = useSelector(storeUiSelectors.questionBank);
+
+    const topics = TopicDataProvider.getData(questionBank);
     const filteredTopics = useSelector(
         storeTheoryActiveTestSelectors.filteredTopics,
     );
@@ -117,38 +120,52 @@ const LearnPractice = () => {
     }
 
     function getTotalUnanswered() {
-        if (!filteredTopics || !analysis.learnPractice.topics) return 0;
+        if (
+            !filteredTopics ||
+            !analysis.test[questionBank].learnPractice.topics
+        )
+            return 0;
 
         const filteredTopicCodes = new Set(
             filteredTopics.map((item) => item.code),
         );
 
-        return analysis.learnPractice.topics.reduce((total, item) => {
-            if (filteredTopicCodes.has(item.code)) {
-                const topicCount =
-                    topics.find((topic) => topic.code === item.code)?.count ||
-                    0;
-                const unansweredCount =
-                    topicCount -
-                    (item.corrects.length + item.incorrects.length);
-                return total + unansweredCount;
-            }
-            return total;
-        }, 0);
+        return analysis.test[questionBank].learnPractice.topics.reduce(
+            (total, item) => {
+                if (filteredTopicCodes.has(item.code)) {
+                    const topicCount =
+                        topics.find((topic) => topic.code === item.code)
+                            ?.count || 0;
+                    const unansweredCount =
+                        topicCount -
+                        (item.corrects.length + item.incorrects.length);
+                    return total + unansweredCount;
+                }
+                return total;
+            },
+            0,
+        );
     }
 
     function getTotalIncorrect() {
-        if (!filteredTopics || !analysis.learnPractice.topics) return 0;
+        if (
+            !filteredTopics ||
+            !analysis.test[questionBank].learnPractice.topics
+        )
+            return 0;
 
         const filteredTopicCodes = new Set(
             filteredTopics.map((item) => item.code),
         );
 
-        return analysis.learnPractice.topics.reduce((total, item) => {
-            return filteredTopicCodes.has(item.code)
-                ? total + item.incorrects.length
-                : total;
-        }, 0);
+        return analysis.test[questionBank].learnPractice.topics.reduce(
+            (total, item) => {
+                return filteredTopicCodes.has(item.code)
+                    ? total + item.incorrects.length
+                    : total;
+            },
+            0,
+        );
     }
 };
 
