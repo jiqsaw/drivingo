@@ -1,58 +1,31 @@
-import {
-    AlertsIcon,
-    ArrowNextIcon,
-    UIButton,
-    UIDividerPoints,
-} from '@drivingo/ui';
+import { DATA_LEARN } from '@drivingo/data';
+import { AlertsIcon, UIButton, UIDividerPoints } from '@drivingo/ui';
+import { IonToggle, useIonRouter } from '@ionic/react';
 import './styles/learn-study-detail.scss';
-import { IonToggle } from '@ionic/react';
 
 const FeatLearnStudyDetail = () => {
+    const router = useIonRouter();
+    const pageName = router.routeInfo.pathname.split('/').pop();
+
+    if (!pageName) {
+        return null;
+    }
+
+    const pageData = DATA_LEARN[pageName as keyof typeof DATA_LEARN];
+
+    console.log(DATA_LEARN[pageName as keyof typeof DATA_LEARN]);
+
     return (
         <>
             <div className="learn-study-detail">
                 <AlertsIcon />
-                <h1 className="title">Safety margins</h1>
+                <h1 className="title">{pageData.title}</h1>
                 <UIDividerPoints />
-                <h2>Powered wheelchairs and mobility</h2>
-                <p>
-                    It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially
-                    unchanged. It was popularised in the 1960s with the release
-                    of Letraset sheets containing Lorem Ipsum passages, and more
-                    recently with desktop publishing software like Aldus
-                    PageMaker including versions of Lorem Ipsum.
-                </p>
-                <p>
-                    It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially
-                    unchanged.
-                </p>
-                <p>
-                    It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially
-                    unchanged.
-                </p>
-                <p>
-                    It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially
-                    unchanged.
-                </p>
-                <p>
-                    It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially
-                    unchanged.
-                </p>
-                <p>
-                    It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially
-                    unchanged.
-                </p>
-                <p>
-                    It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially
-                    unchanged.
-                </p>
+
+                <div
+                    className="learn-study-detail__body"
+                    dangerouslySetInnerHTML={{ __html: pageData.content }}
+                ></div>
 
                 <div className="fixed-bottom-button">
                     <div className="learn-study-detail__check">

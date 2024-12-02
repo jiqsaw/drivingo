@@ -34,6 +34,11 @@
         gap: 0;
     }
 
+    &__body {
+        width: 100%;
+        margin-top: 24px;
+    }
+
     &__actions {
         display: flex;
         justify-content: space-between;
