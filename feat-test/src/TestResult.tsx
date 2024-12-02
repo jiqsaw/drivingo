@@ -38,10 +38,10 @@ const FeatTestResult: FC = () => {
             <div className="test-result__number-status">
                 <h4 className="title">YOUR SCORE</h4>
                 <span className="pass-result">
-                    {passingRequiredCorrect}/{questionsLength}
+                    {correctCount}/{questionsLength}
                 </span>
                 <span className="min-pass">
-                    pass mark is {correctCount}/{questionsLength}
+                    pass mark is {passingRequiredCorrect}/{questionsLength}
                 </span>
             </div>
 
