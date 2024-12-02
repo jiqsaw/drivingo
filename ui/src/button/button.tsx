@@ -5,7 +5,7 @@ import './button.scss';
 
 export interface UIButtonProps {
     id?: string;
-    text: string;
+    text?: string;
     type?: 'primary' | 'secondary';
     fullWidth?: boolean;
     fullRounded?: boolean;
@@ -31,7 +31,7 @@ export const UIButton = (props: UIButtonProps) => {
         <IonButton
             id={id}
             onClick={() => onClick && onClick()}
-            className={`button ${type} ${fullWidth ? 'full-width' : ''} ${fullRounded ? 'full-rounded' : ''}`}
+            className={`button ${type} ${fullWidth ? 'full-width' : ''} ${fullRounded ? 'full-rounded' : ''} ${!text && nextIcon ? 'icon-only' : ''}`}
             disabled={disabled}
         >
             {loading && disabled && (
