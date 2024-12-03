@@ -2,7 +2,7 @@ import { PageIntro, UITabs } from '@drivingo/ui';
 import { IonContent, IonPage } from '@ionic/react';
 import Header from 'app-mobile/src/components/header/header';
 import { useState } from 'react';
-import LearnPractice from './practise/practice';
+import LearnPractice from './practise/Practice';
 import LearnStudy from './study/Study';
 
 const Learn: React.FC = () => {
