@@ -1,10 +1,6 @@
 const title = `Introduction`;
 const content = `
-Safe driving is all about developing the correct
-attitude and approach, together with a sound
-knowledge of driving techniques. However
-modern, fast or expensive your vehicle, it's you,
-the driver, who determines how safe it is.
+Ensuring safe driving involves cultivating the right attitude and approach, along with a comprehensive understanding of driving techniques. Regardless of how advanced, fast, or costly your vehicle is, it’s the driver who ultimately determines its safety.
 `;
 
 export default {
