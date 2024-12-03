@@ -3,6 +3,15 @@ import { AlertsIcon, UIButton, UIDividerPoints } from '@drivingo/ui';
 import { IonToggle, useIonRouter } from '@ionic/react';
 import './styles/learn-study-detail.scss';
 
+type PageDataProps = {
+    title: string;
+    content: string;
+};
+
+type DataLearnType = {
+    [key: string]: PageDataProps;
+};
+
 const FeatLearnStudyDetail = () => {
     const router = useIonRouter();
     const pageName = router.routeInfo.pathname.split('/').pop();
@@ -11,9 +20,7 @@ const FeatLearnStudyDetail = () => {
         return null;
     }
 
-    const pageData = DATA_LEARN[pageName as keyof typeof DATA_LEARN];
-
-    console.log(DATA_LEARN[pageName as keyof typeof DATA_LEARN]);
+    const pageData = (DATA_LEARN as unknown as DataLearnType)[pageName];
 
     return (
         <>
