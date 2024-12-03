@@ -23,6 +23,7 @@
         "feat-hazard-perception/src/index.ts"
       ],
       "@drivingo/feat-highway-code": ["feat-highway-code/src/index.ts"],
+      "@drivingo/feat-learn": ["feat-learn/src/index.ts"],
       "@drivingo/feat-traffic-signs": ["feat-traffic-signs/src/index.ts"],
       "@drivingo/global": ["global/src/index.ts"],
       "@drivingo/models": ["models/src/index.ts"],

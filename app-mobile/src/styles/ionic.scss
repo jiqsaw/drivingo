@@ -44,7 +44,8 @@ ion-back-button {
 
 
 ion-button {
-  --background: #ffbbbb;
+
+  --background: linear-gradient(90deg, #ffbbbb 0%, #ffbbbb 100%);
   --background-focused: #ffbbbb;
   --background-hover: #ffbbbb;
   --padding-top: 16px;

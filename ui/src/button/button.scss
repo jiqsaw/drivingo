@@ -4,6 +4,7 @@
   overflow: hidden;
   font-size: 18px;
   font-weight: 700;
+  text-transform: none;
 
   &.full-width {
     width: 100%;
@@ -11,6 +12,19 @@
 
   &.full-rounded {
     border-radius: 30px;
+  }
+
+  &.icon-only {
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+
+    svg {
+      position: relative;
+      right: 0;
+      width: 36px;
+      height: 36px;
+    }
   }
 
   .button-inner {
@@ -26,5 +40,12 @@
     path {
       fill: #343131;
     }
+  }
+
+  .loading {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 12px;
   }
 }

@@ -11,6 +11,7 @@ import HazardPerception from './pages/theory-test/hazard-perception/HazardPercep
 import HazardPerceptionDetail from './pages/theory-test/hazard-perception/HazardPerceptionDetail';
 import HazardPerceptionResult from './pages/theory-test/hazard-perception/HazardPerceptionResult';
 import Learn from './pages/theory-test/learn/Learn';
+import LearnStudyDetail from './pages/theory-test/learn/study/StudyDetail';
 import MockTest from './pages/theory-test/mock-test/MockTest';
 import QuickTest from './pages/theory-test/quick-test/QuickTest';
 import Test from './pages/theory-test/test/Test';
@@ -35,6 +36,11 @@ const Router: React.FC = () => {
                 <Route
                     path="/theory-test/learn"
                     render={() => <Learn />}
+                    exact={true}
+                />
+                <Route
+                    path="/theory-test/learn/:id"
+                    render={() => <LearnStudyDetail />}
                     exact={true}
                 />
                 <Route
