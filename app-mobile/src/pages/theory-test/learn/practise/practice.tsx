@@ -5,18 +5,8 @@ import {
     storeTheoryActiveTestActions,
     storeTheoryActiveTestSelectors,
 } from '@drivingo/store';
-import {
-    AlertsIcon,
-    UIButton,
-    UICardList,
-    UITestProgressCard,
-} from '@drivingo/ui';
-import {
-    IonActionSheet,
-    IonButton,
-    IonRouterLink,
-    useIonRouter,
-} from '@ionic/react';
+import { AlertsIcon, UICardList, UITestProgressCard } from '@drivingo/ui';
+import { IonActionSheet, IonButton, useIonRouter } from '@ionic/react';
 import { OverlayEventDetail } from '@ionic/react/dist/types/components/react-component-lib/interfaces';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -37,17 +27,15 @@ const LearnPractice = () => {
             <UICardList className="grid-1-cols">
                 {topics.map((topic) => {
                     return (
-                        <>
-                            <UITestProgressCard
-                                key={topic.code}
-                                title={topic.name}
-                                progress={20}
-                                icon={<AlertsIcon />}
-                                isChecked={filteredTopics?.includes(topic)}
-                                onClick={() => selectTopic(topic)}
-                                direction="horizontal"
-                            />
-                        </>
+                        <UITestProgressCard
+                            key={topic.code}
+                            title={topic.name}
+                            progress={20}
+                            icon={<AlertsIcon />}
+                            isChecked={filteredTopics?.includes(topic)}
+                            onClick={() => selectTopic(topic)}
+                            direction="horizontal"
+                        />
                     );
                 })}
             </UICardList>
@@ -65,7 +53,7 @@ const LearnPractice = () => {
                 >
                     Start
                 </IonButton>
-                
+
                 <IonActionSheet
                     isOpen={isActionSheetOpen}
                     header="Please select which questions to answer"

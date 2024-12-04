@@ -79,6 +79,7 @@ export const SideSelectLanguage: FC<SideSelectLanguageProps> = ({
                         {filteredLanguages.map((language) => {
                             return (
                                 <button
+                                    key={language.code}
                                     className={`side-select-language__list-item ${
                                         selectedLanguage === language.code
                                             ? 'side-select-language__list-item--selected'

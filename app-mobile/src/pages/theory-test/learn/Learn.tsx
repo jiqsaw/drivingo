@@ -1,9 +1,9 @@
 import { PageIntro, UITabs } from '@drivingo/ui';
 import { IonContent, IonPage } from '@ionic/react';
 import Header from 'app-mobile/src/components/header/header';
+import LearnStudy from 'feat-learn/src/learn-study';
 import { useState } from 'react';
-import LearnPractice from './practise/Practice';
-import LearnStudy from './study/Study';
+import LearnPractice from './practise/practice';
 
 const Learn: React.FC = () => {
     const [selectedTab, setSelectedTab] = useState(0);

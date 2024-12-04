@@ -72,19 +72,14 @@ const QuickTest = () => {
                     <UICardList className="grid-2-cols">
                         {topics.map((topic) => {
                             return (
-                                <>
-                                    <UITestProgressCard
-                                        key={topic.code}
-                                        title={topic.name}
-                                        progress={20}
-                                        icon={<AlertsIcon />}
-                                        isChecked={filteredTopics?.includes(
-                                            topic,
-                                        )}
-                                        onClick={() => selectTopic(topic)}
-                                    />
-                                </>
-                                // Buraya topic cardlar UI libraryden gelmeli
+                                <UITestProgressCard
+                                    key={topic.code}
+                                    title={topic.name}
+                                    progress={20}
+                                    icon={<AlertsIcon />}
+                                    isChecked={filteredTopics?.includes(topic)}
+                                    onClick={() => selectTopic(topic)}
+                                />
                             );
                         })}
                     </UICardList>
