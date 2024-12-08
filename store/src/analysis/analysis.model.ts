@@ -1,22 +1,19 @@
-import { IHazardPerceptionResult, QuestionBank } from '@drivingo/models';
+import {
+    IHazardPerceptionResult,
+    QuestionBank,
+    TestType,
+} from '@drivingo/models';
+
+export type AnalysisKey = `${QuestionBank}|${TestType}`;
 
 export interface IStoreAnalysis {
-    test: IStoreAnalysisTest;
+    test?: IStoreAnalysisTest;
     hazardPerception?: IStoreHazardPerceptionResult[];
 }
 
-export interface IStoreAnalysisTest {
-    [QuestionBank.Car]: IStoreAnalysisTestCategory;
-    [QuestionBank.Motorcycle]: IStoreAnalysisTestCategory;
-    [QuestionBank.LGV_PCV]: IStoreAnalysisTestCategory;
-    [QuestionBank.ADI]: IStoreAnalysisTestCategory;
-}
-
-export interface IStoreAnalysisTestCategory {
-    learnPractice: IStoreAnalysisTestBase;
-    quickTest: IStoreAnalysisTestBase;
-    mockTest: IStoreAnalysisTestBase;
-}
+export type IStoreAnalysisTest = {
+    [key in AnalysisKey]: IStoreAnalysisTestBase;
+};
 
 export interface IStoreAnalysisTestBase {
     topics: IStoreAnalysisTopicResult[];

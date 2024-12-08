@@ -1,11 +1,15 @@
 import { DATA_TOPICS } from '@drivingo/data';
-import { QuestionBank } from '@drivingo/models';
+import { drivingoStore } from '@drivingo/store';
+import uiSelectors from 'store/src/ui/ui.selectors';
 
 export const TopicDataProvider = {
-    getData: (questionBank: QuestionBank, searchText?: string) => {
+    getData: (searchText?: string) => {
+        const activeQuestionBank = uiSelectors.questionBank(
+            drivingoStore.getState(),
+        );
         const data =
-            DATA_TOPICS.find((item) => item.type === questionBank)?.topics ??
-            [];
+            DATA_TOPICS.find((item) => item.type === activeQuestionBank)
+                ?.topics ?? [];
         if (searchText) {
             return data.filter((item) =>
                 item.name.toLowerCase().includes(searchText.toLowerCase()),

@@ -52,10 +52,12 @@ export default createSlice({
             state,
             action: PayloadAction<{
                 testLearnPracticeGroup: TestLearnPracticeGroup;
-                analysis: IStoreAnalysisTestBase;
+                analysis?: IStoreAnalysisTestBase;
             }>,
         ) => {
-            const analysisTopics = action.payload.analysis.topics;
+            const analysisTopics = action.payload.analysis
+                ? action.payload.analysis.topics
+                : [];
             state.type = TestType.LearnPractice;
 
             let questions = TestDataProvider.getNewLearnPracticeTest(

@@ -1,3 +1,4 @@
+import { TestDataProvider } from '@drivingo/data-provider';
 import { CONSTANTS } from '@drivingo/global';
 import { QuestionBank } from '@drivingo/models';
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
@@ -39,6 +40,7 @@ export default createSlice({
             action: PayloadAction<{ questionBank: QuestionBank }>,
         ) => {
             state.questionBank = action.payload.questionBank;
+            TestDataProvider.questionBank = state.questionBank;
         },
         setLanguage: (state, action) => {
             state.language = action.payload;

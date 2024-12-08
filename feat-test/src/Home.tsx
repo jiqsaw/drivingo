@@ -14,6 +14,7 @@ import { IonAlert, IonModal, useIonRouter } from '@ionic/react';
 import { FC, useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
+import { AnalysisKey } from 'store/src/analysis/analysis.model';
 import './assets/styles.scss';
 import FeatTestContent from './components/test-content';
 
@@ -49,7 +50,9 @@ const FeatTest: FC<IFeatTestProps> = ({ type }) => {
         storeTheoryActiveTestSelectors.showTranslate,
     );
 
+    const key = `${questionBank}|${TestType.LearnPractice}` as AnalysisKey;
     const analysis = useSelector(storeAnalysisSelectors.analysis);
+    const analysisLearnPractice = analysis.test && analysis.test[key];
 
     const modalExplanation = useRef<HTMLIonModalElement>(null);
     const [showExplanation, setShowExplanation] = useState<boolean>(false);
@@ -74,9 +77,7 @@ const FeatTest: FC<IFeatTestProps> = ({ type }) => {
                                 {
                                     testLearnPracticeGroup:
                                         paramLearnPracticeGroup,
-                                    analysis:
-                                        analysis.test[questionBank]
-                                            .learnPractice,
+                                    analysis: analysisLearnPractice,
                                 },
                             ),
                         );

@@ -10,22 +10,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Just after a bend',
+                text: 'MJust after a bend',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'In a one-way street',
+                text: 'MIn a one-way street',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'On a 30 mph road',
+                text: 'MOn a 30 mph road',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Approaching a dip in the road',
+                text: 'MApproaching a dip in the road',
                 img: '',
             },
         ],
@@ -40,22 +40,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Heavy vehicles should take the next road on the left to avoid a weight limit',
+                text: 'MHeavy vehicles should take the next road on the left to avoid a weight limit',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The road ahead bends to the left',
+                text: 'MThe road ahead bends to the left',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Overtaking traffic should move back to the left',
+                text: 'MOvertaking traffic should move back to the left',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The road ahead has a camber to the left',
+                text: 'MThe road ahead has a camber to the left',
                 img: '',
             },
         ],
@@ -71,22 +71,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Stop immediately',
+                text: 'MStop immediately',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Answer it immediately',
+                text: 'MAnswer it immediately',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Leave it until you have stopped in a safe place',
+                text: 'MLeave it until you have stopped in a safe place',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Pull up at the nearest kerb',
+                text: 'MPull up at the nearest kerb',
                 img: '',
             },
         ],
@@ -101,22 +101,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To help you choose the correct lane',
+                text: 'MTo help you choose the correct lane',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To help you keep the correct separation distance',
+                text: 'MTo help you keep the correct separation distance',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To make you aware of your speed',
+                text: 'MTo make you aware of your speed',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To tell you the distance to the roundabout',
+                text: 'MTo tell you the distance to the roundabout',
                 img: '',
             },
         ],
@@ -132,22 +132,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Accelerate hard',
+                text: 'MAccelerate hard',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Maintain your speed',
+                text: 'MMaintain your speed',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Be ready to stop',
+                text: 'MBe ready to stop',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Brake hard',
+                text: 'MBrake hard',
                 img: '',
             },
         ],
@@ -163,22 +163,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Sound the horn',
+                text: 'MSound the horn',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Use the mirrors',
+                text: 'MUse the mirrors',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Select a higher gear',
+                text: 'MSelect a higher gear',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Flash the headlights',
+                text: 'MFlash the headlights',
                 img: '',
             },
         ],
@@ -230,7 +230,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'To assess how your actions will affect the traffic behind',
+                text: 'MTo assess how your actions will affect the traffic behind',
                 img: '',
             },
             {
@@ -256,12 +256,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Stop and then move forward slowly and carefully for a clear view',
+                text: 'MStop and then move forward slowly and carefully for a clear view',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Move quickly to where you can see so you only block traffic from one direction',
+                text: 'MMove quickly to where you can see so you only block traffic from one direction',
                 img: '',
             },
             {
@@ -271,7 +271,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'Turn your vehicle around immediately and find another junction to use',
+                text: 'MTurn your vehicle around immediately and find another junction to use',
                 img: '',
             },
         ],
@@ -287,22 +287,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Your view could be obstructed',
+                text: 'MYour view could be obstructed',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Your sun visor might get tangled',
+                text: 'MYour sun visor might get tangled',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Your radio reception might be affected',
+                text: 'MYour radio reception might be affected',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Your windscreen could mist up more easily',
+                text: 'MYour windscreen could mist up more easily',
                 img: '',
             },
         ],
@@ -318,22 +318,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Play some loud music',
+                text: 'MPlay some loud music',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Stop on the hard shoulder for a rest',
+                text: 'MStop on the hard shoulder for a rest',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Drive faster to complete your journey sooner',
+                text: 'MDrive faster to complete your journey sooner',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Leave the motorway and stop in a safe place',
+                text: 'MLeave the motorway and stop in a safe place',
                 img: '',
             },
         ],
@@ -349,22 +349,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To make your dials easier to see',
+                text: 'MTo make your dials easier to see',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'So others can see you more easily',
+                text: 'MSo others can see you more easily',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'So that you blend in with other drivers',
+                text: 'MSo that you blend in with other drivers',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Because the street lights are lit',
+                text: 'MBecause the street lights are lit',
                 img: '',
             },
         ],
@@ -380,22 +380,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Using a mobile phone',
+                text: 'MUsing a mobile phone',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Using the windscreen wipers',
+                text: 'MUsing the windscreen wipers',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Using the demisters',
+                text: 'MUsing the demisters',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Using the mirrors',
+                text: 'MUsing the mirrors',
                 img: '',
             },
         ],
@@ -426,7 +426,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'When your car has automatic transmission',
+                text: 'MWhen your car has automatic transmission',
                 img: '',
             },
         ],
@@ -442,22 +442,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Apply the parking brake and footbrake together',
+                text: 'MApply the parking brake and footbrake together',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Keep both hands on the steering wheel',
+                text: 'MKeep both hands on the steering wheel',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Select reverse gear',
+                text: 'MSelect reverse gear',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Give an arm signal',
+                text: 'MGive an arm signal',
                 img: '',
             },
         ],
@@ -473,22 +473,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Give a signal after moving off',
+                text: 'MGive a signal after moving off',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Look around before moving off',
+                text: 'MLook around before moving off',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Look around after moving off',
+                text: 'MLook around after moving off',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Use the exterior mirrors only',
+                text: 'MUse the exterior mirrors only',
                 img: '',
             },
         ],
@@ -504,22 +504,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Sound your horn as you pass',
+                text: 'MSound your horn as you pass',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Keep close to them as you pass',
+                text: 'MKeep close to them as you pass',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Leave them plenty of room as you pass',
+                text: 'MLeave them plenty of room as you pass',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Change down one gear before you pass',
+                text: 'MChange down one gear before you pass',
                 img: '',
             },
         ],
@@ -566,22 +566,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Open the window to look behind',
+                text: 'MOpen the window to look behind',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Open the door to look behind',
+                text: 'MOpen the door to look behind',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Look in the nearside mirror',
+                text: 'MLook in the nearside mirror',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Ask someone to guide you',
+                text: 'MAsk someone to guide you',
                 img: '',
             },
         ],
@@ -596,22 +596,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'An area covered by your right-hand mirror',
+                text: 'MAn area covered by your right-hand mirror',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'An area not covered by your headlights',
+                text: 'MAn area not covered by your headlights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'An area covered by your left-hand mirror',
+                text: 'MAn area covered by your left-hand mirror',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'An area not visible to the driver',
+                text: 'MAn area not visible to the driver',
                 img: '',
             },
         ],
@@ -627,22 +627,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'It will improve your safety',
+                text: 'MIt will improve your safety',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'It will increase your concentration',
+                text: 'MIt will increase your concentration',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'It will reduce your view',
+                text: 'MIt will reduce your view',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'It will divert your attention',
+                text: 'MIt will divert your attention',
                 img: '',
             },
         ],
@@ -658,22 +658,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Stop, apply the parking brake and then select a low gear',
+                text: 'MStop, apply the parking brake and then select a low gear',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Position your vehicle well to the left of the side road',
+                text: 'MPosition your vehicle well to the left of the side road',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Check that the central reservation is wide enough for your vehicle',
+                text: 'MCheck that the central reservation is wide enough for your vehicle',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Make sure that you leave enough room for a vehicle behind',
+                text: 'MMake sure that you leave enough room for a vehicle behind',
                 img: '',
             },
         ],
@@ -689,22 +689,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Lorries',
+                text: 'MLorries',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Buses',
+                text: 'MBuses',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Motorcyclists',
+                text: 'MMotorcyclists',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Coaches',
+                text: 'MCoaches',
                 img: '',
             },
         ],
@@ -725,7 +725,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'Choose a voice that you find calming',
+                text: 'MChoose a voice that you find calming',
                 img: '',
             },
             {
@@ -735,7 +735,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'Set it before starting your journey',
+                text: 'MSet it before starting your journey',
                 img: '',
             },
         ],
@@ -751,22 +751,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Stop and wait for the green light',
+                text: 'MStop and wait for the green light',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Stop and wait for the red light',
+                text: 'MStop and wait for the red light',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Give way to pedestrians waiting to cross',
+                text: 'MGive way to pedestrians waiting to cross',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Give way to pedestrians already on the crossing',
+                text: 'MGive way to pedestrians already on the crossing',
                 img: '',
             },
         ],
@@ -782,12 +782,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Another vehicle may be coming',
+                text: 'MAnother vehicle may be coming',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'They may not be looking',
+                text: 'MThey may not be looking',
                 img: '',
             },
             {
@@ -797,7 +797,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'They may not be ready to cross',
+                text: 'MThey may not be ready to cross',
                 img: '',
             },
         ],
@@ -813,22 +813,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Your engine will overheat',
+                text: 'MYour engine will overheat',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Your mirrors will need adjusting',
+                text: 'MYour mirrors will need adjusting',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Your view of the road ahead will be restricted',
+                text: 'MYour view of the road ahead will be restricted',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Your satnav will be confused',
+                text: 'MYour satnav will be confused',
                 img: '',
             },
         ],
@@ -844,22 +844,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Your brakes will overheat',
+                text: 'MYour brakes will overheat',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Your fuel consumption will be increased',
+                text: 'MYour fuel consumption will be increased',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Your engine will overheat',
+                text: 'MYour engine will overheat',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Your view ahead will be reduced',
+                text: 'MYour view ahead will be reduced',
                 img: '',
             },
         ],
@@ -875,22 +875,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'One second',
+                text: 'MOne second',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Two seconds',
+                text: 'MTwo seconds',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Three seconds',
+                text: 'MThree seconds',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Four seconds',
+                text: 'MFour seconds',
                 img: '',
             },
         ],
@@ -906,22 +906,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Speed up',
+                text: 'MSpeed up',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Slow down',
+                text: 'MSlow down',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Hold your speed',
+                text: 'MHold your speed',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Change direction',
+                text: 'MChange direction',
                 img: '',
             },
         ],
@@ -936,22 +936,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Motorway maintenance',
+                text: 'MMotorway maintenance',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Bomb disposal',
+                text: 'MBomb disposal',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Snow plough',
+                text: 'MSnow plough',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Breakdown recovery',
+                text: 'MBreakdown recovery',
                 img: '',
             },
         ],
@@ -972,17 +972,17 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'Accelerate hard to get away from it',
+                text: 'MAccelerate hard to get away from it',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Maintain your speed and course',
+                text: 'MMaintain your speed and course',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Brake harshly and stop well out into the road',
+                text: 'MBrake harshly and stop well out into the road',
                 img: '',
             },
         ],
@@ -998,17 +998,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Fire engine',
+                text: 'MFire engine',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Road gritter',
+                text: 'MRoad gritter',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Ambulance',
+                text: 'MAmbulance',
                 img: '',
             },
             {
@@ -1028,22 +1028,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Tram drivers',
+                text: 'MTram drivers',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Bus drivers',
+                text: 'MBus drivers',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Lorry drivers',
+                text: 'MLorry drivers',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Taxi drivers',
+                text: 'MTaxi drivers',
                 img: '',
             },
         ],
@@ -1059,22 +1059,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Cars',
+                text: 'MCars',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Cycles',
+                text: 'MCycles',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Buses',
+                text: 'MBuses',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Lorries',
+                text: 'MLorries',
                 img: '',
             },
         ],
@@ -1089,22 +1089,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To alert others to your presence',
+                text: 'MTo alert others to your presence',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To allow you right of way',
+                text: 'MTo allow you right of way',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To greet other road users',
+                text: 'MTo greet other road users',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To signal your annoyance',
+                text: 'MTo signal your annoyance',
                 img: '',
             },
         ],
@@ -1120,22 +1120,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'In the right-hand lane',
+                text: 'MIn the right-hand lane',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'In the left-hand lane',
+                text: 'MIn the left-hand lane',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'In either lane, depending on the traffic',
+                text: 'MIn either lane, depending on the traffic',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Just left of the centre line',
+                text: 'MJust left of the centre line',
                 img: '',
             },
         ],
@@ -1151,7 +1151,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To allow other drivers to pull out in front of you',
+                text: 'MTo allow other drivers to pull out in front of you',
                 img: '',
             },
             {
@@ -1161,12 +1161,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'To help other road users know what you intend to do',
+                text: 'MTo help other road users know what you intend to do',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To allow drivers to pass you on the right',
+                text: 'MTo allow drivers to pass you on the right',
                 img: '',
             },
         ],
@@ -1182,22 +1182,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Toucan',
+                text: 'MToucan',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Puffin',
+                text: 'MPuffin',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Pelican',
+                text: 'MPelican',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Zebra',
+                text: 'MZebra',
                 img: '',
             },
         ],
@@ -1213,22 +1213,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Accelerate to make a gap behind you',
+                text: 'MAccelerate to make a gap behind you',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Touch the brakes sharply to show your brake lights',
+                text: 'MTouch the brakes sharply to show your brake lights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Maintain your speed to prevent the vehicle from overtaking',
+                text: 'MMaintain your speed to prevent the vehicle from overtaking',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Allow the vehicle to overtake',
+                text: 'MAllow the vehicle to overtake',
                 img: '',
             },
         ],
@@ -1254,7 +1254,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'When telling them that you have right of way',
+                text: 'MWhen telling them that you have right of way',
                 img: '',
             },
             {
@@ -1275,22 +1275,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Accelerate and keep to the middle',
+                text: 'MAccelerate and keep to the middle',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Slow down and keep to the right',
+                text: 'MSlow down and keep to the right',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Accelerate and look to the left',
+                text: 'MAccelerate and look to the left',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Slow down and look both ways',
+                text: 'MSlow down and look both ways',
                 img: '',
             },
         ],
@@ -1306,12 +1306,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Before restarting the engine after it has stalled',
+                text: 'MBefore restarting the engine after it has stalled',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'When checking your gap from the vehicle in front',
+                text: 'MWhen checking your gap from the vehicle in front',
                 img: '',
             },
             {
@@ -1321,7 +1321,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'When traffic lights change to green',
+                text: 'MWhen traffic lights change to green',
                 img: '',
             },
         ],
@@ -1337,22 +1337,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Steady red',
+                text: 'MSteady red',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Flashing amber',
+                text: 'MFlashing amber',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Steady amber',
+                text: 'MSteady amber',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Flashing green',
+                text: 'MFlashing green',
                 img: '',
             },
         ],
@@ -1368,22 +1368,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Ignore the driver behind and continue to travel within the speed limit',
+                text: 'MIgnore the driver behind and continue to travel within the speed limit',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Slow down, gradually increasing the gap between you and the vehicle in front',
+                text: 'MSlow down, gradually increasing the gap between you and the vehicle in front',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Signal left and wave the driver behind to come past',
+                text: 'MSignal left and wave the driver behind to come past',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Move over to a position just left of the centre line of the road',
+                text: 'MMove over to a position just left of the centre line of the road',
                 img: '',
             },
         ],
@@ -1399,22 +1399,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Full-beam headlights',
+                text: 'MFull-beam headlights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Sidelights',
+                text: 'MSidelights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Dipped headlights',
+                text: 'MDipped headlights',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Fog lights',
+                text: 'MFog lights',
                 img: '',
             },
         ],
@@ -1430,22 +1430,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Slow down and let the vehicle turn',
+                text: 'MSlow down and let the vehicle turn',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Drive on, keeping to the left',
+                text: 'MDrive on, keeping to the left',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Overtake on the right of it',
+                text: 'MOvertake on the right of it',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Hold your speed and sound your horn',
+                text: 'MHold your speed and sound your horn',
                 img: '',
             },
         ],
@@ -1461,22 +1461,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Accelerate to get closer to the red car',
+                text: 'MAccelerate to get closer to the red car',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Give a long blast on the horn',
+                text: 'MGive a long blast on the horn',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Drop back to leave the correct separation distance',
+                text: 'MDrop back to leave the correct separation distance',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Flash your headlights several times',
+                text: 'MFlash your headlights several times',
                 img: '',
             },
         ],
@@ -1492,22 +1492,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Use the parking brake and release the footbrake',
+                text: 'MUse the parking brake and release the footbrake',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Keep your foot on the footbrake',
+                text: 'MKeep your foot on the footbrake',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Balance the clutch with the accelerator',
+                text: 'MBalance the clutch with the accelerator',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Use the parking brake and footbrake together',
+                text: 'MUse the parking brake and footbrake together',
                 img: '',
             },
         ],
@@ -1523,7 +1523,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Move closer to the car ahead, so the driver behind has no room to overtake',
+                text: 'MMove closer to the car ahead, so the driver behind has no room to overtake',
                 img: '',
             },
             {
@@ -1533,12 +1533,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'Keep a steady course and allow the driver behind to overtake',
+                text: 'MKeep a steady course and allow the driver behind to overtake',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Accelerate to get away from the driver behind',
+                text: 'MAccelerate to get away from the driver behind',
                 img: '',
             },
         ],
@@ -1559,17 +1559,17 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'The lane is only in operation at peak times',
+                text: 'MThe lane is only in operation at peak times',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The lane is in operation 24 hours a day',
+                text: 'MThe lane is in operation 24 hours a day',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The lane is only in operation in daylight hours',
+                text: 'MThe lane is only in operation in daylight hours',
                 img: '',
             },
         ],
@@ -1585,22 +1585,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Ignore them as they have no authority',
+                text: 'MIgnore them as they have no authority',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Stop and switch off your engine',
+                text: 'MStop and switch off your engine',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Continue on but drive slowly',
+                text: 'MContinue on but drive slowly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Try to get past quickly',
+                text: 'MTry to get past quickly',
                 img: '',
             },
         ],
@@ -1616,22 +1616,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Sound your horn as a warning',
+                text: 'MSound your horn as a warning',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Go past as quickly as possible',
+                text: 'MGo past as quickly as possible',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Flash your headlights as a warning',
+                text: 'MFlash your headlights as a warning',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Go past slowly and carefully',
+                text: 'MGo past slowly and carefully',
                 img: '',
             },
         ],
@@ -1647,22 +1647,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Give way to older and infirm people only',
+                text: 'MGive way to older and infirm people only',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Slow down and prepare to stop',
+                text: 'MSlow down and prepare to stop',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Use your headlights to indicate they can cross',
+                text: 'MUse your headlights to indicate they can cross',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Wave at them to cross the road',
+                text: 'MWave at them to cross the road',
                 img: '',
             },
         ],
@@ -1678,22 +1678,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Swerve past it and sound your horn',
+                text: 'MSwerve past it and sound your horn',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Flash your headlights and drive up close behind',
+                text: 'MFlash your headlights and drive up close behind',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Slow down and be ready to stop',
+                text: 'MSlow down and be ready to stop',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Accelerate past it immediately',
+                text: 'MAccelerate past it immediately',
                 img: '',
             },
         ],
@@ -1709,22 +1709,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'When you start to edge forward onto the crossing',
+                text: 'MWhen you start to edge forward onto the crossing',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'When the pedestrians have cleared the crossing',
+                text: 'MWhen the pedestrians have cleared the crossing',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'When the pedestrians push the button on the far side of the crossing',
+                text: 'MWhen the pedestrians push the button on the far side of the crossing',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'When a driver from the opposite direction reaches the crossing',
+                text: 'MWhen a driver from the opposite direction reaches the crossing',
                 img: '',
             },
         ],
@@ -1740,22 +1740,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: '',
+                text: 'M',
                 img: 'BB1591a.gif',
             },
             {
                 char: 'b',
-                text: '',
+                text: 'M',
                 img: 'BB1591b.gif',
             },
             {
                 char: 'c',
-                text: '',
+                text: 'M',
                 img: 'BB1591c.gif',
             },
             {
                 char: 'd',
-                text: '',
+                text: 'M',
                 img: 'BB1591d.gif',
             },
         ],
@@ -1802,22 +1802,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Flash your headlights',
+                text: 'MFlash your headlights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Use dipped headlights',
+                text: 'MUse dipped headlights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Switch off your headlights',
+                text: 'MSwitch off your headlights',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Use full-beam headlights',
+                text: 'MUse full-beam headlights',
                 img: '',
             },
         ],
@@ -1833,17 +1833,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Keep well out to stop vehicles overtaking dangerously',
+                text: 'MKeep well out to stop vehicles overtaking dangerously',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Wave the vehicles behind to come past you if you think they can overtake quickly',
+                text: 'MWave the vehicles behind to come past you if you think they can overtake quickly',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Pull in when you can, to let the vehicles behind overtake',
+                text: 'MPull in when you can, to let the vehicles behind overtake',
                 img: '',
             },
             {
@@ -1864,22 +1864,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'It can make the engine difficult to start',
+                text: 'MIt can make the engine difficult to start',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'It can make the roads slippery for other road users',
+                text: 'MIt can make the roads slippery for other road users',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'It can improve your vehicle’s fuel consumption',
+                text: 'MIt can improve your vehicle’s fuel consumption',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'It can increase the level of exhaust emissions',
+                text: 'MIt can increase the level of exhaust emissions',
                 img: '',
             },
         ],
@@ -1894,7 +1894,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Check that your tank is only three-quarters full',
+                text: 'MCheck that your tank is only three-quarters full',
                 img: '',
             },
             {
@@ -1904,12 +1904,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'Check that your fuel gauge is working',
+                text: 'MCheck that your fuel gauge is working',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Check that your filler cap is securely fastened',
+                text: 'MCheck that your filler cap is securely fastened',
                 img: '',
             },
         ],
@@ -1925,22 +1925,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Considerate',
+                text: 'MConsiderate',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Defensive',
+                text: 'MDefensive',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Competitive',
+                text: 'MCompetitive',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Responsible',
+                text: 'MResponsible',
                 img: '',
             },
         ],
@@ -1985,22 +1985,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Between 10.00 pm and 6.00 am in a built-up area',
+                text: 'MBetween 10.00 pm and 6.00 am in a built-up area',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'At any time in a built-up area',
+                text: 'MAt any time in a built-up area',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Between 11.30 pm and 7.00 am in a built-up area',
+                text: 'MBetween 11.30 pm and 7.00 am in a built-up area',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Between 11.30 pm and 6.00 am on any road',
+                text: 'MBetween 11.30 pm and 6.00 am on any road',
                 img: '',
             },
         ],
@@ -2046,22 +2046,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To raise the speed limits',
+                text: 'MTo raise the speed limits',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To help the traffic flow',
+                text: 'MTo help the traffic flow',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To provide better parking',
+                text: 'MTo provide better parking',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To allow lorries to load more freely',
+                text: 'MTo allow lorries to load more freely',
                 img: '',
             },
         ],
@@ -2076,22 +2076,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To separate lanes of traffic',
+                text: 'MTo separate lanes of traffic',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To increase traffic speed',
+                text: 'MTo increase traffic speed',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To allow pedestrians to cross',
+                text: 'MTo allow pedestrians to cross',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To reduce traffic speed',
+                text: 'MTo reduce traffic speed',
                 img: '',
             },
         ],
@@ -2106,22 +2106,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To reduce fuel consumption',
+                text: 'MTo reduce fuel consumption',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To reduce the risk of fire',
+                text: 'MTo reduce the risk of fire',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To reduce harmful exhaust gases',
+                text: 'MTo reduce harmful exhaust gases',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To reduce engine wear',
+                text: 'MTo reduce engine wear',
                 img: '',
             },
         ],
@@ -2136,22 +2136,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'After any lengthy journey',
+                text: 'MAfter any lengthy journey',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'After travelling at high speed',
+                text: 'MAfter travelling at high speed',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'When tyres are hot',
+                text: 'MWhen tyres are hot',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'When tyres are cold',
+                text: 'MWhen tyres are cold',
                 img: '',
             },
         ],
@@ -2166,22 +2166,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'When its tyres are under-inflated',
+                text: 'MWhen its tyres are under-inflated',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'When its tyres are of different makes',
+                text: 'MWhen its tyres are of different makes',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'When its tyres are over-inflated',
+                text: 'MWhen its tyres are over-inflated',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'When its tyres are new',
+                text: 'MWhen its tyres are new',
                 img: '',
             },
         ],
@@ -2196,22 +2196,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Bury it in your garden',
+                text: 'MBury it in your garden',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Put it in the dustbin',
+                text: 'MPut it in the dustbin',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Take it to a local-authority disposal site',
+                text: 'MTake it to a local-authority disposal site',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Leave it on waste land',
+                text: 'MLeave it on waste land',
                 img: '',
             },
         ],
@@ -2226,22 +2226,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Poor steering control',
+                text: 'MPoor steering control',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Accelerating around bends',
+                text: 'MAccelerating around bends',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Staying in high gears',
+                text: 'MStaying in high gears',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Harsh braking and accelerating',
+                text: 'MHarsh braking and accelerating',
                 img: '',
             },
         ],
@@ -2257,22 +2257,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Battery acid',
+                text: 'MBattery acid',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Distilled water',
+                text: 'MDistilled water',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Engine oil',
+                text: 'MEngine oil',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Engine coolant',
+                text: 'MEngine coolant',
                 img: '',
             },
         ],
@@ -2288,12 +2288,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'When there are continuous white lines in the middle of the road',
+                text: 'MWhen there are continuous white lines in the middle of the road',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'When the speed limit exceeds 30 mph',
+                text: 'MWhen the speed limit exceeds 30 mph',
                 img: '',
             },
             {
@@ -2319,7 +2319,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Only use it for short journeys',
+                text: 'MOnly use it for short journeys',
                 img: '',
             },
             {
@@ -2329,12 +2329,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'Drive faster than normal',
+                text: 'MDrive faster than normal',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Keep engine revs low',
+                text: 'MKeep engine revs low',
                 img: '',
             },
         ],
@@ -2349,22 +2349,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'A faulty gearbox',
+                text: 'MA faulty gearbox',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'A faulty braking system',
+                text: 'MA faulty braking system',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'A faulty electrical system',
+                text: 'MA faulty electrical system',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'A faulty exhaust system',
+                text: 'MA faulty exhaust system',
                 img: '',
             },
         ],
@@ -2380,22 +2380,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The top of the battery',
+                text: 'MThe top of the battery',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Halfway up the battery',
+                text: 'MHalfway up the battery',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Just below the cell plates',
+                text: 'MJust below the cell plates',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Just above the cell plates',
+                text: 'MJust above the cell plates',
                 img: '',
             },
         ],
@@ -2411,22 +2411,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Check your vehicle handbook',
+                text: 'MCheck your vehicle handbook',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Ask your local garage',
+                text: 'MAsk your local garage',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Use a route planner on the internet',
+                text: 'MUse a route planner on the internet',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Consult a travel agent',
+                text: 'MConsult a travel agent',
                 img: '',
             },
         ],
@@ -2452,12 +2452,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'Your journey time will be longer',
+                text: 'MYour journey time will be longer',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'It will cause more traffic congestion',
+                text: 'MIt will cause more traffic congestion',
                 img: '',
             },
         ],
@@ -2473,22 +2473,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Your journey will use more fuel',
+                text: 'MYour journey will use more fuel',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Your journey will take longer',
+                text: 'MYour journey will take longer',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Your journey will be more hazardous',
+                text: 'MYour journey will be more hazardous',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Your journey will have fewer delays',
+                text: 'MYour journey will have fewer delays',
                 img: '',
             },
         ],
@@ -2504,22 +2504,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Your original route may be blocked',
+                text: 'MYour original route may be blocked',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Your maps may have different scales',
+                text: 'MYour maps may have different scales',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'You may find you have to pay a congestion charge',
+                text: 'MYou may find you have to pay a congestion charge',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'You may get held up by a tractor',
+                text: 'MYou may get held up by a tractor',
                 img: '',
             },
         ],
@@ -2535,22 +2535,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Allow plenty of time for the trip',
+                text: 'MAllow plenty of time for the trip',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Plan to travel at busy times',
+                text: 'MPlan to travel at busy times',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Avoid roads with the national speed limit',
+                text: 'MAvoid roads with the national speed limit',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Prevent other drivers from overtaking',
+                text: 'MPrevent other drivers from overtaking',
                 img: '',
             },
         ],
@@ -2566,22 +2566,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Reduced pollution',
+                text: 'MReduced pollution',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Increased fuel consumption',
+                text: 'MIncreased fuel consumption',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Reduced exhaust emissions',
+                text: 'MReduced exhaust emissions',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Increased road safety',
+                text: 'MIncreased road safety',
                 img: '',
             },
         ],
@@ -2597,22 +2597,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Anti-freeze level',
+                text: 'MAnti-freeze level',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Brake-fluid level',
+                text: 'MBrake-fluid level',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Battery-water level',
+                text: 'MBattery-water level',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Radiator-coolant level',
+                text: 'MRadiator-coolant level',
                 img: '',
             },
         ],
@@ -2628,22 +2628,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Check the brake-fluid level',
+                text: 'MCheck the brake-fluid level',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Check the footbrake free play',
+                text: 'MCheck the footbrake free play',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Check that the parking brake is released',
+                text: 'MCheck that the parking brake is released',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Have the brakes checked immediately',
+                text: 'MHave the brakes checked immediately',
                 img: '',
             },
         ],
@@ -2659,17 +2659,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'A fault in the braking system',
+                text: 'MA fault in the braking system',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The engine oil is low',
+                text: 'MThe engine oil is low',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'A rear light has failed',
+                text: 'MA rear light has failed',
                 img: '',
             },
             {
@@ -2690,22 +2690,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To prevent wear on the pedals',
+                text: 'MTo prevent wear on the pedals',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To maintain control of the pedals',
+                text: 'MTo maintain control of the pedals',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To enable you to adjust your seat',
+                text: 'MTo enable you to adjust your seat',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To enable you to walk for assistance if you break down',
+                text: 'MTo enable you to walk for assistance if you break down',
                 img: '',
             },
         ],
@@ -2721,22 +2721,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'An air-sprung seat',
+                text: 'MAn air-sprung seat',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Anti-lock brakes',
+                text: 'MAnti-lock brakes',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'A collapsible steering wheel',
+                text: 'MA collapsible steering wheel',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'A properly adjusted head restraint',
+                text: 'MA properly adjusted head restraint',
                 img: '',
             },
         ],
@@ -2752,22 +2752,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The tyres are worn',
+                text: 'MThe tyres are worn',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The tyres are under inflated',
+                text: 'MThe tyres are under inflated',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The vehicle is on soft ground',
+                text: 'MThe vehicle is on soft ground',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The shock absorbers are worn',
+                text: 'MThe shock absorbers are worn',
                 img: '',
             },
         ],
@@ -2782,22 +2782,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'There will be less wind noise',
+                text: 'MThere will be less wind noise',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The engine will use more oil',
+                text: 'MThe engine will use more oil',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The car will accelerate faster',
+                text: 'MThe car will accelerate faster',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Fuel consumption will increase',
+                text: 'MFuel consumption will increase',
                 img: '',
             },
         ],
@@ -2812,12 +2812,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'If they were bought second-hand',
+                text: 'MIf they were bought second-hand',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'If they have any large, deep cuts in the side wall',
+                text: 'MIf they have any large, deep cuts in the side wall',
                 img: '',
             },
             {
@@ -2827,7 +2827,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'If they have different tread patterns',
+                text: 'MIf they have different tread patterns',
                 img: '',
             },
         ],
@@ -2842,22 +2842,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: '1 mm',
+                text: 'M1 mm',
                 img: '',
             },
             {
                 char: 'b',
-                text: '1.6 mm',
+                text: 'M1.6 mm',
                 img: '',
             },
             {
                 char: 'c',
-                text: '2.5 mm',
+                text: 'M2.5 mm',
                 img: '',
             },
             {
                 char: 'd',
-                text: '4 mm',
+                text: 'M4 mm',
                 img: '',
             },
         ],
@@ -2878,17 +2878,17 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'You, the driver',
+                text: 'MYou, the driver',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The front-seat passenger',
+                text: 'MThe front-seat passenger',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The children',
+                text: 'MThe children',
                 img: '',
             },
         ],
@@ -2903,22 +2903,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'By accelerating harshly',
+                text: 'MBy accelerating harshly',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'By accelerating gently',
+                text: 'MBy accelerating gently',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'By using leaded fuel',
+                text: 'MBy using leaded fuel',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'By driving faster',
+                text: 'MBy driving faster',
                 img: '',
             },
         ],
@@ -2933,22 +2933,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'By having your vehicle serviced regularly',
+                text: 'MBy having your vehicle serviced regularly',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'By revving the engine in the lower gears',
+                text: 'MBy revving the engine in the lower gears',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'By keeping an empty roof rack on your vehicle',
+                text: 'MBy keeping an empty roof rack on your vehicle',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'By driving at higher speeds where possible',
+                text: 'MBy driving at higher speeds where possible',
                 img: '',
             },
         ],
@@ -2964,22 +2964,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Drive in a bus lane',
+                text: 'MDrive in a bus lane',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Use a car with a smaller engine',
+                text: 'MUse a car with a smaller engine',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Walk or cycle on short journeys',
+                text: 'MWalk or cycle on short journeys',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Travel by car at all times',
+                text: 'MTravel by car at all times',
                 img: '',
             },
         ],
@@ -2994,22 +2994,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Reducing your speed',
+                text: 'MReducing your speed',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Driving on motorways',
+                text: 'MDriving on motorways',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Using different brands of fuel',
+                text: 'MUsing different brands of fuel',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Under-inflated tyres',
+                text: 'MUnder-inflated tyres',
                 img: '',
             },
         ],
@@ -3025,22 +3025,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The gearbox',
+                text: 'MThe gearbox',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The transmission',
+                text: 'MThe transmission',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The door locks',
+                text: 'MThe door locks',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The seat belts',
+                text: 'MThe seat belts',
                 img: '',
             },
         ],
@@ -3056,22 +3056,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'About 5%',
+                text: 'MAbout 5%',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'About 15%',
+                text: 'MAbout 15%',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'About 75%',
+                text: 'MAbout 75%',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'About 100%',
+                text: 'MAbout 100%',
                 img: '',
             },
         ],
@@ -3087,22 +3087,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Increase the pressure in your tyres',
+                text: 'MIncrease the pressure in your tyres',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Have the brakes checked as soon as possible',
+                text: 'MHave the brakes checked as soon as possible',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Change gear and pump the brake pedal',
+                text: 'MChange gear and pump the brake pedal',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Use your parking brake at the same time',
+                text: 'MUse your parking brake at the same time',
                 img: '',
             },
         ],
@@ -3117,22 +3117,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The steering will pull to one side',
+                text: 'MThe steering will pull to one side',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The steering will vibrate',
+                text: 'MThe steering will vibrate',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The brakes will fail',
+                text: 'MThe brakes will fail',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The tyres will deflate',
+                text: 'MThe tyres will deflate',
                 img: '',
             },
         ],
@@ -3148,22 +3148,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The gearbox',
+                text: 'MThe gearbox',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The engine',
+                text: 'MThe engine',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The brakes',
+                text: 'MThe brakes',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The tyres',
+                text: 'MThe tyres',
                 img: '',
             },
         ],
@@ -3179,22 +3179,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Put them in a carrier bag',
+                text: 'MPut them in a carrier bag',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Park near a school entrance',
+                text: 'MPark near a school entrance',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Lock them out of sight',
+                text: 'MLock them out of sight',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Park near a bus stop',
+                text: 'MPark near a bus stop',
                 img: '',
             },
         ],
@@ -3209,22 +3209,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Always keeping the headlights on',
+                text: 'MAlways keeping the headlights on',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Fitting reflective glass windows',
+                text: 'MFitting reflective glass windows',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Always keeping the interior light on',
+                text: 'MAlways keeping the interior light on',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Etching the registration number on the windows',
+                text: 'MEtching the registration number on the windows',
                 img: '',
             },
         ],
@@ -3240,22 +3240,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The car dealer’s details',
+                text: 'MThe car dealer’s details',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The owner’s manual',
+                text: 'MThe owner’s manual',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The service record',
+                text: 'MThe service record',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The vehicle registration document',
+                text: 'MThe vehicle registration document',
                 img: '',
             },
         ],
@@ -3271,22 +3271,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Park near a busy junction',
+                text: 'MPark near a busy junction',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Park in a housing estate',
+                text: 'MPark in a housing estate',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Lock it and remove the key',
+                text: 'MLock it and remove the key',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Leave the left indicator on',
+                text: 'MLeave the left indicator on',
                 img: '',
             },
         ],
@@ -3301,22 +3301,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Driving more slowly',
+                text: 'MDriving more slowly',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Accelerating rapidly',
+                text: 'MAccelerating rapidly',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Late and heavy braking',
+                text: 'MLate and heavy braking',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Staying in lower gears',
+                text: 'MStaying in lower gears',
                 img: '',
             },
         ],
@@ -3332,22 +3332,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Take it to a local-authority site',
+                text: 'MTake it to a local-authority site',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Pour it down a drain',
+                text: 'MPour it down a drain',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Tip it into a hole in the ground',
+                text: 'MTip it into a hole in the ground',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Put it in your dustbin',
+                text: 'MPut it in your dustbin',
                 img: '',
             },
         ],
@@ -3362,22 +3362,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To recover the cost of expensive garage equipment',
+                text: 'MTo recover the cost of expensive garage equipment',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To help protect the environment against pollution',
+                text: 'MTo help protect the environment against pollution',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To discover which fuel supplier is used the most',
+                text: 'MTo discover which fuel supplier is used the most',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To make sure diesel and petrol engines emit the same fumes',
+                text: 'MTo make sure diesel and petrol engines emit the same fumes',
                 img: '',
             },
         ],
@@ -3393,22 +3393,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Use narrow side streets',
+                text: 'MUse narrow side streets',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Brake heavily',
+                text: 'MBrake heavily',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Use busy routes',
+                text: 'MUse busy routes',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Anticipate well ahead',
+                text: 'MAnticipate well ahead',
                 img: '',
             },
         ],
@@ -3424,22 +3424,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Your vehicle will be cheaper to insure',
+                text: 'MYour vehicle will be cheaper to insure',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Your vehicle tax will be lower',
+                text: 'MYour vehicle tax will be lower',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Your vehicle will remain reliable',
+                text: 'MYour vehicle will remain reliable',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Your journey times will be reduced',
+                text: 'MYour journey times will be reduced',
                 img: '',
             },
         ],
@@ -3455,22 +3455,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Maintain a reduced speed throughout',
+                text: 'MMaintain a reduced speed throughout',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Accelerate quickly between the humps',
+                text: 'MAccelerate quickly between the humps',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Always keep to the maximum legal speed',
+                text: 'MAlways keep to the maximum legal speed',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Drive slowly at school times only',
+                text: 'MDrive slowly at school times only',
                 img: '',
             },
         ],
@@ -3485,22 +3485,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Before a long journey',
+                text: 'MBefore a long journey',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'When the engine is hot',
+                text: 'MWhen the engine is hot',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Early in the morning',
+                text: 'MEarly in the morning',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Every time you drive the car',
+                text: 'MEvery time you drive the car',
                 img: '',
             },
         ],
@@ -3516,12 +3516,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'No, not unless you stay with your car',
+                text: 'MNo, not unless you stay with your car',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Yes, in order to drop off a passenger',
+                text: 'MYes, in order to drop off a passenger',
                 img: '',
             },
             {
@@ -3531,7 +3531,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'No, not under any circumstances',
+                text: 'MNo, not under any circumstances',
                 img: '',
             },
         ],
@@ -3547,22 +3547,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Leave the engine running',
+                text: 'MLeave the engine running',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Switch the engine off but leave the key in',
+                text: 'MSwitch the engine off but leave the key in',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Lock it and remove the key',
+                text: 'MLock it and remove the key',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Park near a traffic warden',
+                text: 'MPark near a traffic warden',
                 img: '',
             },
         ],
@@ -3577,17 +3577,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'It makes it easy to find your car',
+                text: 'MIt makes it easy to find your car',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'It helps deter thieves',
+                text: 'MIt helps deter thieves',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'It stops the car being exposed to bad weather',
+                text: 'MIt stops the car being exposed to bad weather',
                 img: '',
             },
             {
@@ -3607,22 +3607,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Alongside a parking meter',
+                text: 'MAlongside a parking meter',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'In front of a property entrance',
+                text: 'MIn front of a property entrance',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'On your driveway',
+                text: 'MOn your driveway',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'In a marked parking space',
+                text: 'MIn a marked parking space',
                 img: '',
             },
         ],
@@ -3638,22 +3638,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To make you more comfortable',
+                text: 'MTo make you more comfortable',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To help you avoid neck injury',
+                text: 'MTo help you avoid neck injury',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To help you relax',
+                text: 'MTo help you relax',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To help you maintain your driving position',
+                text: 'MTo help you maintain your driving position',
                 img: '',
             },
         ],
@@ -3669,22 +3669,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Avoid using the cruise control',
+                text: 'MAvoid using the cruise control',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Use the air conditioning whenever you drive',
+                text: 'MUse the air conditioning whenever you drive',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Use the gears to slow the vehicle',
+                text: 'MUse the gears to slow the vehicle',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Avoid making a lot of short journeys',
+                text: 'MAvoid making a lot of short journeys',
                 img: '',
             },
         ],
@@ -3700,22 +3700,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Drive more quickly',
+                text: 'MDrive more quickly',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Over-rev in a low gear',
+                text: 'MOver-rev in a low gear',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Walk or cycle',
+                text: 'MWalk or cycle',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Drive short journeys',
+                text: 'MDrive short journeys',
                 img: '',
             },
         ],
@@ -3731,22 +3731,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Take all valuables with you',
+                text: 'MTake all valuables with you',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Park near a taxi rank',
+                text: 'MPark near a taxi rank',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Place any valuables on the floor',
+                text: 'MPlace any valuables on the floor',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Park near a fire station',
+                text: 'MPark near a fire station',
                 img: '',
             },
         ],
@@ -3762,22 +3762,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Park in an unlit area',
+                text: 'MPark in an unlit area',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Leave the radio turned on',
+                text: 'MLeave the radio turned on',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Park near a busy junction',
+                text: 'MPark near a busy junction',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Install a security-coded radio',
+                text: 'MInstall a security-coded radio',
                 img: '',
             },
         ],
@@ -3793,22 +3793,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Leave it in a well-lit area',
+                text: 'MLeave it in a well-lit area',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Park in a quiet side road',
+                text: 'MPark in a quiet side road',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Don’t engage the steering lock',
+                text: 'MDon’t engage the steering lock',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Park in a poorly lit area',
+                text: 'MPark in a poorly lit area',
                 img: '',
             },
         ],
@@ -3823,22 +3823,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Being a member of a vehicle breakdown organisation',
+                text: 'MBeing a member of a vehicle breakdown organisation',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Registering with a Vehicle Watch scheme',
+                text: 'MRegistering with a Vehicle Watch scheme',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Passing an advanced driving test',
+                text: 'MPassing an advanced driving test',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Taking car maintenance classes',
+                text: 'MTaking car maintenance classes',
                 img: '',
             },
         ],
@@ -3854,22 +3854,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'In the fuel tank',
+                text: 'MIn the fuel tank',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'In the air filter',
+                text: 'MIn the air filter',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'On the cooling system',
+                text: 'MOn the cooling system',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'On the exhaust system',
+                text: 'MOn the exhaust system',
                 img: '',
             },
         ],
@@ -3884,22 +3884,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Reduction in journey times by about 15%',
+                text: 'MReduction in journey times by about 15%',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Increase in fuel consumption by about 15%',
+                text: 'MIncrease in fuel consumption by about 15%',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Reduction in fuel consumption by about 15%',
+                text: 'MReduction in fuel consumption by about 15%',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Increase in journey times by about 15%',
+                text: 'MIncrease in journey times by about 15%',
                 img: '',
             },
         ],
@@ -3914,22 +3914,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Using lower gears as often as possible',
+                text: 'MUsing lower gears as often as possible',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Accelerating sharply in each gear',
+                text: 'MAccelerating sharply in each gear',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Using each gear in turn',
+                text: 'MUsing each gear in turn',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Missing out some gears',
+                text: 'MMissing out some gears',
                 img: '',
             },
         ],
@@ -3945,22 +3945,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Through the legal enforcement of speed regulations',
+                text: 'MThrough the legal enforcement of speed regulations',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'By increasing the number of cars on the road',
+                text: 'MBy increasing the number of cars on the road',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Through increased fuel bills',
+                text: 'MThrough increased fuel bills',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'By reducing exhaust emissions',
+                text: 'MBy reducing exhaust emissions',
                 img: '',
             },
         ],
@@ -3975,22 +3975,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Increased fuel consumption',
+                text: 'MIncreased fuel consumption',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Improved road safety',
+                text: 'MImproved road safety',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Damage to the environment',
+                text: 'MDamage to the environment',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Increased exhaust emissions',
+                text: 'MIncreased exhaust emissions',
                 img: '',
             },
         ],
@@ -4006,22 +4006,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: '1 mm',
+                text: 'M1 mm',
                 img: '',
             },
             {
                 char: 'b',
-                text: '1.6 mm',
+                text: 'M1.6 mm',
                 img: '',
             },
             {
                 char: 'c',
-                text: '2 mm',
+                text: 'M2 mm',
                 img: '',
             },
             {
                 char: 'd',
-                text: '2.6 mm',
+                text: 'M2.6 mm',
                 img: '',
             },
         ],
@@ -4098,22 +4098,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'An adult passenger',
+                text: 'MAn adult passenger',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The children',
+                text: 'MThe children',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'You, the driver',
+                text: 'MYou, the driver',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Your friend',
+                text: 'MYour friend',
                 img: '',
             },
         ],
@@ -4129,22 +4129,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The clutch pedal will lock',
+                text: 'MThe clutch pedal will lock',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The air intake will become blocked',
+                text: 'MThe air intake will become blocked',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The timing belt will slip',
+                text: 'MThe timing belt will slip',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The oil seals will leak',
+                text: 'MThe oil seals will leak',
                 img: '',
             },
         ],
@@ -4160,22 +4160,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Behind the passenger seat',
+                text: 'MBehind the passenger seat',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Using an adult seat belt',
+                text: 'MUsing an adult seat belt',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Sharing a belt with an adult',
+                text: 'MSharing a belt with an adult',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Between two other children',
+                text: 'MBetween two other children',
                 img: '',
             },
         ],
@@ -4191,22 +4191,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'They must use an adult seat belt',
+                text: 'MThey must use an adult seat belt',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'They must be able to fasten their own seat belt',
+                text: 'MThey must be able to fasten their own seat belt',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'They must use a suitable child restraint',
+                text: 'MThey must use a suitable child restraint',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'They must be able to see clearly out of the front window',
+                text: 'MThey must be able to see clearly out of the front window',
                 img: '',
             },
         ],
@@ -4222,22 +4222,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Switch off the engine',
+                text: 'MSwitch off the engine',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Apply the steering lock',
+                text: 'MApply the steering lock',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Switch off the radio',
+                text: 'MSwitch off the radio',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Use your headlights',
+                text: 'MUse your headlights',
                 img: '',
             },
         ],
@@ -4253,22 +4253,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Deactivate the airbag',
+                text: 'MDeactivate the airbag',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Turn the seat to face sideways',
+                text: 'MTurn the seat to face sideways',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Ask a passenger to hold the baby',
+                text: 'MAsk a passenger to hold the baby',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Put the child in an adult seat belt',
+                text: 'MPut the child in an adult seat belt',
                 img: '',
             },
         ],
@@ -4289,12 +4289,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'If the battery keeps going flat',
+                text: 'MIf the battery keeps going flat',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'When parked in a 20 mph zone',
+                text: 'MWhen parked in a 20 mph zone',
                 img: '',
             },
             {
@@ -4315,22 +4315,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The ESC system has activated',
+                text: 'MThe ESC system has activated',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The ESC system has a fault',
+                text: 'MThe ESC system has a fault',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The ESC system is running a routine test',
+                text: 'MThe ESC system is running a routine test',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The ESC system is switched off',
+                text: 'MThe ESC system is switched off',
                 img: '',
             },
         ],
@@ -4346,22 +4346,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Two times',
+                text: 'MTwo times',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Three times',
+                text: 'MThree times',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Five times',
+                text: 'MFive times',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Ten times',
+                text: 'MTen times',
                 img: '',
             },
         ],
@@ -4377,22 +4377,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Using the brakes',
+                text: 'MUsing the brakes',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Moving off on a hill',
+                text: 'MMoving off on a hill',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Turning into a narrow road',
+                text: 'MTurning into a narrow road',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Passing pedal cyclists',
+                text: 'MPassing pedal cyclists',
                 img: '',
             },
         ],
@@ -4408,22 +4408,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To improve your view of the road',
+                text: 'MTo improve your view of the road',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To overcome the effect of the road’s slope',
+                text: 'MTo overcome the effect of the road’s slope',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To let faster traffic from behind overtake',
+                text: 'MTo let faster traffic from behind overtake',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To be positioned safely if you skid',
+                text: 'MTo be positioned safely if you skid',
                 img: '',
             },
         ],
@@ -4439,22 +4439,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Accelerate and keep to a high speed for a short time',
+                text: 'MAccelerate and keep to a high speed for a short time',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Go slowly while gently applying the brakes',
+                text: 'MGo slowly while gently applying the brakes',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Avoid using the brakes at all for a few miles',
+                text: 'MAvoid using the brakes at all for a few miles',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stop for at least an hour to allow them time to dry',
+                text: 'MStop for at least an hour to allow them time to dry',
                 img: '',
             },
         ],
@@ -4470,22 +4470,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The suspension',
+                text: 'MThe suspension',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The exhaust emissions',
+                text: 'MThe exhaust emissions',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The fuel consumption',
+                text: 'MThe fuel consumption',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The tyre grip',
+                text: 'MThe tyre grip',
                 img: '',
             },
         ],
@@ -4501,22 +4501,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'On a narrow country lane',
+                text: 'MOn a narrow country lane',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'On an open stretch of road',
+                text: 'MOn an open stretch of road',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'On a busy stretch of road',
+                text: 'MOn a busy stretch of road',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'On a long, straight road',
+                text: 'MOn a long, straight road',
                 img: '',
             },
         ],
@@ -4532,22 +4532,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Flash your headlights as a warning',
+                text: 'MFlash your headlights as a warning',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Try to overtake safely as soon as you can',
+                text: 'MTry to overtake safely as soon as you can',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Drop back to regain a safe distance',
+                text: 'MDrop back to regain a safe distance',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stay close to the other vehicle until it moves on',
+                text: 'MStay close to the other vehicle until it moves on',
                 img: '',
             },
         ],
@@ -4563,22 +4563,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Increase your distance from the vehicle in front',
+                text: 'MIncrease your distance from the vehicle in front',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Brake sharply',
+                text: 'MBrake sharply',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Switch on your hazard warning lights',
+                text: 'MSwitch on your hazard warning lights',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Move onto the hard shoulder and stop',
+                text: 'MMove onto the hard shoulder and stop',
                 img: '',
             },
         ],
@@ -4594,22 +4594,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Keep close to the vehicle in front',
+                text: 'MKeep close to the vehicle in front',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Use main beam instead of dipped headlights',
+                text: 'MUse main beam instead of dipped headlights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Keep up with the faster vehicles',
+                text: 'MKeep up with the faster vehicles',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Keep a safe distance from the vehicle in front',
+                text: 'MKeep a safe distance from the vehicle in front',
                 img: '',
             },
         ],
@@ -4624,22 +4624,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Choose an appropriate lane in good time',
+                text: 'MChoose an appropriate lane in good time',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Switch lanes to make better progress',
+                text: 'MSwitch lanes to make better progress',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Increase speed to get through the contraflow more quickly',
+                text: 'MIncrease speed to get through the contraflow more quickly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Follow other motorists closely to avoid long queues',
+                text: 'MFollow other motorists closely to avoid long queues',
                 img: '',
             },
         ],
@@ -4655,22 +4655,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Drive at a slow speed in the highest gear possible',
+                text: 'MDrive at a slow speed in the highest gear possible',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Use the parking brake if the wheels start to slip',
+                text: 'MUse the parking brake if the wheels start to slip',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Brake gently and repeatedly',
+                text: 'MBrake gently and repeatedly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Drive in a low gear at all times',
+                text: 'MDrive in a low gear at all times',
                 img: '',
             },
         ],
@@ -4685,22 +4685,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The weather',
+                text: 'MThe weather',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The driver',
+                text: 'MThe driver',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The vehicle',
+                text: 'MThe vehicle',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The road',
+                text: 'MThe road',
                 img: '',
             },
         ],
@@ -4716,22 +4716,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Coast into the bend',
+                text: 'MCoast into the bend',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Apply your parking brake',
+                text: 'MApply your parking brake',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Firmly use your footbrake',
+                text: 'MFirmly use your footbrake',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Slow down gently',
+                text: 'MSlow down gently',
                 img: '',
             },
         ],
@@ -4747,22 +4747,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The aerial',
+                text: 'MThe aerial',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The windows',
+                text: 'MThe windows',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The bumper',
+                text: 'MThe bumper',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The boot',
+                text: 'MThe boot',
                 img: '',
             },
         ],
@@ -4782,17 +4782,17 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'Using a higher gear than normal',
+                text: 'MUsing a higher gear than normal',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Using a high engine speed',
+                text: 'MUsing a high engine speed',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Using the parking brake and footbrake together',
+                text: 'MUsing the parking brake and footbrake together',
                 img: '',
             },
         ],
@@ -4807,22 +4807,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Brake firmly and quickly',
+                text: 'MBrake firmly and quickly',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Be ready to steer sharply',
+                text: 'MBe ready to steer sharply',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Use sidelights only',
+                text: 'MUse sidelights only',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Brake gently in plenty of time',
+                text: 'MBrake gently in plenty of time',
                 img: '',
             },
         ],
@@ -4838,22 +4838,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Improved grip on the road',
+                text: 'MImproved grip on the road',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Lower fuel consumption',
+                text: 'MLower fuel consumption',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Shorter stopping distances',
+                text: 'MShorter stopping distances',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Improved passenger comfort',
+                text: 'MImproved passenger comfort',
                 img: '',
             },
         ],
@@ -4869,22 +4869,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Select a high gear and use the brakes carefully',
+                text: 'MSelect a high gear and use the brakes carefully',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Select a high gear and use the brakes firmly',
+                text: 'MSelect a high gear and use the brakes firmly',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Select a low gear and use the brakes carefully',
+                text: 'MSelect a low gear and use the brakes carefully',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Select a low gear and avoid using the brakes',
+                text: 'MSelect a low gear and avoid using the brakes',
                 img: '',
             },
         ],
@@ -4900,22 +4900,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Turn the steering wheel towards the kerb',
+                text: 'MTurn the steering wheel towards the kerb',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Park close to the bumper of another car',
+                text: 'MPark close to the bumper of another car',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Park with two wheels on the kerb',
+                text: 'MPark with two wheels on the kerb',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Turn the steering wheel away from the kerb',
+                text: 'MTurn the steering wheel away from the kerb',
                 img: '',
             },
         ],
@@ -4931,22 +4931,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Move across to the left-hand side of the road',
+                text: 'MMove across to the left-hand side of the road',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Wait for any pedestrians to cross',
+                text: 'MWait for any pedestrians to cross',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Check your mirror and slow down',
+                text: 'MCheck your mirror and slow down',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stop and check both pavements',
+                text: 'MStop and check both pavements',
                 img: '',
             },
         ],
@@ -4962,22 +4962,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Dry',
+                text: 'MDry',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Loose',
+                text: 'MLoose',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Firm',
+                text: 'MFirm',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Smooth',
+                text: 'MSmooth',
                 img: '',
             },
         ],
@@ -4993,22 +4993,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Slowly and gently',
+                text: 'MSlowly and gently',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Slowly but firmly',
+                text: 'MSlowly but firmly',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Rapidly and gently',
+                text: 'MRapidly and gently',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Rapidly and firmly',
+                text: 'MRapidly and firmly',
                 img: '',
             },
         ],
@@ -5024,22 +5024,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Check your tyre pressures',
+                text: 'MCheck your tyre pressures',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Switch on your hazard warning lights',
+                text: 'MSwitch on your hazard warning lights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Accelerate briskly',
+                text: 'MAccelerate briskly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Test your brakes',
+                text: 'MTest your brakes',
                 img: '',
             },
         ],
@@ -5085,22 +5085,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The engine will stall',
+                text: 'MThe engine will stall',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The steering will feel very heavy',
+                text: 'MThe steering will feel very heavy',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The engine noise will increase',
+                text: 'MThe engine noise will increase',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The steering will feel very light',
+                text: 'MThe steering will feel very light',
                 img: '',
             },
         ],
@@ -5116,22 +5116,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'In the rain',
+                text: 'MIn the rain',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'In fog',
+                text: 'MIn fog',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'At night',
+                text: 'MAt night',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'In strong winds',
+                text: 'MIn strong winds',
                 img: '',
             },
         ],
@@ -5147,22 +5147,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'A two-second time gap',
+                text: 'MA two-second time gap',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'One car length',
+                text: 'MOne car length',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Two metres (6 feet 6 inches)',
+                text: 'MTwo metres (6 feet 6 inches)',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Two car lengths',
+                text: 'MTwo car lengths',
                 img: '',
             },
         ],
@@ -5177,22 +5177,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'By changing to a lower gear',
+                text: 'MBy changing to a lower gear',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'By selecting reverse gear',
+                text: 'MBy selecting reverse gear',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'By changing to a higher gear',
+                text: 'MBy changing to a higher gear',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'By selecting neutral gear',
+                text: 'MBy selecting neutral gear',
                 img: '',
             },
         ],
@@ -5208,12 +5208,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Keep pumping the footbrake to prevent skidding',
+                text: 'MKeep pumping the footbrake to prevent skidding',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Brake normally but grip the steering wheel tightly',
+                text: 'MBrake normally but grip the steering wheel tightly',
                 img: '',
             },
             {
@@ -5223,7 +5223,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'Apply the parking brake to reduce the stopping distance',
+                text: 'MApply the parking brake to reduce the stopping distance',
                 img: '',
             },
         ],
@@ -5239,22 +5239,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Hazard warning lights',
+                text: 'MHazard warning lights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Dipped headlights',
+                text: 'MDipped headlights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Rear fog lights',
+                text: 'MRear fog lights',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Sidelights',
+                text: 'MSidelights',
                 img: '',
             },
         ],
@@ -5270,22 +5270,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Improvement in control',
+                text: 'MImprovement in control',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Easier steering',
+                text: 'MEasier steering',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Reduction in control',
+                text: 'MReduction in control',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Increased fuel consumption',
+                text: 'MIncreased fuel consumption',
                 img: '',
             },
         ],
@@ -5301,22 +5301,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Wear a hi-visibility jacket',
+                text: 'MWear a hi-visibility jacket',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Have a caffeinated drink',
+                text: 'MHave a caffeinated drink',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Allow more time',
+                text: 'MAllow more time',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Reduce your tyre pressures',
+                text: 'MReduce your tyre pressures',
                 img: '',
             },
         ],
@@ -5332,22 +5332,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Pass closely',
+                text: 'MPass closely',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Pass very slowly',
+                text: 'MPass very slowly',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Pass widely',
+                text: 'MPass widely',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Pass immediately',
+                text: 'MPass immediately',
                 img: '',
             },
         ],
@@ -5362,22 +5362,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'On a motorway sign',
+                text: 'MOn a motorway sign',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'On a railway bridge',
+                text: 'MOn a railway bridge',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'On a large goods vehicle',
+                text: 'MOn a large goods vehicle',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'On a diversion sign',
+                text: 'MOn a diversion sign',
                 img: '',
             },
         ],
@@ -5392,22 +5392,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Vehicles turning right',
+                text: 'MVehicles turning right',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Vehicles doing U-turns',
+                text: 'MVehicles doing U-turns',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The cyclist crossing the road',
+                text: 'MThe cyclist crossing the road',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Parked cars around the corner',
+                text: 'MParked cars around the corner',
                 img: '',
             },
         ],
@@ -5422,22 +5422,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The parked car (arrowed A)',
+                text: 'MThe parked car (arrowed A)',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The pedestrian waiting to cross (arrowed B)',
+                text: 'MThe pedestrian waiting to cross (arrowed B)',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The moving car (arrowed C)',
+                text: 'MThe moving car (arrowed C)',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The car turning (arrowed D)',
+                text: 'MThe car turning (arrowed D)',
                 img: '',
             },
         ],
@@ -5453,22 +5453,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Continue at the same speed',
+                text: 'MContinue at the same speed',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Sound the horn',
+                text: 'MSound the horn',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Drive through quickly',
+                text: 'MDrive through quickly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Slow down and get ready to stop',
+                text: 'MSlow down and get ready to stop',
                 img: '',
             },
         ],
@@ -5484,22 +5484,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The uneven road surface',
+                text: 'MThe uneven road surface',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Traffic following behind',
+                text: 'MTraffic following behind',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Doors opening on parked cars',
+                text: 'MDoors opening on parked cars',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Empty parking spaces',
+                text: 'MEmpty parking spaces',
                 img: '',
             },
         ],
@@ -5514,22 +5514,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The road will go steeply uphill',
+                text: 'MThe road will go steeply uphill',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The road will go steeply downhill',
+                text: 'MThe road will go steeply downhill',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The road will bend sharply to the left',
+                text: 'MThe road will bend sharply to the left',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The road will bend sharply to the right',
+                text: 'MThe road will bend sharply to the right',
                 img: '',
             },
         ],
@@ -5544,17 +5544,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Try to overtake before the cyclist gets to the junction',
+                text: 'MTry to overtake before the cyclist gets to the junction',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Flash your headlights at the cyclist',
+                text: 'MFlash your headlights at the cyclist',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Slow down and allow the cyclist to turn',
+                text: 'MSlow down and allow the cyclist to turn',
                 img: '',
             },
             {
@@ -5575,22 +5575,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The road surface is poor',
+                text: 'MThe road surface is poor',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The footpath is narrow',
+                text: 'MThe footpath is narrow',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The kerbs are high',
+                text: 'MThe kerbs are high',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The view is restricted',
+                text: 'MThe view is restricted',
                 img: '',
             },
         ],
@@ -5606,22 +5606,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Bicycles',
+                text: 'MBicycles',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Buses',
+                text: 'MBuses',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Motorcycles',
+                text: 'MMotorcycles',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Cars',
+                text: 'MCars',
                 img: '',
             },
         ],
@@ -5637,22 +5637,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Lorry',
+                text: 'MLorry',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Bicycle',
+                text: 'MBicycle',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Car',
+                text: 'MCar',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Motorcycle',
+                text: 'MMotorcycle',
                 img: '',
             },
         ],
@@ -5667,12 +5667,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Stop behind the line, then edge forward to see clearly',
+                text: 'MStop behind the line, then edge forward to see clearly',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Stop beyond the line, at a point where you can see clearly',
+                text: 'MStop beyond the line, at a point where you can see clearly',
                 img: '',
             },
             {
@@ -5698,22 +5698,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Ignore the error and stay calm',
+                text: 'MIgnore the error and stay calm',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Flash your lights to show your annoyance',
+                text: 'MFlash your lights to show your annoyance',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Sound your horn to show your annoyance',
+                text: 'MSound your horn to show your annoyance',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Overtake as soon as possible',
+                text: 'MOvertake as soon as possible',
                 img: '',
             },
         ],
@@ -5759,22 +5759,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Yes, you should plan to stop every half an hour',
+                text: 'MYes, you should plan to stop every half an hour',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Yes, regular stops help concentration',
+                text: 'MYes, regular stops help concentration',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'No, you’ll be less tired if you get there as soon as possible',
+                text: 'MNo, you’ll be less tired if you get there as soon as possible',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'No, only fuel stops will be needed',
+                text: 'MNo, only fuel stops will be needed',
                 img: '',
             },
         ],
@@ -5790,22 +5790,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Go over it quickly',
+                text: 'MGo over it quickly',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Go over it carefully',
+                text: 'MGo over it carefully',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Stop before the barrier',
+                text: 'MStop before the barrier',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Switch on your hazard warning lights',
+                text: 'MSwitch on your hazard warning lights',
                 img: '',
             },
         ],
@@ -5821,22 +5821,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Brake and stop only for large vehicles',
+                text: 'MBrake and stop only for large vehicles',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Brake sharply to a stop before looking',
+                text: 'MBrake sharply to a stop before looking',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Be prepared to brake sharply to a stop',
+                text: 'MBe prepared to brake sharply to a stop',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Be prepared to stop for any traffic',
+                text: 'MBe prepared to stop for any traffic',
                 img: '',
             },
         ],
@@ -5851,17 +5851,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Wave towards the pedestrians who are waiting to cross',
+                text: 'MWave towards the pedestrians who are waiting to cross',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Wait for the pedestrian in the road to cross',
+                text: 'MWait for the pedestrian in the road to cross',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Quickly drive behind the pedestrian in the road',
+                text: 'MQuickly drive behind the pedestrian in the road',
                 img: '',
             },
             {
@@ -5882,7 +5882,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Overtake after checking your mirrors and signalling',
+                text: 'MOvertake after checking your mirrors and signalling',
                 img: '',
             },
             {
@@ -5892,12 +5892,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'Accelerate quickly to overtake before reaching the junction',
+                text: 'MAccelerate quickly to overtake before reaching the junction',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Slow down and prepare to overtake on the left',
+                text: 'MSlow down and prepare to overtake on the left',
                 img: '',
             },
         ],
@@ -5913,22 +5913,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Move out to the centre of the road before going through',
+                text: 'MMove out to the centre of the road before going through',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Find another route; this one is only for high vehicles',
+                text: 'MFind another route; this one is only for high vehicles',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Be prepared to give way to large vehicles in the middle of the road',
+                text: 'MBe prepared to give way to large vehicles in the middle of the road',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Move across to the right-hand side before going through',
+                text: 'MMove across to the right-hand side before going through',
                 img: '',
             },
         ],
@@ -5944,22 +5944,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'They give a wider field of vision',
+                text: 'MThey give a wider field of vision',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'They totally cover blind spots',
+                text: 'MThey totally cover blind spots',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'They make it easier to judge the speed of the traffic behind',
+                text: 'MThey make it easier to judge the speed of the traffic behind',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'They make the traffic behind look bigger',
+                text: 'MThey make the traffic behind look bigger',
                 img: '',
             },
         ],
@@ -5975,22 +5975,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Cautiously approach the lorry, then overtake on either side',
+                text: 'MCautiously approach the lorry, then overtake on either side',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Follow the lorry until you can leave the motorway',
+                text: 'MFollow the lorry until you can leave the motorway',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Use the right-hand lane and overtake the lorry normally',
+                text: 'MUse the right-hand lane and overtake the lorry normally',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Approach with care and overtake on the left of the lorry',
+                text: 'MApproach with care and overtake on the left of the lorry',
                 img: '',
             },
         ],
@@ -6006,12 +6006,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Flash your lights to alert the driver',
+                text: 'MFlash your lights to alert the driver',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Sound your horn before overtaking',
+                text: 'MSound your horn before overtaking',
                 img: '',
             },
             {
@@ -6042,17 +6042,17 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'The black car may stop suddenly',
+                text: 'MThe black car may stop suddenly',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The bus may move out into the road',
+                text: 'MThe bus may move out into the road',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Oncoming vehicles will assume the driver is turning right',
+                text: 'MOncoming vehicles will assume the driver is turning right',
                 img: '',
             },
         ],
@@ -6067,22 +6067,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'A broken-down vehicle',
+                text: 'MA broken-down vehicle',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'A school bus',
+                text: 'MA school bus',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'An ice-cream van',
+                text: 'MAn ice-cream van',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'A private ambulance',
+                text: 'MA private ambulance',
                 img: '',
             },
         ],
@@ -6098,22 +6098,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Glare from the sun',
+                text: 'MGlare from the sun',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Lack of road markings',
+                text: 'MLack of road markings',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Children running out between vehicles',
+                text: 'MChildren running out between vehicles',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Large goods vehicles',
+                text: 'MLarge goods vehicles',
                 img: '',
             },
         ],
@@ -6129,22 +6129,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The cyclist may move to the left and dismount',
+                text: 'MThe cyclist may move to the left and dismount',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The cyclist may swerve into the road',
+                text: 'MThe cyclist may swerve into the road',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The cyclist may get off and push their bicycle',
+                text: 'MThe cyclist may get off and push their bicycle',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The cyclist may wish to turn right at the end of the road',
+                text: 'MThe cyclist may wish to turn right at the end of the road',
                 img: '',
             },
         ],
@@ -6160,22 +6160,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Stop and take a break',
+                text: 'MStop and take a break',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Shout abusive language',
+                text: 'MShout abusive language',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Gesture to them with your hand',
+                text: 'MGesture to them with your hand',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Follow them, flashing your headlights',
+                text: 'MFollow them, flashing your headlights',
                 img: '',
             },
         ],
@@ -6191,22 +6191,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'At a reduced speed',
+                text: 'MAt a reduced speed',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'At the speed limit',
+                text: 'MAt the speed limit',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'In the centre of the road',
+                text: 'MIn the centre of the road',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'With headlights on dipped beam',
+                text: 'MWith headlights on dipped beam',
                 img: '',
             },
         ],
@@ -6221,22 +6221,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Because of the level crossing',
+                text: 'MBecause of the level crossing',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Because it’s hard to see to the right',
+                text: 'MBecause it’s hard to see to the right',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Because of approaching traffic',
+                text: 'MBecause of approaching traffic',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Because of animals crossing',
+                text: 'MBecause of animals crossing',
                 img: '',
             },
         ],
@@ -6251,22 +6251,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To restrict the flow of traffic',
+                text: 'MTo restrict the flow of traffic',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To warn of oncoming traffic',
+                text: 'MTo warn of oncoming traffic',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To help you select the correct lane in good time',
+                text: 'MTo help you select the correct lane in good time',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To prevent you from changing lanes',
+                text: 'MTo prevent you from changing lanes',
                 img: '',
             },
         ],
@@ -6282,22 +6282,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Traffic in both directions can use the middle lane to overtake',
+                text: 'MTraffic in both directions can use the middle lane to overtake',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Traffic can travel faster in poor weather conditions',
+                text: 'MTraffic can travel faster in poor weather conditions',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Traffic can overtake on the left',
+                text: 'MTraffic can overtake on the left',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Traffic uses the middle lane for emergencies only',
+                text: 'MTraffic uses the middle lane for emergencies only',
                 img: '',
             },
         ],
@@ -6313,22 +6313,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'An ambulance',
+                text: 'MAn ambulance',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'A fire engine',
+                text: 'MA fire engine',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'A doctor on call',
+                text: 'MA doctor on call',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'A tractor',
+                text: 'MA tractor',
                 img: '',
             },
         ],
@@ -6344,22 +6344,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Go ahead',
+                text: 'MGo ahead',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Stop',
+                text: 'MStop',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Turn left',
+                text: 'MTurn left',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Turn right',
+                text: 'MTurn right',
                 img: '',
             },
         ],
@@ -6380,17 +6380,17 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'There are driveways on the left',
+                text: 'MThere are driveways on the left',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'People may cross the road in front of it',
+                text: 'MPeople may cross the road in front of it',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The road surface will be slippery',
+                text: 'MThe road surface will be slippery',
                 img: '',
             },
         ],
@@ -6405,22 +6405,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'On a single carriageway',
+                text: 'MOn a single carriageway',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'On a one-way street',
+                text: 'MOn a one-way street',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Approaching a junction',
+                text: 'MApproaching a junction',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Travelling up a long hill',
+                text: 'MTravelling up a long hill',
                 img: '',
             },
         ],
@@ -6435,22 +6435,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Your ability to judge speed will be reduced',
+                text: 'MYour ability to judge speed will be reduced',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Your confidence will be reduced',
+                text: 'MYour confidence will be reduced',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Your reactions will be faster',
+                text: 'MYour reactions will be faster',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Your awareness of danger will be improved',
+                text: 'MYour awareness of danger will be improved',
                 img: '',
             },
         ],
@@ -6466,22 +6466,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Traffic lights ahead',
+                text: 'MTraffic lights ahead',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Edge of the carriageway',
+                text: 'MEdge of the carriageway',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Footpath on the left',
+                text: 'MFootpath on the left',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Cycle path',
+                text: 'MCycle path',
                 img: '',
             },
         ],
@@ -6497,22 +6497,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Both half-barriers down',
+                text: 'MBoth half-barriers down',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'A steady amber light',
+                text: 'MA steady amber light',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'One half-barrier down',
+                text: 'MOne half-barrier down',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Twin flashing red lights',
+                text: 'MTwin flashing red lights',
                 img: '',
             },
         ],
@@ -6528,22 +6528,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Try to move off before the cyclist',
+                text: 'MTry to move off before the cyclist',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Allow the cyclist time and room',
+                text: 'MAllow the cyclist time and room',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Turn right but give the cyclist room',
+                text: 'MTurn right but give the cyclist room',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Tap your horn and drive through first',
+                text: 'MTap your horn and drive through first',
                 img: '',
             },
         ],
@@ -6559,22 +6559,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Check your right mirror',
+                text: 'MCheck your right mirror',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Move up closer to the car ahead',
+                text: 'MMove up closer to the car ahead',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Move out to the right',
+                text: 'MMove out to the right',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Check for bicycles on your left',
+                text: 'MCheck for bicycles on your left',
                 img: '',
             },
         ],
@@ -6589,22 +6589,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'A staggered junction is ahead',
+                text: 'MA staggered junction is ahead',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'A low bridge is ahead',
+                text: 'MA low bridge is ahead',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The road surface changes ahead',
+                text: 'MThe road surface changes ahead',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The road narrows ahead',
+                text: 'MThe road narrows ahead',
                 img: '',
             },
         ],
@@ -6619,17 +6619,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Traffic will move into the right-hand lane',
+                text: 'MTraffic will move into the right-hand lane',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Traffic speed will increase',
+                text: 'MTraffic speed will increase',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Traffic will move into the left-hand lane',
+                text: 'MTraffic will move into the left-hand lane',
                 img: '',
             },
             {
@@ -6650,22 +6650,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The two right lanes are open',
+                text: 'MThe two right lanes are open',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The two left lanes are open',
+                text: 'MThe two left lanes are open',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Traffic in the left lanes should stop',
+                text: 'MTraffic in the left lanes should stop',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Traffic in the right lanes should stop',
+                text: 'MTraffic in the right lanes should stop',
                 img: '',
             },
         ],
@@ -6681,7 +6681,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Avoid mixing your alcoholic drinks',
+                text: 'MAvoid mixing your alcoholic drinks',
                 img: '',
             },
             {
@@ -6691,12 +6691,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'Have some milk before drinking alcohol',
+                text: 'MHave some milk before drinking alcohol',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Eat a hot meal with your alcoholic drinks',
+                text: 'MEat a hot meal with your alcoholic drinks',
                 img: '',
             },
         ],
@@ -6712,22 +6712,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Road fund licence',
+                text: 'MRoad fund licence',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Insurance premiums',
+                text: 'MInsurance premiums',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Vehicle test certificate',
+                text: 'MVehicle test certificate',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Driving licence',
+                text: 'MDriving licence',
                 img: '',
             },
         ],
@@ -6743,22 +6743,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Have a strong cup of coffee and then drive home',
+                text: 'MHave a strong cup of coffee and then drive home',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Drive home carefully and slowly',
+                text: 'MDrive home carefully and slowly',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Go home by public transport',
+                text: 'MGo home by public transport',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Wait a short while and then drive home',
+                text: 'MWait a short while and then drive home',
                 img: '',
             },
         ],
@@ -6774,22 +6774,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Only drive if your journey is necessary',
+                text: 'MOnly drive if your journey is necessary',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Drive on quiet roads',
+                text: 'MDrive on quiet roads',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Ask someone to come with you',
+                text: 'MAsk someone to come with you',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Avoid driving and check with your doctor',
+                text: 'MAvoid driving and check with your doctor',
                 img: '',
             },
         ],
@@ -6805,22 +6805,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Only drive if someone is with you',
+                text: 'MOnly drive if someone is with you',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Avoid driving on motorways',
+                text: 'MAvoid driving on motorways',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Get someone else to drive',
+                text: 'MGet someone else to drive',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Never drive at more than 30 mph',
+                text: 'MNever drive at more than 30 mph',
                 img: '',
             },
         ],
@@ -6836,12 +6836,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'See your doctor each time before you drive',
+                text: 'MSee your doctor each time before you drive',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Take smaller doses of any medicines',
+                text: 'MTake smaller doses of any medicines',
                 img: '',
             },
             {
@@ -6851,7 +6851,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'Take all your medicines with you when you drive',
+                text: 'MTake all your medicines with you when you drive',
                 img: '',
             },
         ],
@@ -6867,22 +6867,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Stop and rest as soon as possible',
+                text: 'MStop and rest as soon as possible',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Turn the heater up to keep you warm and comfortable',
+                text: 'MTurn the heater up to keep you warm and comfortable',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Close the car windows to help you concentrate',
+                text: 'MClose the car windows to help you concentrate',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Continue with your journey but drive more slowly',
+                text: 'MContinue with your journey but drive more slowly',
                 img: '',
             },
         ],
@@ -6898,22 +6898,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Pull up on the hard shoulder and change drivers',
+                text: 'MPull up on the hard shoulder and change drivers',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Leave the motorway at the next exit and rest',
+                text: 'MLeave the motorway at the next exit and rest',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Increase your speed and turn up the radio volume',
+                text: 'MIncrease your speed and turn up the radio volume',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Close all your windows and set the heating to warm',
+                text: 'MClose all your windows and set the heating to warm',
                 img: '',
             },
         ],
@@ -6934,17 +6934,17 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'Drive home, but take a tablet for headaches',
+                text: 'MDrive home, but take a tablet for headaches',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Drive home if you can stay awake for the journey',
+                text: 'MDrive home if you can stay awake for the journey',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Wait for a short time, then drive home slowly',
+                text: 'MWait for a short time, then drive home slowly',
                 img: '',
             },
         ],
@@ -6960,22 +6960,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Eat a large meal before driving',
+                text: 'MEat a large meal before driving',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Take regular refreshment breaks',
+                text: 'MTake regular refreshment breaks',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Play loud music in the car',
+                text: 'MPlay loud music in the car',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Complete the journey without stopping',
+                text: 'MComplete the journey without stopping',
                 img: '',
             },
         ],
@@ -6991,22 +6991,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Ask your friend if taking the medicine affected their driving',
+                text: 'MAsk your friend if taking the medicine affected their driving',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Drink some strong coffee one hour before driving',
+                text: 'MDrink some strong coffee one hour before driving',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Check the label to see if the medicine will affect your driving',
+                text: 'MCheck the label to see if the medicine will affect your driving',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Drive a short distance to see if the medicine is affecting your driving',
+                text: 'MDrive a short distance to see if the medicine is affecting your driving',
                 img: '',
             },
         ],
@@ -7022,22 +7022,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Reverse out of the road',
+                text: 'MReverse out of the road',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Turn around in a side road',
+                text: 'MTurn around in a side road',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Continue and find another route',
+                text: 'MContinue and find another route',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Reverse into a driveway',
+                text: 'MReverse into a driveway',
                 img: '',
             },
         ],
@@ -7052,22 +7052,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Looking at road maps',
+                text: 'MLooking at road maps',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Switching on your demister',
+                text: 'MSwitching on your demister',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Using your windscreen washers',
+                text: 'MUsing your windscreen washers',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Looking in your door mirror',
+                text: 'MLooking in your door mirror',
                 img: '',
             },
         ],
@@ -7083,22 +7083,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Move to the opposite side of the road',
+                text: 'MMove to the opposite side of the road',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Drive through as you have priority',
+                text: 'MDrive through as you have priority',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Sound your horn and be prepared to stop',
+                text: 'MSound your horn and be prepared to stop',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Speed up and drive through quickly',
+                text: 'MSpeed up and drive through quickly',
                 img: '',
             },
         ],
@@ -7114,22 +7114,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Open a window',
+                text: 'MOpen a window',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Turn on your radio',
+                text: 'MTurn on your radio',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Have an alcoholic drink',
+                text: 'MHave an alcoholic drink',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Calm down',
+                text: 'MCalm down',
                 img: '',
             },
         ],
@@ -7150,17 +7150,17 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'There are solid white lines on either side',
+                text: 'MThere are solid white lines on either side',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'There are roadworks ahead of you',
+                text: 'MThere are roadworks ahead of you',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'There are no footpaths',
+                text: 'MThere are no footpaths',
                 img: '',
             },
         ],
@@ -7176,22 +7176,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Sound the horn',
+                text: 'MSound the horn',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Brake firmly',
+                text: 'MBrake firmly',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Keep a safe gap',
+                text: 'MKeep a safe gap',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Flash your lights',
+                text: 'MFlash your lights',
                 img: '',
             },
         ],
@@ -7207,22 +7207,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Drive home slowly, keeping to quiet roads',
+                text: 'MDrive home slowly, keeping to quiet roads',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Borrow a friend’s glasses and use those',
+                text: 'MBorrow a friend’s glasses and use those',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Drive home at night, so that the lights will help you',
+                text: 'MDrive home at night, so that the lights will help you',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Find a way of getting home without driving',
+                text: 'MFind a way of getting home without driving',
                 img: '',
             },
         ],
@@ -7238,22 +7238,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'It improves judgement skills',
+                text: 'MIt improves judgement skills',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'It increases confidence',
+                text: 'MIt increases confidence',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'It leads to faster reactions',
+                text: 'MIt leads to faster reactions',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'It increases concentration',
+                text: 'MIt increases concentration',
                 img: '',
             },
         ],
@@ -7269,22 +7269,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Drug companies want customer feedback on their products',
+                text: 'MDrug companies want customer feedback on their products',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'You may have to let your insurance company know about the medicine',
+                text: 'MYou may have to let your insurance company know about the medicine',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Some types of medicine can affect your ability to drive safely',
+                text: 'MSome types of medicine can affect your ability to drive safely',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The medicine you take may affect your hearing',
+                text: 'MThe medicine you take may affect your hearing',
                 img: '',
             },
         ],
@@ -7300,7 +7300,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Only in bad weather conditions',
+                text: 'MOnly in bad weather conditions',
                 img: '',
             },
             {
@@ -7315,7 +7315,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'Only at night time',
+                text: 'MOnly at night time',
                 img: '',
             },
         ],
@@ -7331,22 +7331,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Half-moon',
+                text: 'MHalf-moon',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Round',
+                text: 'MRound',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Bifocal',
+                text: 'MBifocal',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Tinted',
+                text: 'MTinted',
                 img: '',
             },
         ],
@@ -7361,22 +7361,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Drugs',
+                text: 'MDrugs',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Busy roads',
+                text: 'MBusy roads',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Tinted windows',
+                text: 'MTinted windows',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Weather conditions',
+                text: 'MWeather conditions',
                 img: '',
             },
         ],
@@ -7392,22 +7392,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Tell the driver licensing authority',
+                text: 'MTell the driver licensing authority',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Tell your doctor',
+                text: 'MTell your doctor',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Tell the police',
+                text: 'MTell the police',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Tell your optician',
+                text: 'MTell your optician',
                 img: '',
             },
         ],
@@ -7432,12 +7432,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'When warning oncoming traffic that you intend to stop',
+                text: 'MWhen warning oncoming traffic that you intend to stop',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'When your vehicle has broken down and is causing an obstruction',
+                text: 'MWhen your vehicle has broken down and is causing an obstruction',
                 img: '',
             },
         ],
@@ -7453,22 +7453,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Stay well back and wait to see if anything comes',
+                text: 'MStay well back and wait to see if anything comes',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Build up your speed so that you can emerge quickly',
+                text: 'MBuild up your speed so that you can emerge quickly',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Stop and apply the parking brake even if the road is clear',
+                text: 'MStop and apply the parking brake even if the road is clear',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Approach slowly and edge out until you can see more clearly',
+                text: 'MApproach slowly and edge out until you can see more clearly',
                 img: '',
             },
         ],
@@ -7484,22 +7484,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To engage cruise control',
+                text: 'MTo engage cruise control',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To accelerate quickly',
+                text: 'MTo accelerate quickly',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To brake progressively',
+                text: 'MTo brake progressively',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To improve fuel economy',
+                text: 'MTo improve fuel economy',
                 img: '',
             },
         ],
@@ -7515,22 +7515,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Allow a two-second separation gap',
+                text: 'MAllow a two-second separation gap',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Switch your headlights onto main beam',
+                text: 'MSwitch your headlights onto main beam',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Move into a lane that has less spray',
+                text: 'MMove into a lane that has less spray',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Be aware of spray reducing your vision',
+                text: 'MBe aware of spray reducing your vision',
                 img: '',
             },
         ],
@@ -7546,22 +7546,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'A vehicle overtaking you',
+                text: 'MA vehicle overtaking you',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Mud on the road',
+                text: 'MMud on the road',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The road getting narrower',
+                text: 'MThe road getting narrower',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Pedestrians walking towards you',
+                text: 'MPedestrians walking towards you',
                 img: '',
             },
         ],
@@ -7577,22 +7577,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Slow down, keeping a safe separation distance',
+                text: 'MSlow down, keeping a safe separation distance',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Accelerate past the vehicles in the left-hand lane',
+                text: 'MAccelerate past the vehicles in the left-hand lane',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Pull up on the left-hand verge',
+                text: 'MPull up on the left-hand verge',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Move across and continue in the right-hand lane',
+                text: 'MMove across and continue in the right-hand lane',
                 img: '',
             },
         ],
@@ -7607,7 +7607,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'When driving on a motorway to warn traffic behind of a hazard ahead',
+                text: 'MWhen driving on a motorway to warn traffic behind of a hazard ahead',
                 img: '',
             },
             {
@@ -7622,7 +7622,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'When warning oncoming traffic that you intend to stop',
+                text: 'MWhen warning oncoming traffic that you intend to stop',
                 img: '',
             },
         ],
@@ -7638,22 +7638,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Looking for traffic behind you',
+                text: 'MLooking for traffic behind you',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Reflections of traffic in windows',
+                text: 'MReflections of traffic in windows',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Making eye contact with other road users',
+                text: 'MMaking eye contact with other road users',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Checking for traffic in your interior mirror',
+                text: 'MChecking for traffic in your interior mirror',
                 img: '',
             },
         ],
@@ -7668,22 +7668,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Inform your local police',
+                text: 'MInform your local police',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Avoid using motorways',
+                text: 'MAvoid using motorways',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Always drive accompanied',
+                text: 'MAlways drive accompanied',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Inform the licensing authority',
+                text: 'MInform the licensing authority',
                 img: '',
             },
         ],
@@ -7698,22 +7698,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To allow vehicles to enter and emerge',
+                text: 'MTo allow vehicles to enter and emerge',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To allow the bus to reverse',
+                text: 'MTo allow the bus to reverse',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To allow vehicles to make a U-turn',
+                text: 'MTo allow vehicles to make a U-turn',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To allow vehicles to park',
+                text: 'MTo allow vehicles to park',
                 img: '',
             },
         ],
@@ -7729,22 +7729,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Stop on the hard shoulder for a sleep',
+                text: 'MStop on the hard shoulder for a sleep',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Open a window and stop as soon as it’s safe and legal',
+                text: 'MOpen a window and stop as soon as it’s safe and legal',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Speed up to arrive at your destination sooner',
+                text: 'MSpeed up to arrive at your destination sooner',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Slow down and let other drivers overtake',
+                text: 'MSlow down and let other drivers overtake',
                 img: '',
             },
         ],
@@ -7760,22 +7760,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: '',
+                text: 'M',
                 img: 'AB2117a.gif',
             },
             {
                 char: 'b',
-                text: '',
+                text: 'M',
                 img: 'AB2117b.gif',
             },
             {
                 char: 'c',
-                text: '',
+                text: 'M',
                 img: 'AB2117c.gif',
             },
             {
                 char: 'd',
-                text: '',
+                text: 'M',
                 img: 'AB2117d.gif',
             },
         ],
@@ -7791,22 +7791,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Go around them, leaving plenty of room',
+                text: 'MGo around them, leaving plenty of room',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Stop and wave at them to cross',
+                text: 'MStop and wave at them to cross',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Sound your horn and proceed',
+                text: 'MSound your horn and proceed',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Give way to them',
+                text: 'MGive way to them',
                 img: '',
             },
         ],
@@ -7822,22 +7822,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'One-way street',
+                text: 'MOne-way street',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Pedestrians',
+                text: 'MPedestrians',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Traffic congestion',
+                text: 'MTraffic congestion',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Parked vehicles',
+                text: 'MParked vehicles',
                 img: '',
             },
         ],
@@ -7853,22 +7853,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'They may be overtaking on your left',
+                text: 'MThey may be overtaking on your left',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'They may be following you closely',
+                text: 'MThey may be following you closely',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'They may be emerging from the side road',
+                text: 'MThey may be emerging from the side road',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'They may be overtaking on your right',
+                text: 'MThey may be overtaking on your right',
                 img: '',
             },
         ],
@@ -7884,7 +7884,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Moped riders can use it',
+                text: 'MMoped riders can use it',
                 img: '',
             },
             {
@@ -7899,7 +7899,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'Cyclists can use it',
+                text: 'MCyclists can use it',
                 img: '',
             },
         ],
@@ -7914,12 +7914,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'By pointing to children waiting to cross',
+                text: 'MBy pointing to children waiting to cross',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'By displaying a red light',
+                text: 'MBy displaying a red light',
                 img: '',
             },
             {
@@ -7929,7 +7929,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'By giving you an arm signal',
+                text: 'MBy giving you an arm signal',
                 img: '',
             },
         ],
@@ -7944,22 +7944,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'In the window of a car taking children to school',
+                text: 'MIn the window of a car taking children to school',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'At the side of the road',
+                text: 'MAt the side of the road',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'At playground areas',
+                text: 'MAt playground areas',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'On the rear of a school bus or coach',
+                text: 'MOn the rear of a school bus or coach',
                 img: '',
             },
         ],
@@ -7974,22 +7974,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'No route for pedestrians and cyclists',
+                text: 'MNo route for pedestrians and cyclists',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'A route for pedestrians only',
+                text: 'MA route for pedestrians only',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'A route for cyclists only',
+                text: 'MA route for cyclists only',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'A route for pedestrians and cyclists',
+                text: 'MA route for pedestrians and cyclists',
                 img: '',
             },
         ],
@@ -8005,7 +8005,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'They have limited mobility',
+                text: 'MThey have limited mobility',
                 img: '',
             },
             {
@@ -8041,7 +8041,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'Be patient and allow them to cross in their own time',
+                text: 'MBe patient and allow them to cross in their own time',
                 img: '',
             },
             {
@@ -8067,22 +8067,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Expect them to wait for you to pass',
+                text: 'MExpect them to wait for you to pass',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Speed up to get past them quickly',
+                text: 'MSpeed up to get past them quickly',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Stop and wave them across the road',
+                text: 'MStop and wave them across the road',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Be careful; they may misjudge your speed',
+                text: 'MBe careful; they may misjudge your speed',
                 img: '',
             },
         ],
@@ -8098,22 +8098,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Overtake on the right',
+                text: 'MOvertake on the right',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Give a warning with your horn',
+                text: 'MGive a warning with your horn',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Signal the cyclist to move across',
+                text: 'MSignal the cyclist to move across',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Give the cyclist plenty of room',
+                text: 'MGive the cyclist plenty of room',
                 img: '',
             },
         ],
@@ -8129,22 +8129,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Lorry',
+                text: 'MLorry',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Tractor',
+                text: 'MTractor',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Bicycle',
+                text: 'MBicycle',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Road-sweeper',
+                text: 'MRoad-sweeper',
                 img: '',
             },
         ],
@@ -8160,12 +8160,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'They may want to turn into the side road',
+                text: 'MThey may want to turn into the side road',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'They may slow down to let you turn',
+                text: 'MThey may slow down to let you turn',
                 img: '',
             },
             {
@@ -8175,7 +8175,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'They might not see you turn',
+                text: 'MThey might not see you turn',
                 img: '',
             },
         ],
@@ -8191,22 +8191,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Motorcycles are usually faster than cars',
+                text: 'MMotorcycles are usually faster than cars',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Police patrols often use motorcycles',
+                text: 'MPolice patrols often use motorcycles',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Motorcycles can easily be hidden behind obstructions',
+                text: 'MMotorcycles can easily be hidden behind obstructions',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Motorcycles have right of way',
+                text: 'MMotorcycles have right of way',
                 img: '',
             },
         ],
@@ -8222,22 +8222,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'So that the rider can be seen more easily',
+                text: 'MSo that the rider can be seen more easily',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To stop the battery overcharging',
+                text: 'MTo stop the battery overcharging',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To improve the rider’s vision',
+                text: 'MTo improve the rider’s vision',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The rider is inviting you to proceed',
+                text: 'MThe rider is inviting you to proceed',
                 img: '',
             },
         ],
@@ -8252,22 +8252,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'They must do so by law',
+                text: 'MThey must do so by law',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'It helps keep them cool in summer',
+                text: 'MIt helps keep them cool in summer',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The colours are popular',
+                text: 'MThe colours are popular',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To make them more visible',
+                text: 'MTo make them more visible',
                 img: '',
             },
         ],
@@ -8283,7 +8283,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To listen for traffic behind them',
+                text: 'MTo listen for traffic behind them',
                 img: '',
             },
             {
@@ -8293,12 +8293,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'It helps them balance as they turn',
+                text: 'MIt helps them balance as they turn',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To check for traffic in their blind area',
+                text: 'MTo check for traffic in their blind area',
                 img: '',
             },
         ],
@@ -8313,22 +8313,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Car driver',
+                text: 'MCar driver',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Tractor driver',
+                text: 'MTractor driver',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Lorry driver',
+                text: 'MLorry driver',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Motorcyclist',
+                text: 'MMotorcyclist',
                 img: '',
             },
         ],
@@ -8344,22 +8344,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Sound your horn as a warning',
+                text: 'MSound your horn as a warning',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Treat them like any other vehicle',
+                text: 'MTreat them like any other vehicle',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Give them plenty of room',
+                text: 'MGive them plenty of room',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Accelerate past as quickly as possible',
+                text: 'MAccelerate past as quickly as possible',
                 img: '',
             },
         ],
@@ -8375,12 +8375,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Wave them to cross as quickly as they can',
+                text: 'MWave them to cross as quickly as they can',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Rev your engine to make them hurry',
+                text: 'MRev your engine to make them hurry',
                 img: '',
             },
             {
@@ -8390,7 +8390,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'Wait patiently while they cross',
+                text: 'MWait patiently while they cross',
                 img: '',
             },
         ],
@@ -8411,17 +8411,17 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'Keep up your speed and sound the horn',
+                text: 'MKeep up your speed and sound the horn',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Increase your speed to clear the area quickly',
+                text: 'MIncrease your speed to clear the area quickly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Wait at the lights until they stop flashing',
+                text: 'MWait at the lights until they stop flashing',
                 img: '',
             },
         ],
@@ -8436,17 +8436,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To allow children to be dropped off at school',
+                text: 'MTo allow children to be dropped off at school',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To allow teachers to park',
+                text: 'MTo allow teachers to park',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To allow children to be picked up after school',
+                text: 'MTo allow children to be picked up after school',
                 img: '',
             },
             {
@@ -8466,22 +8466,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Near a school crossing',
+                text: 'MNear a school crossing',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'At a playground entrance',
+                text: 'MAt a playground entrance',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'On a school bus',
+                text: 'MOn a school bus',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'At a ‘pedestrians only’ area',
+                text: 'MAt a ‘pedestrians only’ area',
                 img: '',
             },
         ],
@@ -8497,22 +8497,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Left',
+                text: 'MLeft',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Right',
+                text: 'MRight',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Any direction',
+                text: 'MAny direction',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Straight ahead',
+                text: 'MStraight ahead',
                 img: '',
             },
         ],
@@ -8528,22 +8528,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Overtake the moped before the junction',
+                text: 'MOvertake the moped before the junction',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Pull alongside the moped and stay level until just before the junction',
+                text: 'MPull alongside the moped and stay level until just before the junction',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Sound your horn as a warning and pull in front of the moped',
+                text: 'MSound your horn as a warning and pull in front of the moped',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stay behind until the moped has passed the junction',
+                text: 'MStay behind until the moped has passed the junction',
                 img: '',
             },
         ],
@@ -8559,22 +8559,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Proceed as normal',
+                text: 'MProceed as normal',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Keep close to them',
+                text: 'MKeep close to them',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Cut in front of them',
+                text: 'MCut in front of them',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stay well back',
+                text: 'MStay well back',
                 img: '',
             },
         ],
@@ -8589,12 +8589,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Sound your horn to warn them of your presence',
+                text: 'MSound your horn to warn them of your presence',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Be patient and prepare for them to react more slowly',
+                text: 'MBe patient and prepare for them to react more slowly',
                 img: '',
             },
             {
@@ -8604,7 +8604,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'Overtake them as soon as possible',
+                text: 'MOvertake them as soon as possible',
                 img: '',
             },
         ],
@@ -8620,22 +8620,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Be patient, as you expect them to make mistakes',
+                text: 'MBe patient, as you expect them to make mistakes',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Stay very close behind and flash your headlights',
+                text: 'MStay very close behind and flash your headlights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Start to rev your engine if they take too long to restart',
+                text: 'MStart to rev your engine if they take too long to restart',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Immediately steer around them and drive on',
+                text: 'MImmediately steer around them and drive on',
                 img: '',
             },
         ],
@@ -8651,22 +8651,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Motorcycles',
+                text: 'MMotorcycles',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Bicycles',
+                text: 'MBicycles',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Pedestrians',
+                text: 'MPedestrians',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Horse riders',
+                text: 'MHorse riders',
                 img: '',
             },
         ],
@@ -8682,22 +8682,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Overtake the cyclist before you reach the junction',
+                text: 'MOvertake the cyclist before you reach the junction',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Pull alongside the cyclist and stay level until after the junction',
+                text: 'MPull alongside the cyclist and stay level until after the junction',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Hold back until the cyclist has passed the junction',
+                text: 'MHold back until the cyclist has passed the junction',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Go around the cyclist on the junction',
+                text: 'MGo around the cyclist on the junction',
                 img: '',
             },
         ],
@@ -8713,22 +8713,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'In any direction',
+                text: 'MIn any direction',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To the right',
+                text: 'MTo the right',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To the left',
+                text: 'MTo the left',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Straight ahead',
+                text: 'MStraight ahead',
                 img: '',
             },
         ],
@@ -8744,22 +8744,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Flashing red beacon',
+                text: 'MFlashing red beacon',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Flashing green beacon',
+                text: 'MFlashing green beacon',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Flashing blue beacon',
+                text: 'MFlashing blue beacon',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Flashing amber beacon',
+                text: 'MFlashing amber beacon',
                 img: '',
             },
         ],
@@ -8775,12 +8775,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The vehicle is slow moving',
+                text: 'MThe vehicle is slow moving',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The vehicle has broken down',
+                text: 'MThe vehicle has broken down',
                 img: '',
             },
             {
@@ -8790,7 +8790,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'The vehicle belongs to a school crossing patrol',
+                text: 'MThe vehicle belongs to a school crossing patrol',
                 img: '',
             },
         ],
@@ -8805,22 +8805,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Contraflow cycle lane',
+                text: 'MContraflow cycle lane',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'With-flow cycle lane',
+                text: 'MWith-flow cycle lane',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Cycles and buses only',
+                text: 'MCycles and buses only',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'No cycles or buses',
+                text: 'MNo cycles or buses',
                 img: '',
             },
         ],
@@ -8836,22 +8836,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Pull out to the middle of the road',
+                text: 'MPull out to the middle of the road',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Slow down and be ready to stop',
+                text: 'MSlow down and be ready to stop',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Switch on your hazard warning lights',
+                text: 'MSwitch on your hazard warning lights',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Give a right-turn signal',
+                text: 'MGive a right-turn signal',
                 img: '',
             },
         ],
@@ -8871,17 +8871,17 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'To enable teachers to have clear access to the school',
+                text: 'MTo enable teachers to have clear access to the school',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To ensure delivery vehicles have easy access to the school',
+                text: 'MTo ensure delivery vehicles have easy access to the school',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To enable parents to pick up or drop off children safely',
+                text: 'MTo enable parents to pick up or drop off children safely',
                 img: '',
             },
         ],
@@ -8897,22 +8897,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Watch out for pedestrians walking in the road',
+                text: 'MWatch out for pedestrians walking in the road',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Use your right-hand mirror more often',
+                text: 'MUse your right-hand mirror more often',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Speed up to get past the roadworks more quickly',
+                text: 'MSpeed up to get past the roadworks more quickly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Position close to the left-hand kerb',
+                text: 'MPosition close to the left-hand kerb',
                 img: '',
             },
         ],
@@ -8928,22 +8928,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Follow closely so they can see you in their mirrors',
+                text: 'MFollow closely so they can see you in their mirrors',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Overtake immediately to avoid delays',
+                text: 'MOvertake immediately to avoid delays',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Allow extra room in case they swerve to avoid potholes',
+                text: 'MAllow extra room in case they swerve to avoid potholes',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Allow the same room as normal to avoid wasting road space',
+                text: 'MAllow the same room as normal to avoid wasting road space',
                 img: '',
             },
         ],
@@ -8958,22 +8958,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'No cycling',
+                text: 'MNo cycling',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Cycle route ahead',
+                text: 'MCycle route ahead',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Cycle parking only',
+                text: 'MCycle parking only',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'End of cycle route',
+                text: 'MEnd of cycle route',
                 img: '',
             },
         ],
@@ -8989,12 +8989,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Sound your horn',
+                text: 'MSound your horn',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Overtake them',
+                text: 'MOvertake them',
                 img: '',
             },
             {
@@ -9004,7 +9004,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'Allow them space to turn',
+                text: 'MAllow them space to turn',
                 img: '',
             },
         ],
@@ -9019,22 +9019,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Prepare to slow down and stop',
+                text: 'MPrepare to slow down and stop',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Stop and wave the pedestrians across',
+                text: 'MStop and wave the pedestrians across',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Speed up and pass by quickly',
+                text: 'MSpeed up and pass by quickly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Continue unless the pedestrians step out',
+                text: 'MContinue unless the pedestrians step out',
                 img: '',
             },
         ],
@@ -9050,22 +9050,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The pedestrian is an older person',
+                text: 'MThe pedestrian is an older person',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The pedestrian is a dog trainer',
+                text: 'MThe pedestrian is a dog trainer',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The pedestrian is colour-blind',
+                text: 'MThe pedestrian is colour-blind',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The pedestrian is deaf',
+                text: 'MThe pedestrian is deaf',
                 img: '',
             },
         ],
@@ -9080,22 +9080,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Motorcyclists and cyclists',
+                text: 'MMotorcyclists and cyclists',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Motorcyclists and pedestrians',
+                text: 'MMotorcyclists and pedestrians',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Only cyclists',
+                text: 'MOnly cyclists',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Cyclists and pedestrians',
+                text: 'MCyclists and pedestrians',
                 img: '',
             },
         ],
@@ -9111,22 +9111,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To allow taxis to position in front of other traffic',
+                text: 'MTo allow taxis to position in front of other traffic',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To allow people with disabilities to cross the road',
+                text: 'MTo allow people with disabilities to cross the road',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To allow cyclists and pedestrians to cross the road together',
+                text: 'MTo allow cyclists and pedestrians to cross the road together',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To allow cyclists to position in front of other traffic',
+                text: 'MTo allow cyclists to position in front of other traffic',
                 img: '',
             },
         ],
@@ -9142,22 +9142,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The cyclist might speed up',
+                text: 'MThe cyclist might speed up',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The cyclist might get off their bicycle',
+                text: 'MThe cyclist might get off their bicycle',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The cyclist might be unsettled if you pass too near them',
+                text: 'MThe cyclist might be unsettled if you pass too near them',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The cyclist might have to make a left turn',
+                text: 'MThe cyclist might have to make a left turn',
                 img: '',
             },
         ],
@@ -9173,22 +9173,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Briefly sound your horn',
+                text: 'MBriefly sound your horn',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Go very slowly',
+                text: 'MGo very slowly',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Pass quickly but quietly',
+                text: 'MPass quickly but quietly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Herd them to the side of the road',
+                text: 'MHerd them to the side of the road',
                 img: '',
             },
         ],
@@ -9235,22 +9235,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'By always staying close to the vehicle in front',
+                text: 'MBy always staying close to the vehicle in front',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'By never going over 40 mph',
+                text: 'MBy never going over 40 mph',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'By staying in the left-hand lane on all roads',
+                text: 'MBy staying in the left-hand lane on all roads',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'By taking further training',
+                text: 'MBy taking further training',
                 img: '',
             },
         ],
@@ -9266,17 +9266,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Look through the rear window only',
+                text: 'MLook through the rear window only',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Get out and check',
+                text: 'MGet out and check',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Check the mirrors only',
+                text: 'MCheck the mirrors only',
                 img: '',
             },
             {
@@ -9297,22 +9297,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Wave to the pedestrian to stop',
+                text: 'MWave to the pedestrian to stop',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Give way to the pedestrian',
+                text: 'MGive way to the pedestrian',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Sound your horn to warn the pedestrian',
+                text: 'MSound your horn to warn the pedestrian',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Reverse before the pedestrian starts to cross',
+                text: 'MReverse before the pedestrian starts to cross',
                 img: '',
             },
         ],
@@ -9328,22 +9328,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Motorcyclists',
+                text: 'MMotorcyclists',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Car drivers',
+                text: 'MCar drivers',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Cyclists',
+                text: 'MCyclists',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Children',
+                text: 'MChildren',
                 img: '',
             },
         ],
@@ -9359,7 +9359,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Move out quickly, but be prepared to stop',
+                text: 'MMove out quickly, but be prepared to stop',
                 img: '',
             },
             {
@@ -9369,12 +9369,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'Stop, then move forward slowly until you have a clear view',
+                text: 'MStop, then move forward slowly until you have a clear view',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stop, get out and look along the main road to check',
+                text: 'MStop, get out and look along the main road to check',
                 img: '',
             },
         ],
@@ -9390,22 +9390,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To look for pedestrians about to cross',
+                text: 'MTo look for pedestrians about to cross',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To check for overtaking vehicles',
+                text: 'MTo check for overtaking vehicles',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To make sure the side road is clear',
+                text: 'MTo make sure the side road is clear',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To check for emerging traffic',
+                text: 'MTo check for emerging traffic',
                 img: '',
             },
         ],
@@ -9421,22 +9421,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Signal the pedestrian to cross',
+                text: 'MSignal the pedestrian to cross',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Always wait for the green light before proceeding',
+                text: 'MAlways wait for the green light before proceeding',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Give way to any pedestrians on the crossing',
+                text: 'MGive way to any pedestrians on the crossing',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Wait for the red-and-amber light before proceeding',
+                text: 'MWait for the red-and-amber light before proceeding',
                 img: '',
             },
         ],
@@ -9452,22 +9452,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Wait for them to finish crossing',
+                text: 'MWait for them to finish crossing',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Drive in front of them',
+                text: 'MDrive in front of them',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Edge forward slowly',
+                text: 'MEdge forward slowly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Sound your horn',
+                text: 'MSound your horn',
                 img: '',
             },
         ],
@@ -9483,22 +9483,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Continue driving at the same speed and sound your horn',
+                text: 'MContinue driving at the same speed and sound your horn',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Continue driving at the same speed and flash your headlights',
+                text: 'MContinue driving at the same speed and flash your headlights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Slow down and be prepared to stop for children',
+                text: 'MSlow down and be prepared to stop for children',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stop and wave the children across to fetch their ball',
+                text: 'MStop and wave the children across to fetch their ball',
                 img: '',
             },
         ],
@@ -9514,22 +9514,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Cancel your right-turn signal',
+                text: 'MCancel your right-turn signal',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Select first gear',
+                text: 'MSelect first gear',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Check for traffic overtaking on your right',
+                text: 'MCheck for traffic overtaking on your right',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stop and set the parking brake',
+                text: 'MStop and set the parking brake',
                 img: '',
             },
         ],
@@ -9545,22 +9545,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Sound the horn and flash your lights',
+                text: 'MSound the horn and flash your lights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Look for motorcyclists filtering through the traffic',
+                text: 'MLook for motorcyclists filtering through the traffic',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Give a ‘slowing down’ arm signal',
+                text: 'MGive a ‘slowing down’ arm signal',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Change down to first gear',
+                text: 'MChange down to first gear',
                 img: '',
             },
         ],
@@ -9576,22 +9576,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The bus might have broken down',
+                text: 'MThe bus might have broken down',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Pedestrians might come from behind the bus',
+                text: 'MPedestrians might come from behind the bus',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The bus might move off suddenly',
+                text: 'MThe bus might move off suddenly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The bus might remain stationary',
+                text: 'MThe bus might remain stationary',
                 img: '',
             },
         ],
@@ -9606,7 +9606,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Drive up close and overtake as soon as possible',
+                text: 'MDrive up close and overtake as soon as possible',
                 img: '',
             },
             {
@@ -9616,12 +9616,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'Use your horn just once to warn them',
+                text: 'MUse your horn just once to warn them',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Drive slowly and leave plenty of room',
+                text: 'MDrive slowly and leave plenty of room',
                 img: '',
             },
         ],
@@ -9637,22 +9637,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The rider may turn off suddenly to get out of the wind',
+                text: 'MThe rider may turn off suddenly to get out of the wind',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The rider may be blown in front of you',
+                text: 'MThe rider may be blown in front of you',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The rider may stop suddenly',
+                text: 'MThe rider may stop suddenly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The rider may be travelling faster than normal',
+                text: 'MThe rider may be travelling faster than normal',
                 img: '',
             },
         ],
@@ -9668,22 +9668,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'On dual carriageways',
+                text: 'MOn dual carriageways',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'At junctions',
+                text: 'MAt junctions',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'At zebra crossings',
+                text: 'MAt zebra crossings',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'On one-way streets',
+                text: 'MOn one-way streets',
                 img: '',
             },
         ],
@@ -9699,12 +9699,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'You may park on the lines when dropping off schoolchildren',
+                text: 'MYou may park on the lines when dropping off schoolchildren',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'You may park on the lines when picking up schoolchildren',
+                text: 'MYou may park on the lines when picking up schoolchildren',
                 img: '',
             },
             {
@@ -9714,7 +9714,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'You must stay with your vehicle if you park here',
+                text: 'MYou must stay with your vehicle if you park here',
                 img: '',
             },
         ],
@@ -9730,22 +9730,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Accelerate past quickly and sound your horn',
+                text: 'MAccelerate past quickly and sound your horn',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Slow down and wave the cyclist across',
+                text: 'MSlow down and wave the cyclist across',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Brake sharply and flash your headlights',
+                text: 'MBrake sharply and flash your headlights',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Slow down and be prepared to stop for a cyclist',
+                text: 'MSlow down and be prepared to stop for a cyclist',
                 img: '',
             },
         ],
@@ -9761,22 +9761,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Set your mirror to the anti-dazzle position',
+                text: 'MSet your mirror to the anti-dazzle position',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Set your mirror to dazzle the other driver',
+                text: 'MSet your mirror to dazzle the other driver',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Brake sharply to a stop',
+                text: 'MBrake sharply to a stop',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Switch your rear lights on and off',
+                text: 'MSwitch your rear lights on and off',
                 img: '',
             },
         ],
@@ -9792,22 +9792,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Continue on your way',
+                text: 'MContinue on your way',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Wave to the person to cross',
+                text: 'MWave to the person to cross',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Wave to the person to wait',
+                text: 'MWave to the person to wait',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Be prepared to stop',
+                text: 'MBe prepared to stop',
                 img: '',
             },
         ],
@@ -9823,22 +9823,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: '',
+                text: 'M',
                 img: 'AB2176a.gif',
             },
             {
                 char: 'b',
-                text: '',
+                text: 'M',
                 img: 'AB2176b.gif',
             },
             {
                 char: 'c',
-                text: '',
+                text: 'M',
                 img: 'AB2176c.gif',
             },
             {
                 char: 'd',
-                text: '',
+                text: 'M',
                 img: 'AB2176d.gif',
             },
         ],
@@ -9854,22 +9854,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Anything overtaking the lorry will be hidden from view',
+                text: 'MAnything overtaking the lorry will be hidden from view',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The lorry could suddenly speed up',
+                text: 'MThe lorry could suddenly speed up',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The lorry might be slowing down',
+                text: 'MThe lorry might be slowing down',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The load on the lorry might be unstable',
+                text: 'MThe load on the lorry might be unstable',
                 img: '',
             },
         ],
@@ -9885,12 +9885,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Get closer in order to pass it quickly',
+                text: 'MGet closer in order to pass it quickly',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Stay well back and give it room',
+                text: 'MStay well back and give it room',
                 img: '',
             },
             {
@@ -9900,7 +9900,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'Overtake it as it starts to slow down',
+                text: 'MOvertake it as it starts to slow down',
                 img: '',
             },
         ],
@@ -9916,22 +9916,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Warn the driver about the wrong signal',
+                text: 'MWarn the driver about the wrong signal',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Wait behind the long vehicle',
+                text: 'MWait behind the long vehicle',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Report the driver to the police',
+                text: 'MReport the driver to the police',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Overtake on the right-hand side',
+                text: 'MOvertake on the right-hand side',
                 img: '',
             },
         ],
@@ -9947,22 +9947,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Sound your horn',
+                text: 'MSound your horn',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Overtake on the left',
+                text: 'MOvertake on the left',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Follow the same course as the lorry',
+                text: 'MFollow the same course as the lorry',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Keep well back',
+                text: 'MKeep well back',
                 img: '',
             },
         ],
@@ -9978,22 +9978,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To give yourself acceleration space if you decide to overtake',
+                text: 'MTo give yourself acceleration space if you decide to overtake',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To get the best view of the road ahead',
+                text: 'MTo get the best view of the road ahead',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To leave a gap in case the vehicle stops and rolls back',
+                text: 'MTo leave a gap in case the vehicle stops and rolls back',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To offer other drivers a safe gap if they want to overtake you',
+                text: 'MTo offer other drivers a safe gap if they want to overtake you',
                 img: '',
             },
         ],
@@ -10009,22 +10009,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Accelerate past the bus',
+                text: 'MAccelerate past the bus',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Look for pedestrians',
+                text: 'MLook for pedestrians',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Sound your horn',
+                text: 'MSound your horn',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Pull in closely behind the bus',
+                text: 'MPull in closely behind the bus',
                 img: '',
             },
         ],
@@ -10040,22 +10040,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Drop back until you can see better',
+                text: 'MDrop back until you can see better',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Put your headlights on full beam',
+                text: 'MPut your headlights on full beam',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Keep close to the lorry, away from the spray',
+                text: 'MKeep close to the lorry, away from the spray',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Speed up and overtake quickly',
+                text: 'MSpeed up and overtake quickly',
                 img: '',
             },
         ],
@@ -10071,22 +10071,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Sound your horn',
+                text: 'MSound your horn',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Drop back further',
+                text: 'MDrop back further',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Flash your headlights',
+                text: 'MFlash your headlights',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Start to overtake',
+                text: 'MStart to overtake',
                 img: '',
             },
         ],
@@ -10102,7 +10102,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Get past before it moves',
+                text: 'MGet past before it moves',
                 img: '',
             },
             {
@@ -10112,12 +10112,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'Flash your headlights as you approach',
+                text: 'MFlash your headlights as you approach',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Signal left and wave the bus on',
+                text: 'MSignal left and wave the bus on',
                 img: '',
             },
         ],
@@ -10133,22 +10133,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Follow it closely and keep moving out to see the road ahead',
+                text: 'MFollow it closely and keep moving out to see the road ahead',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Flash your headlights for the oncoming traffic to give way',
+                text: 'MFlash your headlights for the oncoming traffic to give way',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Stay behind until the driver waves you past',
+                text: 'MStay behind until the driver waves you past',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Keep well back so that you get a good view of the road ahead',
+                text: 'MKeep well back so that you get a good view of the road ahead',
                 img: '',
             },
         ],
@@ -10164,22 +10164,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Cyclists',
+                text: 'MCyclists',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Motorcyclists',
+                text: 'MMotorcyclists',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'High-sided vehicles',
+                text: 'MHigh-sided vehicles',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Cars',
+                text: 'MCars',
                 img: '',
             },
         ],
@@ -10194,22 +10194,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Slow down and be prepared to wait',
+                text: 'MSlow down and be prepared to wait',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Make the lorry wait for you',
+                text: 'MMake the lorry wait for you',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Flash your lights at the lorry',
+                text: 'MFlash your lights at the lorry',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Move to the right-hand side of the road',
+                text: 'MMove to the right-hand side of the road',
                 img: '',
             },
         ],
@@ -10225,22 +10225,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Overtake if you can leave plenty of room',
+                text: 'MOvertake if you can leave plenty of room',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Overtake if there are no oncoming vehicles',
+                text: 'MOvertake if there are no oncoming vehicles',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Wait for the driver to cancel their signal',
+                text: 'MWait for the driver to cancel their signal',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Wait for the vehicle to finish turning',
+                text: 'MWait for the vehicle to finish turning',
                 img: '',
             },
         ],
@@ -10256,22 +10256,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'It will take longer to overtake a large vehicle',
+                text: 'MIt will take longer to overtake a large vehicle',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'A large vehicle will be fitted with a speed limiter',
+                text: 'MA large vehicle will be fitted with a speed limiter',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'A large vehicle will have air brakes',
+                text: 'MA large vehicle will have air brakes',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'It will take longer for a large vehicle to accelerate',
+                text: 'MIt will take longer for a large vehicle to accelerate',
                 img: '',
             },
         ],
@@ -10287,22 +10287,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Overtake the motorcyclist immediately',
+                text: 'MOvertake the motorcyclist immediately',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Keep well back',
+                text: 'MKeep well back',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Stay level with the motorcyclist',
+                text: 'MStay level with the motorcyclist',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Keep close to the motorcyclist',
+                text: 'MKeep close to the motorcyclist',
                 img: '',
             },
         ],
@@ -10318,22 +10318,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Flash your lights to warn the driver of your presence',
+                text: 'MFlash your lights to warn the driver of your presence',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Continue at the same speed but sound your horn as a warning',
+                text: 'MContinue at the same speed but sound your horn as a warning',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Watch carefully for the sudden appearance of pedestrians',
+                text: 'MWatch carefully for the sudden appearance of pedestrians',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Pass the bus as quickly as you possibly can',
+                text: 'MPass the bus as quickly as you possibly can',
                 img: '',
             },
         ],
@@ -10348,22 +10348,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Sound your horn and continue',
+                text: 'MSound your horn and continue',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Slow down and give way',
+                text: 'MSlow down and give way',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Report the driver to the police',
+                text: 'MReport the driver to the police',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Squeeze through the gap',
+                text: 'MSqueeze through the gap',
                 img: '',
             },
         ],
@@ -10410,22 +10410,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Interior wide-angle mirror',
+                text: 'MInterior wide-angle mirror',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Extended-arm side mirrors',
+                text: 'MExtended-arm side mirrors',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Ordinary door mirrors',
+                text: 'MOrdinary door mirrors',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Ordinary interior mirror',
+                text: 'MOrdinary interior mirror',
                 img: '',
             },
         ],
@@ -10441,22 +10441,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Main-beam headlights',
+                text: 'MMain-beam headlights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Sidelights only',
+                text: 'MSidelights only',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Rear fog lights if visibility is more than 100 metres (328 feet)',
+                text: 'MRear fog lights if visibility is more than 100 metres (328 feet)',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Dipped headlights',
+                text: 'MDipped headlights',
                 img: '',
             },
         ],
@@ -10472,22 +10472,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Overtake very slowly',
+                text: 'MOvertake very slowly',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Keep close as you pass',
+                text: 'MKeep close as you pass',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Sound your horn repeatedly',
+                text: 'MSound your horn repeatedly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Allow extra room',
+                text: 'MAllow extra room',
                 img: '',
             },
         ],
@@ -10502,22 +10502,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'When you’re in a one-way street',
+                text: 'MWhen you’re in a one-way street',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'When approaching a motorway slip road where you’ll be turning off',
+                text: 'MWhen approaching a motorway slip road where you’ll be turning off',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'When the vehicle in front is signalling to turn left',
+                text: 'MWhen the vehicle in front is signalling to turn left',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'When a slower vehicle is travelling in the right-hand lane of a dual carriageway',
+                text: 'MWhen a slower vehicle is travelling in the right-hand lane of a dual carriageway',
                 img: '',
             },
         ],
@@ -10533,22 +10533,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'It will be doubled',
+                text: 'MIt will be doubled',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'It will be halved',
+                text: 'MIt will be halved',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'It will be ten times greater',
+                text: 'MIt will be ten times greater',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'It will be no different',
+                text: 'MIt will be no different',
                 img: '',
             },
         ],
@@ -10563,22 +10563,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Wait until a bend so that you can see oncoming headlights',
+                text: 'MWait until a bend so that you can see oncoming headlights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Sound your horn twice before moving out',
+                text: 'MSound your horn twice before moving out',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Go past slowly so that you can react to unseen hazards',
+                text: 'MGo past slowly so that you can react to unseen hazards',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Beware of bends in the road ahead',
+                text: 'MBeware of bends in the road ahead',
                 img: '',
             },
         ],
@@ -10598,17 +10598,17 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'When approaching a pelican crossing',
+                text: 'MWhen approaching a pelican crossing',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'When approaching a zebra crossing',
+                text: 'MWhen approaching a zebra crossing',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'When oncoming traffic prevents you turning right',
+                text: 'MWhen oncoming traffic prevents you turning right',
                 img: '',
             },
         ],
@@ -10623,22 +10623,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: '',
+                text: 'M',
                 img: 'AB2212a.gif',
             },
             {
                 char: 'b',
-                text: '',
+                text: 'M',
                 img: 'AB2212b.gif',
             },
             {
                 char: 'c',
-                text: '',
+                text: 'M',
                 img: 'AB2212c.gif',
             },
             {
                 char: 'd',
-                text: '',
+                text: 'M',
                 img: 'AB2212d.gif',
             },
         ],
@@ -10653,22 +10653,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To stop road rage',
+                text: 'MTo stop road rage',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To make overtaking easier',
+                text: 'MTo make overtaking easier',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To slow traffic down',
+                text: 'MTo slow traffic down',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To make parking easier',
+                text: 'MTo make parking easier',
                 img: '',
             },
         ],
@@ -10684,22 +10684,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Green',
+                text: 'MGreen',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Amber',
+                text: 'MAmber',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Red',
+                text: 'MRed',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'White',
+                text: 'MWhite',
                 img: '',
             },
         ],
@@ -10714,22 +10714,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Give directions',
+                text: 'MGive directions',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Prevent cattle escaping',
+                text: 'MPrevent cattle escaping',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Alert you to low tyre pressure',
+                text: 'MAlert you to low tyre pressure',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Alert you to a hazard',
+                text: 'MAlert you to a hazard',
                 img: '',
             },
         ],
@@ -10745,22 +10745,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Follow other vehicles’ tail lights closely',
+                text: 'MFollow other vehicles’ tail lights closely',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Avoid using dipped headlights',
+                text: 'MAvoid using dipped headlights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Leave plenty of time for your journey',
+                text: 'MLeave plenty of time for your journey',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Keep two seconds behind the vehicle ahead',
+                text: 'MKeep two seconds behind the vehicle ahead',
                 img: '',
             },
         ],
@@ -10775,17 +10775,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Flash your headlights before overtaking',
+                text: 'MFlash your headlights before overtaking',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Select a higher gear',
+                text: 'MSelect a higher gear',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Switch your headlights to main beam before overtaking',
+                text: 'MSwitch your headlights to main beam before overtaking',
                 img: '',
             },
             {
@@ -10806,22 +10806,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Sound your horn',
+                text: 'MSound your horn',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Overtake as soon as you can',
+                text: 'MOvertake as soon as you can',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Flash your headlights',
+                text: 'MFlash your headlights',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Slow down and stay behind',
+                text: 'MSlow down and stay behind',
                 img: '',
             },
         ],
@@ -10837,22 +10837,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To show a safe distance between vehicles',
+                text: 'MTo show a safe distance between vehicles',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To keep the area clear of traffic',
+                text: 'MTo keep the area clear of traffic',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To make you aware of your speed',
+                text: 'MTo make you aware of your speed',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To warn you to change direction',
+                text: 'MTo warn you to change direction',
                 img: '',
             },
         ],
@@ -10868,22 +10868,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Reverse back to the main road',
+                text: 'MReverse back to the main road',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Carry out an emergency stop',
+                text: 'MCarry out an emergency stop',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Stop at a passing place',
+                text: 'MStop at a passing place',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Switch on your hazard warning lights',
+                text: 'MSwitch on your hazard warning lights',
                 img: '',
             },
         ],
@@ -10899,22 +10899,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To avoid puncturing the tyres on the edge of the drain covers',
+                text: 'MTo avoid puncturing the tyres on the edge of the drain covers',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To prevent the motorcycle sliding on the metal drain covers',
+                text: 'MTo prevent the motorcycle sliding on the metal drain covers',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To help judge the bend using the drain covers as marker points',
+                text: 'MTo help judge the bend using the drain covers as marker points',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To avoid splashing pedestrians on the pavement',
+                text: 'MTo avoid splashing pedestrians on the pavement',
                 img: '',
             },
         ],
@@ -10934,7 +10934,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'Your brakes will be wet',
+                text: 'MYour brakes will be wet',
                 img: '',
             },
             {
@@ -10970,7 +10970,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'The engine will take longer to warm up',
+                text: 'MThe engine will take longer to warm up',
                 img: '',
             },
             {
@@ -10991,22 +10991,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The high gears will pull better',
+                text: 'MThe high gears will pull better',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The steering will feel heavier',
+                text: 'MThe steering will feel heavier',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Overtaking will be easier',
+                text: 'MOvertaking will be easier',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The engine will work harder',
+                text: 'MThe engine will work harder',
                 img: '',
             },
         ],
@@ -11022,22 +11022,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Increase your speed',
+                text: 'MIncrease your speed',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Be wary of a sudden gust',
+                text: 'MBe wary of a sudden gust',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Drive alongside very closely',
+                text: 'MDrive alongside very closely',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Expect normal conditions',
+                text: 'MExpect normal conditions',
                 img: '',
             },
         ],
@@ -11053,22 +11053,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'In case it changes direction suddenly',
+                text: 'MIn case it changes direction suddenly',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'In case its fog lights dazzle you',
+                text: 'MIn case its fog lights dazzle you',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'In case it stops suddenly',
+                text: 'MIn case it stops suddenly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'In case its brake lights dazzle you',
+                text: 'MIn case its brake lights dazzle you',
                 img: '',
             },
         ],
@@ -11083,22 +11083,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Leave parking lights switched on',
+                text: 'MLeave parking lights switched on',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Leave dipped headlights and fog lights switched on',
+                text: 'MLeave dipped headlights and fog lights switched on',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Leave dipped headlights switched on',
+                text: 'MLeave dipped headlights switched on',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Leave main-beam headlights switched on',
+                text: 'MLeave main-beam headlights switched on',
                 img: '',
             },
         ],
@@ -11114,22 +11114,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Pull down your sun visor',
+                text: 'MPull down your sun visor',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Slow down or stop',
+                text: 'MSlow down or stop',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Flash your main-beam headlights',
+                text: 'MFlash your main-beam headlights',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Shade your eyes with your hand',
+                text: 'MShade your eyes with your hand',
                 img: '',
             },
         ],
@@ -11144,7 +11144,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'When visibility is seriously reduced',
+                text: 'MWhen visibility is seriously reduced',
                 img: '',
             },
             {
@@ -11159,7 +11159,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'When an audible warning device is used',
+                text: 'MWhen an audible warning device is used',
                 img: '',
             },
         ],
@@ -11175,12 +11175,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Leave them on if other drivers have their lights on',
+                text: 'MLeave them on if other drivers have their lights on',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Switch them off as long as visibility remains good',
+                text: 'MSwitch them off as long as visibility remains good',
                 img: '',
             },
             {
@@ -11190,7 +11190,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'Drive with them on instead of your headlights',
+                text: 'MDrive with them on instead of your headlights',
                 img: '',
             },
         ],
@@ -11206,22 +11206,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To allow your headlights to work',
+                text: 'MTo allow your headlights to work',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To stop draining the battery',
+                text: 'MTo stop draining the battery',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To stop the engine losing power',
+                text: 'MTo stop the engine losing power',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To prevent dazzling drivers behind',
+                text: 'MTo prevent dazzling drivers behind',
                 img: '',
             },
         ],
@@ -11267,22 +11267,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To help prevent damage to the road surface',
+                text: 'MTo help prevent damage to the road surface',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'To help prevent wear to the tyres',
+                text: 'MTo help prevent wear to the tyres',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To help prevent skidding in deep snow',
+                text: 'MTo help prevent skidding in deep snow',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To help prevent the brakes locking',
+                text: 'MTo help prevent the brakes locking',
                 img: '',
             },
         ],
@@ -11298,22 +11298,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'By changing to a lower gear',
+                text: 'MBy changing to a lower gear',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'By selecting reverse gear',
+                text: 'MBy selecting reverse gear',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'By changing to a higher gear',
+                text: 'MBy changing to a higher gear',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'By selecting neutral',
+                text: 'MBy selecting neutral',
                 img: '',
             },
         ],
@@ -11329,12 +11329,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Fuel spillage will occur',
+                text: 'MFuel spillage will occur',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Engine damage may be caused',
+                text: 'MEngine damage may be caused',
                 img: '',
             },
             {
@@ -11344,7 +11344,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'It will wear tyres out more quickly',
+                text: 'MIt will wear tyres out more quickly',
                 img: '',
             },
         ],
@@ -11360,22 +11360,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Four times the normal distance',
+                text: 'MFour times the normal distance',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Six times the normal distance',
+                text: 'MSix times the normal distance',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Eight times the normal distance',
+                text: 'MEight times the normal distance',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Ten times the normal distance',
+                text: 'MTen times the normal distance',
                 img: '',
             },
         ],
@@ -11391,22 +11391,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Use only your sidelights',
+                text: 'MUse only your sidelights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Use your headlights',
+                text: 'MUse your headlights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Use rear fog lights',
+                text: 'MUse rear fog lights',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Use front fog lights',
+                text: 'MUse front fog lights',
                 img: '',
             },
         ],
@@ -11422,22 +11422,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Front fog lights',
+                text: 'MFront fog lights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Main-beam headlights',
+                text: 'MMain-beam headlights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Sidelights only',
+                text: 'MSidelights only',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Dipped headlights',
+                text: 'MDipped headlights',
                 img: '',
             },
         ],
@@ -11452,22 +11452,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The speed limit',
+                text: 'MThe speed limit',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The street lighting',
+                text: 'MThe street lighting',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The time of day',
+                text: 'MThe time of day',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The condition of the tyres',
+                text: 'MThe condition of the tyres',
                 img: '',
             },
         ],
@@ -11482,7 +11482,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'When you only use the parking brake',
+                text: 'MWhen you only use the parking brake',
                 img: '',
             },
             {
@@ -11492,12 +11492,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'When you change to a lower gear',
+                text: 'MWhen you change to a lower gear',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'When you change to a higher gear',
+                text: 'MWhen you change to a higher gear',
                 img: '',
             },
         ],
@@ -11513,22 +11513,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Headlights and fog lights',
+                text: 'MHeadlights and fog lights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Front fog lights',
+                text: 'MFront fog lights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Dipped headlights',
+                text: 'MDipped headlights',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Rear fog lights',
+                text: 'MRear fog lights',
                 img: '',
             },
         ],
@@ -11543,7 +11543,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'To make them more visible when driving at high speed',
+                text: 'MTo make them more visible when driving at high speed',
                 img: '',
             },
             {
@@ -11553,12 +11553,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'To make them more visible in thick fog',
+                text: 'MTo make them more visible in thick fog',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To warn drivers following closely to drop back',
+                text: 'MTo warn drivers following closely to drop back',
                 img: '',
             },
         ],
@@ -11574,22 +11574,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Whether you should fit an amber flashing beacon to your car',
+                text: 'MWhether you should fit an amber flashing beacon to your car',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Whether you should drive without wearing your seat belt',
+                text: 'MWhether you should drive without wearing your seat belt',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Whether you should wear sunglasses to reduce the glare',
+                text: 'MWhether you should wear sunglasses to reduce the glare',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Whether your journey is essential',
+                text: 'MWhether your journey is essential',
                 img: '',
             },
         ],
@@ -11605,22 +11605,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The radiator has enough anti-freeze',
+                text: 'MThe radiator has enough anti-freeze',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'You have a warning triangle in the vehicle',
+                text: 'MYou have a warning triangle in the vehicle',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The windows and lights are clean and clear',
+                text: 'MThe windows and lights are clean and clear',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'You have a mobile phone with you',
+                text: 'MYou have a mobile phone with you',
                 img: '',
             },
         ],
@@ -11636,22 +11636,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Switch off your fog lights',
+                text: 'MSwitch off your fog lights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Keep your rear fog lights switched on',
+                text: 'MKeep your rear fog lights switched on',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Keep your front fog lights switched on',
+                text: 'MKeep your front fog lights switched on',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Leave your fog lights switched on in case the fog returns',
+                text: 'MLeave your fog lights switched on in case the fog returns',
                 img: '',
             },
         ],
@@ -11667,22 +11667,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'They may be confused with brake lights',
+                text: 'MThey may be confused with brake lights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The bulbs would fail',
+                text: 'MThe bulbs would fail',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Electrical systems could be overloaded',
+                text: 'MElectrical systems could be overloaded',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Direction indicators may not work properly',
+                text: 'MDirection indicators may not work properly',
                 img: '',
             },
         ],
@@ -11698,22 +11698,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'It will use more fuel',
+                text: 'MIt will use more fuel',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'It will cause the engine to overheat',
+                text: 'MIt will cause the engine to overheat',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'It will reduce your control',
+                text: 'MIt will reduce your control',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'It will improve tyre wear',
+                text: 'MIt will improve tyre wear',
                 img: '',
             },
         ],
@@ -11729,22 +11729,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The fuel consumption will increase',
+                text: 'MThe fuel consumption will increase',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The engine will overheat',
+                text: 'MThe engine will overheat',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The tyres will wear more quickly',
+                text: 'MThe tyres will wear more quickly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The vehicle will gain speed more quickly',
+                text: 'MThe vehicle will gain speed more quickly',
                 img: '',
             },
         ],
@@ -11759,22 +11759,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Switch on your hazard warning lights',
+                text: 'MSwitch on your hazard warning lights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Use a low gear and drive slowly',
+                text: 'MUse a low gear and drive slowly',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Use a high gear to prevent wheelspin',
+                text: 'MUse a high gear to prevent wheelspin',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Switch on your windscreen wipers',
+                text: 'MSwitch on your windscreen wipers',
                 img: '',
             },
         ],
@@ -11790,17 +11790,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'It will cause the car to skid',
+                text: 'MIt will cause the car to skid',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'It will make the engine stall',
+                text: 'MIt will make the engine stall',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The engine will run faster',
+                text: 'MThe engine will run faster',
                 img: '',
             },
             {
@@ -11851,12 +11851,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Carry on along the hard shoulder until you see a safe gap',
+                text: 'MCarry on along the hard shoulder until you see a safe gap',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Stop at the end of the slip road and look for a safe gap',
+                text: 'MStop at the end of the slip road and look for a safe gap',
                 img: '',
             },
             {
@@ -11866,7 +11866,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'Match your speed to traffic in the left-hand lane and filter into a safe gap',
+                text: 'MMatch your speed to traffic in the left-hand lane and filter into a safe gap',
                 img: '',
             },
         ],
@@ -11882,22 +11882,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: '30 mph',
+                text: 'M30 mph',
                 img: '',
             },
             {
                 char: 'b',
-                text: '50 mph',
+                text: 'M50 mph',
                 img: '',
             },
             {
                 char: 'c',
-                text: '60 mph',
+                text: 'M60 mph',
                 img: '',
             },
             {
                 char: 'd',
-                text: '70 mph',
+                text: 'M70 mph',
                 img: '',
             },
         ],
@@ -11918,17 +11918,17 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'Large vehicles only',
+                text: 'MLarge vehicles only',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Emergency vehicles only',
+                text: 'MEmergency vehicles only',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Slow vehicles only',
+                text: 'MSlow vehicles only',
                 img: '',
             },
         ],
@@ -11944,22 +11944,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Small delivery vans',
+                text: 'MSmall delivery vans',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Motorcycles',
+                text: 'MMotorcycles',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Vehicles towing a trailer',
+                text: 'MVehicles towing a trailer',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Motorcycle and sidecar outfits',
+                text: 'MMotorcycle and sidecar outfits',
                 img: '',
             },
         ],
@@ -11975,17 +11975,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'It connects you to a local garage',
+                text: 'MIt connects you to a local garage',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Using a mobile phone will distract other drivers',
+                text: 'MUsing a mobile phone will distract other drivers',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'It allows easy location by the emergency services',
+                text: 'MIt allows easy location by the emergency services',
                 img: '',
             },
             {
@@ -12006,22 +12006,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Move out onto the carriageway, then build up your speed',
+                text: 'MMove out onto the carriageway, then build up your speed',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Move out onto the carriageway using your hazard warning lights',
+                text: 'MMove out onto the carriageway using your hazard warning lights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Gain speed on the hard shoulder before moving out onto the carriageway',
+                text: 'MGain speed on the hard shoulder before moving out onto the carriageway',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Wait on the hard shoulder until someone flashes their headlights at you',
+                text: 'MWait on the hard shoulder until someone flashes their headlights at you',
                 img: '',
             },
         ],
@@ -12037,22 +12037,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'On a steep gradient',
+                text: 'MOn a steep gradient',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Before a service area',
+                text: 'MBefore a service area',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Before a junction',
+                text: 'MBefore a junction',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Along the hard shoulder',
+                text: 'MAlong the hard shoulder',
                 img: '',
             },
         ],
@@ -12082,7 +12082,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'They warn of a police control ahead',
+                text: 'MThey warn of a police control ahead',
                 img: '',
             },
         ],
@@ -12097,22 +12097,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Between the hard shoulder and the carriageway',
+                text: 'MBetween the hard shoulder and the carriageway',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Between the acceleration lane and the carriageway',
+                text: 'MBetween the acceleration lane and the carriageway',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Between the central reservation and the carriageway',
+                text: 'MBetween the central reservation and the carriageway',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Between each pair of lanes',
+                text: 'MBetween each pair of lanes',
                 img: '',
             },
         ],
@@ -12128,22 +12128,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Green',
+                text: 'MGreen',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Amber',
+                text: 'MAmber',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'White',
+                text: 'MWhite',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Red',
+                text: 'MRed',
                 img: '',
             },
         ],
@@ -12159,22 +12159,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Amber',
+                text: 'MAmber',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'White',
+                text: 'MWhite',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Green',
+                text: 'MGreen',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Red',
+                text: 'MRed',
                 img: '',
             },
         ],
@@ -12190,22 +12190,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'With the traffic flow',
+                text: 'MWith the traffic flow',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Facing oncoming traffic',
+                text: 'MFacing oncoming traffic',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'In the direction shown on the marker posts',
+                text: 'MIn the direction shown on the marker posts',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'In the direction of the nearest exit',
+                text: 'MIn the direction of the nearest exit',
                 img: '',
             },
         ],
@@ -12226,17 +12226,17 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'To allow you direct access to the overtaking lanes',
+                text: 'MTo allow you direct access to the overtaking lanes',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'To allow you to fit safely into the traffic flow in the left-hand lane',
+                text: 'MTo allow you to fit safely into the traffic flow in the left-hand lane',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Because you can continue on the hard shoulder',
+                text: 'MBecause you can continue on the hard shoulder',
                 img: '',
             },
         ],
@@ -12252,22 +12252,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Stay close to the carriageway',
+                text: 'MStay close to the carriageway',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Face the oncoming traffic',
+                text: 'MFace the oncoming traffic',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Keep your back to the traffic',
+                text: 'MKeep your back to the traffic',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stand on the hard shoulder',
+                text: 'MStand on the hard shoulder',
                 img: '',
             },
         ],
@@ -12283,22 +12283,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Green',
+                text: 'MGreen',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Red',
+                text: 'MRed',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'White',
+                text: 'MWhite',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Amber',
+                text: 'MAmber',
                 img: '',
             },
         ],
@@ -12314,22 +12314,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Left',
+                text: 'MLeft',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Right',
+                text: 'MRight',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Centre',
+                text: 'MCentre',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Either the right or centre',
+                text: 'MEither the right or centre',
                 img: '',
             },
         ],
@@ -12345,22 +12345,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Use dipped headlights',
+                text: 'MUse dipped headlights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Keep a good distance from the vehicle ahead',
+                text: 'MKeep a good distance from the vehicle ahead',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Switch lanes to keep the traffic flowing',
+                text: 'MSwitch lanes to keep the traffic flowing',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stay close to the vehicle ahead to reduce queues',
+                text: 'MStay close to the vehicle ahead to reduce queues',
                 img: '',
             },
         ],
@@ -12376,22 +12376,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'In the right-hand lane',
+                text: 'MIn the right-hand lane',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'In the middle lane',
+                text: 'MIn the middle lane',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'On the hard shoulder',
+                text: 'MOn the hard shoulder',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'In the left-hand lane',
+                text: 'MIn the left-hand lane',
                 img: '',
             },
         ],
@@ -12407,22 +12407,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Speed up to clear the area quickly',
+                text: 'MSpeed up to clear the area quickly',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Always use the hard shoulder',
+                text: 'MAlways use the hard shoulder',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Obey the speed limit',
+                text: 'MObey the speed limit',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stay very close to the vehicle in front',
+                text: 'MStay very close to the vehicle in front',
                 img: '',
             },
         ],
@@ -12437,22 +12437,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Powered mobility scooters',
+                text: 'MPowered mobility scooters',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Motorcycles over 50 cc',
+                text: 'MMotorcycles over 50 cc',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Double-deck buses',
+                text: 'MDouble-deck buses',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Cars with automatic transmission',
+                text: 'MCars with automatic transmission',
                 img: '',
             },
         ],
@@ -12468,22 +12468,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Look much further ahead than you would on other roads',
+                text: 'MLook much further ahead than you would on other roads',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Travel much faster than you would on other roads',
+                text: 'MTravel much faster than you would on other roads',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Maintain a shorter separation distance than you would on other roads',
+                text: 'MMaintain a shorter separation distance than you would on other roads',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Concentrate more than you would on other roads',
+                text: 'MConcentrate more than you would on other roads',
                 img: '',
             },
         ],
@@ -12499,22 +12499,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Try to overtake',
+                text: 'MTry to overtake',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Re-adjust your mirrors',
+                text: 'MRe-adjust your mirrors',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Position your vehicle in the centre lane',
+                text: 'MPosition your vehicle in the centre lane',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stay in the left-hand lane',
+                text: 'MStay in the left-hand lane',
                 img: '',
             },
         ],
@@ -12592,12 +12592,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Move to the left and reduce your speed to 50 mph',
+                text: 'MMove to the left and reduce your speed to 50 mph',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'There are roadworks 50 metres (55 yards) ahead',
+                text: 'MThere are roadworks 50 metres (55 yards) ahead',
                 img: '',
             },
             {
@@ -12607,7 +12607,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'Leave the motorway at the next exit',
+                text: 'MLeave the motorway at the next exit',
                 img: '',
             },
         ],
@@ -12622,12 +12622,12 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'When you need to walk and get fresh air',
+                text: 'MWhen you need to walk and get fresh air',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'When you wish to pick up hitchhikers',
+                text: 'MWhen you wish to pick up hitchhikers',
                 img: '',
             },
             {
@@ -12637,7 +12637,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'When you need to use a mobile telephone',
+                text: 'MWhen you need to use a mobile telephone',
                 img: '',
             },
         ],
@@ -12653,22 +12653,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Increase your speed to ensure they join behind you',
+                text: 'MIncrease your speed to ensure they join behind you',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Adjust your speed or change lane if you can do so safely',
+                text: 'MAdjust your speed or change lane if you can do so safely',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Maintain a steady speed',
+                text: 'MMaintain a steady speed',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Switch on your hazard warning lights',
+                text: 'MSwitch on your hazard warning lights',
                 img: '',
             },
         ],
@@ -12683,7 +12683,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Use the lane that has the least traffic',
+                text: 'MUse the lane that has the least traffic',
                 img: '',
             },
             {
@@ -12693,12 +12693,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'Overtake using the lane that’s clearest',
+                text: 'MOvertake using the lane that’s clearest',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stay in one lane until you reach your exit',
+                text: 'MStay in one lane until you reach your exit',
                 img: '',
             },
         ],
@@ -12714,22 +12714,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'When you can see well ahead that the hard shoulder is clear',
+                text: 'MWhen you can see well ahead that the hard shoulder is clear',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'When the traffic in the right-hand lane is signalling right',
+                text: 'MWhen the traffic in the right-hand lane is signalling right',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'When you warn drivers behind by signalling left',
+                text: 'MWhen you warn drivers behind by signalling left',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'When in queues and traffic to your right is moving more slowly than you are',
+                text: 'MWhen in queues and traffic to your right is moving more slowly than you are',
                 img: '',
             },
         ],
@@ -12745,7 +12745,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'In cases of emergency or breakdown',
+                text: 'MIn cases of emergency or breakdown',
                 img: '',
             },
             {
@@ -12755,12 +12755,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'To stop and check where you are',
+                text: 'MTo stop and check where you are',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'To make a private phone call',
+                text: 'MTo make a private phone call',
                 img: '',
             },
         ],
@@ -12776,22 +12776,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Stop and arrest drivers who break the law',
+                text: 'MStop and arrest drivers who break the law',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Repair broken-down vehicles on the motorway',
+                text: 'MRepair broken-down vehicles on the motorway',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Issue fixed penalty notices',
+                text: 'MIssue fixed penalty notices',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stop and direct anyone on a motorway',
+                text: 'MStop and direct anyone on a motorway',
                 img: '',
             },
         ],
@@ -12807,17 +12807,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Pull up in this lane to answer your mobile phone',
+                text: 'MPull up in this lane to answer your mobile phone',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Use this lane as a running lane',
+                text: 'MUse this lane as a running lane',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'This lane can be used if you need a rest',
+                text: 'MThis lane can be used if you need a rest',
                 img: '',
             },
             {
@@ -12843,17 +12843,17 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'The hard shoulder can be used as a running lane',
+                text: 'MThe hard shoulder can be used as a running lane',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'You can park on the hard shoulder if you feel tired',
+                text: 'MYou can park on the hard shoulder if you feel tired',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'You can pull up in this lane to answer a mobile phone',
+                text: 'MYou can pull up in this lane to answer a mobile phone',
                 img: '',
             },
         ],
@@ -12868,22 +12868,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'By using higher speed limits',
+                text: 'MBy using higher speed limits',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'By using advisory speed limits',
+                text: 'MBy using advisory speed limits',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'By using minimum speed limits',
+                text: 'MBy using minimum speed limits',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'By using variable speed limits',
+                text: 'MBy using variable speed limits',
                 img: '',
             },
         ],
@@ -12898,22 +12898,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Variable speed limits',
+                text: 'MVariable speed limits',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Contraflow systems',
+                text: 'MContraflow systems',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'National speed limits',
+                text: 'MNational speed limits',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Lane closures',
+                text: 'MLane closures',
                 img: '',
             },
         ],
@@ -12928,7 +12928,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'If you have to read a map',
+                text: 'MIf you have to read a map',
                 img: '',
             },
             {
@@ -12938,12 +12938,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'If your mobile phone rings',
+                text: 'MIf your mobile phone rings',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'In an emergency or breakdown',
+                text: 'MIn an emergency or breakdown',
                 img: '',
             },
         ],
@@ -12959,22 +12959,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: '50 mph',
+                text: 'M50 mph',
                 img: '',
             },
             {
                 char: 'b',
-                text: '60 mph',
+                text: 'M60 mph',
                 img: '',
             },
             {
                 char: 'c',
-                text: '70 mph',
+                text: 'M70 mph',
                 img: '',
             },
             {
                 char: 'd',
-                text: '80 mph',
+                text: 'M80 mph',
                 img: '',
             },
         ],
@@ -12990,22 +12990,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Next to the phone',
+                text: 'MNext to the phone',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Well away from the carriageway',
+                text: 'MWell away from the carriageway',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'With your vehicle',
+                text: 'MWith your vehicle',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'On the hard shoulder',
+                text: 'MOn the hard shoulder',
                 img: '',
             },
         ],
@@ -13021,22 +13021,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Pull onto the hard shoulder',
+                text: 'MPull onto the hard shoulder',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Slow down and watch for further signals',
+                text: 'MSlow down and watch for further signals',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Leave at the next exit',
+                text: 'MLeave at the next exit',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stop and wait',
+                text: 'MStop and wait',
                 img: '',
             },
         ],
@@ -13052,22 +13052,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The hard shoulder can be used as a rest area if you feel tired',
+                text: 'MThe hard shoulder can be used as a rest area if you feel tired',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The hard shoulder is for emergency or breakdown use only',
+                text: 'MThe hard shoulder is for emergency or breakdown use only',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The hard shoulder can be used as a normal running lane',
+                text: 'MThe hard shoulder can be used as a normal running lane',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The hard shoulder has a speed limit of 50 mph',
+                text: 'MThe hard shoulder has a speed limit of 50 mph',
                 img: '',
             },
         ],
@@ -13082,22 +13082,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Use any lane except the hard shoulder',
+                text: 'MUse any lane except the hard shoulder',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Use the hard shoulder only',
+                text: 'MUse the hard shoulder only',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Use the three right-hand lanes only',
+                text: 'MUse the three right-hand lanes only',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Use all the lanes, including the hard shoulder',
+                text: 'MUse all the lanes, including the hard shoulder',
                 img: '',
             },
         ],
@@ -13113,22 +13113,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'On the hard shoulder',
+                text: 'MOn the hard shoulder',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'At the nearest service area',
+                text: 'MAt the nearest service area',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'On a slip road',
+                text: 'MOn a slip road',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'On the central reservation',
+                text: 'MOn the central reservation',
                 img: '',
             },
         ],
@@ -13144,22 +13144,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: '40 mph',
+                text: 'M40 mph',
                 img: '',
             },
             {
                 char: 'b',
-                text: '50 mph',
+                text: 'M50 mph',
                 img: '',
             },
             {
                 char: 'c',
-                text: '60 mph',
+                text: 'M60 mph',
                 img: '',
             },
             {
                 char: 'd',
-                text: '70 mph',
+                text: 'M70 mph',
                 img: '',
             },
         ],
@@ -13174,7 +13174,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'When your vehicle breaks down',
+                text: 'MWhen your vehicle breaks down',
                 img: '',
             },
             {
@@ -13189,7 +13189,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'd',
-                text: 'When the road ahead is clear',
+                text: 'MWhen the road ahead is clear',
                 img: '',
             },
         ],
@@ -13205,22 +13205,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Switch on your hazard warning lights',
+                text: 'MSwitch on your hazard warning lights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Switch on your headlights',
+                text: 'MSwitch on your headlights',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Sound your horn',
+                text: 'MSound your horn',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Flash your headlights',
+                text: 'MFlash your headlights',
                 img: '',
             },
         ],
@@ -13236,22 +13236,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Carefully change the wheel yourself',
+                text: 'MCarefully change the wheel yourself',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Use an emergency telephone and call for help',
+                text: 'MUse an emergency telephone and call for help',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Try to wave down another vehicle for help',
+                text: 'MTry to wave down another vehicle for help',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Only change the wheel if you have a passenger to help you',
+                text: 'MOnly change the wheel if you have a passenger to help you',
                 img: '',
             },
         ],
@@ -13267,22 +13267,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Carefully reverse along the hard shoulder',
+                text: 'MCarefully reverse along the hard shoulder',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Carry on to the next exit',
+                text: 'MCarry on to the next exit',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Carefully reverse in the left-hand lane',
+                text: 'MCarefully reverse in the left-hand lane',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Make a U-turn at the next gap in the central reservation',
+                text: 'MMake a U-turn at the next gap in the central reservation',
                 img: '',
             },
         ],
@@ -13298,22 +13298,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Switch on your hazard warning lights',
+                text: 'MSwitch on your hazard warning lights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Stop the traffic behind and ask for help',
+                text: 'MStop the traffic behind and ask for help',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Attempt to repair your vehicle quickly',
+                text: 'MAttempt to repair your vehicle quickly',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Stand behind your vehicle to warn others',
+                text: 'MStand behind your vehicle to warn others',
                 img: '',
             },
         ],
@@ -13339,12 +13339,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'The road surface will wear down the tyres faster',
+                text: 'MThe road surface will wear down the tyres faster',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Continuous high speeds increase the risk of your vehicle breaking down',
+                text: 'MContinuous high speeds increase the risk of your vehicle breaking down',
                 img: '',
             },
         ],
@@ -13360,17 +13360,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The driver wants you to overtake',
+                text: 'MThe driver wants you to overtake',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The other car is going to change lanes',
+                text: 'MThe other car is going to change lanes',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Traffic ahead is slowing or stopping suddenly',
+                text: 'MTraffic ahead is slowing or stopping suddenly',
                 img: '',
             },
             {
@@ -13391,22 +13391,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'The middle lane',
+                text: 'MThe middle lane',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'The left-hand lane',
+                text: 'MThe left-hand lane',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'The hard shoulder',
+                text: 'MThe hard shoulder',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'The right-hand lane',
+                text: 'MThe right-hand lane',
                 img: '',
             },
         ],
@@ -13453,22 +13453,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Stand at the rear of the vehicle while making the call',
+                text: 'MStand at the rear of the vehicle while making the call',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Phone a friend and ask them to come and collect you',
+                text: 'MPhone a friend and ask them to come and collect you',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Wait in the car for the emergency services to arrive',
+                text: 'MWait in the car for the emergency services to arrive',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Check your location from the nearest marker posts beside the hard shoulder',
+                text: 'MCheck your location from the nearest marker posts beside the hard shoulder',
                 img: '',
             },
         ],
@@ -13484,7 +13484,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'When there are lane closures',
+                text: 'MWhen there are lane closures',
                 img: '',
             },
             {
@@ -13494,12 +13494,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'When you can maintain a high speed',
+                text: 'MWhen you can maintain a high speed',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'When large vehicles are in the left and centre lanes',
+                text: 'MWhen large vehicles are in the left and centre lanes',
                 img: '',
             },
         ],
@@ -13515,22 +13515,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Temporary traffic lights',
+                text: 'MTemporary traffic lights',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Lower speed limits',
+                text: 'MLower speed limits',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Wider lanes than normal',
+                text: 'MWider lanes than normal',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Road humps',
+                text: 'MRoad humps',
                 img: '',
             },
         ],
@@ -13545,22 +13545,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Local speed limit applies',
+                text: 'MLocal speed limit applies',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'No waiting on the carriageway',
+                text: 'MNo waiting on the carriageway',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'National speed limit applies',
+                text: 'MNational speed limit applies',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'No entry for vehicles',
+                text: 'MNo entry for vehicles',
                 img: '',
             },
         ],
@@ -13576,22 +13576,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: '30 mph',
+                text: 'M30 mph',
                 img: '',
             },
             {
                 char: 'b',
-                text: '50 mph',
+                text: 'M50 mph',
                 img: '',
             },
             {
                 char: 'c',
-                text: '60 mph',
+                text: 'M60 mph',
                 img: '',
             },
             {
                 char: 'd',
-                text: '70 mph',
+                text: 'M70 mph',
                 img: '',
             },
         ],
@@ -13607,22 +13607,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'By hazard warning lines',
+                text: 'MBy hazard warning lines',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'By street lighting',
+                text: 'MBy street lighting',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'By pedestrian islands',
+                text: 'MBy pedestrian islands',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'By double or single yellow lines',
+                text: 'MBy double or single yellow lines',
                 img: '',
             },
         ],
@@ -13638,22 +13638,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: '30 mph',
+                text: 'M30 mph',
                 img: '',
             },
             {
                 char: 'b',
-                text: '40 mph',
+                text: 'M40 mph',
                 img: '',
             },
             {
                 char: 'c',
-                text: '50 mph',
+                text: 'M50 mph',
                 img: '',
             },
             {
                 char: 'd',
-                text: '60 mph',
+                text: 'M60 mph',
                 img: '',
             },
         ],
@@ -13668,22 +13668,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Minimum speed 30 mph',
+                text: 'MMinimum speed 30 mph',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'End of maximum speed',
+                text: 'MEnd of maximum speed',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'End of minimum speed',
+                text: 'MEnd of minimum speed',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Maximum speed 30 mph',
+                text: 'MMaximum speed 30 mph',
                 img: '',
             },
         ],
@@ -13699,17 +13699,17 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Follow another vehicle as it overtakes the tractor',
+                text: 'MFollow another vehicle as it overtakes the tractor',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Sound your horn to make the tractor driver pull over',
+                text: 'MSound your horn to make the tractor driver pull over',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Speed past, flashing your lights at oncoming traffic',
+                text: 'MSpeed past, flashing your lights at oncoming traffic',
                 img: '',
             },
             {
@@ -13730,22 +13730,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Estate car',
+                text: 'MEstate car',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Milk float',
+                text: 'MMilk float',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Delivery van',
+                text: 'MDelivery van',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Long vehicle',
+                text: 'MLong vehicle',
                 img: '',
             },
         ],
@@ -13760,7 +13760,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Never',
+                text: 'MNever',
                 img: '',
             },
             {
@@ -13770,12 +13770,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'In the rush hour',
+                text: 'MIn the rush hour',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'During daylight hours',
+                text: 'MDuring daylight hours',
                 img: '',
             },
         ],
@@ -13790,22 +13790,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'No entry',
+                text: 'MNo entry',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Waiting restrictions',
+                text: 'MWaiting restrictions',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'National speed limit',
+                text: 'MNational speed limit',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'School crossing patrol',
+                text: 'MSchool crossing patrol',
                 img: '',
             },
         ],
@@ -13826,7 +13826,7 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'b',
-                text: 'When you have your sidelights on',
+                text: 'MWhen you have your sidelights on',
                 img: '',
             },
             {
@@ -13883,22 +13883,22 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Continue in that lane',
+                text: 'MContinue in that lane',
                 img: '',
             },
             {
                 char: 'b',
-                text: 'Force your way into the lane you need',
+                text: 'MForce your way into the lane you need',
                 img: '',
             },
             {
                 char: 'c',
-                text: 'Stop until the area has cleared',
+                text: 'MStop until the area has cleared',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'Use arm signals to help you change lane',
+                text: 'MUse arm signals to help you change lane',
                 img: '',
             },
         ],
@@ -13913,7 +13913,7 @@ const questions: IQuestion[] = [
         options: [
             {
                 char: 'a',
-                text: 'Only on the left-hand side',
+                text: 'MOnly on the left-hand side',
                 img: '',
             },
             {
@@ -13923,12 +13923,12 @@ const questions: IQuestion[] = [
             },
             {
                 char: 'c',
-                text: 'Only on the right-hand side',
+                text: 'MOnly on the right-hand side',
                 img: '',
             },
             {
                 char: 'd',
-                text: 'On either the right or the left',
+                text: 'MOn either the right or the left',
                 img: '',
             },
         ],

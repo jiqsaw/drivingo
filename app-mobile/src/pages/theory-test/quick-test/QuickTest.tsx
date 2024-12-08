@@ -22,14 +22,13 @@ import '../../../styles/pages/subpage.scss';
 
 const QuickTest = () => {
     const dispatch = useDispatch();
-    const questionBank = useSelector(storeUiSelectors.questionBank);
     const filteredTopics = useSelector(
         storeTheoryActiveTestSelectors.filteredTopics,
     );
     const uiQuickTestNumberOfQuestions = useSelector(
         storeUiSelectors.quickTestNumberOfQuestions,
     );
-    const topics = TopicDataProvider.getData(questionBank);
+    const topics = TopicDataProvider.getData();
 
     return (
         <IonPage>

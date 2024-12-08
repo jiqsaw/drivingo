@@ -1,10 +1,10 @@
 import { IQuestion, IQuestionExplanation, IQuestionImage } from './question';
 
 export enum QuestionBank {
-    Car,
-    Motorcycle,
-    LGV_PCV,
-    ADI,
+    Car = 'car',
+    Motorcycle = 'motorcycle',
+    LGV_PCV = 'lgv-pcv',
+    ADI = 'adi',
 }
 
 export interface IQuestionBank {

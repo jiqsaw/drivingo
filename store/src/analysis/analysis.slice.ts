@@ -1,20 +1,20 @@
 import { dbAnalysis } from '@drivingo/db-client';
-import { QuestionBank, TestType } from '@drivingo/models';
+import { QuestionBank } from '@drivingo/models';
 import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { getCorrectCount } from '../theory/active-test/active-test-utils';
 import { IStoreTheoryActiveTest } from '../theory/active-test/active-test.model';
 import {
+    AnalysisKey,
     IStoreAnalysis,
+    IStoreAnalysisTest,
+    IStoreAnalysisTestBase,
     IStoreAnalysisTestResult,
     IStoreAnalysisTopicResult,
 } from './analysis.model';
 
 export default createSlice({
     name: 'analysis',
-    initialState: {
-        // test: {},
-        hazardPerception: [],
-    } as IStoreAnalysis,
+    initialState: {} as IStoreAnalysis,
     reducers: {
         addTestResult: (
             state,
@@ -30,15 +30,20 @@ export default createSlice({
                 questionCount: action.payload.test.questions.length,
             };
 
-            let storedTopics: IStoreAnalysisTopicResult[];
+            const key = `${questionBank}|${test.type}` as AnalysisKey;
 
-            if (test.type === TestType.QuickTest) {
-                storedTopics = state.test[questionBank].quickTest.topics;
-            } else if (test.type === TestType.MockTest) {
-                storedTopics = state.test[questionBank].mockTest.topics;
-            } else {
-                storedTopics = [];
+            if (state.test === undefined) {
+                const initial: IStoreAnalysisTestBase = {
+                    topics: [],
+                    results: [],
+                };
+                state.test = {
+                    [key]: initial,
+                } as IStoreAnalysisTest;
             }
+            let storedTopics: IStoreAnalysisTopicResult[] =
+                state.test[key].topics;
+
             test.questions.forEach((question) => {
                 const topic = storedTopics.find(
                     (item) => item.code === question.topicCode,
@@ -69,35 +74,10 @@ export default createSlice({
                 }
             });
 
-            switch (test.type) {
-                case TestType.LearnPractice:
-                    state.test[questionBank].learnPractice = {
-                        topics: storedTopics,
-                        results: [
-                            testResult,
-                            ...state.test[questionBank].learnPractice.results,
-                        ],
-                    };
-                    break;
-                case TestType.QuickTest:
-                    state.test[questionBank].quickTest = {
-                        topics: storedTopics,
-                        results: [
-                            testResult,
-                            ...state.test[questionBank].quickTest.results,
-                        ],
-                    };
-                    break;
-                case TestType.MockTest:
-                    state.test[questionBank].mockTest = {
-                        topics: storedTopics,
-                        results: [
-                            testResult,
-                            ...state.test[questionBank].mockTest.results,
-                        ],
-                    };
-                    break;
-            }
+            state.test[key] = {
+                topics: storedTopics,
+                results: [testResult, ...state.test[key].results],
+            };
 
             dbAnalysis.setTestResults(state);
         },
