@@ -4,21 +4,28 @@ import {
     storeAnalysisSelectors,
     storeTheoryActiveTestActions,
     storeTheoryActiveTestSelectors,
+    storeUiSelectors,
 } from '@drivingo/store';
 import { AlertsIcon, UICardList, UITestProgressCard } from '@drivingo/ui';
 import { IonActionSheet, IonButton, useIonRouter } from '@ionic/react';
 import { OverlayEventDetail } from '@ionic/react/dist/types/components/react-component-lib/interfaces';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { AnalysisKey } from 'store/src/analysis/analysis.model';
 
 const LearnPractice = () => {
     const dispatch = useDispatch();
     const router = useIonRouter();
+
     const topics = TopicDataProvider.getData();
     const filteredTopics = useSelector(
         storeTheoryActiveTestSelectors.filteredTopics,
     );
+    const questionBank = useSelector(storeUiSelectors.questionBank);
+
+    const key = `${questionBank}|${TestType.LearnPractice}` as AnalysisKey;
     const analysis = useSelector(storeAnalysisSelectors.analysis);
+    const analysisLearnPractice = analysis.test && analysis.test[key];
 
     const [isActionSheetOpen, setIsActionSheetOpen] = useState(false);
 
@@ -117,13 +124,17 @@ const LearnPractice = () => {
     }
 
     function getTotalUnanswered() {
-        if (!filteredTopics || !analysis.learnPractice.topics) return 0;
+        if (!filteredTopics || !analysis) return 0;
 
         const filteredTopicCodes = new Set(
             filteredTopics.map((item) => item.code),
         );
 
-        return analysis.learnPractice.topics.reduce((total, item) => {
+        if (!analysisLearnPractice) {
+            return 0;
+        }
+
+        return analysisLearnPractice.topics.reduce((total, item) => {
             if (filteredTopicCodes.has(item.code)) {
                 const topicCount =
                     topics.find((topic) => topic.code === item.code)?.count ||
@@ -138,13 +149,17 @@ const LearnPractice = () => {
     }
 
     function getTotalIncorrect() {
-        if (!filteredTopics || !analysis.learnPractice.topics) return 0;
+        if (!filteredTopics || !analysis) return 0;
 
         const filteredTopicCodes = new Set(
             filteredTopics.map((item) => item.code),
         );
 
-        return analysis.learnPractice.topics.reduce((total, item) => {
+        if (!analysisLearnPractice) {
+            return 0;
+        }
+
+        return analysisLearnPractice.topics.reduce((total, item) => {
             return filteredTopicCodes.has(item.code)
                 ? total + item.incorrects.length
                 : total;

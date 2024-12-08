@@ -3,11 +3,15 @@ import { UIButton, UILink } from 'ui/src';
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
 
 import { signOut } from '@drivingo/db-client';
-import { useDispatch } from 'react-redux';
+import { QuestionBank } from '@drivingo/models';
+import { storeUiActions, storeUiSelectors } from '@drivingo/store';
+import { useDispatch, useSelector } from 'react-redux';
 import '../../styles/pages/home.scss';
 
 const TheoryTest: React.FC = () => {
     const dispatch = useDispatch();
+
+    const uiQuestionBank = useSelector(storeUiSelectors.questionBank);
 
     return (
         <IonPage>
@@ -15,6 +19,20 @@ const TheoryTest: React.FC = () => {
             <IonContent fullscreen>
                 <div className="page-container homepage">
                     <div className="main-content">
+                        <div
+                            onClick={() => questionBankChange(QuestionBank.Car)}
+                        >
+                            {uiQuestionBank === QuestionBank.Car && '✓'} Car
+                        </div>
+                        <div
+                            onClick={() =>
+                                questionBankChange(QuestionBank.Motorcycle)
+                            }
+                        >
+                            {uiQuestionBank === QuestionBank.Motorcycle && '✓'}{' '}
+                            Motorcycle
+                        </div>
+
                         <IonRouterLink
                             routerDirection="root"
                             routerLink="/traffic-signs"
@@ -82,6 +100,10 @@ const TheoryTest: React.FC = () => {
             </IonContent>
         </IonPage>
     );
+
+    function questionBankChange(questionBank: QuestionBank) {
+        dispatch(storeUiActions.updateQuestionBank({ questionBank }));
+    }
 };
 
 export default TheoryTest;

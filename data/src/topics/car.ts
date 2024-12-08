@@ -1,6 +1,6 @@
 import type { ITopic } from '@drivingo/models';
 
-export const DATA_TOPICS: ITopic[] = [
+export const DATA_TOPICS_CAR: ITopic[] = [
     {
         code: 'alertness',
         name: 'Alertness',

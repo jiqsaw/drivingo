@@ -5,7 +5,7 @@ const analysis = (state: AppState) => state.analysis;
 
 const hazardPerceptionResults = createSelector(
     analysis,
-    (analysis) => analysis.hazardPerception,
+    (analysis) => analysis.hazardPerception ?? [],
 );
 
 export default {

@@ -1,3 +1,5 @@
+import { IQuestionImage } from '@drivingo/models';
+
 export default [
     { code: 'AB2886', src: 'TS4757.png' },
     { code: 'AB2422', src: 'TS4011.png' },
@@ -310,4 +312,4 @@ export default [
     { code: 'AB2935', option: 'b', src: 'TS4051.png' },
     { code: 'AB2935', option: 'c', src: 'TS4627.png' },
     { code: 'AB2935', option: 'd', src: 'TS4517.png' },
-];
+] as IQuestionImage[];
