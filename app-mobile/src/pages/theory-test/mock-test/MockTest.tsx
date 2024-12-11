@@ -3,6 +3,7 @@ import { PageIntro, UIButton } from '@drivingo/ui';
 import { IonContent, IonPage, IonRouterLink } from '@ionic/react';
 import Header from 'app-mobile/src/components/header/header';
 import MockTestStarter from 'app-mobile/src/components/mock-test/starter';
+import MockTestTakenTest from 'app-mobile/src/components/mock-test/taken-test';
  
 
 const MockTest: React.FC = () => {
@@ -17,7 +18,8 @@ const MockTest: React.FC = () => {
                         icon="/assets/images/countdown.png"
                     />
 
-                    <MockTestStarter />
+                    {/* <MockTestStarter /> */}
+                    <MockTestTakenTest />
 
                     <div className="fixed-bottom-button">
                         <IonRouterLink

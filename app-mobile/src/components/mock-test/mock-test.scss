@@ -62,4 +62,37 @@
         font-size: 14px;
         font-weight: 500;
     }
+
+    &__line-chart {
+        width: 100%;
+    }
+
+    &__topics {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    &__topics-list {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    &__topic {
+        border-radius: 20px;
+        border: 1px solid #4321FE;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 16px;
+        color: #fff;
+
+        &-title {
+            font-size: 13px;
+            font-weight: 600;
+
+        }
+    }
 }
