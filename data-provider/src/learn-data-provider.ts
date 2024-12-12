@@ -1,11 +1,8 @@
-import { DATA_LEARN } from '@drivingo/data';
+import { DATA_LEARN_TOPICS } from '@drivingo/data';
 
 export const LearnDataProvider = {
-    getLearnDetail: (pageName: string) => {
-        return DATA_LEARN[pageName as keyof typeof DATA_LEARN];
-    },
     getLearnStudyTopics: () => {
-        const contentTopics = DATA_LEARN.topics;
+        const contentTopics = DATA_LEARN_TOPICS;
         return contentTopics;
     },
 };
