@@ -25,6 +25,22 @@ const TheoryTest: React.FC = () => {
                             {uiQuestionBank === QuestionBank.Car && '✓'} Car
                         </div>
                         <div
+                            onClick={() =>
+                                questionBankChange(QuestionBank.Motorcycle)
+                            }
+                        >
+                            {uiQuestionBank === QuestionBank.Motorcycle && '✓'}{' '}
+                            Motorcycle
+                        </div>
+                        <div
+                            onClick={() =>
+                                questionBankChange(QuestionBank.LGV_PCV)
+                            }
+                        >
+                            {uiQuestionBank === QuestionBank.LGV_PCV && '✓'}{' '}
+                            LGV_PCV
+                        </div>
+                        <div
                             onClick={() => questionBankChange(QuestionBank.ADI)}
                         >
                             {uiQuestionBank === QuestionBank.ADI && '✓'} ADI
