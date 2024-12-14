@@ -25,12 +25,9 @@ const TheoryTest: React.FC = () => {
                             {uiQuestionBank === QuestionBank.Car && '✓'} Car
                         </div>
                         <div
-                            onClick={() =>
-                                questionBankChange(QuestionBank.Motorcycle)
-                            }
+                            onClick={() => questionBankChange(QuestionBank.ADI)}
                         >
-                            {uiQuestionBank === QuestionBank.Motorcycle && '✓'}{' '}
-                            Motorcycle
+                            {uiQuestionBank === QuestionBank.ADI && '✓'} ADI
                         </div>
 
                         <IonRouterLink

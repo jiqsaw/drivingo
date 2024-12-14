@@ -30,6 +30,9 @@ class TestDataProviderSingleton {
     }
 
     public getQuestionBankData() {
+        console.log('getQuestionBankData:');
+        console.log(this._questionBank);
+        this._questionBank;
         return DATA_QUESTION_BANK.find(
             (item) => item.type === this._questionBank,
         )?.data;
@@ -59,7 +62,7 @@ class TestDataProviderSingleton {
         numberOfQuestions: number,
         filteredTopics?: ITopic[],
     ) {
-        console.log('getNewQuickTest:');
+        console.log('getNewQuickTest');
         let data = this.getQuestions();
         if (filteredTopics) {
             data = data.filter((item) =>
