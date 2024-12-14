@@ -25,11 +25,11 @@ ChartJS.register(
 
 const MockTestTakenTest = () => {
     const data = {
-        labels: ['February', 'April', 'June', 'August', 'October'],
+        labels: ['February', 'April', 'June', 'August', 'October', 'December'],
         datasets: [
             {
                 label: 'Mock Test',
-                data: [8, 12, 10, 10, 11],
+                data: [7, 9, 10, 10, 13, 10],
                 borderColor: '#C686F8',
                 borderWidth: 3,
                 tension: 0.4,
@@ -37,7 +37,7 @@ const MockTestTakenTest = () => {
                 pointBackgroundColor: '#7C54A6',
                 pointBorderColor: '#fff',
                 pointBorderWidth: 1,
-                pointRadius: 6,
+                pointRadius: 9,
 
                 backgroundColor: (context: { chart: any }) => {
                     const chart = context.chart;
@@ -91,11 +91,19 @@ const MockTestTakenTest = () => {
 
     return (
         <div className="mock-test">
-            <Line
-                className="mock-test__line-chart"
-                data={data}
-                options={options}
-            />
+            <div className="mock-test__body mock-test__body--left">
+                <div className="mock-test__item">
+                    <h4 className="mock-test__title">your last score</h4>
+                    <span className="mock-test__score">10/50</span>
+                </div>
+            </div>
+            <div className="mock-test__chart-container">
+                <Line
+                    className="mock-test__line-chart"
+                    data={data}
+                    options={options}
+                />
+            </div>
             <div className="mock-test__body">
                 <div className="mock-test__topics">
                     <h4 className="mock-test__title">Your best topics</h4>
