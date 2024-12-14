@@ -39,7 +39,7 @@ const Router: React.FC = () => {
                     exact={true}
                 />
                 <Route
-                    path="/theory-test/learn/:id"
+                    path="/theory-test/learn/:category/:id"
                     render={() => <LearnStudyDetail />}
                     exact={true}
                 />
