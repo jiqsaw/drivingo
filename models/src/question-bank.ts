@@ -1,4 +1,4 @@
-import { IQuestion, IQuestionExplanation, IQuestionImage } from './question';
+import { IQuestion, IQuestionExplanation } from './question';
 
 export enum QuestionBank {
     Car = 'car',
@@ -14,6 +14,5 @@ export interface IQuestionBank {
 
 export interface IQuestionBankData {
     questions: IQuestion[];
-    images: IQuestionImage[];
     explanations: IQuestionExplanation[];
 }

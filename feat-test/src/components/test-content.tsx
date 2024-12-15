@@ -21,7 +21,6 @@ interface Props {
     showTranslate?: boolean;
 }
 
-// ????? show correct and incorrect option (even the selected option is correct) on selectOption
 const FeatTestContent: FC<Props> = (props) => {
     const {
         questionNo,
@@ -43,12 +42,13 @@ const FeatTestContent: FC<Props> = (props) => {
                 {translatedData && showTranslate
                     ? translatedData.question
                     : questionItem.question}
-                {questionItem.questionImg !== '' && (
+                {questionItem.questionImg && (
                     <img
                         className="test__question-img"
-                        src={TestDataProvider.getQuestionImage(
-                            questionItem.code,
-                        )}
+                        src={
+                            TestDataProvider.imgBasePath +
+                            questionItem.questionImg
+                        }
                         alt={questionItem.code}
                     />
                 )}
@@ -84,10 +84,10 @@ const FeatTestContent: FC<Props> = (props) => {
                                     : option.text}
                                 {option.img && (
                                     <img
-                                        src={TestDataProvider.getOptionImage(
-                                            questionItem.code,
-                                            option.char,
-                                        )}
+                                        src={
+                                            TestDataProvider.imgBasePath +
+                                            option.img
+                                        }
                                         alt={questionItem.code}
                                     />
                                 )}
