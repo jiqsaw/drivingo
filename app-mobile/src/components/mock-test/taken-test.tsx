@@ -1,5 +1,7 @@
 import { AlertsIcon } from '@drivingo/ui';
 import './mock-test.scss';
+import { TestType } from '@drivingo/models';
+import { storeAnalysisSelectors, storeUiSelectors } from '@drivingo/store';
 import { IonRouterLink } from '@ionic/react';
 import {
     CategoryScale,
@@ -12,6 +14,12 @@ import {
     Tooltip,
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
+import { useSelector } from 'react-redux';
+import {
+    AnalysisKey,
+    IStoreAnalysisTestBase,
+    IStoreAnalysisTestResult,
+} from 'store/src/analysis/analysis.model';
 
 ChartJS.register(
     LineElement,
@@ -23,13 +31,41 @@ ChartJS.register(
     Legend,
 );
 
+ 
+
 const MockTestTakenTest = () => {
+ 
+
+    const questionBank = useSelector(storeUiSelectors.questionBank);
+    const key = `${questionBank}|${TestType.MockTest}` as AnalysisKey;
+    const analysis = useSelector(storeAnalysisSelectors.analysis);
+    const analysisLearnPractice = (analysis.test && analysis.test[key]) || false;
+
+    if (!analysisLearnPractice) return null;
+
+ 
+    const lastTest = analysisLearnPractice.results[analysisLearnPractice.results.length - 1];
+
+    // analysisLearnPractice result data is bellow
+    // test  1
+    // {
+    //     "date": "2024-12-16T14:13:34.654Z",
+    //     "correct": 17,
+    //     "questionCount": 50
+    // }
+    // test 2
+    // {
+    //     "date": "2024-12-16T13:55:23.135Z",
+    //     "correct": 14,
+    //     "questionCount": 50
+    // }
+
     const data = {
-        labels: ['February', 'April', 'June', 'August', 'October', 'December'],
+        labels: analysisLearnPractice.results.map((result) => result.date),
         datasets: [
             {
                 label: 'Mock Test',
-                data: [7, 9, 10, 10, 13, 10],
+                data: analysisLearnPractice.results.map((result) => result.correct),
                 borderColor: '#C686F8',
                 borderWidth: 3,
                 tension: 0.4,
@@ -94,7 +130,9 @@ const MockTestTakenTest = () => {
             <div className="mock-test__body mock-test__body--left">
                 <div className="mock-test__item">
                     <h4 className="mock-test__title">your last score</h4>
-                    <span className="mock-test__score">10/50</span>
+                    <span className="mock-test__score">
+                        {lastTest.correct}/{lastTest.questionCount}
+                    </span>
                 </div>
             </div>
             <div className="mock-test__chart-container">
