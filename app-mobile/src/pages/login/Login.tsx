@@ -4,9 +4,7 @@ const Login = () => {
     return (
         <IonPage>
             <IonContent fullscreen>
-                <aside className="container">
-                    <FeatLogin />
-                </aside>
+                <FeatLogin />
             </IonContent>
         </IonPage>
     );

@@ -42,12 +42,16 @@ ion-back-button {
   color: var(--ion-primary-color);
 }
 
-
 ion-button {
-
+  --ion-color-base: linear-gradient(90deg, #ffbbbb 0%, #ffbbbb 100%);
   --background: linear-gradient(90deg, #ffbbbb 0%, #ffbbbb 100%);
   --background-focused: #ffbbbb;
   --background-hover: #ffbbbb;
   --padding-top: 16px;
   --padding-bottom: 16px;
+
+  &.ion-color-dark {
+    --ion-color-base: #000 !important;
+    --ion-color-contrast: #fff !important;
+  }
 }

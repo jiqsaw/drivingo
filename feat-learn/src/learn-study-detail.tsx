@@ -98,7 +98,6 @@ const FeatLearnStudyDetail = () => {
                             id="next"
                             fullRounded
                             nextIcon={true}
-                            type="secondary"
                             onClick={() => handleNavigation('next')}
                         />
                     )}
