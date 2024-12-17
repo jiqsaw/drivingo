@@ -27,6 +27,7 @@ export const UIButton = (props: UIButtonProps) => {
         disabled,
         loading,
         icon,
+        color,
     } = props;
     return (
         <IonButton
@@ -34,7 +35,7 @@ export const UIButton = (props: UIButtonProps) => {
             onClick={() => onClick && onClick()}
             className={`button   ${fullWidth ? 'full-width' : ''} ${fullRounded ? 'full-rounded' : ''} ${!text && nextIcon ? 'icon-only' : ''}`}
             disabled={disabled}
-            color={props?.color || 'default'}
+            color={color || 'default'}
         >
             {loading && disabled && (
                 <IonSpinner name="crescent" className="loading"></IonSpinner>
