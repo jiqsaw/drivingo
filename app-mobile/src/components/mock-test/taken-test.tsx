@@ -13,6 +13,7 @@ import {
     PointElement,
     Tooltip,
 } from 'chart.js';
+import dayjs from 'dayjs';
 import { Line } from 'react-chartjs-2';
 import { useSelector } from 'react-redux';
 import { AnalysisKey } from 'store/src/analysis/analysis.model';
@@ -39,14 +40,23 @@ const MockTestTakenTest = () => {
     const lastTest =
         analysisLearnPractice.results[analysisLearnPractice.results.length - 1];
 
+    const labels = analysisLearnPractice.results.map((result) =>
+        dayjs(result.date).format('DD MMM YYYY HH:mm'),
+    );
+    const clonedLabels = [labels[0], ...labels, labels[labels.length - 1]];
+
     const data = {
-        labels: analysisLearnPractice.results.map((result) => result.date),
+        labels: clonedLabels,
         datasets: [
             {
                 label: 'Mock Test',
-                data: analysisLearnPractice.results.map(
-                    (result) => result.correct,
-                ),
+                data: [
+                    25,
+                    ...analysisLearnPractice.results.map(
+                        (result) => result.correct,
+                    ),
+                    25,
+                ],
                 borderColor: '#C686F8',
                 borderWidth: 3,
                 tension: 0.4,
@@ -96,6 +106,8 @@ const MockTestTakenTest = () => {
                 },
             },
             y: {
+                min: 10,
+                max: 50,
                 grid: {
                     display: false,
                 },

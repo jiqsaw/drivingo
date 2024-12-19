@@ -1,5 +1,6 @@
 .learn-study-detail {
     width: 100%;
+    padding-top: 30px;
     padding-bottom: 120px;
     height: 100%;
 
@@ -30,7 +31,10 @@
     }
 
     .fixed-bottom-button {
-        align-items: flex-start;
+        height: 120px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
         gap: 0;
     }
 
@@ -43,7 +47,6 @@
         display: flex;
         justify-content: space-between;
         color: #fff;
-        width: 100%;
 
         .btn-prev {
             color: #fff;

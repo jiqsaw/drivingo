@@ -13,7 +13,7 @@ const FeatLearnStudyDetail = () => {
     const router = useIonRouter();
     const [pageData, setPageData] = useState<LearnContent | null>(null);
     const [isLoading, setIsLoading] = useState(true);
-    
+
     const pageName = router.routeInfo.pathname.split('/')[4];
     const category = router.routeInfo.pathname.split('/')[3];
 
@@ -24,7 +24,10 @@ const FeatLearnStudyDetail = () => {
             setIsLoading(true);
             try {
                 const pageNumber = parseInt(pageName.replace('page', ''));
-                const data = await loadCategoryPage(category as any, pageNumber);
+                const data = await loadCategoryPage(
+                    category as any,
+                    pageNumber,
+                );
                 setPageData(data);
             } catch (error) {
                 console.error('Error loading page:', error);
@@ -40,7 +43,7 @@ const FeatLearnStudyDetail = () => {
         return null;
     }
 
-    const categoryData = LEARN_CATEGORIES.find(cat => cat.name === category);
+    const categoryData = LEARN_CATEGORIES.find((cat) => cat.name === category);
     if (!categoryData) {
         return null;
     }
@@ -58,8 +61,11 @@ const FeatLearnStudyDetail = () => {
     const hasPrevPage = currentPageNumber > 1;
 
     const handleNavigation = (direction: 'next' | 'prev') => {
-        const newPageNumber = direction === 'next' ? currentPageNumber + 1 : currentPageNumber - 1;
-        const newPath = `/learn/study/${category}/page${newPageNumber}`;
+        const newPageNumber =
+            direction === 'next'
+                ? currentPageNumber + 1
+                : currentPageNumber - 1;
+        const newPath = `/theory-test/learn/${category}/page${newPageNumber}`;
         router.push(newPath);
     };
 
@@ -85,14 +91,6 @@ const FeatLearnStudyDetail = () => {
                     </IonToggle>
                 </div>
                 <div className="learn-study-detail__actions">
-                    {hasPrevPage && (
-                        <button 
-                            className="btn-prev" 
-                            onClick={() => handleNavigation('prev')}
-                        >
-                            {'<'}previous
-                        </button>
-                    )}
                     {hasNextPage && (
                         <UIButton
                             id="next"
